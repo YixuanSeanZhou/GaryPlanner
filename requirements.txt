@@ -1,0 +1,5 @@
+Flask
+flask-login
+flask-api
+flask_cors
+flask_sqlalchemy
