@@ -1,5 +1,5 @@
-# CSE110_Project
-The project for CSE 110.
+# GaryPlanner
+The revolutional project for CSE 110 brought by P&C.
 
 ## Backend
 ### Information
