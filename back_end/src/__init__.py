@@ -1,3 +1,9 @@
-from flask import Flask
+from flask import Flask, jsonify
+
+
 app = Flask(__name__)
-from app import views
+
+
+@app.route("/")
+def hello_world():
+    return jsonify(Gary="Planner")
