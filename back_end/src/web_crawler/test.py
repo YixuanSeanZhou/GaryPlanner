@@ -90,8 +90,8 @@ print(l_s[])
 
 
 driver = start("https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true")
-user_name = 'yiz044'
-pwd = '233Jiayi!'
+user_name = '...'
+pwd = '...'
 form = driver.find_element_by_css_selector('form[id=login]')
 btn = form.find_element_by_css_selector('button')
 account = form.find_element_by_css_selector('input[type=username]')
