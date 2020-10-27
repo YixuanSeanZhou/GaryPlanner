@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+from flask_sqlalchemy import SQLAlchemy
+
 from typing import List
 
-from ...setup import db
+from ..setup import db
 
 
 class User(db.Model):
@@ -18,6 +20,7 @@ class User(db.Model):
         ret = {}
         ret['id'] = self.id
         ret['name'] = self.name
+        return ret
 
     def save(self):
         db.session.commit()

@@ -1,9 +1,5 @@
-from flask.cli import FlaskGroup
+from src.setup import cli, db
 
-from src import app, db
-
-
-cli = FlaskGroup(app)
 
 @cli.command("create_db")
 def create_db():
