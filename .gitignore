@@ -1,7 +1,2 @@
-.DS_Store/*
-__pycache__/*
-./back_end/postgres-data/*
-./back_end/__pycache__/*
-postgres-data/*
-./front-end/node_modules/*
-./front_end/node_modules/*
+.DS_Store
+.__pycache__/*
