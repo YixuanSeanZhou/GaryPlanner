@@ -18,15 +18,38 @@ In order to process data, I used selenium and bs4. I will also list the link her
 - bs4: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 
-### Development
+## Tools
+### Docker
 If you do not have docker, go to https://www.docker.com/products/docker-desktop to download the docker desktop. (I have no idea for windows though...)
 
 Go through the installation process and make sure your desktop is up and running. 
+
+### Postman
+We will use postman to test out all the api routes that we will write, you can find it at https://www.postman.com/. It is a great tool that faciliate the whole process of submit request and recieve response. We need to fully test out our routes so that frontend people can use them. 
+
+## Developmenet
+Make sure your docker application is running,
 
 Now go to terminal, open this project directory, type `docker-compose up --build`. Then open a browser, go to `localhost:5000`, then you should be able to see our starting page. 
 
 If you made any changes, make sure you do `docker-compose down -v` to terminate the current app's running process, and type `docker-compose up --build` again to start a new testing process. 
 
-#### TODO: Figure out how to dockerize the database
+### What you can play around already!
+I have created a user model and user api. You can actually submit request through the api routes and see things happen in our website. What you can do is the following:
+
+Open up postman, send a **POST** request, set the url to be http://localhost:5000/api/users/get_users, in the navbar, go to body, click raw, in the dropdown, set the type of body to be `json` format. Now, copy this following piece of `json` code in it ```json{"name": "Gary"}```and click subimit. You can change the name and submit it again to create multiple users.
+
+After doing that, we can also see a list of users currently in our database. To do that, in postman, create a **GET** request to http://localhost:5000/api/users/get_users, level everything empty and submit the request, you should see something like
+```json
+{
+  "reason": "success", 
+  "result": [
+    {
+      "id": 1, 
+      "name": "Gary"
+    }
+  ]
+}
+```
 
 Let me know if you have any questions!!! (by Yixuan)
