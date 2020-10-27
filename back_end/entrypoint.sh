@@ -1,4 +1,16 @@
 #!/bin/sh
-set -e
-flask db upgrade
-gunicorn -c gunicorn.config.py wsgi:app
+
+if [ "$DATABASE" = "postgres" ]
+then
+    echo "Waiting for postgres..."
+
+    while ! nc -z $SQL_HOST $SQL_PORT; do
+      sleep 0.1
+    done
+
+    echo "PostgreSQL started"
+fi
+
+python setup.py create_db
+
+exec "$@"
