@@ -3,3 +3,5 @@ flask-login
 flask-api
 flask_cors
 flask_sqlalchemy
+psycopg2-binary
+flask-migrate
