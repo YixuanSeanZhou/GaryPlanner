@@ -10,23 +10,24 @@ It is highly recommended to complete (or read through and understand) the follow
 
 First of all, make sure you have the environment setup correctly. 
 
-If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/). You’ll need Node.js version 10.13 or later. To upgrade your Node.js, you can do `sudo n latest`
+If you *don’t have Node.js installed*, [install it from here](https://nodejs.org/en/). You’ll need Node.js version 10.13 or later. 
+If you have Node.js installed, you can check your Node.js version using `node -v`. If it is an *older version*, you can upgrade your Node.js using the command
+```bash
+sudo n latest
+```
 You’ll be using your own text editor and terminal app for this tutorial. (I highly recommend VSCode. It's just easy -- X)
 
-Second, install all the modules needed. Go to `/front-end/` and do:
 
+Second, install all the modules needed. Go to `/front-end/` and do:
 ```bash
 npm install
 ```
-
-This should install everything needed. (Let me try it first --X)
+This should install everything needed.
 
 Now, you can run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
