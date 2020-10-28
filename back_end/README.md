@@ -27,6 +27,11 @@ Go through the installation process and make sure your desktop is up and running
 ### Postman
 We will use postman to test out all the api routes that we will write, you can find it at https://www.postman.com/. It is a great tool that faciliate the whole process of submit request and recieve response. We need to fully test out our routes so that frontend people can use them. 
 
+We will use postman to test out all the api routes that we will write, you can find it at https://www.postman.com/. It is a great tool that faciliate the whole process of submit request and recieve response. We need to fully test out our routes so that frontend people can use them. 
+
+### Flake8
+We will use a linter for python code that we write. I strongly recommend using VScode. If you are using it, make sure you `pip install flask8` to enable the linter.
+
 ## Developmenet
 Make sure your docker application is running,
 
