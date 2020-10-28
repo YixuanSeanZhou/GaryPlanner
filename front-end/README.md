@@ -10,7 +10,7 @@ It is highly recommended to complete (or read through and understand) the follow
 
 First of all, make sure you have the environment setup correctly. 
 
-If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/). You’ll need Node.js version 10.13 or later.
+If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/). You’ll need Node.js version 10.13 or later. To upgrade your Node.js, you can do `sudo n latest`
 You’ll be using your own text editor and terminal app for this tutorial. (I highly recommend VSCode. It's just easy -- X)
 
 Second, install all the modules needed. Go to `/front-end/` and do:
@@ -32,7 +32,6 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 The entry point of the website is `index.js`. I wrote a simple page as a placeholder. You can try to understand it after you finish the NEXT tutorial. --X
-
 
 ## References
 
