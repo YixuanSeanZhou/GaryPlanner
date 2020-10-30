@@ -38,3 +38,5 @@ The entry point of the website is `index.js`. I wrote a simple page as a placeho
 
 Here are some of the links that you may find useful:
 - [Static vs. Server Rendering](https://frontarm.com/james-k-nelson/static-vs-server-rendering/)
+
+Yixuan is a pig.
