@@ -24,7 +24,7 @@ def create_user():
     if status:
         return jsonify({'reason': 'user created'}), 200
     else:
-        return jsonify({'reason': 'user existsed'}), 300
+        return jsonify({'reason': 'user existed'}), 300
 
 
 @user_api_bp.route('/login', methods=['POST'])
