@@ -39,8 +39,11 @@ Now go to terminal, open this project directory, type `docker-compose up --build
 
 If you made any changes, make sure you do `docker-compose down -v` to terminate the current app's running process, and type `docker-compose up --build` again to start a new testing process. 
 
+In the process of your development, it might be useful to have access to database and exam the data in it. To do this, open another terminal (right click on the terminal in vscode can do this), enter `docker-compose exec db psql --username=gary_planner --dbname=gary_planner_db`. Once you logged in as a db user, type `\c gary_planner_db` to connect to the db, and you can do general postgres operations in it. Here is a cheatsheet for postgres: https://www.postgresqltutorial.com/postgresql-cheat-sheet/.
+
+
 ### What you can play around already!
-I have created a user model and user api. You can actually submit request through the api routes and see things happen in our website. What you can do is the following:
+I have created a user model and user api. You can actually submit request  through the api routes and see things happen in our website. What you can do is the following:
 
 Open up postman, send a **POST** request, set the url to be http://localhost:5000/api/users/get_users, in the navbar, go to body, click raw, in the dropdown, set the type of body to be `json` format. Now, copy this following piece of `json` code in it ```json{"name": "Gary"}```and click subimit. You can change the name and submit it again to create multiple users.
 

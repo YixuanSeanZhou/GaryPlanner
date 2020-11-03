@@ -1,6 +1,6 @@
 from flask_cors import CORS
 from flask import Blueprint, request, jsonify
-from flask_login import login_required, login_user, logout_user
+from flask_login import login_required, login_user, logout_user, current_user
 
 from ..models.user import User
 
@@ -17,14 +17,25 @@ def create_user():
     Route to create a user
     @author: YixuanZ
     '''
-    name = request.json['name']
-    email = request.json['email']  # primary key
-    pwd = request.json['pwd']
-    status = User.create_user(name=name, email=email, pwd=pwd)
+    req_data = request.get_json()
+    user_name = req_data.get('user_name')
+    email = req_data.get('email')  # primary key
+    first_name = req_data.get('first_name')
+    last_name = req_data.get('last_name')
+    itgq = req_data.get('intended_grad_quarter')
+    college = req_data.get('college')  # frontend need check validity
+    # ; seperated list expected
+    major = req_data.get('major', 'undeclared')
+    minor = req_data.get('minor', 'undeclared')
+    pwd = req_data.get('pwd')
+    status = User.create_user(user_name=user_name, email=email, pwd=pwd,
+                              first_name=first_name, last_name=last_name,
+                              intended_grad_quarter=itgq,
+                              college=college, major=major, minor=minor)
     if status:
         return jsonify({'reason': 'user created'}), 200
     else:
-        return jsonify({'reason': 'user existsed'}), 300
+        return jsonify({'reason': 'user existed'}), 300
 
 
 @user_api_bp.route('/login', methods=['POST'])
@@ -34,9 +45,10 @@ def login():
     user object.\n
     @author npcompletenate
     '''
-    email = request.json.get('email', None)
-    pwd = request.json.get('pwd', '')
-    remember = True if request.json.get('remember', '') == 'true' else False
+    req_data = request.get_json()
+    email = req_data.get('email', None)
+    pwd = req_data.get('pwd', '')
+    remember = True if req_data.get('remember', '') == 'true' else False
 
     if User.check_password(email, pwd):
         user = User.get_user_by_email(email=email)
@@ -62,3 +74,28 @@ def logout():
 def get_users():
     users = User.get_users()
     return jsonify({'reason': 'success', 'result': users}), 200
+
+
+@user_api_bp.route('/update_profile', methods=['POST'])
+@login_required
+def update_profile():
+    req_data = request.get_json()
+    u_id = current_user.id
+    first_name = req_data.get('first_name', None)
+    last_name = req_data.get('last_name', None)
+    intended_grad_quarter = req_data.get('intended_grad_quarter', None)
+    college = req_data.get('college', None)
+    major = req_data.get('major', None)
+    minor = req_data.get('minor', None)
+    user_name = req_data.get('user_name', None)
+
+    status = User.update_profile(user_id=u_id, first_name=first_name,
+                                 last_name=last_name,
+                                 user_name=user_name,
+                                 intended_grad_quarter=intended_grad_quarter,
+                                 college=college, major=major, minor=minor)
+    ret = User.get_user_by_id(u_id).to_json()
+    if status:
+        return jsonify({'reason': 'success', 'result': ret}), 200
+    else:
+        return jsonify({'reason': 'failed', 'result': ret}), 300
