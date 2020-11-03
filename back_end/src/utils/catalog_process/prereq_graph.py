@@ -1,12 +1,13 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import pydot
-import preprocess as pp
+from .preprocess import _expand_lis
+
 
 def generate_prereq_graph(course_raw, save_addr=None):
     expe_graph = []
     for line in course_raw:
-        expe_graph.append((line['num'], pp._expand_lis(line['formatted_pre'])))
+        expe_graph.append((line['num'], _expand_lis(line['formatted_pre'])))
     G = nx.DiGraph()
 
     for p in expe_graph:

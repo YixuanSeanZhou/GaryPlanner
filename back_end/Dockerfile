@@ -10,6 +10,7 @@ ENV PYTHONUNBUFFERED 1
 
 # install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends netcat
+RUN apt-get install -y --no-install-recommends graphviz
 RUN pip install --upgrade pip
 COPY ./requirements.txt /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt

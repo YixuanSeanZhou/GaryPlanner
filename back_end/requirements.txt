@@ -10,5 +10,6 @@ pytz
 networkx
 pydot
 matplotlib
+graphviz
 nltk
 html2text
