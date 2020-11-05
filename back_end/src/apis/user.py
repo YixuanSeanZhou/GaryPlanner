@@ -49,13 +49,15 @@ def login():
     email = req_data.get('email', None)
     pwd = req_data.get('pwd', '')
     remember = True if req_data.get('remember', '') == 'true' else False
+    user = User.get_user_by_email(email=email)
 
+    if not user:
+        return jsonify({'reason': 'user not registered'}), 400
     if User.check_password(email, pwd):
-        user = User.get_user_by_email(email=email)
         login_user(user, remember=remember)
         return jsonify({'reason': 'logged in', 'result': user.to_json()}), 200
     else:
-        return jsonify({'reason': 'User/Password doesn\'t match'}), 400
+        return jsonify({'reason': 'email/password doesn\'t match'}), 400
 
 
 @user_api_bp.route('/logout', methods=['POST'])
