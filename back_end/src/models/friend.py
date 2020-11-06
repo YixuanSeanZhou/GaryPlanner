@@ -6,6 +6,9 @@ from ..setup import db
 
 
 class Friend(db.Model):
+    """
+    @author: YixuanZ
+    """
     __tablename__ = "Friends"
 
     id = db.Column(db.Integer, primary_key=True)
@@ -43,11 +46,15 @@ class Friend(db.Model):
                                       user2_id=user2_id).first()
 
     @staticmethod
-    def get_friend_by_sender(user1_id: int) -> List[Friend]:
+    def get_requests_by_sender(user1_id: int) -> List[Friend]:
         return Friend.query.filter_by(user1_id=user1_id).all()
+    
+    @staticmethod
+    def get_friend_for_user(user_id: int):
+        pass
 
     @staticmethod
-    def get_friend_by_receiver(user2_id: int) -> List[Friend]:
+    def get_recived_by_receiver(user2_id: int) -> List[Friend]:
         return Friend.query.filter_by(user2_id=user2_id).all()
 
     @staticmethod

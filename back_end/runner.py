@@ -5,6 +5,7 @@ import nltk
 nltk.download('wordnet')
 nltk.download('punkt')
 
+
 @cli.command("create_db")
 def create_db():
     db.drop_all()
@@ -13,7 +14,7 @@ def create_db():
     test()
 
 
-def test(): 
+def test():
     raw = get_info_from_catalog("https://www.ucsd.edu/catalog/courses/CSE.html")
     generate_prereq_graph(raw, 'cse.pdf')
 
