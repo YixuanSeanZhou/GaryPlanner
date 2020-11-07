@@ -7,7 +7,7 @@ import { Navbar, Container, Row, Col } from 'react-bootstrap'
 import { GaryNavbar } from '../components/commonUI'
 
 // Styles
-import styles from '../styles/devIndex.module.css'
+import styles from '../styles/Index.module.css'
 
 export default function Index() {
     return (
@@ -42,9 +42,17 @@ export default function Index() {
                     <li>
                         We are currently using three different ways to handle styles:
                         <ol>
-                            <li><b>Global CSS file</b>: the styles in styles/global.css is applied to the entire application.</li>
-                            <li><b>CSS module</b>: Examples can be found in index.js as well as start.js. Each of these pages have a corresponding .module.css file that is imported to the .js page file.</li>
-                            <li><b>React-bootstrap</b>: this is a great library that have a lot of existing components and layout presets. Documentation is listed below. </li>
+                            <li><
+                                b>Global CSS file</b>: the styles in styles/global.css is applied to the entire application.
+                            </li>
+                            <li>
+                                <b>CSS module</b>: Examples can be found in index.js as well as start.js. 
+                                Each of these pages have a corresponding .module.css file that is imported to the .js page file.
+                            </li>
+                            <li>
+                                <b>React-bootstrap</b>: this is a great library that have a lot of existing components and 
+                                layout presets. Documentation is listed below. 
+                            </li>
                         </ol>
                     </li>
                     <li>
