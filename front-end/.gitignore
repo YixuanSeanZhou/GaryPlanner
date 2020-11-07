@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#extension for vscode
+.prettierrc.json

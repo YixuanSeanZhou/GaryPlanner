@@ -1,0 +1,45 @@
+
+.footer{
+    background-color: #D1C4E9;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background-color: #A8D0DB ;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+.navbar {
+    background-color: #2B4570;
+}
+
+.nav-link {
+    font-size: large;
+}
+
+.bg-orange {
+    background-color: #FFCC5C;
+    color: #384668;
+}
+
+.bg-red {
+    background-color: #FF6F69;
+    color: #384668;
+}
+
+.bg-tiffany {
+    background-color: #88D8B0;
+    color: #384668;
+}
+
+.text-gray {
+    color: #384668;
+}

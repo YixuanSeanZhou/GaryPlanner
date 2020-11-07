@@ -1,5 +1,5 @@
 {
-  "name": "front-end",
+  "name": "gary-planner",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.5.5",
+    "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
+    "next": "10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "reactstrap": "^8.7.0"
   }
 }
