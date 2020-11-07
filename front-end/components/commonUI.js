@@ -11,7 +11,9 @@ export class GaryNavbar extends React.Component {
                     <img src="/logo/PCLogo-Color.svg" alt="Logo of gary planner" className="navbarLogo" />
                     Gary Planner
                 </Navbar.Brand>
-                {this.props.children}
+                <div className='navbarItem'>
+                    {this.props.children}
+                </div>
             </Navbar>
         )
     }

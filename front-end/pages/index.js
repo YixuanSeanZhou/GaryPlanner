@@ -18,11 +18,14 @@ export default function Index() {
 
             {/* Here is an example of using a custom components */}
             <GaryNavbar>
-
+                Developer Index
             </GaryNavbar>
 
             <Container className={styles.mainContainer}>
-                <p>Hi this is the developer index for Gary Planner. </p>    
+                <p>
+                    <b>Hi</b> this is the developer index for Gary Planner. <br/> 
+                    Feel free to use this page as an example for some of the technologies that we ar going to use.
+                </p>    
                 <h3>Links to pages</h3>                   
                 <ul>
                     <li>Please click <Link href='/start'><a>Link</a></Link> to see the example page created by Next.js.</li>

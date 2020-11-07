@@ -11,3 +11,7 @@ body {
   height: auto;
   margin-right: 15px;
 }
+
+.navbarItem {
+  color: white;
+}
