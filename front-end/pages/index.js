@@ -33,7 +33,6 @@ export default function Index() {
                 <br />
                 <h3>Links to pages</h3>                   
                 <ul>
-                    <li>Please click <Link href='/next_example'><a>Link</a></Link> to see the example page created by Next.js.</li>
                     <li><Link href='/login'><a>Login Page</a></Link></li>
                     <li><Link href='/home'><a>Home Page</a></Link></li>
                     <li><Link href='/fourYearPlan'><a>4-Year-Plan Page</a></Link></li>
