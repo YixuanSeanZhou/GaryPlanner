@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Head from 'next/head'
 
 // Components
-import { Navbar, Container, Row, Col } from 'react-bootstrap'
 import { GaryNavbar } from '../components/commonUI'
 
 // Styles
@@ -21,11 +20,13 @@ export default function Index() {
                 Developer Index
             </GaryNavbar>
 
-            <Container className={styles.mainContainer}>
+            <div className={styles.mainContainer}>
+                <h1>Developer Index Page</h1>
                 <p>
                     <b>Hi</b> this is the developer index for Gary Planner. <br/> 
                     Feel free to use this page as an example for some of the technologies that we ar going to use.
                 </p>    
+                <br />
                 <h3>Links to pages</h3>                   
                 <ul>
                     <li>Please click <Link href='/start'><a>Link</a></Link> to see the example page created by Next.js.</li>
@@ -77,7 +78,7 @@ export default function Index() {
                 </ul>
                 <footer className={styles.footer}>Maintained by X</footer>
 
-            </Container>
+            </div>
 
         </>
     )
