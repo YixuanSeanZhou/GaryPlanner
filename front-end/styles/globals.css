@@ -6,14 +6,14 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.navbar {
+  margin-bottom: 50px;
+}
+
 .navbarLogo {
   width: 20px;
   height: auto;
   margin-right: 15px;
-}
-
-.navbarItem {
-  color: white;
 }
 
 .link {
