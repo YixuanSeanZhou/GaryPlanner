@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 // Components
 import { GaryNavbar } from '../components/commonUI'
-import { Container, Button, Form, Navbar } from 'react-bootstrap'
+import { Button, Form, Navbar } from 'react-bootstrap'
 
 // Styles
 import styles from "../styles/Login.module.css"

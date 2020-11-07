@@ -51,8 +51,8 @@ export default function Index() {
                                 b>Global CSS file</b>: the styles in <code>styles/global.css</code> is applied to the entire application.
                             </li>
                             <li>
-                                <b>CSS module</b>: Examples can be found in <code>index.js</code> as well as start.js. 
-                                Each of these pages have a corresponding <code>.module.css</code> file that is imported to the .js page file.
+                                <b>CSS module</b>: Examples can be found in <code>index.js</code>. 
+                                Each of these pages have a corresponding <code>.module.css</code> file that is imported to the <code>.js</code> page file.
                             </li>
                             <li>
                                 <b>React-bootstrap</b>: this is a great library that have a lot of existing components and 
@@ -61,7 +61,7 @@ export default function Index() {
                         </ol>
                     </li>
                     <li>
-                        If a style would be used for the entire project (e.g. button styling), you may put it in global.css.
+                        If a style would be used for the entire project (e.g. button styling), you may put it in <code>global.css</code>.
                     </li>
                     <li>
                         If a style is page-specific, I would recommend you to put in inside a .module.css file and only import it to the specific page.
