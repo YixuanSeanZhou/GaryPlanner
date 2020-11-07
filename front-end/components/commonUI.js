@@ -7,7 +7,7 @@ export class GaryNavbar extends React.Component {
 
     render() {
         return (
-            <Navbar bg="dark" variant='dark' sticky="top">
+            <Navbar bg="dark" variant='dark' sticky="top" className="navbar">
                 <Link href='/' >
                     <Navbar.Brand className='link'>
                         <img src="/logo/PCLogo-Color.svg" alt="Logo of gary planner" className="navbarLogo" />
