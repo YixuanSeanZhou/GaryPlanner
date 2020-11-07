@@ -14,9 +14,7 @@ export class GaryNavbar extends React.Component {
                         Gary Planner
                     </Navbar.Brand>
                 </Link>
-                <Navbar.Text className='navbarItem'>
-                    {this.props.children}
-                </Navbar.Text>
+                {this.props.children}
             </Navbar>
         )
     }

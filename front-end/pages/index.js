@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 // Components
 import { GaryNavbar } from '../components/commonUI'
+import { Navbar } from 'react-bootstrap'
 
 // Styles
 import styles from '../styles/Index.module.css'
@@ -17,7 +18,9 @@ export default function Index() {
 
             {/* Here is an example of using a custom components */}
             <GaryNavbar>
-                Developer Index
+                <Navbar.Text>
+                    Developer Index
+                </Navbar.Text>
             </GaryNavbar>
 
             <div className={styles.mainContainer}>
@@ -29,10 +32,11 @@ export default function Index() {
                 <br />
                 <h3>Links to pages</h3>                   
                 <ul>
-                    <li>Please click <Link href='/start'><a>Link</a></Link> to see the example page created by Next.js.</li>
+                    <li>Please click <Link href='/next_example'><a>Link</a></Link> to see the example page created by Next.js.</li>
                     <li>Link to <Link href='/login'><a>Login Page</a></Link></li>
                     <li>Link to <Link href='/home'><a>Home Page</a></Link></li>
-                    <li>Link to <Link href='/plan'><a>4-Year-Plan Page</a></Link></li>
+                    <li>Link to <Link href='/fourYearPlan'><a>4-Year-Plan Page</a></Link></li>
+                    <li>Link to <Link href='/userProfile'><a>User Profile Page</a></Link></li>
                 </ul>
                 <p>Add the link to more pages here...</p>
 

@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 // Components
 import { GaryNavbar } from '../components/commonUI'
-import { Container, Button, Form } from 'react-bootstrap'
+import { Container, Button, Form, Navbar } from 'react-bootstrap'
 
 // Styles
 import styles from "../styles/Login.module.css"
@@ -16,7 +16,9 @@ export default function Login() {
             </Head>
 
             <GaryNavbar>
-                Login
+                <Navbar.Text>
+                    Developer Index
+                </Navbar.Text>
             </GaryNavbar>
 
             <div className={styles.main}>

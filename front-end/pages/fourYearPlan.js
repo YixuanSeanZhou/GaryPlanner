@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import PlanCalendar from '../components/planCalendar'
-import {GaryNavbar} from '../components/commonUI'
+// Components
+import {GaryNavbar} from '../components/commonUI';
+import { Navbar } from 'react-bootstrap';
 
 export default function Plan() {
     return (
@@ -11,7 +13,9 @@ export default function Plan() {
             </Head>
 
             <GaryNavbar>
-                4 Year Plan
+                <Navbar.Text>
+                   Four Year Plan 
+                </Navbar.Text>
             </GaryNavbar>
 
             <div id="planCalendar">
