@@ -17,7 +17,7 @@ export default function Login() {
 
             <GaryNavbar>
                 <Navbar.Text>
-                    Developer Index
+                   Login 
                 </Navbar.Text>
             </GaryNavbar>
 
