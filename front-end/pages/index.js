@@ -1,23 +1,25 @@
+// React and Next.js
 import Link from 'next/link'
 import Head from 'next/head'
+
+// Components
 import { Navbar, Container, Row, Col } from 'react-bootstrap'
+import { GaryNavbar } from '../components/commonUI'
+
+// Styles
 import styles from '../styles/devIndex.module.css'
 
-export default function Hello() {
+export default function Index() {
     return (
         <>
             <Head>
                 <title>Developer Index</title>
             </Head>
 
-            <Navbar bg="dark" variant='dark' fixed="top">
-                <Navbar.Brand >
-                    <img src="/logo/PCLogo-Color.svg" alt="Logo of gary planner" className="navbarLogo" />
-                    Gary Planner: Developer Index
-                </Navbar.Brand>
-            </Navbar>
+            {/* Here is an example of using a custom components */}
+            <GaryNavbar>
 
-            
+            </GaryNavbar>
 
             <Container className={styles.mainContainer}>
                 <p>Hi this is the developer index for Gary Planner. </p>    
@@ -28,6 +30,7 @@ export default function Hello() {
                     <li>Link to <Link href='/home'><a>Home Page</a></Link></li>
                     <li>Link to <Link href='/plan'><a>4-Year-Plan Page</a></Link></li>
                 </ul>
+                <p>Add the link to more pages here...</p>
 
                 <br />
                 <h3>Notes</h3>
@@ -64,8 +67,6 @@ export default function Hello() {
                 <footer className={styles.footer}>Maintained by X</footer>
 
             </Container>
-
-
 
         </>
     )

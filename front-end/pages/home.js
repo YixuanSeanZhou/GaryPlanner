@@ -1,14 +1,17 @@
-import Link from 'next/link'
+import React from 'react'
 import Head from 'next/head'
 
-export default function Home() {
-    return (
-        <>
-            <Head>
-                <title>Home</title>
-            </Head>
+export default class Home extends React.Component {
 
-            <p>This is just an empty page right now</p>
-        </>
-    )
+    render() {
+        return (
+            <>
+                <Head>
+                    <title>Home</title>
+                </Head>
+    
+                <p>This is just an empty page right now</p>
+            </>
+        )
+    }
 }
