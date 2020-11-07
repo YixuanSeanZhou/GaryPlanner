@@ -1,23 +1,19 @@
 from flask_cors import CORS
 from flask import Blueprint, request, jsonify
-from flask_login import login_required, login_user, logout_user, current_user
 
-from ..models.user import User
+from ..models.major import Major
 
-user_api_bp = Blueprint('user_api', __name__)
-CORS(user_api_bp, supports_credentials=True)
-
-# db.create_all()
-# db.session.commit()
+major_api_bp = Blueprint('major_api', __name__)
+CORS(major_api_bp, supports_credentials=True)
 
 
-@user_api_bp.route('/create_major', methods=['POST'])
+@major_api_bp.route('/create_major', methods=['POST'])
 def create_major():
     '''
     Route to create a major
     @author: BensonV
     '''
-    #post request needs a major_code, title, and degree_type
+    # post request needs a major_code, title, and degree_type
     req_data = request.get_json()
     major_code = req_data.get('major_code')
     title = req_data.get('title')
@@ -32,15 +28,15 @@ def create_major():
         return jsonify({'reason': 'major existed'}), 300
 
 
-@user_api_bp.route('/get_majors', methods=['GET'])
+@major_api_bp.route('/get_majors', methods=['GET'])
 def get_majors():
     majors = Major.get_majors()
     return jsonify({'reason': 'success', 'result': majors}), 200
 
 
-@user_api_bp.route('/get_major', methods=['GET'])
+@major_api_bp.route('/get_major', methods=['GET'])
 def get_major():
-    #check for query string keys 'id' and/or 'major_code'
+    # check for query string keys 'id' and/or 'major_code'
     if request.args:
         arguments = request.args
         id = arguments.get('id', None)
@@ -55,7 +51,7 @@ def get_major():
     return jsonify({'reason': 'success', 'result': major}), 200
 
 
-@user_api_bp.route('/update_major', methods=['POST'])
+@major_api_bp.route('/update_major', methods=['POST'])
 def update_major():
     req_data = request.get_json()
     # post request needs id, major_code, title, and degree_type
@@ -63,11 +59,9 @@ def update_major():
     major_code = req_data.get('major_code', None)
     title = req_data.get('title', None)
     degree_type = req_data.get('degree_type', None)
-
-
     status = Major.update_major(id=m_id, major_code=major_code,
-                                 title=title,
-                                 degree_type=degree_type)
+                                title=title,
+                                degree_type=degree_type)
 
     ret = Major.get_major(m_id).to_json()
     if status:

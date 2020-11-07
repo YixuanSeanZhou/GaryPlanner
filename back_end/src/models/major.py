@@ -1,11 +1,8 @@
 from __future__ import annotations
 
-from typing import List
+from Typing import List, Dict
 
 from ..setup import db
-
-from flask_login import UserMixin
-
 
 
 class Major(db.Model):
@@ -42,7 +39,8 @@ class Major(db.Model):
 
     @staticmethod
     def create_major(major_code: str, title: str, degree_type: str) -> bool:
-        major = Major(major_code=major_code, title=title, degree_type=degree_type)
+        major = Major(major_code=major_code, title=title, 
+                      degree_type=degree_type)
         db.session.add(major)
         major.save()
         return True
@@ -50,7 +48,6 @@ class Major(db.Model):
     @staticmethod
     def get_majors() -> List[Major]:
         majors = Major.query.all()
-        majors = list(map(lambda x: x.to_json(), majors))
         return majors
 
     @staticmethod
@@ -63,10 +60,9 @@ class Major(db.Model):
 
     @staticmethod
     def update_major(id: int, major_code: str = None,
-                       title: str = None,
-                       degree_type: str = None) -> bool:
+                     title: str = None,
+                     degree_type: str = None) -> bool:
 
         major = Major.get_major(major_id=id)
         return major.update_attr(major_code=major_code, title=title,
-                               degree_type=degree_type)
-
+                                 degree_type=degree_type)
