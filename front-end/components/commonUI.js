@@ -9,7 +9,7 @@ export class GaryNavbar extends React.Component {
         return (
             <Navbar bg="dark" variant='dark' fixed="top">
                 <Link href='/' >
-                    <Navbar.Brand >
+                    <Navbar.Brand className='link'>
                         <img src="/logo/PCLogo-Color.svg" alt="Logo of gary planner" className="navbarLogo" />
                         Gary Planner
                     </Navbar.Brand>

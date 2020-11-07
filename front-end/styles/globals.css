@@ -15,3 +15,7 @@ body {
 .navbarItem {
   color: white;
 }
+
+.link {
+  cursor: pointer;
+}
