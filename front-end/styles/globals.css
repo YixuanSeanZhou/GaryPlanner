@@ -18,3 +18,12 @@ body {
 .link {
   cursor: pointer;
 }
+
+.lightBG{
+  background-color: #ffeead;
+}
+
+#planCalendar {
+  width: 100%;
+  height: 100%;
+}
