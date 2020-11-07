@@ -1,5 +1,11 @@
+// React and Next
 import React from 'react'
 import Head from 'next/head'
+
+// Components
+import { GaryNavbar } from '../components/commonUI';
+import { Nabvar, Navbar } from 'react-bootstrap';
+
 
 export default class Home extends React.Component {
 
@@ -9,8 +15,16 @@ export default class Home extends React.Component {
                 <Head>
                     <title>Home</title>
                 </Head>
-    
-                <p>This is just an empty page right now</p>
+
+                <GaryNavbar>
+                    <Navbar.Text>
+                        Home
+                    </Navbar.Text>
+                </GaryNavbar>
+
+                <div>
+                    Empty Page right now.
+                </div>
             </>
         )
     }

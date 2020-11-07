@@ -27,16 +27,17 @@ export default function Index() {
                 <h1>Developer Index Page</h1>
                 <p>
                     <b>Hi</b> this is the developer index for Gary Planner. <br/> 
-                    Feel free to use this page as an example for some of the technologies that we ar going to use.
+                    Feel free to use this page as an example for some of the technologies that we are going to use. <br />
+                    You can found this page at <code>/pages/index.js</code>.
                 </p>    
                 <br />
                 <h3>Links to pages</h3>                   
                 <ul>
                     <li>Please click <Link href='/next_example'><a>Link</a></Link> to see the example page created by Next.js.</li>
-                    <li>Link to <Link href='/login'><a>Login Page</a></Link></li>
-                    <li>Link to <Link href='/home'><a>Home Page</a></Link></li>
-                    <li>Link to <Link href='/fourYearPlan'><a>4-Year-Plan Page</a></Link></li>
-                    <li>Link to <Link href='/userProfile'><a>User Profile Page</a></Link></li>
+                    <li><Link href='/login'><a>Login Page</a></Link></li>
+                    <li><Link href='/home'><a>Home Page</a></Link></li>
+                    <li><Link href='/fourYearPlan'><a>4-Year-Plan Page</a></Link></li>
+                    <li><Link href='/userProfile'><a>User Profile Page</a></Link></li>
                 </ul>
                 <p>Add the link to more pages here...</p>
 
@@ -48,11 +49,11 @@ export default function Index() {
                         We are currently using three different ways to handle styles:
                         <ol>
                             <li><
-                                b>Global CSS file</b>: the styles in styles/global.css is applied to the entire application.
+                                b>Global CSS file</b>: the styles in <code>styles/global.css</code> is applied to the entire application.
                             </li>
                             <li>
-                                <b>CSS module</b>: Examples can be found in index.js as well as start.js. 
-                                Each of these pages have a corresponding .module.css file that is imported to the .js page file.
+                                <b>CSS module</b>: Examples can be found in <code>index.js</code> as well as start.js. 
+                                Each of these pages have a corresponding <code>.module.css</code> file that is imported to the .js page file.
                             </li>
                             <li>
                                 <b>React-bootstrap</b>: this is a great library that have a lot of existing components and 
