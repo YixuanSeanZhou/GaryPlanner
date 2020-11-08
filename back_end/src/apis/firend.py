@@ -32,4 +32,4 @@ def accept_friend():
     else:
         return jsonify({'reason': 'request is duplicated'}), 400
 
-@friend_api_bp('/get_all_friend', methods=['POST'])
+# @friend_api_bp('/get_all_friend', methods=['POST'])
