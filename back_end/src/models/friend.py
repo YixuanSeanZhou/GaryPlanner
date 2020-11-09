@@ -45,7 +45,7 @@ class Friend(db.Model):
                                                     user2_id=user2_id):
             if Friend.get_freind_by_sender_and_receiver(user1_id=user2_id,
                                                         user2_id=user1_id):
-                return True              
+                return True
         return False
 
     @staticmethod
