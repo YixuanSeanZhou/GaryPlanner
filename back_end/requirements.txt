@@ -13,3 +13,4 @@ matplotlib
 graphviz
 nltk
 html2text
+selenium
