@@ -76,6 +76,14 @@ def get_users():
     return jsonify({'reason': 'success', 'result': users}), 200
 
 
+@user_api_bp.route('/get_user_profile', methods=['GET'])
+@login_required
+def get_user_profile():
+    u_id = current_user.id
+    user = User.get_user_by_id(user_id=u_id)
+    return jsonify({'reason': 'success', 'result': user.to_json()}), 200
+
+
 @user_api_bp.route('/update_profile', methods=['POST'])
 @login_required
 def update_profile():
