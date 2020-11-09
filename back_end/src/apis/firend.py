@@ -8,6 +8,7 @@ from ..models.user import User
 friend_api_bp = Blueprint('friend_api', __name__)
 CORS(friend_api_bp, supports_credentials=True)
 
+# TODO: Updates to check if the requester exist
 
 @friend_api_bp.route('/request_friend', methods=['POST'])
 @login_required
@@ -21,6 +22,7 @@ def request_friend():
     else:
         return jsonify({'reason': 'request is duplicated'}), 400
 
+# TODO: check if the request is sent by anyone
 
 @friend_api_bp.route('/accept_friend', methods=['POST'])
 @login_required
@@ -49,7 +51,7 @@ def remove_friend():
     req_data = request.get_json()
     f_id = req_data.get('friend_id')
     Friend.remove_friend(user1_id=current_user.id, user2_id=f_id)
-    return jsonify({'reason': 'request sent success'}), 200
+    return jsonify({'reason': 'You are no longer friends'}), 200
 
 
 @friend_api_bp('/is_friend_with', methods=['POST'])
