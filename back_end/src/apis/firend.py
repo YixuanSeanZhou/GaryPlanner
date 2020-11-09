@@ -37,7 +37,7 @@ def accept_friend():
         return jsonify({'reason': 'request is duplicated'}), 400
 
 
-@friend_api_bp('/get_friends_for_user', methods=['POST'])
+@friend_api_bp.route('/get_friends_for_user', methods=['POST'])
 @login_required
 def get_friends_for_user():
     f = Friend.get_friends_for_user(user_id=current_user.id)
@@ -45,7 +45,7 @@ def get_friends_for_user():
     return jsonify({'reason': 'request sent success', 'result': f}), 200
 
 
-@friend_api_bp('/remove_friend', methods=['POST'])
+@friend_api_bp.route('/remove_friend', methods=['POST'])
 @login_required
 def remove_friend():
     req_data = request.get_json()
@@ -54,7 +54,7 @@ def remove_friend():
     return jsonify({'reason': 'You are no longer friends'}), 200
 
 
-@friend_api_bp('/is_friend_with', methods=['POST'])
+@friend_api_bp.route('/is_friend_with', methods=['POST'])
 @login_required
 def is_friend_with():
     req_data = request.get_json()
