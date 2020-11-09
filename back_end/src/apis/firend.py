@@ -50,3 +50,12 @@ def remove_friend():
     f_id = req_data.get('friend_id')
     Friend.remove_friend(user1_id=current_user.id, user2_id=f_id)
     return jsonify({'reason': 'request sent success'}), 200
+
+
+@friend_api_bp('/is_friend_with', methods=['POST'])
+@login_required
+def is_friend_with():
+    req_data = request.get_json()
+    f_id = req_data.get('friend_id')
+    ret = Friend.is_friend(user1_id=current_user.id, user2_id=f_id)
+    return jsonify({'reason': 'request sent success', 'result': ret}), 200

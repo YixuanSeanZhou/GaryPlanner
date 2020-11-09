@@ -40,8 +40,17 @@ class Friend(db.Model):
         return f
 
     @staticmethod
-    def get_freind_by_sender_and_receiver(user1_id=user1_id,
-                                          user2_id=user2_id) -> Friend:
+    def is_friend(user1_id: int, user2_id: int) -> bool:
+        if Friend.get_freind_by_sender_and_receiver(user1_id=user1_id,
+                                                    user2_id=user2_id):
+            if Friend.get_freind_by_sender_and_receiver(user1_id=user2_id,
+                                                        user2_id=user1_id):
+                return True                  
+        return False
+
+    @staticmethod
+    def get_freind_by_sender_and_receiver(user1_id: int,
+                                          user2_id: int) -> Friend:
         return Friend.query.filter_by(user1_id=user1_id,
                                       user2_id=user2_id).first()
 
