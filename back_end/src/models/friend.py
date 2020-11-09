@@ -48,10 +48,15 @@ class Friend(db.Model):
     @staticmethod
     def get_requests_by_sender(user1_id: int) -> List[Friend]:
         return Friend.query.filter_by(user1_id=user1_id).all()
-    
+
     @staticmethod
-    def get_friend_for_user(user_id: int):
-        pass
+    def get_friends_for_user(user_id: int) -> List[Friend]:
+        f_of_user = Friend.query.filter_by(user1_id=user_id).all()
+        for f in f_of_user:
+            if not Friend.query.filter_by(user1_id=f.user2_id,
+                                          user2_id=f.user1_id).frist():
+                f_of_user.remove(f)
+        return f_of_user
 
     @staticmethod
     def get_recived_by_receiver(user2_id: int) -> List[Friend]:
