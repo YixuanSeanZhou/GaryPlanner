@@ -1,7 +1,8 @@
 #PR: 
-Related Issues: Tag the issue here! Use the #
+Related Issues: Tag your issue on the right panel of github page after you submit your PR
 Author <@ yourself here>
-Reviewers: You can do multiple reviewers <@ them here>
+Reviewers: Request reviewer on the right panel of the current page
+Lable: Set lable to backend on the right panel of the current page
 
 Description: Describe what your PR does
 
