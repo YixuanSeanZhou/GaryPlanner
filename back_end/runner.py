@@ -1,6 +1,6 @@
 from src.setup import cli, db, app
-# from src.utils.catalog_process.preprocess import get_info_from_catalog
-# from src.utils.catalog_process.prereq_graph import generate_prereq_graph
+from src.utils.catalog_process.preprocess import get_info_from_catalog
+from src.utils.catalog_process.prereq_graph import generate_prereq_graph
 import nltk
 nltk.download('wordnet')
 nltk.download('punkt')
@@ -37,7 +37,7 @@ def create_db():
     # db_DropEverything(db)
     db.create_all()
     db.session.commit()
-    # test()
+    test()
     chrome_options = set_chrome_options()
     driver = webdriver.Chrome(options=chrome_options)
     driver.maximize_window()
