@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import argparse
+import json
 
 degree_audit_addr = "https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true"
 
@@ -42,6 +43,7 @@ def get_degree_audit(user_name, user_pwd):
     btn = driver.find_element_by_css_selector('button[type=submit]')
     current_url = driver.current_url
     btn.click()
+    print("Check your phone for Duo")
     wait(driver, 60).until(EC.url_changes(current_url))
 
     div_all = driver.find_element_by_id('auditRequirements')
@@ -68,7 +70,7 @@ def get_completed_courses(ret):
                 credit = float(course_entry[-2])
                 grade = course_entry[-1]
                 if course_name not in complete:
-                    complete[course_name] = (course_name, credit, grade)
+                    complete[course_name] = credit
     return complete
 
 
@@ -99,7 +101,8 @@ def get_needed_courses(ret):
                         for i in range(it+1, len(line)):
                             d['COURSE'].append(line[i])
                     it += 1
-                need.append(d)
+                if 'CATE' in d:
+                    need.append(d)
     
     return need
 
@@ -111,16 +114,18 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     det = get_degree_audit(args.user_name, args.user_pwd)
-    print("Check your phone for Duo")
     complete = get_completed_courses(det)
     need = get_needed_courses(det)
 
     print("Your completed Courses:")
     for k in complete:
-        print(complete[k][0], complete[k][1], complete[k][2])
+        print(k, complete[k])
     print()
 
     print("Your needed Courses:")
     for k in need:
         print(k)
         print()
+
+    with open("degree_audit.json", "w", encoding='utf-8') as outfile:
+        json.dump([complete]+need, outfile, indent=1) 
