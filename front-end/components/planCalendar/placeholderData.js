@@ -16,7 +16,7 @@ const placeholderData = {
         'course-6': { id: 'course-6', content: 'CSE 12'},
         'course-7': { id: 'course-7', content: 'CSE 15L'},
         'course-8': { id: 'course-8', content: 'CSE 30'},
-        'course-9': { id: 'course-8', content: 'CSE 100'}
+        'course-9': { id: 'course-9', content: 'CSE 100'}
     },
     // The columns of our calendar
     quarters: {
@@ -82,8 +82,32 @@ const placeholderData = {
         },
         
     },
+
     // Used to order our quarters (also used to reorder, but we dont use that)
-    quarterOrder: ['FA18','WI18','SP19','FA19','WI19','SP20','FA20','WI20','SP21','FA21','WI21','SP22']
+    quarterOrder: ['FA18','WI18','SP19','FA19','WI19','SP20','FA20','WI20','SP21','FA21','WI21','SP22'], // Depreciated
+    yearOrder: ['18-19','19-20','20-21','21-22'],
+    years: {
+        '18-19': {
+            id: '18-19',
+            title: '18-19',
+            quarterIds: ['FA18','WI18','SP19']
+        },
+        '19-20': {
+            id: '19-20',
+            title: '19-20',
+            quarterIds: ['FA19','WI19','SP20']
+        },
+        '20-21': {
+            id: '20-21',
+            title: '20-21',
+            quarterIds: ['FA20','WI20','SP21']
+        },
+        '21-22': {
+            id: '21-22',
+            title: '21-22',
+            quarterIds: ['FA21','WI21','SP22']
+        }
+    }
 };
 
 export default placeholderData;

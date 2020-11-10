@@ -1,6 +1,9 @@
 import React from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 
+// Styles
+import styles from '../../styles/FourYearPlan.module.css'
+
 export default class Course extends React.Component{
     render() {
         return (
@@ -8,10 +11,16 @@ export default class Course extends React.Component{
                 {provided => (
                     <div 
                         ref={provided.innerRef}
-                        {...provided.draggableProps} 
+                        {...provided.draggableProps}
+                        className={styles.courseContainer} 
                     >
                         {this.props.course.content}
-                        <p{...provided.dragHandleProps}>(drag here)</p>
+                        <p
+                            {...provided.dragHandleProps}
+                            className={styles.dragHandle}
+                        >
+                            (drag here)
+                        </p>
                     </div>
                 )}
             </Draggable>

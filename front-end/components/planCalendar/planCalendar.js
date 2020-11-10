@@ -3,6 +3,9 @@ import { DragDropContext } from 'react-beautiful-dnd';
 import placeholderData from './placeholderData';
 import Quarter from './quarter';
 
+// Styles
+import styles from '../../styles/FourYearPlan.module.css'
+
 
 export default class PlanCalendar extends React.Component {
     state = placeholderData;
@@ -81,14 +84,23 @@ export default class PlanCalendar extends React.Component {
     render() {
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
-                <div>
-                    {this.state.quarterOrder.map((quarterId) => {
-                        const quarter = this.state.quarters[quarterId];
-                        const courses = quarter.courseIds.map(courseId => this.state.courses[courseId]);
+                {this.state.yearOrder.map((yearId) => {
+                    const year = this.state.years[yearId];
+                    return (
+                        <div className={styles.yearContainer}>
+                            <h2>{year.title}</h2>
+                            <div className={styles.multQuarterContainer}>
+                                {year.quarterIds.map((quarterId) => {
+                                    const quarter = this.state.quarters[quarterId];
+                                    const courses = quarter.courseIds.map(courseId => this.state.courses[courseId]);
 
-                        return <Quarter key ={quarter.id} quarter={quarter} courses={courses} />;
-                    })}
-                </div>
+                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} />;
+                                })}
+                            </div>
+                        </div>
+                    )
+                })}
+                
             </DragDropContext>
         );
     }
