@@ -24,10 +24,18 @@ class Prerequisite(db.Model):
         return ret
 
     def update_attr(self, class_id: int, required_classes: str) -> bool:
+        '''
+        update the info
+        input   class_id(int), required_class(str, i.e. "CSE30, CSE100")
+        output  True
+
+        @author: Jiazheng Liu
+        '''
         if class_id:
             self.class_id = class_id
         if required_classes:
             self.required_classes = required_classes
+        self.save()
         return True
 
     def save(self):
@@ -35,6 +43,14 @@ class Prerequisite(db.Model):
 
     @staticmethod
     def create_prereq(class_id: int, required_classes: str = None) -> bool:
+        '''
+        create prereq
+        input   class_id(int), required_class(str, i.e. "CSE30, CSE100")
+        output  True if class successfully created
+                False if class existed already
+
+        @author: Jiazheng Liu
+        '''
         # This is a pre done thing before the app goes public
         if Prerequisite.get_prereq_by_class_id(class_id=class_id):
             return False    # class with prereq exists
@@ -45,16 +61,41 @@ class Prerequisite(db.Model):
 
     @staticmethod
     def get_prereqs() -> List[Prerequisite]:
+        '''
+        get all prereq
+        input   None
+        output  prereqs in JSON
+
+        @author: Jiazheng Liu
+        '''
         get_prereqs = Prerequisite.query.all()
+        # FIXME: to_json in model or in api? Im trying to be consistent
         get_prereqs = list(map(lambda x: x.to_json(), get_prereqs))
         return get_prereqs
 
     @staticmethod
     def get_prereq_by_class_id(class_id: int) -> User:
+        '''
+        get prereq for a class
+        input   class_id(int)
+        output  prereq of that class
+
+        @author: Jiazheng Liu
+        '''
         return Prerequisite.query.filter_by(class_id=class_id).first()
 
     @staticmethod
     def update_prereq(class_id: int, required_classes: str = None) -> bool:
+        '''
+        update prereq for a class
+        input   class_id(int), required_class(str, i.e. "CSE30, CSE100")
+        output  True if class updated successfully,
+                False if class does not exist
+
+        @author: Jiazheng Liu
+        '''
         # TODO: Maybe we want to use **kwargs, but maybe not...
         clss = Prerequisite.get_prereq_by_class_id(class_id=class_id)
-        return clss.update_attr(class_id=class_id, required_classes=required_classes)
+        if clss:
+            return clss.update_attr(class_id=class_id, required_classes=required_classes)
+        return False
