@@ -4,19 +4,17 @@ from typing import List
 
 from ..setup import db
 
-from flask_login import UserMixin
 
 
-
-class Prerequisite(db.Model, UserMixin):
+class Prerequisite(db.Model):
     __tablename__ = "Prerequisites"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_id = db.Column(db.Integer,  db.ForeignKey('AllClasses.id'), unique = True, nullable=False)
+    class_id = db.Column(db.Integer, unique = True, nullable=False) #db.ForeignKey('AllClasses.id'),
     required_classes = db.Column(db.String(255), nullable=False, default='None') # Nullable or not
 
     def __init__(self, **kwargs):
-        super(User, self).__init__(**kwargs)
+        super(Prerequisite, self).__init__(**kwargs)
 
     def to_json(self):
         ret = {}
@@ -38,7 +36,7 @@ class Prerequisite(db.Model, UserMixin):
     @staticmethod
     def create_prereq(class_id: int, required_classes: str = None) -> bool:
         # This is a pre done thing before the app goes public
-        if User.get_prereq_by_class_id(class_id=class_id):
+        if Prerequisite.get_prereq_by_class_id(class_id=class_id):
             return False    # class with prereq exists
         prereq = Prerequisite(class_id=class_id, required_classes = required_classes)
         db.session.add(prereq)

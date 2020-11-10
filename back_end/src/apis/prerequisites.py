@@ -27,10 +27,10 @@ def create_class_with_prereq():
 
 
 
-@prereq_api_bp.route('/get_users', methods=['GET'])
-def get_users():
-    users = User.get_users()
-    return jsonify({'reason': 'success', 'result': users}), 200
+@prereq_api_bp.route('/get_classes_with_prereq', methods=['GET'])
+def get_classes_with_prereq():
+    clss = Prerequisite.get_prereqs()
+    return jsonify({'reason': 'success', 'result': clss}), 200
 
 
 @prereq_api_bp.route('/update_class_with_prereq', methods=['POST'])
