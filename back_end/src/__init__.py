@@ -8,8 +8,10 @@ from .models.user import User
 # DO NOT EDIT ABOVE THE LINE
 
 from .apis.user import user_api_bp as uapi
+from .apis.prerequisites import prereq_api_bp as uprereq
 
 app.register_blueprint(uapi, url_prefix="/api/users")
+app.register_blueprint(uprereq, url_prefix="/api/prerequisites")
 
 
 @app.route("/")
