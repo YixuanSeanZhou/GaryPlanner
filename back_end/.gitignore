@@ -2,3 +2,7 @@ __pycache__/*
 .DS_Store
 postgres-data/*
 src/__pycache__/*
+*.ipynb
+*.pdf
+*.json
+.devcontainer/*
