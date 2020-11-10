@@ -59,6 +59,7 @@ class User(db.Model, UserMixin):
             self.major = major
         if minor:
             self.minor = minor
+        self.save()
         return True
 
     def save(self):
