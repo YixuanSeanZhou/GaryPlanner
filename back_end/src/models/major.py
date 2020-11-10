@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from Typing import List, Dict
+from typing import List
 
 from ..setup import db
 
@@ -10,8 +10,8 @@ class Major(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     major_code = db.Column(db.String(255), unique=True, nullable=False)
-    title = db.Column(db.String(255), unique=True, nullable=False)
-    degree_type = db.Column(db.String(255), unique=True, nullable=False)
+    title = db.Column(db.String(255), nullable=False)
+    degree_type = db.Column(db.String(255), nullable=False)
 
     def __init__(self, **kwargs):
         super(Major, self).__init__(**kwargs)
@@ -32,6 +32,7 @@ class Major(db.Model):
             self.title = title
         if degree_type:
             self.degree_type = degree_type
+        self.save()
         return True
 
     def save(self):
@@ -39,6 +40,9 @@ class Major(db.Model):
 
     @staticmethod
     def create_major(major_code: str, title: str, degree_type: str) -> bool:
+        if Major.get_major_by_code(major_code=major_code):
+            return False    # major exists
+
         major = Major(major_code=major_code, title=title, 
                       degree_type=degree_type)
         db.session.add(major)
@@ -48,15 +52,29 @@ class Major(db.Model):
     @staticmethod
     def get_majors() -> List[Major]:
         majors = Major.query.all()
-        return majors
+        if majors:
+            return majors
+        else:
+            # there are no majors in database
+            return None
 
     @staticmethod
     def get_major(major_id: int) -> Major:
-        return Major.query.filter_by(id=major_id).first()
+        major = Major.query.filter_by(id=major_id).first()
+        if major:
+            return major
+        else:
+            # there is no major matching the given id
+            return None
 
     @staticmethod
     def get_major_by_code(major_code: str) -> Major:
-        return Major.query.filter_by(major_code=major_code).first()
+        major = Major.query.filter_by(major_code=major_code).first()
+        if major:
+            return major.to_json()
+        else:
+            # there is no major matching the given code
+            return None
 
     @staticmethod
     def update_major(id: int, major_code: str = None,

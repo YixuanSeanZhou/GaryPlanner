@@ -31,6 +31,7 @@ def create_major():
 @major_api_bp.route('/get_majors', methods=['GET'])
 def get_majors():
     majors = Major.get_majors()
+    majors = list(map(lambda x: x.to_json(), majors))
     return jsonify({'reason': 'success', 'result': majors}), 200
 
 
@@ -48,14 +49,29 @@ def get_major():
         elif major_code:
             major = Major.get_major_by_code(major_code)
 
-    return jsonify({'reason': 'success', 'result': major}), 200
+        
+        if major:
+            major = major.to_json()
+            return jsonify({'reason': 'success', 'result': major}), 200
+        else:
+            # no major matching criteria found
+            return jsonify({'reason': 'success', 'result': {}}), 200
+
+    else:
+        return jsonify({'reason': 'missing args'}), 300
+
+    
 
 
 @major_api_bp.route('/update_major', methods=['POST'])
 def update_major():
     req_data = request.get_json()
     # post request needs id, major_code, title, and degree_type
-    m_id = req_data.get('id', None)
+    m_id = req_data.get('id')
+
+    if not m_id:
+        return jsonify({'reason': 'missing major id'}), 300
+
     major_code = req_data.get('major_code', None)
     title = req_data.get('title', None)
     degree_type = req_data.get('degree_type', None)
