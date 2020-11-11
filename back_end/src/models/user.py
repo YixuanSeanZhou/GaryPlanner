@@ -60,7 +60,7 @@ class User(db.Model, UserMixin):
         if minor:
             self.minor = minor
         self.save()
-        return True
+        return True, self
 
     def save(self):
         db.session.commit()
@@ -85,7 +85,6 @@ class User(db.Model, UserMixin):
     @staticmethod
     def get_users() -> List[User]:
         users = User.query.all()
-        users = list(map(lambda x: x.to_json(), users))
         return users
 
     @staticmethod
@@ -110,7 +109,7 @@ class User(db.Model, UserMixin):
                        user_name: str = None,
                        intended_grad_quarter: str = None,
                        college: str = None, major: str = None,
-                       minor: str = None) -> bool:
+                       minor: str = None) -> (bool, User):
         # TODO: Maybe we want to use **kwargs, but maybe not...
         usr = User.get_user_by_id(user_id=user_id)
         return usr.update_attr(first_name=first_name, user_name=user_name,
