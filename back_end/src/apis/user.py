@@ -28,12 +28,12 @@ def create_user():
     major = req_data.get('major', 'undeclared')
     minor = req_data.get('minor', 'undeclared')
     pwd = req_data.get('pwd')
-    status = User.create_user(user_name=user_name, email=email, pwd=pwd,
-                              first_name=first_name, last_name=last_name,
-                              intended_grad_quarter=itgq,
-                              college=college, major=major, minor=minor)
-    if status:
-        return jsonify({'reason': 'user created'}), 200
+    s, u = User.create_user(user_name=user_name, email=email, pwd=pwd,
+                            first_name=first_name, last_name=last_name,
+                            intended_grad_quarter=itgq,
+                            college=college, major=major, minor=minor)
+    if s:
+        return jsonify({'reason': 'user created', 'result': u.to_json()}), 200
     else:
         return jsonify({'reason': 'user existed'}), 300
 
@@ -73,6 +73,7 @@ def logout():
 @login_required
 def get_users():
     users = User.get_users()
+    users = list(map(lambda x: x.to_json(), users))
     return jsonify({'reason': 'success', 'result': users}), 200
 
 
@@ -97,13 +98,13 @@ def update_profile():
     minor = req_data.get('minor', None)
     user_name = req_data.get('user_name', None)
 
-    status = User.update_profile(user_id=u_id, first_name=first_name,
-                                 last_name=last_name,
-                                 user_name=user_name,
-                                 intended_grad_quarter=intended_grad_quarter,
-                                 college=college, major=major, minor=minor)
-    ret = User.get_user_by_id(u_id).to_json()
-    if status:
-        return jsonify({'reason': 'success', 'result': ret}), 200
+    s, p = User.update_profile(user_id=u_id, first_name=first_name,
+                               last_name=last_name,
+                               user_name=user_name,
+                               intended_grad_quarter=intended_grad_quarter,
+                               college=college, major=major, minor=minor)
+    p = p.to_json()
+    if s:
+        return jsonify({'reason': 'success', 'result': p}), 200
     else:
-        return jsonify({'reason': 'failed', 'result': ret}), 300
+        return jsonify({'reason': 'failed', 'result': p}), 300
