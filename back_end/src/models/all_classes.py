@@ -6,6 +6,14 @@ from ..setup import db
 
 from enum import Enum
 
+
+'''
+    @author: Jiazheng Liu
+
+    FIXME: We need to consider the classes that have been existing but ceases to exist
+'''
+
+# FIXME: I suggest to store all the Enum in one file and import that file everywhere needed
 class GradeType(Enum):
     PNP_Only = 0
     Letter_Only = 1
@@ -18,10 +26,9 @@ class AllClass(db.Model):
     class_code = db.Column(db.String(255), unique = True, nullable=False)
     title = db.Column(db.String(255), nullable=False) # FIXME: idk if this should be unique or not
     units = db.Column(db.Integer, nullable=False)
-    support_grade_type = 
-    description = 
-    class_id = db.Column(db.Integer, unique = True, nullable=False) #db.ForeignKey('AllClasses.id'),
-    required_classes = db.Column(db.String(255), nullable=False, default='None') # Nullable or not
+    support_grade_type = db.Column(db.Integer, nullable=False)
+    description = db.Column(db.String(2047), nullable=False)
+    prerequisites = db.Column(db.String(255), nullable=False)
 
     def __init__(self, **kwargs):
         super(AllClass, self).__init__(**kwargs)
@@ -32,81 +39,84 @@ class AllClass(db.Model):
         ret['class_code'] = self.class_code
         ret['title'] = self.title
         ret['units'] = self.units
-        ret['support_grade_type'] = GradeType(self.support_grade_type.value).name
+        ret['support_grade_type'] = GradeType(self.support_grade_type).name
         ret['description'] = self.description
+        ret['prerequisites'] = self.prerequisites
         return ret
 
-    def update_attr(self, class_code: int, title: str, units: int, support_grade_type: int, description: str) -> bool:
+    def update_attr(self, class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str) -> bool:
         '''
         update the info
-        input   class_id(int), required_class(str, i.e. "CSE30, CSE100")
+        input   self-explanatory
         output  True
         @author: Jiazheng Liu
         '''
-        if class_id:
-            self.class_id = class_id
-        if required_classes:
-            self.required_classes = required_classes
+        if class_code:
+            self.class_code = class_code
+        if title:
+            self.title = title
+        if units:
+            self.units = units
+        if support_grade_type:
+            self.support_grade_type = GradeType[support_grade_type].value
+        if description:
+            self.description = description
+        if prerequisites:
+            self.prerequisites = prerequisites
         self.save()
-        return True
+        return True, self
 
     def save(self):
         db.session.commit()
 
     @staticmethod
-    def create_prereq(class_id: int, required_classes: str = None) -> bool:
+    def create_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str) -> bool:
         '''
         create prereq
-        input   class_id(int), required_class(str, i.e. "CSE30, CSE100")
+        input   self-explanatory
         output  True if class successfully created
                 False if class existed already
         @author: Jiazheng Liu
         '''
         # This is a pre done thing before the app goes public
-        if Prerequisite.get_prereq_by_class_id(class_id=class_id):
-            return False    # class with prereq exists
-        prereq = Prerequisite(class_id=class_id, required_classes = required_classes)
-        db.session.add(prereq)
-        prereq.save()
-        return True
-    
-        # Assume your support_grade_type is a string, when write the constructor do this
-        # AllClass(... support_grade_type = GradeType[support_grade_type].value...)
+        if AllClass.get_class_by_code(class_code=class_code):
+            return False, None    # class with prereq exists
+        clss = AllClass(class_code=class_code, title = title, units = units, support_grade_type = GradeType[support_grade_type].value, description = description, prerequisites = prerequisites)
+        db.session.add(clss)
+        clss.save()
+        return True, clss
 
     @staticmethod
-    def get_prereqs() -> List[Prerequisite]:
+    def get_classes() -> List[AllClass]:
         '''
-        get all prereq
+        get all classes
         input   None
-        output  prereqs in JSON
+        output  classes in JSON
         @author: Jiazheng Liu
         '''
-        get_prereqs = Prerequisite.query.all()
-        # FIXME: to_json in model or in api? Im trying to be consistent
-        get_prereqs = list(map(lambda x: x.to_json(), get_prereqs))
-        return get_prereqs
+        return AllClass.query.all()
 
     @staticmethod
-    def get_prereq_by_class_id(class_id: int) -> User:
+    def get_class_by_code(class_code: str) -> User:
         '''
-        get prereq for a class
-        input   class_id(int)
-        output  prereq of that class
+        get a class
+        input   class_code(str)
+        output  info of that class
         @author: Jiazheng Liu
         '''
-        return Prerequisite.query.filter_by(class_id=class_id).first()
+        return AllClass.query.filter_by(class_code=class_code).first()
 
     @staticmethod
-    def update_prereq(class_id: int, required_classes: str = None) -> bool:
+    def update_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str) -> bool:
         '''
         update prereq for a class
-        input   class_id(int), required_class(str, i.e. "CSE30, CSE100")
+        input   self-explanatory
         output  True if class updated successfully,
                 False if class does not exist
         @author: Jiazheng Liu
         '''
         # TODO: Maybe we want to use **kwargs, but maybe not...
-        clss = Prerequisite.get_prereq_by_class_id(class_id=class_id)
+        clss = AllClass.get_class_by_code(class_code=class_code)
         if clss:
-            return clss.update_attr(class_id=class_id, required_classes=required_classes)
-        return False
+            return clss.update_attr(class_code=class_code, title = title, units = units, support_grade_type = support_grade_type, description = description, prerequisites = prerequisites)
+        return False, None
