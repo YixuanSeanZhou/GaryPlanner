@@ -112,6 +112,8 @@ class User(db.Model, UserMixin):
                        minor: str = None) -> (bool, User):
         # TODO: Maybe we want to use **kwargs, but maybe not...
         usr = User.get_user_by_id(user_id=user_id)
+        if not usr:
+            return False, None
         return usr.update_attr(first_name=first_name, user_name=user_name,
                                last_name=last_name, college=college,
                                intended_grad_quarter=intended_grad_quarter,
