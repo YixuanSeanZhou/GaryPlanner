@@ -69,7 +69,7 @@ class User(db.Model, UserMixin):
     def create_user(user_name: str, email: str, pwd: str,
                     first_name: str, last_name: str,
                     intended_grad_quarter: str,
-                    college: str, major: str, minor: str) -> bool:
+                    college: str, major: str, minor: str) -> (bool, User):
         # TODO: Change to user_name?
         if User.get_user_by_email(email=email):
             return False    # user exists
@@ -80,7 +80,7 @@ class User(db.Model, UserMixin):
                     college=college, major=major, minor=minor)
         db.session.add(user)
         user.save()
-        return True
+        return True, user
 
     @staticmethod
     def get_users() -> List[User]:

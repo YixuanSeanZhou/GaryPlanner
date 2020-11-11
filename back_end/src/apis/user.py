@@ -28,12 +28,12 @@ def create_user():
     major = req_data.get('major', 'undeclared')
     minor = req_data.get('minor', 'undeclared')
     pwd = req_data.get('pwd')
-    status = User.create_user(user_name=user_name, email=email, pwd=pwd,
-                              first_name=first_name, last_name=last_name,
-                              intended_grad_quarter=itgq,
-                              college=college, major=major, minor=minor)
-    if status:
-        return jsonify({'reason': 'user created'}), 200
+    s, u = User.create_user(user_name=user_name, email=email, pwd=pwd,
+                            first_name=first_name, last_name=last_name,
+                            intended_grad_quarter=itgq,
+                            college=college, major=major, minor=minor)
+    if s:
+        return jsonify({'reason': 'user created', 'result': u.to_json()}), 200
     else:
         return jsonify({'reason': 'user existed'}), 300
 
