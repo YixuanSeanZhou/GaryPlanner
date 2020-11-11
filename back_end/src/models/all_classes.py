@@ -4,7 +4,12 @@ from typing import List
 
 from ..setup import db
 
+from enum import Enum
 
+class GradeType(Enum):
+    PNP_Only = 0
+    Letter_Only = 1
+    Both = 2
 
 class AllClass(db.Model):
     __tablename__ = "AllClasses"
@@ -27,7 +32,7 @@ class AllClass(db.Model):
         ret['class_code'] = self.class_code
         ret['title'] = self.title
         ret['units'] = self.units
-        ret['support_grade_type'] = self.support_grade_type
+        ret['support_grade_type'] = GradeType(self.support_grade_type.value).name
         ret['description'] = self.description
         return ret
 
@@ -64,6 +69,9 @@ class AllClass(db.Model):
         db.session.add(prereq)
         prereq.save()
         return True
+    
+        # Assume your support_grade_type is a string, when write the constructor do this
+        # AllClass(... support_grade_type = GradeType[support_grade_type].value...)
 
     @staticmethod
     def get_prereqs() -> List[Prerequisite]:
