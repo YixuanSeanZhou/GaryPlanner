@@ -72,7 +72,7 @@ class User(db.Model, UserMixin):
                     college: str, major: str, minor: str) -> (bool, User):
         # TODO: Change to user_name?
         if User.get_user_by_email(email=email):
-            return False    # user exists
+            return False, None    # user exists
         pwd = pwd_context.hash(pwd)
         user = User(user_name=user_name, email=email, pwd=pwd,
                     first_name=first_name, last_name=last_name,
