@@ -4,16 +4,13 @@ from typing import List
 
 from ..setup import db
 
-from flask_login import UserMixin
-
-
 
 class Minor(db.Model):
     __tablename__ = "Minors"
 
     id = db.Column(db.Integer, primary_key=True)
     minor_code = db.Column(db.String(255), unique=True, nullable=False)
-    title = db.Column(db.String(255), unique=True, nullable=False)
+    title = db.Column(db.String(255), nullable=False)
 
     def __init__(self, **kwargs):
         super(Minor, self).__init__(**kwargs)
@@ -30,6 +27,7 @@ class Minor(db.Model):
             self.minor_code = minor_code
         if title:
             self.title = title
+        self.save()
         return True
 
     def save(self):
@@ -37,6 +35,9 @@ class Minor(db.Model):
 
     @staticmethod
     def create_minor(minor_code: str, title: str) -> bool:
+        if Minor.get_minor_by_code(minor_code=minor_code):
+            return False    # minor exists
+
         minor = Minor(minor_code=minor_code, title=title)
         db.session.add(minor)
         minor.save()
@@ -45,21 +46,33 @@ class Minor(db.Model):
     @staticmethod
     def get_minors() -> List[Minor]:
         minors = Minor.query.all()
-        minors = list(map(lambda x: x.to_json(), minors))
-        return minors
+        if minors:
+            return minors
+        else:
+            # there are no minors in database
+            return None
 
     @staticmethod
     def get_minor(minor_id: int) -> Minor:
-        return Minor.query.filter_by(id=minor_id).first()
+        minor = Minor.query.filter_by(id=minor_id).first()
+        if minor:
+            return minor
+        else:
+            # there is no minor matching the given id
+            return None
 
     @staticmethod
     def get_minor_by_code(minor_code: str) -> Minor:
-        return Minor.query.filter_by(minor_code=minor_code).first()
+        minor = Minor.query.filter_by(minor_code=minor_code).first()
+        if minor:
+            return minor.to_json()
+        else:
+            # there is no minor matching the given code
+            return None
 
     @staticmethod
     def update_minor(id: int, minor_code: str = None,
-                       title: str = None) -> bool:
+                     title: str = None) -> bool:
 
         minor = Minor.get_minor(minor_id=id)
         return minor.update_attr(minor_code=minor_code, title=title)
-
