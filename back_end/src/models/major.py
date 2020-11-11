@@ -71,7 +71,7 @@ class Major(db.Model):
     def get_major_by_code(major_code: str) -> Major:
         major = Major.query.filter_by(major_code=major_code).first()
         if major:
-            return major.to_json()
+            return major
         else:
             # there is no major matching the given code
             return None

@@ -31,7 +31,10 @@ def create_major():
 @major_api_bp.route('/get_majors', methods=['GET'])
 def get_majors():
     majors = Major.get_majors()
-    majors = list(map(lambda x: x.to_json(), majors))
+    if majors:
+        majors = list(map(lambda x: x.to_json(), majors))
+    else:
+        majors = {}
     return jsonify({'reason': 'success', 'result': majors}), 200
 
 

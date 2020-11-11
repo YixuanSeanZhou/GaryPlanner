@@ -65,7 +65,7 @@ class Minor(db.Model):
     def get_minor_by_code(minor_code: str) -> Minor:
         minor = Minor.query.filter_by(minor_code=minor_code).first()
         if minor:
-            return minor.to_json()
+            return minor
         else:
             # there is no minor matching the given code
             return None

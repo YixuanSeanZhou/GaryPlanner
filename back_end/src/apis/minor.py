@@ -18,7 +18,7 @@ def create_minor():
     minor_code = req_data.get('minor_code')
     title = req_data.get('title')
 
-    status = Major.create_minor(minor_code=minor_code, title=title)
+    status = Minor.create_minor(minor_code=minor_code, title=title)
 
     if status:
         return jsonify({'reason': 'minor created'}), 200
@@ -28,8 +28,11 @@ def create_minor():
 
 @minor_api_bp.route('/get_minors', methods=['GET'])
 def get_minors():
-    minors = Major.get_minors()
-    minors = list(map(lambda x: x.to_json(), minors))
+    minors = Minor.get_minors()
+    if minors:
+        minors = list(map(lambda x: x.to_json(), minors))
+    else:
+        minors = {}
     return jsonify({'reason': 'success', 'result': minors}), 200
 
 
@@ -43,9 +46,9 @@ def get_minor():
 
         minor = None
         if id:
-            minor = Major.get_minor(id)
+            minor = Minor.get_minor(id)
         elif minor_code:
-            minor = Major.get_minor_by_code(minor_code)
+            minor = Minor.get_minor_by_code(minor_code)
 
         
         if minor:
@@ -72,10 +75,10 @@ def update_minor():
 
     minor_code = req_data.get('minor_code', None)
     title = req_data.get('title', None)
-    status = Major.update_minor(id=m_id, minor_code=minor_code,
+    status = Minor.update_minor(id=m_id, minor_code=minor_code,
                                 title=title)
 
-    ret = Major.get_minor(m_id).to_json()
+    ret = Minor.get_minor(m_id).to_json()
     if status:
         return jsonify({'reason': 'success', 'result': ret}), 200
     else:
