@@ -1,6 +1,6 @@
 from flask_cors import CORS
 from flask import Blueprint, request, jsonify
-from flask_login import login_required, login_user, logout_user, current_user
+from flask_login import login_required, current_user
 
 from ..models.friend import Friend
 from ..models.user import User
@@ -8,7 +8,6 @@ from ..models.user import User
 friend_api_bp = Blueprint('friend_api', __name__)
 CORS(friend_api_bp, supports_credentials=True)
 
-# TODO: Updates to check if the requester exist
 
 @friend_api_bp.route('/request_friend', methods=['POST'])
 @login_required
@@ -16,19 +15,30 @@ def request_friend():
     req_data = request.get_json()
     # u1_id = req_data.get('requestor_id')
     u2_id = req_data.get('reciever_id')
+    if not User.get_user_by_id(u2_id):
+        return jsonify({'reason': 'user id invalid'}), 300
+    f = Friend.get_freind_by_sender_and_receiver(user1_id=current_user.id,
+                                                 user2_id=u2_id)
+    if f:
+        return jsonify({'reason': 'duplicated request'}), 300
     s = Friend.add_friend(user1_id=current_user.id, user2_id=u2_id)
     if s:
         return jsonify({'reason': 'request sent success'}), 200
     else:
         return jsonify({'reason': 'request is duplicated'}), 400
 
-# TODO: check if the request is sent by anyone
 
 @friend_api_bp.route('/accept_friend', methods=['POST'])
 @login_required
 def accept_friend():
     req_data = request.get_json()
     u1_id = req_data.get('requestor_id')
+    if not User.get_user_by_id(u1_id):
+        return jsonify({'reason': 'user id invalid'}), 300
+    if not Friend.get_freind_by_sender_and_receiver(user1_id=u1_id,
+                                                    user2_id=current_user.id):
+        return jsonify({'reason':
+                        'you have not recieved a request from they'}), 300
     # u2_id = req_data.get('reciever_id')
     s = Friend.add_friend(user1_id=current_user.id, user2_id=u1_id)
     if s:
@@ -59,5 +69,7 @@ def remove_friend():
 def is_friend_with():
     req_data = request.get_json()
     f_id = req_data.get('friend_id')
+    if not User.get_user_by_id(f_id):
+        return jsonify({'reason': 'user id invalid'}), 300
     ret = Friend.is_friend(user1_id=current_user.id, user2_id=f_id)
     return jsonify({'reason': 'request sent success', 'result': ret}), 200
