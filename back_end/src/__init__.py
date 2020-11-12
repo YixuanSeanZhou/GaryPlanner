@@ -10,10 +10,12 @@ from .models.user import User
 from .apis.user import user_api_bp as uapi
 from .apis.all_classes import all_classes_api_bp as acapi
 from .apis.major import major_api_bp as mapi
+from .apis.minor import minor_api_bp as minor_api
 
 app.register_blueprint(uapi, url_prefix="/api/users")
 app.register_blueprint(acapi, url_prefix="/api/all_classes")
 app.register_blueprint(mapi, url_prefix="/api/majors")
+app.register_blueprint(minor_api, url_prefix="/api/minors")
 
 
 @app.route("/")
