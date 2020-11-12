@@ -6,7 +6,7 @@ from ..setup import db
 
 
 class ClassSchedule(db.Model):
-    __tablename__ = "ClasSchedule"
+    __tablename__ = "ClassSchedules"
 
     id = db.Column(db.Integer, primary_key=True)
     class_id = db.Column(db.Integer, unique=True, ForeignKey="Class.id",
@@ -90,17 +90,14 @@ class ClassSchedule(db.Model):
         return ClassSchedule.query.filter_by(section_code=section_code).first()
 
     @staticmethod
-    def update_class_schedule(class_id=class_id,
-                              quarter_offered=quarter_offered,
-                              section_code=section_code,
-                              format=format, start_time=start_time,
-                              end_time=end_time, days=days,
-                              instructor=instructor) -> bool:
-        class_schedule = ClassSchedule.get_class_schedule_by_id(
-            class_id=class_id)
-        return class_schedule.update_attr(class_id=class_id,
-                                          quarter_offered=quarter_offered,
-                                          section_code=section_code,
-                                          format=format, start_time=start_time,
-                                          end_time=end_time, days=days,
-                                          instructor=instructor)
+    def update_class_schedule(id: int, class_id: int, quarter_offered: str,
+                              section_code: str, format: str, start_time: str,
+                              end_time: str, days: str,
+                              instructor: str) -> bool:
+        class_sched = ClassSchedule.get_class_schedule_by_id(class_id=class_id)
+        return class_sched.update_attr(class_id=class_id,
+                                       quarter_offered=quarter_offered,
+                                       section_code=section_code,
+                                       format=format, start_time=start_time,
+                                       end_time=end_time, days=days,
+                                       instructor=instructor)
