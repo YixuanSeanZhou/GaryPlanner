@@ -2,8 +2,6 @@ from __future__ import annotations
 
 from typing import List
 
-from datetime import time
-
 from ..setup import db
 
 
@@ -11,12 +9,13 @@ class ClassSchedule(db.Model):
     __tablename__ = "ClasSchedule"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_id = db.Column(db.Integer, unique=True, nullable=False)
+    class_id = db.Column(db.Integer, unique=True, ForeignKey="Class.id",
+                         nullable=False)
     quarter_offered = db.Column(db.String(255), nullable=False)
     section_code = db.Column(db.String(255), unique=True, nullable=False)
     format = db.Column(db.String(255), nullable=False)
-    start_time = db.Column(db.Time, nullablle=False)
-    end_time = db.Column(db.Time, nullable=False)
+    start_time = db.Column(db.String(255), nullablle=False)
+    end_time = db.Column(db.String(255), nullable=False)
     days = db.Column(db.String(255), nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
 
@@ -36,8 +35,8 @@ class ClassSchedule(db.Model):
         ret['instructor'] = self.instructor
 
     def update_attr(self, class_id: int, quarter_offered: str,
-                    section_code: str, format: str, start_time: time,
-                    end_time: time, days: int, instructor: str) -> bool:
+                    section_code: str, format: str, start_time: str,
+                    end_time: str, days: str, instructor: str) -> bool:
         if class_id:
             self.class_id = class_id
         if quarter_offered:
@@ -54,6 +53,7 @@ class ClassSchedule(db.Model):
             self.days = days
         if instructor:
             self.instructor = instructor
+        self.save()
         return True
 
     def save(self):
@@ -61,8 +61,8 @@ class ClassSchedule(db.Model):
 
     @staticmethod
     def create_class_schedule(class_id: int, quarter_offered: str,
-                              section_code: str, format: str, start_time: time,
-                              end_time: time, days: int,
+                              section_code: str, format: str, start_time: str,
+                              end_time: str, days: str,
                               instructor: str) -> bool:
         if ClassSchedule.get_class_schedule_by_id(classid_id=class_id):
             return False    # class already exists in db
@@ -79,7 +79,6 @@ class ClassSchedule(db.Model):
     @staticmethod
     def get_class_schedules() -> List[ClassSchedule]:
         class_schedules = ClassSchedule.query.all()
-        class_schedules = list(map(lambda x: x.to_json(), class_schedules))
         return class_schedules
 
     @staticmethod
