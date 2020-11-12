@@ -29,6 +29,7 @@ class AllClass(db.Model):
     support_grade_type = db.Column(db.Integer, nullable=False)
     description = db.Column(db.String(2047), nullable=False)
     prerequisites = db.Column(db.String(255), nullable=False)
+    offer = db.Column(db.Boolean, nullable=False, default=True)
 
     def __init__(self, **kwargs):
         super(AllClass, self).__init__(**kwargs)
@@ -42,9 +43,10 @@ class AllClass(db.Model):
         ret['support_grade_type'] = GradeType(self.support_grade_type).name
         ret['description'] = self.description
         ret['prerequisites'] = self.prerequisites
+        ret['offer'] = self.offer
         return ret
 
-    def update_attr(self, class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str) -> bool:
+    def update_attr(self, class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str, offer: bool) -> bool:
         '''
         update the info
         input   self-explanatory
@@ -63,6 +65,8 @@ class AllClass(db.Model):
             self.description = description
         if prerequisites:
             self.prerequisites = prerequisites
+        if offer:
+            self.offer = offer
         self.save()
         return True, self
 
@@ -70,7 +74,7 @@ class AllClass(db.Model):
         db.session.commit()
 
     @staticmethod
-    def create_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str) -> bool:
+    def create_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str, offer: bool) -> bool:
         '''
         create prereq
         input   self-explanatory
@@ -81,7 +85,7 @@ class AllClass(db.Model):
         # This is a pre done thing before the app goes public
         if AllClass.get_class_by_code(class_code=class_code):
             return False, None    # class with prereq exists
-        clss = AllClass(class_code=class_code, title = title, units = units, support_grade_type = GradeType[support_grade_type].value, description = description, prerequisites = prerequisites)
+        clss = AllClass(class_code=class_code, title = title, units = units, support_grade_type = GradeType[support_grade_type].value, description = description, prerequisites = prerequisites, offer = offer)
         db.session.add(clss)
         clss.save()
         return True, clss
@@ -107,7 +111,7 @@ class AllClass(db.Model):
         return AllClass.query.filter_by(class_code=class_code).first()
 
     @staticmethod
-    def update_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str) -> bool:
+    def update_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str, offer: bool) -> bool:
         '''
         update prereq for a class
         input   self-explanatory
@@ -118,5 +122,5 @@ class AllClass(db.Model):
         # TODO: Maybe we want to use **kwargs, but maybe not...
         clss = AllClass.get_class_by_code(class_code=class_code)
         if clss:
-            return clss.update_attr(class_code=class_code, title = title, units = units, support_grade_type = support_grade_type, description = description, prerequisites = prerequisites)
+            return clss.update_attr(class_code=class_code, title = title, units = units, support_grade_type = support_grade_type, description = description, prerequisites = prerequisites, offer = offer)
         return False, None
