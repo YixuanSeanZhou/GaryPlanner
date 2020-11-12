@@ -49,12 +49,12 @@ def get_class_schedules():
 def get_class_schedule():
     if request.args:
         arguments = request.args
-        ci = arguments.get('class_id', None)
+        id = arguments.get('id', None)
         sc = arguments.get('section_code', None)
 
         class_sched = None
-        if ci:
-            class_sched = ClassSchedule.get_class_schedule_by_id(ci)
+        if id:
+            class_sched = ClassSchedule.get_class_schedule_by_id(id)
         elif sc:  # section_code
             class_sched = ClassSchedule.get_class_schedule_by_section_code(sc)
 
@@ -72,9 +72,9 @@ def get_class_schedule():
 @class_schedule_api_bp.route('/update_class_schedule', methods=['POST'])
 def update_class_schedule():
     req_data = request.get_json()
-    id = req_data.get('id')
+    sched_id = req_data.get('id')
 
-    if not id:
+    if not sched_id:
         return jsonify({'reason': 'missing id'}), 300
     ci = req_data.get('class_id', None)
     qo = req_data.get('quarter_offered', None)
@@ -85,7 +85,7 @@ def update_class_schedule():
     days = req_data.get('days', None)
     instructor = req_data.get('instructor', None)
     updated = ClassSchedule.update_class_schedule(
-                                                  id=id,
+                                                  id=sched_id,
                                                   class_id=ci,
                                                   quarter_offered=qo,
                                                   section_code=sc,
@@ -94,10 +94,9 @@ def update_class_schedule():
                                                   end_time=et,
                                                   days=days,
                                                   instructor=instructor)
-    result = ClassSchedule.get_class_schedule_by_id(id).to_json()
+    result = ClassSchedule.get_class_schedule_by_id(
+            sched_id).to_json()
     if updated:
         return jsonify({'reason': 'success', 'result': result}), 200
     else:
         return jsonify({'reason': 'failed', 'result': result}), 300
-
-

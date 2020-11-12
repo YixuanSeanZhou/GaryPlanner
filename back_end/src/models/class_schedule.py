@@ -65,7 +65,8 @@ class ClassSchedule(db.Model):
                               section_code: str, format: str, start_time: str,
                               end_time: str, days: str,
                               instructor: str) -> bool:
-        if ClassSchedule.get_class_schedule_by_id(class_id=class_id):
+        if ClassSchedule.get_class_schedule_by_section_code(
+                    section_code=section_code):
             return False    # class already exists in db
         class_schedule = ClassSchedule(class_id=class_id,
                                        quarter_offered=quarter_offered,
@@ -83,8 +84,8 @@ class ClassSchedule(db.Model):
         return class_schedules
 
     @staticmethod
-    def get_class_schedule_by_id(class_id: int) -> ClassSchedule:
-        return ClassSchedule.query.filter_by(class_id=class_id).first()
+    def get_class_schedule_by_id(sched_id: int) -> ClassSchedule:
+        return ClassSchedule.query.filter_by(id=sched_id).first()
 
     @staticmethod
     def get_class_schedule_by_section_code(section_code: str) -> ClassSchedule:
@@ -95,7 +96,11 @@ class ClassSchedule(db.Model):
                               section_code: str, format: str, start_time: str,
                               end_time: str, days: str,
                               instructor: str) -> bool:
-        class_sched = ClassSchedule.get_class_schedule_by_id(class_id=class_id)
+        class_sched = ClassSchedule.get_class_schedule_by_id(
+                sched_id=id)
+        print(class_sched)
+        print("CLASSID=")
+        print(class_id)
         return class_sched.update_attr(class_id=class_id,
                                        quarter_offered=quarter_offered,
                                        section_code=section_code,
