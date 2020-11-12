@@ -9,7 +9,11 @@ from .models.user import User
 
 from .apis.user import user_api_bp as uapi
 
+from .apis.class_schedule import class_schedule_api_bp as csapi
+
 app.register_blueprint(uapi, url_prefix="/api/users")
+
+app.register_blueprint(csapi, url_prefix="/api/classschedules")
 
 
 @app.route("/")

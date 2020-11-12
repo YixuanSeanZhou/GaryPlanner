@@ -49,11 +49,12 @@ def get_class_schedules():
 def get_class_schedule():
     if request.args:
         arguments = request.args
-        id = arguments.get('id', None)
+        ci = arguments.get('class_id', None)
         sc = arguments.get('section_code', None)
 
-        if id:
-            class_sched = ClassSchedule.get_class_schedule_by_id(id)
+        class_sched = None
+        if ci:
+            class_sched = ClassSchedule.get_class_schedule_by_id(ci)
         elif sc:  # section_code
             class_sched = ClassSchedule.get_class_schedule_by_section_code(sc)
 

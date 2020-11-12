@@ -9,12 +9,12 @@ class ClassSchedule(db.Model):
     __tablename__ = "ClassSchedules"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_id = db.Column(db.Integer, unique=True, ForeignKey="Class.id",
+    class_id = db.Column(db.Integer, unique=True,
                          nullable=False)
     quarter_offered = db.Column(db.String(255), nullable=False)
     section_code = db.Column(db.String(255), unique=True, nullable=False)
     format = db.Column(db.String(255), nullable=False)
-    start_time = db.Column(db.String(255), nullablle=False)
+    start_time = db.Column(db.String(255), nullable=False)
     end_time = db.Column(db.String(255), nullable=False)
     days = db.Column(db.String(255), nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
@@ -33,6 +33,7 @@ class ClassSchedule(db.Model):
         ret['end_time'] = self.end_time
         ret['days'] = self.days
         ret['instructor'] = self.instructor
+        return ret
 
     def update_attr(self, class_id: int, quarter_offered: str,
                     section_code: str, format: str, start_time: str,
@@ -64,7 +65,7 @@ class ClassSchedule(db.Model):
                               section_code: str, format: str, start_time: str,
                               end_time: str, days: str,
                               instructor: str) -> bool:
-        if ClassSchedule.get_class_schedule_by_id(classid_id=class_id):
+        if ClassSchedule.get_class_schedule_by_id(class_id=class_id):
             return False    # class already exists in db
         class_schedule = ClassSchedule(class_id=class_id,
                                        quarter_offered=quarter_offered,
