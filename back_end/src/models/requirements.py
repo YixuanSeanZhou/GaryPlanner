@@ -1,21 +1,21 @@
+'''
+@author: David Song
+'''
 from __future__ import annotations
 
 from typing import List
 
 from ..setup import db
 
-from .majors import Majors
-from .minors import Minors
-
 
 class Requirements(db.Model):
     __tableName__ = "Requirements"
 
     id = db.Column(db.Integer, primary_key=True)
-    Majors.id = db.Column(db.Integer, db.ForeignKey('Majors.id'),
-                          nullable=True)
-    Minors.id = db.Column(db.Integer, db.ForeignKey('Minors.id'),
-                          nullable=True)
+    major_id = db.Column(db.Integer, db.ForeignKey('Majors.id'),
+                         nullable=True)
+    minor_id = db.Column(db.Integer, db.ForeignKey('Minors.id'),
+                         nullable=True)
     class_id = db.Column(db.String, nullable=False)
     category = db.Column(db.String, nullable=True)
     subcategory = db.Column(db.String, nullable=True)
@@ -26,8 +26,8 @@ class Requirements(db.Model):
     def to_json(self):
         ret = {}
         ret['id'] = self.id
-        ret['Majors.id'] = self.Majors.id
-        ret['Minors.id'] = self.Minors.id
+        ret['major_id'] = self.major_id
+        ret['minor_id'] = self.minor_id
         ret['class_id'] = self.class_id
         ret['category'] = self.category
         ret['subcategory'] = self.subcategory
@@ -68,10 +68,15 @@ class Requirements(db.Model):
         requirements = Requirements.query.all()
         return requirements
 
+    @staticmethod
+    def get_requirement_by_id(id: int):
+        requirement = Requirements.query.all(id=id).first()
+        return requirement
+
     # get requirements by major, category, and subcategory, if indicated
     @staticmethod
     def get_requirements_by_major(
-                major_id: Majors.id, category: category,
+                major_id: major_id, category: category,
                 subcategory: subcategory) -> List[Requirements]:
         if category:
             if subcategory:
@@ -93,7 +98,19 @@ class Requirements(db.Model):
 
     # get requirements by minor
     @staticmethod
-    def get_requirements_by_minor(minor_id: Minors.id) -> List[Requirements]:
+    def get_requirements_by_minor(minor_id: minor_id) -> List[Requirements]:
         requirements = Requirements.query.filter_by(minor_id=minor_id).all()
         requirements = list(map(lambda x: x.to_jason(), requirements))
         return requirements
+
+    # delete a requirement
+    @staticmethod
+    def delete_requirement(id: int):
+        # should I use major, minor, class, category, subcategory instead?
+        # I'm not sure if all majors have subcategories.
+        # also I think sometimes classes are in multiple categories;
+        # so basically I'd have to delete based on all attributes.
+        requirement = Requirements.query.filter_by(id=id)
+        db.session.delete(requirement)
+        requirement.save()
+        return True

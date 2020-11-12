@@ -8,8 +8,10 @@ from .models.user import User
 # DO NOT EDIT ABOVE THE LINE
 
 from .apis.user import user_api_bp as uapi
+from .apis.four_year_plan import four_year_plan_api_bp as fypapi
 
 app.register_blueprint(uapi, url_prefix="/api/users")
+app.register_blueprint(fypapi, url_prefix="/api/four_year_plan")
 
 
 @app.route("/")

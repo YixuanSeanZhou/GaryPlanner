@@ -1,25 +1,23 @@
+'''
+@author: David Song
+'''
 from __future__ import annotations
 
 from typing import List
 
 from ..setup import db
 
-from .user import User
-from .all_classes import AllClasses
-from .class_schedule import ClassSchedule
-
 
 class FourYearPlan(db.Model):
     __tableName__ = "FourYearPlan"
 
-    # TODO: Check nullable and foreign key class names
     id = db.Column(db.Integer, primary_key=True)
-    User.id = db.Column(db.Integer, db.ForeignKey('User.id'), nullable=False)
-    AllClasses.id = db.Column(db.Integer,
-                              db.ForeignKey('AllClasses.id'), nullable=False)
-    ClassSchedule.id = db.Column(db.Integer,
-                                 db.ForeignKey('ClassSchedule.id'),
-                                 nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('User.id'), nullable=False)
+    class_id = db.Column(db.Integer,
+                         db.ForeignKey('AllClasses.id'), nullable=False)
+    class_schedule_id = db.Column(db.Integer,
+                                  db.ForeignKey('ClassSchedule.id'),
+                                  nullable=False)
     quarter_taken = db.Column(db.String(32), nullable=False)
     grade = db.Column(db.String(8), nullable=True)
     locked = db.Column(db.Boolean, nullable=True)
@@ -30,9 +28,9 @@ class FourYearPlan(db.Model):
     def to_json(self):
         ret = {}
         ret['id'] = self.id
-        ret['User.id'] = self.User.id
-        ret['AllClasses.id'] = self.AllClasses.id
-        ret['ClassSchedule.id'] = self.ClassSchedule.id
+        ret['user_id'] = self.user_id
+        ret['class_id'] = self.class_id
+        ret['class_schedule_id'] = self.class_schedule_id
         ret['quarter_taken'] = self.quarter_taken
         ret['grade'] = self.grade
         ret['locked'] = self.locked
@@ -91,10 +89,9 @@ class FourYearPlan(db.Model):
 
     # Returns all locked entries in a four year plan
     @staticmethod
-    def get_locked_entries_by_user(user_id: int,
-                                   locked: bool) -> List[FourYearPlan]:
+    def get_locked_entries_by_user(user_id: int) -> List[FourYearPlan]:
         plan = FourYearPlan.query.filter_by(user_id=user_id,
-                                            locked=locked).all()
+                                            locked=True).all()
         return plan
 
     # returns a specific unique entry by the surrogate key
@@ -124,3 +121,18 @@ class FourYearPlan(db.Model):
                                  class_schedule_id=class_schedule_id,
                                  quarter_taken=quarter_taken,
                                  grade=grade, locked=locked)
+
+    @staticmethod
+    def remove_entry(id: int = None, user_id: int = None,
+                     class_id: int = None, quarter_taken: str = None):
+        if id:
+            entry = FourYearPlan.query.filter_by(id=id).first()
+        elif user_id and class_id and quarter_taken:
+            entry = FourYearPlan.query.filter_by(
+                    user_id=user_id, class_id=class_id,
+                    quarter_taken=quarter_taken).first()
+        else:
+            return False
+        db.session.delete(entry)
+        entry.save()
+        return True
