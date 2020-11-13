@@ -103,8 +103,7 @@ def update_profile():
                                user_name=user_name,
                                intended_grad_quarter=intended_grad_quarter,
                                college=college, major=major, minor=minor)
-    p = p.to_json()
     if s:
-        return jsonify({'reason': 'success', 'result': p}), 200
+        return jsonify({'reason': 'success', 'result': p.to_json()}), 200
     else:
         return jsonify({'reason': 'failed', 'result': p}), 300
