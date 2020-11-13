@@ -70,6 +70,10 @@ Navigate to GaryPlanner, type `git pull`
 
 Type `git checkout selenium_docker` to switch into the selenium_docker branch.
 
-In your terminal, type `
+Type `docker-compose up --build`
 
-In the current directory, first run `chmod u+x degree_audit.sh`. And then run `./degree_audit.sh [username] [password]` to get you degree_audit.json. Don't forget to check your Duo. If there's any errors, please report them to me.
+Open a new terminal and go to back_end
+
+In your terminal, type `docker exec -it back_end_web_1 /bin/bash`
+
+Once you see your termnial now starts with `root@` first run `chmod u+x degree_audit.sh`. And then run `./degree_audit.sh [username] [password]` to get you degree_audit.json. Don't forget to check your Duo. If there's any errors, please report them to me.
