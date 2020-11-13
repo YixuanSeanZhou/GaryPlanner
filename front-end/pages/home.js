@@ -4,8 +4,9 @@ import Head from 'next/head'
 
 // Components
 import { GaryNavbar } from '../components/commonUI';
-import { Navbar, Jumbotron } from 'react-bootstrap';
+import { Navbar, Jumbotron, Button } from 'react-bootstrap'
 
+import styles from '../styles/Home.module.css'
 
 export default class Home extends React.Component {
 
@@ -20,14 +21,53 @@ export default class Home extends React.Component {
 					<Navbar.Text>Home</Navbar.Text>
 				</GaryNavbar>
 
-				<div>
+				
 					
-             <Jumbotron >
-                        <h1>Have a more efficient class schedule in UCSD!</h1>
-                    </Jumbotron>
-                       <div className="container-fluid">  
-                    </div>
+				
+				<div clasName={styles.top, styles.center}>
+					<div className={styles.warp}>
+						<div className={styles.center}>
+							<h1>GaryPlanner</h1>
+						</div>
+						
+						<p>
+							GaryPlanner is a tool that helps you organize your class
+							schedule while you are in UCSD. We will help you build
+							your class schedule in UCSD. Let's get started!
+						</p>
+					</div>
+
+						
+					
+
+					<div className={styles.content}>
+						<h1 className="text-center">Build your</h1>
+						<div className={styles.columns}>
+							
+							<div className={styles.column}>
+								<Button className="">Four Year Plan</Button>
+							</div>
+							<div className={styles.column}>
+								<Button className="">Quarter Schedule</Button>
+							</div>
+						</div>
+						
+					<div className="row">
+						<div className="col-6 text-center">
+							
+								
+							
+						</div>
+						<div className="col-6 text-center">
+							
+								
+							
+						</div>
+					</div>
+					</div>
 				</div>
+			
+
 			</>
 		)
     }
