@@ -37,7 +37,7 @@ def create_db():
     # db_DropEverything(db)
     db.create_all()
     db.session.commit()
-    test()
+    # test()
     chrome_options = set_chrome_options()
     driver = webdriver.Chrome(options=chrome_options)
     driver.maximize_window()

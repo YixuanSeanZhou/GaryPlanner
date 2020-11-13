@@ -1,8 +1,8 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import pydot
-from preprocess import _expand_lis
-from preprocess import get_info_from_catalog
+from .preprocess import _expand_lis
+from .preprocess import get_info_from_catalog
 
 
 def generate_prereq_graph(course_raw, save_addr=None):
