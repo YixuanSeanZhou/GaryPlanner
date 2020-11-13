@@ -61,3 +61,9 @@ After doing that, we can also see a list of users currently in our database. To 
 ```
 
 Let me know if you have any questions!!! (by Yixuan)
+
+
+### Get Degree Audit
+To get degree audit here, you may have to run your degree audit at https://act.ucsd.edu/studentDars/select.
+Type `git checkout selenium_docker` to switch into the selenium_docker branch.
+In the current directory, first run `chmod u+x degree_audit.sh`. And then run `./degree_audit.sh [username] [password]` to get you degree_audit.json. Don't forget to check your Duo. If there's any errors, please report them to me.
