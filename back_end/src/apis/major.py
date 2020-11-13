@@ -19,7 +19,7 @@ def create_major():
     title = req_data.get('title')
     degree_type = req_data.get('degree_type')
 
-    status = Major.create_major(major_code=major_code, title=title, 
+    status = Major.create_major(major_code=major_code, title=title,
                                 degree_type=degree_type)
 
     if status:
@@ -52,7 +52,6 @@ def get_major():
         elif major_code:
             major = Major.get_major_by_code(major_code)
 
-        
         if major:
             major = major.to_json()
             return jsonify({'reason': 'success', 'result': major}), 200
@@ -63,13 +62,11 @@ def get_major():
     else:
         return jsonify({'reason': 'missing args'}), 300
 
-    
-
 
 @major_api_bp.route('/update_major', methods=['POST'])
 def update_major():
     req_data = request.get_json()
-    # post request needs id, major_code, title, and degree_type
+    # post request needs id
     m_id = req_data.get('id')
 
     if not m_id:
