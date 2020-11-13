@@ -14,6 +14,9 @@ CORS(friend_api_bp, supports_credentials=True)
 def request_friend():
     req_data = request.get_json()
     u2_id = req_data.get('receiver_id')
+    if u2_id == current_user.id:
+        return jsonify({'reason': 'you should be friend with yourself'}), 300
+
     if not User.get_user_by_id(u2_id):
         return jsonify({'reason': 'user id invalid'}), 300
     f = Friend.get_friend_by_sender_and_receiver(sender_id=current_user.id,
@@ -41,6 +44,8 @@ def accept_friend():
     cur_id = current_user.id
     req_data = request.get_json()
     u1_id = req_data.get('requestor_id')
+    if u1_id == current_user.id:
+        return jsonify({'reason': 'you should be friend with yourself'}), 300
     if not User.get_user_by_id(u1_id):
         return jsonify({'reason': 'user id invalid'}), 300
     if not Friend.get_friend_by_sender_and_receiver(sender_id=u1_id,
@@ -84,6 +89,8 @@ def get_pending_request_to_user():
 def remove_friend():
     req_data = request.get_json()
     f_id = req_data.get('friend_id')
+    if f_id == current_user.id:
+        return jsonify({'reason': 'you should be friend with yourself'}), 300
     if not User.get_user_by_id(f_id):
         return jsonify({'reason': 'user id invalid'}), 300
     s, m = Friend.remove_friend(user1_id=current_user.id, user2_id=f_id)
@@ -97,6 +104,8 @@ def remove_friend():
 @login_required
 def is_friend_with():
     f_id = request.args.get('friend_id')
+    if f_id == current_user.id:
+        return jsonify({'reason': 'you should be friend with yourself'}), 300
     if not User.get_user_by_id(f_id):
         return jsonify({'reason': 'user id invalid'}), 300
     s = Friend.is_friend(user1_id=current_user.id, user2_id=f_id)
