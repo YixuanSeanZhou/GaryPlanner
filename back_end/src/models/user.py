@@ -59,7 +59,8 @@ class User(db.Model, UserMixin):
             self.major = major
         if minor:
             self.minor = minor
-        return True
+        self.save()
+        return True, self
 
     def save(self):
         db.session.commit()
@@ -68,10 +69,10 @@ class User(db.Model, UserMixin):
     def create_user(user_name: str, email: str, pwd: str,
                     first_name: str, last_name: str,
                     intended_grad_quarter: str,
-                    college: str, major: str, minor: str) -> bool:
+                    college: str, major: str, minor: str) -> (bool, User):
         # TODO: Change to user_name?
         if User.get_user_by_email(email=email):
-            return False    # user exists
+            return False, None    # user exists
         pwd = pwd_context.hash(pwd)
         user = User(user_name=user_name, email=email, pwd=pwd,
                     first_name=first_name, last_name=last_name,
@@ -79,7 +80,7 @@ class User(db.Model, UserMixin):
                     college=college, major=major, minor=minor)
         db.session.add(user)
         user.save()
-        return True
+        return True, user
 
     @staticmethod
     def user_exist(user_id: int) -> bool:
@@ -91,7 +92,6 @@ class User(db.Model, UserMixin):
     @staticmethod
     def get_users() -> List[User]:
         users = User.query.all()
-        users = list(map(lambda x: x.to_json(), users))
         return users
 
     @staticmethod
@@ -116,9 +116,11 @@ class User(db.Model, UserMixin):
                        user_name: str = None,
                        intended_grad_quarter: str = None,
                        college: str = None, major: str = None,
-                       minor: str = None) -> bool:
+                       minor: str = None) -> (bool, User):
         # TODO: Maybe we want to use **kwargs, but maybe not...
         usr = User.get_user_by_id(user_id=user_id)
+        if not usr:
+            return False, None
         return usr.update_attr(first_name=first_name, user_name=user_name,
                                last_name=last_name, college=college,
                                intended_grad_quarter=intended_grad_quarter,
