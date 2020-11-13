@@ -9,9 +9,11 @@ from .models.user import User
 
 from .apis.user import user_api_bp as uapi
 from .apis.four_year_plan import four_year_plan_api_bp as fypapi
+from .apis.requirements import requirements_api_bp as reqapi
 
 app.register_blueprint(uapi, url_prefix="/api/users")
 app.register_blueprint(fypapi, url_prefix="/api/four_year_plan")
+app.register_blueprint(reqapi, url_prefix="/api/requirements")
 
 
 @app.route("/")

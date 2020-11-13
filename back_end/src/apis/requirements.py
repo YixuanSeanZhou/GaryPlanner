@@ -10,7 +10,7 @@ requirements_api_bp = Blueprint('requirements_api', __name__)
 CORS(requirements_api_bp, supports_credentials=True)
 
 
-@requirements_api_bp('/create_requirement', methods=['POST'])
+@requirements_api_bp.route('/create_requirement', methods=['POST'])
 def create_requirement():
     req_data = request.get_json()
     id = req_data.get('id')
@@ -29,21 +29,21 @@ def create_requirement():
         return jsonify({'reason': 'requirement existed'}), 300
 
 
-@requirements_api_bp('/get_requirements', methods=['GET'])
+@requirements_api_bp.route('/get_requirements', methods=['GET'])
 def get_requirements():
     requirements = Requirements.get_requirements()
     requirements = list(map(lambda x: x.to_json(), requirements))
     return jsonify({'reason': 'success', 'result': requirements}), 200
 
 
-@requirements_api_bp('/get_requirement_by_id', methods=['GET'])
+@requirements_api_bp.route('/get_requirement_by_id', methods=['GET'])
 def get_requirement_by_id():
     id = request.args.get('id')
     requirement = Requirements.get_requirement_by_id(id)
     return jsonify({'reason': 'success', 'result': requirement.to_json()}), 200
 
 
-@requirements_api_bp('/get_requirements_by_major', methods=['GET'])
+@requirements_api_bp.route('/get_requirements_by_major', methods=['GET'])
 def get_requirements_by_major():
     major_id = request.args.get('major_id')
     category = request.args.get('category')
@@ -54,7 +54,7 @@ def get_requirements_by_major():
     return jsonify({'reason': 'success', 'result': requirements}), 200
 
 
-@requirements_api_bp('/get_requirements_by_minor', methods=['GET'])
+@requirements_api_bp.route('/get_requirements_by_minor', methods=['GET'])
 def get_requirements_by_minor():
     minor_id = request.args.get('minor_id')
     requirements = Requirements.get_requirements_by_minor(minor_id=minor_id)
@@ -62,7 +62,7 @@ def get_requirements_by_minor():
     return jsonify({'reason': 'success', 'result': requirements}), 200
 
 
-@requirements_api_bp('/delete_requirement', methods=['POST'])
+@requirements_api_bp.route('/delete_requirement', methods=['POST'])
 def delete_requirement():
     req_data = request.get_json()
     id = req_data.get('id')
