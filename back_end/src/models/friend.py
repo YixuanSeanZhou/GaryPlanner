@@ -4,6 +4,8 @@ from typing import List
 
 from ..setup import db
 
+from .user import User
+
 
 class Friend(db.Model):
     """
@@ -51,7 +53,7 @@ class Friend(db.Model):
     @staticmethod
     def accept_friend(sender_id: int, receiver_id: int) -> (bool, str, Friend):
         f = Friend.query.filter_by(sender_id=sender_id,
-                                   receiver_id=receiver_id).frist()
+                                   receiver_id=receiver_id).first()
         if not f:
             return False, "request not found", None
         elif f.accepted:
@@ -63,10 +65,12 @@ class Friend(db.Model):
 
     @staticmethod
     def is_friend(user1_id: int, user2_id: int) -> bool:
-        f = Friend.get_friend_by_sender_and_receiver(sender_id=user1_id,
-                                                     receiver_id=user2_id)
-        r = Friend.get_friend_by_sender_and_receiver(sender_id=user2_id,
-                                                     receiver_id=user1_id)
+        f = Friend.\
+            get_friend_by_sender_and_receiver(sender_id=user1_id,
+                                              receiver_id=user2_id).first()
+        r = Friend.\
+            get_friend_by_sender_and_receiver(sender_id=user2_id,
+                                              receiver_id=user1_id).first()
         if f:
             return f.accepted
         if r:
@@ -111,14 +115,14 @@ class Friend(db.Model):
 
     @staticmethod
     def remove_friend(user1_id: int, user2_id: int) -> (bool, str):
-        f = Friend.query.filter_by(user1_id=user1_id,
-                                   user2_id=user2_id).first()
+        f = Friend.query.filter_by(sender_id=user1_id,
+                                   receiver_id=user2_id).first()
         if f and f.accepted:
             db.session.delete(f)
             f.save()
             return True, 'friendship deleted'
-        f = Friend.query.filter_by(user1_id=user2_id,
-                                   user2_id=user1_id).first()
+        f = Friend.query.filter_by(sender_id=user2_id,
+                                   receiver_id=user1_id).first()
         if f and f.accepted:
             db.session.delete(f)
             f.save()

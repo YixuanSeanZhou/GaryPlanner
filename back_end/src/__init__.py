@@ -8,7 +8,7 @@ from .models.user import User
 # DO NOT EDIT ABOVE THE LINE
 
 from .apis.user import user_api_bp as uapi
-from .apis.firend import friend_api_bp as faip
+from .apis.friend import friend_api_bp as faip
 
 app.register_blueprint(uapi, url_prefix="/api/users")
 app.register_blueprint(faip, url_prefix="/api/friends")
