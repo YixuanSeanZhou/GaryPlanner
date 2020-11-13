@@ -24,3 +24,23 @@ body {
   width: 100%;
   height: 100%;
 }
+
+div.wrapper { 
+  margin: 4px, 4px; 
+  padding: 4px; 
+  border: 1px solid gray;
+  background-color: azure; 
+  width: 1200px; 
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  white-space: nowrap; 
+  display: flex;
+}
+
+.item {
+  width: 300px;
+  flex-shrink: 0;
+  text-align: center;
+  height: 600px;
+  border: 1px solid gray;
+}

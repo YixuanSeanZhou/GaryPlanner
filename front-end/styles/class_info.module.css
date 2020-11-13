@@ -1,0 +1,25 @@
+.page-title {
+    text-align: center;
+    font-weight: 100;
+}
+  
+.page-description {
+    border: 1px solid #000;
+    margin: 2px;
+    text-align: center;
+    padding: 30px;
+}
+.wrapper{
+    max-height: 120px;
+    border: 1px solid blue;
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper .item{
+    min-width: 110px;
+    height: 200px;
+    line-height: 110px;
+    text-align: center;
+    background-color: azure;
+}
