@@ -43,7 +43,6 @@ def login():
     '''
     Route used to log in a user. Creates a session for them and returns the
     user object.\n
-    @author npcompletenate
     '''
     req_data = request.get_json()
     email = req_data.get('email', None)
@@ -63,7 +62,6 @@ def login():
 def logout():
     '''
     Route used to log out a user. Ends their session.\n
-    @author npcompletenate
     '''
     logout_user()
     return jsonify({'reason': 'see you later'}), 200
