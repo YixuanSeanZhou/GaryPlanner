@@ -9,17 +9,22 @@
     text-align: center;
     padding: 30px;
 }
-.wrapper{
-    max-height: 120px;
-    border: 1px solid blue;
+div.wrapper { 
+    margin: 4px, 4px; 
+    padding: 4px; 
+    border: 1px solid gray;
+    background-color: azure; 
+    width: 1200px; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    white-space: nowrap; 
     display: flex;
-    overflow-x: auto;
-}
-
-.wrapper .item{
-    min-width: 110px;
-    height: 200px;
-    line-height: 110px;
+  }
+  
+  .item {
+    width: 300px;
+    flex-shrink: 0;
     text-align: center;
-    background-color: azure;
-}
+    height: 600px;
+    border: 1px solid gray;
+  }
