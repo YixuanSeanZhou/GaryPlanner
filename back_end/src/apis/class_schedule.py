@@ -7,8 +7,8 @@ class_schedule_api_bp = Blueprint('class_schedule_api', __name__)
 CORS(class_schedule_api_bp, supports_credentials=True)
 
 
-@class_schedule_api_bp.route('/create_class', methods=['POST'])
-def create_class():
+@class_schedule_api_bp.route('/create_class_schedule', methods=['POST'])
+def create_class_schedule():
     '''
     Route to create and add a class into class schedule
     @author: JingL
@@ -23,14 +23,14 @@ def create_class():
     days = req_data.get('days')
     instructor = req_data.get('instructor')
 
-    created = ClassSchedule.create_class(class_id=ci,
-                                         quarter_offered=qo,
-                                         section_code=sc,
-                                         format=format,
-                                         start_time=st,
-                                         end_time=et,
-                                         days=days,
-                                         instructor=instructor)
+    created = ClassSchedule.create_class_schedule(class_id=ci,
+                                                  quarter_offered=qo,
+                                                  section_code=sc,
+                                                  format=format,
+                                                  start_time=st,
+                                                  end_time=et,
+                                                  days=days,
+                                                  instructor=instructor)
 
     if created:
         return jsonify({'reason': 'class created'}), 200
@@ -38,15 +38,15 @@ def create_class():
         return jsonify({'reason': 'class exists'}), 300
 
 
-@class_schedule_api_bp.route('/get_class_schedule', methods=['GET'])
-def get_class_schedule():
+@class_schedule_api_bp.route('/get_class_schedules', methods=['GET'])
+def get_class_schedules():
     class_schedules = ClassSchedule.get_class_schedules()
     class_schedules = list(map(lambda x: x.to_json(), class_schedules))
     return jsonify({'reason': 'success', 'result': class_schedules}), 200
 
 
-@class_schedule_api_bp.route('/get_class', methods=['GET'])
-def get_class():
+@class_schedule_api_bp.route('/get_class_schedule', methods=['GET'])
+def get_class_schedule():
     if request.args:
         arguments = request.args
         id = arguments.get('id', None)

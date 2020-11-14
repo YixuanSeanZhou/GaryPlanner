@@ -37,7 +37,8 @@ class ClassSchedule(db.Model):
 
     def update_attr(self, class_id: int, quarter_offered: str,
                     section_code: str, format: str, start_time: str,
-                    end_time: str, days: str, instructor: str) -> bool:
+                    end_time: str, days: str,
+                    instructor: str) -> (bool, ClassSchedule):
         if class_id:
             self.class_id = class_id
         if quarter_offered:
@@ -65,8 +66,7 @@ class ClassSchedule(db.Model):
                               section_code: str, format: str, start_time: str,
                               end_time: str, days: str,
                               instructor: str) -> bool:
-        if ClassSchedule.get_class_schedule_by_class_id(
-                class_id=class_id):
+        if(ClassSchedule.class_exists(class_id, section_code)):
             return False    # class already exists in db
         class_schedule = ClassSchedule(class_id=class_id,
                                        quarter_offered=quarter_offered,
@@ -95,9 +95,11 @@ class ClassSchedule(db.Model):
     def update_class_schedule(id: int, class_id: int, quarter_offered: str,
                               section_code: str, format: str, start_time: str,
                               end_time: str, days: str,
-                              instructor: str) -> bool:
+                              instructor: str) -> (bool, ClassSchedule):
         class_sched = ClassSchedule.get_class_schedule_by_id(
                 sched_id=id)
+        if not class_sched:
+            return False, None
         return class_sched.update_attr(class_id=class_id,
                                        quarter_offered=quarter_offered,
                                        section_code=section_code,
@@ -111,6 +113,14 @@ class ClassSchedule(db.Model):
         if(to_delete.first()):
             to_delete.delete()
             db.session.commit()
+            return True
+        else:
+            return False
+    
+    @staticmethod
+    def class_exists(class_id: int, section_code: int) -> bool:
+        if(ClassSchedule.query.filter_by(class_id=class_id,
+                                         section_code=section_code).first()):
             return True
         else:
             return False
