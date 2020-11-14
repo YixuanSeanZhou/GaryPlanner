@@ -13,14 +13,13 @@ CORS(requirements_api_bp, supports_credentials=True)
 @requirements_api_bp.route('/create_requirement', methods=['POST'])
 def create_requirement():
     req_data = request.get_json()
-    id = req_data.get('id')
     major_id = req_data.get('major_id')
     minor_id = req_data.get('minor_id')
     class_id = req_data.get('class_id')
     category = req_data.get('category')
     subcategory = req_data.get('subcategory')
     s, u, = Requirements.create_requirement(
-            id=id, major_id=major_id, minor_id=minor_id, class_id=class_id,
+            major_id=major_id, minor_id=minor_id, class_id=class_id,
             category=category, subcategory=subcategory)
     if s:
         return jsonify({'reason': 'requirement created',
@@ -62,9 +61,14 @@ def get_requirements_by_minor():
     return jsonify({'reason': 'success', 'result': requirements}), 200
 
 
+# TODO: Currently still unsuccessful test on Postman
+# It seems no one else has made a delete method
+# Shall I still keep it?
 @requirements_api_bp.route('/delete_requirement', methods=['POST'])
 def delete_requirement():
-    req_data = request.get_json()
-    id = req_data.get('id')
-    Requirements.delete_requirement(id=id)
-    return jsonify({'reason': 'requirement deleted'}), 200
+    id = request.args.get('id')
+    s, m = Requirements.delete_requirement(id)
+    if s:
+        return jsonify({'reason': 'requirement deleted'}), 200
+    else:
+        return jsonify({'reason': m}), 300

@@ -54,13 +54,17 @@ class Requirements(db.Model):
     @staticmethod
     def create_requirement(major_id: int, minor_id: int, class_id: str,
                            category: str, subcategory: str) -> bool:
-        # check for identical entries to return false
+        # TODO: check for identical entries to return false
         requirement = Requirements(major_id=major_id, minor_id=minor_id,
                                    class_id=class_id, category=category,
-                                   subcategory=subcategory)
+                                   subcategory=subcategory)        
+        if Requirements.get_unique_requirement(
+                major_id=major_id, minor_id=minor_id, class_id=class_id,
+                category=category, subcategory=subcategory):
+            return False, requirement
         db.session.add(requirement)
         requirement.save()
-        return True
+        return True, requirement
 
     # get whole table of requirements
     @staticmethod
@@ -68,9 +72,19 @@ class Requirements(db.Model):
         requirements = Requirements.query.all()
         return requirements
 
+    # TODO: Can we assume that not all input is valid?
+    # will get a key error for incorrect id submissions
     @staticmethod
     def get_requirement_by_id(id: int):
-        requirement = Requirements.query.all(id=id).first()
+        requirement = Requirements.query.filter_by(id=id).first()
+        return requirement
+
+    @staticmethod
+    def get_unique_requirement(major_id: int, minor_id: int, class_id: int,
+                               category: str, subcategory: str):
+        requirement = Requirements.query.filter_by(
+                major_id=major_id, minor_id=minor_id, class_id=class_id,
+                category=category, subcategory=subcategory).first()
         return requirement
 
     # get requirements by major, category, and subcategory, if indicated
@@ -100,7 +114,6 @@ class Requirements(db.Model):
     @staticmethod
     def get_requirements_by_minor(minor_id: minor_id) -> List[Requirements]:
         requirements = Requirements.query.filter_by(minor_id=minor_id).all()
-        requirements = list(map(lambda x: x.to_jason(), requirements))
         return requirements
 
     # delete a requirement
@@ -113,4 +126,4 @@ class Requirements(db.Model):
         requirement = Requirements.query.filter_by(id=id)
         db.session.delete(requirement)
         requirement.save()
-        return True
+        return True, 'successful deletion'
