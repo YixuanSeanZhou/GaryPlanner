@@ -44,10 +44,10 @@ export default class Home extends React.Component {
 						<h1 className="text-center">Build your</h1>
 						<div className={styles.columns}>
 							
-							<div className={styles.column}>
+							<div className={styles.columns}>
 								<Button className="">Four Year Plan</Button>
 							</div>
-							<div className={styles.column}>
+							<div className={styles.columns}>
 								<Button className="">Quarter Schedule</Button>
 							</div>
 						</div>
