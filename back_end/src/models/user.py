@@ -83,6 +83,13 @@ class User(db.Model, UserMixin):
         return True, user
 
     @staticmethod
+    def user_exist(user_id: int) -> bool:
+        if User.query.filter_by(id=user_id).first():
+            return True
+        else:
+            return False
+
+    @staticmethod
     def get_users() -> List[User]:
         users = User.query.all()
         return users

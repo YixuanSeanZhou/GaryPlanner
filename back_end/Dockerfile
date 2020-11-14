@@ -8,6 +8,8 @@ WORKDIR /usr/src/app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+EXPOSE 5000
+
 # install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends netcat
 RUN apt-get install -y --no-install-recommends graphviz
@@ -19,3 +21,5 @@ RUN pip install -r requirements.txt
 COPY . /usr/src/app/
 
 ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+
+CMD [ "run", "--host", "0.0.0.0" ]
