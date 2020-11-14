@@ -8,7 +8,6 @@ from ..setup import db
 class Evaluation(db.Model):
     __tablename__ = "Evaluations"
 
-    #TODO do some of these field not need nullable, some classes don't have capes??
     id = db.Column(db.Integer, primary_key=True)
     class_id = db.Column(db.Integer, db.ForeignKey('AllClasses.id'),
                          nullable=False)
@@ -53,7 +52,7 @@ class Evaluation(db.Model):
         if avg_grade_received:
             self.avg_grade_received = avg_grade_received
         self.save()
-        return True
+        return True, self
 
     def save(self):
         db.session.commit()
@@ -72,16 +71,13 @@ class Evaluation(db.Model):
                                 avg_grade_received=avg_grade_received)
         db.session.add(evaluation)
         evaluation.save()
-        return True
+        return True, evaluation
 
     @staticmethod
     def get_evaluations() -> List[Evaluation]:
         evaluations = Evaluation.query.all()
         if evaluations:
             return evaluations
-        else:
-            # there are no evaluations in database
-            return None
 
     @staticmethod
     def get_evaluation(evaluation_id: int) -> Evaluation:

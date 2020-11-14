@@ -25,7 +25,7 @@ def create_evaluation():
     avg_expected_grade = req_data.get('avg_expected_grade')
     avg_grade_received = req_data.get('avg_grade_received')
 
-    status = Evaluation.create_evaluation(
+    status, evaluation = Evaluation.create_evaluation(
                                 class_id=class_id,
                                 instructor=instructor,
                                 recommend_class=recommend_class,
@@ -35,7 +35,10 @@ def create_evaluation():
                                 avg_grade_received=avg_grade_received)
 
     if status:
-        return jsonify({'reason': 'evaluation created'}), 200
+        return jsonify({
+            'reason': 'evaluation created',
+            'result': evaluation.to_json()
+            }), 200
     else:
         return jsonify({'reason': 'evaluation existed'}), 300
 
@@ -45,8 +48,6 @@ def get_evaluations():
     evaluations = Evaluation.get_evaluations()
     if evaluations:
         evaluations = list(map(lambda x: x.to_json(), evaluations))
-    else:
-        evaluations = {}
     return jsonify({'reason': 'success', 'result': evaluations}), 200
 
 
@@ -101,7 +102,7 @@ def update_evaluation():
     avg_expected_grade = req_data.get('avg_expected_grade', None)
     avg_grade_received = req_data.get('avg_grade_received', None)
 
-    status = Evaluation.update_evaluation(
+    status, evaluation = Evaluation.update_evaluation(
                             id=eval_id, class_id=class_id,
                             instructor=instructor,
                             recommend_class=recommend_class,
@@ -110,8 +111,14 @@ def update_evaluation():
                             avg_expected_grade=avg_expected_grade,
                             avg_grade_received=avg_grade_received)
 
-    ret = Evaluation.get_evaluation(eval_id).to_json()
+    
     if status:
-        return jsonify({'reason': 'success', 'result': ret}), 200
+        return jsonify({
+            'reason': 'success',
+            'result': evaluation.to_json()
+            }), 200
     else:
-        return jsonify({'reason': 'failed', 'result': ret}), 300
+        return jsonify({
+            'reason': 'failed',
+            'result': evaluation.to_json()
+            }), 300
