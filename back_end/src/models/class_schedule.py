@@ -9,10 +9,10 @@ class ClassSchedule(db.Model):
     __tablename__ = "ClassSchedules"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_id = db.Column(db.Integer, unique=True,
+    class_id = db.Column(db.Integer, db.ForeignKey('AllClasses.id'),
                          nullable=False)
     quarter_offered = db.Column(db.String(255), nullable=False)
-    section_code = db.Column(db.String(255), unique=True, nullable=False)
+    section_code = db.Column(db.String(255), nullable=False)
     format = db.Column(db.String(255), nullable=False)
     start_time = db.Column(db.String(255), nullable=False)
     end_time = db.Column(db.String(255), nullable=False)
@@ -55,7 +55,7 @@ class ClassSchedule(db.Model):
         if instructor:
             self.instructor = instructor
         self.save()
-        return True
+        return True, self
 
     def save(self):
         db.session.commit()
@@ -65,8 +65,8 @@ class ClassSchedule(db.Model):
                               section_code: str, format: str, start_time: str,
                               end_time: str, days: str,
                               instructor: str) -> bool:
-        if ClassSchedule.get_class_schedule_by_section_code(
-                    section_code=section_code):
+        if ClassSchedule.get_class_schedule_by_class_id(
+                class_id=class_id):
             return False    # class already exists in db
         class_schedule = ClassSchedule(class_id=class_id,
                                        quarter_offered=quarter_offered,
@@ -88,8 +88,8 @@ class ClassSchedule(db.Model):
         return ClassSchedule.query.filter_by(id=sched_id).first()
 
     @staticmethod
-    def get_class_schedule_by_section_code(section_code: str) -> ClassSchedule:
-        return ClassSchedule.query.filter_by(section_code=section_code).first()
+    def get_class_schedule_by_class_id(class_id: int) -> ClassSchedule:
+        return ClassSchedule.query.filter_by(class_id=class_id).first()
 
     @staticmethod
     def update_class_schedule(id: int, class_id: int, quarter_offered: str,
@@ -98,12 +98,19 @@ class ClassSchedule(db.Model):
                               instructor: str) -> bool:
         class_sched = ClassSchedule.get_class_schedule_by_id(
                 sched_id=id)
-        print(class_sched)
-        print("CLASSID=")
-        print(class_id)
         return class_sched.update_attr(class_id=class_id,
                                        quarter_offered=quarter_offered,
                                        section_code=section_code,
                                        format=format, start_time=start_time,
                                        end_time=end_time, days=days,
                                        instructor=instructor)
+
+    @staticmethod
+    def delete_class_schedule(sched_id: int) -> bool:
+        to_delete = ClassSchedule.query.filter_by(id=sched_id)
+        if(to_delete.first()):
+            to_delete.delete()
+            db.session.commit()
+            return True
+        else:
+            return False
