@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import styles from '../styles/Register.module.css'
 
-export default function Login() {
+export default function Signup() {
 	return (
 		<div className={styles.outer}>
 			<div className={styles.middle}>
@@ -25,11 +25,14 @@ export default function Login() {
 						</h3>
 					</Form.Group>
 
-					<h3>Log in</h3>
+					<h3>Sign Up</h3>
 					<Form>
 						<Form.Group>
 							<Form.Label htmlFor="username">Username</Form.Label>
-
+							<Form.Control type="text" id="username" name="username" />
+						</Form.Group>
+						<Form.Group>
+							<Form.Label htmlFor="username">Email</Form.Label>
 							<Form.Control type="text" id="username" name="username" />
 						</Form.Group>
 
@@ -38,30 +41,26 @@ export default function Login() {
 							<Form.Control type="password" id="password" name="password" />
 						</Form.Group>
 
-						<Form.Group check>
-							<Form.Label check>
-								<Form.Check
-									type="checkbox"
-									name="remember"
-									label="Remember me"
-								/>
-							</Form.Label>
+						<Form.Group>
+							<Form.Label htmlFor="passowrd">Confirm password</Form.Label>
+							<Form.Control type="password" id="password" name="password" />
 						</Form.Group>
 
 						<Form.Group className="mt-1">
 							<Form.Text style={{ fontSize: '.85rem' }}>
-								New to GaryPlanner?{' '}
-								<a href="/signup" style={{ color: '#0067b8' }}>
-									Create an account
+								Already have an account?{' '}
+								<a href="/login" style={{ color: '#0067b8' }}>
+									Login here
 								</a>
 							</Form.Text>
 						</Form.Group>
+
 						<div style={{ textAlign: 'right' }}>
 							<Button
 								type="submit"
 								value="submit"
 								className="bg-orange mt-3">
-								Login
+								Signup
 							</Button>{' '}
 						</div>
 					</Form>
