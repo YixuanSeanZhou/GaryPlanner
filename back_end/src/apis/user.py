@@ -20,9 +20,9 @@ def create_user():
     req_data = request.get_json()
     user_name = req_data.get('user_name')
     email = req_data.get('email')  # primary key
-    first_name = req_data.get('first_name')
-    last_name = req_data.get('last_name')
-    itgq = req_data.get('intended_grad_quarter')
+    first_name = req_data.get('first_name', 'Gary')
+    last_name = req_data.get('last_name', 'Gillespie')
+    itgq = req_data.get('intended_grad_quarter', 'None')
     college = req_data.get('college')  # frontend need check validity
     # ; seperated list expected
     major = req_data.get('major', 'undeclared')
