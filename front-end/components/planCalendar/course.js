@@ -15,12 +15,12 @@ export default class Course extends React.Component{
                         className={styles.courseContainer} 
                     >
                         {this.props.course.content}
-                        <p
+                        <div
                             {...provided.dragHandleProps}
                             className={styles.dragHandle}
                         >
                             (drag here)
-                        </p>
+                        </div>
                     </div>
                 )}
             </Draggable>

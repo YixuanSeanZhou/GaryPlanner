@@ -8,22 +8,33 @@
   }
 
 .yearContainer {
-    margin: 8px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
     border: 1px solid lightgrey;
     border-radius: 2px;
+
+    width: 98%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .multQuarterContainer {
     display: flex;
+    flex: 1;
 }
 
 .quarterContainer {
     margin: 8px;
-    border: 1px solid lightgrey;
-    border-radius: 2px;
-    width: 480px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fffbe9;
+    box-shadow: 2px 2px 3px rgb(221, 221, 221);
 
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -34,20 +45,26 @@
 }
 
 .courseContainer {
-    border: 1px solid lightgrey;
-    border-radius: 2px;
     padding: 8px;
     margin-bottom: 8px;
-    align-items: center;
+
+    background-color: #fff0b5;
+    border-radius: 5px;
     
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 2px 2px 3px rgb(221, 221, 221);
+
 }
 
 .dragHandle {
     font-size: .5rem;
-    width: 50px;
-    height: 20px;
-    background-color: lightsteelblue;
-    border-radius: 4px;
+    padding: 5px;
+
+    align-items: center;
+    background-color: #ffeb9c;
+    border-radius: 5px;
     margin-left: 20px;
 }
