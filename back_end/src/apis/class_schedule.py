@@ -59,7 +59,7 @@ def get_class_schedule():
             return jsonify({'reason': 'success', 'result': class_sched}), 200
         else:
             # no class schedule found using either id
-            return jsonify({'reason': 'no class schedule found with id'}), 200
+            return jsonify({'reason': 'no class schedule found with id'}), 300
 
     else:
         return jsonify({'reason': 'missing args'}), 300

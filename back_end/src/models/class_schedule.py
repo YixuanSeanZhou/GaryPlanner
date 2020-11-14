@@ -87,6 +87,8 @@ class ClassSchedule(db.Model):
     def get_class_schedule_by_id(sched_id: int) -> ClassSchedule:
         return ClassSchedule.query.filter_by(id=sched_id).first()
 
+    # will make this more specific because there could be multiple sections,
+    # and this will only get the section that shows up
     @staticmethod
     def get_class_schedule_by_class_id(class_id: int) -> ClassSchedule:
         return ClassSchedule.query.filter_by(class_id=class_id).first()
@@ -96,8 +98,7 @@ class ClassSchedule(db.Model):
                               section_code: str, format: str, start_time: str,
                               end_time: str, days: str,
                               instructor: str) -> (bool, ClassSchedule):
-        class_sched = ClassSchedule.get_class_schedule_by_id(
-                sched_id=id)
+        class_sched = ClassSchedule.get_class_schedule_by_id(sched_id=id)
         if not class_sched:
             return False, None
         return class_sched.update_attr(class_id=class_id,
