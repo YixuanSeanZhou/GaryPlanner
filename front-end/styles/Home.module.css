@@ -1,3 +1,12 @@
+.content {
+  background: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
 .top {
   padding-top: 3%;
   text-align: center;
@@ -9,7 +18,8 @@
   text-align: center;
 }
 
-.content {
+
+.subContent {
   margin-top: -100px;
   margin: 0 auto;
   max-width: 1280px;
