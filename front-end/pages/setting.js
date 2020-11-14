@@ -23,12 +23,24 @@ export default class setting extends React.Component {
 
                 <div className={styles.main}>
                 <Form>
-                    <Form.Group controlId='Name' >
-                        <Form.Label>Name</Form.Label>
+                    <Form.Group controlId='FirstName' >
+                        <Form.Label>First Name</Form.Label>
                         <Form.Control type="text" placeholder="load from data" />
                     </Form.Group>
-                    <Form.Group controlId='Bio' >
-                        <Form.Label>Bio</Form.Label>
+                    <Form.Group controlId='LastName' >
+                        <Form.Label>Last Name</Form.Label>
+                        <Form.Control type="text" placeholder="load from data" />
+                    </Form.Group>
+                    <Form.Group controlId='Major' >
+                        <Form.Label>Major</Form.Label>
+                        <Form.Control type="text" placeholder="load from data" />
+                    </Form.Group>
+                    <Form.Group controlId='Minor' >
+                        <Form.Label>Minor</Form.Label>
+                        <Form.Control type="text" placeholder="load from data" />
+                    </Form.Group>
+                    <Form.Group controlId='IntendedGradQuarter' >
+                        <Form.Label>Intended Graduate Quarter</Form.Label>
                         <Form.Control type="text" placeholder="load from data" />
                     </Form.Group>
                     <Form.Group controlId='Profile picture' >

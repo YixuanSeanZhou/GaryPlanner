@@ -22,7 +22,7 @@ export default function UserProfile() {
                 <img src="public/logo/PCLogo-Color.svg"  width="256" height="256" />
                 <section >
                     <div >
-                        <h2>LoginName</h2>
+                        <h2>user_name</h2>
                     </div>
                     Major
                     <p>xxx</p>
@@ -30,8 +30,12 @@ export default function UserProfile() {
                     <p>xxx</p>
                     Email
                     <p>xxx@xxx</p>
-                    Bio
-                    <p>xxxxxxxx</p>
+                    College
+                    <p>Warren</p>
+                    PID
+                    <p>A******</p>
+                    Intended Graduate Quarter
+                    <p>Spring2021</p>
                     <br />
                     <div >
                     <Link href="/setting">
