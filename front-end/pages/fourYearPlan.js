@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import PlanCalendar from '../components/planCalendar'
+import PlanCalendar from '../components/planCalendar/planCalendar'
 // Components
 import { GaryNavbar } from '../components/commonUI';
 import { Navbar } from 'react-bootstrap';
