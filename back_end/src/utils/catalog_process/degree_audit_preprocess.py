@@ -64,13 +64,17 @@ def get_completed_courses(ret):
             if (('FA' in text[j] or 'SP' in text[j] or 'WI' in text[j] 
                 or 'S1' in text[j] or 'S2' in text[j]) and 'ERND' not in text[j]):
                 #print(text[j])
-                course_entry = text[j].split(' ')
-                course_name = course_entry[1:-2]
-                course_name = ''.join(course_name)
-                credit = float(course_entry[-2])
-                grade = course_entry[-1]
-                if course_name not in complete:
-                    complete[course_name] = credit
+                try:
+                    course_entry = text[j].split(' ')
+                    course_name = course_entry[1:-2]
+                    course_name = ''.join(course_name)
+                    credit = float(course_entry[-2])
+                    grade = course_entry[-1]
+                    if course_name not in complete:
+                        complete[course_name] = credit
+                except:
+                    print("edge case in completed courses:")
+                    print(text[j])
     return complete
 
 
@@ -88,21 +92,25 @@ def get_needed_courses(ret):
         for line_ in text:
             if "<u>" in line_:
                 #print(line_ + "\n")
-                line = line_.splitlines()
-                d = dict()
-                it = 0
-                while it < len(line):
-                    if ')' in line[it] and len(line[it]) <= 6:
-                        d['CATE'] = line[it+1]
-                    if 'NEED' in line[it]:
-                        d['NEED'] = {'num': float(line[it].split(' ')[1]), 'unit': line[it].split(' ')[2]}
-                    if 'COURSE' in line[it]:
-                        d['COURSE'] = []
-                        for i in range(it+1, len(line)):
-                            d['COURSE'].append(line[i])
-                    it += 1
-                if 'CATE' in d:
-                    need.append(d)
+                try:
+                    line = line_.splitlines()
+                    d = dict()
+                    it = 0
+                    while it < len(line):
+                        if ')' in line[it] and len(line[it]) <= 6:
+                            d['CATE'] = line[it+1]
+                        if 'NEED' in line[it]:
+                            d['NEED'] = {'num': float(line[it].split(' ')[1]), 'unit': line[it].split(' ')[2]}
+                        if 'COURSE' in line[it]:
+                            d['COURSE'] = []
+                            for i in range(it+1, len(line)):
+                                d['COURSE'].append(line[i])
+                        it += 1
+                    if 'CATE' in d:
+                        need.append(d)
+                except:
+                    print("edge case in needed courses: ")
+                    print(line_)
     
     return need
 
