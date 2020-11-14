@@ -6,11 +6,21 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-/* a {
-  color: inherit;
-  text-decoration: none;
-} */
+.navbarLogo {
+  width: 20px;
+  height: auto;
+  margin-right: 15px;
+}
 
-* {
-  box-sizing: border-box;
+.link {
+  cursor: pointer;
+}
+
+.lightBG{
+  background-color: #ffeead;
+}
+
+#planCalendar {
+  width: 100%;
+  height: 100%;
 }

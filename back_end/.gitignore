@@ -2,3 +2,4 @@ __pycache__/*
 .DS_Store
 postgres-data/*
 src/__pycache__/*
+*.pdf

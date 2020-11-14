@@ -12,11 +12,11 @@ class FourYearPlan(db.Model):
     __tableName__ = "FourYearPlan"
 
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('User.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('Users.id'), nullable=False)
     class_id = db.Column(db.Integer,
                          db.ForeignKey('AllClasses.id'), nullable=False)
     class_schedule_id = db.Column(db.Integer,
-                                  db.ForeignKey('ClassSchedule.id'),
+                                  # db.ForeignKey('ClassSchedules.id'),
                                   nullable=False)
     quarter_taken = db.Column(db.String(32), nullable=False)
     grade = db.Column(db.String(8), nullable=True)
