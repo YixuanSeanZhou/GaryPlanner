@@ -27,6 +27,20 @@ def _get_driver(link):
     return driver
 
 
+def _valid_course_entry(txt):
+    entry = txt.split(' ')
+    ti = entry[0]
+    if len(ti) != 4:
+        return False
+    quar = ti[0:2]
+    yr = ti[2:4]
+    if not (quar != 'FA' or quar != 'SP' or quar != 'WI' or quar != 'S1' or quar != 'S2'):
+        return False
+    if not yr.isnumeric():
+        return False
+    return True
+
+
 #You will receive a Duo Message. Accept that.
 def get_degree_audit(user_name, user_pwd):
     driver = _get_driver(degree_audit_addr)
@@ -62,8 +76,7 @@ def get_completed_courses(ret):
     for i in range(len(ret)):
         text = ret[i][1].split('\n')
         for j in range(len(text)):
-            if (('FA' in text[j] or 'SP' in text[j] or 'WI' in text[j] 
-                or 'S1' in text[j] or 'S2' in text[j]) and 'ERND' not in text[j]):
+            if _valid_course_entry(text[j]) and 'ERND' not in text[j]:
                 #print(text[j])
                 try:
                     course_entry = text[j].split(' ')
