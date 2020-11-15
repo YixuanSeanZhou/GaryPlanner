@@ -39,6 +39,8 @@ export default function Index() {
                     <li><Link href='/userProfile'><a>User Profile Page</a></Link></li>
                     <li><Link href='/curr_quarter'><a>Current Quarter Schedule</a></Link></li>
                     <li><Link href='/class_info'><a>Class Information</a></Link></li>
+                    <li><Link href='/setting'><a>Settings</a></Link></li>
+                    <li><Link href='/ChangePass'><a>Change Password</a></Link></li>
                 </ul>
                 <p>Add the link to more pages here...</p>
 

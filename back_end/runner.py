@@ -1,4 +1,4 @@
-from src.setup import cli, db
+from src.setup import app, cli, db
 from src.utils.catalog_process.preprocess import get_info_from_catalog
 from src.utils.catalog_process.prereq_graph import generate_prereq_graph
 import nltk
@@ -14,7 +14,7 @@ def create_db():
     test()
 
 
-def test(): 
+def test():
     raw = get_info_from_catalog("https://www.ucsd.edu/catalog/courses/CSE.html")
     generate_prereq_graph(raw, 'cse.pdf')
 
