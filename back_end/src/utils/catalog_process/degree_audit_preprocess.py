@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import argparse
 import json
+import sys
 
 degree_audit_addr = "https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true"
 
@@ -73,8 +74,10 @@ def get_completed_courses(ret):
                     if course_name not in complete:
                         complete[course_name] = credit
                 except:
-                    print("edge case in completed courses:")
+                    print(sys.exc_info()[0])
+                    print("ERROR: edge case in completed courses.")
                     print(text[j])
+                    raise
     return complete
 
 
@@ -109,8 +112,10 @@ def get_needed_courses(ret):
                     if 'CATE' in d:
                         need.append(d)
                 except:
-                    print("edge case in needed courses: ")
+                    print(sys.exc_info()[0])
+                    print("ERROR: edge case in needed courses/")
                     print(line_)
+                    raise
     
     return need
 
@@ -121,19 +126,36 @@ if __name__ == "__main__":
     parser.add_argument('user_pwd', help="your account password")
     args = parser.parse_args()
 
+    anyerr = False
+
     det = get_degree_audit(args.user_name, args.user_pwd)
-    complete = get_completed_courses(det)
-    need = get_needed_courses(det)
+    try:
+        complete = get_completed_courses(det)
+    except:
+        anyerr = True
+        print("error occurs in collecting completed courses.")
 
-    print("Your completed Courses:")
-    for k in complete:
-        print(k, complete[k])
-    print()
+    try:
+        need = get_needed_courses(det)
+    except:
+        anyerr = True
+        print("error occurs in collecting needed courses.")
 
-    print("Your needed Courses:")
-    for k in need:
-        print(k)
+    if not anyerr:
+        print("Your completed Courses:")
+        creds = 0
+        for k in complete:
+            print(k, complete[k])
+            creds += complete[k]
         print()
 
-    with open("degree_audit.json", "w", encoding='utf-8') as outfile:
-        json.dump([complete]+need, outfile, indent=1) 
+        print("Your needed Courses:")
+        for k in need:
+            print(k)
+            print()
+
+        print("You should have {} credits including courses in progress. If this doesn't match your real credits, please report.".format(creds))
+
+        with open("degree_audit.json", "w", encoding='utf-8') as outfile:
+            json.dump([complete]+need, outfile, indent=1) 
+        print("A json file containing your completed courses and needed courses should be generated in currect directory.")
