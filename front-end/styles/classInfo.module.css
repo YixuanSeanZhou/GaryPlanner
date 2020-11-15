@@ -19,6 +19,7 @@
     overflow-y: hidden; 
     white-space: nowrap; 
     display: flex;
+    line-height: 100px;
   }
   
   .item {
