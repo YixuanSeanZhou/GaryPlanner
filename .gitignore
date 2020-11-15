@@ -1,7 +1,4 @@
 .DS_Store
 .__pycache__/*
-<<<<<<< HEAD
 .prettierrc.json
-=======
 .vscode/*
->>>>>>> fbe4eec977ce4c5e06afec0e93d7e665db1a6a76
