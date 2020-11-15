@@ -20,9 +20,9 @@ def create_user():
     req_data = request.get_json()
     user_name = req_data.get('user_name')
     email = req_data.get('email')  # primary key
-    first_name = req_data.get('first_name')
-    last_name = req_data.get('last_name')
-    itgq = req_data.get('intended_grad_quarter')
+    first_name = req_data.get('first_name', 'Gary')
+    last_name = req_data.get('last_name', 'Gillespie')
+    itgq = req_data.get('intended_grad_quarter', 'None')
     college = req_data.get('college')  # frontend need check validity
     # ; seperated list expected
     major = req_data.get('major', 'undeclared')
@@ -43,7 +43,6 @@ def login():
     '''
     Route used to log in a user. Creates a session for them and returns the
     user object.\n
-    @author npcompletenate
     '''
     req_data = request.get_json()
     email = req_data.get('email', None)
@@ -63,7 +62,6 @@ def login():
 def logout():
     '''
     Route used to log out a user. Ends their session.\n
-    @author npcompletenate
     '''
     logout_user()
     return jsonify({'reason': 'see you later'}), 200

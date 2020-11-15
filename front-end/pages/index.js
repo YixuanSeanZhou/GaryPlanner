@@ -38,6 +38,10 @@ export default function Index() {
                     <li><Link href='/home'><a>Home Page</a></Link></li>
                     <li><Link href='/fourYearPlan'><a>4-Year-Plan Page</a></Link></li>
                     <li><Link href='/userProfile'><a>User Profile Page</a></Link></li>
+                    <li><Link href='/currQuarter'><a>Current Quarter Schedule</a></Link></li>
+                    <li><Link href='/classInfo'><a>Class Information</a></Link></li>
+                    <li><Link href='/setting'><a>Settings</a></Link></li>
+                    <li><Link href='/ChangePass'><a>Change Password</a></Link></li>
                 </ul>
                 <p>Add the link to more pages here...</p>
 
