@@ -38,8 +38,8 @@ export default function Login() {
 							<Form.Control type="password" id="password" name="password" />
 						</Form.Group>
 
-						<Form.Group check>
-							<Form.Label check>
+						<Form.Group>
+							<Form.Label>
 								<Form.Check
 									type="checkbox"
 									name="remember"
