@@ -5,6 +5,8 @@ import { GaryNavbar } from '../components/commonUI';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EvaluationsList from '../components/eval/evaluationsList';
+import styles from '../styles/classInfo.module.css';
+import Particles from 'react-particles-js';
 
 //export default function Class_info() {
 
@@ -29,12 +31,38 @@ export default class ClassInfo extends React.Component {
                     Class Information
                     </Navbar.Text>
                 </GaryNavbar>
+                <Particles
+                    params={{
+                        "particles": {
+                        "number": {
+                        "value": 90
+                        },
+                        "size": {
+                        "value": 2.5
+                        }
+                    },
+                        "interactivity": {
+                        "events": {
+                        "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                        }
+                        }
+                        }
+                    }}/>
+                <div style={{
+                    position: "absolute",
+                    top: 100,
+                    left: 0,
+                    width: "100%",
+                    height: "100%"
+                }}>
                 <Container>
                     <h1 className="text-center">{classDec.name}</h1>
                     <p className="text-center">{classDec.descriptions}</p>
-
-                <EvaluationsList evaluations={evaluations} />
-                </Container>   
+                    <EvaluationsList evaluations={evaluations} />
+                </Container>
+                </div>
             </>
         );
     };

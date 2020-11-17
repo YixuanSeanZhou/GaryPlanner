@@ -9,11 +9,12 @@
     text-align: center;
     padding: 30px;
 }
+
 .wrapper { 
     margin: 4px, 4px; 
     padding: 4px; 
     border: 1px solid gray;
-    background-color: azure; 
+    background-color:transparent; 
     width: 1200px; 
     overflow-x: auto; 
     overflow-y: hidden; 
@@ -29,3 +30,8 @@
     height: 600px;
     border: 1px solid gray;
   }
+
+.noBullet{
+    list-style-type: none;
+    text-align: inherit;
+}

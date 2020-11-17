@@ -8,6 +8,7 @@ import { Navbar } from 'react-bootstrap'
 
 // Styles
 import styles from '../styles/Index.module.css'
+import Particles from 'react-particles-js';
 
 export default function Index() {
     return (
@@ -22,8 +23,33 @@ export default function Index() {
                     Developer Index
                 </Navbar.Text>
             </GaryNavbar>
-
-            <div className={styles.mainContainer}>
+            <body>
+            <Particles
+                    params={{
+                        "particles": {
+                        "number": {
+                        "value": 90
+                        },
+                        "size": {
+                        "value": 2.5
+                        }
+                    },
+                        "interactivity": {
+                        "events": {
+                        "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                        }
+                        }
+                        }
+                    }}/>
+            <div className={styles.mainContainer} style={{
+                    position: "absolute",
+                    top: 100,
+                    left: 0,
+                    width: "100%",
+                    height: "100%"
+                }}>
                 <h1>Developer Index Page</h1>
                 <p>
                     <b>Hi</b> this is the developer index for Gary Planner. <br/> 
@@ -87,6 +113,7 @@ export default function Index() {
                 <footer className={styles.footer}>Maintained by X</footer>
 
             </div>
+            </body>
 
         </>
     )

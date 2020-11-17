@@ -23,9 +23,9 @@ export default function Login() {
 
             <div className={styles.main}>
                 <Form>
-                    <Form.Group controlId='loginName' >
+                    <Form.Group controlId='loginName'>
                         <Form.Label>User Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter User Name" />
+                        <Form.Control type="text" placeholder="Enter User Name"/>
                     </Form.Group>
                     <Form.Group controlId='loginPassword' >
                         <Form.Label>Password</Form.Label>

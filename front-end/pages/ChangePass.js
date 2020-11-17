@@ -7,6 +7,7 @@ import { GaryNavbar } from '../components/commonUI';
 import { Form,Button, Navbar } from 'react-bootstrap';
 
 import styles from "../styles/ChangePass.module.css"
+//import styles from "../styles/globals.css"
 export default class ChangePass extends React.Component {
 
     render() {
