@@ -82,6 +82,7 @@ def get_user_profile():
     user = User.get_user_by_id(user_id=u_id)
     return jsonify({'reason': 'success', 'result': user.to_json()}), 200
 
+# TODO: NO USER NAME
 
 @user_api_bp.route('/update_profile', methods=['POST'])
 @login_required
