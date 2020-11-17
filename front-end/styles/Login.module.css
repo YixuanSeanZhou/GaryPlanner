@@ -2,9 +2,8 @@
     margin: auto;
     margin-top: 15%;
     margin-bottom: 15%;
+    position: absolute;
+    right: 80px;
 
     width: 30%;
-}
-.curlyBar{
-    border-radius: 50px;
 }
