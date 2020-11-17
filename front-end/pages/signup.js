@@ -1,71 +1,62 @@
-import { Form, Button } from 'react-bootstrap'
+// React and Next
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Components
+import { Form, Button } from 'react-bootstrap'
+import { GaryNavbar } from '../components/commonUI'
+
+// Styles
 import styles from '../styles/Register.module.css'
 
 export default function Signup() {
 	return (
-		<div className={styles.outer}>
-			<div className={styles.middle}>
-				<div className={styles.login}>
-					<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
-						<a href="/">
-							<Image
-								id="loginlogo"
-								src="/logo/PCLogo-Color.svg"
-								height="70"
-								width="49"
-								alt="logo"
-								className=""
-							/>
-						</a>
-						<h3 className="mt-3 ml-1" style={{ paddingLeft: '10px' }}>
-							Gary <br /> Planner
-						</h3>
+		<>
+			<GaryNavbar />
+
+			<div className={styles.login}>
+				<h3>Sign Up</h3>
+				<Form>
+					<Form.Group>
+						<Form.Label htmlFor="username">Username</Form.Label>
+						<Form.Control type="text" id="username" name="username" />
+					</Form.Group>
+					<Form.Group>
+						<Form.Label htmlFor="username">Email</Form.Label>
+						<Form.Control type="text" id="username" name="username" />
 					</Form.Group>
 
-					<h3>Sign Up</h3>
-					<Form>
-						<Form.Group>
-							<Form.Label htmlFor="username">Username</Form.Label>
-							<Form.Control type="text" id="username" name="username" />
-						</Form.Group>
-						<Form.Group>
-							<Form.Label htmlFor="username">Email</Form.Label>
-							<Form.Control type="text" id="username" name="username" />
-						</Form.Group>
+					<Form.Group>
+						<Form.Label htmlFor="passowrd">Passowrd</Form.Label>
+						<Form.Control type="password" id="password" name="password" />
+					</Form.Group>
 
-						<Form.Group>
-							<Form.Label htmlFor="passowrd">Passowrd</Form.Label>
-							<Form.Control type="password" id="password" name="password" />
-						</Form.Group>
+					<Form.Group>
+						<Form.Label htmlFor="passowrd">Confirm password</Form.Label>
+						<Form.Control type="password" id="password" name="password" />
+					</Form.Group>
 
-						<Form.Group>
-							<Form.Label htmlFor="passowrd">Confirm password</Form.Label>
-							<Form.Control type="password" id="password" name="password" />
-						</Form.Group>
-
-						<Form.Group className="mt-1">
-							<Form.Text style={{ fontSize: '.85rem' }}>
-								Already have an account?{' '}
-								<a href="/login" style={{ color: '#0067b8' }}>
+					<Form.Group className="mt-1">
+						<Form.Text style={{ fontSize: '.85rem' }}>
+							Already have an account?{' '}
+							<Link href="/login">
+								<a className={styles.redirect}>
 									Login here
 								</a>
-							</Form.Text>
-						</Form.Group>
+							</Link>
+						</Form.Text>
+					</Form.Group>
 
-						<div style={{ textAlign: 'right' }}>
-							<Button
-								type="submit"
-								value="submit"
-								className="bg-orange mt-3">
-								Signup
-							</Button>{' '}
-						</div>
-					</Form>
-				</div>
+					<div style={{ textAlign: 'right' }}>
+						<Button
+							type="submit"
+							value="submit"
+							className="bg-orange mt-3">
+							Signup
+						</Button>{' '}
+					</div>
+				</Form>
 			</div>
-		</div>
-	)
+		</>
+	)	
 }
