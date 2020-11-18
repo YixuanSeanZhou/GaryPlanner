@@ -1,4 +1,4 @@
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from flask import Blueprint, request, jsonify
 from flask_login import login_required, login_user, logout_user, current_user
 
@@ -12,6 +12,7 @@ CORS(user_api_bp, supports_credentials=True)
 
 
 @user_api_bp.route('/create_user', methods=['POST'])
+@cross_origin(supports_credentials=True)
 def create_user():
     '''
     Route to create a user
@@ -39,6 +40,7 @@ def create_user():
 
 
 @user_api_bp.route('/login', methods=['POST'])
+@cross_origin(supports_credentials=True)
 def login():
     '''
     Route used to log in a user. Creates a session for them and returns the
@@ -58,6 +60,7 @@ def login():
 
 
 @user_api_bp.route('/logout', methods=['POST'])
+@cross_origin(supports_credentials=True)
 @login_required
 def logout():
     '''
@@ -68,6 +71,7 @@ def logout():
 
 
 @user_api_bp.route('/get_users', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_users():
     users = User.get_users()
@@ -76,6 +80,7 @@ def get_users():
 
 
 @user_api_bp.route('/get_user_profile', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_user_profile():
     u_id = current_user.id
@@ -84,7 +89,9 @@ def get_user_profile():
 
 # TODO: NO USER NAME
 
+
 @user_api_bp.route('/update_profile', methods=['POST'])
+@cross_origin(supports_credentials=True)
 @login_required
 def update_profile():
     req_data = request.get_json()
