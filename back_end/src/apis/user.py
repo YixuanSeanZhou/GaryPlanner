@@ -24,11 +24,11 @@ def create_user():
     first_name = req_data.get('first_name', 'Gary')
     last_name = req_data.get('last_name', 'Gillespie')
     itgq = req_data.get('intended_grad_quarter', 'None')
-    college = req_data.get('college')  # frontend need check validity
+    college = req_data.get('college', 'SIXTH')  # frontend need check validity
     # ; seperated list expected
     major = req_data.get('major', 'undeclared')
     minor = req_data.get('minor', 'undeclared')
-    pwd = req_data.get('pwd')
+    pwd = req_data.get('pwd', '')
     s, u = User.create_user(user_name=user_name, email=email, pwd=pwd,
                             first_name=first_name, last_name=last_name,
                             intended_grad_quarter=itgq,
