@@ -23,7 +23,24 @@ export default class Signup extends React.Component {
 	}
 
 	handleClick = (e) => {
-		// Time to send request to the server!
+		console.log("POSTing this data to server:", JSON.stringify(this.state));
+
+		const options = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(this.state)
+		};
+
+		fetch('http://localhost:2333/api/users/create_user', options)
+		.then(response => response.json())
+		.then(data => {
+			console.log('Success:', data);
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+		});
 	};
 
 	handleChange = (e) => {
