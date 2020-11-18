@@ -18,7 +18,7 @@ export default class Signup extends React.Component {
 		this.state = {
 			email: "",
 			user_name: "",
-			password: "",
+			pwd: "",
 		};
 	}
 
@@ -76,10 +76,10 @@ export default class Signup extends React.Component {
 							/>
 						</Form.Group>
 
-						<Form.Group controlId="password">
+						<Form.Group controlId="pwd">
 							<Form.Label>Passowrd</Form.Label>
 							<Form.Control 
-								name="password"
+								name="pwd"
 								type="password"
 								value={this.state.password}
 								onChange={this.handleChange}
