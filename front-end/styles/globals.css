@@ -24,3 +24,10 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.background {
+  background-image: url("/Logo/background.png");
+  background-repeat: repeat-y;
+  background-position: right;
+  background-color:rgb(53,68,104);
+}

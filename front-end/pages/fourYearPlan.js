@@ -18,7 +18,7 @@ export default function Plan() {
                 </Navbar.Text>
             </GaryNavbar>
 
-            <div id="planCalendar">
+            <div id="planCalendar" className="background">
                 <PlanCalendar />
             </div>
         </>
