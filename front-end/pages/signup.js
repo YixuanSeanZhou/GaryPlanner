@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { withRouter } from 'next/router'
 
 // Components
 import { Form, Button } from 'react-bootstrap'
@@ -10,7 +11,7 @@ import { GaryNavbar } from '../components/commonUI'
 // Styles
 import styles from '../styles/Register.module.css'
 
-export default class Signup extends React.Component {
+class Signup extends React.Component {
 
 	constructor(props) {
 		super(props);
@@ -25,6 +26,8 @@ export default class Signup extends React.Component {
 	handleClick = (e) => {
 		console.log("POSTing this data to server:", JSON.stringify(this.state));
 
+		// Options for the fetch request
+		const requestUrl = 'http://localhost:2333/api/users/create_user';
 		const options = {
 			method: 'POST',
 			headers: {
@@ -33,10 +36,19 @@ export default class Signup extends React.Component {
 			body: JSON.stringify(this.state)
 		};
 
-		fetch('http://localhost:2333/api/users/create_user', options)
-		.then(response => response.json())
-		.then(data => {
-			console.log('Success:', data);
+		fetch(requestUrl, options)
+		.then(response => {
+			const data = response.json();
+
+			if (response.status == 200) {
+				// User successfully created
+				// TODO: Prompt Success
+
+				this.props.router.push('/login');
+			} else if (response.status == 300) {
+				// User Already Existed!
+			}	
+			console.log('Success:', data); // TODO: Remove for deployment
 		})
 		.catch((error) => {
 			console.error('Error:', error);
@@ -118,3 +130,5 @@ export default class Signup extends React.Component {
 		)	
 	}
 }
+
+export default withRouter(Signup);
