@@ -128,4 +128,4 @@ for ele in inp:
     inp5 += ele + " "
 
 # Change inp4 to any of the above
-print(parseClassIgnoreOr(inp4))
+print(parseClassWithOr(inp2))
