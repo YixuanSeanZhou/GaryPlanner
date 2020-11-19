@@ -6,8 +6,6 @@ import Head from 'next/head'
 import { GaryNavbar } from '../components/commonUI'
 import { Navbar, Jumbotron, Button } from 'react-bootstrap'
 
-import styles from '../styles/Intro.module.css'
-
 export default class Intro extends React.Component {
 	render() {
 		return (
@@ -68,7 +66,7 @@ export default class Intro extends React.Component {
 						
 						<div className="row" style={{paddingTop: "85px"}}>
 							<div className="col-6">
-
+								<img src="/images/schedule.png" width="500" hehight="auto" />
 							</div>
 							<div className="col-6">
 								<h3>Quarter Schedule</h3>

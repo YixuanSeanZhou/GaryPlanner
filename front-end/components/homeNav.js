@@ -14,7 +14,7 @@ export class HomeNav extends React.Component {
                         Gary Planner
                     </Navbar.Brand>
                 </Link>
-
+                {this.props.children}
                 <Nav className="ml-auto">
                     <NavDropdown className="ml-auto mr-5" title="Yixuan"  alignRight flip >
                         <NavDropdown.Item href="/userProfile">View Profile</NavDropdown.Item>
