@@ -21,6 +21,7 @@ export default class ChangePass extends React.Component {
                         Change Password
                     </Navbar.Text>
                 </GaryNavbar>
+                
                 <div className={styles.main}>
                     <Form>
                         <Form.Group controlId='OldPass' >

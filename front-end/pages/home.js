@@ -4,6 +4,7 @@ import Head from 'next/head'
 
 // Components
 import { GaryNavbar } from '../components/commonUI'
+import {HomeNav} from '../components/homeNav'
 import { Navbar, Jumbotron, Button } from 'react-bootstrap'
 
 import styles from '../styles/Intro.module.css'
@@ -16,24 +17,25 @@ export default class Home extends React.Component {
 					<title>Home</title>
 				</Head>
 
-				<GaryNavbar>
+				<HomeNav>
 					<Navbar.Text>Home</Navbar.Text>
-				</GaryNavbar>
+				</HomeNav>
 
 				<div className="intro">
 					<div className="content">
 						<div className="col-6">
 							<h1>Welcome Yixuan Zhou</h1>
+							<h3>View your</h3>
 							<Button
-								variant="warning"
-								href="/login"
+								variant="outline-warning"
+								href="/fourYearPlan"
 								className="mr-4">
-								Log In
+								Four Year Plan
 							</Button>
 							<Button
 								variant="outline-warning"
-								href="/signup">
-								Sign Up
+								href="/currQuarter">
+								Next Quarter's Schedule
 							</Button>
 						</div>
 						

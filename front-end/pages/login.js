@@ -1,17 +1,24 @@
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button, Navbar } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import styles from '../styles/Register.module.css'
 
+import { GaryNavbar } from '../components/commonUI'
+
 export default function Login() {
 	return (
+		<>
+
+			<GaryNavbar>
+				<Navbar.Text>Log in</Navbar.Text>
+			</GaryNavbar>
 
 			<div className={styles.outer}>
 				<div className={styles.middle}>
 					<div className={styles.login}>
 						<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
-							<a href="/">
+							<a href="/intro">
 								<Image
 									id="loginlogo"
 									src="/logo/PCLogo-Color.svg"
@@ -69,7 +76,8 @@ export default function Login() {
 					</div>
 				</div>
 			</div>	
-
+		</>
+			
 
 	)
 }

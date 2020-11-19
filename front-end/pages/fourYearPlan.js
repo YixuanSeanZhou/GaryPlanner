@@ -17,7 +17,7 @@ export default function Plan() {
                    Four Year Plan 
                 </Navbar.Text>
             </GaryNavbar>
-
+            
             <div id="planCalendar" className="">
                 <PlanCalendar />
             </div>

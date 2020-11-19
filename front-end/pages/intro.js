@@ -43,45 +43,50 @@ export default class Intro extends React.Component {
 				</div>
 
 
-				<div className={styles.content}>
-					<div clasName={styles.top}>
-						<div className={styles.subContent}>
-							<h1 className="text-center">Build your</h1>
-							<div className={styles.columns}>
-								<div className="col-5">
-									<h3>Four Year Plan</h3>
-									<p>
-										Generate a table with classes you have taken in
-										UCSD 
-										<br /> Allow you to customize the plan
-										<br />....
-									</p>
-									<Button
-										variant="contained"
-										color="primary"
-										href="/fourYearPlan">
-										build
-									</Button>
-								</div>
+				<div className="content">
+					<h1 className="text-center mt-5">Create your</h1>
+					<div className="container mt-5">
+						<div className="row">
+							<div className="col-6">
+								<h3>Four Year Plan</h3>
+								<p>
+									Generate a table with classes you have taken in
+									UCSD 
+									<br /> Allow you to customize the plan
+									<br />....
+								</p>
+								<Button
+									variant="outline-primary"
+									href="/login">
+									build
+								</Button>
+							</div>
+							<div className="col-6">
+								<img src="/images/plan.png" width="500" height="auto" />
+							</div>
+						</div>
+						
+						<div className="row" style={{paddingTop: "85px"}}>
+							<div className="col-6">
 
-								<div className="offset-2 col-5">
-									<h3>Quarter Schedule</h3>
-									<p>Plan your next quarter at first place
-									   <br />Select the best Professor
-									   <br /> ... 
-									</p>
+							</div>
+							<div className="col-6">
+								<h3>Quarter Schedule</h3>
+								<p>Plan your next quarter at first place
+									<br />Select the best Professor
+									<br /> ... 
+								</p>
 
-									<Button
-										variant="contained"
-										color="primary"
-										href="/">
-										build
-									</Button>
-								</div>
+								<Button
+									variant="outline-primary"
+									href="/login">
+									build
+								</Button>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</>
 		)
 	}

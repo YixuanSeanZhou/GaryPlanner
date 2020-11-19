@@ -33,6 +33,10 @@ body {
   background-color:rgb(53,68,104);
 }
 
+。background-light {
+  background-color: #626f96;
+}
+
 .intro {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -42,7 +46,7 @@ body {
   background-size: auto;
   color: white;
   background: rgb(56,70,104) url("/Background/slide.png") no-repeat right;
-  max-height: 380px;
+  min-height: 380px;
 
 }
 
