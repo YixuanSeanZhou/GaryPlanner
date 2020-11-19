@@ -17,7 +17,7 @@ class FourYearPlan(db.Model):
                          db.ForeignKey('AllClasses.id'), nullable=False)
     class_schedule_id = db.Column(db.Integer,
                                   # db.ForeignKey('ClassSchedules.id'),
-                                  nullable=False)
+                                  nullable=True) #No need for this functionality rn
     quarter_taken = db.Column(db.String(32), nullable=False)
     grade = db.Column(db.String(8), nullable=True)
     locked = db.Column(db.Boolean, nullable=True)
