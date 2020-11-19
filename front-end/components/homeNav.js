@@ -3,7 +3,7 @@ import { Navbar, Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
 
 
-export class GaryNavbar extends React.Component {
+export class HomeNav extends React.Component {
 
     render() {
         return (

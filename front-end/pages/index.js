@@ -35,7 +35,8 @@ export default function Index() {
                 <ul>
                     <li><Link href='/login'><a>Login Page</a></Link></li>
                     <li><Link href='/signup'><a>Signup page</a></Link></li>
-                    <li><Link href='/home'><a>Home Page</a></Link></li>
+                    <li><Link href='/intro'><a>Intro Page(before login)</a></Link></li>
+                    <li><Link href='/home'><a>Home Page(after login)</a></Link></li>
                     <li><Link href='/fourYearPlan'><a>4-Year-Plan Page</a></Link></li>
                     <li><Link href='/userProfile'><a>User Profile Page</a></Link></li>
                     <li><Link href='/currQuarter'><a>Current Quarter Schedule</a></Link></li>

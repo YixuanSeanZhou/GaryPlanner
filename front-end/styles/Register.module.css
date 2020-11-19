@@ -19,14 +19,14 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url("/Logo/background.png");
+    background-image: url("/Background/background.png");
     background-repeat: repeat-y;
     background-position: right;
     background-color:rgb(53,68,104);
 }
 
 .background {
-    background-image: url("/Logo/background.png");
+    background-image: url("/Background/background.png");
     background-repeat: repeat-y;
     background-position: right;
     background-color:rgb(53,68,104);
