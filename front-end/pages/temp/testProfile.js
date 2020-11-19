@@ -2,11 +2,13 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+
 // Components
 import { GaryNavbar } from '../../components/commonUI'
 import { Button, Form, Navbar } from 'react-bootstrap';
 import styles from "../../styles/UserProfile.module.css"
 
+import Cookies from 'js-cookie';
 
 export default class UserProfile extends React.Component {
 
@@ -23,9 +25,11 @@ export default class UserProfile extends React.Component {
 
     componentDidMount() {
         // Options for the fetch request
+        console.log(Cookies.get('session'))
 		const requestUrl = 'http://localhost:2333/api/users/get_user_profile';
 		const options = {
-			method: 'GET',
+            method: 'GET',
+            credentials: 'include',
 		};
 
 		fetch(requestUrl, options)
@@ -46,7 +50,7 @@ export default class UserProfile extends React.Component {
         .then(data => {
             console.log('Success:', data); // TODO: Remove for deployment
 
-            this.setState(data);
+            this.setState(data.result);
 
         })
 		.catch((error) => {
