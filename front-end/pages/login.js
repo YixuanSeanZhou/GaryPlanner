@@ -45,6 +45,7 @@ class Login extends React.Component {
 				// User successfully created
 				// TODO: Prompt Success
 
+				this.props.router.push('/temp/testProfile');
 			} else if (response.status == 300) {
 				// User Already Existed!
 				// TODO: Prompt
