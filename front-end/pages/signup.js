@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 import { withRouter } from 'next/router'
 
 // Components
@@ -44,9 +45,10 @@ class Signup extends React.Component {
 				// User successfully created
 				// TODO: Prompt Success
 
-				this.props.router.push('/login');
+				this.props.router.push('/login'); // Redirect the user to login page
 			} else if (response.status == 300) {
 				// User Already Existed!
+				// TODO: Prompt
 			}	
 			console.log('Success:', data); // TODO: Remove for deployment
 		})
@@ -64,6 +66,11 @@ class Signup extends React.Component {
 	render() {
 		return (
 			<>
+				<Head>
+					<title>Signup Page</title>
+				</Head>
+
+
 				<GaryNavbar />
 
 				<div className={styles.login}>
