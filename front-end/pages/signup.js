@@ -43,7 +43,7 @@ export default function Signup() {
                     }}/>
 				<div className={styles.middle} style={{
                     position: "absolute",
-                    top: 100,
+                    top: "20%",
                     left: 0,
                     width: "100%",
                     height: "absolute"
