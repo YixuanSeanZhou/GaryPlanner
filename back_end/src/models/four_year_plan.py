@@ -17,7 +17,7 @@ class FourYearPlan(db.Model):
                          db.ForeignKey('AllClasses.id'), nullable=False)
     class_schedule_id = db.Column(db.Integer,
                                   # db.ForeignKey('ClassSchedules.id'),
-                                  nullable=True) #No need for this functionality rn
+                                  nullable=True)  # No need for this
     quarter_taken = db.Column(db.String(32), nullable=False)
     grade = db.Column(db.String(8), nullable=True)
     locked = db.Column(db.Boolean, nullable=True)
@@ -52,7 +52,7 @@ class FourYearPlan(db.Model):
         if locked:
             self.locked = locked
         self.save()
-        return True
+        return True, self
 
     def save(self):
         db.session.commit()
@@ -66,14 +66,14 @@ class FourYearPlan(db.Model):
         if FourYearPlan.get_unique_entry(user_id=user_id,
                                          class_id=class_id,
                                          quarter_taken=quarter_taken):
-            return False
+            return False, None
         four_year_plan = FourYearPlan(user_id=user_id, class_id=class_id,
                                       class_schedule_id=class_schedule_id,
                                       quarter_taken=quarter_taken,
                                       grade=grade, locked=locked)
         db.session.add(four_year_plan)
         four_year_plan.save()
-        return True
+        return True, four_year_plan
 
     # returns entire table
     @staticmethod
@@ -116,7 +116,7 @@ class FourYearPlan(db.Model):
                      grade: str = None,
                      locked: bool = None) -> bool:
         # TODO: Maybe we want to use **kwargs, but maybe not...
-        entry = FourYearPlan.get_entry_by_id(id=id)
+        entry = FourYearPlan.get_entry_by_id(plan_id=id)
         return entry.update_attr(user_id=user_id, class_id=class_id,
                                  class_schedule_id=class_schedule_id,
                                  quarter_taken=quarter_taken,
