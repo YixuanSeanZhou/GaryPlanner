@@ -7,6 +7,30 @@
     align-items: center;
   }
 
+.mainContainer {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+
+    width: 98%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.searchContainer {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    justify-content: left;
+}
+
+.fourYearCalendarContainer {
+    flex-grow: 1;
+}
+
 .yearContainer {
     margin: auto;
     margin-top: 10px;

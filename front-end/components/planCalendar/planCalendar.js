@@ -2,6 +2,7 @@ import React from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import placeholderData from './placeholderData';
 import Quarter from './quarter';
+import CourseSearchBar from './searchBar/courseSearchBar'
 
 // Styles
 import styles from '../../styles/FourYearPlan.module.css'
@@ -59,24 +60,37 @@ export default class PlanCalendar extends React.Component {
             courseIds: startCourseIds
         };
 
-        const finishCourseIds = Array.from(finish.courseIds);
-        finishCourseIds.splice(destination.index, 0, draggableId);
-        const newFinish = {
-            ...finish,
-            courseIds: finishCourseIds
-        };
+        // If we move from the quarters to the search column, delete it
+        if (finish.id != 'SearchColumn') {
+            const finishCourseIds = Array.from(finish.courseIds);
+            finishCourseIds.splice(destination.index, 0, draggableId);
+            const newFinish = {
+                ...finish,
+                courseIds: finishCourseIds
+            };
 
-        const newState = {
-            ...this.state,
-            quarters: {
-                ...this.state.quarters,
-                [newStart.id]: newStart,
-                [newFinish.id]: newFinish
-            }
-        };
+            const newState = {
+                ...this.state,
+                quarters: {
+                    ...this.state.quarters,
+                    [newStart.id]: newStart,
+                    [newFinish.id]: newFinish
+                }
+            };
 
-        this.setState(newState);
+            this.setState(newState);
+        } else {
+            const newState = {
+                ...this.state,
+                quarters: {
+                    ...this.state.quarters,
+                    [newStart.id]: newStart
+                }
+            };
 
+            this.setState(newState);
+        }
+        
         // TODO: Tell backend that a reorder has occured
     };
 
@@ -84,6 +98,8 @@ export default class PlanCalendar extends React.Component {
     render() {
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
+                <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} />
+                <div className={styles.fourYearCalendarContainer}>
                 {this.state.yearOrder.map((yearId) => {
                     const year = this.state.years[yearId];
                     return (
@@ -100,7 +116,7 @@ export default class PlanCalendar extends React.Component {
                         </div>
                     )
                 })}
-                
+                </div>
             </DragDropContext>
         );
     }
