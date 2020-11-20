@@ -54,7 +54,7 @@ export default class ChangePass extends React.Component {
                     top: "20%",
                     left: 0,
                     width: "100%",
-                    height: "absolute"
+                    height: "absolute%"
                 }}>
 						<div className={styles.login}>
 							<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
