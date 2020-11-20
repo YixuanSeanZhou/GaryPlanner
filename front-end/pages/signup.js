@@ -15,39 +15,42 @@ export default function Signup() {
 			</GaryNavbar>
 
 			<div className={styles.outer}>
-			<Particles
-                    params={{
-                        "particles": {
-                        "number": {
-                        "value": 90,
-                        "density": {
-                          "enable": true,
-                          "value_area": 2000
-                        }
-                        },
-                        "color": {
-                          "value": "#ffffff"
-                        },
-                        "size": {
-                        "value": 2.5
-                        }
-                    },
-                        "interactivity": {
-                        "events": {
-                        "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                        }
-                        }
-                        }
-                    }}/>
-				<div className={styles.middle} style={{
-                    position: "absolute",
-                    top: 100,
-                    left: 0,
-                    width: "100%",
-                    height: "absolute"
-                }}>
+				<Particles
+					params={{
+						particles: {
+							number: {
+								value: 90,
+								density: {
+									enable: true,
+									value_area: 2000,
+								},
+							},
+							color: {
+								value: '#ffffff',
+							},
+							size: {
+								value: 2.5,
+							},
+						},
+						interactivity: {
+							events: {
+								onhover: {
+									enable: true,
+									mode: 'repulse',
+								},
+							},
+						},
+					}}
+				/>
+				<div
+					className={styles.middle}
+					style={{
+						position: 'absolute',
+						top: '20%',
+						left: 0,
+						width: '100%',
+						height: 'absolute',
+					}}>
 					<div className={styles.login}>
 						<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
 							<a href="/intro">

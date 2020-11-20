@@ -20,7 +20,7 @@ export default function UserProfile() {
 			<div className={styles.main}>
 				<section>
 					<div>
-						<h2>User Name</h2>
+						<h2>Yixuan Zhou</h2>
 					</div>
 					<Form>
 						<Form.Label>Major</Form.Label>
