@@ -51,7 +51,7 @@ export default class ChangePass extends React.Component {
                     }}/>
 					<div className={styles.middle} style={{
                     position: "absolute",
-                    top: 100,
+                    top: "20%",
                     left: 0,
                     width: "100%",
                     height: "absolute"
