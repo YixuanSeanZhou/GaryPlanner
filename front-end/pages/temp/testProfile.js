@@ -2,6 +2,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import { withRouter } from 'next/router'
 
 // Components
 import { GaryNavbar } from '../../components/commonUI'
@@ -10,7 +11,7 @@ import styles from "../../styles/UserProfile.module.css"
 
 import Cookies from 'js-cookie';
 
-export default class UserProfile extends React.Component {
+class UserProfile extends React.Component {
 
     constructor(props) {
         super(props);
@@ -25,7 +26,6 @@ export default class UserProfile extends React.Component {
 
     componentDidMount() {
         // Options for the fetch request
-        console.log(Cookies.get('session'))
 		const requestUrl = 'http://localhost:2333/api/users/get_user_profile';
 		const options = {
             method: 'GET',
@@ -58,6 +58,35 @@ export default class UserProfile extends React.Component {
         });
     }
 
+    handleClick = (e) => {
+        // Options for the fetch request
+		const requestUrl = 'http://localhost:2333/api/users/logout';
+		const options = {
+            method: 'POST',
+            credentials: 'include',
+		};
+
+		fetch(requestUrl, options)
+        .then(response => {
+
+            if (response.status == 200) {
+				// User successfully created
+				// TODO: Prompt Success
+                this.props.router.push("/");
+			} else if (response.status == 403) {
+                this.setState({
+                    user_name: "Not Logged in!",
+                })
+                throw Error(response.statusText);
+			}	
+
+        })
+		.catch((error) => {
+			console.error('Error:', error);
+        });
+
+    }
+
     render() {
         return (
             <>
@@ -86,12 +115,16 @@ export default class UserProfile extends React.Component {
                         <p>A******</p>
                         Intended Graduate Quarter
                         <p>xxx</p>
-                        <br />                       
+                        <br />     
+
+                        <Button onClick={this.handleClick}>Logout</Button>               
                         
                     
-                </section>
+                    </section>
                 </div>
             </>
         );    
     }
 };
+
+export default withRouter(UserProfile);
