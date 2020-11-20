@@ -3,53 +3,106 @@ import Head from 'next/head'
 import Link from 'next/link'
 // Components
 import { GaryNavbar } from '../components/commonUI'
-import { Button, Form, Navbar } from 'react-bootstrap';
-import styles from "../styles/UserProfile.module.css"
-export default function UserProfile() {
-    return (
-        <>
-            <Head>
-                <title>User Profile</title>
-            </Head>
+import { Button, Form, Navbar, Row, Col } from 'react-bootstrap'
+import styles from '../styles/UserProfile.module.css'
 
-            <GaryNavbar>
-                <Navbar.Text>
-                    User Profile
-                </Navbar.Text>
-            </GaryNavbar>
-            
-            <div className={styles.main}>
-                <img src="public/logo/PCLogo-Color.svg"  width="256" height="256" />
-                <section >
-                    <div >
-                        <h2>user_name</h2>
-                    </div>
-                    Major
-                    <p>xxx</p>
-                    Minor
-                    <p>xxx</p>
-                    Email
-                    <p>xxx@xxx</p>
-                    College
-                    <p>Warren</p>
-                    PID
-                    <p>A******</p>
-                    Intended Graduate Quarter
-                    <p>Spring2021</p>
-                    <br />
-                    <div >
-                    <Link href="/setting">
-                        <Button variant="primary">Edit Profile</Button>
-                    </Link>
-                    <Link href="/ChangePass">
-                        <Button variant="primary">Change Password</Button>
-                    </Link>
-                    </div>
-                   
-                    
-                
-            </section>
-            </div>
-        </>
-    );
-};
+export default function UserProfile() {
+	return (
+		<>
+			<Head>
+				<title>User Profile</title>
+			</Head>
+
+			<GaryNavbar>
+				<Navbar.Text>User Profile</Navbar.Text>
+			</GaryNavbar>
+
+			<div className={styles.main}>
+				<section>
+					<div>
+						<h2>User Name</h2>
+					</div>
+					<Form>
+						<Form.Label>Major</Form.Label>
+						<Form.Group as={Row} controlId="Major">
+							<Col>
+								<Form.Control
+									id="major"
+									plaintext
+									readOnly
+									defaultValue="Computer science"
+								/>
+							</Col>
+							<Col>
+								<Button variant="light" id="Edit">
+									{' '}
+									Edit{' '}
+								</Button>
+							</Col>
+						</Form.Group>
+					</Form>
+					<Form>
+						<Form.Label>Minor</Form.Label>
+						<Form.Group as={Row} controlId="Minor">
+							<Col>
+								<Form.Control id="minor" plaintext defaultValue="Math" />
+							</Col>
+							<Col>
+								<Button variant="light" id="Edit">
+									{' '}
+									Edit{' '}
+								</Button>
+							</Col>
+						</Form.Group>
+					</Form>
+					Email
+					<p>xxx@xxx</p>
+					<Form>
+						<Form.Label>College</Form.Label>
+						<Form.Group as={Row} controlId="College">
+							<Col>
+								<Form.Control
+									id="college"
+									plaintext
+									defaultValue="Warren"
+								/>
+							</Col>
+							<Col>
+								<Button variant="light" id="Edit">
+									{' '}
+									Edit{' '}
+								</Button>
+							</Col>
+						</Form.Group>
+					</Form>
+					PID
+					<p>A******</p>
+					<Form>
+						<Form.Label>Intended Graduate Quarter</Form.Label>
+						<Form.Group as={Row} controlId="IntGradYear">
+							<Col>
+								<Form.Control
+									id="intgradyear"
+									plaintext
+									defaultValue="Spring2022"
+								/>
+							</Col>
+							<Col>
+								<Button variant="light" id="Edit">
+									{' '}
+									Edit{' '}
+								</Button>
+							</Col>
+						</Form.Group>
+					</Form>
+					<br />
+					<div>
+						<Link href="/changePass">
+							<Button variant="light">Change Password</Button>
+						</Link>
+					</div>
+				</section>
+			</div>
+		</>
+	)
+}

@@ -3,102 +3,107 @@ import React from 'react'
 import Head from 'next/head'
 
 // Components
-import { GaryNavbar } from '../components/commonUI'
 import {HomeNav} from '../components/homeNav'
-import { Navbar, Jumbotron, Button } from 'react-bootstrap'
+import { Navbar, Jumbotron, Button, Modal } from 'react-bootstrap'
+import Request from '../components/requestPlan'
 
 import styles from '../styles/Intro.module.css'
 
-export default class Home extends React.Component {
-	render() {
-		return (
-			<>
-				<Head>
-					<title>Home</title>
-				</Head>
+export default function Home() {
 
-				<HomeNav>
-					<Navbar.Text>Home</Navbar.Text>
-				</HomeNav>
 
-				<div className="intro">
-					<div className="content">
-						<div className="col-6">
-							<h1>Welcome Yixuan Zhou</h1>
+	const [modalShow, setModalShow] = React.useState(false);
+	
+	return (
+		<>
+			<Head>
+				<title>Home</title>
+			</Head>
 
-							<div className="container">
-								<h6>Major:</h6>
-								<p>Computer Science
-								<br/> Mathematic</p>
+			<HomeNav>
+				<Navbar.Text>Home</Navbar.Text>
+			</HomeNav>
 
-								<h6>Minor: </h6>
-								<p>None</p>
-								
-								<h6>College: </h6>
-								<p>Seventh</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
+			<div className="intro">
 				<div className="content">
-					<h1 className="text-center mt-5"></h1>
-					<div className="container mt-5">
-						<div className="row">
-							<div className="col-6">
-								<h3>Four Year Plan</h3>
-								<p>
-									Generates your four year plan automatically <br />
-									Allows you to graduate on time <br /> 
-									Customizes your plan easily <br />
-								</p>
-								<Button
-									variant="warning"
-									href="/">
-									Create New
-								</Button>
-								<Button
-									variant="outline-primary"
-									href="/fourYearPlan"
-									className="ml-4">
-									View
-								</Button>
-							</div>
-							<div className="col-6">
-								<img src="/images/plan.png" width="500" height="auto" />
-							</div>
-						</div>
-						
-						<div className="row" style={{paddingTop: "85px"}}>
-							<div className="col-6">
-								<img src="/images/schedule.png" width="500" hehight="auto" />
-							</div>
-							<div className="col-6">
-								<h3>Quarter Schedule</h3>
-								<p>
-									Clear view of your weekly schedule <br />
-									Comparsion between different classes <br />
-									Select the best professor you want <br />
+					<div className="col-6">
+						<h1>Welcome Yixuan Zhou</h1>
 
-								</p>
+						<div className="container">
+							<h6>Major:</h6>
+							<p>Computer Science
+							<br/> Mathematic</p>
 
-								<Button
-									variant="warning"
-									href="/">
-									Create New
-								</Button>
-								<Button
-									variant="outline-primary"
-									href="/currQuarter"
-									className="ml-4">
-									View
-								</Button>
-							</div>
+							<h6>Minor: </h6>
+							<p>None</p>
+							
+							<h6>College: </h6>
+							<p>Seventh</p>
 						</div>
 					</div>
 				</div>
+			</div>
 
-			</>
-		)
-	}
+			<div className="content">
+				<h1 className="text-center mt-5"></h1>
+				<div className="container mt-5">
+					<div className="row">
+						<div className="col-6">
+							<h3>Four Year Plan</h3>
+							<p>
+								Generates your four year plan automatically <br />
+								Allows you to graduate on time <br /> 
+								Customizes your plan easily <br />
+							</p>
+							<Button
+								variant="warning"
+								onClick={() => setModalShow(true)}
+								>
+								Create New
+							</Button>
+							<Button
+								variant="outline-primary"
+								href="/fourYearPlan"
+								className="ml-4">
+								View
+							</Button>
+						</div>
+						<div className="col-6">
+							<img src="/images/plan.png" width="500" height="auto" />
+						</div>
+					</div>
+					
+					<div className="row" style={{paddingTop: "85px"}}>
+						<div className="col-6">
+							<img src="/images/schedule.png" width="500" hehight="auto" />
+						</div>
+						<div className="col-6">
+							<h3>Quarter Schedule</h3>
+							<p>
+								Clear view of your weekly schedule <br />
+								Comparsion between different classes <br />
+								Select the best professor you want <br />
+
+							</p>
+
+							<Button
+								variant="warning"
+								href="/">
+								Create New
+							</Button>
+							<Button
+								variant="outline-primary"
+								href="/currQuarter"
+								className="ml-4">
+								View
+							</Button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<Request show={modalShow} onHide={() => setModalShow(false)} />
+		</>
+	)
+
 }

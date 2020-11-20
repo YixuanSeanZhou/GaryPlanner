@@ -12,7 +12,7 @@ export default function Signup() {
 			<GaryNavbar>
 				<Navbar.Text>Sign up</Navbar.Text>
 			</GaryNavbar>
-		
+
 			<div className={styles.outer}>
 				<div className={styles.middle}>
 					<div className={styles.login}>
@@ -45,12 +45,22 @@ export default function Signup() {
 
 							<Form.Group>
 								<Form.Label htmlFor="passowrd">Passowrd</Form.Label>
-								<Form.Control type="password" id="password" name="password" />
+								<Form.Control
+									type="password"
+									id="password"
+									name="password"
+								/>
 							</Form.Group>
 
 							<Form.Group>
-								<Form.Label htmlFor="passowrd">Confirm password</Form.Label>
-								<Form.Control type="password" id="password" name="password" />
+								<Form.Label htmlFor="passowrd">
+									Confirm password
+								</Form.Label>
+								<Form.Control
+									type="password"
+									id="password"
+									name="password"
+								/>
 							</Form.Group>
 
 							<Form.Group className="mt-1">

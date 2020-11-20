@@ -9,7 +9,6 @@ import { GaryNavbar } from '../components/commonUI'
 export default function Login() {
 	return (
 		<>
-
 			<GaryNavbar>
 				<Navbar.Text>Log in</Navbar.Text>
 			</GaryNavbar>
@@ -43,7 +42,11 @@ export default function Login() {
 
 							<Form.Group>
 								<Form.Label htmlFor="passowrd">Passowrd</Form.Label>
-								<Form.Control type="password" id="password" name="password" />
+								<Form.Control
+									type="password"
+									id="password"
+									name="password"
+								/>
 							</Form.Group>
 
 							<Form.Group>
@@ -75,9 +78,7 @@ export default function Login() {
 						</Form>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</>
-			
-
 	)
 }
