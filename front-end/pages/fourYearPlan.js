@@ -22,7 +22,7 @@ export default function Plan() {
 
             <SearchBar />
 
-            <div id="planCalendar" className="">
+            <div id="planCalendar">
                 <PlanCalendar />
             </div>
         </>

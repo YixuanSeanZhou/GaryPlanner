@@ -16,7 +16,7 @@ export class HomeNav extends React.Component {
                 </Link>
                 {this.props.children}
                 <Nav className="ml-auto">
-                    <NavDropdown className="ml-auto mr-5" title="Yixuan"  alignRight flip >
+                    <NavDropdown className="ml-auto mr-5" title="Yixuan"  alignRight >
                         <NavDropdown.Item href="/userProfile">View Profile</NavDropdown.Item>
                         <NavDropdown.Item href="/">Friends</NavDropdown.Item>
                         <NavDropdown.Item href="setting">Change Passoword</NavDropdown.Item>

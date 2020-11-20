@@ -48,15 +48,14 @@ export default class Intro extends React.Component {
 							<div className="col-6">
 								<h3>Four Year Plan</h3>
 								<p>
-									Generate a table with classes you have taken in
-									UCSD 
-									<br /> Allow you to customize the plan
-									<br />....
+									Generates your four year plan automatically <br />
+									Allows you to graduate on time <br /> 
+									Customizes your plan easily <br />
 								</p>
 								<Button
 									variant="outline-primary"
 									href="/login">
-									build
+									Create
 								</Button>
 							</div>
 							<div className="col-6">
@@ -70,15 +69,17 @@ export default class Intro extends React.Component {
 							</div>
 							<div className="col-6">
 								<h3>Quarter Schedule</h3>
-								<p>Plan your next quarter at first place
-									<br />Select the best Professor
-									<br /> ... 
+								<p>
+									Clear view of your weekly schedule <br />
+									Comparsion between different classes <br />
+									Select the best professor you want <br />
+
 								</p>
 
 								<Button
 									variant="outline-primary"
 									href="/login">
-									build
+									Create
 								</Button>
 							</div>
 						</div>

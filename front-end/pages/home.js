@@ -25,20 +25,76 @@ export default class Home extends React.Component {
 					<div className="content">
 						<div className="col-6">
 							<h1>Welcome Yixuan Zhou</h1>
-							<h3>View your</h3>
-							<Button
-								variant="outline-warning"
-								href="/fourYearPlan"
-								className="mr-4">
-								Four Year Plan
-							</Button>
-							<Button
-								variant="outline-warning"
-								href="/currQuarter">
-								Next Quarter's Schedule
-							</Button>
+
+							<div className="container">
+								<h6>Major:</h6>
+								<p>Computer Science
+								<br/> Mathematic</p>
+
+								<h6>Minor: </h6>
+								<p>None</p>
+								
+								<h6>College: </h6>
+								<p>Seventh</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="content">
+					<h1 className="text-center mt-5"></h1>
+					<div className="container mt-5">
+						<div className="row">
+							<div className="col-6">
+								<h3>Four Year Plan</h3>
+								<p>
+									Generates your four year plan automatically <br />
+									Allows you to graduate on time <br /> 
+									Customizes your plan easily <br />
+								</p>
+								<Button
+									variant="warning"
+									href="/">
+									Create New
+								</Button>
+								<Button
+									variant="outline-primary"
+									href="/fourYearPlan"
+									className="ml-4">
+									View
+								</Button>
+							</div>
+							<div className="col-6">
+								<img src="/images/plan.png" width="500" height="auto" />
+							</div>
 						</div>
 						
+						<div className="row" style={{paddingTop: "85px"}}>
+							<div className="col-6">
+								<img src="/images/schedule.png" width="500" hehight="auto" />
+							</div>
+							<div className="col-6">
+								<h3>Quarter Schedule</h3>
+								<p>
+									Clear view of your weekly schedule <br />
+									Comparsion between different classes <br />
+									Select the best professor you want <br />
+
+								</p>
+
+								<Button
+									variant="warning"
+									href="/">
+									Create New
+								</Button>
+								<Button
+									variant="outline-primary"
+									href="/currQuarter"
+									className="ml-4">
+									View
+								</Button>
+							</div>
+						</div>
 					</div>
 				</div>
 

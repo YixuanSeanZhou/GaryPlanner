@@ -1,7 +1,8 @@
 .bar {
+    
     padding: 12px 12px;
     font-size: 15px;
-    width: 400px;
+    width: 350px;
     display:block;
     outline: none;
     margin: 20px auto 20px;
@@ -15,6 +16,6 @@
 }
 
 .ul li:hover{
-    background-color: gray;
-    width: 330px;
+    background-color: #88D8B0;
+    width: 150px;
 }
