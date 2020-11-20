@@ -2,6 +2,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Particles from 'react-particles-js';
 
 // Components
 import { GaryNavbar } from '../components/commonUI'
@@ -22,7 +23,39 @@ export default class ChangePass extends React.Component {
 				</GaryNavbar>
 
 				<div className={styles.outer}>
-					<div className={styles.middle}>
+				<Particles
+                    params={{
+                        "particles": {
+                        "number": {
+                        "value": 90,
+                        "density": {
+                          "enable": true,
+                          "value_area": 2000
+                        }
+                        },
+                        "color": {
+                          "value": "#ffffff"
+                        },
+                        "size": {
+                        "value": 2.5
+                        }
+                    },
+                        "interactivity": {
+                        "events": {
+                        "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                        }
+                        }
+                        }
+                    }}/>
+					<div className={styles.middle} style={{
+                    position: "absolute",
+                    top: 100,
+                    left: 0,
+                    width: "100%",
+                    height: "absolute"
+                }}>
 						<div className={styles.login}>
 							<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
 								<a href="/intro">
