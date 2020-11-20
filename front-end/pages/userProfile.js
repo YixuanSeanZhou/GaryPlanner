@@ -95,12 +95,6 @@ export default function UserProfile() {
 							</Col>
 						</Form.Group>
 					</Form>
-					<br />
-					<div>
-						<Link href="/changePass">
-							<Button variant="light">Change Password</Button>
-						</Link>
-					</div>
 				</section>
 			</div>
 		</>

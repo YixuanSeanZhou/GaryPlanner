@@ -3,7 +3,7 @@ import Head from 'next/head'
 import PlanCalendar from '../components/planCalendar/planCalendar'
 // Components
 import { SearchBar } from '../components/searchBar';
-import { HomeNav } from '../components/homeNav';
+import HomeNav from '../components/homeNav'
 import { Navbar } from 'react-bootstrap';
 
 

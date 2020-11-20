@@ -3,7 +3,7 @@ import React from 'react'
 import Head from 'next/head'
 
 // Components
-import {HomeNav} from '../components/homeNav'
+import HomeNav from '../components/homeNav'
 import { Navbar, Jumbotron, Button, Modal } from 'react-bootstrap'
 import Request from '../components/requestPlan'
 
@@ -30,15 +30,16 @@ export default function Home() {
 						<h1>Welcome Yixuan Zhou</h1>
 
 						<div className="container">
-							<h6>Major:</h6>
-							<p>Computer Science
-							<br/> Mathematic</p>
+							<div className="row">
+								<h6>Major: Computer Science</h6>
+							</div>
+							<div className="row">
+								<h6>Minor: None</h6>
+							</div>
+							<div className="row">
+								<h6>College: Sixth</h6>
+							</div>
 
-							<h6>Minor: </h6>
-							<p>None</p>
-							
-							<h6>College: </h6>
-							<p>Seventh</p>
 						</div>
 					</div>
 				</div>
@@ -52,13 +53,10 @@ export default function Home() {
 							<h3>Four Year Plan</h3>
 							<p>
 								Generates your four year plan automatically <br />
-								Allows you to graduate on time <br /> 
+								Allows you to graduate on time <br />
 								Customizes your plan easily <br />
 							</p>
-							<Button
-								variant="warning"
-								onClick={() => setModalShow(true)}
-								>
+							<Button variant="warning" onClick={() => setModalShow(true)}>
 								Create New
 							</Button>
 							<Button
@@ -72,8 +70,8 @@ export default function Home() {
 							<img src="/images/plan.png" width="500" height="auto" />
 						</div>
 					</div>
-					
-					<div className="row" style={{paddingTop: "85px"}}>
+
+					<div className="row" style={{ paddingTop: '85px' }}>
 						<div className="col-6">
 							<img src="/images/schedule.png" width="500" hehight="auto" />
 						</div>
@@ -83,12 +81,9 @@ export default function Home() {
 								Clear view of your weekly schedule <br />
 								Comparsion between different classes <br />
 								Select the best professor you want <br />
-
 							</p>
 
-							<Button
-								variant="warning"
-								href="/">
+							<Button variant="warning" href="/">
 								Create New
 							</Button>
 							<Button

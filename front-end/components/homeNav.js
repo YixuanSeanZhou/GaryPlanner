@@ -3,10 +3,9 @@ import { Navbar, Container, Row, Col, NavDropdown, Nav } from 'react-bootstrap'
 import Link from 'next/link'
 
 
-export class HomeNav extends React.Component {
-
-    render() {
-        return (
+export default class HomeNav extends React.Component {
+	render() {
+		return (
 			<Navbar
 				variant="dark"
 				sticky="top"
@@ -38,5 +37,5 @@ export class HomeNav extends React.Component {
 				</Nav>
 			</Navbar>
 		)
-    }
+	}
 }
