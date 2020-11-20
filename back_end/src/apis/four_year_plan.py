@@ -12,6 +12,7 @@ CORS(four_year_plan_api_bp, supports_credentials=True)
 
 
 @four_year_plan_api_bp.route('/create_entry', methods=['POST'])
+@login_required
 def create_entry():
     req_data = request.get_json()
     user_id = req_data.get('user_id')
@@ -31,6 +32,7 @@ def create_entry():
 
 
 @four_year_plan_api_bp.route('/get_entries', methods=['GET'])
+@login_required
 def get_entries():
     all_entries = FourYearPlan.get_entries()
     all_entries = list(map(lambda x: x.to_json(), all_entries))
