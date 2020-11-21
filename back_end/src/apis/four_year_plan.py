@@ -12,6 +12,7 @@ CORS(four_year_plan_api_bp, supports_credentials=True)
 
 
 @four_year_plan_api_bp.route('/create_entry', methods=['POST'])
+@login_required
 def create_entry():
     req_data = request.get_json()
     user_id = req_data.get('user_id')
@@ -31,6 +32,7 @@ def create_entry():
 
 
 @four_year_plan_api_bp.route('/get_entries', methods=['GET'])
+@login_required
 def get_entries():
     all_entries = FourYearPlan.get_entries()
     all_entries = list(map(lambda x: x.to_json(), all_entries))
@@ -56,6 +58,7 @@ def get_locked_entries_by_user():
 
 
 @four_year_plan_api_bp.route('/get_entry_by_id', methods=['GET'])
+@login_required
 def get_entry_by_id():
     plan_id = request.args.get('plan_id')
     entry = FourYearPlan.get_entry_by_id(plan_id=plan_id)
@@ -63,6 +66,7 @@ def get_entry_by_id():
 
 
 @four_year_plan_api_bp.route('/get_unique_entry', methods=['GET'])
+@login_required
 def get_unique_entry():
     user_id = current_user.id
     class_id = request.args.get('class_id')
