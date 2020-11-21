@@ -6,10 +6,15 @@ import { withRouter } from 'next/router'
 
 // Components
 import { GaryNavbar } from '../../components/commonUI'
-import { Button, Form, Navbar } from 'react-bootstrap';
+import { Button, Form, Navbar, Spinner } from 'react-bootstrap';
 import styles from "../../styles/UserProfile.module.css"
 
-import Cookies from 'js-cookie';
+function loadingPage() {
+    return (
+        <h1>Loading</h1>
+    );
+}
+
 
 class UserProfile extends React.Component {
 
@@ -17,10 +22,15 @@ class UserProfile extends React.Component {
         super(props);
 
         this.state = {
+            is_loading: true,
             user_name: "Loading...",
             email: "Loading...",
             first_name: "Loading...",
             last_name: "Loading...",
+            college: "Loading...",
+            intended_grad_quarter: "Loading...",
+            major: "Loading...",
+            minor: "Loading...",
         }
     }
 
@@ -36,7 +46,6 @@ class UserProfile extends React.Component {
         .then(response => {
 
             if (response.status == 200) {
-				// User successfully created
 				// TODO: Prompt Success
                 return response.json()
 			} else if (response.status == 403) {
@@ -51,6 +60,9 @@ class UserProfile extends React.Component {
             console.log('Success:', data); // TODO: Remove for deployment
 
             this.setState(data.result);
+            this.setState({
+                is_loading: false,
+            })
 
         })
 		.catch((error) => {
@@ -72,7 +84,7 @@ class UserProfile extends React.Component {
             if (response.status == 200) {
 				// User successfully created
 				// TODO: Prompt Success
-                this.props.router.push("/");
+                this.props.router.push("/login");
 			} else if (response.status == 403) {
                 this.setState({
                     user_name: "Not Logged in!",
@@ -99,32 +111,31 @@ class UserProfile extends React.Component {
                         User Profile
                     </Navbar.Text>
                 </GaryNavbar>
-                
+
+
                 <div className={styles.main}>
                     <section >
-                        <h2 > {this.state.user_name}</h2>
+                        <h2 >Hello, {this.state.user_name}</h2>
                         Major
-                        <p>xxx</p>
+                        <p>{this.state.major}</p>
                         Minor
-                        <p>xxx</p>
+                        <p>{this.state.minor}</p>
                         Email
                         <p>{this.state.email}</p>
                         College
-                        <p>Warren</p>
-                        PID
-                        <p>A******</p>
+                        <p>{this.state.college}</p>
                         Intended Graduate Quarter
-                        <p>xxx</p>
+                        <p>{this.state.intended_grad_quarter}</p>
                         <br />     
-
                         <Button onClick={this.handleClick}>Logout</Button>               
-                        
-                    
                     </section>
                 </div>
+                <loadingPage />
             </>
         );    
     }
 };
+
+
 
 export default withRouter(UserProfile);
