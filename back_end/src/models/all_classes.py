@@ -13,11 +13,14 @@ from enum import Enum
     FIXME: We need to consider the classes that have been existing but ceases to exist
 '''
 
-# FIXME: I suggest to store all the Enum in one file and import that file everywhere needed
+
+# FIXME: I suggest to store all the Enum in one file and import that file
+# everywhere needed
 class GradeType(Enum):
     PNP_Only = 0
     Letter_Only = 1
     Both = 2
+
 
 class AllClass(db.Model):
     __tablename__ = "AllClasses"
@@ -46,7 +49,9 @@ class AllClass(db.Model):
         ret['offer'] = self.offer
         return ret
 
-    def update_attr(self, class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str, offer: bool) -> bool:
+    def update_attr(self, class_code: str, title: str, units: int, 
+                    support_grade_type: int, description: str, 
+                    prerequisites: str, offer: bool) -> bool:
         '''
         update the info
         input   self-explanatory
@@ -74,7 +79,9 @@ class AllClass(db.Model):
         db.session.commit()
 
     @staticmethod
-    def create_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str, offer: bool) -> bool:
+    def create_class(class_code: str, title: str, units: int, 
+                     support_grade_type: int, description: str, 
+                     prerequisites: str, offer: bool) -> bool:
         '''
         create prereq
         input   self-explanatory
@@ -85,7 +92,10 @@ class AllClass(db.Model):
         # This is a pre done thing before the app goes public
         if AllClass.get_class_by_code(class_code=class_code):
             return False, None    # class with prereq exists
-        clss = AllClass(class_code=class_code, title = title, units = units, support_grade_type = GradeType[support_grade_type].value, description = description, prerequisites = prerequisites, offer = offer)
+        clss = AllClass(class_code=class_code, title=title, units=units,
+                        support_grade_type=GradeType[support_grade_type].value,
+                        description=description, prerequisites=prerequisites, 
+                        offer=offer)
         db.session.add(clss)
         clss.save()
         return True, clss
