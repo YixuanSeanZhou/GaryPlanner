@@ -15,7 +15,7 @@ export default function Signup() {
 			</GaryNavbar>
 
 			<div className={styles.outer}>
-			<Particles
+				<Particles
                     params={{
                         "particles": {
                         "number": {
