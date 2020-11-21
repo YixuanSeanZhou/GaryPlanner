@@ -49,7 +49,7 @@ export default function Signup() {
                     height: "absolute"
                 }}>
 					<div className={styles.login}>
-						<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
+						<Form.Group style={{ display: 'flex', alignItems: 'center', height: "absolute" }}>
 							<a href="/intro">
 								<Image
 									id="loginlogo"
@@ -105,7 +105,7 @@ export default function Signup() {
 								</Form.Text>
 							</Form.Group>
 
-							<div style={{ textAlign: 'right' }}>
+							<div style={{ textAlign: 'right'}}>
 								<Button
 									type="submit"
 									value="submit"
