@@ -3,3 +3,4 @@ __pycache__/*
 postgres-data/*
 src/__pycache__/*
 *.pdf
+degree_audit.json

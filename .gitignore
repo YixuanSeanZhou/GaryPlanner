@@ -1,7 +1,5 @@
 .DS_Store
 .__pycache__/*
-<<<<<<< HEAD
-.vscode
-=======
 .vscode/*
->>>>>>> GaryPlanner/main
+.prettierrc.json
+.vscode/*
