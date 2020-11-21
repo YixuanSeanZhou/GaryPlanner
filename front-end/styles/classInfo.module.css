@@ -31,7 +31,7 @@
     padding: 10px;
     border-radius: 30px;
     background-color: rgb(148, 170, 221);
-    box-shadow: 2px 2px 2px rgb(221, 221, 221);
+    box-shadow: 2px 2px 2px rgb(88, 84, 84);
     display: flex;
     flex-direction: column;
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -73,7 +73,7 @@
     color: white;
     background-color: rgb(53,68,104);
     border: 1px solid gray;
-    box-shadow: 5px 5px 5px rgb(221, 221, 221);
+    box-shadow: 5px 5px 5px rgb(88, 84, 84);
   }
 
   .floatContainer{
@@ -94,7 +94,7 @@
     color: white;
     background-color: rgb(53,68,104);
     border: 1px solid gray;
-    box-shadow: 5px 5px 5px rgb(221, 221, 221);
+    box-shadow: 5px 5px 5px rgb(88, 84, 84);
   }
 
   .table{
