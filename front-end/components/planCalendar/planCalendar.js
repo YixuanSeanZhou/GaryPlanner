@@ -2,7 +2,7 @@ import React from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import placeholderData from './placeholderData';
 import Quarter from './quarter';
-import CourseSearchBar from './searchBar/courseSearchBar'
+import CourseSearchBar from './searchBar/courseSearchColumn'
 
 // Styles
 import styles from '../../styles/FourYearPlan.module.css'
