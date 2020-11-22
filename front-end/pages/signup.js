@@ -68,7 +68,7 @@ class Signup extends React.Component {
 		return (
 			<>
 				<Head>
-					Sign-Up Page
+					<title>Sign-Up Page</title>
 				</Head>
 
 

@@ -33,14 +33,24 @@ export default function Index() {
 				<h3>Links to pages</h3>
 				<ul>
 					<li>
-						<Link href="/login">
-							<a>Login Page</a>
-						</Link>
-					</li>
-					<li>
-						<Link href="/signup">
-							<a>Signup page</a>
-						</Link>
+						Authentication Related (by X.)
+						<ul>
+							<li>
+								<Link href="/login">
+									<a>Login Page</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/signup">
+									<a>Signup page</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="temp/testProfile">
+									<a>Temp Profile Page (Request Example here!)</a>
+								</Link>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<Link href="/intro">
@@ -63,9 +73,19 @@ export default function Index() {
 						</Link>
 					</li>
 					<li>
-						<Link href="/currQuarter">
-							<a>Current Quarter Schedule</a>
-						</Link>
+						Future Features
+						<ul>
+							<li>
+								<Link href="/currQuarter">
+									<a>Current Quarter Schedule</a>
+								</Link>
+							</li>
+							<li>
+								<Link href="/friends">
+									<a>Friends</a>
+								</Link>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<Link href="/classInfo">
@@ -80,11 +100,6 @@ export default function Index() {
 					<li>
 						<Link href="/changePass">
 							<a>Change Password</a>
-						</Link>
-					</li>
-					<li>
-						<Link href="/friends">
-							<a>Friends</a>
 						</Link>
 					</li>
 				</ul>

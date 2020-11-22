@@ -71,7 +71,7 @@ class Login extends React.Component {
 		return (
 			<>
 				<Head>
-					Log in
+					<title>Log in</title>
 				</Head>
 
 				<GaryNavbar>
