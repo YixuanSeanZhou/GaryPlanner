@@ -93,11 +93,6 @@ export default function Index() {
 						</Link>
 					</li>
 					<li>
-						<Link href="/setting">
-							<a>Settings</a>
-						</Link>
-					</li>
-					<li>
 						<Link href="/changePass">
 							<a>Change Password</a>
 						</Link>
