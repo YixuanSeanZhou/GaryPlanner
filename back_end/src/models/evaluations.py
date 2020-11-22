@@ -9,7 +9,10 @@ class Evaluation(db.Model):
     __tablename__ = "Evaluations"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_id = db.Column(db.Integer, db.ForeignKey('AllClasses.id'),
+    # TODO this used to be integer pointing to class code
+    # But in order to test adding all capes eval to databse,
+    # I had to change it to string cuz i didn't have class ids
+    class_id = db.Column(db.String(255),# db.ForeignKey('AllClasses.id'),
                          nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
     recommend_class = db.Column(db.Float, nullable=False)

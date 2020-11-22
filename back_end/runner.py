@@ -1,7 +1,10 @@
 from src.setup import cli, db
 from src.utils.catalog_process.preprocess import get_info_from_catalog
 from src.utils.catalog_process.prereq_graph import generate_prereq_graph
+from initiate_db import add_evals_to_db
 import nltk
+
+
 nltk.download('wordnet')
 nltk.download('punkt')
 
@@ -12,6 +15,7 @@ def create_db():
     db.create_all()
     db.session.commit()
     test()
+    #add_evals_to_db()
 
 
 def test(): 
