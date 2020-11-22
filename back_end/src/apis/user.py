@@ -49,7 +49,8 @@ def login():
     req_data = request.get_json()
     email = req_data.get('email', None)
     pwd = req_data.get('pwd', '')
-    remember = True if req_data.get('remember', '') == 'true' else False
+    remember = True 
+    # if req_data.get('remember', '') == 'true' else False
 
     if User.check_password(email, pwd):
         user = User.get_user_by_email(email=email)
