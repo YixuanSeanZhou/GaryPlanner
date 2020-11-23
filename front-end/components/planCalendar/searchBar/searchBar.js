@@ -3,7 +3,7 @@ import React from 'react';
 import { Form } from 'react-bootstrap'
 
 
-import styles from '../styles/SearchBar.module.css'
+import styles from '../../../styles/SearchBar.module.css'
 
 export class SearchBar extends React.Component {
 	constructor(props) {

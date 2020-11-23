@@ -22,7 +22,7 @@ export default class Intro extends React.Component {
 							<h1>Plan in Gary Planner</h1>
 							<h2>Easier Life in UCSD</h2>
 							<p style={{ fontSize: '20px' }}>
-								Gary Planner is a tool that help you make decisions when
+								Gary Planner is a tool that helps you make decisions when
 								you choose classes. We want you to graduate taking classes
 								that you like.
 							</p>
