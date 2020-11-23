@@ -16,8 +16,8 @@ class User(db.Model, UserMixin):
 
     id = db.Column(db.Integer, primary_key=True)
     user_name = db.Column(db.String(255), unique=True, nullable=False)
-    first_name = db.Column(db.String(255), unique=True, nullable=False)
-    last_name = db.Column(db.String(255), unique=True, nullable=False)
+    first_name = db.Column(db.String(255), nullable=False)
+    last_name = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
     pwd = db.Column(db.String(255), nullable=False)
     intended_grad_quarter = db.Column(db.String(255), nullable=False)
@@ -71,8 +71,10 @@ class User(db.Model, UserMixin):
                     intended_grad_quarter: str,
                     college: str, major: str, minor: str) -> (bool, User):
         # TODO: Change to user_name?
-        if User.get_user_by_email(email=email):
+        if User.get_user_by_email(email=email).first():
             return False, None    # user exists
+        elif User.query.filter_by(user_name=user_name).first():
+            return False, None
         pwd = pwd_context.hash(pwd)
         user = User(user_name=user_name, email=email, pwd=pwd,
                     first_name=first_name, last_name=last_name,
