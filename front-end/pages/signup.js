@@ -170,7 +170,7 @@ class Signup extends React.Component {
 					<title>Sign up</title>
 				</Head>
 
-				{/* <ParticleEffect className={styles.particles} /> */}
+				<ParticleEffect className={styles.particles} />
 
 
 
