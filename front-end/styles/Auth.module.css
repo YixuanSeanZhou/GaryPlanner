@@ -21,10 +21,14 @@
     margin: auto;
 
     padding: 40px;
-    width: 350px;
+    width: 400px;
 
     border-radius: 10px;
     background-color: #fff;
+}
+
+#signup {
+    width: 500px;
 }
 
 .redirect {

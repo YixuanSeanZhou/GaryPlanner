@@ -6,7 +6,7 @@ import Head from 'next/head'
 import { withRouter } from 'next/router'
 
 // Components
-import { Form, Button, Navbar, Alert } from 'react-bootstrap';
+import { Form, Button, Navbar, Alert, Col, Row } from 'react-bootstrap';
 import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 
 // Styles
@@ -23,6 +23,13 @@ class Signup extends React.Component {
 				user_name: "",
 				pwd: "",	
 				pwdCfm: "",
+				first_name: "",
+				last_name: "",
+				major: "",
+				minor: "",
+				grad_year: "",
+				grad_quarter: "",
+				indended_grad_quarter: "",
 			},
 			showingAlert: false,
 			alarmText: "Error!",
@@ -90,13 +97,14 @@ class Signup extends React.Component {
 	handleChange = (e) => {
 		var formData = this.state.formData;
 		formData[e.target.id] = e.target.value;
+		formData.indended_grad_quarter = formData.grad_year.substring(2, 4).concat(formData.grad_quarter);
 		this.setState({formData});
 	};
 
 
 	// Validate the form values and show alert if necessary
 	validate() {
-		const {user_name, email, pwd, pwdCfm} = this.state.formData;
+		const {user_name, email, pwd, pwdCfm, } = this.state.formData;
 		if (user_name === "") {
 			this.setState({
 				showingAlert: true,
@@ -113,6 +121,16 @@ class Signup extends React.Component {
 			});
 			return false;
 		}
+		if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Please enter a valid email address!" ,
+				alarmSubText: "C'mon!",
+			});
+			return false;
+	
+		}
+
 		if (pwd === "") {
 			this.setState({
 				showingAlert: true,
@@ -136,6 +154,7 @@ class Signup extends React.Component {
 
 	render() {
 		let alarmBody;
+		let formData = this.state.formData;
 		if (this.state.alarmSubText === "") {
 			alarmBody = <Alert.Heading>{this.state.alarmText}</Alert.Heading>;
 		} else {
@@ -151,40 +170,36 @@ class Signup extends React.Component {
 					<title>Sign up</title>
 				</Head>
 
-				<ParticleEffect className={styles.particles} />
+				{/* <ParticleEffect className={styles.particles} /> */}
 
 
 
 				<div className={styles.outer}>
 
-				<GaryNavbar>
+					<GaryNavbar>
 						<Navbar.Text>Sign Up</Navbar.Text>
 					</GaryNavbar>
 
 					{/* Start of the login component */}
 
 					<div className={styles.loginWrapper} >
-						<div className={styles.login}>
-							<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
-								<a href="/intro">
-									<Image
-										id="loginlogo"
-										src="/logo/PCLogo-Color.svg"
-										height="70"
-										width="49"
-										alt="logo"
-										className=""
-									/>
-								</a>
-								<h3 className="mt-3 ml-1" style={{ paddingLeft: '10px' }}>
-									Gary <br /> Planner
-								</h3>
-							</Form.Group>
-
+						<div className={styles.login} id={styles.signup}>
 							<h3>Sign Up</h3>
 							<Form>
+								
+								<Form.Row>
+									<Form.Group as={Col} controlId="first_name">
+										<Form.Label>First Name</Form.Label>
+										<Form.Control value={formData.first_name} onChange={this.handleChange} />
+									</Form.Group>
+									<Form.Group as={Col}  controlId="last_name">
+										<Form.Label>Last Name</Form.Label>
+										<Form.Control value={formData.last_name} onChange={this.handleChange} />
+									</Form.Group>
+								</Form.Row>
+
 								<Form.Group controlId="user_name">
-									<Form.Label>Username</Form.Label>
+									<Form.Label>Username*</Form.Label>
 									<Form.Control 
 										name="user_name"
 										type="text"
@@ -192,8 +207,9 @@ class Signup extends React.Component {
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
+								
 								<Form.Group controlId="email">
-									<Form.Label>Email</Form.Label>
+									<Form.Label>Email*</Form.Label>
 									<Form.Control 
 										name="email"
 										type="email"
@@ -203,7 +219,7 @@ class Signup extends React.Component {
 								</Form.Group>
 
 								<Form.Group controlId="pwd">
-									<Form.Label>Passowrd</Form.Label>
+									<Form.Label>Passowrd*</Form.Label>
 									<Form.Control 
 										name="pwd"
 										type="password"
@@ -213,7 +229,7 @@ class Signup extends React.Component {
 								</Form.Group>
 
 								<Form.Group controlId="pwdCfm">
-									<Form.Label>Confirm password</Form.Label>
+									<Form.Label>Confirm password*</Form.Label>
 									<Form.Control 
 										name="pwdCfm"
 										type="password" 
@@ -222,6 +238,58 @@ class Signup extends React.Component {
 									/>
 								</Form.Group>
 
+								<Form.Row>
+									<Form.Group as={Col} controlId="major">
+										<Form.Label>Major</Form.Label>
+										<Form.Control 
+											type="password" 
+											value={this.state.formData.major}
+											onChange={this.handleChange}
+										/>
+									</Form.Group>
+									<Form.Group as={Col} controlId="minor">
+										<Form.Label>Minor</Form.Label>
+										<Form.Control 
+											type="password" 
+											value={this.state.formData.minor}
+											onChange={this.handleChange}
+											placeholder="If Any"
+										/>
+									</Form.Group>
+
+								</Form.Row>
+								<Form.Row>
+									<Form.Group as={Col} controlId="grad_year">
+										<Form.Label>Indended Graduation Year</Form.Label>
+										<Form.Control 
+											as="select"
+											value={formData.grad_year}
+											onChange={this.handleChange}
+										>
+											<option>2020</option>
+											<option>2021</option>
+											<option>2022</option>
+											<option>2023</option>
+											<option>2024</option>
+										</Form.Control>
+									</Form.Group>
+									<Form.Group as={Col} controlId="grad_quarter">
+										<Form.Label>Quarter</Form.Label>
+										<Form.Control 
+											as="select"
+											value={formData.grad_quarter}
+											onChange={this.handleChange}
+										>
+											<option>FA</option>
+											<option>WI</option>
+											<option>SP</option>
+										</Form.Control>
+									</Form.Group>
+
+								</Form.Row>
+
+
+								{/* Ending  */}
 								<Form.Group>
 									<Form.Text style={{ fontSize: '.85rem' }}>
 										Already have an account?{' '}
