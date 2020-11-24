@@ -15,7 +15,7 @@ class User(db.Model, UserMixin):
     __tablename__ = "Users"
 
     id = db.Column(db.Integer, primary_key=True)
-    user_name = db.Column(db.String(255), nullable=False)
+    user_name = db.Column(db.String(255), unique=True, nullable=False)
     first_name = db.Column(db.String(255), nullable=False)
     last_name = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
@@ -127,3 +127,7 @@ class User(db.Model, UserMixin):
                                last_name=last_name, college=college,
                                intended_grad_quarter=intended_grad_quarter,
                                major=major, minor=minor)
+
+    @staticmethod
+    def get_user_by_user_name(name: str) -> User:
+        return User.query.filter_by(user_name=name).first()

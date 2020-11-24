@@ -88,6 +88,30 @@ def get_user_profile():
     user = User.get_user_by_id(user_id=u_id)
     return jsonify({'reason': 'success', 'result': user.to_json()}), 200
 
+
+@user_api_bp.route('/get_user_by_user_name', methods=['GET'])
+@cross_origin(supports_credentials=True)
+@login_required
+def get_user_by_user_name():
+    u_name = request.args.get('user_name')
+    user = User.get_user_by_user_name(name=u_name)
+    if user:
+        return jsonify({'reason': 'success', 'result': user.to_json()}), 200
+    else:
+        return jsonify({'reason': 'user not found'}), 300
+
+
+@user_api_bp.route('/get_user_by_email', methods=['GET'])
+@cross_origin(supports_credentials=True)
+@login_required
+def get_user_by_email():
+    email = request.args.get('email')
+    user = User.get_user_by_email(email=email)
+    if user:
+        return jsonify({'reason': 'success', 'result': user.to_json()}), 200
+    else:
+        return jsonify({'reason': 'user not found'}), 300
+
 # TODO: NO USER NAME
 
 
