@@ -1,5 +1,5 @@
 .outer {
-    background-image: url("/Background/background.png");
+    /* background-image: url("/Background/background.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;

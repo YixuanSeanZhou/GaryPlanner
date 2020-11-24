@@ -29,14 +29,18 @@ class Login extends React.Component {
 	}
 
 	componentDidMount () {
-		if(localStorage.checkbox && localStorage.email !== "") {
+		if(localStorage.checkbox === "true" && localStorage.email !== "") {
 			var formData = {
 				email: localStorage.email,
 				pwd: localStorage.password,
-				remember: localStorage.checkbox,
+				remember: localStorage.checkbox === "true",
 			}
 			this.setState({formData: formData});
 		}
+	}
+
+	componentWillUnmount() {
+		localStorage.checkbox = this.state.formData.remember;
 	}
 
 
