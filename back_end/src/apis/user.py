@@ -29,14 +29,14 @@ def create_user():
     major = req_data.get('major', 'undeclared')
     minor = req_data.get('minor', 'undeclared')
     pwd = req_data.get('pwd', '')
-    s, u = User.create_user(user_name=user_name, email=email, pwd=pwd,
-                            first_name=first_name, last_name=last_name,
-                            intended_grad_quarter=itgq,
-                            college=college, major=major, minor=minor)
+    s, u, m = User.create_user(user_name=user_name, email=email, pwd=pwd,
+                               first_name=first_name, last_name=last_name,
+                               intended_grad_quarter=itgq,
+                               college=college, major=major, minor=minor)
     if s:
         return jsonify({'reason': 'user created', 'result': u.to_json()}), 200
     else:
-        return jsonify({'reason': 'user existed'}), 300
+        return jsonify({'reason': m}), 300
 
 
 @user_api_bp.route('/login', methods=['POST'])
@@ -49,7 +49,7 @@ def login():
     req_data = request.get_json()
     email = req_data.get('email', None)
     pwd = req_data.get('pwd', '')
-    remember = True 
+    remember = True
     # if req_data.get('remember', '') == 'true' else False
 
     if User.check_password(email, pwd):
