@@ -92,12 +92,11 @@ class Login extends React.Component {
 					alarmSubText: "Please contact the developer!"
 				})
 			}
-			// console.log('Success:', data); // TODO: Remove for deployment
 		})
 		.catch((error) => {
 			console.error('Error:', error);
 			setTimeout(() => this.props.disableLoading(), 300);
-			// TODO: direct to error page
+			this.props.router.push('/util/error');
 		});
 	}
 
@@ -107,7 +106,6 @@ class Login extends React.Component {
 		var formData = this.state.formData;
 		formData[e.target.id] = e.target.value;
 		this.setState({formData});
-		console.log(this.state);
 	}
 
 	// Handles the checkbox

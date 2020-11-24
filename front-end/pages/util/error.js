@@ -11,10 +11,26 @@ import styles from '../../styles/Index.module.css'
 
 class ErrorPage extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            timer: undefined,
+        }
+    }
+
     componentDidMount() {
-        setTimeout(() => {
+        var timer = setTimeout(() => {
             this.props.router.push("/intro");
         }, 5000)
+        this.setState({timer: timer});
+    }
+
+    componentWillUnmount() {
+        if (this.state.timer != undefined) {
+            clearTimeout(this.state.timer);
+            this.setState({timer: undefined});
+        }
     }
 
 
@@ -32,7 +48,7 @@ class ErrorPage extends React.Component {
                     </p>
                     <div id={styles.loadContainer}>
                         <Spinner animation="grow" size="sm" id={styles.errorSpinner} /> 
-                        You are being redirected...
+                        You will be redirected in 5 seconds...
                     </div>
                 </div>
             </>

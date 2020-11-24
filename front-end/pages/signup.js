@@ -47,13 +47,18 @@ class Signup extends React.Component {
 		.then(response => {
 			const data = response.json();
 
-			setTimeout(() => this.props.disableLoading(), 300);
 
 			if (response.status == 200) {
 				// User successfully created
-				// TODO: Prompt Success
+				this.props.enableLoading("Success! Going to login page...")
+
+				// Redirect the user to login page
+				this.props.router.prefetch('/login');
+				setTimeout(() => {
+					this.props.disableLoading();
+					this.props.router.push('/login'); 
+				}, 2000);
 				
-				this.props.router.push('/login'); // Redirect the user to login page
 			} else if (response.status == 300) {
 				// User Already Existed!
 				this.setState({
@@ -61,7 +66,14 @@ class Signup extends React.Component {
 					alarmText: "The given email already exists!",
 					alarmSubText: "Login if you have already registered"
 				})
-			}	
+
+				setTimeout(() => this.props.disableLoading(), 300);
+			} else {
+				// Unhandled error code
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.props.router.push('/util/error');	
+			}
+			
 			console.log('Success:', data); // TODO: Remove for deployment
 		})
 		.catch((error) => {
@@ -75,7 +87,6 @@ class Signup extends React.Component {
 		var formData = this.state.formData;
 		formData[e.target.id] = e.target.value;
 		this.setState({formData});
-		console.log(this.state);
 	};
 
 	render() {
