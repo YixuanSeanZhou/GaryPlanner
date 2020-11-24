@@ -10,7 +10,7 @@ import { Form, Button, Navbar, Alert } from 'react-bootstrap';
 import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 
 // Styles
-import styles from '../styles/Register.module.css'
+import styles from '../styles/Auth.module.css'
 
 class Signup extends React.Component {
 
@@ -67,6 +67,7 @@ class Signup extends React.Component {
 		.catch((error) => {
 			console.error('Error:', error);
 			setTimeout(() => this.props.disableLoading(), 300);
+			this.props.router.push('/util/error');
 		});
 	};
 

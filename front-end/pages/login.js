@@ -10,7 +10,7 @@ import { Form, Button, Navbar, Alert } from 'react-bootstrap';
 import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 
 // Styles
-import styles from '../styles/Register.module.css'
+import styles from '../styles/Auth.module.css'
 
 class Login extends React.Component {
 	constructor(props) {
