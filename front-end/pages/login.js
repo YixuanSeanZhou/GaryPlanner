@@ -6,7 +6,7 @@ import { withRouter } from 'next/router';
 import Image from 'next/image';
 
 // Components
-import { Form, Button, Navbar } from 'react-bootstrap';
+import { Form, Button, Navbar, Alert } from 'react-bootstrap';
 import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 import LoadingOverlay from 'react-loading-overlay';
 
@@ -23,6 +23,8 @@ class Login extends React.Component {
 				pwd: "",	
 			},
 			isLoading: false,
+			loadingText: "Please Wait",
+			showingAlert: false,
 		}
 	}
 
@@ -51,21 +53,22 @@ class Login extends React.Component {
 
 			if (response.status == 200) {
 				// User successfully created
-				// TODO: Prompt Success
+				this.setState({loadingText: "Success! Redirecting..."})
 
 				this.props.router.push('/temp/testProfile');
 			} else if (response.status == 300) {
 				// User Already Existed!
-				// TODO: Prompt
+				this.setState({showingAlert: true})
 			} else {
 				// Server issue
+				this.setState({showingAlert: true})
 			}
-			this.setState({isLoading: false});
+			setTimeout(() => this.setState({isLoading: false}), 1000);
 			console.log('Success:', data); // TODO: Remove for deployment
 		})
 		.catch((error) => {
 			console.error('Error:', error);
-			this.setState({isLoading: false});
+			// this.setState({isLoading: false});
 		});
 	}
 
@@ -81,15 +84,12 @@ class Login extends React.Component {
 
 	render() {
 		return (
-			<LoadingOverlay
-				active={this.state.isLoading}
-				spinner
-				text="Please wait"
-			>
-
+			<>
 				<Head>
 					<title>Log in</title>
 				</Head>
+
+
 
 				<div className={styles.outer}>
 
@@ -100,6 +100,7 @@ class Login extends React.Component {
 					<ParticleEffect />
 	
 					{/* Start of the login component */}
+
 					<div className={styles.loginWrapper} >
 						<div className={styles.login}>
 							<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
@@ -172,7 +173,18 @@ class Login extends React.Component {
 					</div>
 				</div>
 
-			</LoadingOverlay>
+
+				<Alert 
+					show={this.state.showingAlert} 
+					onClick={() => this.setState({showingAlert: false})} 
+					variant='danger'
+					className='alert'
+					dismissible
+				>
+					<Alert.Heading>Email and password doesn't match!</Alert.Heading>
+					<p>Have you registered?</p>
+				</Alert>
+			</>
 		)
 	}
 }

@@ -58,3 +58,13 @@ body {
 .searchBar {
   padding: 30px 0px 30px 0px;
 }
+
+
+/* Here's the styling for alerts */
+.alert {
+  display: fixed;
+  top: 30px;
+  left: calc(100vw - 530px);
+  width: 500px;
+
+}

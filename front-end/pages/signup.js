@@ -30,6 +30,7 @@ class Signup extends React.Component {
 
 	handleClick = (e) => {
 		console.log("POSTing this data to server:", JSON.stringify(this.state));
+		this.setState({isLoading: true});
 
 		// Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/create_user';
@@ -76,6 +77,9 @@ class Signup extends React.Component {
 				spinner
 				text="Please wait"
 			>
+				<Head>
+					<title>Sign up</title>
+				</Head>
 				<div className={styles.outer}>
 
 					<GaryNavbar>
