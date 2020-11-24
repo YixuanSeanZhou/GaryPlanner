@@ -52,11 +52,15 @@ class Signup extends React.Component {
 			if (response.status == 200) {
 				// User successfully created
 				// TODO: Prompt Success
-
+				
 				this.props.router.push('/login'); // Redirect the user to login page
 			} else if (response.status == 300) {
 				// User Already Existed!
-				// TODO: Prompt
+				this.setState({
+					showingAlert: true,
+					alarmText: "The given email already exists!",
+					alarmSubText: "Login if you have already registered"
+				})
 			}	
 			console.log('Success:', data); // TODO: Remove for deployment
 		})

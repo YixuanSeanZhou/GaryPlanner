@@ -19,11 +19,23 @@ class Login extends React.Component {
 		this.state = {
 			formData: {
 				email: "",
-				pwd: "",	
+				pwd: "",
+				remember: false,	
 			},
 			showingAlert: false,
 			alarmText: "Error!",
 			alarmSubText: "Just error",
+		}
+	}
+
+	componentDidMount () {
+		if(localStorage.checkbox && localStorage.email !== "") {
+			var formData = {
+				email: localStorage.email,
+				pwd: localStorage.password,
+				remember: localStorage.checkbox,
+			}
+			this.setState({formData: formData});
 		}
 	}
 
@@ -52,6 +64,14 @@ class Login extends React.Component {
 
 			if (response.status == 200) {
 				// User successfully created
+				// Remember me
+				const {email, pwd, remember} = this.state.formData;
+				if (remember && email !== "") {
+					localStorage.email = email;
+					localStorage.password = pwd;
+					localStorage.checkbox = remember;
+				}
+
 				this.props.router.push('/temp/testProfile');
 			} else if (response.status == 400) {
 				// Wrong email/password
@@ -84,6 +104,18 @@ class Login extends React.Component {
 		formData[e.target.id] = e.target.value;
 		this.setState({formData});
 		console.log(this.state);
+	}
+
+	// Handles the checkbox
+	handleCheck = (e) => {
+		var formData = this.state.formData
+		if (e.target.checked) {
+			console.log(e);
+			formData.remember = true;
+		} else {
+			formData.remember = false;
+		}
+		this.setState({formData});
 	}
 
 	render() {
@@ -144,12 +176,14 @@ class Login extends React.Component {
 									/>
 								</Form.Group>
 			
-								<Form.Group>
+								<Form.Group controlId="remember">
 									<Form.Label>
 										<Form.Check
 											type="checkbox"
 											name="remember"
 											label="Remember me"
+											checked={this.state.formData.remember}
+											onChange={this.handleCheck}
 										/>
 									</Form.Label>
 								</Form.Group>
