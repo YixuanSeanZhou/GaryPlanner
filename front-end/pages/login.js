@@ -8,7 +8,6 @@ import Image from 'next/image';
 // Components
 import { Form, Button, Navbar, Alert } from 'react-bootstrap';
 import { GaryNavbar, ParticleEffect } from '../components/commonUI';
-import LoadingOverlay from 'react-loading-overlay';
 
 // Styles
 import styles from '../styles/Register.module.css'
@@ -33,8 +32,6 @@ class Login extends React.Component {
 	handleClick = (e) => {
 		// First, enable loading animation
 		this.props.enableLoading("Please wait");
-
-		console.log("POSTing this data to server:", JSON.stringify(this.state));
 
 		// Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/login';
@@ -71,11 +68,12 @@ class Login extends React.Component {
 					alarmSubText: "Please contact the developer!"
 				})
 			}
-			console.log('Success:', data); // TODO: Remove for deployment
+			// console.log('Success:', data); // TODO: Remove for deployment
 		})
 		.catch((error) => {
 			console.error('Error:', error);
-			// this.setState({isLoading: false});
+			setTimeout(() => this.props.disableLoading(), 300);
+			// TODO: direct to error page
 		});
 	}
 
@@ -131,7 +129,7 @@ class Login extends React.Component {
 								<Form.Group controlId="email">
 									<Form.Label>Email</Form.Label>
 									<Form.Control 
-										type="text"
+										type="email"
 										value={this.state.formData.email}
 										onChange={this.handleChange}
 									/>

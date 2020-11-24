@@ -6,9 +6,8 @@ import Head from 'next/head'
 import { withRouter } from 'next/router'
 
 // Components
-import { GaryNavbar, ParticleEffect } from '../components/commonUI'
-import { Form, Button, Navbar } from 'react-bootstrap'
-import LoadingOverlay from 'react-loading-overlay'
+import { Form, Button, Navbar, Alert } from 'react-bootstrap';
+import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 
 // Styles
 import styles from '../styles/Register.module.css'
@@ -24,13 +23,15 @@ class Signup extends React.Component {
 				user_name: "",
 				pwd: "",	
 			},
-			isLoading: false,
+			showingAlert: false,
+			alarmText: "Error!",
+			alarmSubText: "Just error",		
 		};
 	}
 
 	handleClick = (e) => {
-		console.log("POSTing this data to server:", JSON.stringify(this.state));
-		this.setState({isLoading: true});
+		// First, enable loading animation
+		this.props.enableLoading("Please wait");
 
 		// Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/create_user';
@@ -46,6 +47,8 @@ class Signup extends React.Component {
 		.then(response => {
 			const data = response.json();
 
+			setTimeout(() => this.props.disableLoading(), 300);
+
 			if (response.status == 200) {
 				// User successfully created
 				// TODO: Prompt Success
@@ -59,39 +62,39 @@ class Signup extends React.Component {
 		})
 		.catch((error) => {
 			console.error('Error:', error);
+			setTimeout(() => this.props.disableLoading(), 300);
 		});
 	};
 
 	handleChange = (e) => {
-		this.setState({
-			formData: {
-				[e.target.name]: e.target.value
-			}
-		});
+		var formData = this.state.formData;
+		formData[e.target.id] = e.target.value;
+		this.setState({formData});
+		console.log(this.state);
 	};
 
 	render() {
 		return (
-			<LoadingOverlay
-				active={this.state.isLoading}
-				spinner
-				text="Please wait"
-			>
+			<>
 				<Head>
 					<title>Sign up</title>
 				</Head>
+
+				<ParticleEffect className={styles.particles} />
+
+
+
 				<div className={styles.outer}>
 
-					<GaryNavbar>
+				<GaryNavbar>
 						<Navbar.Text>Sign Up</Navbar.Text>
 					</GaryNavbar>
 
-					<ParticleEffect className={styles.particles} />
-
 					{/* Start of the login component */}
+
 					<div className={styles.loginWrapper} >
 						<div className={styles.login}>
-							<Form.Group style={{ display: 'flex', alignItems: 'center', height: "absolute" }}>
+							<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
 								<a href="/intro">
 									<Image
 										id="loginlogo"
@@ -122,7 +125,7 @@ class Signup extends React.Component {
 									<Form.Label>Email</Form.Label>
 									<Form.Control 
 										name="email"
-										type="text"
+										type="email"
 										value={this.state.formData.email}
 										onChange={this.handleChange}
 									/>
@@ -165,9 +168,24 @@ class Signup extends React.Component {
 								</div>
 							</Form>
 						</div>
+
 					</div>
+
+					<Alert 
+						show={this.state.showingAlert} 
+						onClick={() => this.setState({showingAlert: false})} 
+						variant='danger'
+						className={styles.myAlert}
+						dismissible
+					>
+						<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+						<div>{this.state.alarmSubText}</div>
+					</Alert>
+
+
 				</div>
-			</LoadingOverlay>
+
+			</>
 		)	
 	}
 }
