@@ -22,7 +22,7 @@ export class GaryNavbar extends React.Component {
 }
 
 
-export function ParticleEffect() {
+export function ParticleEffect(props) {
     return (
         <Particles
             params={
@@ -52,6 +52,7 @@ export function ParticleEffect() {
                     }
                 }
             }
+            {...props}
         />
 
     )

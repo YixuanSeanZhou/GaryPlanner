@@ -1,13 +1,23 @@
+.outer {
+    /* background-image: url("/Background/background.png"); */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-color:rgb(53,68,104);
+
+    min-height: 100vh;
+}
+
 .loginWrapper {
-    position: absolute;
-    top: 60px;
+    position: relative;
     width: 100%;
-    height: absolute;
+    height: 100%;
+
+    padding: 40px;
+
 }
 .login {
     margin: auto;
-    margin-bottom: 80px;
-    margin-top: 70px;
 
     padding: 40px;
     width: 350px;
@@ -21,22 +31,16 @@
 }
 
 .particles {
-    z-index: 10;
     position: fixed;
     top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.outer {
-    height: 100%;
-    /* background-image: url("/Background/background.png"); */
-    background-repeat: no-repeat;
-    background-position: left;
-    background-attachment: fixed;
-    background-color:rgb(53,68,104);
-
-    overflow-x: auto;
-    overflow-x: hidden;
+.myAlert {
     position: fixed;
-    left: 0;
+    top: 80px;
     right: 0;
+    margin: 20px
 }

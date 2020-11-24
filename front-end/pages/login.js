@@ -22,8 +22,6 @@ class Login extends React.Component {
 				email: "",
 				pwd: "",	
 			},
-			isLoading: false,
-			loadingText: "Please Wait",
 			showingAlert: false,
 		}
 	}
@@ -32,7 +30,7 @@ class Login extends React.Component {
 	// Invoked when the user hit click
 	handleClick = (e) => {
 		// First, enable loading animation
-		this.setState({isLoading: true})
+		this.props.enableLoading("Please wait");
 
 		console.log("POSTing this data to server:", JSON.stringify(this.state));
 
@@ -51,6 +49,8 @@ class Login extends React.Component {
 		.then(response => {
 			const data = response.json();
 
+			setTimeout(() => this.props.disableLoading(), 300);
+
 			if (response.status == 200) {
 				// User successfully created
 				this.setState({loadingText: "Success! Redirecting..."})
@@ -63,7 +63,6 @@ class Login extends React.Component {
 				// Server issue
 				this.setState({showingAlert: true})
 			}
-			setTimeout(() => this.setState({isLoading: false}), 1000);
 			console.log('Success:', data); // TODO: Remove for deployment
 		})
 		.catch((error) => {
@@ -75,11 +74,10 @@ class Login extends React.Component {
 	
 	// Invoked everytime the value in the two textboxes changes
 	handleChange = (e) => {
-		this.setState({
-			formData: {
-				[e.target.id]: e.target.value
-			}
-		});
+		var formData = this.state.formData;
+		formData[e.target.id] = e.target.value;
+		this.setState({formData});
+		console.log(this.state);
 	}
 
 	render() {
@@ -89,6 +87,8 @@ class Login extends React.Component {
 					<title>Log in</title>
 				</Head>
 
+				<ParticleEffect className={styles.particles} />
+
 
 
 				<div className={styles.outer}>
@@ -96,8 +96,6 @@ class Login extends React.Component {
 					<GaryNavbar>
 						<Navbar.Text>Log in</Navbar.Text>
 					</GaryNavbar>
-
-					<ParticleEffect />
 	
 					{/* Start of the login component */}
 
@@ -170,20 +168,23 @@ class Login extends React.Component {
 								</div>
 							</Form>
 						</div>
+
 					</div>
+
+					<Alert 
+						show={this.state.showingAlert} 
+						onClick={() => this.setState({showingAlert: false})} 
+						variant='danger'
+						className={styles.myAlert}
+						dismissible
+					>
+						<Alert.Heading>Email and password doesn't match!</Alert.Heading>
+						<p>Have you registered?</p>
+					</Alert>
+
+
 				</div>
 
-
-				<Alert 
-					show={this.state.showingAlert} 
-					onClick={() => this.setState({showingAlert: false})} 
-					variant='danger'
-					className='alert'
-					dismissible
-				>
-					<Alert.Heading>Email and password doesn't match!</Alert.Heading>
-					<p>Have you registered?</p>
-				</Alert>
 			</>
 		)
 	}
