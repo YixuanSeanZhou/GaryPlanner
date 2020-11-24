@@ -23,6 +23,8 @@ class Login extends React.Component {
 				pwd: "",	
 			},
 			showingAlert: false,
+			alarmText: "Error!",
+			alarmSubText: "Just error",
 		}
 	}
 
@@ -53,15 +55,21 @@ class Login extends React.Component {
 
 			if (response.status == 200) {
 				// User successfully created
-				this.setState({loadingText: "Success! Redirecting..."})
-
 				this.props.router.push('/temp/testProfile');
-			} else if (response.status == 300) {
-				// User Already Existed!
-				this.setState({showingAlert: true})
+			} else if (response.status == 400) {
+				// Wrong email/password
+				this.setState({
+					showingAlert: true,
+					alarmText: "Wrong Email/Password",
+					alarmSubText: "Have you registered?"
+				})
 			} else {
 				// Server issue
-				this.setState({showingAlert: true})
+				this.setState({
+					showingAlert: true,
+					alarmText: "Unknown Error",
+					alarmSubText: "Please contact the developer!"
+				})
 			}
 			console.log('Success:', data); // TODO: Remove for deployment
 		})
@@ -178,8 +186,8 @@ class Login extends React.Component {
 						className={styles.myAlert}
 						dismissible
 					>
-						<Alert.Heading>Email and password doesn't match!</Alert.Heading>
-						<p>Have you registered?</p>
+						<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+						<div>{this.state.alarmSubText}</div>
 					</Alert>
 
 
