@@ -22,6 +22,7 @@ class Signup extends React.Component {
 				email: "",
 				user_name: "",
 				pwd: "",	
+				pwdCfm: "",
 			},
 			showingAlert: false,
 			alarmText: "Error!",
@@ -30,6 +31,9 @@ class Signup extends React.Component {
 	}
 
 	handleClick = (e) => {
+		if (!this.validate()) {
+			return;
+		}
 		// First, enable loading animation
 		this.props.enableLoading("Please wait");
 
@@ -58,14 +62,14 @@ class Signup extends React.Component {
 					this.props.disableLoading();
 					this.props.router.push('/login'); 
 				}, 2000);
-				
+
 			} else if (response.status == 300) {
 				// User Already Existed!
 				this.setState({
 					showingAlert: true,
 					alarmText: "The given email already exists!",
 					alarmSubText: "Login if you have already registered"
-				})
+				});
 
 				setTimeout(() => this.props.disableLoading(), 300);
 			} else {
@@ -89,7 +93,58 @@ class Signup extends React.Component {
 		this.setState({formData});
 	};
 
+
+	// Validate the form values and show alert if necessary
+	validate() {
+		const {user_name, email, pwd, pwdCfm} = this.state.formData;
+		if (user_name === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Username can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (email === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Email can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (pwd === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Password can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (pwd !== pwdCfm) {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Passwords Doesn't match",
+				alarmSubText: ""
+			});
+			return false;
+		}
+
+
+		return true;
+	}
+
 	render() {
+		let alarmBody;
+		if (this.state.alarmSubText === "") {
+			alarmBody = <Alert.Heading>{this.state.alarmText}</Alert.Heading>;
+		} else {
+			alarmBody = <>
+				<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+				<div>{this.state.alarmSubText}</div>
+			</>;
+		}
+
 		return (
 			<>
 				<Head>
@@ -157,9 +212,14 @@ class Signup extends React.Component {
 									/>
 								</Form.Group>
 
-								<Form.Group controlId="passwordCfm">
+								<Form.Group controlId="pwdCfm">
 									<Form.Label>Confirm password</Form.Label>
-									<Form.Control type="password" />
+									<Form.Control 
+										name="pwdCfm"
+										type="password" 
+										value={this.state.formData.pwdCfm}
+										onChange={this.handleChange}
+									/>
 								</Form.Group>
 
 								<Form.Group>
@@ -194,8 +254,7 @@ class Signup extends React.Component {
 						className={styles.myAlert}
 						dismissible
 					>
-						<Alert.Heading>{this.state.alarmText}</Alert.Heading>
-						<div>{this.state.alarmSubText}</div>
+						{alarmBody}
 					</Alert>
 
 
