@@ -6,9 +6,9 @@ import Head from 'next/head'
 import { withRouter } from 'next/router'
 
 // Components
-import { GaryNavbar } from '../components/commonUI'
+import { GaryNavbar, ParticleEffect } from '../components/commonUI'
 import { Form, Button, Navbar } from 'react-bootstrap'
-import Particles from 'react-particles-js';
+import LoadingOverlay from 'react-loading-overlay'
 
 // Styles
 import styles from '../styles/Register.module.css'
@@ -19,9 +19,12 @@ class Signup extends React.Component {
 		super(props);
 
 		this.state = {
-			email: "",
-			user_name: "",
-			pwd: "",
+			formData: {
+				email: "",
+				user_name: "",
+				pwd: "",	
+			},
+			isLoading: false,
 		};
 	}
 
@@ -35,7 +38,7 @@ class Signup extends React.Component {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(this.state)
+			body: JSON.stringify(this.state.formData)
 		};
 
 		fetch(requestUrl, options)
@@ -60,56 +63,29 @@ class Signup extends React.Component {
 
 	handleChange = (e) => {
 		this.setState({
-			[e.target.name]: e.target.value
+			formData: {
+				[e.target.name]: e.target.value
+			}
 		});
 	};
 
 	render() {
 		return (
-			<>
-				<Head>
-					<title>Sign-Up Page</title>
-				</Head>
-
-
-				<GaryNavbar>
-					<Navbar.Text>Sign up</Navbar.Text>
-				</GaryNavbar>
-
+			<LoadingOverlay
+				active={this.state.isLoading}
+				spinner
+				text="Please wait"
+			>
 				<div className={styles.outer}>
-					<Particles
-						params={{
-							"particles": {
-							"number": {
-							"value": 90,
-							"density": {
-							"enable": true,
-							"value_area": 2000
-							}
-							},
-							"color": {
-							"value": "#ffffff"
-							},
-							"size": {
-							"value": 2.5
-							}
-						},
-							"interactivity": {
-							"events": {
-							"onhover": {
-							"enable": true,
-							"mode": "repulse"
-							}
-							}
-							}
-						}}/>
-					<div className={styles.middle} style={{
-						position: "absolute",
-						top: "20%",
-						left: 0,
-						width: "100%",
-						height: "absolute"
-					}}>
+
+					<GaryNavbar>
+						<Navbar.Text>Sign Up</Navbar.Text>
+					</GaryNavbar>
+
+					<ParticleEffect className={styles.particles} />
+
+					{/* Start of the login component */}
+					<div className={styles.loginWrapper} >
 						<div className={styles.login}>
 							<Form.Group style={{ display: 'flex', alignItems: 'center', height: "absolute" }}>
 								<a href="/intro">
@@ -134,7 +110,7 @@ class Signup extends React.Component {
 									<Form.Control 
 										name="user_name"
 										type="text"
-										value={this.state.user_name}
+										value={this.state.formData.user_name}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
@@ -143,7 +119,7 @@ class Signup extends React.Component {
 									<Form.Control 
 										name="email"
 										type="text"
-										value={this.state.email}
+										value={this.state.formData.email}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
@@ -153,7 +129,7 @@ class Signup extends React.Component {
 									<Form.Control 
 										name="pwd"
 										type="password"
-										value={this.state.password}
+										value={this.state.formData.password}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
@@ -187,7 +163,7 @@ class Signup extends React.Component {
 						</div>
 					</div>
 				</div>
-			</>
+			</LoadingOverlay>
 		)	
 	}
 }

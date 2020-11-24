@@ -6,10 +6,9 @@ import { withRouter } from 'next/router';
 import Image from 'next/image';
 
 // Components
-import { Form, Button, Navbar, Spinner } from 'react-bootstrap';
+import { Form, Button, Navbar } from 'react-bootstrap';
 import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 import LoadingOverlay from 'react-loading-overlay';
-import Particles from 'react-particles-js';
 
 // Styles
 import styles from '../styles/Register.module.css'
@@ -92,7 +91,6 @@ class Login extends React.Component {
 					<title>Log in</title>
 				</Head>
 
-
 				<div className={styles.outer}>
 
 					<GaryNavbar>
@@ -102,75 +100,76 @@ class Login extends React.Component {
 					<ParticleEffect />
 	
 					{/* Start of the login component */}
-					<div className={styles.login}>
-						<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
-							<a href="/intro">
-								<Image
-									id="loginlogo"
-									src="/logo/PCLogo-Color.svg"
-									height="70"
-									width="49"
-									alt="logo"
-									className=""
-								/>
-							</a>
-							<h3 className="mt-3 ml-1" style={{ paddingLeft: '10px' }}>
-								Gary <br /> Planner
-							</h3>
-						</Form.Group>
-
-						<h3>Log in</h3>
-						<Form>
-							{/* Here are the two credentials */}
-							<Form.Group controlId="email">
-								<Form.Label>Email</Form.Label>
-								<Form.Control 
-									type="text"
-									value={this.state.formData.email}
-									onChange={this.handleChange}
-								/>
-							</Form.Group>
-		
-							<Form.Group controlId="pwd">
-								<Form.Label >Passowrd</Form.Label>
-								<Form.Control 
-									type="password"
-									value={this.state.formData.pwd}
-									onChange={this.handleChange}
-								/>
-							</Form.Group>
-		
-							<Form.Group>
-								<Form.Label>
-									<Form.Check
-										type="checkbox"
-										name="remember"
-										label="Remember me"
+					<div className={styles.loginWrapper} >
+						<div className={styles.login}>
+							<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
+								<a href="/intro">
+									<Image
+										id="loginlogo"
+										src="/logo/PCLogo-Color.svg"
+										height="70"
+										width="49"
+										alt="logo"
+										className=""
 									/>
-								</Form.Label>
+								</a>
+								<h3 className="mt-3 ml-1" style={{ paddingLeft: '10px' }}>
+									Gary <br /> Planner
+								</h3>
 							</Form.Group>
-		
-							<Form.Group>
-								<Form.Text style={{ fontSize: '.85rem' }}>
-									New to GaryPlanner?{' '}
-									<Link href="/signup" >
-										<a style={{ color: '#0067b8' }}>
-											Create an account
-										</a>
-									</Link>
-								</Form.Text>
-							</Form.Group>
-							<div style={{ textAlign: 'right' }}>
-								<Button
-									value="submit"
-									onClick={this.handleClick}
-								>
-									Login
-								</Button>
-							</div>
-						</Form>
-					</div>
 
+							<h3>Log in</h3>
+							<Form>
+								{/* Here are the two credentials */}
+								<Form.Group controlId="email">
+									<Form.Label>Email</Form.Label>
+									<Form.Control 
+										type="text"
+										value={this.state.formData.email}
+										onChange={this.handleChange}
+									/>
+								</Form.Group>
+			
+								<Form.Group controlId="pwd">
+									<Form.Label >Passowrd</Form.Label>
+									<Form.Control 
+										type="password"
+										value={this.state.formData.pwd}
+										onChange={this.handleChange}
+									/>
+								</Form.Group>
+			
+								<Form.Group>
+									<Form.Label>
+										<Form.Check
+											type="checkbox"
+											name="remember"
+											label="Remember me"
+										/>
+									</Form.Label>
+								</Form.Group>
+			
+								<Form.Group>
+									<Form.Text style={{ fontSize: '.85rem' }}>
+										New to GaryPlanner?{' '}
+										<Link href="/signup" >
+											<a style={{ color: '#0067b8' }}>
+												Create an account
+											</a>
+										</Link>
+									</Form.Text>
+								</Form.Group>
+								<div style={{ textAlign: 'right' }}>
+									<Button
+										value="submit"
+										onClick={this.handleClick}
+									>
+										Login
+									</Button>
+								</div>
+							</Form>
+						</div>
+					</div>
 				</div>
 
 			</LoadingOverlay>

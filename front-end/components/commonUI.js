@@ -25,31 +25,33 @@ export class GaryNavbar extends React.Component {
 export function ParticleEffect() {
     return (
         <Particles
-            params={{
-                "particles": {
-                "number": {
-                "value": 90,
-                "density": {
-                "enable": true,
-                "value_area": 2000
-                }
+            params={
+                {
+                    "particles": {
+                    "number": {
+                    "value": 90,
+                    "density": {
+                    "enable": true,
+                    "value_area": 2000
+                    }
+                    },
+                    "color": {
+                    "value": "#ffffff"
+                    },
+                    "size": {
+                    "value": 2.5
+                    }
                 },
-                "color": {
-                "value": "#ffffff"
-                },
-                "size": {
-                "value": 2.5
+                    "interactivity": {
+                    "events": {
+                    "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                    }
+                    }
+                    }
                 }
-            },
-                "interactivity": {
-                "events": {
-                "onhover": {
-                "enable": true,
-                "mode": "repulse"
-                }
-                }
-                }
-            }}
+            }
         />
 
     )
