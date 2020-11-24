@@ -3,32 +3,35 @@
     margin-bottom: 28px;
     margin-top: 40px;
 
-    position: relative;
-    max-width: 440px;
-    max-height: 630px;
-    width: calc(100% - 40px);
-    padding: 44px;
+    padding: 40px;
+    max-width: 400px;
+    min-width: 350px;
+
+    border-radius: 10px;
     background-color: #fff;
+
+    position: 
 }
 
 .redirect {
     color: '#0067b8';
 }
 
-.outer {
-    display: table;
-    height: 100%;
-    width: 100%;
-    background-image: url("/Background/background.png");
-    background-repeat: repeat-y;
-    background-position: right;
-    background-color:rgb(53,68,104);
+.particles {
+    z-index: 10;
 }
 
-.background {
-    background-image: url("/Background/background.png");
-    background-repeat: repeat-y;
-    background-position: right;
+.outer {
+    height: 100%;
+    /* background-image: url("/Background/background.png"); */
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
     background-color:rgb(53,68,104);
-    
+
+    overflow-x: auto;
+    overflow-x: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
