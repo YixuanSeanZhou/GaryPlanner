@@ -34,7 +34,7 @@ export default function Home() {
 								<h6>Major: Computer Science</h6>
 							</div>
 							<div className="row">
-								<h6>Minor: None</h6>
+								<h6>Minor: P.I.G.</h6>
 							</div>
 							<div className="row">
 								<h6>College: Sixth</h6>
