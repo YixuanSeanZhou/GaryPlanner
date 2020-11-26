@@ -83,7 +83,7 @@ class Signup extends React.Component {
 			if (data === undefined) {
 				return;
 			}
-			
+
 			if (data.reason === "email already exists") {
 				this.setState({
 					showingAlert: true,
@@ -223,6 +223,9 @@ class Signup extends React.Component {
 									<Form.Group as={Col} controlId="first_name">
 										<Form.Label>First Name*</Form.Label>
 										<Form.Control value={formData.first_name} onChange={this.handleChange} />
+										<Form.Text>
+											Will be displayed in your profile.
+										</Form.Text>
 									</Form.Group>
 									<Form.Group as={Col}  controlId="last_name">
 										<Form.Label>Last Name*</Form.Label>
@@ -248,6 +251,9 @@ class Signup extends React.Component {
 										value={this.state.formData.email}
 										onChange={this.handleChange}
 									/>
+									<Form.Text>
+										We will not send you any email.
+									</Form.Text>
 								</Form.Group>
 
 								<Form.Group controlId="pwd">
@@ -275,9 +281,13 @@ class Signup extends React.Component {
 										<Form.Label>Major</Form.Label>
 										<Form.Control 
 											type="password" 
+											placeholder="Optional"
 											value={this.state.formData.major}
 											onChange={this.handleChange}
 										/>
+										<Form.Text>
+											For display only.
+										</Form.Text>
 									</Form.Group>
 									<Form.Group as={Col} controlId="minor">
 										<Form.Label>Minor</Form.Label>
@@ -285,8 +295,11 @@ class Signup extends React.Component {
 											type="password" 
 											value={this.state.formData.minor}
 											onChange={this.handleChange}
-											placeholder="If Any"
+											placeholder="Optional"
 										/>
+										<Form.Text>
+											For display only.
+										</Form.Text>
 									</Form.Group>
 
 								</Form.Row>
@@ -306,7 +319,7 @@ class Signup extends React.Component {
 										</Form.Control>
 									</Form.Group>
 									<Form.Group as={Col} controlId="grad_quarter">
-										<Form.Label>Quarter</Form.Label>
+										<Form.Label>... and Quarter</Form.Label>
 										<Form.Control 
 											as="select"
 											value={formData.grad_quarter}
