@@ -79,7 +79,7 @@ def get_evaluation():
             return jsonify({'reason': 'success', 'result': evaluation}), 200
         else:
             # no evaluation matching criteria found
-            return jsonify({'reason': 'success', 'result': {}}), 200
+            return jsonify({'reason': 'No results found', 'result': None}), 300
 
     else:
         return jsonify({'reason': 'missing args'}), 300

@@ -111,6 +111,16 @@ class AllClass(db.Model):
         return AllClass.query.filter_by(class_code=class_code).first()
 
     @staticmethod
+    def get_class_by_search(search: str) -> User:
+        '''
+        get a list of class
+        input   search(str)
+        output  list of info of the classes
+        @author: Jiazheng Liu
+        '''
+        return AllClass.query.filter(AllClass.class_code.ilike("%"+search+"%")).all()
+
+    @staticmethod
     def update_class(class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str, offer: bool) -> bool:
         '''
         update prereq for a class
