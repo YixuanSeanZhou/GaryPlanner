@@ -42,14 +42,6 @@ export function ParticleEffect(props) {
                     "value": 2.5
                     }
                 },
-                    "interactivity": {
-                    "events": {
-                    "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
-                    }
-                    }
-                    }
                 }
             }
             {...props}

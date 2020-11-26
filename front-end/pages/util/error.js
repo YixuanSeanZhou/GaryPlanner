@@ -22,7 +22,7 @@ class ErrorPage extends React.Component {
     componentDidMount() {
         var timer = setTimeout(() => {
             this.props.router.push("/intro");
-        }, 5000)
+        }, 10000)
         this.setState({timer: timer});
     }
 
@@ -48,7 +48,7 @@ class ErrorPage extends React.Component {
                     </p>
                     <div id={styles.loadContainer}>
                         <Spinner animation="grow" size="sm" id={styles.errorSpinner} /> 
-                        You will be redirected in 5 seconds...
+                        You will be redirected in 10 seconds...
                     </div>
                 </div>
             </>

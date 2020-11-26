@@ -104,7 +104,23 @@ class Signup extends React.Component {
 
 	// Validate the form values and show alert if necessary
 	validate() {
-		const {user_name, email, pwd, pwdCfm, } = this.state.formData;
+		const {user_name, email, pwd, pwdCfm, first_name, last_name } = this.state.formData;
+		if (first_name === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "First name can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (last_name === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Last name can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
 		if (user_name === "") {
 			this.setState({
 				showingAlert: true,
@@ -189,11 +205,11 @@ class Signup extends React.Component {
 								
 								<Form.Row>
 									<Form.Group as={Col} controlId="first_name">
-										<Form.Label>First Name</Form.Label>
+										<Form.Label>First Name*</Form.Label>
 										<Form.Control value={formData.first_name} onChange={this.handleChange} />
 									</Form.Group>
 									<Form.Group as={Col}  controlId="last_name">
-										<Form.Label>Last Name</Form.Label>
+										<Form.Label>Last Name*</Form.Label>
 										<Form.Control value={formData.last_name} onChange={this.handleChange} />
 									</Form.Group>
 								</Form.Row>
@@ -219,7 +235,7 @@ class Signup extends React.Component {
 								</Form.Group>
 
 								<Form.Group controlId="pwd">
-									<Form.Label>Passowrd*</Form.Label>
+									<Form.Label>Password*</Form.Label>
 									<Form.Control 
 										name="pwd"
 										type="password"

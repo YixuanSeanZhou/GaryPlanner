@@ -170,7 +170,7 @@ class Login extends React.Component {
 								</Form.Group>
 			
 								<Form.Group controlId="pwd">
-									<Form.Label >Passowrd</Form.Label>
+									<Form.Label >Password</Form.Label>
 									<Form.Control 
 										type="password"
 										value={this.state.formData.pwd}
