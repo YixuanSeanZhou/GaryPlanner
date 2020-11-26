@@ -56,8 +56,7 @@ class Signup extends React.Component {
 
 		fetch(requestUrl, options)
 		.then(response => {
-			const data = response.json();
-
+			console.log(response);
 
 			if (response.status == 200) {
 				// User successfully created
@@ -72,20 +71,37 @@ class Signup extends React.Component {
 
 			} else if (response.status == 300) {
 				// User Already Existed!
-				this.setState({
-					showingAlert: true,
-					alarmText: "The given email already exists!",
-					alarmSubText: "Login if you have already registered"
-				});
+				return response.json()
 
-				setTimeout(() => this.props.disableLoading(), 300);
 			} else {
 				// Unhandled error code
 				setTimeout(() => this.props.disableLoading(), 300);
 				this.props.router.push('/util/error');	
 			}
+		}).then(data => {
+			console.log("JSON Data: ", data);
+			if (data === undefined) {
+				return;
+			}
 			
-			console.log('Success:', data); // TODO: Remove for deployment
+			if (data.reason === "email already exists") {
+				this.setState({
+					showingAlert: true,
+					alarmText: "This email has been registered. ",
+					alarmSubText: "Please choose another one, or login if you have already registered."
+				});
+
+				setTimeout(() => this.props.disableLoading(), 300);
+			} else if (data.reason === "user_name already exist") {
+				this.setState({
+					showingAlert: true,
+					alarmText: "This user name has been registered. ",
+					alarmSubText: "Please choose another one, or login if you have already registered."
+				});
+
+				setTimeout(() => this.props.disableLoading(), 300);
+
+			}
 		})
 		.catch((error) => {
 			console.error('Error:', error);
