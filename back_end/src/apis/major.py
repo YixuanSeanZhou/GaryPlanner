@@ -50,7 +50,8 @@ def get_major():
         if id:
             major = Major.get_major(id)
         elif major_code:
-            major = Major.get_major_by_code(major_code)     
+            major = Major.get_major_by_code(major_code)
+            
         if major:
             major = major.to_json()
             return jsonify({'reason': 'success', 'result': major}), 200
@@ -65,7 +66,7 @@ def get_major():
 @major_api_bp.route('/update_major', methods=['POST'])
 def update_major():
     req_data = request.get_json()
-    # post request needs id, major_code, title, and degree_type
+    # post request needs id
     m_id = req_data.get('id')
 
     if not m_id:

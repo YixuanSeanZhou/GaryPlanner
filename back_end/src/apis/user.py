@@ -29,14 +29,14 @@ def create_user():
     major = req_data.get('major', 'undeclared')
     minor = req_data.get('minor', 'undeclared')
     pwd = req_data.get('pwd', '')
-    s, u = User.create_user(user_name=user_name, email=email, pwd=pwd,
-                            first_name=first_name, last_name=last_name,
-                            intended_grad_quarter=itgq,
-                            college=college, major=major, minor=minor)
+    s, u, m = User.create_user(user_name=user_name, email=email, pwd=pwd,
+                               first_name=first_name, last_name=last_name,
+                               intended_grad_quarter=itgq,
+                               college=college, major=major, minor=minor)
     if s:
         return jsonify({'reason': 'user created', 'result': u.to_json()}), 200
     else:
-        return jsonify({'reason': 'user existed'}), 300
+        return jsonify({'reason': m}), 300
 
 
 @user_api_bp.route('/login', methods=['POST'])
@@ -49,7 +49,7 @@ def login():
     req_data = request.get_json()
     email = req_data.get('email', None)
     pwd = req_data.get('pwd', '')
-    remember = True 
+    remember = True
     # if req_data.get('remember', '') == 'true' else False
 
     if User.check_password(email, pwd):
@@ -87,6 +87,30 @@ def get_user_profile():
     u_id = current_user.id
     user = User.get_user_by_id(user_id=u_id)
     return jsonify({'reason': 'success', 'result': user.to_json()}), 200
+
+
+@user_api_bp.route('/get_user_by_user_name', methods=['GET'])
+@cross_origin(supports_credentials=True)
+@login_required
+def get_user_by_user_name():
+    u_name = request.args.get('user_name')
+    user = User.get_user_by_user_name(name=u_name)
+    if user:
+        return jsonify({'reason': 'success', 'result': user.to_json()}), 200
+    else:
+        return jsonify({'reason': 'user not found'}), 300
+
+
+@user_api_bp.route('/get_user_by_email', methods=['GET'])
+@cross_origin(supports_credentials=True)
+@login_required
+def get_user_by_email():
+    email = request.args.get('email')
+    user = User.get_user_by_email(email=email)
+    if user:
+        return jsonify({'reason': 'success', 'result': user.to_json()}), 200
+    else:
+        return jsonify({'reason': 'user not found'}), 300
 
 # TODO: NO USER NAME
 
