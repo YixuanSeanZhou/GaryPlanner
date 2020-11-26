@@ -51,7 +51,7 @@ def get_major():
             major = Major.get_major(id)
         elif major_code:
             major = Major.get_major_by_code(major_code)
-
+            
         if major:
             major = major.to_json()
             return jsonify({'reason': 'success', 'result': major}), 200

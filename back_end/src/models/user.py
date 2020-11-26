@@ -16,8 +16,8 @@ class User(db.Model, UserMixin):
 
     id = db.Column(db.Integer, primary_key=True)
     user_name = db.Column(db.String(255), unique=True, nullable=False)
-    first_name = db.Column(db.String(255), unique=True, nullable=False)
-    last_name = db.Column(db.String(255), unique=True, nullable=False)
+    first_name = db.Column(db.String(255), nullable=False)
+    last_name = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
     pwd = db.Column(db.String(255), nullable=False)
     intended_grad_quarter = db.Column(db.String(255), nullable=False)
@@ -69,10 +69,12 @@ class User(db.Model, UserMixin):
     def create_user(user_name: str, email: str, pwd: str,
                     first_name: str, last_name: str,
                     intended_grad_quarter: str,
-                    college: str, major: str, minor: str) -> (bool, User):
+                    college: str, major: str, minor: str) -> (bool, User, str):
         # TODO: Change to user_name?
-        if User.get_user_by_email(email=email):
-            return False, None    # user exists
+        if User.query.filter_by(email=email).first():
+            return False, None, 'email already exists'    # user exists
+        elif User.query.filter_by(user_name=user_name).first():
+            return False, None, 'user_name already exist'
         pwd = pwd_context.hash(pwd)
         user = User(user_name=user_name, email=email, pwd=pwd,
                     first_name=first_name, last_name=last_name,
@@ -80,7 +82,14 @@ class User(db.Model, UserMixin):
                     college=college, major=major, minor=minor)
         db.session.add(user)
         user.save()
-        return True, user
+        return True, user, 'success'
+
+    @staticmethod
+    def user_exist(user_id: int) -> bool:
+        if User.query.filter_by(id=user_id).first():
+            return True
+        else:
+            return False
 
     @staticmethod
     def get_users() -> List[User]:
@@ -118,3 +127,7 @@ class User(db.Model, UserMixin):
                                last_name=last_name, college=college,
                                intended_grad_quarter=intended_grad_quarter,
                                major=major, minor=minor)
+
+    @staticmethod
+    def get_user_by_user_name(name: str) -> User:
+        return User.query.filter_by(user_name=name).first()
