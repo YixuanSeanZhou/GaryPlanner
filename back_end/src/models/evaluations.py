@@ -103,7 +103,17 @@ class Evaluation(db.Model):
 
     @staticmethod
     def get_evaluation_by_instructor(instructor: str) -> List[Evaluation]:
-        evaluations = Evaluation.query.filter_by(instructor=instructor)
+        split = instructor.split(" ")
+        for i in range(len(split)):
+            split[i] = "%"+split[i].strip()+"%"
+
+        evaluations = Evaluation.query.filter(Evaluation.instructor.ilike(split[0]))
+
+        for i in range(1,len(split)):
+            if len(split[i]) > 3:
+                print(split[i])
+                evaluations = evaluations.filter(Evaluation.instructor.ilike(split[i]))
+
         if evaluations.first():
             return evaluations
         else:
