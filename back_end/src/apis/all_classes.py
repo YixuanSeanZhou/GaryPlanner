@@ -16,11 +16,14 @@ other possible methods:
 
 '''
 
+
 @all_classes_api_bp.route('/create_class', methods=['POST'])
 def create_class():
     '''
     Route to create class
-    input   class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str (i.e. ("A and (B or C or D) and (E or F)")), offer: bool (if this class is still offering by the school)
+    input   class_code: str, title: str, units: int, support_grade_type: int,
+            description: str, prerequisites: str (i.e. ("A and (B or C or D)
+            and (E or F)")), offer: bool (if this class is still offered)
     output  'class created' or 'class existed'
     @author: Jiazheng Liu
     '''
@@ -31,13 +34,16 @@ def create_class():
     support_grade_type = req_data.get('support_grade_type')
     description = req_data.get('description')
     prerequisites = req_data.get('prerequisites')
-    offer = req_data.get('offer') # Can be optional i think but will fix later
-    status = AllClass.create_class(class_code=class_code, title = title, units = units, support_grade_type = support_grade_type, description = description, prerequisites = prerequisites, offer = offer)
+    offer = req_data.get('offer')  # Can be optional i think but will fix later
+    status = AllClass.create_class(
+            class_code=class_code, title=title, units=units,
+            support_grade_type=support_grade_type, description=description,
+            prerequisites=prerequisites, offer=offer)
     if status[0]:
-        return jsonify({'reason': 'class created', 'result': status[1].to_json()}), 200
+        return jsonify({'reason': 'class created',
+                        'result': status[1].to_json()}), 200
     else:
         return jsonify({'reason': 'class existed'}), 300
-
 
 
 @all_classes_api_bp.route('/get_all_classes', methods=['GET'])
@@ -65,7 +71,7 @@ def get_class_by_code():
     # clss = AllClass.get_prereqs()
     class_code = request.args.get('class_code')
     clss = AllClass.get_class_by_code(class_code=class_code)
-    if clss: 
+    if clss:
         return jsonify({'reason': 'success', 'result': clss.to_json()}), 200
     return jsonify({'reason': 'failed: class DNE'}), 300
 
@@ -74,7 +80,9 @@ def get_class_by_code():
 def update_class():
     '''
     Route to update the info for one class
-    input   class_code: str, title: str, units: int, support_grade_type: int, description: str, prerequisites: str (i.e. ("A and (B or C or D) and (E or F)")), offer: bool (if this class is still offering by the school)
+    input   class_code: str, title: str, units: int, support_grade_type: int,
+            description: str, prerequisites: str (i.e. ("A and (B or C or D)
+            and (E or F)")), offer: bool (if this class is still offered)
     output  class updated or 'failed: class DNE'
     @author: Jiazheng Liu
     '''
@@ -87,7 +95,11 @@ def update_class():
     prerequisites = req_data.get('prerequisites')
     offer = req_data.get('offer')
 
-    status = AllClass.update_class(class_code=class_code, title = title, units = units, support_grade_type = support_grade_type, description = description, prerequisites = prerequisites, offer = offer)
+    status = AllClass.update_class(
+            class_code=class_code, title=title, units=units,
+            support_grade_type=support_grade_type, description=description,
+            prerequisites=prerequisites, offer=offer)
     if status[0]:
-        return jsonify({'reason': 'success', 'result': status[1].to_json()}), 200
+        return jsonify({'reason': 'success',
+                        'result': status[1].to_json()}), 200
     return jsonify({'reason': 'failed: class DNE'}), 300
