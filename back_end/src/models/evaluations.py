@@ -9,11 +9,9 @@ class Evaluation(db.Model):
     __tablename__ = "Evaluations"
 
     id = db.Column(db.Integer, primary_key=True)
-    # TODO this used to be integer pointing to class code
-    # But in order to test adding all capes eval to databse,
-    # I had to change it to string cuz i didn't have class ids
-    class_id = db.Column(db.String(255),# db.ForeignKey('AllClasses.id'),
-                         nullable=False)
+    class_code = db.Column(db.String(255),
+                           db.ForeignKey('AllClasses.class_code'),
+                           nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
     recommend_class = db.Column(db.Float, nullable=False)
     recommend_instructor = db.Column(db.Float, nullable=False)
@@ -27,7 +25,7 @@ class Evaluation(db.Model):
     def to_json(self):
         ret = {}
         ret['id'] = self.id
-        ret['class_id'] = self.class_id
+        ret['class_code'] = self.class_code
         ret['instructor'] = self.instructor
         ret['recommend_class'] = self.recommend_class
         ret['recommend_instructor'] = self.recommend_instructor
@@ -36,12 +34,12 @@ class Evaluation(db.Model):
         ret['avg_grade_received'] = self.avg_grade_received
         return ret
 
-    def update_attr(self, class_id: int, instructor: str,
+    def update_attr(self, class_code: str, instructor: str,
                     recommend_class: float, recommend_instructor: float,
                     study_hours_per_week: float, avg_expected_grade: str,
                     avg_grade_received: str) -> bool:
-        if class_id:
-            self.class_id = class_id
+        if class_code:
+            self.class_code = class_code
         if instructor:
             self.instructor = instructor
         if recommend_class:
@@ -61,12 +59,12 @@ class Evaluation(db.Model):
         db.session.commit()
 
     @staticmethod
-    def create_evaluation(class_id: int, instructor: str,
+    def create_evaluation(class_code: str, instructor: str,
                           recommend_class: float, recommend_instructor: float,
                           study_hours_per_week: float, avg_expected_grade: str,
                           avg_grade_received: str) -> bool:
 
-        evaluation = Evaluation(class_id=class_id, instructor=instructor,
+        evaluation = Evaluation(class_code=class_code, instructor=instructor,
                                 recommend_class=recommend_class,
                                 recommend_instructor=recommend_instructor,
                                 study_hours_per_week=study_hours_per_week,
@@ -93,12 +91,12 @@ class Evaluation(db.Model):
             return None
 
     @staticmethod
-    def get_evaluation_by_class_id(class_id: int) -> List[Evaluation]:
-        evaluations = Evaluation.query.filter_by(class_id=class_id)
+    def get_evaluation_by_class_code(class_code: str) -> List[Evaluation]:
+        evaluations = Evaluation.query.filter_by(class_code=class_code)
         if evaluations.first():
             return evaluations
         else:
-            # there are no evaluations matching the given class_id
+            # there are no evaluations matching the given class_code
             return None
 
     @staticmethod
@@ -111,7 +109,7 @@ class Evaluation(db.Model):
             return None
 
     @staticmethod
-    def update_evaluation(id: int, class_id: int = None,
+    def update_evaluation(id: int, class_code: str = None,
                           instructor: str = None,
                           recommend_class: float = None,
                           recommend_instructor: float = None,
@@ -120,9 +118,10 @@ class Evaluation(db.Model):
                           avg_grade_received: str = None) -> bool:
 
         evaluation = Evaluation.get_evaluation(evaluation_id=id)
-        return evaluation.update_attr(class_id=class_id, instructor=instructor,
-                                      recommend_class=recommend_class,
-                                      recommend_instructor=recommend_instructor,
-                                      study_hours_per_week=study_hours_per_week,
-                                      avg_expected_grade=avg_expected_grade,
-                                      avg_grade_received=avg_grade_received)
+        return evaluation.update_attr(
+                class_code=class_code, instructor=instructor,
+                recommend_class=recommend_class,
+                recommend_instructor=recommend_instructor,
+                study_hours_per_week=study_hours_per_week,
+                avg_expected_grade=avg_expected_grade,
+                avg_grade_received=avg_grade_received)
