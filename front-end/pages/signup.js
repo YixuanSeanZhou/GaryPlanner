@@ -280,7 +280,7 @@ class Signup extends React.Component {
 									<Form.Group as={Col} controlId="major">
 										<Form.Label>Major</Form.Label>
 										<Form.Control 
-											type="password" 
+											type="text" 
 											placeholder="Optional"
 											value={this.state.formData.major}
 											onChange={this.handleChange}
@@ -292,7 +292,7 @@ class Signup extends React.Component {
 									<Form.Group as={Col} controlId="minor">
 										<Form.Label>Minor</Form.Label>
 										<Form.Control 
-											type="password" 
+											type="text" 
 											value={this.state.formData.minor}
 											onChange={this.handleChange}
 											placeholder="Optional"
