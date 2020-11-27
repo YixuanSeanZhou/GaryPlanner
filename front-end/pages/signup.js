@@ -6,12 +6,11 @@ import Head from 'next/head'
 import { withRouter } from 'next/router'
 
 // Components
-import { GaryNavbar } from '../components/commonUI'
-import { Form, Button, Navbar } from 'react-bootstrap'
-import Particles from 'react-particles-js';
+import { Form, Button, Navbar, Alert, Col, Row } from 'react-bootstrap';
+import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 
 // Styles
-import styles from '../styles/Register.module.css'
+import styles from '../styles/Auth.module.css'
 
 class Signup extends React.Component {
 
@@ -19,14 +18,31 @@ class Signup extends React.Component {
 		super(props);
 
 		this.state = {
-			email: "",
-			user_name: "",
-			pwd: "",
+			formData: {
+				email: "",
+				user_name: "",
+				pwd: "",	
+				pwdCfm: "",
+				first_name: "",
+				last_name: "",
+				major: "",
+				minor: "",
+				grad_year: "",
+				grad_quarter: "",
+				indended_grad_quarter: "",
+			},
+			showingAlert: false,
+			alarmText: "Error!",
+			alarmSubText: "Just error",		
 		};
 	}
 
 	handleClick = (e) => {
-		console.log("POSTing this data to server:", JSON.stringify(this.state));
+		if (!this.validate()) {
+			return;
+		}
+		// First, enable loading animation
+		this.props.enableLoading("Please wait");
 
 		// Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/create_user';
@@ -35,134 +51,290 @@ class Signup extends React.Component {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(this.state)
+			body: JSON.stringify(this.state.formData)
 		};
 
 		fetch(requestUrl, options)
 		.then(response => {
-			const data = response.json();
+			console.log(response);
 
 			if (response.status == 200) {
 				// User successfully created
-				// TODO: Prompt Success
+				this.props.enableLoading("Success! Going to login page...")
 
-				this.props.router.push('/login'); // Redirect the user to login page
+				// Redirect the user to login page
+				this.props.router.prefetch('/login');
+				setTimeout(() => {
+					this.props.disableLoading();
+					this.props.router.push('/login'); 
+				}, 2000);
+
 			} else if (response.status == 300) {
 				// User Already Existed!
-				// TODO: Prompt
-			}	
-			console.log('Success:', data); // TODO: Remove for deployment
+				return response.json()
+
+			} else {
+				// Unhandled error code
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.props.router.push('/util/error');	
+			}
+		}).then(data => {
+			console.log("JSON Data: ", data);
+			if (data === undefined) {
+				return;
+			}
+
+			if (data.reason === "email already exists") {
+				this.setState({
+					showingAlert: true,
+					alarmText: "This email has been registered. ",
+					alarmSubText: "Please choose another one, or login if you have already registered."
+				});
+
+				setTimeout(() => this.props.disableLoading(), 300);
+			} else if (data.reason === "user_name already exist") {
+				this.setState({
+					showingAlert: true,
+					alarmText: "This user name has been registered. ",
+					alarmSubText: "Please choose another one, or login if you have already registered."
+				});
+
+				setTimeout(() => this.props.disableLoading(), 300);
+
+			}
 		})
 		.catch((error) => {
 			console.error('Error:', error);
+			setTimeout(() => this.props.disableLoading(), 300);
+			this.props.router.push('/util/error');
 		});
 	};
 
 	handleChange = (e) => {
-		this.setState({
-			[e.target.name]: e.target.value
-		});
+		var formData = this.state.formData;
+		formData[e.target.id] = e.target.value;
+		formData.indended_grad_quarter = formData.grad_year.substring(2, 4).concat(formData.grad_quarter);
+		this.setState({formData});
 	};
 
+
+	// Validate the form values and show alert if necessary
+	validate() {
+		const {user_name, email, pwd, pwdCfm, first_name, last_name } = this.state.formData;
+		if (first_name === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "First name can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (last_name === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Last name can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (user_name === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Username can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (email === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Email can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Please enter a valid email address!" ,
+				alarmSubText: "C'mon!",
+			});
+			return false;
+	
+		}
+
+		if (pwd === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Password can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (pwd !== pwdCfm) {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Passwords Doesn't match",
+				alarmSubText: ""
+			});
+			return false;
+		}
+
+
+		return true;
+	}
+
 	render() {
+		let alarmBody;
+		let formData = this.state.formData;
+		if (this.state.alarmSubText === "") {
+			alarmBody = <Alert.Heading>{this.state.alarmText}</Alert.Heading>;
+		} else {
+			alarmBody = <>
+				<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+				<div>{this.state.alarmSubText}</div>
+			</>;
+		}
+
 		return (
 			<>
 				<Head>
-					<title>Sign-Up Page</title>
+					<title>Sign up</title>
 				</Head>
 
+				<ParticleEffect className={styles.particles} />
 
-				<GaryNavbar>
-					<Navbar.Text>Sign up</Navbar.Text>
-				</GaryNavbar>
+
 
 				<div className={styles.outer}>
-					<Particles
-						params={{
-							"particles": {
-							"number": {
-							"value": 90,
-							"density": {
-							"enable": true,
-							"value_area": 2000
-							}
-							},
-							"color": {
-							"value": "#ffffff"
-							},
-							"size": {
-							"value": 2.5
-							}
-						},
-							"interactivity": {
-							"events": {
-							"onhover": {
-							"enable": true,
-							"mode": "repulse"
-							}
-							}
-							}
-						}}/>
-					<div className={styles.middle} style={{
-						position: "absolute",
-						top: "20%",
-						left: 0,
-						width: "100%",
-						height: "absolute"
-					}}>
-						<div className={styles.login}>
-							<Form.Group style={{ display: 'flex', alignItems: 'center', height: "absolute" }}>
-								<a href="/intro">
-									<Image
-										id="loginlogo"
-										src="/logo/PCLogo-Color.svg"
-										height="70"
-										width="49"
-										alt="logo"
-										className=""
-									/>
-								</a>
-								<h3 className="mt-3 ml-1" style={{ paddingLeft: '10px' }}>
-									Gary <br /> Planner
-								</h3>
-							</Form.Group>
 
+					<GaryNavbar>
+						<Navbar.Text>Sign Up</Navbar.Text>
+					</GaryNavbar>
+
+					{/* Start of the login component */}
+
+					<div className={styles.loginWrapper} >
+						<div className={styles.login} id={styles.signup}>
 							<h3>Sign Up</h3>
 							<Form>
+								
+								<Form.Row>
+									<Form.Group as={Col} controlId="first_name">
+										<Form.Label>First Name*</Form.Label>
+										<Form.Control value={formData.first_name} onChange={this.handleChange} />
+										<Form.Text>
+											Will be displayed in your profile.
+										</Form.Text>
+									</Form.Group>
+									<Form.Group as={Col}  controlId="last_name">
+										<Form.Label>Last Name*</Form.Label>
+										<Form.Control value={formData.last_name} onChange={this.handleChange} />
+									</Form.Group>
+								</Form.Row>
+
 								<Form.Group controlId="user_name">
-									<Form.Label>Username</Form.Label>
+									<Form.Label>Username*</Form.Label>
 									<Form.Control 
 										name="user_name"
 										type="text"
-										value={this.state.user_name}
+										value={this.state.formData.user_name}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
+								
 								<Form.Group controlId="email">
-									<Form.Label>Email</Form.Label>
+									<Form.Label>Email*</Form.Label>
 									<Form.Control 
 										name="email"
-										type="text"
-										value={this.state.email}
+										type="email"
+										value={this.state.formData.email}
 										onChange={this.handleChange}
 									/>
+									<Form.Text>
+										We will not send you any email.
+									</Form.Text>
 								</Form.Group>
 
 								<Form.Group controlId="pwd">
-									<Form.Label>Passowrd</Form.Label>
+									<Form.Label>Password*</Form.Label>
 									<Form.Control 
 										name="pwd"
 										type="password"
-										value={this.state.password}
+										value={this.state.formData.password}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
 
-								<Form.Group controlId="passwordCfm">
-									<Form.Label>Confirm password</Form.Label>
-									<Form.Control type="password" />
+								<Form.Group controlId="pwdCfm">
+									<Form.Label>Confirm password*</Form.Label>
+									<Form.Control 
+										name="pwdCfm"
+										type="password" 
+										value={this.state.formData.pwdCfm}
+										onChange={this.handleChange}
+									/>
 								</Form.Group>
 
+								<Form.Row>
+									<Form.Group as={Col} controlId="major">
+										<Form.Label>Major</Form.Label>
+										<Form.Control 
+											type="text" 
+											placeholder="Optional"
+											value={this.state.formData.major}
+											onChange={this.handleChange}
+										/>
+										<Form.Text>
+											For display only.
+										</Form.Text>
+									</Form.Group>
+									<Form.Group as={Col} controlId="minor">
+										<Form.Label>Minor</Form.Label>
+										<Form.Control 
+											type="text" 
+											value={this.state.formData.minor}
+											onChange={this.handleChange}
+											placeholder="Optional"
+										/>
+										<Form.Text>
+											For display only.
+										</Form.Text>
+									</Form.Group>
+
+								</Form.Row>
+								<Form.Row>
+									<Form.Group as={Col} controlId="grad_year">
+										<Form.Label>Indended Graduation Year</Form.Label>
+										<Form.Control 
+											as="select"
+											value={formData.grad_year}
+											onChange={this.handleChange}
+										>
+											<option>2020</option>
+											<option>2021</option>
+											<option>2022</option>
+											<option>2023</option>
+											<option>2024</option>
+										</Form.Control>
+									</Form.Group>
+									<Form.Group as={Col} controlId="grad_quarter">
+										<Form.Label>... and Quarter</Form.Label>
+										<Form.Control 
+											as="select"
+											value={formData.grad_quarter}
+											onChange={this.handleChange}
+										>
+											<option>FA</option>
+											<option>WI</option>
+											<option>SP</option>
+										</Form.Control>
+									</Form.Group>
+
+								</Form.Row>
+
+
+								{/* Ending  */}
 								<Form.Group>
 									<Form.Text style={{ fontSize: '.85rem' }}>
 										Already have an account?{' '}
@@ -185,8 +357,22 @@ class Signup extends React.Component {
 								</div>
 							</Form>
 						</div>
+
 					</div>
+
+					<Alert 
+						show={this.state.showingAlert} 
+						onClick={() => this.setState({showingAlert: false})} 
+						variant='danger'
+						className={styles.myAlert}
+						dismissible
+					>
+						{alarmBody}
+					</Alert>
+
+
 				</div>
+
 			</>
 		)	
 	}

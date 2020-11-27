@@ -4,7 +4,21 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
 }
+
+/* This is to make sure that next make everythin full-screen */
+html,
+body,
+body > div:first-child,
+div#__next{
+  height: 100%;
+}
+
+div#__next > div {
+  min-height: 100vh;
+}
+
 
 .navbarLogo {
   width: 24px;
