@@ -2,8 +2,12 @@ import Link from 'next/link'
 import Head from 'next/head'
 import PlanCalendar from '../components/planCalendar/planCalendar'
 // Components
-import { GaryNavbar } from '../components/commonUI';
+
+import HomeNav from '../components/homeNav'
 import { Navbar } from 'react-bootstrap';
+
+// Styles
+import styles from '../styles/FourYearPlan.module.css'
 
 export default function Plan() {
     return (
@@ -12,13 +16,13 @@ export default function Plan() {
                 <title>Plan</title>
             </Head>
 
-            <GaryNavbar>
+            <HomeNav>
                 <Navbar.Text>
                    Four Year Plan 
                 </Navbar.Text>
-            </GaryNavbar>
+            </HomeNav>
 
-            <div id="planCalendar">
+            <div id="planCalendar" className={styles.mainContainer}>
                 <PlanCalendar />
             </div>
         </>

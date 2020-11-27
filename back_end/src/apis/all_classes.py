@@ -59,6 +59,23 @@ def get_all_classes():
     return jsonify({'reason': 'success', 'result': clss}), 200
 
 
+@all_classes_api_bp.route('/get_class_by_search', methods=['GET'])
+def get_class_by_search():
+    '''
+    Route to get multiple classes by search query
+    input   search(str)
+    output  info for the given classes if the classes exists in the BD or
+            'failed: class DNE'
+    @author: Jiazheng Liu
+    '''
+
+    search = request.args.get('search')
+    clss = AllClass.get_class_by_search(search=search)
+    clss = list(map(lambda x: x.to_json(), clss))
+    if clss: 
+        return jsonify({'reason': 'success', 'result': clss}), 200
+    return jsonify({'reason': 'failed: class DNE'}), 300
+
 @all_classes_api_bp.route('/get_class_by_code', methods=['GET'])
 def get_class_by_code():
     '''
