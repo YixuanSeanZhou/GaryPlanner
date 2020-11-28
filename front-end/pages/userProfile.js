@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 // Components
-import { GaryNavbar } from '../components/commonUI'
+import HomeNav from '../components/homeNav'
 import { Button, Form, Navbar, Row, Col } from 'react-bootstrap'
 import styles from '../styles/UserProfile.module.css'
 
@@ -13,9 +13,9 @@ export default function UserProfile() {
 				<title>User Profile</title>
 			</Head>
 
-			<GaryNavbar>
+			<HomeNav>
 				<Navbar.Text>User Profile</Navbar.Text>
-			</GaryNavbar>
+			</HomeNav>
 
 			<div className={styles.main}>
 				<section>

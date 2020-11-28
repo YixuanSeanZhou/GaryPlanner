@@ -8,7 +8,7 @@ import Particles from 'react-particles-js';
 import { GaryNavbar } from '../components/commonUI'
 import { Form, Button, Navbar } from 'react-bootstrap'
 
-import styles from '../styles/Register.module.css'
+import styles from '../styles/Auth.module.css'
 
 export default class ChangePass extends React.Component {
 	render() {

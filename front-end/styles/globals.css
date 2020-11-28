@@ -47,8 +47,8 @@ div#__next > div {
   background-color:rgb(53,68,104);
 }
 
-。background-light {
-  background-color: #626f96;
+.background-light {
+  background-color: #092A59;
 }
 
 .intro {
@@ -71,4 +71,17 @@ div#__next > div {
 
 .searchBar {
   padding: 30px 0px 30px 0px;
+}
+
+.nav {
+  margin-right: auto;
+  background-color: #8CB7F4;
+}
+
+.nav-link {
+  color:#061d3d;
+}
+
+.nav-link:hover {
+  color:rgba(255, 254, 254, 0.616);
 }
