@@ -9,7 +9,7 @@ import {
 } from 'react-pro-sidebar'
 import 'react-pro-sidebar/dist/css/styles.css'
 
-export default function SideBar() {
+const SideBar = () => {
 	return (
 		<ProSidebar>
 			<SidebarHeader style={{ backgroundColor: '#092A59' }}>
@@ -48,3 +48,5 @@ export default function SideBar() {
 		</ProSidebar>
 	)
 }
+
+export default SideBar
