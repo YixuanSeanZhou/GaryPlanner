@@ -1,0 +1,86 @@
+[
+ {
+  "code": "AWP 2A",
+  "title": "Analytical Writing and Academic English A",
+  "unit": "4",
+  "discription": "AWP 2A is the first of a multi-term course designed to offer students who need extra English language support the opportunity to develop their critical thinking and writing abilities over two terms. Students who enroll in AWP 2A are required to enroll in AWP 2B in the subsequent term. Renumbered from ELWR 2A. Students may not receive credit for AWP 2A and ELWR 2A. Students must earn a C or better in AWP 2A-B to satisfy the UC Entry Level Writing Requirement. If a grade of C or better is not earned, students are placed in AWP 1.",
+  "prerequsite": null
+ },
+ {
+  "code": "AWP 2B",
+  "title": "Analytical Writing and Academic English B",
+  "unit": "4",
+  "discription": "AWP 2B is the second of a multi-term course designed to offer students who need extra English language support the opportunity to develop their critical thinking and writing abilities over two terms. At the end of AWP 2B, students will produce a portfolio of work that will determine their readiness to enter the college writing programs. Renumbered from ELWR 2B. Students may not receive credit for AWP 2B and ELWR 2B. Students must earn a grade of C or better in AWP 2A-B to satisfy the UC Entry Level Writing Requirement. If a C or better is not earned, students are placed in AWP 1.",
+  "prerequsite": "AWP 2A or ELWR 2A."
+ },
+ {
+  "code": "AWP 3",
+  "title": "Analytical Writing",
+  "unit": "4",
+  "discription": "AWP 3 provides writers the opportunity to develop their critical thinking and writing abilities. At the end of AWP 3, students will produce a portfolio of work that will determine their readiness to enter the college writing programs. Replaced AWP 1. Students may take AWP 3, AWP 1, and ELWR 1 for a combined total of three times to earn a passing grade of C or better to satisfy the UC Entry Level Writing Requirement.",
+  "prerequsite": null
+ },
+ {
+  "code": "AWP 4A",
+  "title": "Analytical Writing and Academic English A",
+  "unit": "4",
+  "discription": "AWP 4A is the first of two courses designed to offer students who need extra English language support the opportunity to develop their critical thinking and writing abilities over two quarters. Students who enroll in AWP 4A are required to enroll in AWP 4B in the subsequent quarter. Pass/Not Pass only. Replaced AWP 2A. Students may not receive credit for AWP 4A and AWP 2A or ELWR 2A. Students must earn a grade of Pass to move on to AWP 4B.",
+  "prerequsite": null
+ },
+ {
+  "code": "AWP 4B",
+  "title": "Analytical Writing and Academic English B",
+  "unit": "4",
+  "discription": "AWP 4B is the second of two courses designed to offer students who need extra English language support the opportunity to develop their critical thinking and writing abilities over two quarters. At the end of AWP 4B, students will produce a portfolio of work that will determine their readiness to enter the college writing programs. Replaced AWP 2B. Students may not receive credit for AWP 4B and AWP 2B or ELWR 2B. Students must earn a grade of C or better in AWP 4B to satisfy the UC Entry Level Writing Requirement. If a grade of C or better is not earned, students are placed in AWP 3.",
+  "prerequsite": "AWP 4A."
+ },
+ {
+  "code": "AWP 10",
+  "title": "Language and Learning in the American Academy",
+  "unit": "4",
+  "discription": "This course will introduce critical thinking, reading, writing, speaking, and listening practices appropriate to college-level work. It will prepare students who may not be familiar with the learning expectations of American universities to fully join the academic conversation. Students may not receive credit for AWP 10 and LTWR 4.",
+  "prerequsite": null
+ },
+ {
+  "code": "AWP 100",
+  "title": "Writing a Researched Argument",
+  "unit": "4",
+  "discription": "This course offers students intensive instruction in the critical and rhetorical practices necessary to craft strong, research-informed arguments. Students also make short multi-modal presentations to practice delivering what they have written. Course topics will vary.",
+  "prerequsite": "upper- division or graduate standing."
+ },
+ {
+  "code": "AWP 101",
+  "title": "Writing about Science",
+  "unit": "4",
+  "discription": "Students write about scientific topics for non-scientific audiences, engaging with current debates in the sciences, analyzing the rhetorical strategies employed, and composing rhetorically strategic responses of their own. Students also make short multi-modal presentations to practice delivering what they have written. The intensive focus on writing and revising is especially useful for students who want to develop their writing.",
+  "prerequsite": "upper-division or graduate standing."
+ },
+ {
+  "code": "AWP 102",
+  "title": "Writing for the Professions",
+  "unit": "4",
+  "discription": "Students use writing to explore and to create a professional identity. Assignments range from articulating the questions and problems that students hope to explore in their professional lives to understanding the current conversations in their chosen professions, and to fashioning resumes, cover letters, and presentations that declare what they hope to contribute professionally. The intensive focus on writing and revising is especially useful for students who want to develop their writing.",
+  "prerequsite": "upper-division or graduate standing."
+ },
+ {
+  "code": "AWP 103",
+  "title": "Writing About the Law",
+  "unit": "4",
+  "discription": "Students write about legal topics for a general audience. Students will examine the rhetorical strategies employed by various stakeholders in controversial Supreme Court cases. They will then weigh in, composing their own strategic arguments. Students will also make short multi-modal presentations to practice delivering what they have written. The intensive focus on writing and revising is especially useful for students who want to develop their writing.",
+  "prerequsite": "upper-division or graduate standing."
+ },
+ {
+  "code": "AWP 195",
+  "title": "Academic Mentoring in Writing",
+  "unit": "2",
+  "discription": "Under the supervision of an instructor, students will serve as peer mentors in analytical writing courses. Students will gain a fundamental understanding of the writing process and will develop the necessary skills to serve as productive writing mentors for their peers.",
+  "prerequsite": "permission of the director of the Analytical Writing Program is required to enroll; 3.0 GPA is required."
+ },
+ {
+  "code": "AWP 500",
+  "title": "Apprentice Teaching in the Analytical Writing Program",
+  "unit": "1\u20134",
+  "discription": "Consideration of pedagogical methods appropriate to undergraduate teaching of analytical writing, especially with regards to courses that fulfill the UC Entry Level Writing Requirement (ELWR). The course is required of all graduate teaching assistants who are engaged in or supporting instruction in the Analytical Writing Program. The course is potentially open to other graduate students seeking expertise in writing pedagogy, contingent upon the approval of the director. May be taken for credit up to eighteen times.",
+  "prerequsite": "permission of the director of the Analytical Writing Program is required to enroll."
+ }
+]

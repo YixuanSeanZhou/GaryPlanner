@@ -1,0 +1,44 @@
+[
+ {
+  "code": "CLIN 209",
+  "title": "Child Development and Neuropsychology",
+  "unit": "3",
+  "discription": "Basic aspects of behavioral and neuropsychological development, including guest lectures from program faculty on developmental disorders and clinical assessment issues specific to children. Some emphasis on practical techniques relevant to assessments of minor patients. ",
+  "prerequsite": "completion of two-year core curriculum in the Joint Doctoral Program in Clinical Psychology."
+ },
+ {
+  "code": "CLIN 227A",
+  "title": "Mind, Brain & Behavior",
+  "unit": "6",
+  "discription": "This five-week course will cover neuroanatomy, neurophysiology, neuropharmacology, principles of neurological function, and human growth and development. S/U grades only.",
+  "prerequsite": null
+ },
+ {
+  "code": "CLIN 227B",
+  "title": "Mind, Brain & Behavior II",
+  "unit": "6",
+  "discription": "This five-week course during year two covers neurological, psychiatric, ophthalmological, otolaryngological, and general head and neck principles, syndromes, and disorders.",
+  "prerequsite": "CLIN 227A. S/U grades only."
+ },
+ {
+  "code": "CLIN 228",
+  "title": "Mind, Brain & Behavior II\u2014Psychiatry Emphasis",
+  "unit": "3",
+  "discription": "A five-week intense course with specific emphasis for clinical psychology graduate students. The psychiatry emphasis will examine aspects of psychopathology, including the following disorders: depressive, psychotic, alcohol and drug personality, suicide, anxiety, obsessive-compulsive, gender dysphoria, sexual dysfunctions, child psychiatry, and sleep-wake among others. S/U grades only.",
+  "prerequsite": null
+ },
+ {
+  "code": "CLIN 294",
+  "title": "Proseminar in Neuropsychology",
+  "unit": "3",
+  "discription": "Yearlong course (CLIN 294A, B, C), each for three credits, offered sequentially fall, winter, and spring. Provides a fundamental knowledge of brain-behavior relationships as well as strategies and methods of neuropsychological assessment and rehabilitation.",
+  "prerequsite": null
+ },
+ {
+  "code": "CLIN 296",
+  "title": "Independent Study",
+  "unit": "1\u201312",
+  "discription": "Independent survey of basic concepts in clinical psychology using various sources of material, including scientific papers in clinical psychology and behavioral science and other sources as seem indicated.",
+  "prerequsite": null
+ }
+]

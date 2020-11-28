@@ -1,0 +1,527 @@
+[
+ {
+  "code": "GSS 20",
+  "title": "Introduction to Global South Studies",
+  "unit": "4",
+  "discription": "This introductory course examines historical and theoretical debates on the Global South. Especially important are socioeconomic, political, as well as cultural processes, as they are key factors to understanding the Third World across the globe.",
+  "prerequsite": null
+ },
+ {
+  "code": "TWS 21-22-23-24-25-26",
+  "title": "Third World Literatures",
+  "unit": "4-4-4-4-4-4",
+  "discription": "An introduction to the cultures of various Third World countries through close reading of selected literary texts. TWS 21 focuses on African literature, TWS 22 deals with Latin American literature, TWS 23 examines Chinese literature, TWS 24 examines Caribbean literature, TWS 25 focuses on Middle Eastern literature, and TWS 26 treats literature of the Indian Subcontinent. Topics will vary each quarter. (F,W,S)",
+  "prerequsite": null
+ },
+ {
+  "code": "TWS 132",
+  "title": "Literature and Third World Societies",
+  "unit": "4",
+  "discription": "This course will investigate novelistic and dramatic treatments of European society in the era of nineteenth-century imperialism, Third World societies under the impact of colonialism, and the position of national minorities inside the United States to the present day. Attention will center on the interplay between the aesthetic merits and social-historical-philosophical content of the works read.",
+  "prerequsite": null
+ },
+ {
+  "code": "TWS 190",
+  "title": "Undergraduate Seminars",
+  "unit": "4",
+  "discription": "Seminars will be organized on the basis of topics with readings, discussions, and papers. Specific subjects to be covered will change each quarter depending on particular interest of instructors or students. May be repeated for credit.",
+  "prerequsite": null
+ },
+ {
+  "code": "TWS 197",
+  "title": "Fieldwork",
+  "unit": "4",
+  "discription": "In an attempt to explore and study some unique processes and aspects of community life, students will engage in research in field settings. Topics to be researched may vary, but in each case the course will provide skills for carrying out these studies.",
+  "prerequsite": null
+ },
+ {
+  "code": "TWS 198",
+  "title": "Directed Group Studies",
+  "unit": "2 or 4",
+  "discription": "Directed group study on a topic or in a field not included in the regular department curriculum, by special arrangement with a faculty member.",
+  "prerequsite": "upper-division standing."
+ },
+ {
+  "code": "TWS 199",
+  "title": "Independent Study",
+  "unit": "2 or 4",
+  "discription": "Tutorial, individual guided reading and research projects (to be arranged between student and instructor) in an area not normally covered in courses currently being offered in the department. (P/NP grades only.)",
+  "prerequsite": "upper-division standing and consent of instructor. (F,W,S)"
+ },
+ {
+  "code": "ANSC 136",
+  "title": "Traditional Chinese Society",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "ANSC 137",
+  "title": "Chinese Popular Religion",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "ANSC 142",
+  "title": "Anthropology of Latin America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "ANSC 165",
+  "title": "Contemporary South Asia",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "ETHN 142",
+  "title": "Medicine, Race, and the Global Politics of Inequality",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIAF 111",
+  "title": "Modern Africa since 1880",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIAF 112",
+  "title": "West Africa since 1880",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIAF 113",
+  "title": "Small Wars and the Global Order: Africa and Asia",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIAF 120",
+  "title": "History of South Africa",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIAF 161",
+  "title": "Special Topics in African History",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIEA 113",
+  "title": "The Fifteen-Year War in Asia and the Pacific",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIEA 130",
+  "title": "End of the Chinese Empire: 1800\u20131911",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIEA 131",
+  "title": "China in War and Revolution: 1911\u20131949",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIEA 132",
+  "title": "Mao's China, 1949\u20131976",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HIEA 137",
+  "title": "Women and Family in Chinese History",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 100D",
+  "title": "Latin America: Colonial Transformation",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 101",
+  "title": "Nation-State Formation, Ethnicity, and Violence in Latin America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 102",
+  "title": "Latin America in the Twentieth Century",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 113D",
+  "title": "Lord and Peasant in Latin America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 114",
+  "title": "Dictatorships in Latin America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 115",
+  "title": "The Latin American City: A History",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 120",
+  "title": "History of Argentina",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 121A",
+  "title": "History of Brazil through 1889",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 122",
+  "title": "From Colony to Socialist Republic: Cuba",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 126",
+  "title": "From Columbus to Castro: Caribbean Culture and Society",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 131",
+  "title": "Mexico from Conquest to Modern Nation-Building",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 132",
+  "title": "Modern Mexico: From Revolution to Drug War Violence",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 161",
+  "title": "History of Women in Latin America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HILA 162",
+  "title": "Special Topics in Latin American History",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "HINE 114",
+  "title": "History of the Islamic Middle East",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTEN 188",
+  "title": "Contemporary Caribbean Literature",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTEN 189",
+  "title": "Twentieth Century Postcolonial Literatures",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 130B",
+  "title": "Development of Latin American Literature",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 133",
+  "title": "Contemporary Latin American Literature",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 134",
+  "title": "Literature of the Southern Cone",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 135A",
+  "title": "Mexican Literature before 1910",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 135B",
+  "title": "Modern Mexican Literature",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 136",
+  "title": "Andean Literatures",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 137",
+  "title": "Caribbean Literature",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 140",
+  "title": "Latin American Novel",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 141",
+  "title": "Latin American Poetry",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 142",
+  "title": "Latin American Short Story",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTSP 172",
+  "title": "Indigenista Themes in Spanish American Literature",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTAF 110",
+  "title": "African Oral Literature",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTAF 120",
+  "title": "Literature and Film of Modern Africa",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTAM 110",
+  "title": "Latin American Literature in Translation",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTAM 111",
+  "title": "Comparative Caribbean Discourse",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTEA 100A",
+  "title": "Classical Chinese Poetry in Translation",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTEA 100B",
+  "title": "Modern Chinese Poetry in Translation",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTEA 110C",
+  "title": "Contemporary Chinese Fiction in Translation",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "LTCS 133",
+  "title": "Globalization and Culture",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 130H",
+  "title": "Vietnam: The Politics of Intervention",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 134A",
+  "title": "Comparative Politics of Latin America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 134B",
+  "title": "Politics in Mexico",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 134D",
+  "title": "Selected Topics in Latin American Politics",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 134N",
+  "title": "Politics in Central America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 144AB",
+  "title": "Selected Topics in International Political Economy",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 146A",
+  "title": "The U.S. and Latin America: Political and Economic Relations",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "POLI 150A",
+  "title": "Politics of Immigration",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 139",
+  "title": "Social Inequality: Class, Race, and Gender",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 158",
+  "title": "Islam in the Modern World",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 179",
+  "title": "Social Change",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 182",
+  "title": "Ethnicity and Indigenous Peoples in Latin America",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 185",
+  "title": "Globalization and Social Development",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 187",
+  "title": "African Societies through Film",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 188D",
+  "title": "Latin America: Society and Politics",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 188G",
+  "title": "Chinese Society",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ },
+ {
+  "code": "SOCI 188J",
+  "title": "Change in Modern South Africa",
+  "unit": null,
+  "discription": null,
+  "prerequsite": null
+ }
+]

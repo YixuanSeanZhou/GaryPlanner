@@ -1,0 +1,1212 @@
+[
+ {
+  "num": "CSE_3",
+  "name": "Fluency in Information Technology",
+  "unit": "4",
+  "des": "Introduces the concepts and skills necessary to effectively use information technology. Includes basic concepts and some practical skills with computer and networks. ",
+  "pre": " none.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_4GS",
+  "name": "Mathematical Beauty in Rome",
+  "unit": "4",
+  "des": "Exploration of topics in mathematics and engineering as they relate to classical architecture in Rome, Italy. In depth geometrical analysis and computer modeling of basic structures (arches, vaults, domes), and on-site studies of the Colosseum, Pantheon, Roman Forum, and St. Peter\u2019s Basilica. ",
+  "pre": " MATH 10A or MATH 20A; department approval, and corequisite of CSE 6GS.",
+  "formatted_pre": [
+   [
+    "MATH_10A",
+    "MATH_20A"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_6GS",
+  "name": "Mathematical Beauty in Rome Lab",
+  "unit": "4",
+  "des": "Companion course to CSE 4GS where theory is applied and lab experiments are carried out \u201cin the field\u201d in Rome, Italy. For final projects, students will select a complex structure (e.g., the Colosseum, the Pantheon, St. Peter\u2019s, etc.) to analyze and model, in detail, using computer-based tools. ",
+  "pre": " MATH 10A or MATH 20A; department approval, and corequisite of CSE 4GS.",
+  "formatted_pre": [
+   [
+    "MATH_10A",
+    "MATH_20A"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_5A",
+  "name": "Introduction to Programming I",
+  "unit": "4",
+  "des": "Introduction to algorithms and top-down problem solving. Introduction to the C language, including functions, arrays, and standard libraries. Basic skills for using a PC graphical user interface operating system environment. File maintenance utilities are covered. A student may not receive credit for CSE 5A after receiving credit for CSE 11 or CSE 8B. Recommended preparation: A familiarity with high school-level algebra is expected, but this course assumes no prior programming knowledge. ",
+  "pre": " restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_8A",
+  "name": "Introduction to Computer Science: Java I",
+  "unit": "4",
+  "des": "Introductory course for students interested in computer science. Fundamental concepts of applied computer science using media computation. Exercises in the theory and practice of computer science. Hands-on experience with designing, editing, compiling, and executing programming constructs and applications. CSE 8A is part of a two-course sequence (CSE 8A and CSE 8B) that is equivalent to CSE 11. Students should take CSE 8B to complete this track. Formerly offered as corequisite courses CSE 8A plus 8AL. Students who have taken CSE 8B or CSE 11 may not take CSE 8A. Recommended preparation: No prior programming experience is assumed, but comfort using computers is helpful. Students should consult the [\u201cCSE Course Placement Advice](http://cse.ucsd.edu/node/43)\u201d web page for assistance in choosing which CSE course to take first. ",
+  "pre": " restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_8B",
+  "name": "Introduction to Computer Science: Java II",
+  "unit": "4",
+  "des": "Continuation of the Java language. Continuation of programming techniques. More on inheritance. Exception handling. CSE 8B is part of a two-course sequence (CSE 8A and CSE 8B) that is equivalent to CSE 11. Students should consult the [\u201cCSE Course Placement Advice\u201d](http://cse.ucsd.edu/node/43) web page for assistance in choosing which CSE course to take first. Students may not receive credit for CSE 8B and CSE 11. ",
+  "pre": " CSE 8A; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_8A"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_11",
+  "name": "Introduction to Computer Science and Object-Oriented Programming: Java",
+  "unit": "4",
+  "des": "An accelerated introduction to computer science and programming using the Java language. Basic UNIX. Modularity and abstraction. Documentation, testing and verification techniques. Basic object-oriented programming, including inheritance and dynamic binding. Exception handling. Event-driven programming. Experience with AWT library or another similar library. Students who have completed CSE 8B may not take CSE 11. Students should consult the [\u201cCSE Course Placement Advice\u201d](http://cse.ucsd.edu/node/43) web page for assistance in choosing which CSE course to take first. Recommended preparation: high school algebra and familiarity with computing concepts and a course in a compiled language. ",
+  "pre": " restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_12",
+  "name": "Basic Data Structures and Object-Oriented Design",
+  "unit": "4",
+  "des": "Use and implementation of basic data structures including linked lists, stacks, and queues. Use of advanced structures such as binary trees and hash tables. Object-oriented design including interfaces, polymorphism, encapsulation, abstract data types, pre-/post-conditions. Recursion. Uses Java and Java Collections. ",
+  "pre": " CSE 8B or CSE 11, and concurrent enrollment with CSE 15L; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_8B",
+    "CSE_11"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_15L",
+  "name": "Software Tools and Techniques Laboratory",
+  "unit": "2",
+  "des": "Hands-on exploration of software development tools and techniques. Investigation of the scientific process as applied to software development and debugging. Emphasis is on weekly hands-on laboratory experiences, development of laboratory notebooking techniques as applied to software design. ",
+  "pre": " CSE 8B or CSE 11, and concurrent enrollment with CSE 12; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_8B",
+    "CSE_11"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_20",
+  "name": "Discrete Mathematics",
+  "unit": "4",
+  "des": "Basic discrete mathematical structures: sets, relations, functions, sequences, equivalence relations, partial orders, and number systems. Methods of reasoning and proofs: prepositional logic, predicate logic, induction, recursion, and pigeonhole principle. Infinite sets and diagonalization. Basic counting techniques; permutation and combinations. Applications will be given to digital logic design, elementary number theory, design of programs, and proofs of program correctness. Students who have completed MATH 109 may not receive credit for CSE 20. Credit not offered for both MATH 15A and CSE 20. Equivalent to MATH 15A. ",
+  "pre": " COGS 7 or CSE 8B or CSE 11. Prerequisite courses must have been completed with a grade of C\u2013 or better; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "COGS_7",
+    "CSE_8B",
+    "CSE_11"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_21",
+  "name": "Mathematics for Algorithms and Systems",
+  "unit": "4",
+  "des": "This course will provide an introduction to the discrete mathematical tools needed to analyze algorithms and systems. Enumerative combinatorics: basic counting principles, inclusion-exclusion, and generating functions. Matrix notation. Applied discrete probability. Finite automata. ",
+  "pre": " CSE 20 or MATH 15A; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_20",
+    "MATH_15A"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_30",
+  "name": "Computer Organization and Systems Programming",
+  "unit": "4",
+  "des": "Introduction to organization of modern digital computers\u2014understanding the various components of a computer and their interrelationships. Study of a specific architecture/machine with emphasis on systems programming in C and Assembly languages in a UNIX environment. ",
+  "pre": " CSE 12 and CSE 15L; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_12"
+   ],
+   [
+    "CSE_15L"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_42",
+  "name": "Building and Programming Electronic Devices",
+  "unit": "2",
+  "des": "This course allows students to use what they learned in introductory programming courses to make things happen in the real world. Working in teams, students will first learn to program Arduino-based devices. Teams of students will design a custom device and program it to do their bidding. This course is targeted to first-year students and sophomores in engineering and science disciplines who want to practice applying what they have learned in a programming class and to have the chance to program things other than computers. Program or materials fees may apply. ",
+  "pre": " restricted to first-year and sophomore students; instructor approval required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_80",
+  "name": "UNIX Lab",
+  "unit": "2",
+  "des": "The objective of the course is to help the programmer create a productive UNIX environment. Topics include customizing the shell, file system, shell programming, process management, and UNIX tools. ",
+  "pre": " CSE 8B or CSE 11.",
+  "formatted_pre": [
+   [
+    "CSE_8B",
+    "CSE_11"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_86",
+  "name": "C++ for Java Programmers",
+  "unit": "2",
+  "des": "Helps the Java programmer to be productive in the C++ programming environment. Topics include the similarities and differences between Java and C++ with special attention to pointers, operator overloading, templates, the STL, the preprocessor, and the C++ Runtime Environment. ",
+  "pre": " CSE 12 or consent of instructor.",
+  "formatted_pre": [
+   [
+    "CSE_12"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_87",
+  "name": "First-year Student Seminar",
+  "unit": "1",
+  "des": "The First-year Student Seminar Program is designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. First-year student seminars are offered in all campus departments and undergraduate colleges, and topics vary from quarter to quarter. Enrollment is limited to fifteen to twenty students, with preference given to entering first-year students. ",
+  "pre": " none.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_90",
+  "name": "Undergraduate Seminar",
+  "unit": "1",
+  "des": "A seminar providing an overview of a topic of current research interest to the instructor. The goal is to present a specialized topic in computer science and engineering students. May be taken for credit three times when topics vary.",
+  "pre": "None",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_91",
+  "name": "Perspectives in Computer Science and Engineering",
+  "unit": "2",
+  "des": "A seminar format discussion led by CSE faculty on topics in central areas of computer science, concentrating on the relation among them, recent developments, and future directions. ",
+  "pre": " majors only.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_99",
+  "name": "Independent Study in Computer Science and Engineering",
+  "unit": "4",
+  "des": "Independent reading or research by special arrangement with a faculty member. ",
+  "pre": " lower-division standing. Completion of thirty units at UC San Diego with a UC San Diego GPA of 3.0. Special Studies form required. Department stamp required. Consent of instructor and approval of the department.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_100",
+  "name": "Advanced Data Structures",
+  "unit": "4",
+  "des": "High-performance data structures and supporting algorithms. Use and implementation of data structures like (un)balanced trees, graphs, priority queues, and hash tables. Also, memory management, pointers, recursion. Theoretical and practical performance analysis, both average case and amortized. Uses C++ and STL. Credit not offered for both MATH 176 and CSE 100. Equivalent to MATH 176. Recommended preparation: background in C or C++ programming. ",
+  "pre": " CSE 12 and CSE 15L and CSE 21 or MATH 154 or MATH 184A and CSE 5A or CSE 30 or ECE 15 or MAE 9; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_12"
+   ],
+   [
+    "CSE_15L"
+   ],
+   [
+    "CSE_21",
+    "MATH_154",
+    "MATH_184A"
+   ],
+   [
+    "CSE_5A",
+    "CSE_30",
+    "ECE_15",
+    "MAE_9"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_101",
+  "name": "Design and Analysis of Algorithms",
+  "unit": "4",
+  "des": "Design and analysis of efficient algorithms with emphasis of nonnumerical algorithms such as sorting, searching, pattern matching, and graph and network algorithms. Measuring complexity of algorithms, time and storage. NP-complete problems. ",
+  "pre": " CSE 100 or MATH 176; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_100",
+    "MATH_176"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_103",
+  "name": "A Practical Introduction to Probability and Statistics",
+  "unit": "4",
+  "des": "Distributions over the real line. Independence, expectation, conditional expectation, mean, variance. Hypothesis testing. Learning classifiers. Distributions over R^n, covariance matrix. Binomial, Poisson distributions. Chernoff bound. Entropy. Compression. Arithmetic coding. Maximal likelihood estimation. Bayesian estimation. CSE 103 is not duplicate credit for ECE 109, ECON 120A, or MATH 183. ",
+  "pre": " MATH 20A-B and MATH 184A or CSE 21 or MATH 154; restricted to CS25, CS26, CS27, and CS28 majors. Other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "MATH_20A-B"
+   ],
+   [
+    "MATH_184A",
+    "CSE_21",
+    "MATH_154"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_105",
+  "name": "Theory of Computability",
+  "unit": "4",
+  "des": "An introduction to the mathematical theory of computability. Formal languages. Finite automata and regular expression. Push-down automata and context-free languages. Computable or recursive functions: Turing machines, the halting problem. Undecidability. Credit not offered for both MATH 166 and CSE 105. Equivalent to MATH 166. ",
+  "pre": " CSE 12 and CSE 15L and MATH 15A or MATH 109 or CSE 20 and MATH 184 or CSE 21 or MATH 100A or MATH 103A; restricted to students with sophomore, junior, or senior standing. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_12"
+   ],
+   [
+    "CSE_15L"
+   ],
+   [
+    "MATH_15A",
+    "MATH_109",
+    "CSE_20"
+   ],
+   [
+    "MATH_184",
+    "CSE_21",
+    "MATH_100A",
+    "MATH_103A"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_106",
+  "name": "Discrete and Continuous Optimization",
+  "unit": "4",
+  "des": "One frequently deals with problems in engineering, data science, business, economics, and other disciplines for which algorithmic solutions that optimize a given quantity under constraints are desired. This course is an introduction to the models, theory, methods, and applications of discrete and continuous optimization. Topics include shortest paths, flows, linear, integer, and convex programming, and continuous optimization techniques such as steepest descent and Lagrange multipliers. ",
+  "pre": " MATH 18 or MATH 31AH and MATH 20C or MATH 31BH and CSE 21 or DSC 40B or MATH 154 or MATH 184A.",
+  "formatted_pre": [
+   [
+    "MATH_18",
+    "MATH_31AH"
+   ],
+   [
+    "MATH_20C",
+    "MATH_31BH"
+   ],
+   [
+    "CSE_21",
+    "DSC_40B",
+    "MATH_154",
+    "MATH_184A"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_107",
+  "name": "Introduction to Modern Cryptography",
+  "unit": "4",
+  "des": "Topics include private and public-key cryptography, block ciphers, data encryption, authentication, key distribution and certification, pseudorandom number generators, design and analysis of protocols, zero-knowledge proofs, and advanced protocols. Emphasizes rigorous mathematical approach including formal definitions of security goals and proofs of protocol security. ",
+  "pre": " (MATH 184 or CSE 21 or MATH 154) and CSE 101 and CSE 105; restricted to students within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "MATH_184",
+    "CSE_21",
+    "MATH_154"
+   ],
+   [
+    "CSE_101"
+   ],
+   [
+    "CSE_105"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_110",
+  "name": "Software Engineering",
+  "unit": "4",
+  "des": "Introduction to software development and engineering methods, including specification, design, implementation, testing, and process. An emphasis on team development, agile methods, and use of tools such as IDE\u2019s, version control, and test harnesses. ",
+  "pre": " CSE 100; restricted to students with junior or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_100"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_112",
+  "name": "Advanced Software Engineering",
+  "unit": "4",
+  "des": "This course will cover software engineering topics associated with large systems development such as requirements and specifications, testing and maintenance, and design. Specific attention will be given to development tools and automated support environments. ",
+  "pre": " CSE 110; restricted to students within the CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_110"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_113",
+  "name": "Errors, Defects, and Failures",
+  "unit": "4",
+  "des": "Errors, resulting in defects and ultimately system failure, occur in engineering and also other areas such as medical care. The ways in which failures occur, and the means for their prevention, mitigation, and management, will be studied. Emphasis will be on software systems but also include the study of practice of other areas. ",
+  "pre": " CSE 12 and CSE 21.",
+  "formatted_pre": [
+   [
+    "CSE_12"
+   ],
+   [
+    "CSE_21"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_118",
+  "name": "Ubiquitous Computing",
+  "unit": "4",
+  "des": "Explores emerging opportunities enabled by cheap sensors and networked computing devices. Small research projects will be conducted in teams, culminating in project presentations at the end of the term. Section will cover material relevant to the project, such as research methods, software engineering, teamwork, and project management. ",
+  "pre": " any course from the following: CSE 131, CSE 132B, COGS 102C, COGS 121, COGS 184, COMT 111B, COMT 115, ECE 111, ECE 118, ECE 191, ECE 192, or ICAM 160B; or consent of instructor.",
+  "formatted_pre": [
+   [
+    "CSE_131",
+    "CSE_132B",
+    "COGS_102C",
+    "COGS_121",
+    "COGS_184",
+    "COMT_111B",
+    "COMT_115",
+    "ECE_111",
+    "ECE_118",
+    "ECE_191",
+    "ECE_192",
+    "ICAM_160B"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_120",
+  "name": "Principles of Computer Operating Systems",
+  "unit": "4",
+  "des": "Basic functions of operating systems; basic kernel structure, concurrency, memory management, virtual memory, file systems, process scheduling, security and protection. ",
+  "pre": " CSE 30 and CSE 101 and CSE 110; restricted to students within the CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_30"
+   ],
+   [
+    "CSE_101"
+   ],
+   [
+    "CSE_110"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_123",
+  "name": "Computer Networks",
+  "unit": "4",
+  "des": "Introduction to concepts, principles, and practice of computer communication networks with examples from existing architectures, protocols, and standards with special emphasis on the internet protocols. Layering and the OSI model; physical and data link layers; local and wide area networks; datagrams and virtual circuits; routing and congestion control; internetworking. Transport protocols. Credit may not be received for both CSE 123 and ECE 158A. ",
+  "pre": " CSE 30 and CSE 101 and CSE 110; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_30"
+   ],
+   [
+    "CSE_101"
+   ],
+   [
+    "CSE_110"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_124",
+  "name": "Networked Services",
+  "unit": "4",
+  "des": "(Renumbered from CSE 123B.) The architecture of modern networked services, including data center design, enterprise storage, fault tolerance, and load balancing. Protocol software structuring, the Transmission Control Protocol (TCP), remote procedure calls, protocols for digital audio and video communication, overlay and peer-to-peer systems, secure communication. Credit may not be received for both CSE 124 and ECE 158B. Students may not receive credit for both CSE 123B and CSE 124. ",
+  "pre": " CSE 30 and CSE 101 and CSE 110; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_30"
+   ],
+   [
+    "CSE_101"
+   ],
+   [
+    "CSE_110"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_125",
+  "name": "Software System Design and Implementation",
+  "unit": "4",
+  "des": "Design and implementation of large, complex software systems involving multiple aspects of CSE curriculum. Emphasis is on software system design applied to a single, large group project with close interaction with instructor. ",
+  "pre": " senior standing with substantial programming experience, and consent of instructor. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_127",
+  "name": "Introduction to Computer Security",
+  "unit": "4",
+  "des": "Topics include basic cryptography, security/threat analysis, access control, auditing, security models, distributed systems security, and theory behind common attack and defense techniques. The class will go over formal models as well as the bits and bytes of security exploits. ",
+  "pre": " (CSE 21 or MATH 154 or MATH 184A) and (CSE 120 or CSE 123 or CSE 124); restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_21",
+    "MATH_154",
+    "MATH_184A"
+   ],
+   [
+    "CSE_120",
+    "CSE_123",
+    "CSE_124"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_130",
+  "name": "Programming Languages: Principles and Paradigms",
+  "unit": "4",
+  "des": "(Formerly CSE 173.) Introduction to programming languages and paradigms, the components that comprise them, and the principles of language design, all through the analysis and comparison of a variety of languages (e.g., Pascal, Ada, C++, PROLOG, ML.) Will involve programming in most languages studied. ",
+  "pre": " CSE 12 and (CSE 100 or MATH 176) and (CSE 105 or MATH 166); restricted to students within the CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_12"
+   ],
+   [
+    "CSE_100",
+    "MATH_176"
+   ],
+   [
+    "CSE_105",
+    "MATH_166"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_131",
+  "name": "Compiler Construction",
+  "unit": "4",
+  "des": "(Formerly CSE 131B.) Introduction to the compilation of programming languages, practice of lexical and syntactic analysis, symbol tables, syntax-directed translation, type checking, code generation, optimization, interpretation, and compiler structure. (Students may receive repeat credit for CSE 131A and CSE 131B by completing CSE 131.) ",
+  "pre": " CSE 100 and CSE 105 and CSE 130; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_100"
+   ],
+   [
+    "CSE_105"
+   ],
+   [
+    "CSE_130"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_132A",
+  "name": "Database System Principles",
+  "unit": "4",
+  "des": "Basic concepts of databases, including data modeling, relational databases, query languages, optimization, dependencies, schema design, and concurrency control. Exposure to one or several commercial database systems. Advanced topics such as deductive and object-oriented databases, time allowing. ",
+  "pre": " CSE 100; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_100"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_132B",
+  "name": "Database Systems Applications",
+  "unit": "4",
+  "des": "Design of databases, transactions, use of trigger facilities and datablades. Performance measuring, organization of index structures. ",
+  "pre": " CSE 132A; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_132A"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_134B",
+  "name": "Web Client Languages",
+  "unit": "4",
+  "des": "Design and implementation of interactive World Wide Web clients using helper applications and plug-ins. The main language covered will be Java. ",
+  "pre": " CSE 100; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_100"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_135",
+  "name": "Online Database Analytics Applications",
+  "unit": "4",
+  "des": "Database, data warehouse, and data cube design; SQL programming and querying with emphasis on analytics; online analytics applications, visualizations, and data exploration; performance tuning. ",
+  "pre": " CSE 100 or MATH 176; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_100",
+    "MATH_176"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_136",
+  "name": "Enterprise-Class Web Applications",
+  "unit": "4",
+  "des": "Design and implementation of very large-scale, web-based applications. Topics covered typically include modeling organizational needs, design and revision management, J2EE or similar software platforms, web server and application server functionality, reuse of object-oriented components, model-view- controller and other design patterns, clustering, load-balancing, fault- tolerance, authentication, and usage accounting. ",
+  "pre": " CSE 135.",
+  "formatted_pre": [
+   [
+    "CSE_135"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_140",
+  "name": "Components and Design Techniques for Digital Systems",
+  "unit": "4",
+  "des": "Design of Boolean logic and finite state machines; two-level, multilevel combinational logic design, combinational modules and modular networks, Mealy and Moore machines, analysis and synthesis of canonical forms, sequential modules. ",
+  "pre": " (CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140L must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits",
+  "formatted_pre": [
+   [
+    "CSE_20",
+    "MATH_15A",
+    "MATH_109"
+   ],
+   [
+    "CSE_30"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_140L",
+  "name": "Digital Systems Laboratory",
+  "unit": "2",
+  "des": "Implementation with computer-aided design tools for combinational logic minimization and state machine synthesis. Hardware construction of a small digital system. ",
+  "pre": " (CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140 must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_20",
+    "MATH_15A",
+    "MATH_109"
+   ],
+   [
+    "CSE_30"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_141",
+  "name": "Introduction to Computer Architecture",
+  "unit": "4",
+  "des": "Introduction to computer architecture. Computer system design. Processor design. Control design. Memory systems. ",
+  "pre": " CSE 30 and CSE 140 and CSE 140L; CSE 141L should be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_30"
+   ],
+   [
+    "CSE_140"
+   ],
+   [
+    "CSE_140L"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_141L",
+  "name": "Project in Computer Architecture",
+  "unit": "2",
+  "des": "Hands-on computer architecture project aiming to familiarize students with instruction set architecture, and design of process. Control and memory systems. ",
+  "pre": " CSE 30 and CSE 140 and CSE 140L; CSE 141 should be taken concurrently; restricted to CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_30"
+   ],
+   [
+    "CSE_140"
+   ],
+   [
+    "CSE_140L"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_143",
+  "name": "Microelectronic System Design",
+  "unit": "4",
+  "des": "VLSI process technologies; circuit characterization; logic design styles; clocking strategies; computer-aided design tools; subsystem design; design case studies. System design project from hardware description, logic synthesis, physical layout to design verification. ",
+  "pre": " CSE 140 or CSE 170A or ECE 81.",
+  "formatted_pre": [
+   [
+    "CSE_140",
+    "CSE_170A",
+    "ECE_81"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_145",
+  "name": "Embedded System Design Project",
+  "unit": "4",
+  "des": "Project class building an embedded computing system. Learn fundamental knowledge of microcontrollers, sensors, and actuators. Introduction to the hardware and software tools to build project in a team environment and end-to- end system building. ",
+  "pre": " instructor approval required, by application only.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_148",
+  "name": "Advanced Processor Architecture Design Project",
+  "unit": "4",
+  "des": "Students will use hardware description language tools to add advanced architectural features to a basic processor design. These features may include pipelining, superscalar execution, branch prediction, and advanced cache features. Designs will be implemented in programmable logic devices. ",
+  "pre": " CSE 141 and CSE 141L; restricted to students with sophomore, junior, or senior standing. Graduate students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_141"
+   ],
+   [
+    "CSE_141L"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_150A",
+  "name": "Introduction to Artificial Intelligence: Probabilistic Reasoning and Decision-Making",
+  "unit": "4",
+  "des": "Introduction to probabilistic models at the heart of modern artificial intelligence. Specific topics to be covered include probabilistic methods for reasoning and decision-making under uncertainty; inference and learning in Bayesian networks; prediction and planning in Markov decision processes; applications to intelligent systems, speech and natural language processing, information retrieval, and robotics. ",
+  "pre": " (CSE 12 or DSC 40B) and (CSE 15L or DSC 80) and (CSE 103 or ECE 109 or ECON 120A or MATH 183) and MATH 20A and (MATH 18 or MATH 31AH) ; restricted to students within the CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_12",
+    "DSC_40B"
+   ],
+   [
+    "CSE_15L",
+    "DSC_80"
+   ],
+   [
+    "CSE_103",
+    "ECE_109",
+    "ECON_120A",
+    "MATH_183"
+   ],
+   [
+    "MATH_20A"
+   ],
+   [
+    "MATH_18",
+    "MATH_31AH"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_150B",
+  "name": "Introduction to Artificial Intelligence: Search and Reasoning",
+  "unit": "4",
+  "des": "The course will introduce important ideas and algorithms in search and reasoning and demonstrate how they are used in practical AI applications. Topics include A* search, adversarial search, Monte Carlo tree search, reinforcement learning, constraint solving and optimization, propositional and first-order reasoning. ",
+  "pre": " (CSE 12 or DSC 40B) and (CSE 15L or DSC 80) and (CSE 103 or ECE 109 or ECON 120A or MATH 183) and CSE 100; restricted to students within the CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_12",
+    "DSC_40B"
+   ],
+   [
+    "CSE_15L",
+    "DSC_80"
+   ],
+   [
+    "CSE_103",
+    "ECE_109",
+    "ECON_120A",
+    "MATH_183"
+   ],
+   [
+    "CSE_100"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_151A",
+  "name": "Introduction to Machine Learning",
+  "unit": "4",
+  "des": "Broad introduction to machine learning. The topics include some topics in supervised learning, such as k-nearest neighbor classifiers, decision trees, boosting, and perceptrons; and topics in unsupervised learning, such as k-means and hierarchical clustering. In addition to the actual algorithms, the course focuses on the principles behind the algorithms. Students may not receive credit for both CSE 151A and COGS 188, nor may they receive credit for both CSE 151A and CSE 151. ",
+  "pre": " (CSE 12 or DSC 40B) and (CSE 15L or DSC 80) and (CSE 103 or MATH 181A or ECE 109 or MATH 183 or ECON 120A) and (MATH 18 or MATH 31AH); restricted to students within the CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits. .",
+  "formatted_pre": [
+   [
+    "CSE_12",
+    "DSC_40B"
+   ],
+   [
+    "CSE_15L",
+    "DSC_80"
+   ],
+   [
+    "CSE_103",
+    "MATH_181A",
+    "ECE_109",
+    "MATH_183",
+    "ECON_120A"
+   ],
+   [
+    "MATH_18",
+    "MATH_31AH"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_151B",
+  "name": "Deep Learning",
+  "unit": "4",
+  "des": "(Formerly CSE 154.) This course covers the fundamentals of neural networks. We introduce linear regression, logistic regression, perceptrons, multilayer networks and back-propagation, convolutional neural networks, recurrent networks, and deep networks trained by reinforcement learning. Students may receive credit for one of the following: CSE 151B, CSE 154, or COGS 181. _",
+  "pre": "_ (MATH 31BH or MATH 20C) and (ECON 120A or ECE 109 or CSE 103 or MATH 181A or MATH 183); restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "MATH_31BH",
+    "MATH_20C"
+   ],
+   [
+    "ECON_120A",
+    "ECE_109",
+    "CSE_103",
+    "MATH_181A",
+    "MATH_183"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_152",
+  "name": "Introduction to Computer Vision",
+  "unit": "4",
+  "des": "The goal of computer vision is to compute scene and object properties from images and video. This introductory course includes feature detection, image segmentation, motion estimation, object recognition, and 3-D shape reconstruction through stereo, photometric stereo, and structure from motion. ",
+  "pre": " MATH 18 or MATH 20F or MATH 31AH and CSE 100 or DSC 40B or MATH 176 and CSE 101 or DSC 80 or MATH 188; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "MATH_18",
+    "MATH_20F",
+    "MATH_31AH"
+   ],
+   [
+    "CSE_100",
+    "DSC_40B",
+    "MATH_176"
+   ],
+   [
+    "CSE_101",
+    "DSC_80",
+    "MATH_188"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_152A",
+  "name": "Introduction to Computer Vision I",
+  "unit": "4",
+  "des": "This course provides a broad introduction to the foundations, algorithms, and applications of computer vision. It introduces classical models and contemporary methods, from image formation models to deep learning, to address problems of 3-D reconstruction and object recognition from images and video. Topics include filtering, feature detection, stereo vision, structure from motion, motion estimation, and recognition. Programming assignments will be in Python. Students may not receive credit for both CSE 152A and CSE 152. ",
+  "pre": " (MATH 18 or MATH 31AH) and (CSE 12 or DSC 30) and (CSE 15L or DSC 80); Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "MATH_18",
+    "MATH_31AH"
+   ],
+   [
+    "CSE_12",
+    "DSC_30"
+   ],
+   [
+    "CSE_15L",
+    "DSC_80"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_152B",
+  "name": "Introduction to Computer Vision II",
+  "unit": "4",
+  "des": "This course covers advanced topics needed to apply computer vision in industry or follow current research. Example topics include real-time systems for 3D computer vision, machine learning tools such as support-vector machine (SVM) and boosting for image classification, and deep neural networks for object detection and semantic segmentation. ",
+  "pre": " CSE 152A or CSE 152; Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_152A",
+    "CSE_152"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_156",
+  "name": "Statistical Natural Language Processing",
+  "unit": "4",
+  "des": "Natural language processing (NLP) is a field of AI which aims to equip computers with the ability to intelligently process natural (human) language. This course will explore statistical techniques for the automatic analysis of natural language data. Specific topics covered include probabilistic language models, which define probability distributions over text passages; text classification; sequence models; parsing sentences into syntactic representations; and machine translation. ",
+  "pre": " MATH 20C or MATH 31BH and MATH 18 or MATH 31AH and COGS 118A or CSE 150 or CSE 151; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "MATH_20C",
+    "MATH_31BH"
+   ],
+   [
+    "MATH_18",
+    "MATH_31AH"
+   ],
+   [
+    "COGS_118A",
+    "CSE_150",
+    "CSE_151"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_158",
+  "name": "Recommender Systems and Web Mining",
+  "unit": "4",
+  "des": "Current methods for data mining and predictive analytics. Emphasis is on studying real-world data sets, building working systems, and putting current ideas from machine learning research into practice. ",
+  "pre": " (CSE 12 or DSC 40B) and (CSE 15L or DSC 80) and (CSE 103 or ECE 109 or MATH 181A or ECON 120A or MATH 183); restricted to CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_12",
+    "DSC_40B"
+   ],
+   [
+    "CSE_15L",
+    "DSC_80"
+   ],
+   [
+    "CSE_103",
+    "ECE_109",
+    "MATH_181A",
+    "ECON_120A",
+    "MATH_183"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_160",
+  "name": "Introduction to Parallel Computing",
+  "unit": "4",
+  "des": "Introduction to high performance parallel computing: parallel architecture, algorithms, software, and problem-solving techniques. Areas covered: Flynn\u2019s taxonomy, processor-memory organizations, shared and nonshared memory models: message passing and multithreading, data parallelism; speedup, efficiency and Amdahl's law, communication and synchronization, isoefficiency and scalability. Assignments given to provide practical experience. ",
+  "pre": " CSE 100 or MATH 176; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits",
+  "formatted_pre": [
+   [
+    "CSE_100",
+    "MATH_176"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_163",
+  "name": "Advanced Computer Graphics",
+  "unit": "4",
+  "des": "Topics include an overview of many aspects of computer graphics, including the four main computer graphics areas of animation, modeling, rendering, and imaging. Programming projects in image and signal processing, geometric modeling, and real-time rendering. ",
+  "pre": " CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_167"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_164",
+  "name": "GPU Programming",
+  "unit": "4",
+  "des": "Principles and practices of programming graphics processing units (GPUs). GPU architecture and hardware concepts, including memory and threading models. Modern hardware-accelerated graphics pipeline programming. Application of GPU programming to rendering of game graphics, including physical, deferring, and global lighting models. Recommended preparation: _Practical Rendering and Computation with Direct3D 11_ by Jason Zink, Matt Pettineo, and Jack Hoxley. ",
+  "pre": " CSE 167.",
+  "formatted_pre": [
+   [
+    "CSE_167"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_165",
+  "name": "3-D User Interaction",
+  "unit": "4",
+  "des": "This course focuses on design and evaluation of three-dimensional (3-D) user interfaces, devices, and interaction techniques. The course consists of lectures, literature reviews, and programming assignments. Students will be expected to create interaction techniques for several different 3-D interaction devices. Program or materials fees may apply. ",
+  "pre": " CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_167"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_166",
+  "name": "Image Processing",
+  "unit": "4",
+  "des": "Principles of image formation, analysis, and representation. Image enhancement, restoration, and segmentation; stochastic image models. Filter design, sampling, Fourier and wavelet transforms. Selected applications in computer graphics and machine vision. ",
+  "pre": " (DSC 40B or MATH 18 or MATH 31AH or MATH 20F) and (CSE 100 or DSC 80 or MATH 176); restricted to sophomore, junior, and senior students. Graduate students allowed as space permits.",
+  "formatted_pre": [
+   [
+    "DSC_40B",
+    "MATH_18",
+    "MATH_31AH",
+    "MATH_20F"
+   ],
+   [
+    "CSE_100",
+    "DSC_80",
+    "MATH_176"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_167",
+  "name": "Computer Graphics",
+  "unit": "4",
+  "des": "Representation and manipulation of pictorial data. Two-dimensional and three- dimensional transformations, curves, surfaces. Projection, illumination, and shading models. Raster and vector graphic I/O devices; retained-mode and immediate-mode graphics software systems and applications. Students may not receive credit for both MATH 155A and CSE 167. ",
+  "pre": " CSE 100 or MATH 176; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_100",
+    "MATH_176"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_168",
+  "name": "Computer Graphics II: Rendering",
+  "unit": "4",
+  "des": "Weekly programming assignments that will cover graphics rendering algorithms. During the course the students will learn about ray tracing, geometry, tessellation, acceleration structures, sampling, filtering, shading models, and advanced topics such as global illumination and programmable graphics hardware. ",
+  "pre": " CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_167"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_169",
+  "name": "Computer Animation",
+  "unit": "4",
+  "des": "Advanced graphics focusing on the programming techniques involved in computer animation. Algorithms and approaches for both character animation and physically based animation. Particular subjects may include skeletons, skinning, key framing, facial animation, inverse kinematics, locomotion, motion capture, video game animation, particle systems, rigid bodies, clothing, and hair. Recommended preparation: An understanding of linear algebra. ",
+  "pre": " CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "CSE_167"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_170",
+  "name": "Interaction Design",
+  "unit": "5",
+  "des": "Introduces fundamental methods and principles for designing, implementing, and evaluating user interfaces. Topics include user-centered design, rapid prototyping, experimentation, direct manipulation, cognitive principles, visual design, social software, software tools. Learn by doing: Work with a team on a quarter-long design project. Cross-listed with COGS 120. Students may not receive credit for COGS 120 and CSE 170. Recommended preparation: Basic familiarity with HTML. ",
+  "pre": " CSE 11 or CSE 8B and COGS 187A or COGS 1 or DSGN 1.",
+  "formatted_pre": [
+   [
+    "CSE_11",
+    "CSE_8B"
+   ],
+   [
+    "COGS_187A",
+    "COGS_1",
+    "DSGN_1"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_176A",
+  "name": "Health Care Robotics",
+  "unit": "4",
+  "des": "Robotics has the potential to improve well-being for millions of people and support caregivers and to aid the clinical workforce. We bring together engineers, clinicians, and end-users to explore this exciting new field. The course is project-based, interactive, and hands-on, and involves working closely with stakeholders to develop prototypes that solve real-world problems. Students will explore the latest research in health care robotics, human-robot teaming, and health design. Program or materials fees may apply. ",
+  "pre": " CSE 110 or CSE 170 or COGS 120; restricted to sophomore, junior, and senior students.",
+  "formatted_pre": [
+   [
+    "CSE_110",
+    "CSE_170",
+    "COGS_120"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_176E",
+  "name": "Robot Systems Design and Implementation",
+  "unit": "4",
+  "des": "End-to-end system design of embedded electronic systems including PCB design and fabrication, software control system development, and system integration. Program or materials fees may apply. May be coscheduled with CSE 276E. ",
+  "pre": " restricted to junior and senior students; instructor approval required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_180",
+  "name": "Biology Meets Computing",
+  "unit": "4",
+  "des": "Topics include an overview of various aspects of bioinformatics and will simultaneously introduce students to programming in Python. The assessments in the course represent various programming challenges and include solving diverse biological problems using popular bioinformatics tools. Students may not receive credit for CSE 180 and CSE 180R. ",
+  "pre": " BILD 1.",
+  "formatted_pre": [
+   [
+    "BILD_1"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_180R",
+  "name": "Biology Meets Computing",
+  "unit": "4",
+  "des": "Topics include an overview of various aspects of bioinformatics and will simultaneously introduce students to programming in Python. The assessments in the course represent various programming challenges and include solving diverse biological problems using popular bioinformatics tools. This will be a fully online class based on extensive educational materials and online educational platform Stepik developed with HHMI, NIH, and ILTI support. Students may not receive credit for CSE 180 and CSE 180R. ",
+  "pre": " BILD 1 or BILD 4 or CSE 3 or CSE 7 or CSE 8A or CSE 8B or CSE 11.",
+  "formatted_pre": [
+   [
+    "BILD_1",
+    "BILD_4",
+    "CSE_3",
+    "CSE_7",
+    "CSE_8A",
+    "CSE_8B",
+    "CSE_11"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_181",
+  "name": "Molecular Sequence Analysis",
+  "unit": "4",
+  "des": "This course covers the analysis of nucleic acid and protein sequences, with an emphasis on the application of algorithms to biological problems. Topics include sequence alignments, database searching, comparative genomics, and phylogenetic and clustering analyses. Pairwise alignment, multiple alignment, DNS sequencing, scoring functions, fast database search, comparative genomics, clustering, phylogenetic trees, gene finding/DNA statistics. Students may receive credit for one of the following: CSE 181, BIMM 181, or BENG 181. ",
+  "pre": " (CSE 100 or MATH 176) and (CSE 101) and (BIMM 100 or CHEM 114C); restricted to BE28, BI34, CH37, and CS27 majors. CSE 181 is cross- listed with BIMM 181 and BENG 181.",
+  "formatted_pre": [
+   [
+    "CSE_100",
+    "MATH_176"
+   ],
+   [
+    "CSE_101"
+   ],
+   [
+    "BIMM_100",
+    "CHEM_114C"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_182",
+  "name": "Biological Databases",
+  "unit": "4",
+  "des": "This course provides an introduction to the features of biological data, how those data are organized efficiently in databases, and how existing data resources can be utilized to solve a variety of biological problems. Object oriented databases, data modeling and description. Survey of current biological database with respect to above, implementation of a database on a biological topic. Cross-listed with BIMM 182 and BENG 182. Students may receive credit for one of the following: CSE 182, BENG 182, or BIMM 182. ",
+  "pre": " CSE 100 or MATH 176; restricted to BE28, BI34, CH37, and CS27 majors.",
+  "formatted_pre": [
+   [
+    "CSE_100",
+    "MATH_176"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_184",
+  "name": "Computational Molecular Biology",
+  "unit": "4",
+  "des": "This advanced course covers the application of machine learning and modeling techniques to biological systems. Topics include gene structure, recognition of DNA and protein sequence patterns, classification, and protein structure prediction. Pattern discovery, Hidden Markov models/support victor machines/neural network/profiles. Protein structure prediction, functional characterization or proteins, functional genomics/proteomics, metabolic pathways/gene networks. Cross-listed with BIMM 184/BENG 184/CHEM 184. ",
+  "pre": " BIMM 181 or BENG 181 or CSE 181, BENG 182 or BIMM 182 or CSE 182 or CHEM 182. Bioinformatics majors only.",
+  "formatted_pre": [
+   [
+    "BENG_182",
+    "BIMM_182",
+    "CSE_182",
+    "CHEM_182"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_185",
+  "name": "Advanced Bioinformatics Laboratory",
+  "unit": "4",
+  "des": "This course emphasizes the hands-on application of bioinformatics to biological problems. Students will gain experience in the application of existing software, as well as in combining approaches to answer specific biological questions. Topics include sequence alignment, fast database search, comparative genomics, expression analysis, computational proteomics, genome- wide association studies, next-generation sequencing, genomics, and big data. Students may not receive credit for CSE 185 and BIMM 185. Restricted to CS27, BI34, BE28, and CH37 major codes. ",
+  "pre": " CSE 11 or CSE 8B and CSE 12 and MATH 20C or MATH 31BH and BILD 1 and BIEB 123 or BILD 4 or BIMM 101 or CHEM 109.",
+  "formatted_pre": [
+   [
+    "CSE_11",
+    "CSE_8B"
+   ],
+   [
+    "CSE_12"
+   ],
+   [
+    "MATH_20C",
+    "MATH_31BH"
+   ],
+   [
+    "BILD_1"
+   ],
+   [
+    "BIEB_123",
+    "BILD_4",
+    "BIMM_101",
+    "CHEM_109"
+   ]
+  ]
+ },
+ {
+  "num": "CSE_190",
+  "name": "Topics in Computer Science and Engineering",
+  "unit": "4",
+  "des": "Topics of special interest in computer science and engineering. Topics may vary from quarter to quarter. May be repeated for credit with the consent of instructor. ",
+  "pre": " consent of instructor. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_191",
+  "name": "Seminar in CSE",
+  "unit": "1\u20134",
+  "des": "A seminar course on topics of current interest. Students, as well as, the instructor will be actively involved in running the course/class. This course cannot be counted toward a technical elective. ",
+  "pre": " consent of instructor. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_192",
+  "name": "Senior Seminar in Computer Science and Engineering",
+  "unit": "1",
+  "des": "The Senior Seminar Program is designed to allow senior undergraduates to meet with faculty members in a small group setting to explore an intellectual topic in CSE (at the upper-division level). Topics will vary from quarter to quarter. Senior seminars may be taken for credit up to four times, with a change in topic, and permission of the department. Enrollment is limited to twenty students, with preference given to seniors. (P/NP grades only.) ",
+  "pre": " upper-division standing; department stamp required and consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_193",
+  "name": "Introduction to Computer Science Research",
+  "unit": "4",
+  "des": "Introduction to research in computer science. Topics include defining a CS research problem, finding and reading technical papers, oral communication, technical writing, and independent learning. Course participants apprentice with a CSE research group and propose an original research project. ",
+  "pre": " consent of the department chair. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_195",
+  "name": "Teaching",
+  "unit": "4",
+  "des": "Teaching and tutorial assistance in a CSE course under the supervision of the instructor. (P/NP grades only.) ",
+  "pre": " consent of the department chair. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_197",
+  "name": "Field Study in Computer Science and Engineering",
+  "unit": "4, 8, 12, or 16",
+  "des": "Directed study and research at laboratories away from the campus. (P/NP grades only.) ",
+  "pre": " consent of the instructor and approval of the department. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_198",
+  "name": "Directed Group Study",
+  "unit": "2 or 4",
+  "des": "Computer science and engineering topics whose study involves reading and discussion by a small group of students under the supervision of a faculty member. (P/NP grades only.) ",
+  "pre": " consent of the instructor. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_199",
+  "name": "Independent Study for Undergraduates",
+  "unit": "2 or 4",
+  "des": "Independent reading or research by special arrangement with a faculty member. (P/NP grades only.) ",
+  "pre": " consent of the instructor. Department stamp required.",
+  "formatted_pre": []
+ },
+ {
+  "num": "CSE_199H",
+  "name": "CSE Honors Thesis Research for Undergraduates",
+  "unit": "4",
+  "des": "Undergraduate research for completing an honors project under the supervision of a CSE faculty member. May be taken across multiple quarters. Students should enroll for a letter grade. May be taken for credit three times. ",
+  "pre": " Admission to the CSE department honors program. Consent of the instructor. Department stamp required.",
+  "formatted_pre": []
+ }
+]

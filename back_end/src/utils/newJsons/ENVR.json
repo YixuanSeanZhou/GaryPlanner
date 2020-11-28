@@ -1,0 +1,100 @@
+[
+ {
+  "code": "ENVR 30",
+  "title": "Environmental Issues: Natural Sciences",
+  "unit": "4",
+  "discription": "Examines global and regional environmental issues. The approach is to consider the scientific basis for policy options. Simple principles of chemistry and biology are introduced. The scope of problems includes: air and water pollution, climate modification, solid waste disposal, hazardous waste treatment, and environmental impact assessment.",
+  "prerequsite": "none."
+ },
+ {
+  "code": "ENVR 87",
+  "title": "Environmental Studies First-year Seminar",
+  "unit": "1",
+  "discription": "The First-year Seminar Program is designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. First-year seminars are offered in all campus departments and undergraduate colleges, and topics vary from quarter to quarter. Enrollment is limited to fifteen to twenty students, with preference given to entering first-year students.",
+  "prerequsite": null
+ },
+ {
+  "code": "ENVR 102",
+  "title": "Selected Topics in Environmental Studies",
+  "unit": "4",
+  "discription": "An interdisciplinary course focusing on one of a variety of topics related to environmental studies such as environmental policy and politics, foreign study in environmental problems, environmental history, nature writers, ethics and the environment. May be repeated three times for credit as topics vary.",
+  "prerequsite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "ENVR 105",
+  "title": "Conservation Solutions",
+  "unit": "4",
+  "discription": "A project-based course in which students will develop and implement a curriculum module for high school students at the Dawson Los Monos Canyon Reserve. Includes an introduction to the natural history and resource management challenges of this ecological preserve. Students will conduct research projects which will be used to create a curriculum module for a high school environmental science course and guide high school students through field research and a discussion of conservation solutions. Course may include a required field trip, and students are responsible for their own transportation.",
+  "prerequsite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "ENVR 110",
+  "title": "Environmental Law",
+  "unit": "4",
+  "discription": "Explores environmental policy in the United States and the ways in which it is reflected in law. The social and political issues addressed include environmental justice and environmental racism, as well as the role of government in implementing environmental law.",
+  "prerequsite": "upper- division standing or consent of instructor."
+ },
+ {
+  "code": "ENVR 120",
+  "title": "Coastal Ecology",
+  "unit": "4",
+  "discription": "Explores the diverse ecosystems of coastal San Diego County (salt marsh, rocky intertidal, sandy beach, etc.) in the classroom and in the field with attention to basic principles of field ecology, natural history, and techniques for collecting ecological data. Course and/or materials fee may apply.",
+  "prerequsite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "ENVR 140",
+  "title": "Wilderness and Human Values",
+  "unit": "4",
+  "discription": "\u201cWilderness\u201d plays a central role in the consciousness of American environmentalists and serves as focal point for public policies, recreation, and political activism. This course explores its evolving historical, philosophical, ecological, and aesthetic meanings and includes guest speakers and a field component.",
+  "prerequsite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "ENVR 141",
+  "title": "Wilderness and Human Values Workshop",
+  "unit": "2",
+  "discription": "A course to prepare students to serve as discussion leaders for ENVR 140, Wilderness and Human Values. Includes reading, discussion, library and online research, and field trips.",
+  "prerequsite": "consent of instructor and department approval."
+ },
+ {
+  "code": "ENVR 142GS",
+  "title": "Wilderness and Human Values Abroad",
+  "unit": "4",
+  "discription": "Explores historical and cultural perspectives on the human relationship with the natural world, from prehistory to the present. The course investigates how humans have interacted with the natural world and how this interaction has been influenced by such factors as class, race, and gender. The course considers the cultural, political, and economic ramifications of this interaction and even explores ideas about the future of wilderness. Will include unique content to host country. Program or materials fees may apply.",
+  "prerequsite": "upper-division standing required. Must apply and be accepted to the Global Seminar Program."
+ },
+ {
+  "code": "ENVR 144",
+  "title": "Wilderness Training",
+  "unit": "2",
+  "discription": "Provides technical skills to deliver wilderness programs and leadership skills to manage student groups on wilderness programs. The course combines reading and experiential components with assessment through competency demonstration and a reflective essay due at the end of the course. Course topics include leadership and group management, decision making and risk management, the art of teaching and facilitating, conflict resolution, and working in and understanding wilderness environments. Students must participate in two quarters of non-credit-bearing work with Outback Adventures (as part of their Outdoor Leadership program) in order to enroll in ENVR 144.",
+  "prerequsite": "upper-division standing and department approval required."
+ },
+ {
+  "code": "ENVR 195",
+  "title": "Apprentice Teaching",
+  "unit": "0-4",
+  "discription": "Instructor will define assistant's responsibilities in preparing class presentations, leading students' discussions, and evaluating students' work. May be taken two times for credit.",
+  "prerequsite": null
+ },
+ {
+  "code": "ENVR 198",
+  "title": "Directed Group Study",
+  "unit": "4",
+  "discription": "Directed group research and study, normally with a focus on areas not otherwise covered in the curriculum.",
+  "prerequsite": "upper-division standing or consent of instructor. Department stamp required. May be taken three times for credit as topics vary."
+ },
+ {
+  "code": "ENVR 199",
+  "title": "Independent Study",
+  "unit": "4",
+  "discription": "Independent study in a topic not generally covered in the regular curriculum.",
+  "prerequsite": "consent of instructor, director of Environmental Studies. May be taken two times for credit as content varies. Department stamp required."
+ },
+ {
+  "code": "ENVR 500",
+  "title": "Apprentice Teaching in Environmental Studies",
+  "unit": "4",
+  "discription": "A course in which teaching assistants are aided in learning proper teaching methods by means of supervision of their work by the faculty: handling of discussions, preparation and grading of examinations and other written exercises, and student relations.",
+  "prerequsite": "graduate standing."
+ }
+]

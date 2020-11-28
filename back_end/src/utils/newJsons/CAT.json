@@ -1,0 +1,100 @@
+[
+ {
+  "code": "CAT 1",
+  "title": "Culture, Art, and Technology 1",
+  "unit": "4",
+  "discription": "A global historical overview of principles and patterns of human development, with emphasis on technology and the arts. Traces causes and consequences of cultural variation. Explores interactions of regional environments (geographic, climatic, biological) with social and cultural forces.",
+  "prerequsite": "Sixth College students only; completion of UC Entry Level Writing requirement; must be taken for a letter grade to fulfill GE requirement."
+ },
+ {
+  "code": "CAT 2",
+  "title": "Culture, Art, and Technology 2",
+  "unit": "6",
+  "discription": "Fundamental shifts in one area of endeavor can have a profound impact on whole cultures. Examines select events, technologies, and works of art that revolutionized ways of inhabiting the world. Intensive instructions in university-level writing: featured sections on information literacy.",
+  "prerequsite": "Sixth College students only; CAT 1; must be taken for a letter grade to fulfill GE requirement."
+ },
+ {
+  "code": "CAT 3",
+  "title": "Culture, Art, and Technology 3",
+  "unit": "6",
+  "discription": "Students engage with various interdisciplinary modes of apprehending the near future. Working in teams on community projects, they are challenged to listen and communicate across cultures and develop cogent technological and artistic responses to local problems. Writing and information literacy instruction.",
+  "prerequsite": "Sixth College students only; CAT 2."
+ },
+ {
+  "code": "CAT 24",
+  "title": "Introduction to Special Projects/Topics",
+  "unit": "2 or 4",
+  "discription": "Lower-division students are introduced to projects/topics exploring the interplay of culture, art, and technology. Topics and projects will vary.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CAT 75",
+  "title": "Experience Art!\u2014Sixth College Seminar Series",
+  "unit": "1",
+  "discription": "Seminars are hands-on arts experiences (performances, exhibits, site visits, etc.). Students and faculty attend events together and have discussions before or after, often with guest speakers such as the artists, curators, and/or faculty/graduate students from UC San Diego arts departments. Successful completion of this seminar series satisfies one of the eight Sixth College general education requirements for Art Making. May be taken for credit two times.",
+  "prerequsite": "Sixth College students only."
+ },
+ {
+  "code": "CAT 87",
+  "title": "First-year Student Seminar",
+  "unit": "1",
+  "discription": "The First-year Student Seminar Program is designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. First-year student seminars are offered in all campus departments and undergraduate colleges and topics vary from quarter to quarter. Enrollment is limited to fifteen to twenty students with preference given to entering first-year students.",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CAT 98",
+  "title": "Culture, Art, and Technology Lower-Division Group Study",
+  "unit": "2 or 4",
+  "discription": "Course designated for lower-division Sixth College students to have the opportunity to work together as a group or team on a project supervised by a faculty member in a specific department, not included in a regular curriculum, where group emphasis would be more beneficial and constructive then individual special studies.",
+  "prerequsite": "lower-division standing and cumulative GPA of 3.0."
+ },
+ {
+  "code": "CAT 124",
+  "title": "Sixth College Practicum",
+  "unit": "4",
+  "discription": "Students initiate, plan, and carry out community-based and/or research-based projects that connect classroom-based experiences and knowledge to the outlying community, and that explicitly explore the interplay of culture, art, and technology.",
+  "prerequsite": "upper-division standing and consent of instructor."
+ },
+ {
+  "code": "CAT 125",
+  "title": "Public Rhetoric and Practical Communication",
+  "unit": "4",
+  "discription": "Upper-division composition course in public rhetoric and practical communication, including oral presentation, writing in print formats, and digital content creation. This course also focuses on how writing can support and extend experiential learning before, during or after students do their practicum project.",
+  "prerequsite": "upper-division standing; completion of CAT 1, 2 and 3 or (for transfer students) completion of general-education requirements, including lower-division writing requirement. Department authorization required."
+ },
+ {
+  "code": "CAT 192",
+  "title": "Senior Seminar in Culture, Art, and Technology",
+  "unit": "1",
+  "discription": "The Senior Seminar Program is designed to allow senior undergraduates to meet with faculty members in a small group setting to explore an intellectual topic in Culture, Art, and Technology (at the upper-division level). Topics will vary from quarter to quarter. Senior Seminars may be taken for credit up to four times with a change in topic and permission of the department. Enrollment is limited to twenty students, with preference given to seniors.",
+  "prerequsite": "upper-division standing; department stamp and/or consent of instructor."
+ },
+ {
+  "code": "CAT 195",
+  "title": "Apprentice Teaching",
+  "unit": "4",
+  "discription": "Undergraduate instructional assistance. Responsibilities in areas of learning and instruction. May collect course material and assist with course projects, digital workshops, and collection, organization and analysis of formative assessment data.",
+  "prerequsite": "upper-division standing; 3.0 cumulative GPA; consent of instructor."
+ },
+ {
+  "code": "CAT 197",
+  "title": "Culture, Art, and Technology Field Studies",
+  "unit": "4",
+  "discription": "Supervised community-based or industry-based fieldwork. Designated for Sixth College students to have the opportunity to work on a community-based or industry-based project supervised by a faculty member and community or industry mentor in which the subject or content of the project cannot be represented by a specific academic department. Students will submit written evaluations each week of their ongoing field study.",
+  "prerequsite": "upper- division standing, completion of CAT 1, 2, and 3 or (for transfer students) completion of general-education requirements, including lower-division writing requirement."
+ },
+ {
+  "code": "CAT 198",
+  "title": "Culture, Art, and Technology Directed Group Studies",
+  "unit": "4",
+  "discription": "Directed group studies or, in group, field studies of a creative project. Designated for Sixth College students to have the opportunity to work together as a group or team on a project supervised by a faculty member in a specific department, not included in a regular curriculum, where group emphasis would be more beneficial and constructive than individual special studies.",
+  "prerequsite": "upper-division standing, completion of CAT 1, 2, and 3 or (for transfer students) completion of general-education requirements, including lower-division writing requirement."
+ },
+ {
+  "code": "CAT 199",
+  "title": "Culture, Art, and Technology Independent Studies",
+  "unit": "4",
+  "discription": "Individual independent research or creative project. Designated for Sixth College students to have the opportunity to work on a project supervised by a faculty member in a specific department, where the subject or content of the project cannot be represented by the academic department of the faculty member.",
+  "prerequsite": "upper-division standing, completion of CAT 1, 2, and 3 or (for transfer students) completion of general-education requirements, including lower-division writing requirement."
+ }
+]

@@ -1,0 +1,1860 @@
+[
+ {
+  "code": "CHEM 1",
+  "title": "The Scope of Chemistry and Biochemistry",
+  "unit": "1",
+  "discription": "This seminar connects first-year students with the chemistry community (peers,\nstaff, faculty, and other researchers) as they explore learning resources,\nstudy strategies, professional development, and current areas of active\nresearch. With an emphasis on academic and career planning, the series will\nfeature guest lectures by UC San Diego faculty and staff, as well as\nindustrial scientists and representatives from professional organizations such\nas the American Chemical Society (ACS). P/NP grades only.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 4",
+  "title": "Chemical Thinking",
+  "unit": "4",
+  "discription": "This is a one-quarter preparatory chemistry course intended for students\ncontinuing on to general chemistry. The course will focus on the development\nand analysis of submicroscopic models of matter and structure-property\nrelationships to explain, predict, and control chemical behavior. May not\nreceive credit for both CHEM 4 and CHEM 11. Includes a laboratory/discussion\neach week. Recommended: concurrent enrollment in MATH 3C, 4C or 10A or higher.\nRestricted to first-year and sophomore enrollment.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 6A",
+  "title": "General Chemistry I",
+  "unit": "4",
+  "discription": "First quarter of a three-quarter sequence intended for science and engineering\nmajors. Topics include atomic theory, bonding, molecular geometry,\nstoichiometry, types of reactions, and thermochemistry. May not be taken for\ncredit after CHEM 6AH. Recommended: proficiency in high school chemistry\nand/or physics. ",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 6AH",
+  "title": "Honors General Chemistry I",
+  "unit": "4",
+  "discription": "First quarter of a three-quarter honors sequence intended for well-prepared\nscience and engineering majors. Topics include quantum mechanics, molecular\norbital theory, and bonding. An understanding of nomenclature, stoichiometry,\nand other fundamentals is assumed. Students completing 6AH may not\nsubsequently take 6A for credit. Recommended: completion of a high school\nphysics course strongly recommended. Concurrent enrollment in MATH 20A or\nhigher.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 6B",
+  "title": "General Chemistry II",
+  "unit": "4",
+  "discription": "Second quarter of a three-quarter sequence intended for science and\nengineering majors. Topics include covalent bonding, gases, liquids, and\nsolids, colligative properties, physical and chemical equilibria, acids and\nbases, solubility. May not be taken for credit after CHEM 6BH.",
+  "prerequsite": "CHEM 6A or 6AH and MATH 10A or 20A. Recommended: concurrent\nor prior enrollment in MATH 10B or 20B.",
+  "formatted_pre": [
+   [
+    "CHEM 6A",
+    "CHEM 6AH"
+   ],
+   [
+    "MATH 10A",
+    "MATH 20A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 6BH",
+  "title": "Honors General Chemistry II",
+  "unit": "4",
+  "discription": "Second quarter of a three-quarter honors sequence intended for well-prepared\nscience and engineering majors. Topics include colligative properties, bulk\nmaterial properties, chemical equilibrium, acids and bases, and\nthermodynamics. Three hour lecture and one hour recitation. Students\ncompleting 6BH may not subsequently take 6B for credit.",
+  "prerequsite": "CHEM 6AH and MATH 20A. Recommended: concurrent or prior enrollment in MATH\n20B.",
+  "formatted_pre": [
+   [
+    "CHEM 6AH"
+   ],
+   [
+    "MATH 20A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 6C",
+  "title": "General Chemistry III",
+  "unit": "4",
+  "discription": "Third quarter of a three-quarter sequence intended for science and engineering\nmajors. Topics include thermodynamics, kinetics, electrochemistry,\ncoordination chemistry, and introductions to nuclear, main group organic, and\nbiochemistry. May not be taken for credit after CHEM 6CH.",
+  "prerequsite": "CHEM 6B or 6BH. Recommended: completion of MATH 10B or 20B.",
+  "formatted_pre": [
+   [
+    "CHEM 6B",
+    "CHEM 6BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 6CH",
+  "title": "Honors General Chemistry III",
+  "unit": "4",
+  "discription": "Third quarter of a three-quarter honors sequence intended for well-prepared\nscience and engineering majors. Topics are similar to those in 6C but are\ntaught at a higher level and faster pace. Students completing 6CH may not\nsubsequently take 6C for credit.",
+  "prerequsite": "CHEM 6BH and MATH 20B.",
+  "formatted_pre": [
+   [
+    "CHEM 6BH"
+   ],
+   [
+    "MATH 20B"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 7L",
+  "title": "General Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Condenses a year of introductory training in analytical, inorganic, physical,\nand synthetic techniques into one intensive quarter. A materials fee is\nrequired. A mandatory safety exam must be passed. Students may not receive\ncredit for both CHEM 7L and CHEM 7LM.",
+  "prerequsite": "CHEM 6B or CHEM 6BH.",
+  "formatted_pre": [
+   [
+    "CHEM 6B",
+    "CHEM 6BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 7LM",
+  "title": "General Chemistry Laboratory for Majors",
+  "unit": "4",
+  "discription": "Condenses a year of introductory training in analytical, inorganic, physical,\nand synthetic techniques into one intensive quarter. Students may not receive\ncredit for both CHEM 7L and CHEM 7LM. A materials fee is required. A safety\nexam must be passed. Enrollment preference given to chemistry and biochemistry\nmajors, followed by other science/engineering majors.",
+  "prerequsite": "CHEM\n6B or CHEM 6BH. Restricted to the following major codes: CH25, CH32, CH31,\nCH33, CH34, CH35, CH36, CH37.",
+  "formatted_pre": [
+   [
+    "CHEM 6B",
+    "CHEM 6BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 11",
+  "title": "The Periodic Table",
+  "unit": "4",
+  "discription": "Introduction to the material world of atoms and small inorganic molecules.\nIntended for nonscience majors. Students may not receive credit for both CHEM\n4 and CHEM 11.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 12",
+  "title": "Molecules and Reactions",
+  "unit": "4",
+  "discription": "Introduction to molecular bonding and structure and chemical reactions,\nincluding organic molecules and synthetic polymers. Intended for nonscience\nmajors. Cannot be taken for credit after any organic chemistry course.",
+  "prerequsite": "CHEM 11 or good knowledge of high school chemistry.",
+  "formatted_pre": [
+   [
+    "CHEM 11"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 13",
+  "title": "Chemistry of Life",
+  "unit": "4",
+  "discription": "Introduction to biochemistry for nonscience majors. Topics include\ncarbohydrates, lipids, amino acids and proteins, with an introduction to\nmetabolic pathways in human physiology.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 40A",
+  "title": "Organic Chemistry I",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 140A. Introduction to organic chemistry with applications\nto biochemistry. Bonding theory, isomerism, stereochemistry, chemical and\nphysical properties. Introduction to substitution, addition, and elimination\nreactions. Students may only receive credit for one of the following: CHEM\n40A, 40AH, 140A, or 140AH.",
+  "prerequsite": "CHEM 6B or CHEM 6BH.",
+  "formatted_pre": [
+   [
+    "CHEM 6B",
+    "CHEM 6BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 40AH",
+  "title": "Honors Organic Chemistry I",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 140AH. Rigorous introduction to organic chemistry, with\npreview of biochemistry. Bonding theory, isomerism, stereochemistry, physical\nproperties, chemical reactivity. Students may only receive credit for one of\nthe following: CHEM 40A, 40AH, 140A, or 140AH.",
+  "prerequsite": "B+ or\nhigher grade in CHEM 6C or CHEM 6CH.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 40B",
+  "title": "Organic Chemistry II",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 140B. Continuation of CHEM 40A, Organic Chemistry I.\nMethods of analysis, chemistry of hydrocarbons, chemistry of the carbonyl\ngroup. Introduction to the reactions of biologically important molecules.\nStudents may only receive credit for one of the following: CHEM 40B, 40BH,\n140B, or 140BH.",
+  "prerequsite": "CHEM 40A or 140A (a grade of C or higher in\nCHEM 140A or 40A is strongly recommended).",
+  "formatted_pre": [
+   [
+    "CHEM 40A",
+    "CHEM 140A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 40BH",
+  "title": "Honors Organic Chemistry II",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 140BH. Organic chemistry course for honors-level students\nwith a strong background in chemistry. Similar to CHEM 40B but emphasizes\nmechanistic aspects of reactions and effects of molecular structure on\nreactivity. Students may only receive credit for one of the following: CHEM\n40B, 140B, 40BH, or 140BH.",
+  "prerequsite": "grade of B or higher in CHEM\n40A, 40AH, 140A, or 140AH.",
+  "formatted_pre": [
+   [
+    "CHEM 40A",
+    "CHEM 40AH"
+   ],
+   [
+    "CHEM 140A",
+    "CHEM 140AH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 40C",
+  "title": "Organic Chemistry III",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 140C. Continuation of CHEM 40A, Organic Chemistry I and\nCHEM 40B, Organic Chemistry II. Organic chemistry of biologically important\nmolecules: carboxylic acids, carbohydrates, proteins, fatty acids,\nbiopolymers, natural products. Students may only receive credit for one of the\nfollowing: CHEM 40C, 40CH, 140C, or 140CH.",
+  "prerequsite": "CHEM 40B or 140B\n(a grade of C or higher in CHEM 40B or 140B is strongly recommended).",
+  "formatted_pre": [
+   [
+    "CHEM 40B",
+    "CHEM 140B"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 40CH",
+  "title": "Honors Organic Chemistry",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 140CH. Continuation of Organic Chemistry 40B or 40BH, at\nhonors level. Chemistry of carboxylic acids, carbohydrates, proteins, lipids\nbiopolymers, natural products. Emphasis on mechanistic aspects and structure\nreactivity relationships. Students may only receive credit for one of the\nfollowing: CHEM 40C, 40CH, 140C, or 140CH.",
+  "prerequsite": "grade of B+ or\nhigher in CHEM 40B or 140B, or B\u2013 or higher in CHEM 40BH or 140BH.",
+  "formatted_pre": [
+   [
+    "CHEM 40B",
+    "CHEM 140B",
+    "CHEM 40BH",
+    "CHEM 140BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 43A",
+  "title": "Organic Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 143A. Introduction to organic laboratory techniques.\nSeparation, purification, spectroscopy, product analysis, and effects of\nreaction conditions. A materials fee is required. Students must pass a safety\nexam. Students may only receive credit for one of the following: CHEM 43A,\n43AM, 143A, or 143AM.",
+  "prerequsite": "CHEM 7L or 7LM and 40A, 40AH, 140A,\nor 140AH.",
+  "formatted_pre": [
+   [
+    "CHEM 7L",
+    "CHEM 7LM"
+   ],
+   [
+    "CHEM 40A"
+   ],
+   [
+    "CHEM 40AH"
+   ],
+   [
+    "CHEM 140A",
+    "CHEM 140AH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 43AM",
+  "title": "Organic Chemistry Laboratory for Majors",
+  "unit": "4",
+  "discription": "Organic chemistry laboratory for chemistry majors; nonmajors with strong\nbackground in CHEM 40A or 140A may also enroll, though preference will be\ngiven to majors. Similar to CHEM 43A, but emphasizes instrumental methods of\nproduct identification, separation, and analysis. A materials fee is required.\nStudents must pass a safety exam. CHEM 43AM is renumbered from CHEM 143AH.\nStudents may only receive credit for one of the following: CHEM 43AM, 143AM,\n43A, or 143A.",
+  "prerequsite": "CHEM 7L or 7LM and CHEM 40A, 40AH, 140A, or\n140AH.",
+  "formatted_pre": [
+   [
+    "CHEM 7L",
+    "CHEM 7LM"
+   ],
+   [
+    "CHEM 40A"
+   ],
+   [
+    "CHEM 40AH"
+   ],
+   [
+    "CHEM 140A",
+    "CHEM 140AH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 87",
+  "title": "First-year Student Seminar in Chemistry and Biochemistry",
+  "unit": "1",
+  "discription": "This seminar will present topics in chemistry at a level appropriate for\nfirst-year students.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 96",
+  "title": "Introduction to Teaching Science",
+  "unit": "2",
+  "discription": "(Cross-listed with EDS 31.) Explores routine challenges and exceptional\ndifficulties students often have in learning science. Prepares students to\nmake meaningful observations of how K\u201312 teachers deal with difficulties.\nExplores strategies that teachers may use to pose problems that stimulate\nstudents\u2019 intellectual curiosity.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 99",
+  "title": "Independent Study",
+  "unit": "2 or 4",
+  "discription": "Independent literature or laboratory research by arrangement with and under\nthe direction of a member of the Department of Chemistry and Biochemistry\nfaculty. Students must register on a P/NP basis.",
+  "prerequsite": "lower-\ndivision standing, 3.0 minimum UC San Diego GPA, consent of instructor and\ndepartment, completion of thirty units of undergraduate study at UC San Diego,\ncompleted and approved Special Studies form.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 99H",
+  "title": "Independent Study",
+  "unit": "1",
+  "discription": "Independent study or research under the direction of a member of the faculty.",
+  "prerequsite": "student must be of first-year standing and a Regent\u2019s\nScholar; approved Special Studies form.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 100A",
+  "title": "Analytical Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Laboratory course emphasizing classical quantitative chemical analysis\ntechniques, including separation and gravimetric methods, as well as an\nintroduction to instrumental analysis. Program or materials fees may apply.",
+  "prerequsite": "CHEM 6C or 6CH and CHEM 6BL, 7L, or 7LM. Recommended: PHYS\n2CL or 2BL.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ],
+   [
+    "CHEM 6BL"
+   ],
+   [
+    "CHEM 7L",
+    "CHEM 7LM"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 100B",
+  "title": "Instrumental Chemistry Laboratory",
+  "unit": "5",
+  "discription": "Hands-on laboratory course focuses on development of correct laboratory work\nhabits and methodologies for the operation of modern analytical\ninstrumentation. Gas chromatography, mass spectrometry, high performance\nliquid chromatography, ion chromatography, atomic absorption spectroscopy,\nfluorescence spectrometry, infrared spectrometry. Lecture focuses on\nfundamental theoretical principles, applications, and limitations of\ninstrumentation used for qualitative and quantitative analysis. Program or\nmaterials fees may apply. Students may not receive credit for both CHEM 100B\nand 101.",
+  "prerequsite": "CHEM 100A and PHYS 2C or 2D and PHYS 2BL or 2CL or\n2DL.",
+  "formatted_pre": [
+   [
+    "CHEM 100A"
+   ],
+   [
+    "PHYS 2C",
+    "PHYS 2D"
+   ],
+   [
+    "PHYS 2BL",
+    "PHYS 2CL",
+    "PHYS 2DL"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 105A",
+  "title": "Physical Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Laboratory course in experimental physical chemistry. Program or materials\nfees may apply.",
+  "prerequsite": "CHEM 6CL or 100A, PHYS 2BL or 2CL or 2DL,\nand CHEM 126 or 126A or 126B or 127 or 130 or 131 or 133.",
+  "formatted_pre": [
+   [
+    "CHEM 6CL",
+    "CHEM 100A"
+   ],
+   [
+    "PHYS 2BL",
+    "PHYS 2CL",
+    "PHYS 2DL"
+   ],
+   [
+    "CHEM 126",
+    "CHEM 126A",
+    "CHEM 126B",
+    "CHEM 127",
+    "CHEM 130",
+    "CHEM 131",
+    "CHEM 133"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 105B",
+  "title": "Physical Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Laboratory course in experimental physical chemistry. Program or materials\nfees may apply.",
+  "prerequsite": "CHEM 105A.",
+  "formatted_pre": [
+   [
+    "CHEM 105A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 108",
+  "title": "Protein Biochemistry Laboratory",
+  "unit": "6",
+  "discription": "The application of techniques to study protein structure and function,\nincluding electrophoresis, protein purification, column chromatography, enzyme\nkinetics, and immunochemistry. Students may not receive credit for CHEM 108\nand BIBC 103. A materials fee may be required for this course.",
+  "prerequsite": "CHEM 43A, 143A, 43AM or 143AM, and CHEM 114A.",
+  "formatted_pre": [
+   [
+    "CHEM 43A"
+   ],
+   [
+    "CHEM 143A"
+   ],
+   [
+    "CHEM 43AM",
+    "CHEM 143AM"
+   ],
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 109",
+  "title": "Recombinant DNA Laboratory",
+  "unit": "6",
+  "discription": "This laboratory will introduce students to the tools of molecular biology and\nwill involve experiments with recombinant DNA techniques. Students may not\nreceive credit for both CHEM 109 and BIMM 101. A materials fee may be required\nfor this course.",
+  "prerequsite": "CHEM 43A, 143A, 43AM, or 143AM and CHEM\n114A.",
+  "formatted_pre": [
+   [
+    "CHEM 43A"
+   ],
+   [
+    "CHEM 143A"
+   ],
+   [
+    "CHEM 43AM",
+    "CHEM 143AM"
+   ],
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 111",
+  "title": "Origins of Life and the Universe",
+  "unit": "4",
+  "discription": "A chemical perspective of the origin and evolution of the biogeochemical\nsystems of stars, elements, and planets through time. The chemical evolution\nof the earth, its atmosphere, and oceans, and their historical records leading\nto early life are discussed. The content includes search techniques for\nchemical traces of life on other planets.",
+  "prerequsite": "CHEM 6C or 6CH.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 113",
+  "title": "Biophysical Chemistry of Macromolecules",
+  "unit": "4",
+  "discription": "A discussion of the physical principles governing biomolecular structure and\nfunction. Experimental and theoretical approaches to understand protein\ndynamics, enzyme kinetics, and mechanisms will be covered. May be coscheduled\nwith CHEM 213B.",
+  "prerequsite": "CHEM 40C, 40CH, 140C, or 140CH.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 40CH"
+   ],
+   [
+    "CHEM 140C",
+    "CHEM 140CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 114A",
+  "title": "Biochemical Structure and Function",
+  "unit": "4",
+  "discription": "Introduction to biochemistry from a structural and functional viewpoint.\nEmphasis will be placed on the structure-functions relationships of nucleic\nacids, proteins, enzymes, carbohydrates, and lipids. Students may not receive\ncredit for both CHEM 114A and BIBC 100.",
+  "prerequsite": "CHEM 40A or 140A.",
+  "formatted_pre": [
+   [
+    "CHEM 40A",
+    "CHEM 140A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 114B",
+  "title": "Biochemical Energetics and Metabolism",
+  "unit": "4",
+  "discription": "This course is an introduction to the metabolic reactions in the cell which\nproduce and utilize energy. The course material will include energy-producing\npathways: glycolysis, Krebs cycle, oxidative phosphorylation, fatty-acid\noxidation. Biosynthesis of amino acids, lipids, carbohydrates, purines,\npyrimidines, proteins, nucleic acids. Students may not receive credit for both\nCHEM 114B and BIBC 102.",
+  "prerequsite": "CHEM 40B, 140B, 40BH, or 140BH.",
+  "formatted_pre": [
+   [
+    "CHEM 40B"
+   ],
+   [
+    "CHEM 140B"
+   ],
+   [
+    "CHEM 40BH",
+    "CHEM 140BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 114C",
+  "title": "Biosynthesis of Macromolecules",
+  "unit": "4",
+  "discription": "Mechanisms of biosynthesis of macromolecules\u2014particularly proteins and nucleic\nacids. Emphasis is on how these processes are controlled and integrated with\nmetabolism of the cell. Students may not receive credit for both CHEM 114C and\nBIMM 100.",
+  "prerequsite": "CHEM 114A or BIBC 100.",
+  "formatted_pre": [
+   [
+    "CHEM 114A",
+    "BIBC 100"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 114D",
+  "title": "Molecular and Cellular Biochemistry",
+  "unit": "4",
+  "discription": "This course represents a continuation of 114C, or an introductory course for\nfirst- and second-year graduate students and covers topics in molecular and\ncellular biochemistry. Emphasis will be placed on contemporary approaches to\nthe isolation and characterization of mammalian genes and proteins, and\nmolecular genetic approaches to understanding eukaryotic development and human\ndisease. May be coscheduled with CHEM 214.",
+  "prerequsite": "CHEM 114A, 114B,\nand 114C.",
+  "formatted_pre": [
+   [
+    "CHEM 114A"
+   ],
+   [
+    "CHEM 114B"
+   ],
+   [
+    "CHEM 114C"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 115",
+  "title": "Genome, Epigenome, and Transcriptome Editing",
+  "unit": "4",
+  "discription": "A discussion of current topics involving nucleic acid modification, including\nsystems derived from zinc fingers, TALEs, and CRISPR-Cas9. Topics of\nparticular emphasis include delivery of genome editing agents, gene drives,\nand high-throughput genetic screens. May be coscheduled with CHEM 215.\n",
+  "prerequsite": "CHEM 114A.",
+  "formatted_pre": [
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 116",
+  "title": "Chemical Biology",
+  "unit": "4",
+  "discription": "A discussion of current topics in chemical biology including mechanistic\naspects of enzymes and cofactors, use of modified enzymes to alter biochemical\npathways, chemical intervention in cellular processes, and natural product\ndiscovery.",
+  "prerequsite": "CHEM 40C, 40CH, 140C, or 140CH, and CHEM 114A.\n(May not be offered every year.)",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 40CH"
+   ],
+   [
+    "CHEM 140C",
+    "CHEM 140CH"
+   ],
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 118",
+  "title": "Pharmacology and Toxicology",
+  "unit": "4",
+  "discription": "A survey of the biochemical action of drugs and toxins as well as their\nabsorption and excretion.",
+  "prerequsite": "CHEM 114A.",
+  "formatted_pre": [
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 119",
+  "title": "RNA Biochemistry",
+  "unit": "4",
+  "discription": "This course discusses RNA structure and function, as well as biological\npathways involving RNA-centered complexes. Emphasis will be placed on\ncatalytic RNA mechanisms, pre-mRNA splicing, noncoding RNA biology, building\nblocks of RNA structure, and genome editing using RNA-protein complexes.",
+  "prerequsite": "BIMM 100 or CHEM 114C and CHEM 40C or CHEM 40CH.",
+  "formatted_pre": [
+   [
+    "BIMM 100",
+    "CHEM 114C"
+   ],
+   [
+    "CHEM 40C",
+    "CHEM 40CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 120A",
+  "title": "Inorganic Chemistry I",
+  "unit": "4",
+  "discription": "The chemistry of the main group elements in terms of atomic structure, ionic\nand covalent bonding. Structural theory involving s, p, and unfilled d\norbitals. Thermodynamic and spectroscopic criteria for structure and stability\nof compounds and chemical reactions of main group elements in terms of\nmolecular structure and reactivity.",
+  "prerequsite": "CHEM 6C or 6CH and CHEM\n40A or 140A.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ],
+   [
+    "CHEM 40A",
+    "CHEM 140A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 120B",
+  "title": "Inorganic Chemistry II",
+  "unit": "4",
+  "discription": "A continuation of the discussion of structure, bonding, and reactivity with\nemphasis on transition metals and other elements using filled d orbitals to\nform bonds. Coordination chemistry in terms of valence bond, crystal field,\nand molecular orbital theory. The properties and reactivities of transition\nmetal complexes including organometallic compounds.",
+  "prerequsite": "CHEM\n120A.",
+  "formatted_pre": [
+   [
+    "CHEM 120A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 123",
+  "title": "Advanced Inorganic Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Synthesis, analysis, and physical characterization of inorganic chemical\ncompounds. Program or materials fees may apply.",
+  "prerequsite": "CHEM 120A,\n120B and 43A, 143A, 43AM or 143AH. Restricted to the following major codes:\nCH25, CH31, CH34, CH35, CH36, CH37.",
+  "formatted_pre": [
+   [
+    "CHEM 120A"
+   ],
+   [
+    "CHEM 120B"
+   ],
+   [
+    "CHEM 43A"
+   ],
+   [
+    "CHEM 143A"
+   ],
+   [
+    "CHEM 43AM",
+    "CHEM 143AH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 125",
+  "title": "Bioinorganic Chemistry",
+  "unit": "4",
+  "discription": "The roles of metal ions in biological systems, with emphasis on transition\nmetal ions in enzymes that transfer electrons, bind oxygen, and fix nitrogen.\nAlso included are metal complexes in medicine, toxicity, and metal ion storage\nand transport. May be coscheduled with CHEM 225.",
+  "prerequsite": "CHEM 114A\nor 120A.",
+  "formatted_pre": [
+   [
+    "CHEM 114A",
+    "CHEM 120A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 130",
+  "title": "Chemical Physics: Quantum Mechanics",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 133. With CHEM 131 and 132, CHEM 130 is part of the\nPhysical Chemistry sequence taught over three quarters. Recommended as the\nfirst course of the sequence. Key topics covered in this course include\nquantum mechanics, atomic and molecular spectroscopy, and molecular structure.\nStudents may not receive credit for CHEM 130 and either 126B, 126, or 133.",
+  "prerequsite": "CHEM 6C or 6CH, and PHYS 2C or 2D, and MATH 20D.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ],
+   [
+    "PHYS 2C",
+    "PHYS 2D"
+   ],
+   [
+    "MATH 20D"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 131",
+  "title": "Chemical Physics: Stat Thermo I",
+  "unit": "4",
+  "discription": "With CHEM 130 and 132, CHEM 131 is part of the Physical Chemistry sequence\ntaught over three quarters. Recommended as the second course of the sequence.\nKey topics covered in this course include thermodynamics, chemical\nequilibrium, phase equilibrium, and chemistry of solutions. Students may not\nreceive credit for CHEM 131 and either CHEM 127 or CHEM 126A.",
+  "prerequsite": "CHEM 6C or 6CH, MATH 20C, and PHYS 2C or 2D.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ],
+   [
+    "MATH 20C"
+   ],
+   [
+    "PHYS 2C",
+    "PHYS 2D"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 132",
+  "title": "Chemical Physics: Stat Thermo II",
+  "unit": "4",
+  "discription": "With CHEM 130 and 131, CHEM 132 is part of the Physical Chemistry sequence\ntaught over three quarters. Recommended as the third course of the sequence.\nKey topics covered in this course include chemical statistics, kinetic theory,\nand reaction kinetics. Students may not receive credit for CHEM 132 and either\nCHEM 126A or CHEM 127.",
+  "prerequsite": "CHEM 130 or 133, and CHEM 131.",
+  "formatted_pre": [
+   [
+    "CHEM 130",
+    "CHEM 133"
+   ],
+   [
+    "CHEM 131"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 134",
+  "title": "Polymeric Materials",
+  "unit": "4",
+  "discription": "Foundations of polymeric materials. Topics: structure of polymers; mechanisms\nof polymer synthesis; characterization methods using calorimetric, mechanical,\nrheological, and X-ray-based techniques; and electronic, mechanical, and\nthermodynamic properties. Special classes of polymers: engineering plastics,\nsemiconducting polymers, photoresists, and polymers for medicine. Students may\nnot receive credit for both CENG 134, CHEM 134, or NANO 134.",
+  "prerequsite": "CHEM 6C and PHYS 2C.",
+  "formatted_pre": [
+   [
+    "CHEM 6C"
+   ],
+   [
+    "PHYS 2C"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 135",
+  "title": "Molecular Spectroscopy",
+  "unit": "4",
+  "discription": "Time-dependent behavior of systems; interaction of matter with light;\nselection rules. Radiative and nonradiative processes, coherent phenomena, and\nthe density matrices. Instrumentation, measurement, and interpretation. May be\ncoscheduled with CHEM 235. Prior or concurrent enrollment in CHEM 105A\nrecommended.",
+  "prerequsite": "CHEM 126 or 126B or 130 or 133 and MATH 20D.",
+  "formatted_pre": [
+   [
+    "CHEM 126",
+    "CHEM 126B",
+    "CHEM 130",
+    "CHEM 133"
+   ],
+   [
+    "MATH 20D"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 141",
+  "title": "Organic Nanomaterials",
+  "unit": "4",
+  "discription": "This course will provide an introduction to the physics and chemistry of soft\nmatter, followed by a literature-based critical examination of several\nubiquitous classes of organic nanomaterials and their technological\napplications. Topics include self-assembled monolayers, block copolymers,\nliquid crystals, photoresists, organic electronic materials, micelles and\nvesicles, soft lithography, organic colloids, organic nanocomposites, and\napplications in biomedicine and food science.",
+  "prerequsite": "CHEM 40A,\n140A, 40AH, or 140AH.",
+  "formatted_pre": [
+   [
+    "CHEM 40A"
+   ],
+   [
+    "CHEM 140A"
+   ],
+   [
+    "CHEM 40AH",
+    "CHEM 140AH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 142",
+  "title": "Introduction to Glycosciences",
+  "unit": "4",
+  "discription": "The primary aim of this course is to provide an overview of fundamental facts,\nconcepts, and methods in glycoscience. The course is structured around major\nthemes in the field, starting from basic understanding of structure and\nmolecular interactions of carbohydrates, to the mechanisms of their biological\nfunctions in normal and disease states, to their applications in materials\nscience and energy generation. May be coscheduled with CHEM 242. CHEM 40C and\nat least one course in either general biology, molecular biology, or cell\nbiology is strongly encouraged.",
+  "prerequsite": "CHEM 40B, 140B, 40BH, or\n140BH and BIBC 100 or BILD 1 or CHEM 114A.",
+  "formatted_pre": [
+   [
+    "CHEM 40B"
+   ],
+   [
+    "CHEM 140B"
+   ],
+   [
+    "CHEM 40BH",
+    "CHEM 140BH"
+   ],
+   [
+    "BIBC 100",
+    "BILD 1",
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 143B",
+  "title": "Organic Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Continuation of CHEM 43A, 143A, 43AM, and 143AM, emphasizing synthetic methods\nof organic chemistry. Enrollment is limited to majors in the Department of\nChemistry and Biochemistry unless space is available. A materials fee is\nrequired.",
+  "prerequsite": "CHEM 43A, 143A, 43AM or 143AM, and CHEM 40B\nor 140B.",
+  "formatted_pre": [
+   [
+    "CHEM 43A"
+   ],
+   [
+    "CHEM 143A"
+   ],
+   [
+    "CHEM 43AM",
+    "CHEM 143AM"
+   ],
+   [
+    "CHEM 40B",
+    "CHEM 140B"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 143C",
+  "title": "Organic Chemistry Laboratory",
+  "unit": "4",
+  "discription": "Identification of unknown organic compounds by a combination of chemical and\nphysical techniques. Enrollment is limited to majors in the Department of\nChemistry and Biochemistry unless space is available. Program or materials\nfees may apply.",
+  "prerequsite": "CHEM 43A, 43AM, 143A, 143AM, or 143AH and\nCHEM 40B, 40BH, 140B, or 140BH.",
+  "formatted_pre": [
+   [
+    "CHEM 43A"
+   ],
+   [
+    "CHEM 43AM"
+   ],
+   [
+    "CHEM 143A"
+   ],
+   [
+    "CHEM 143AM",
+    "CHEM 143AH"
+   ],
+   [
+    "CHEM 40B"
+   ],
+   [
+    "CHEM 40BH"
+   ],
+   [
+    "CHEM 140B",
+    "CHEM 140BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 143D",
+  "title": "Molecular Design and Synthesis",
+  "unit": "4",
+  "discription": "Advanced organic synthesis. Relationships between molecular structure and\nreactivity using modern synthetic methods and advanced instrumentation.\nStresses importance of molecular design, optimized reaction conditions for\ndevelopment of practically useful synthesis, and problem-solving skills. A\nmaterials fee is required.",
+  "prerequsite": "CHEM 40C, 140C, 40CH, or 140CH\nand CHEM 143B.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ],
+   [
+    "CHEM 143B"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 145",
+  "title": "Biofuels and Renewable Materials",
+  "unit": "4",
+  "discription": "Fundamentals of the chemistry and biochemistry of biofuel and renewable\nmaterials technologies. This course explores chemical identity and properties,\nmetabolic pathways and engineering, refining processes, formulation, and\nanalytical techniques related to current and future renewable products.",
+  "prerequsite": "CHEM 40B, 40BH, 140B, or 140BH.",
+  "formatted_pre": [
+   [
+    "CHEM 40B"
+   ],
+   [
+    "CHEM 40BH"
+   ],
+   [
+    "CHEM 140B",
+    "CHEM 140BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 146",
+  "title": "Kinetics and Mechanism of Organic Reactions",
+  "unit": "4",
+  "discription": "Methodology of mechanistic organic chemistry; integration of rate expression,\ndetermination of rate constants, transition state theory; catalysis, kinetic\norders, isotope effects, solvent effects, linear free energy relationship;\nproduct studies, stereochemistry; reactive intermediates; rapid reactions. May\nbe coscheduled with CHEM 246.",
+  "prerequsite": "CHEM 40C, 140C, 40CH, or\n140CH.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 151",
+  "title": "Molecules that Changed the World",
+  "unit": "4",
+  "discription": "A look at some of nature's most intriguing molecules and the ability to\ndiscover, synthesize, modify, and use them. The role of chemistry in society,\nand how chemical synthesis\u2014the art and science of constructing\nmolecules\u2014shapes our world.",
+  "prerequsite": "CHEM 40A, 140A, 40AH, or 140AH.",
+  "formatted_pre": [
+   [
+    "CHEM 40A"
+   ],
+   [
+    "CHEM 140A"
+   ],
+   [
+    "CHEM 40AH",
+    "CHEM 140AH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 152",
+  "title": "Synthetic Methods in Organic Chemistry",
+  "unit": "4",
+  "discription": "A survey of reactions of particular utility in the organic laboratory.\nEmphasis is on methods of preparation of carbon-carbon bonds and oxidation\nreduction sequences. May be coscheduled with CHEM 252.",
+  "prerequsite": "CHEM\n40C, 140C, 40CH, or 140CH.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 154",
+  "title": "Mechanisms of Organic Reactions",
+  "unit": "4",
+  "discription": "A qualitative approach to the mechanisms of various organic reactions;\nsubstitutions, additions, eliminations, condensations, rearrangements,\noxidations, reductions, free-radical reactions, and photochemistry. Includes\nconsiderations of molecular structure and reactivity, synthetic methods,\nspectroscopic tools, and stereochemistry. The topics emphasized will vary from\nyear to year. This is the first quarter of the advanced organic chemistry\nsequence. May be coscheduled with CHEM 254.",
+  "prerequsite": "CHEM 40C, 140C,\n40CH, or 140CH.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 155",
+  "title": "Synthesis of Complex Molecules",
+  "unit": "4",
+  "discription": "This course discusses planning economic routes for the synthesis of complex\norganic molecules. The uses of specific reagents to control stereochemistry\nwill be outlined and recent examples from the primary literature will be\nhighlighted. (May not be offered every year.) May be coscheduled with CHEM\n255.",
+  "prerequsite": "CHEM 152 or 154.",
+  "formatted_pre": [
+   [
+    "CHEM 152",
+    "CHEM 154"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 156",
+  "title": "Structure and Properties of Organic Molecules",
+  "unit": "4",
+  "discription": "Introduction to the measurement and theoretical correlation of the physical\nproperties of organic molecules. Topics covered include molecular geometry,\nmolecular-orbital theory, orbital hybridization, aromaticity, chemical\nreactivity, stereochemistry, infrared and electronic spectra, photochemistry,\nand nuclear magnetic resonance. May be coscheduled with CHEM 256.",
+  "prerequsite": "CHEM 40C, 140C, 40CH, or 140CH.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 157",
+  "title": "Bioorganic and Natural Products Chemistry",
+  "unit": "4",
+  "discription": "A comprehensive survey of modern bioorganic and natural products chemistry.\nTopics will include biosynthesis of natural products, molecular recognition,\nand small molecule-biomolecule interactions. May be coscheduled with CHEM 257.",
+  "prerequsite": "CHEM 40C, 140C, 40CH, or 140CH.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 158",
+  "title": "Applied Spectroscopy",
+  "unit": "4",
+  "discription": "Intensive coverage of modern spectroscopic techniques used to determine the\nstructure of organic molecules. Problem solving and interpretation of spectra\nwill be emphasized. May be coscheduled with CHEM 258.",
+  "prerequsite": "CHEM\n40C, 140C, 40CH, or 140CH.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 164",
+  "title": "Structural Biology of Viruses",
+  "unit": "4",
+  "discription": "An introduction to virus structures, how they are determined, and how they\nfacilitate the various stages of the viral life cycle from host recognition\nand entry to replication, assembly, release, and transmission to uninfected\nhost cells. (May not be offered every year.)",
+  "prerequsite": "BIBC 100 or\nCHEM 114A and BIBC 102 or CHEM 114B and BIMM 100 or CHEM 114C.",
+  "formatted_pre": [
+   [
+    "BIBC 100",
+    "CHEM 114A"
+   ],
+   [
+    "BIBC 102",
+    "CHEM 114B"
+   ],
+   [
+    "BIMM 100",
+    "CHEM 114C"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 165",
+  "title": "3D Cryo-Electron Microscopy of Macromolecules and Cells",
+  "unit": "4",
+  "discription": "(Cross-listed with BIMM 162.) The resolution revolution in cryo-electron\nmicroscopy has made this a key technology for the high-resolution\ndetermination of structures of macromolecular complexes, organelles, and\ncells. The basic principles of transmission electron microscopy, modern cryo-\nelectron microscopy, image acquisition, and 3D reconstruction will be\ndiscussed. Examples from the research literature using this state-of-the-art\ntechnology will also be discussed.",
+  "prerequsite": "CHEM 114A or BIBC 100.",
+  "formatted_pre": [
+   [
+    "CHEM 114A",
+    "BIBC 100"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 167",
+  "title": "Medicinal Chemistry",
+  "unit": "4",
+  "discription": "Basics of medicinal chemistry, emphasizing rigorous descriptions of receptor-\nprotein structure, interactions, and dynamics; their implications for drug\ndevelopment; and an integrated treatment of pharmacodynamic and\npharmacokinetic considerations in drug design. Treats computational approaches\nas well as practical experimental approaches.",
+  "prerequsite": "CHEM 40C,\n140C, 40CH or 140CH and CHEM 114A.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 140C"
+   ],
+   [
+    "CHEM 40CH",
+    "CHEM 140CH"
+   ],
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 168",
+  "title": "Drug Synthesis and Design",
+  "unit": "4",
+  "discription": "Practical methods to make drugs currently in use and to design future drugs.\nTreats both chemical synthesis and biologics like monoclonal antibodies.\nTopics include fragment-based screening, solid phase synthesis, directed\nevolution, and bioconjugation as well as efficacy, metabolism, and toxicity.",
+  "prerequsite": "CHEM 40C, 40CH, 140C, or 140CH and CHEM 114A.",
+  "formatted_pre": [
+   [
+    "CHEM 40C"
+   ],
+   [
+    "CHEM 40CH"
+   ],
+   [
+    "CHEM 140C",
+    "CHEM 140CH"
+   ],
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 171",
+  "title": "Environmental Chemistry I",
+  "unit": "4",
+  "discription": "An introduction to chemical concerns in nature with emphasis on atmospheric\nissues like air pollution, chlorofluorocarbons and the ozone hole, greenhouse\neffects and climate change, impacts of radioactive waste, sustainable resource\nusage, and risks and benefits of energy sources. Students may only receive\ncredit for one of the following: CHEM 149A or 171.",
+  "prerequsite": "CHEM 6C\nor 6CH.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 172",
+  "title": "Environmental Chemistry II",
+  "unit": "4",
+  "discription": "An introduction to chemical concerns in nature with emphasis on soil and water\nissues like agricultural productivity, biological impacts in the environment,\ndeforestation, ocean desserts, natural and manmade disasters (fires, nuclear\nwinter, volcanoes), and waste handling. Recommended preparation: CHEM 171\n(formerly 149A). Students may only receive credit for one of the following:\nCHEM 172 or 149B.",
+  "prerequsite": "CHEM 6C or 6CH.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 173",
+  "title": "Atmospheric Chemistry",
+  "unit": "4",
+  "discription": "Chemical principles applied to the study of atmospheres. Atmospheric\nphotochemistry, radical reactions, chemical lifetime determinations, acid\nrain, greenhouse effects, ozone cycle, and evolution are discussed. May be\ncoscheduled with CHEM 273.",
+  "prerequsite": "CHEM 6C or 6CH.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 174",
+  "title": "Chemical Principles of Marine Systems",
+  "unit": "4",
+  "discription": "(Cross-listed with SIO 141.) Introduction to the chemistry and distribution of\nthe elements in seawater, emphasizing basic chemical principles such as\nelectron structure, chemical bonding, and group and periodic properties and\nshowing how these affect basic aqueous chemistry in marine systems. Students\nmay not receive credit for SIO 141 and CHEM 174.",
+  "prerequsite": "CHEM 6C or\n6CH.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 184",
+  "title": "Computational Molecular Biology",
+  "unit": "4",
+  "discription": "(Cross-listed with BIMM 184/BENG 184/CSE 184.) This advanced course covers the\napplication of machine learning and modeling techniques to biological systems.\nTopics include gene structure, recognition of DNA and protein sequence\npatterns, classification, and protein structure prediction. Pattern discovery,\nHidden Markov models/support vector machines/neural network/profiles, protein\nstructure prediction, functional characterization or proteins, functional\ngenomics/proteomics, metabolic pathways/gene networks. Bioinformatics majors\nonly.",
+  "prerequsite": "BIMM 181 or BENG 181 or CSE 181; BIMM 182 or BENG 182\nor CSE 182 or CHEM 182.",
+  "formatted_pre": [
+   [
+    "BIMM 181",
+    "BENG 181",
+    "CSE 181"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 185",
+  "title": "Quantum Chemistry Lab",
+  "unit": "4",
+  "discription": "Course in computational methods, with focus on quantum chemistry. The course\ncontent is built on a background in mathematics and physical chemistry, and\nprovides an introduction to computational theory, ab initio methods, and\nsemiempirical methods. The emphasis is on applications and reliability. May be\ncoscheduled with CHEM 285.",
+  "prerequsite": "CHEM 126 or 126B or 130 or 133\nand MATH 20C or 31BH. (May not be offered every year.)",
+  "formatted_pre": [
+   [
+    "CHEM 126",
+    "CHEM 126B",
+    "CHEM 130",
+    "CHEM 133"
+   ],
+   [
+    "MATH 20C",
+    "MATH 31BH"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 186",
+  "title": "Molecular Simulations Lab",
+  "unit": "4",
+  "discription": "Course in computational methods, with focus on molecular simulations. The\ncourse content is built on a background in mathematics and physical chemistry,\nand provides an introduction to computational theory and molecular mechanics.\nThe emphasis is on applications and reliability. May be coscheduled with CHEM\n286.",
+  "prerequsite": "MATH 20C and CHEM 126 or CHEM 126B or CHEM 130 or\nCHEM 133. ****",
+  "formatted_pre": [
+   [
+    "MATH 20C"
+   ],
+   [
+    "CHEM 126",
+    "CHEM 126B",
+    "CHEM 130",
+    "CHEM 133"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 187",
+  "title": "Foundations of Teaching and Learning Science",
+  "unit": "4",
+  "discription": "(Cross-listed with EDS 122.) Examine theories of learning and how they are\nimportant in the science classroom. Conceptual development in the individual\nstudent, as well as the development of knowledge in the history of science.\nKey conceptual obstacles in science will be explored.",
+  "prerequsite": "CHEM\n6C or 6CH and CHEM 96 or EDS 31.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ],
+   [
+    "CHEM 96",
+    "EDS 31"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 188",
+  "title": "Capstone Seminar in Science Education",
+  "unit": "4",
+  "discription": "(Cross-listed with EDS 123.) In the lecture and observation format, students\ncontinue to explore the theories of learning in the science classroom.\nConceptual development is fostered, as well as continued development of\nknowledge of science history. Students are exposed to the science of teaching\nin science in actual practice.",
+  "prerequsite": "CHEM 6C or 6CH and CHEM 187\nor EDS 122.",
+  "formatted_pre": [
+   [
+    "CHEM 6C",
+    "CHEM 6CH"
+   ],
+   [
+    "CHEM 187",
+    "EDS 122"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 192",
+  "title": "Senior Seminar in Chemistry and Biochemistry",
+  "unit": "1",
+  "discription": "The Senior Seminar Program is designed to allow senior undergraduates to meet\nwith faculty members in a small group setting to explore an intellectual topic\nin chemistry or biochemistry. May be taken for credit up to four times, with a\nchange in topic, and permission of the department. P/NP grades only.",
+  "prerequsite": "department stamp and/or consent of the instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 194",
+  "title": "Special Topics in Chemistry",
+  "unit": "2",
+  "discription": "Selected topics in the field of chemistry. Course will vary in title and\ncontent. Students are expected to actively participate in course discussions,\nread, and analyze primary literature. Current subtitles will be listed on the\nSchedule of Classes. May be taken for credit up to four times as topics vary.\nStudents may not receive credit for the same topic.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 195",
+  "title": "Methods of Teaching Chemistry",
+  "unit": "4",
+  "discription": "An introduction to teaching chemistry. Students are required to attend a\nweekly class on methods of teaching chemistry and will teach a discussion\nsection of one of the lower-division chemistry courses. Attendance at lecture\nof the lower-division course in which the student is participating is\nrequired. P/NP grades only.",
+  "prerequsite": "consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 196",
+  "title": "Reading and Research in Chemical Education",
+  "unit": "2 or 4",
+  "discription": "Independent literature or discipline-based education research by arrangement\nwith, and under the direction of, a member of the Department of Chemistry and\nBiochemistry faculty. P/NP grades only.",
+  "prerequsite": "upper-division\nstanding, 2.5 minimum GPA, consent of instructor and department.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 197",
+  "title": "Chemistry Internship",
+  "unit": "2 or 4",
+  "discription": "An internship program that provides work experience with public/private sector\nemployers. Subject to the availability of positions, students will work in a\nlocal company under the supervision of a faculty member and site supervisor.\nP/NP grades only. May be taken for credit a maximum of three times.",
+  "prerequsite": "Completion of ninety units with a GPA of 2.5, and a\ncompleted and approved Special Studies form (UC San Diego Application for\nEnrollment Special Studies Courses 197, 198, 199), and department stamp.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 198",
+  "title": "Directed Group Study",
+  "unit": "1\u20134",
+  "discription": "Directed group study on a topic or in a field not included in the regular\ndepartment curriculum, by arrangement with a chemistry and biochemistry\nfaculty member. P/NP grades only. May be taken for credit two times.",
+  "prerequsite": "department approval required and a completed and approved\nSpecial Studies form (UC San Diego Application for Enrollment Special Studies\nCourses 197, 198, 199).",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 199",
+  "title": "Reading and Research",
+  "unit": "2 or 4",
+  "discription": "Independent literature or laboratory research by arrangement with, and under\nthe direction of, a member of the Department of Chemistry and Biochemistry\nfaculty. Students must register on a P/NP basis.",
+  "prerequsite": "upper-\ndivision standing, 2.5 minimum GPA, consent of instructor and department and\nthe completion of the online CHEM 199 application.)",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 200B",
+  "title": "Fundamentals of Instrumental Analysis",
+  "unit": "4",
+  "discription": "Fundamental theoretical principles, capabilities, applications, and\nlimitations of modern analytical instrumentation used for qualitative and\nquantitative analysis. Students will learn how to define the nature of an\nanalytical problem and how to select an appropriate analytical method. Letter\ngrades only. Recommended preparation: background equivalent to CHEM 100A and\nintroductory optics and electricity from physics. (W)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 204",
+  "title": "Introduction to X-ray Crystallography",
+  "unit": "4",
+  "discription": "(Conjoined with CHEM 104.) Analysis of macromolecular structures by X-ray\ndiffraction. Topics include symmetry, geometry of diffraction, detection of\ndiffraction, intensity of diffracted waves, phase problem and its solution,\nheavy atom method, isomorphous replacement, anomalous dispersion phasing\nmethods (MAD), direct methods, molecular replacement. CHEM 204 students will\nbe required to complete additional paper and/or exam beyond that expected of\nstudents in CHEM 104.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 207",
+  "title": "Protein NMR",
+  "unit": "4",
+  "discription": "A broad introduction to the uses of nuclear magnetic resonance to characterize\nand understand proteins. Not highly mathematical, this course should be\naccessible to chemistry graduate students working with proteins.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 209",
+  "title": "Macromolecular Recognition",
+  "unit": "4",
+  "discription": "Structures and functions of nucleic acids, folding and catalysis of nucleic\nacids, motifs and domains of proteins, principles of protein-protein\ninteractions, chemistry of protein/DNA and protein/RNA interfaces,\nconformational changes in macromolecular recognition.",
+  "prerequsite": "biochemistry background and graduate standing, or approval of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 210",
+  "title": "Lipid Cell Signaling Genomics, Proteomics, and Metabolomics",
+  "unit": "2",
+  "discription": "Overview of new systems biology \"-omics\" approached to lipid metabolism and\ncell signaling, including interrogating gene and lipid databases, techniques\nfor lipidomics, and implications for profiling and biomarker discovery in\nblood and tissues relevant to inflammatory and other human diseases. Cross-\nlisted with BIOM 209 and PHAR 208. Recommended preparation: one quarter of\nundergraduate biochemistry.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 212",
+  "title": "Biochemistry and Biophysics of Cell Membranes",
+  "unit": "4",
+  "discription": "Structure and function of biological membranes and their lipid building\nblocks. Topics include lipid metabolism, membrane dynamics, protein-lipid\ninteractions, lipid signaling, and cellular trafficking. Lectures covering\nfundamentals will be combined with literature-based discussions and\npresentations.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 213A",
+  "title": "Structure of Biomolecules and Biomolecular Assemblies",
+  "unit": "4",
+  "discription": "A discussion of structures of nucleic acids and proteins and their larger\nassemblies. The theoretical basis for nucleic acid and protein structure, as\nwell as methods of structure determination including X-ray crystallography,\ncryoEM, and computational modeling approaches will be covered. Letter grades\nonly.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 213B",
+  "title": "Biophysical Chemistry of Macromolecules",
+  "unit": "4",
+  "discription": "Renumbered from CHEM 213. A discussion of the physical principles governing\nbiomolecular structure and function. Experimental and theoretical approaches\nto understand protein dynamics, enzyme kinetics, and mechanisms will be\ncovered. Students may not receive credit for CHEM 213 and CHEM 213B. May be\ncoscheduled with CHEM 113.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 214",
+  "title": "Molecular and Cellular Biochemistry",
+  "unit": "4",
+  "discription": "This is an introductory course for graduate students and covers topics in\nmolecular and cellular biochemistry. Emphasis will be placed on contemporary\napproaches to the isolation and characterization of mammalian genes and\nproteins, and molecular genetic approaches to understanding eukaryotic\ndevelopment and human disease. May be coscheduled with CHEM 114D.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 215",
+  "title": "Genome, Epigenome, and Transcriptome Editing",
+  "unit": "4",
+  "discription": "A discussion of current topics involving nucleic acid modification, including\nsystems derived from zinc fingers, TALEs, and CRISPR-Cas9. Topics of\nparticular emphasis include delivery of genome editing agents, gene drives,\nand high-throughput genetic screens. May be coscheduled with CHEM 115.",
+  "prerequsite": "graduate standing or consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 216",
+  "title": "Chemical Biology",
+  "unit": "4",
+  "discription": "A discussion of current topics in chemical biology including mechanistic\naspects of enzymes and cofactors, use of modified enzymes to alter biochemical\npathways, chemical intervention in cellular processes, and natural product\ndiscovery.",
+  "prerequsite": "graduate standing or consent of instructor. (May\nnot be offered every year.)",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 217",
+  "title": "RNA Structure, Function, and Biology",
+  "unit": "4",
+  "discription": "Selected topics in RNA structure and function, such as the ribosome, ribozyme,\nantibiotics, splicing and RNA interference, as they relate to the RNA role in\ngene expression and regulation. Emphasis on techniques to study the dynamics\nof macromolecular complexes and the mechanism of RNA catalysis.",
+  "prerequsite": "graduate standing or consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 219A",
+  "title": "Special Topics in Biochemistry",
+  "unit": "4",
+  "discription": "This special-topics course is designed for first-year graduate students in\nbiochemistry. Topics presented in recent years have included protein\nprocessing, the chemical modification of proteins, the biosynthesis and\nfunction of glycoproteins, lipid biochemistry and membrane structure, and\nbioenergetics.",
+  "prerequsite": "undergraduate courses in biochemistry, CHEM\n114A or equivalent. (May not be offered every year.)",
+  "formatted_pre": [
+   [
+    "CHEM 114A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 219B",
+  "title": "Special Topics in Biochemistry",
+  "unit": "4",
+  "discription": "Various advanced topics in biochemistry. May be taken for credit up to three\ntimes as topics vary.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 219C",
+  "title": "Special Topics in Biochemistry",
+  "unit": "2 or 4",
+  "discription": "Various advanced topics in biochemistry. May be taken for credit up to three\ntimes as topics vary.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 220",
+  "title": "Regulatory Circuits in Cells",
+  "unit": "4",
+  "discription": "Modulation cellular activity and influencing viral fate involve regulatory\ncircuits. Emergent properties include dose response, cross regulation,\ndynamic, and stochastic behaviors. This course reviews underlying mechanisms\nand involves mathematical modeling using personal computer tools. Recommended:\nsome background in biochemistry and/or cellular biology. Mathematical\ncompetence at the level of lower-division college courses.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 221",
+  "title": "Signal Transduction",
+  "unit": "4",
+  "discription": "The aim of this course is to develop an appreciation for a variety of topics\nin signal transduction. We will discuss several historical developments while\nthe focus will be on current issues. Both experimental approaches and results\nwill be included in our discussions. Topics may vary from year to year.",
+  "prerequsite": "biochemistry and molecular biology. (May not be offered\nevery year.)",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 222",
+  "title": "Structure and Analysis of Solids",
+  "unit": "4",
+  "discription": "(Cross-listed with MATS 227, NANO 227, and MAE 251.) Key concepts in the\natomic structure and bonding of solids such as metals, ceramics, and\nsemiconductors. Symmetry operations, point groups, lattice types, space\ngroups, simple and complex inorganic compounds, structure/property\ncomparisons, structure determination with X-ray diffraction. Ionic, covalent,\nmetallic bonding compared with physical properties. Atomic and molecular\norbitals, bands verses bonds, free electron theory. Students may only receive\ncredit for one of the following: CHEM 222, MAE 251, MATS 227, or NANO 227.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 223",
+  "title": "Organometallic Chemistry",
+  "unit": "4",
+  "discription": "A survey of this field from a synthetic and mechanistic viewpoint. Fundamental\nreactivity patterns for transition element organometallic compounds will be\ndiscussed and organized according to periodic trends. Transition metal\ncatalyzed reactions of importance to organic synthesis and industrial\nchemistry will be presented from a mechanistic perspective. Letter grades\nonly.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 224",
+  "title": "Spectroscopic Techniques",
+  "unit": "4",
+  "discription": "Application of physical techniques to the elucidation of the structure of\ninorganic complex ions and organometallic compounds. Topics covered include\ngroup theory, and its application to vibrational, magnetic resonance and Raman\nspectroscopy. (May not be offered every year.)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 225",
+  "title": "Bioinorganic Chemistry",
+  "unit": "4",
+  "discription": "The role of metal ions in biological systems, with emphasis on transition\nmetal ions in enzymes that transfer electrons, bind oxygen, and fix nitrogen.\nAlso included are metal complexes in medicine, toxicity, and metal ion storage\nand transport. May be coscheduled with CHEM 125.",
+  "prerequsite": "graduate\nstanding.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 226",
+  "title": "Transition Metal Chemistry",
+  "unit": "4",
+  "discription": "Advanced aspects of structure and bonding in transition metal complexes with\nmajor emphasis on Molecular Orbital Theory. Electronic structure descriptions\nare used to rationalize structure/reactivity relationships. Other topics\ninclude computational chemistry, relativistic effects, metal-metal bonding,\nand reaction mechanisms.",
+  "prerequsite": "graduate standing or consent of\ninstructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 227",
+  "title": "Seminar in Inorganic Chemistry",
+  "unit": "2",
+  "discription": "Seminars presented by faculty and students on topics of current interest in\ninorganic chemistry, including areas such as bioinorganic, organometallic and\nphysical-inorganic chemistry. The course is designed to promote a critical\nevaluation of the available data in specialized areas of inorganic chemistry.\nEach quarter three or four different topics will be discussed. (S/U grades\nonly.)",
+  "prerequsite": "graduate standing or consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 228",
+  "title": "Solid State Chemistry",
+  "unit": "4",
+  "discription": "Survey of the chemistry of semiconductors, superconductors, molecular magnetic\nmaterials, zeolites, fast ion conductors, electronically conducting polymers\nand ceramics. Synthetic techniques such as molecular precursor design, the\nsol-gel process, electrosynthesis, and high-temperature thermolysis will be\ncovered. (May not be offered every year.)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 229",
+  "title": "Special Topics in Inorganic Chemistry",
+  "unit": "2\u20134",
+  "discription": "Selection of topics of current interest. May be repeated for credit when\ntopics vary. (May not be offered every year.)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 230A",
+  "title": "Quantum Mechanics I",
+  "unit": "4",
+  "discription": "Theoretical basis of quantum mechanics; postulates; wave packets; matrix\nrepresentations; ladder operators; exact solutions for bound states in 1, 2,\nor 3 dimensions; angular momentum; spin; variational approximations;\ndescription of real one and two electron systems. Recommended background: CHEM\n133 and MATH 20D or their equivalents.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 230B",
+  "title": "Quantum Mechanics II",
+  "unit": "4",
+  "discription": "Continuation of theoretical quantum mechanics: evolution operators and time\ndependent representations, second quantization, Born-Oppenheimer\napproximation, electronic structure methods, selected topics from among\ndensity operators, quantized radiation fields, path integral methods,\nscattering theory.",
+  "prerequsite": "CHEM 230A or consent of instructor.",
+  "formatted_pre": [
+   [
+    "CHEM 230A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 231",
+  "title": "Chemical Kinetics and Molecular Reaction Dynamics",
+  "unit": "4",
+  "discription": "Classical kinetics, transition state theory, unimolecular decomposition,\npotential energy surfaces; scattering processes and photodissociation\nprocesses. (May not be offered ever year.)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 232A",
+  "title": "Statistical Mechanics I",
+  "unit": "4",
+  "discription": "Derivation of thermodynamics from atomic descriptions. Ensembles,\nfluctuations, classical (Boltzmann) and quantum (Fermi-Dirac and Bose-\nEinstein) statistics, partition functions, phase space, Liouville equation,\nchemical equilibrium, applications to weakly interacting systems, such as\nideal gases, ideal crystals, radiation fields. Recommended background: CHEM\n132 or its equivalent. Classical and quantum mechanics, thermodynamics, and\nmathematical methods will be reviewed as needed, but some background will be\nnecessary.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 232B",
+  "title": "Statistical Mechanics II",
+  "unit": "4",
+  "discription": "Interacting systems at equilibrium, both classical (liquids) and quantum\n(spins). Phase transitions. Nonequilibrium systems: glasses, transport, time\ncorrelation functions, Onsager relations, fluctuation-dissipation theorem,\nrandom walks, Brownian motion. Applications in biophysics.",
+  "prerequsite": "CHEM 232A or consent of instructor.",
+  "formatted_pre": [
+   [
+    "CHEM 232A"
+   ]
+  ]
+ },
+ {
+  "code": "CHEM 235",
+  "title": "Molecular Spectroscopy",
+  "unit": "4",
+  "discription": "Time-dependent behavior of systems; interaction of matter with light;\nselection rules. Radiative and nonradiative processes, coherent phenomena and\nthe density matrices. Instrumentation, measurement, and interpretation.",
+  "prerequsite": "graduate standing or consent of instructor. (May not be\noffered every year.)",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 236",
+  "title": "Chemical Dynamics on Surfaces",
+  "unit": "4",
+  "discription": "Explore physical and analytical chemistry of surfaces. Topics include\nchemisorption and physisorption, sticking probabilities, adsorption isotherms,\nand passivation of semiconductors.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 239",
+  "title": "Special Topics in Chemical Physics",
+  "unit": "2 or 4",
+  "discription": "Topics of special interest will be presented. Examples include NMR, solid-\nstate chemistry, phase transitions, stochastic processes, scattering theory,\nnonequilibrium processes, tensor transformations, and advanced topics in\nstatistical mechanics, thermodynamics, and chemical kinetics. (May not be\noffered every year.)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 240",
+  "title": "Electrochemistry",
+  "unit": "4",
+  "discription": "(Cross-listed with NANO 255.) Application of electrochemical techniques to\nchemistry research. Basic electrochemical theory and instrumentation: the\ndiffusion equations, controlled potential, and current methods. Electro-\nchemical kinetics, Butler-Volmer, Marcus-Hush theories, preparative\nelectrochemistry, analytical electrochemistry, solid and polymer electrolytes,\nsemiconductor photoelectrochemistry. (May not be offered every year.)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 241",
+  "title": "Organic Nanomaterials",
+  "unit": "4",
+  "discription": "(Cross-listed with NANO 241.) This course will provide an introduction to the\nphysics and chemistry of soft matter, followed by a literature-based critical\nexamination of several ubiquitous classes of organic nanomaterials and their\ntechnological applications. Topics include self-assembled monolayers, block\ncopolymers, liquid crystals, photoresists, organic electronic materials,\nmicelles and vesicles, soft lithography, organic colloids, organic\nnanocomposites, and applications in biomedicine and food science.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 242",
+  "title": "Introduction to Glycosciences",
+  "unit": "4",
+  "discription": "The primary aim of this course is to provide an overview of fundamental facts,\nconcepts, and methods in glycoscience. The course is structured around major\nthemes in the field starting from the basic understanding of structure and\nmolecular interactions of carbohydrates, to the mechanisms of their biological\nfunctions in normal and disease states, to their applications in materials\nscience and energy generation. This course is geared to introduce students\nwith limited prior exposure to the field, supported by selected readings and\nclass notes. May be coscheduled with CHEM 142. Recommended preparation:\nundergraduate-level organic chemistry and at least one previous course in\neither general biology, molecular biology, or cell biology is strongly\nencouraged.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 246",
+  "title": "Kinetics and Mechanism",
+  "unit": "4",
+  "discription": "Methodology of mechanistic organic chemistry: integration of rate expressions,\ndetermination of rate constants, transition state theory; catalysis, kinetic\norders, isotope effects, substituent effects, solvent effects, linear free\nenergy relationship; product studies, stereochemistry; reactive intermediates;\nrapid reactions. (May not be offered every year.)",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 250",
+  "title": "Research Survival Skills",
+  "unit": "2",
+  "discription": "Course offers training in responsible conduct of research in chemistry and\nbiochemistry, as well as presentation skills, teamwork, and other survival\nskills for a career in research. Objectives include learning rules, issues,\nand resources for research ethics; understanding the value of ethical\ndecision-making; and creating a positive disposition toward learning about\nresearch ethics. The course is designed to meet federal grant requirements for\ntraining in the responsible conduct of research. (S/U grades only.)",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 251",
+  "title": "Research Conference",
+  "unit": "2",
+  "discription": "Group discussion of research activities and progress of the group members.\n(S/U grades only.)",
+  "prerequsite": "consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 252",
+  "title": "Synthetic Methods in Organic Chemistry",
+  "unit": "4",
+  "discription": "A survey of reactions of particular utility in the organic laboratory.\nEmphasis is on methods of preparation of carbon-carbon bonds and oxidation\nreduction sequences. May be coscheduled with CHEM 152.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 253",
+  "title": "Antibiotics",
+  "unit": "4",
+  "discription": "The course focuses on the discovery and development of modern antibiotics. We\nwill discuss the discovery, synthesis, medicinal chemistry, mechanism of\naction studies, and preclinical as well as clinical development of drugs that\nare currently being used in the therapy of bacterial infections. Emphasis will\nbe given to compounds approved over the last three decades and investigational\ndrugs that are in clinical trials.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 254",
+  "title": "Mechanisms of Organic Reactions",
+  "unit": "4",
+  "discription": "A qualitative approach to the mechanisms of various organic reactions;\nsubstitutions, additions, eliminations, condensations, rearrangements,\noxidations, reductions, free-radical reactions, and photochemistry. Includes\nconsiderations of molecular structure and reactivity, synthetic methods,\nspectroscopic tools, and stereochemistry. The topics emphasized will vary from\nyear to year. This is the first quarter of the advanced organic chemistry\nsequence. May be coscheduled with CHEM 154.",
+  "prerequsite": "graduate\nstanding.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 255",
+  "title": "Synthesis of Complex Molecules",
+  "unit": "4",
+  "discription": "This course discusses planning economic routes for the synthesis of complex\norganic molecules. The uses of specific reagents to control stereochemistry\nwill be outlined and recent examples from the primary literature will be\nhighlighted. (May not be offered every year.) May be coscheduled with CHEM\n155.",
+  "prerequsite": "graduate standing. CHEM 252 or 254 is strongly\nrecommended.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 256",
+  "title": "Structure and Properties of Organic Molecules",
+  "unit": "4",
+  "discription": "Introduction to the measurement and theoretical correlation of the physical\nproperties of organic molecules. Topics covered include molecular geometry,\nmolecular-orbital theory, orbital hybridization, aromaticity, chemical\nreactivity, stereochemistry, infrared and electronic spectra, photochemistry,\nand nuclear magnetic resonance. May be coscheduled with CHEM 156.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 257",
+  "title": "Bioorganic and Natural Products Chemistry",
+  "unit": "4",
+  "discription": "A comprehensive survey of modern bioorganic and natural products chemistry.\nTopics include biosynthesis of natural products, molecular recognition, and\nsmall molecule-biomolecule interactions. May be coscheduled with CHEM 157.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 258",
+  "title": "Applied Spectroscopy",
+  "unit": "4",
+  "discription": "Intensive coverage of modern spectroscopic techniques used to determine the\nstructure of organic molecules. Problem solving and interpretation of spectra\nwill be strongly emphasized. Students will be required to write and submit a\npaper that reviews a recent research publication that reports the structure\ndetermination by spectroscopic methods of natural products. May be coscheduled\nwith CHEM 158.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 259",
+  "title": "Special Topics in Organic Chemistry",
+  "unit": "2\u20134",
+  "discription": "Various advanced topics in organic chemistry. Includes but is not limited to\nadvanced kinetics, advanced spectroscopy, computational chemistry,\nheterocyclic chemistry, medicinal chemistry, organotransition metal chemistry,\npolymers, solid-phase synthesis/combinatorial chemistry, stereochemistry, and\ntotal synthesis classics.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 260",
+  "title": "Light and Electron Microscopy of Cells and Tissue",
+  "unit": "4",
+  "discription": "Students will review basic principles of light and electron microscopy and\nlearn a variety of basic and advanced microscopy methods through lecture and\nhands-on training. Each student will have his or her own project. Additional\nsupervised instrument time is available.",
+  "prerequsite": "consent of\ninstructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 262",
+  "title": "Inorganic Chemistry and NMR",
+  "unit": "4",
+  "discription": "A survey of inorganic chemistry to prepare for graduate research in the field,\nincluding a detailed introduction to nuclear magnetic resonance (NMR),\nfollowed by applications of NMR to structural and mechanistic problems in\ninorganic chemistry.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 264",
+  "title": "Structural Biology of Viruses",
+  "unit": "4",
+  "discription": "An introduction of virus structures, how they are determined, and how they\nfacilitate the various stages of the viral life cycle from host recognition\nand entry to replication, assembly, release, and transmission to uninfected\nhost cells. Students will be required to complete a term paper. (May not be\noffered every year.) Recommended: elementary biochemistry as treated in CHEM\n114A or BIBC 100 and a basic course in cell biology or consent of the\ninstructor.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 265",
+  "title": "3D Electron Microscopy of Macromolecules",
+  "unit": "4",
+  "discription": "(Cross-listed with BGGN 262.) The resolution revolution in cryo-electron\nmicroscopy has made this a key technology for the high-resolution\ndetermination of structures of macromolecular complexes, organelles, and\ncells. The basic principles of transmission electron microscopy, modern cryo-\nelectron microscopy, image acquisition, and 3D reconstruction will be\ndiscussed. Examples from the research literature using this state-of-the-art\ntechnology will also be discussed. (May not be offered every year.) May be\ncoscheduled with BIMM 162/CHEM 165. Students may not receive credit for BGGN\n262 and CHEM 265.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 270A-B-C",
+  "title": "Current Topics in Environmental Chemistry",
+  "unit": "2-2-2",
+  "discription": "Seminar series on the current topics in the field of environmental chemistry.\nEmphasis is on current research topics in atmospheric, oceanic, and geological\nenvironments.",
+  "prerequsite": "consent of instructor. (S/U grades only.)\n(May not be offered every year.)",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 271",
+  "title": "Special Topics in Analytical Chemistry",
+  "unit": "4",
+  "discription": "Topics of special interest in analytical chemistry. May include, but is not\nlimited to, chemical separation, sample introductions, mass analyzers,\nionization schemes, and current state-of-the-art applications in environmental\nand biological chemistry.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 273",
+  "title": "Atmospheric Chemistry",
+  "unit": "4",
+  "discription": "Chemical principles applied to the study of atmospheres. Atmospheric\nphotochemistry, radical reactions, chemical lifetime determinations, acid\nrain, greenhouse effects, ozone cycle, and evolution are discussed. May be\ncoscheduled with CHEM 173.",
+  "prerequsite": "graduate standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 276",
+  "title": "Numerical Analysis in Multiscale Biology",
+  "unit": "4",
+  "discription": "(Cross-listed with BENG 276.) Introduces mathematical tools to simulate\nbiological processes at multiple scales. Numerical methods for ordinary and\npartial differential equations (deterministic and stochastic), and methods for\nparallel computing and visualization. Hands-on use of computers emphasized;\nstudents will apply numerical methods in individual projects.",
+  "prerequsite": "consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 280",
+  "title": "Applied Bioinformatics",
+  "unit": "4",
+  "discription": "Publicly available databases and bioinformatics tools are now an indispensable\ncomponent of biomedical research. This course offers an introductory survey of\nselected tools and databases; the underlying concepts, the software, and\nadvice on using them. Practical exercises will be included.",
+  "prerequsite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 283",
+  "title": "Supramolecular Structure Determination Laboratory",
+  "unit": "4",
+  "discription": "A laboratory course combining hands-on mass spectrometry and bioinformatics\ntools to explore the relationship between structure and function in\nmacromolecules. Tools for peptide sequencing, analysis of post-translational\nmodification, and fragmentation analysis by mass spectrometry are examples of\nexperiments students will run.",
+  "prerequsite": "consent of instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 285",
+  "title": "Quantum Chemistry Lab",
+  "unit": "4",
+  "discription": "Course in computational methods, with focus on quantum chemistry. The course\ncontent is built on a background in mathematics and physical chemistry, and\nprovides an introduction to computational theory, ab initio methods, and\nsemiempirical methods. The emphasis is on applications and reliability. May be\ncoscheduled with CHEM 185.",
+  "prerequsite": "graduate student standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 286",
+  "title": "Molecular Simulations Lab",
+  "unit": "4",
+  "discription": "Course in computational methods, with focus on molecular simulations. The\ncourse content is built on a background in mathematics and physical chemistry\nand provides an introduction to computational theory and molecular mechanics.\nThe emphasis is on applications and reliability. May be coscheduled with CHEM\n186.",
+  "prerequsite": "graduate standing. ****",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 291",
+  "title": "Molecular Biophysics Student Seminar",
+  "unit": "2",
+  "discription": "This course has two components. First, students supported or affiliated with\nthe Molecular Biophysics Training Program present seminars on their original\nresearch. Students generally present to an audience of their peers and\ntraining program faculty. Second, students present a critical analysis of a\npaper from the current literature and discuss aspects of research design,\nrigor, and reproducibility including whether the statistical analysis is\nappropriate. May be taken for credit up to six times. ",
+  "prerequsite": "graduate standing and department approval required. This course is only open\nfor students supported or affiliated with the Molecular Biophysics Training\nProgram.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 294",
+  "title": "Organic Chemistry Seminar",
+  "unit": "2",
+  "discription": "Formal seminars or informal puzzle sessions on topics of current interest in\norganic chemistry, as presented by visiting lecturers, local researchers, or\nstudents. (S/U grades only.)",
+  "prerequsite": "advanced graduate-student\nstanding.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 295",
+  "title": "Biochemistry Seminar",
+  "unit": "2",
+  "discription": "Formal seminars or informal puzzle sessions on topics of current interest in\nbiochemistry, as presented by visiting lecturers, local researchers, or\nstudents. (S/U grades only.)",
+  "prerequsite": "advanced graduate-student\nstanding.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 296",
+  "title": "Chemical Physics Seminar",
+  "unit": "2",
+  "discription": "Formal seminars or informal sessions on topics of current interest in chemical\nphysics as presented by visiting lecturers, local researchers, or students.\n(S/U grades only.)",
+  "prerequsite": "advanced graduate-student standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 297",
+  "title": "Experimental Methods in Chemistry",
+  "unit": "4",
+  "discription": "Experimental methods and techniques involved in chemical research are\nintroduced. Hands-on experience provides training for careers in industrial\nresearch and for future thesis research. (S/U grades only.)",
+  "prerequsite": "graduate-student standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 298",
+  "title": "Special Study in Chemistry",
+  "unit": "1\u201312",
+  "discription": "An introduction to specific scientific research areas, experimental design,\nand techniques in contemporary research through independent, original projects\nunder the direction or guidance of individual faculty members. May be taken\nfor credit up to four times for a maximum of sixteen units. (S/U grades only.)",
+  "prerequsite": "first-year graduate-student standing.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 299",
+  "title": "Research in Chemistry",
+  "unit": "1\u201312",
+  "discription": "",
+  "prerequsite": "graduate-student standing and consent of instructor. (S/U\ngrades only.)",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 500",
+  "title": "Apprentice Teaching",
+  "unit": "4",
+  "discription": "Under the supervision and mentorship of a course instructor, MS and PhD\nstudents serve as teaching assistants to undergraduate laboratory and lecture\ncourses. To support teaching competency, regular meetings with the instructor\nand attendance at lectures are required. S/U grades only. May be taken for\ncredit twelve times.",
+  "prerequsite": "graduate-student standing and consent\nof instructor.",
+  "formatted_pre": []
+ },
+ {
+  "code": "CHEM 509",
+  "title": "Teaching Methods in Chemistry and Biochemistry",
+  "unit": "2",
+  "discription": "This course explores teaching strategies specific to chemistry at the college\nlevel, and promotes the development of skills for facilitating active,\nstudent-centered learning in both lecture and laboratory settings. It is\nrequired for first-time teaching assistants. S/U grades only.",
+  "prerequsite": "graduate-student standing and consent of instructor.",
+  "formatted_pre": []
+ }
+]

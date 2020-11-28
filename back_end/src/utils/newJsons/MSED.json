@@ -1,0 +1,65 @@
+[
+ {
+  "code": "MSED 290",
+  "title": "Issues in Science Education Research",
+  "unit": "4",
+  "discription": "Survey of recent literature highlighting critical issues in science education research. Specific focus on research in biology education, chemistry education, and physics education. Theoretical perspectives and research methodology (both qualitative and quantitative) used to understand learning will be discussed.",
+  "prerequsite": "admission to the Joint Doctoral Program in Mathematics and Science Education or a master's degree in biology, chemistry/biochemistry, mathematics, or physics with consent of instructor."
+ },
+ {
+  "code": "MSED 294",
+  "title": "Teaching Practicum",
+  "unit": "4",
+  "discription": "In this course, the graduate student will teach or assist a teacher in a K\u201312 setting. The graduate student will have the mentorship of the classroom teacher as well as the supervision of an MSED faculty member.",
+  "prerequsite": "admission to the Joint Doctoral Program in Mathematics and Science Education. (S/U grades only.)"
+ },
+ {
+  "code": "MSED 295",
+  "title": "MSED Orientation Practicum",
+  "unit": "1\u20133",
+  "discription": "Each practicum lasts five weeks and is designed to inform students about a faculty member's research program. Assignment as a research assistant may be used as one practicum. This course should be taken during the first year. May be taken for credit three times.",
+  "prerequsite": "admission to MSED Joint Doctoral Program. (S/U grades only.)"
+ },
+ {
+  "code": "MSED 296A",
+  "title": "Theories and Applications of Mathematics and Science Education",
+  "unit": "4",
+  "discription": "The course is designed to cover several major themes in mathematics and science education. It will address theories and applications of cognition, teaching and learning, and curriculum, with particular emphasis on international perspectives. This is a three-quarter sequence.",
+  "prerequsite": "admission to the Joint Doctoral Program in Mathematics and Science Education or a master's degree in biology, chemistry/biochemistry, mathematics, or physics with consent of instructor."
+ },
+ {
+  "code": "MSED 296B",
+  "title": "Theories and Applications of Mathematics and Science Education",
+  "unit": "4",
+  "discription": "The course is designed to cover several major themes in mathematics and science education. It will address theories and applications of cognition, teaching and learning, and curriculum, with particular emphasis on international perspectives. This is a three-quarter sequence.",
+  "prerequsite": "admission to the Joint Doctoral Program in Mathematics and Science Education or a master's degree in biology, chemistry/biochemistry, mathematics, or physics with consent of instructor. MSED 296A must be taken before MSED 296B."
+ },
+ {
+  "code": "MSED 296C",
+  "title": "Theories and Applications of Mathematics and Science Education",
+  "unit": "4",
+  "discription": "The course is designed to cover several major themes in mathematics and science education. It will address theories and applications of cognition, teaching and learning, and curriculum, with particular emphasis on international perspectives. This is a three quarter sequence.",
+  "prerequsite": "admission to the Joint Doctoral Program in Mathematics and Science Education or a master's degree in biology, chemistry/biochemistry, mathematics, or physics with consent of instructor. MSED 296B must be taken before MSED 296C."
+ },
+ {
+  "code": "MSED 297",
+  "title": "Special Topics in Math and Science Education",
+  "unit": "1\u20134",
+  "discription": "Study of special topics in mathematics or science education under direction of a faculty member.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "MSED 298",
+  "title": "Research Project",
+  "unit": "2\u201312",
+  "discription": "Students will work on an independent research project under the supervision of MSED faculty.",
+  "prerequsite": null
+ },
+ {
+  "code": "MSED 299",
+  "title": "Reading and Research",
+  "unit": "1\u201312",
+  "discription": "Students will do independent study and research in preparation of their doctoral dissertation under the supervision of MSED faculty.",
+  "prerequsite": null
+ }
+]

@@ -1,0 +1,44 @@
+[
+ {
+  "code": "CONT 1",
+  "title": "CI: The University in Society",
+  "unit": "4",
+  "discription": "Overview of the history and role of higher education in American society, including a focus on the relationship between society and institutions of higher learning. The course utilizes an interdisciplinary, multicultural perspective reflecting the diversity of the university. Summer Session only.",
+  "prerequsite": null
+ },
+ {
+  "code": "CONT 68",
+  "title": "Disability, Race, and Diversity",
+  "unit": "4",
+  "discription": "This course will examine disability in the case of individuals with an intellectual or physical disability. Faced with ableism, intentional or unintentional, people with disabilities often experience difficulties in society. Using ableism provides an effective way of addressing ableist discrimination. The course will develop students' awareness of the challenges of disability in current society. Winter quarter only.",
+  "prerequsite": null
+ },
+ {
+  "code": "CONT 150A",
+  "title": "College Academic Mentor Program",
+  "unit": "4",
+  "discription": "The College Academic Mentor Program introduces students to the aspects of college advising at a local high school. Students will work with a diverse student population, focusing on low-income, first-generation students that are historically underrepresented at schools of higher education. Students will engage in both a training workshop and a field placement program. (P/NP grades only.)",
+  "prerequsite": null
+ },
+ {
+  "code": "CONT 150B",
+  "title": "College Academic Mentor Program Field Study",
+  "unit": "2",
+  "discription": "CAMP students continue service learning in underserved local communities by working as paraprofessionals mentoring high school students to prepare for college application and attendance under the guidance of school counselors and the instructor. May be taken for credit two times.",
+  "prerequsite": "CONT 150A. (P/NP grades only.)"
+ },
+ {
+  "code": "CONT 196",
+  "title": "Contemporary Issues Workshop",
+  "unit": "2",
+  "discription": "A workshop for potential discussion leaders in the Contemporary Issues Program. Students will investigate topics for discussion and methods of presentation and inquiry. Participating in the workshop does not guarantee selection as discussion leader. (P/NP grades only.)",
+  "prerequsite": null
+ },
+ {
+  "code": "CONT 198",
+  "title": "Group Studies in Contemporary Issues",
+  "unit": "2 or 4",
+  "discription": "Group studies, readings, projects, and discussions in areas of contemporary concern. Course is set up so that students may work together as a group in an area of contemporary concern whereby the group emphasis would be more beneficial and constructive than individual studies. May be taken for credit three times for a maximum of twelve units.",
+  "prerequsite": "department approval required. (P/NP grades only.)"
+ }
+]

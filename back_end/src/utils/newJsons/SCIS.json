@@ -1,0 +1,135 @@
+[
+ {
+  "code": "ANTH 227",
+  "title": "Living in an Emotional World",
+  "unit": "4",
+  "discription": "This course examines the relationship between culture and emotions. It thinks about emotions as sources of knowledge, but also historicizes the delegitimization of emotions in social science and other disciplines. Each week, we will explore one emotion, including anger, shame, and hope.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "ANTH 267",
+  "title": "Decolonizing Ethnography: Ethics, Politics, and Praxis",
+  "unit": "4",
+  "discription": "Despite being foundational to the discipline of anthropology, ethnographic methods are often mystifying to graduate students. Students are expected to simply go into their respective field sites armed with a notebook, voice recorder, and hope. Drawing on feminist and decolonial epistemologies, we will examine, critique, and reconstruct ethnography's dilemmas, changing forms, and ethical stakes as we understand it as a particular mode of writing and representation.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "COGR 201D",
+  "title": "Historical Methods for Communication Research",
+  "unit": "4",
+  "discription": "Different approaches to conducting historical research in communication. Such approaches may include the social history of communication technology; structuralist and poststructuralist accounts of language, media, and collective memory; and new historicist treatments of cultural history. Sources, documentation, and the nature of argument from historical evidence are emphasized.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "COGR 201M",
+  "title": "Content Analysis",
+  "unit": "4",
+  "discription": "History uses methodology of quantitative analysis of media content. Includes conceptual issues concerning the quantification of meaning and practical procedures for coding and data analysis. Students read examples of studies using content analysis and carry out their own pilot analyses.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "COGR 243",
+  "title": "Media Technologies",
+  "unit": "4",
+  "discription": "Media technologies from books to electronic media. Consideration of both technological design processes and shifting uses of media. Reflection on media and broader patterns of technological innovation. Attention to the distinctive role of media in technological change.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "COGR 275",
+  "title": "Topics in Communication",
+  "unit": "4",
+  "discription": "Specialized study in communication, with topics to be determined by the instructor for any given quarter.",
+  "prerequsite": null
+ },
+ {
+  "code": "HIGR 206",
+  "title": "Histories of the Body",
+  "unit": "4",
+  "discription": "Historical topics related to the human body as a target of regulation, a site for the production of knowledge, the locus of an identity shaped by race, gender, and sexuality, and/or in terms of movement across geopolitical boundaries.",
+  "prerequsite": null
+ },
+ {
+  "code": "HIGR 236A-B",
+  "title": "Seminar in History of Science",
+  "unit": "4-4",
+  "discription": "A two-quarter research seminar, comprising intensive study of a specific topic in the history of science. The first quarter will be devoted to readings and discussions; the second chiefly to the writing of individual research papers. The topic varies from year to year, and students may repeat the course for credit. (IP grade to be awarded the first quarter; final grade will be given at the end of the second quarter.)",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "HISC 163",
+  "title": "History, Science, and Politics of Climate Change",
+  "unit": "4",
+  "discription": "The complex historical development of human understanding of global climate change, including key scientific work, and the cultural dimensions of proof and persuasion. Special emphasis on the differential political acceptance of the scientific evidence in the U.S. and the world. Graduate students are required to submit an additional paper.",
+  "prerequsite": "upper-division or graduate standing; department stamp required."
+ },
+ {
+  "code": "HISC 167",
+  "title": "Gender and Science",
+  "unit": "4",
+  "discription": "Why have women been traditionally excluded from science? How has this affected scientific knowledge? How have scientists constructed gendered representations not only of women, but also of science and nature? We will address these questions from perspectives including history, philosophy, and psychoanalytic theory.",
+  "prerequsite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "HISC 173",
+  "title": "Seminar on Darwin and Darwinisms",
+  "unit": "4",
+  "discription": "Examines evolutionary theory before Darwin, the development of the theory of natural selection, the ongoing challenge from Lamarckism, nineteenth-century social Darwinism, the emergence of the neo-Darwinist synthesis, and the recent controversies over evolutionary psychology and creationism. Graduate students are expected to submit an additional paper.",
+  "prerequsite": "upper- division or graduate standing and department stamp."
+ },
+ {
+  "code": "HISC 180",
+  "title": "Science and Public Policy",
+  "unit": "4",
+  "discription": "This course will explore the evolution of the institutions, ideologies, procedures, standards, and expertise that modern democratic societies have used in applying science to generate and legitimate public policy. Graduate students are required to submit an additional paper.",
+  "prerequsite": "upper- division or graduate standing and department stamp required."
+ },
+ {
+  "code": "PHIL 204A",
+  "title": "Core Course in Philosophy of Science",
+  "unit": "4",
+  "discription": "An introduction to one or more central problems in the philosophy of science, or in the philosophy of one of the particular sciences, such as the nature of confirmation and explanation, the nature of scientific knowledge, reductionism, the unity of science, or realism and antirealism. May be taken for credit three times with changed content.",
+  "prerequsite": null
+ },
+ {
+  "code": "PHIL 245",
+  "title": "Philosophy of Science",
+  "unit": "4",
+  "discription": "This seminar will cover current books and theoretical issues in the philosophy of science. May be taken for credit seven times with changed content.",
+  "prerequsite": null
+ },
+ {
+  "code": "PHIL 280",
+  "title": "Philosophy of Science Topics and Methods",
+  "unit": "1\u20132",
+  "discription": "This course meets weekly to discuss recent books or articles in philosophy of science. The reading is designed both for students doing active research in the field and for those seeking to gain some familiarity with it. Can be taken nine times for credit with changed content.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "PHIL 285",
+  "title": "Seminar on Special Topics",
+  "unit": "4",
+  "discription": "(This course is only applicable for Science Studies credit when topic is Philosophy of Science.) Focused examination of specific problems or themes in some area of philosophy. May be taken for credit nine times with changed content.",
+  "prerequsite": null
+ },
+ {
+  "code": "SOCG 238",
+  "title": "Survey of the Sociology of Scientific Knowledge",
+  "unit": "4",
+  "discription": "An introduction to some enduring topics in the sociology of scientific knowledge and to some resources for addressing them. Attention is drawn to problems of accounting for scientific order and change, and to recurrent debates over the proper method for sociological accounts of science.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "SOCG 247",
+  "title": "Madness and Society",
+  "unit": "4",
+  "discription": "An examination of the changing Western responses from the age of Bedlam to the age of Prozac. Topics include: the rise and decline of the total institution; the emergence of psychiatry; changing cultural meanings of madness; and the therapeutics of mental disorder.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "SOCG 284",
+  "title": "Contemporary Biomedicine",
+  "unit": "4",
+  "discription": "Develops central themes in medical sociology in order to understand twentieth- and twenty-first-century medical practice and research. Topics include authority and expertise; health inequalities; managed care; health activism; biomedical knowledge production; and the construction of medical objects and subjects.",
+  "prerequsite": "graduate standing."
+ }
+]

@@ -1,0 +1,1122 @@
+[
+ {
+  "code": "CSE 3",
+  "title": "Fluency in Information Technology",
+  "unit": "4",
+  "discription": "Introduces the concepts and skills necessary to effectively use information technology. Includes basic concepts and some practical skills with computer and networks.",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 4GS",
+  "title": "Mathematical Beauty in Rome",
+  "unit": "4",
+  "discription": "Exploration of topics in mathematics and engineering as they relate to classical architecture in Rome, Italy. In depth geometrical analysis and computer modeling of basic structures (arches, vaults, domes), and on-site studies of the Colosseum, Pantheon, Roman Forum, and St. Peter\u2019s Basilica.",
+  "prerequsite": "MATH 10A or MATH 20A; department approval, and corequisite of CSE 6GS."
+ },
+ {
+  "code": "CSE 6GS",
+  "title": "Mathematical Beauty in Rome Lab",
+  "unit": "4",
+  "discription": "Companion course to CSE 4GS where theory is applied and lab experiments are carried out \u201cin the field\u201d in Rome, Italy. For final projects, students will select a complex structure (e.g., the Colosseum, the Pantheon, St. Peter\u2019s, etc.) to analyze and model, in detail, using computer-based tools.",
+  "prerequsite": "MATH 10A or MATH 20A; department approval, and corequisite of CSE 4GS."
+ },
+ {
+  "code": "CSE 5A",
+  "title": "Introduction to Programming I",
+  "unit": "4",
+  "discription": "Introduction to algorithms and top-down problem solving. Introduction to the C language, including functions, arrays, and standard libraries. Basic skills for using a PC graphical user interface operating system environment. File maintenance utilities are covered. A student may not receive credit for CSE 5A after receiving credit for CSE 11 or CSE 8B. Recommended preparation: A familiarity with high school-level algebra is expected, but this course assumes no prior programming knowledge.",
+  "prerequsite": "restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 8A",
+  "title": "Introduction to Computer Science: Java I",
+  "unit": "4",
+  "discription": "Introductory course for students interested in computer science. Fundamental concepts of applied computer science using media computation. Exercises in the theory and practice of computer science. Hands-on experience with designing, editing, compiling, and executing programming constructs and applications. CSE 8A is part of a two-course sequence (CSE 8A and CSE 8B) that is equivalent to CSE 11. Students should take CSE 8B to complete this track. Formerly offered as corequisite courses CSE 8A plus 8AL. Students who have taken CSE 8B or CSE 11 may not take CSE 8A. Recommended preparation: No prior programming experience is assumed, but comfort using computers is helpful. Students should consult the [\u201cCSE Course Placement Advice](http://cse.ucsd.edu/node/43)\u201d web page for assistance in choosing which CSE course to take first.",
+  "prerequsite": "restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 8B",
+  "title": "Introduction to Computer Science: Java II",
+  "unit": "4",
+  "discription": "Continuation of the Java language. Continuation of programming techniques. More on inheritance. Exception handling. CSE 8B is part of a two-course sequence (CSE 8A and CSE 8B) that is equivalent to CSE 11. Students should consult the [\u201cCSE Course Placement Advice\u201d](http://cse.ucsd.edu/node/43) web page for assistance in choosing which CSE course to take first. Students may not receive credit for CSE 8B and CSE 11.",
+  "prerequsite": "CSE 8A; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 12",
+  "title": "Basic Data Structures and Object-Oriented Design",
+  "unit": "4",
+  "discription": "Use and implementation of basic data structures including linked lists, stacks, and queues. Use of advanced structures such as binary trees and hash tables. Object-oriented design including interfaces, polymorphism, encapsulation, abstract data types, pre-/post-conditions. Recursion. Uses Java and Java Collections.",
+  "prerequsite": "CSE 8B or CSE 11, and concurrent enrollment with CSE 15L; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 15L",
+  "title": "Software Tools and Techniques Laboratory",
+  "unit": "2",
+  "discription": "Hands-on exploration of software development tools and techniques. Investigation of the scientific process as applied to software development and debugging. Emphasis is on weekly hands-on laboratory experiences, development of laboratory notebooking techniques as applied to software design.",
+  "prerequsite": "CSE 8B or CSE 11, and concurrent enrollment with CSE 12; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 20",
+  "title": "Discrete Mathematics",
+  "unit": "4",
+  "discription": "Basic discrete mathematical structures: sets, relations, functions, sequences, equivalence relations, partial orders, and number systems. Methods of reasoning and proofs: prepositional logic, predicate logic, induction, recursion, and pigeonhole principle. Infinite sets and diagonalization. Basic counting techniques; permutation and combinations. Applications will be given to digital logic design, elementary number theory, design of programs, and proofs of program correctness. Students who have completed MATH 109 may not receive credit for CSE 20. Credit not offered for both MATH 15A and CSE 20. Equivalent to MATH 15A.",
+  "prerequsite": "COGS 7 or CSE 8B or CSE 11. Prerequisite courses must have been completed with a grade of C\u2013 or better; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 21",
+  "title": "Mathematics for Algorithms and Systems",
+  "unit": "4",
+  "discription": "This course will provide an introduction to the discrete mathematical tools needed to analyze algorithms and systems. Enumerative combinatorics: basic counting principles, inclusion-exclusion, and generating functions. Matrix notation. Applied discrete probability. Finite automata.",
+  "prerequsite": "CSE 20 or MATH 15A; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 30",
+  "title": "Computer Organization and Systems Programming",
+  "unit": "4",
+  "discription": "Introduction to organization of modern digital computers\u2014understanding the various components of a computer and their interrelationships. Study of a specific architecture/machine with emphasis on systems programming in C and Assembly languages in a UNIX environment.",
+  "prerequsite": "CSE 12 and CSE 15L; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 42",
+  "title": "Building and Programming Electronic Devices",
+  "unit": "2",
+  "discription": "This course allows students to use what they learned in introductory programming courses to make things happen in the real world. Working in teams, students will first learn to program Arduino-based devices. Teams of students will design a custom device and program it to do their bidding. This course is targeted to first-year students and sophomores in engineering and science disciplines who want to practice applying what they have learned in a programming class and to have the chance to program things other than computers. Program or materials fees may apply.",
+  "prerequsite": "restricted to first-year and sophomore students; instructor approval required."
+ },
+ {
+  "code": "CSE 80",
+  "title": "UNIX Lab",
+  "unit": "2",
+  "discription": "The objective of the course is to help the programmer create a productive UNIX environment. Topics include customizing the shell, file system, shell programming, process management, and UNIX tools.",
+  "prerequsite": "CSE 8B or CSE 11."
+ },
+ {
+  "code": "CSE 86",
+  "title": "C++ for Java Programmers",
+  "unit": "2",
+  "discription": "Helps the Java programmer to be productive in the C++ programming environment. Topics include the similarities and differences between Java and C++ with special attention to pointers, operator overloading, templates, the STL, the preprocessor, and the C++ Runtime Environment.",
+  "prerequsite": "CSE 12 or consent of instructor."
+ },
+ {
+  "code": "CSE 87",
+  "title": "First-year Student Seminar",
+  "unit": "1",
+  "discription": "The First-year Student Seminar Program is designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. First-year student seminars are offered in all campus departments and undergraduate colleges, and topics vary from quarter to quarter. Enrollment is limited to fifteen to twenty students, with preference given to entering first-year students.",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 90",
+  "title": "Undergraduate Seminar",
+  "unit": "1",
+  "discription": "A seminar providing an overview of a topic of current research interest to the instructor. The goal is to present a specialized topic in computer science and engineering students. May be taken for credit three times when topics vary.",
+  "prerequsite": null
+ },
+ {
+  "code": "CSE 91",
+  "title": "Perspectives in Computer Science and Engineering",
+  "unit": "2",
+  "discription": "A seminar format discussion led by CSE faculty on topics in central areas of computer science, concentrating on the relation among them, recent developments, and future directions.",
+  "prerequsite": "majors only."
+ },
+ {
+  "code": "CSE 99",
+  "title": "Independent Study in Computer Science and Engineering",
+  "unit": "4",
+  "discription": "Independent reading or research by special arrangement with a faculty member.",
+  "prerequsite": "lower-division standing. Completion of thirty units at UC San Diego with a UC San Diego GPA of 3.0. Special Studies form required. Department stamp required. Consent of instructor and approval of the department."
+ },
+ {
+  "code": "CSE 100",
+  "title": "Advanced Data Structures",
+  "unit": "4",
+  "discription": "High-performance data structures and supporting algorithms. Use and implementation of data structures like (un)balanced trees, graphs, priority queues, and hash tables. Also, memory management, pointers, recursion. Theoretical and practical performance analysis, both average case and amortized. Uses C++ and STL. Credit not offered for both MATH 176 and CSE 100. Equivalent to MATH 176. Recommended preparation: background in C or C++ programming.",
+  "prerequsite": "CSE 12 and CSE 15L and CSE 21 or MATH 154 or MATH 184A and CSE 5A or CSE 30 or ECE 15 or MAE 9; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 101",
+  "title": "Design and Analysis of Algorithms",
+  "unit": "4",
+  "discription": "Design and analysis of efficient algorithms with emphasis of nonnumerical algorithms such as sorting, searching, pattern matching, and graph and network algorithms. Measuring complexity of algorithms, time and storage. NP-complete problems.",
+  "prerequsite": "CSE 100 or MATH 176; restricted to undergraduates. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 103",
+  "title": "A Practical Introduction to Probability and Statistics",
+  "unit": "4",
+  "discription": "Distributions over the real line. Independence, expectation, conditional expectation, mean, variance. Hypothesis testing. Learning classifiers. Distributions over R^n, covariance matrix. Binomial, Poisson distributions. Chernoff bound. Entropy. Compression. Arithmetic coding. Maximal likelihood estimation. Bayesian estimation. CSE 103 is not duplicate credit for ECE 109, ECON 120A, or MATH 183.",
+  "prerequsite": "MATH 20A-B and MATH 184A or CSE 21 or MATH 154; restricted to CS25, CS26, CS27, and CS28 majors. Other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 105",
+  "title": "Theory of Computability",
+  "unit": "4",
+  "discription": "An introduction to the mathematical theory of computability. Formal languages. Finite automata and regular expression. Push-down automata and context-free languages. Computable or recursive functions: Turing machines, the halting problem. Undecidability. Credit not offered for both MATH 166 and CSE 105. Equivalent to MATH 166.",
+  "prerequsite": "CSE 12 and CSE 15L and MATH 15A or MATH 109 or CSE 20 and MATH 184 or CSE 21 or MATH 100A or MATH 103A; restricted to students with sophomore, junior, or senior standing. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 106",
+  "title": "Discrete and Continuous Optimization",
+  "unit": "4",
+  "discription": "One frequently deals with problems in engineering, data science, business, economics, and other disciplines for which algorithmic solutions that optimize a given quantity under constraints are desired. This course is an introduction to the models, theory, methods, and applications of discrete and continuous optimization. Topics include shortest paths, flows, linear, integer, and convex programming, and continuous optimization techniques such as steepest descent and Lagrange multipliers.",
+  "prerequsite": "MATH 18 or MATH 31AH and MATH 20C or MATH 31BH and CSE 21 or DSC 40B or MATH 154 or MATH 184A."
+ },
+ {
+  "code": "CSE 107",
+  "title": "Introduction to Modern Cryptography",
+  "unit": "4",
+  "discription": "Topics include private and public-key cryptography, block ciphers, data encryption, authentication, key distribution and certification, pseudorandom number generators, design and analysis of protocols, zero-knowledge proofs, and advanced protocols. Emphasizes rigorous mathematical approach including formal definitions of security goals and proofs of protocol security.",
+  "prerequsite": "MATH 184 or CSE 21 or MATH 154) and CSE 101 and CSE 105; restricted to students within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 110",
+  "title": "Software Engineering",
+  "unit": "4",
+  "discription": "Introduction to software development and engineering methods, including specification, design, implementation, testing, and process. An emphasis on team development, agile methods, and use of tools such as IDE\u2019s, version control, and test harnesses.",
+  "prerequsite": "CSE 100; restricted to students with junior or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 112",
+  "title": "Advanced Software Engineering",
+  "unit": "4",
+  "discription": "This course will cover software engineering topics associated with large systems development such as requirements and specifications, testing and maintenance, and design. Specific attention will be given to development tools and automated support environments.",
+  "prerequsite": "CSE 110; restricted to students within the CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 113",
+  "title": "Errors, Defects, and Failures",
+  "unit": "4",
+  "discription": "Errors, resulting in defects and ultimately system failure, occur in engineering and also other areas such as medical care. The ways in which failures occur, and the means for their prevention, mitigation, and management, will be studied. Emphasis will be on software systems but also include the study of practice of other areas.",
+  "prerequsite": "CSE 12 and CSE 21."
+ },
+ {
+  "code": "CSE 118",
+  "title": "Ubiquitous Computing",
+  "unit": "4",
+  "discription": "Explores emerging opportunities enabled by cheap sensors and networked computing devices. Small research projects will be conducted in teams, culminating in project presentations at the end of the term. Section will cover material relevant to the project, such as research methods, software engineering, teamwork, and project management.",
+  "prerequsite": "any course from the following: CSE 131, CSE 132B, COGS 102C, COGS 121, COGS 184, COMT 111B, COMT 115, ECE 111, ECE 118, ECE 191, ECE 192, or ICAM 160B; or consent of instructor."
+ },
+ {
+  "code": "CSE 120",
+  "title": "Principles of Computer Operating Systems",
+  "unit": "4",
+  "discription": "Basic functions of operating systems; basic kernel structure, concurrency, memory management, virtual memory, file systems, process scheduling, security and protection.",
+  "prerequsite": "CSE 30 and CSE 101 and CSE 110; restricted to students within the CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 123",
+  "title": "Computer Networks",
+  "unit": "4",
+  "discription": "Introduction to concepts, principles, and practice of computer communication networks with examples from existing architectures, protocols, and standards with special emphasis on the internet protocols. Layering and the OSI model; physical and data link layers; local and wide area networks; datagrams and virtual circuits; routing and congestion control; internetworking. Transport protocols. Credit may not be received for both CSE 123 and ECE 158A.",
+  "prerequsite": "CSE 30 and CSE 101 and CSE 110; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 124",
+  "title": "Networked Services",
+  "unit": "4",
+  "discription": "(Renumbered from CSE 123B.) The architecture of modern networked services, including data center design, enterprise storage, fault tolerance, and load balancing. Protocol software structuring, the Transmission Control Protocol (TCP), remote procedure calls, protocols for digital audio and video communication, overlay and peer-to-peer systems, secure communication. Credit may not be received for both CSE 124 and ECE 158B. Students may not receive credit for both CSE 123B and CSE 124.",
+  "prerequsite": "CSE 30 and CSE 101 and CSE 110; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 125",
+  "title": "Software System Design and Implementation",
+  "unit": "4",
+  "discription": "Design and implementation of large, complex software systems involving multiple aspects of CSE curriculum. Emphasis is on software system design applied to a single, large group project with close interaction with instructor.",
+  "prerequsite": "senior standing with substantial programming experience, and consent of instructor. Department stamp required."
+ },
+ {
+  "code": "CSE 127",
+  "title": "Introduction to Computer Security",
+  "unit": "4",
+  "discription": "Topics include basic cryptography, security/threat analysis, access control, auditing, security models, distributed systems security, and theory behind common attack and defense techniques. The class will go over formal models as well as the bits and bytes of security exploits.",
+  "prerequsite": "CSE 21 or MATH 154 or MATH 184A) and (CSE 120 or CSE 123 or CSE 124); restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 130",
+  "title": "Programming Languages: Principles and Paradigms",
+  "unit": "4",
+  "discription": "(Formerly CSE 173.) Introduction to programming languages and paradigms, the components that comprise them, and the principles of language design, all through the analysis and comparison of a variety of languages (e.g., Pascal, Ada, C++, PROLOG, ML.) Will involve programming in most languages studied.",
+  "prerequsite": "CSE 12 and (CSE 100 or MATH 176) and (CSE 105 or MATH 166); restricted to students within the CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 131",
+  "title": "Compiler Construction",
+  "unit": "4",
+  "discription": "(Formerly CSE 131B.) Introduction to the compilation of programming languages, practice of lexical and syntactic analysis, symbol tables, syntax-directed translation, type checking, code generation, optimization, interpretation, and compiler structure. (Students may receive repeat credit for CSE 131A and CSE 131B by completing CSE 131.)",
+  "prerequsite": "CSE 100 and CSE 105 and CSE 130; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 132A",
+  "title": "Database System Principles",
+  "unit": "4",
+  "discription": "Basic concepts of databases, including data modeling, relational databases, query languages, optimization, dependencies, schema design, and concurrency control. Exposure to one or several commercial database systems. Advanced topics such as deductive and object-oriented databases, time allowing.",
+  "prerequsite": "CSE 100; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 132B",
+  "title": "Database Systems Applications",
+  "unit": "4",
+  "discription": "Design of databases, transactions, use of trigger facilities and datablades. Performance measuring, organization of index structures.",
+  "prerequsite": "CSE 132A; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 134B",
+  "title": "Web Client Languages",
+  "unit": "4",
+  "discription": "Design and implementation of interactive World Wide Web clients using helper applications and plug-ins. The main language covered will be Java.",
+  "prerequsite": "CSE 100; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 135",
+  "title": "Online Database Analytics Applications",
+  "unit": "4",
+  "discription": "Database, data warehouse, and data cube design; SQL programming and querying with emphasis on analytics; online analytics applications, visualizations, and data exploration; performance tuning.",
+  "prerequsite": "CSE 100 or MATH 176; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 136",
+  "title": "Enterprise-Class Web Applications",
+  "unit": "4",
+  "discription": "Design and implementation of very large-scale, web-based applications. Topics covered typically include modeling organizational needs, design and revision management, J2EE or similar software platforms, web server and application server functionality, reuse of object-oriented components, model-view- controller and other design patterns, clustering, load-balancing, fault- tolerance, authentication, and usage accounting.",
+  "prerequsite": "CSE 135."
+ },
+ {
+  "code": "CSE 140",
+  "title": "Components and Design Techniques for Digital Systems",
+  "unit": "4",
+  "discription": "Design of Boolean logic and finite state machines; two-level, multilevel combinational logic design, combinational modules and modular networks, Mealy and Moore machines, analysis and synthesis of canonical forms, sequential modules.",
+  "prerequsite": "CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140L must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits"
+ },
+ {
+  "code": "CSE 140L",
+  "title": "Digital Systems Laboratory",
+  "unit": "2",
+  "discription": "Implementation with computer-aided design tools for combinational logic minimization and state machine synthesis. Hardware construction of a small digital system.",
+  "prerequsite": "CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140 must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 141",
+  "title": "Introduction to Computer Architecture",
+  "unit": "4",
+  "discription": "Introduction to computer architecture. Computer system design. Processor design. Control design. Memory systems.",
+  "prerequsite": "CSE 30 and CSE 140 and CSE 140L; CSE 141L should be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 141L",
+  "title": "Project in Computer Architecture",
+  "unit": "2",
+  "discription": "Hands-on computer architecture project aiming to familiarize students with instruction set architecture, and design of process. Control and memory systems.",
+  "prerequsite": "CSE 30 and CSE 140 and CSE 140L; CSE 141 should be taken concurrently; restricted to CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 143",
+  "title": "Microelectronic System Design",
+  "unit": "4",
+  "discription": "VLSI process technologies; circuit characterization; logic design styles; clocking strategies; computer-aided design tools; subsystem design; design case studies. System design project from hardware description, logic synthesis, physical layout to design verification.",
+  "prerequsite": "CSE 140 or CSE 170A or ECE 81."
+ },
+ {
+  "code": "CSE 145",
+  "title": "Embedded System Design Project",
+  "unit": "4",
+  "discription": "Project class building an embedded computing system. Learn fundamental knowledge of microcontrollers, sensors, and actuators. Introduction to the hardware and software tools to build project in a team environment and end-to- end system building.",
+  "prerequsite": "instructor approval required, by application only."
+ },
+ {
+  "code": "CSE 148",
+  "title": "Advanced Processor Architecture Design Project",
+  "unit": "4",
+  "discription": "Students will use hardware description language tools to add advanced architectural features to a basic processor design. These features may include pipelining, superscalar execution, branch prediction, and advanced cache features. Designs will be implemented in programmable logic devices.",
+  "prerequsite": "CSE 141 and CSE 141L; restricted to students with sophomore, junior, or senior standing. Graduate students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 150B",
+  "title": "Introduction to Artificial Intelligence: Search and Reasoning",
+  "unit": "4",
+  "discription": "The course will introduce important ideas and algorithms in search and reasoning and demonstrate how they are used in practical AI applications. Topics include ",
+  "prerequsite": null
+ },
+ {
+  "code": "CSE 151A",
+  "title": "Introduction to Machine Learning",
+  "unit": "4",
+  "discription": "Broad introduction to machine learning. The topics include some topics in supervised learning, such as k-nearest neighbor classifiers, decision trees, boosting, and perceptrons; and topics in unsupervised learning, such as k-means and hierarchical clustering. In addition to the actual algorithms, the course focuses on the principles behind the algorithms. Students may not receive credit for both CSE 151A and COGS 188, nor may they receive credit for both CSE 151A and CSE 151.",
+  "prerequsite": "CSE 12 or DSC 40B) and (CSE 15L or DSC 80) and (CSE 103 or MATH 181A or ECE 109 or MATH 183 or ECON 120A) and (MATH 18 or MATH 31AH); restricted to students within the CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits. ."
+ },
+ {
+  "code": "CSE 151B",
+  "title": "Deep Learning",
+  "unit": "4",
+  "discription": "(Formerly CSE 154.) This course covers the fundamentals of neural networks. We introduce linear regression, logistic regression, perceptrons, multilayer networks and back-propagation, convolutional neural networks, recurrent networks, and deep networks trained by reinforcement learning. Students may receive credit for one of the following: CSE 151B, CSE 154, or COGS 181. ",
+  "prerequsite": "MATH 31BH or MATH 20C) and (ECON 120A or ECE 109 or CSE 103 or MATH 181A or MATH 183); restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 152",
+  "title": "Introduction to Computer Vision",
+  "unit": "4",
+  "discription": "The goal of computer vision is to compute scene and object properties from images and video. This introductory course includes feature detection, image segmentation, motion estimation, object recognition, and 3-D shape reconstruction through stereo, photometric stereo, and structure from motion.",
+  "prerequsite": "MATH 18 or MATH 20F or MATH 31AH and CSE 100 or DSC 40B or MATH 176 and CSE 101 or DSC 80 or MATH 188; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 152A",
+  "title": "Introduction to Computer Vision I",
+  "unit": "4",
+  "discription": "This course provides a broad introduction to the foundations, algorithms, and applications of computer vision. It introduces classical models and contemporary methods, from image formation models to deep learning, to address problems of 3-D reconstruction and object recognition from images and video. Topics include filtering, feature detection, stereo vision, structure from motion, motion estimation, and recognition. Programming assignments will be in Python. Students may not receive credit for both CSE 152A and CSE 152.",
+  "prerequsite": "MATH 18 or MATH 31AH) and (CSE 12 or DSC 30) and (CSE 15L or DSC 80); Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 152B",
+  "title": "Introduction to Computer Vision II",
+  "unit": "4",
+  "discription": "This course covers advanced topics needed to apply computer vision in industry or follow current research. Example topics include real-time systems for 3D computer vision, machine learning tools such as support-vector machine (SVM) and boosting for image classification, and deep neural networks for object detection and semantic segmentation.",
+  "prerequsite": "CSE 152A or CSE 152; Python programming experience recommended; restricted to students within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 156",
+  "title": "Statistical Natural Language Processing",
+  "unit": "4",
+  "discription": "Natural language processing (NLP) is a field of AI which aims to equip computers with the ability to intelligently process natural (human) language. This course will explore statistical techniques for the automatic analysis of natural language data. Specific topics covered include probabilistic language models, which define probability distributions over text passages; text classification; sequence models; parsing sentences into syntactic representations; and machine translation.",
+  "prerequsite": "MATH 20C or MATH 31BH and MATH 18 or MATH 31AH and COGS 118A or CSE 150 or CSE 151; restricted to students with sophomore, junior, or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 158",
+  "title": "Recommender Systems and Web Mining",
+  "unit": "4",
+  "discription": "Current methods for data mining and predictive analytics. Emphasis is on studying real-world data sets, building working systems, and putting current ideas from machine learning research into practice.",
+  "prerequsite": "CSE 12 or DSC 40B) and (CSE 15L or DSC 80) and (CSE 103 or ECE 109 or MATH 181A or ECON 120A or MATH 183); restricted to CS25, CS26, CS27, CS28, EC26, and DS25 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 160",
+  "title": "Introduction to Parallel Computing",
+  "unit": "4",
+  "discription": "Introduction to high performance parallel computing: parallel architecture, algorithms, software, and problem-solving techniques. Areas covered: Flynn\u2019s taxonomy, processor-memory organizations, shared and nonshared memory models: message passing and multithreading, data parallelism; speedup, efficiency and Amdahl's law, communication and synchronization, isoefficiency and scalability. Assignments given to provide practical experience.",
+  "prerequsite": "CSE 100 or MATH 176; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits"
+ },
+ {
+  "code": "CSE 163",
+  "title": "Advanced Computer Graphics",
+  "unit": "4",
+  "discription": "Topics include an overview of many aspects of computer graphics, including the four main computer graphics areas of animation, modeling, rendering, and imaging. Programming projects in image and signal processing, geometric modeling, and real-time rendering.",
+  "prerequsite": "CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 164",
+  "title": "GPU Programming",
+  "unit": "4",
+  "discription": "Principles and practices of programming graphics processing units (GPUs). GPU architecture and hardware concepts, including memory and threading models. Modern hardware-accelerated graphics pipeline programming. Application of GPU programming to rendering of game graphics, including physical, deferring, and global lighting models. Recommended preparation: _Practical Rendering and Computation with Direct3D 11_ by Jason Zink, Matt Pettineo, and Jack Hoxley.",
+  "prerequsite": "CSE 167."
+ },
+ {
+  "code": "CSE 165",
+  "title": "3-D User Interaction",
+  "unit": "4",
+  "discription": "This course focuses on design and evaluation of three-dimensional (3-D) user interfaces, devices, and interaction techniques. The course consists of lectures, literature reviews, and programming assignments. Students will be expected to create interaction techniques for several different 3-D interaction devices. Program or materials fees may apply.",
+  "prerequsite": "CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 166",
+  "title": "Image Processing",
+  "unit": "4",
+  "discription": "Principles of image formation, analysis, and representation. Image enhancement, restoration, and segmentation; stochastic image models. Filter design, sampling, Fourier and wavelet transforms. Selected applications in computer graphics and machine vision.",
+  "prerequsite": "DSC 40B or MATH 18 or MATH 31AH or MATH 20F) and (CSE 100 or DSC 80 or MATH 176); restricted to sophomore, junior, and senior students. Graduate students allowed as space permits."
+ },
+ {
+  "code": "CSE 167",
+  "title": "Computer Graphics",
+  "unit": "4",
+  "discription": "Representation and manipulation of pictorial data. Two-dimensional and three- dimensional transformations, curves, surfaces. Projection, illumination, and shading models. Raster and vector graphic I/O devices; retained-mode and immediate-mode graphics software systems and applications. Students may not receive credit for both MATH 155A and CSE 167.",
+  "prerequsite": "CSE 100 or MATH 176; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 168",
+  "title": "Computer Graphics II: Rendering",
+  "unit": "4",
+  "discription": "Weekly programming assignments that will cover graphics rendering algorithms. During the course the students will learn about ray tracing, geometry, tessellation, acceleration structures, sampling, filtering, shading models, and advanced topics such as global illumination and programmable graphics hardware.",
+  "prerequsite": "CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 169",
+  "title": "Computer Animation",
+  "unit": "4",
+  "discription": "Advanced graphics focusing on the programming techniques involved in computer animation. Algorithms and approaches for both character animation and physically based animation. Particular subjects may include skeletons, skinning, key framing, facial animation, inverse kinematics, locomotion, motion capture, video game animation, particle systems, rigid bodies, clothing, and hair. Recommended preparation: An understanding of linear algebra.",
+  "prerequsite": "CSE 167; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+ },
+ {
+  "code": "CSE 170",
+  "title": "Interaction Design",
+  "unit": "5",
+  "discription": "Introduces fundamental methods and principles for designing, implementing, and evaluating user interfaces. Topics include user-centered design, rapid prototyping, experimentation, direct manipulation, cognitive principles, visual design, social software, software tools. Learn by doing: Work with a team on a quarter-long design project. Cross-listed with COGS 120. Students may not receive credit for COGS 120 and CSE 170. Recommended preparation: Basic familiarity with HTML.",
+  "prerequsite": "CSE 11 or CSE 8B and COGS 187A or COGS 1 or DSGN 1."
+ },
+ {
+  "code": "CSE 176A",
+  "title": "Health Care Robotics",
+  "unit": "4",
+  "discription": "Robotics has the potential to improve well-being for millions of people and support caregivers and to aid the clinical workforce. We bring together engineers, clinicians, and end-users to explore this exciting new field. The course is project-based, interactive, and hands-on, and involves working closely with stakeholders to develop prototypes that solve real-world problems. Students will explore the latest research in health care robotics, human-robot teaming, and health design. Program or materials fees may apply.",
+  "prerequsite": "CSE 110 or CSE 170 or COGS 120; restricted to sophomore, junior, and senior students."
+ },
+ {
+  "code": "CSE 176E",
+  "title": "Robot Systems Design and Implementation",
+  "unit": "4",
+  "discription": "End-to-end system design of embedded electronic systems including PCB design and fabrication, software control system development, and system integration. Program or materials fees may apply. May be coscheduled with CSE 276E.",
+  "prerequsite": "restricted to junior and senior students; instructor approval required."
+ },
+ {
+  "code": "CSE 180",
+  "title": "Biology Meets Computing",
+  "unit": "4",
+  "discription": "Topics include an overview of various aspects of bioinformatics and will simultaneously introduce students to programming in Python. The assessments in the course represent various programming challenges and include solving diverse biological problems using popular bioinformatics tools. Students may not receive credit for CSE 180 and CSE 180R.",
+  "prerequsite": "BILD 1."
+ },
+ {
+  "code": "CSE 180R",
+  "title": "Biology Meets Computing",
+  "unit": "4",
+  "discription": "Topics include an overview of various aspects of bioinformatics and will simultaneously introduce students to programming in Python. The assessments in the course represent various programming challenges and include solving diverse biological problems using popular bioinformatics tools. This will be a fully online class based on extensive educational materials and online educational platform Stepik developed with HHMI, NIH, and ILTI support. Students may not receive credit for CSE 180 and CSE 180R.",
+  "prerequsite": "BILD 1 or BILD 4 or CSE 3 or CSE 7 or CSE 8A or CSE 8B or CSE 11."
+ },
+ {
+  "code": "CSE 181",
+  "title": "Molecular Sequence Analysis",
+  "unit": "4",
+  "discription": "This course covers the analysis of nucleic acid and protein sequences, with an emphasis on the application of algorithms to biological problems. Topics include sequence alignments, database searching, comparative genomics, and phylogenetic and clustering analyses. Pairwise alignment, multiple alignment, DNS sequencing, scoring functions, fast database search, comparative genomics, clustering, phylogenetic trees, gene finding/DNA statistics. Students may receive credit for one of the following: CSE 181, BIMM 181, or BENG 181.",
+  "prerequsite": "CSE 100 or MATH 176) and (CSE 101) and (BIMM 100 or CHEM 114C); restricted to BE28, BI34, CH37, and CS27 majors. CSE 181 is cross- listed with BIMM 181 and BENG 181."
+ },
+ {
+  "code": "CSE 182",
+  "title": "Biological Databases",
+  "unit": "4",
+  "discription": "This course provides an introduction to the features of biological data, how those data are organized efficiently in databases, and how existing data resources can be utilized to solve a variety of biological problems. Object oriented databases, data modeling and description. Survey of current biological database with respect to above, implementation of a database on a biological topic. Cross-listed with BIMM 182 and BENG 182. Students may receive credit for one of the following: CSE 182, BENG 182, or BIMM 182.",
+  "prerequsite": "CSE 100 or MATH 176; restricted to BE28, BI34, CH37, and CS27 majors."
+ },
+ {
+  "code": "CSE 184",
+  "title": "Computational Molecular Biology",
+  "unit": "4",
+  "discription": "This advanced course covers the application of machine learning and modeling techniques to biological systems. Topics include gene structure, recognition of DNA and protein sequence patterns, classification, and protein structure prediction. Pattern discovery, Hidden Markov models/support victor machines/neural network/profiles. Protein structure prediction, functional characterization or proteins, functional genomics/proteomics, metabolic pathways/gene networks. Cross-listed with BIMM 184/BENG 184/CHEM 184.",
+  "prerequsite": "BIMM 181 or BENG 181 or CSE 181, BENG 182 or BIMM 182 or CSE 182 or CHEM 182. Bioinformatics majors only."
+ },
+ {
+  "code": "CSE 185",
+  "title": "Advanced Bioinformatics Laboratory",
+  "unit": "4",
+  "discription": "This course emphasizes the hands-on application of bioinformatics to biological problems. Students will gain experience in the application of existing software, as well as in combining approaches to answer specific biological questions. Topics include sequence alignment, fast database search, comparative genomics, expression analysis, computational proteomics, genome- wide association studies, next-generation sequencing, genomics, and big data. Students may not receive credit for CSE 185 and BIMM 185. Restricted to CS27, BI34, BE28, and CH37 major codes.",
+  "prerequsite": "CSE 11 or CSE 8B and CSE 12 and MATH 20C or MATH 31BH and BILD 1 and BIEB 123 or BILD 4 or BIMM 101 or CHEM 109."
+ },
+ {
+  "code": "CSE 190",
+  "title": "Topics in Computer Science and Engineering",
+  "unit": "4",
+  "discription": "Topics of special interest in computer science and engineering. Topics may vary from quarter to quarter. May be repeated for credit with the consent of instructor.",
+  "prerequsite": "consent of instructor. Department stamp required."
+ },
+ {
+  "code": "CSE 191",
+  "title": "Seminar in CSE",
+  "unit": "1\u20134",
+  "discription": "A seminar course on topics of current interest. Students, as well as, the instructor will be actively involved in running the course/class. This course cannot be counted toward a technical elective.",
+  "prerequsite": "consent of instructor. Department stamp required."
+ },
+ {
+  "code": "CSE 192",
+  "title": "Senior Seminar in Computer Science and Engineering",
+  "unit": "1",
+  "discription": "The Senior Seminar Program is designed to allow senior undergraduates to meet with faculty members in a small group setting to explore an intellectual topic in CSE (at the upper-division level). Topics will vary from quarter to quarter. Senior seminars may be taken for credit up to four times, with a change in topic, and permission of the department. Enrollment is limited to twenty students, with preference given to seniors. (P/NP grades only.)",
+  "prerequsite": "upper-division standing; department stamp required and consent of instructor."
+ },
+ {
+  "code": "CSE 193",
+  "title": "Introduction to Computer Science Research",
+  "unit": "4",
+  "discription": "Introduction to research in computer science. Topics include defining a CS research problem, finding and reading technical papers, oral communication, technical writing, and independent learning. Course participants apprentice with a CSE research group and propose an original research project.",
+  "prerequsite": "consent of the department chair. Department stamp required."
+ },
+ {
+  "code": "CSE 195",
+  "title": "Teaching",
+  "unit": "4",
+  "discription": "Teaching and tutorial assistance in a CSE course under the supervision of the instructor. (P/NP grades only.)",
+  "prerequsite": "consent of the department chair. Department stamp required."
+ },
+ {
+  "code": "CSE 197",
+  "title": "Field Study in Computer Science and Engineering",
+  "unit": "4, 8, 12, or 16",
+  "discription": "Directed study and research at laboratories away from the campus. (P/NP grades only.)",
+  "prerequsite": "consent of the instructor and approval of the department. Department stamp required."
+ },
+ {
+  "code": "CSE 198",
+  "title": "Directed Group Study",
+  "unit": "2 or 4",
+  "discription": "Computer science and engineering topics whose study involves reading and discussion by a small group of students under the supervision of a faculty member. (P/NP grades only.)",
+  "prerequsite": "consent of the instructor. Department stamp required."
+ },
+ {
+  "code": "CSE 199",
+  "title": "Independent Study for Undergraduates",
+  "unit": "2 or 4",
+  "discription": "Independent reading or research by special arrangement with a faculty member. (P/NP grades only.)",
+  "prerequsite": "consent of the instructor. Department stamp required."
+ },
+ {
+  "code": "CSE 199H",
+  "title": "CSE Honors Thesis Research for Undergraduates",
+  "unit": "4",
+  "discription": "Undergraduate research for completing an honors project under the supervision of a CSE faculty member. May be taken across multiple quarters. Students should enroll for a letter grade. May be taken for credit three times.",
+  "prerequsite": "Admission to the CSE department honors program. Consent of the instructor. Department stamp required."
+ },
+ {
+  "code": "CSE 200",
+  "title": "Computability and Complexity",
+  "unit": "4",
+  "discription": "Computability review, including halting problem, decidable sets, r.e. sets, many-one reductions; TIME(t(n)), SPACE(s(n)) and general relations between these classes; L, P, PSPACE, NP; NP\u2014completeness; hierarchy theorems; RP, BPP.",
+  "prerequsite": "CSE 105 or equivalent."
+ },
+ {
+  "code": "CSE 201A",
+  "title": "Advanced Complexity",
+  "unit": "4",
+  "discription": "Polynomial-time hierarchy (PH), BPP in second level of PH, Savitch's theorem, NL=coNL, nonuniform and circuit complexity, some circuit lower bounds, IP=PSPACE, probabilistic proof checking (PCP), application of PCP to approximation hardness, complexity of proof systems, parallel complexity classes NC and AC, P-completeness. Recommended preparation: CSE 200.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 202",
+  "title": "Algorithm Design and Analysis",
+  "unit": "4",
+  "discription": "The basic techniques for the design and analysis of algorithms. Divide-and- conquer, dynamic programming, data structures, graph search, algebraic problems, randomized algorithms, lower bounds, probabilistic analysis, parallel algorithms.",
+  "prerequsite": "CSE 101 or equivalent."
+ },
+ {
+  "code": "CSE 203A",
+  "title": "Advanced Algorithms",
+  "unit": "4",
+  "discription": "Modern advances in design and analysis of algorithms. Exact syllabus varies. Topics include approximation, randomized algorithms, probabilistic analysis, heuristics, online algorithms, competitive analysis, models of memory hierarchy, parallel algorithms, number-theoretic algorithms, cryptanalysis, computational geometry, computational biology, network algorithms, VLSI CAD algorithms.",
+  "prerequsite": "CSE 202."
+ },
+ {
+  "code": "CSE 203B",
+  "title": "Convex Optimization Formulations and Algorithms",
+  "unit": "4",
+  "discription": "We study the formulations and algorithms solving convex optimization problems. The topics include convex sets, functions, optimality conditions, duality concepts, gradient descent, conjugate gradient, interior-point methods, and applications. The objective of the course is to provide students the background and techniques for scientific computing and system optimization. Students cannot receive credit for CSE 203B if they have taken either ECE 273 or MATH 245B.",
+  "prerequsite": "Linear Algebra is recommended."
+ },
+ {
+  "code": "CSE 205A",
+  "title": "Logic in Computer Science",
+  "unit": "4",
+  "discription": "(Formerly CSE 208D) Mathematical logic as a tool in computer science. Propositional logic, resolution, first-order logic, completeness and incompleteness theorems with computational viewpoint, finite model theory, descriptive complexity, logic programming, nonmonotonic reasoning, temporal logic. Applications to databases, automatic theorem proving, program verification, and distributed systems.",
+  "prerequsite": "CSE 200 or consent of instructor."
+ },
+ {
+  "code": "CSE 206A",
+  "title": "Lattice Algorithms and Applications",
+  "unit": "4",
+  "discription": "(Formerly CSE 207C) Introduction to the algorithmic theory of point lattices (aka algorithmic geometry of numbers), and some of its most important applications in cryptography and cryptanalysis. Topics usually include LLL basis reduction algorithm, cryptanalysis of broadcast RSA, hardness of approximating lattice problems.",
+  "prerequsite": "CSE 202, CSE 200, or concurrent."
+ },
+ {
+  "code": "CSE 207",
+  "title": "Modern Cryptography",
+  "unit": "4",
+  "discription": "Private and public key cryptography, introduction to reduction-based proofs of security, concrete security, block ciphers, pseudorandom functions and generators, symmetric encryption, asymmetric encryption, computational number theory, RSA and discrete log systems, message authentication, digital signatures, key distribution and key management.",
+  "prerequsite": "CSE 202 or consent of instructor."
+ },
+ {
+  "code": "CSE 208",
+  "title": "Advanced Cryptography",
+  "unit": "4",
+  "discription": "Zero-knowledge, secure computation, session-key distribution, protocols, electronic payment, one-way functions, trapdoor permutations, pseudorandom bit generators, hardcore bits.",
+  "prerequsite": "CSE 202, CSE 200, and CSE 207 or consent of instructor."
+ },
+ {
+  "code": "CSE 209A",
+  "title": "Topics/Seminar in Algorithms, Complexity, and Logic",
+  "unit": "1\u20134",
+  "discription": "Topics of special interest in algorithms, complexity, and logic to be presented by faculty and students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 209B",
+  "title": "Topics/Seminar in Cryptography",
+  "unit": "1\u20134",
+  "discription": "Topics of special interest in cryptography to be presented by faculty and students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 210",
+  "title": "Principles of Software Engineering",
+  "unit": "4",
+  "discription": "(Formerly CSE 264A.) General principles in modern software engineering. Both theoretical and practical topics are covered. Theoretical topics include proofs of correctness, programming language semantics, and theory of testing. Practical topics include structured programming, modularization techniques, design of languages for reliable programming, and software tools.",
+  "prerequsite": "CSE 100, 131A, 120, or consent of instructor."
+ },
+ {
+  "code": "CSE 211",
+  "title": "Software Testing and Analysis",
+  "unit": "4",
+  "discription": "Survey of testing and analysis methods. Introduction to advanced topics in area as well as traditional production methods. Topics include inspections and reviews, formal analysis, verification and validation standards, nonstatistical testing, statistical-testing and reliability models, coverage methods, testing and analysis tools, and organization management and planning. Methods special to special development approaches such as object-oriented testing will also be described.",
+  "prerequsite": "undergraduate major in computer science or extensive industrial experience."
+ },
+ {
+  "code": "CSE 216",
+  "title": "Research Topics in Human-Computer Interaction",
+  "unit": "4",
+  "discription": "Prepares students to conduct original HCI research by reading and discussing seminal and cutting-edge research papers. Topics include design, social software, input techniques, mobile, and ubiquitous computing. Student pairs perform a quarter-long mini research project that leverages campus research efforts. Cross-listed with COGS 230.",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 218",
+  "title": "Advanced Topics in Software Engineering",
+  "unit": "4",
+  "discription": "This course will cover a current topic in software engineering in depth. Topics in the past have included software tools, impacts of programming language design, and software system structure. (S/U grades permitted.)",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 219",
+  "title": "Design at Large",
+  "unit": "1",
+  "discription": "New societal challenges, cultural values, and technological opportunities are changing design\u2014and vice versa. The seminar explores this increased scale, real-world engagement, and disruptive impact. Invited speakers from UC San Diego and beyond share cutting-edge research on interaction, design, and learning. Cross-listed with COGS 229. (S/U grades only.)",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 221",
+  "title": "Operating Systems",
+  "unit": "4",
+  "discription": "Operating system structures, concurrent computation models, scheduling, synchronization mechanisms, address spaces, memory management protection and security, buffering, streams, data-copying reduction techniques, file systems, naming, caching, disk organization, mapped files, remote file systems, case studies of major operating systems.",
+  "prerequsite": "CSE 120 and 121, or consent of instructor."
+ },
+ {
+  "code": "CSE 222A",
+  "title": "Computer Communication Networks",
+  "unit": "4",
+  "discription": "(Formerly CSE 222.) Computer communication network concepts, protocols, and architectures, with an emphasis on an analysis of algorithms, protocols, and design methodologies. Topics will include layering, error control, flow control, congestion control, switching and routing, quality of service management, mobility, naming, security, and selected contemporary topics.",
+  "prerequsite": "CSE 123A or consent of instructor."
+ },
+ {
+  "code": "CSE 222B",
+  "title": "Internet Algorithmics",
+  "unit": "4",
+  "discription": "(Formerly CSE 228H.) Techniques for speeding up internet implementations, including system restructuring, new algorithms, and hardware innovations. Topics include models for protocols, systems and hardware; efficiency principles; applying these principles to deriving techniques for efficient implementation of common endnode and router functions.",
+  "prerequsite": "CSE 123A or CSE 222A, or consent of instructor."
+ },
+ {
+  "code": "CSE 223B",
+  "title": "Distributed Computing and Systems",
+  "unit": "4",
+  "discription": "Efficient primitives for distributed operating systems and high-performance network servers, including concurrent and event-driven server architectures, remote procedure calls, and load shedding. Distributed naming, directory, and storage services, replication for fault tolerance, and security in distributed systems.",
+  "prerequsite": "CSE 221, CSE 222A, or consent of instructor."
+ },
+ {
+  "code": "CSE 224",
+  "title": "Graduate Networked Systems",
+  "unit": "4",
+  "discription": "This course will provide a broad understanding of network design and implementation. Topics include techniques for building distributed applications, sockets programming, remote procedure calls (RPC), scale-out distributed directories, distributed consensus and state management, fault tolerance, networked storage, indirection, overlay networks, load balancing, and datacenter design.",
+  "prerequsite": "graduate standing or consent of instructor. This course is intended for MS students. PhD students may only take the course if they are not in systems/networking concentrations."
+ },
+ {
+  "code": "CSE 227",
+  "title": "Computer Security",
+  "unit": "4",
+  "discription": "Security and threat models, risk analysis, authentication and authorization, auditing, operating systems security, access control mechanisms, protection mechanisms, distributed systems/network security, security architecture, electronic commerce security mechanisms, security evaluation.",
+  "prerequsite": "CSE 221 or consent of instructor."
+ },
+ {
+  "code": "CSE 229A",
+  "title": "Topics/Seminar in Computer Systems",
+  "unit": "1\u20134",
+  "discription": "Discussion on problems of current research interest in computer systems. Possible areas of focus include distributed computing, computational grid, operating systems, fault-tolerant computing, storage systems, system services for the World Wide Web. Topics to be presented by faculty and students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 229C",
+  "title": "Topics/Seminar in Computer Security",
+  "unit": "1\u20134",
+  "discription": "Discussion on problems of current research interest in computer security. Topics to be presented by faculty and students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 230",
+  "title": "Principles of Programming Languages",
+  "unit": "4",
+  "discription": "(Formerly CSE 273.) Functional versus imperative programming. Type systems and polymorphism; the ML language. Higher order functions, lazy evaluation. Abstract versus concrete syntax, structural and well-founded induction. The lambda calculus, reduction strategies, combinators. Denotational semantics, elementary domain theory.",
+  "prerequsite": "CSE 130 or equivalent, or consent of instructor."
+ },
+ {
+  "code": "CSE 231",
+  "title": "Advanced Compiler Design",
+  "unit": "4",
+  "discription": "(Formerly CSE 264C.) Advanced material in programming languages and translator systems. Topics include compilers, code optimization, and debugging interpreters.",
+  "prerequsite": "CSE 100, 131A\u2013B, or consent of instructor."
+ },
+ {
+  "code": "CSE 232",
+  "title": "Principles of Database Systems",
+  "unit": "4",
+  "discription": "(Formerly CSE 264D.) Database models including relational, hierarchic, and network approaches. Implementation of databases including query languages and system architectures.",
+  "prerequsite": "CSE 100 or consent of instructor."
+ },
+ {
+  "code": "CSE 232B",
+  "title": "Database System Implementation",
+  "unit": "4",
+  "discription": "A hands-on approach to the principles of databases implementation. Algebraic rewriters/optimizers, query processors, triggers. Beyond centralized relational databases.",
+  "prerequsite": "CSE 232."
+ },
+ {
+  "code": "CSE 233",
+  "title": "Database Theory",
+  "unit": "4",
+  "discription": "Theory of databases. Theory of query languages, dependency theory, deductive databases, incomplete information, complex objects, object-oriented databases, and more. Connections to logic and complexity theory including finite model theory and descriptive complexity.",
+  "prerequsite": "CSE 200."
+ },
+ {
+  "code": "CSE 237A",
+  "title": "Introduction to Embedded Computing",
+  "unit": "4",
+  "discription": "Embedded system technologies including processors, DSP, memory, and software. System interfacing basics, communication strategies, sensors, and actuators. Mobile and wireless technology in embedded systems. Using predesigned hardware and software components. Design case studies in wireless, multimedia, and/or networking domains.",
+  "prerequsite": "basic courses in digital hardware, algorithms and data structures, elementary calculus, and probability; or consent of instructor."
+ },
+ {
+  "code": "CSE 237B",
+  "title": "Software for Embedded Systems",
+  "unit": "4",
+  "discription": "Embedded computing elements, device interfaces, time-critical IO handling. Embedded software design under size, performance, and reliability constraints. Software timing and functional validation. Programming methods and compilation for embeddable software. Embedded runtime systems. Case studies of real-time software systems.",
+  "prerequsite": "CSE 237A; or basic courses in programming, algorithms and data structures, elementary calculus, discrete math, computer architecture; or consent of instructor."
+ },
+ {
+  "code": "CSE 237C",
+  "title": "Validation and Testing of Embedded Systems",
+  "unit": "4",
+  "discription": "Embedded system building blocks including IP cores. Cosimulation. Formal verification using model checking. Verification environments. Test challenges in core integration: compliance, feature, random, and collision testing. Core access and test integration. Interface-based verification and standards.",
+  "prerequsite": "CSE 237A; or basic courses in algorithms and data structures, elementary calculus, discrete math, symbolic logic, computer architecture; or consent of instructor."
+ },
+ {
+  "code": "CSE 237D",
+  "title": "Design Automation and Prototyping for Embedded Systems",
+  "unit": "4",
+  "discription": "System representation and modeling. Abstract and language models. Simulation as a modeling activity. Computational and hw/sw system prototypes. System analysis using models. Constraint and interface modeling. Behavioral compilation and synthesis.",
+  "prerequsite": "CSE 237A; or basic courses in digital logic design, algorithms and data structures, elementary calculus, discrete math, symbolic logic, computer architecture; or consent of instructor."
+ },
+ {
+  "code": "CSE 239A",
+  "title": "Topics/Seminar in Databases",
+  "unit": "1\u20134",
+  "discription": "Discussion on problems of current research interest in databases. Possible areas of focus include core database issues, data management on the web, data integration, new database models and applications, formal methods in databases. Topics to be presented by faculty and students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 240A",
+  "title": "Principles of Computer Architecture",
+  "unit": "4",
+  "discription": "(Formerly CSE 240.) This course will cover fundamental concepts in computer architecture. Topics include instruction set architecture, pipelining, pipeline hazards, bypassing, dynamic scheduling, branch prediction, superscalar issue, memory-hierarchy design, advanced cache architectures, and multiprocessor architecture issues.",
+  "prerequsite": "CSE 141 or consent of instructor."
+ },
+ {
+  "code": "CSE 240B",
+  "title": "Parallel Computer Architecture",
+  "unit": "4",
+  "discription": "This course covers advanced topics in parallel computer architecture, including on-chip and off-chip interconnection networks, cache coherence, cache consistency, hardware multithreading, multi-core and tiled architectures. It incorporates the latest research and development on parallel architectures and compilation techniques for those architectures. CSE 240A recommended.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 240C",
+  "title": "Advanced Microarchitecture",
+  "unit": "4",
+  "discription": "This course covers advanced topics in computer architecture. It incorporates the latest research and development on topics such as branch prediction, instruction-level parallelism, cache hierarchy design, speculative multithreading, reliable architectures, and power-management techniques. CSE 240A recommended.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 241A",
+  "title": "VLSI Integration of Computing Circuitry",
+  "unit": "4",
+  "discription": "VLSI integrated-circuit building blocks of computing systems, and their implementation. Computer-aided design and performance simulations, design exercises and projects. Devices, standard cells and interconnects, clocking, power/ground distribution, arithmetic modules, memories. Methodologies and tradeoffs in system implementation.",
+  "prerequsite": "layout (CSE 165 or ECE 260A) and logic design (CSE 140 or ECE 111), or consent of instructor."
+ },
+ {
+  "code": "CSE 243A",
+  "title": "Introduction to Synthesis Methodologies in VLSI CAD",
+  "unit": "4",
+  "discription": "Hardware software codesign, architectural level synthesis, control synthesis and optimization, scheduling, binding, register and bus sharing, interconnect design, module selection, combinational logic optimization, state minimization, state encoding, and retiming.",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 244A",
+  "title": "VLSI Test",
+  "unit": "4",
+  "discription": "Design for test, testing economics, defects, failures and faults, fault models, fault simulation, automatic test pattern generation, functional testing, memory, PLA, FPGA, microprocessor test, and fault diagnosis.",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 245",
+  "title": "Computer Aided Circuit Simulation and Verification",
+  "unit": "4",
+  "discription": "This course is about the computer algorithms, techniques, and theory used in the simulation and verification of electrical circuits.",
+  "prerequsite": "CSE 241A or consent of instructor."
+ },
+ {
+  "code": "CSE 248",
+  "title": "Algorithmic and Optimization Foundations for VLSI CAD",
+  "unit": "4",
+  "discription": "Algorithmic techniques and optimization frameworks for large-scale, difficult optimizations. Primal-dual multicommodity flow approximations, approximations for geometric and graph Steiner formulations, continuous placement optimization, heuristics for Boolean satisfiability, multilevel methods, semidefinite programming, and application to other formulations (e.g., scheduling).",
+  "prerequsite": "CSE 241A or CSE 242A, or consent of instructor."
+ },
+ {
+  "code": "CSE 249A",
+  "title": "Topics/Seminar in Computer Architecture",
+  "unit": "1\u20134",
+  "discription": "Topics of special interest in computer architecture to be presented by faculty and students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 249B",
+  "title": "Topics/Seminar in VLSI",
+  "unit": "1\u20134",
+  "discription": "Topics of special interest in VLSI to be presented by faculty and students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 250B",
+  "title": "Principles of Artificial Intelligence: Learning Algorithms",
+  "unit": "4",
+  "discription": "Algorithms for supervised and unsupervised learning from data. Content may include maximum likelihood; log-linear models, including logistic regression and conditional random fields; nearest neighbor methods; kernel methods; decision trees; ensemble methods; optimization algorithms; topic models; neural networks; and backpropagation. Recommended preparation: CSE 103 or similar course.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "CSE 250C",
+  "title": "Machine Learning Theory",
+  "unit": "4",
+  "discription": "Theoretical foundations of machine learning. Topics include concentration of measure, the PAC model, uniform convergence bounds, and VC dimension. Possible topics include online learning, learning with expert advice, multiarmed bandits, and boosting. Recommended preparation: CSE 103 and CSE 101 or similar course.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "CSE 252A",
+  "title": "Computer Vision I",
+  "unit": "4",
+  "discription": "Comprehensive introduction to computer vision providing broad coverage including low-level vision (image formation, photometry, color, image feature detection), inferring 3-D properties from images (shape-from shading, stereo vision, motion interpretation) and object recognition. Companion to CSE 252B covering complementary topics.",
+  "prerequsite": "MATH 10D and MATH 20A\u2013F or equivalent."
+ },
+ {
+  "code": "CSE 252B",
+  "title": "Computer Vision II",
+  "unit": "4",
+  "discription": "Comprehensive introduction to computer vision providing focused coverage of multiview geometry, structure from motion, image segmentation, motion segmentation, texture analysis and recognition, object detection, and image- based rendering. Companion to CSE 252A covering complementary topics.",
+  "prerequsite": "MATH 10D and MATH 20A\u2013F or equivalent."
+ },
+ {
+  "code": "CSE 252C",
+  "title": "Selected Topics in Vision and Learning",
+  "unit": "1\u20134",
+  "discription": "Selected topics in computer vision and statistical pattern recognition, with an emphasis on recent developments. Possible topics include grouping and segmentation, object recognition and tracking, multiple view geometry, kernel- based methods, dimensionality reduction, and mixture models.",
+  "prerequsite": "CSE 252 or equivalent and CSE 250B or equivalent."
+ },
+ {
+  "code": "CSE 253",
+  "title": "Neural Networks for Pattern Recognition",
+  "unit": "4",
+  "discription": "Probability density estimation, perceptrons, multilayer neural networks, radial basis function networks, support vector machines, error functions, data preprocessing. Possible topics include unsupervised learning methods, recurrent networks, and mathematical learning theory. Recommended preparation: CSE 250B or equivalent.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 254",
+  "title": "Statistical Learning",
+  "unit": "4",
+  "discription": "Learning algorithms based on statistics. Possible topics include minimum- variance unbiased estimators, maximum likelihood estimation, likelihood ratio tests, resampling methods, linear logistic regression, feature selection, regularization, dimensionality reduction, manifold detection. An upper- division undergraduate course on probability and statistics such as MATH 183 or 186, or any graduate course on statistics, pattern recognition, or machine learning is recommended.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 255",
+  "title": "Data Mining and Predictive Analytics",
+  "unit": "4",
+  "discription": "Learning methods for applications. Content may include data preparation, regression and classification algorithms, support vector machines, random forests, class imbalance, overfitting, decision theory, recommender systems and collaborative filtering, text mining, analyzing social networks and social media, protecting privacy, A/B testing. Recommended preparation: CSE 103 or similar.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "CSE 256",
+  "title": "Statistical Natural Language Processing",
+  "unit": "4",
+  "discription": "An introduction to modern statistical approaches to natural language processing: part of speech tagging, word sense disambiguation and parsing, using Markov models, hidden Markov models, and probabilistic context-free grammars. Recommended preparation: LIGN 165, LIGN 245, CSE 151, CSE 250A, or CSE 254.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "LING 256",
+  "title": "Statistical Natural Language Processing",
+  "unit": "4",
+  "discription": "An introduction to modern statistical approaches to natural language processing: part of speech tagging, word sense disambiguation and parsing, using Markov models, hidden Markov models, and probabilistic context-free grammars. Recommended preparation: LIGN 165, LIGN 245, CSE 151, CSE 250A, or CSE 254.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "CSE 257",
+  "title": "Search and Optimization",
+  "unit": "4",
+  "discription": "The course will cover core algorithms for sequential decision-making problems in autonomous systems. Topics include heuristic search, Monte Carlo search, deep reinforcement learning, nonlinear optimization, mixed-integer optimization, and stochastic optimization.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "CSE 258",
+  "title": "Recommender Systems and Web Mining",
+  "unit": "4",
+  "discription": "Current methods for data mining and predictive analytics. Emphasis is on studying real-world data sets, building working systems, and putting current ideas from machine learning research into practice. Recommended preparation: No previous background in machine learning is required, but students should be comfortable with programming (all example code will be in Python), and with basic optimization and linear algebra.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 258A",
+  "title": "Cognitive Modeling",
+  "unit": "4",
+  "discription": "Connectionist models and a sampling of other cognitive modeling techniques. Models of language processing, memory, sequential processes, and vision. Areas covered may vary depending on student and faculty interests. Can be repeated for credit. CSE 151 or CSE 250B or CSE 253 or CSE 254, or equivalent experience recommended.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 259",
+  "title": "Seminar in Artificial Intelligence",
+  "unit": "1",
+  "discription": "A weekly meeting featuring local (and occasional external) speakers discussing their current research in Artificial Intelligence Neural Networks, and Genetic Algorithms. (S/U grades only.)",
+  "prerequsite": "none."
+ },
+ {
+  "code": "CSE 260",
+  "title": "Parallel Computation",
+  "unit": "4",
+  "discription": "(Formerly CSE 274A.) This course provides an overview of parallel hardware, algorithms, models, and software. Topics include Flynn's taxonomy, interconnection networks, memory organization, a survey of commercially available multiprocessors, parallel algorithm paradigms and complexity criteria, parallel programming environments and tools for parallel debugging, language specification, mapping, performance, etc.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "CSE 262",
+  "title": "System Support for Applications of Parallel Computation",
+  "unit": "4",
+  "discription": "This course will explore design of software support for applications of parallel computation. Topics include programming languages, run time support, portability, and load balancing. The course will terminate in a project.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 272",
+  "title": "Advanced Image Synthesis",
+  "unit": "4",
+  "discription": "Computer graphics techniques for creating realistic images. Topics include ray tracing, global illumination, subsurface scattering, and participating media. CSE 168 or equivalent recommended.",
+  "prerequsite": null
+ },
+ {
+  "code": "CSE 274",
+  "title": "Selected Topics in Graphics",
+  "unit": "2\u20134",
+  "discription": "Selected topics in computer graphics, with an emphasis on recent developments. Possible topics include computer animation, shape modeling and analysis, image synthesis, appearance modeling, and real-time rendering. CSE 168 or CSE 169 recommended.",
+  "prerequsite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "CSE 276A",
+  "title": "Introduction to Robotics",
+  "unit": "4",
+  "discription": "This course provides an introduction to the fundamentals of robotics across kinematics, sensor systems, estimation, control, and planning. The contents include introduction to robotics in general, kinematics of robot systems, robot arm systems, sensors for robots, basic vision for robots, estimation methods, perception, robot localization and navigation, control of robot systems, robot motion planning, robot task planning, robot architectures, and evaluation of robot systems. It is expected that students have a solid understanding of linear algebra, can program in Python or C++, and have a basic understanding of methods for reasoning under uncertainty.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 276B",
+  "title": "Human Robot Interaction",
+  "unit": "4",
+  "discription": "Robots are entering human spaces. How do we make them functional, useful, and acceptable? This course explores the core computational, engineering, and experimental challenges in human-robot interaction. Course topics include shared autonomy, perception of people and context, coordination, collaboration, human-guided learning, robot design, and experimental robotics. Students will review seminal and recent papers in the field and engage in team-based projects with physical, mobile robots. This class requires expertise in software development. Prior exposure to robotics, computer vision, or machine learning is recommended. Students should be comfortable reading and analyzing scientific papers at the graduate level. Students may not receive credit for CSE 276B and CSE 291 (A00) taught winter 2017 with the same subtitle.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 276C",
+  "title": "Mathematics for Robotics",
+  "unit": "4",
+  "discription": "The course will provide a comprehensive introduction to the key mathematical concepts used for modeling, implementing, and evaluation of robot systems. The course will use small home assignments tasks and a larger robot project to exercise the topics covered in class. The students should have a basic knowledge of mathematics and know one or more programming languages such as Python or Matlab for completion of homework assignments.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 276D",
+  "title": "Healthcare Robotics",
+  "unit": "4",
+  "discription": "Robotics has the potential to improve well-being for millions of people, support care givers, and aid the clinical workforce. This course brings together engineers, clinicians, and end-users to explore this exciting new field. It is project-based, interactive, and hands on, and involves working closely with stakeholders to develop prototypes that solve real-world problems. Students will explore the latest research in healthcare robotics, human-robot teaming, and health design. JSOE students should be comfortable building and experimenting within their area of expertise (e.g., CSE, software development, MAE, rapid prototyping). Students with clinical backgrounds should be familiar with translational research methods. Students may not receive credit for CSE 276D and CSE 291 (H00) taught spring 2017 with the same subtitle. Program or materials fees may apply.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 276E",
+  "title": "Robot Systems Design and Implementation",
+  "unit": "4",
+  "discription": "End to end system design of embedded electronic systems including PCB design and fabrication, software control system development, and system integration. Program or materials fees may apply. May be coscheduled with CSE 176E.",
+  "prerequsite": "instructor approval required to ensure sufficient programming and project experience to be successful in the course."
+ },
+ {
+  "code": "CSE 280A",
+  "title": "Algorithms in Computational Biology",
+  "unit": "4",
+  "discription": "(Formerly CSE 206B.) The course focuses on algorithmic aspects of modern bioinformatics and covers the following topics: computational gene hunting, sequencing, DNA arrays, sequence comparison, pattern discovery in DNA, genome rearrangements, molecular evolution, computational proteomics, and others.",
+  "prerequsite": "CSE 202 preferred or consent of instructor."
+ },
+ {
+  "code": "CSE 283",
+  "title": "Bioinformatics III: Functional Genomics",
+  "unit": "4",
+  "discription": "Annotating genomes, characterizing functional genes, profiling, reconstructing pathways.",
+  "prerequsite": "Pharm 201, BENG 202/CSE 282, or consent of instructor."
+ },
+ {
+  "code": "CSE 284",
+  "title": "Personal Genomics for Bioinformaticians",
+  "unit": "4",
+  "discription": "This course provides an introduction to bioinformatics techniques for analyzing and interpreting human genomes. Topics covered include an introduction to medical and population genetics, ancestry, finding and interpreting disease-causing variants, genome-wide association studies, genetic risk prediction, analyzing next-generation sequencing data, how to scale current genomics techniques to analyze hundreds of thousands of genomes, and the social impact of the personal genomics revolution. Programming experience, familiarity with the UNIX command line, and a basic course in probability and statistics are strongly recommended. Students may not receive credit for CSE 284 and CSE 291 (E00) taught winter 2017 with the same subtitle.",
+  "prerequsite": "graduate standing."
+ },
+ {
+  "code": "CSE 290",
+  "title": "Seminar in Computer Science and Engineering",
+  "unit": "1\u20134",
+  "discription": "(Formerly CSE 280A.) A seminar course in which topics of special interest in computer science and engineering will be presented by staff members and graduate students under faculty direction. Topics vary from quarter to quarter. May be repeated for credit. (S/U grades only.)",
+  "prerequsite": "consent of instructor. (Offered as faculty resources permit.)"
+ },
+ {
+  "code": "CSE 291",
+  "title": "Topics in Computer Science and Engineering",
+  "unit": "1\u20134",
+  "discription": "Topics of special interest in computer science and engineering. Topics may vary from quarter to quarter. May be taken for credit nine times with the consent of instructor.",
+  "prerequsite": "consent of instructor. (S/U grades permitted.) (Offered as faculty resources permit.)"
+ },
+ {
+  "code": "CSE 292",
+  "title": "Faculty Research Seminar",
+  "unit": "1",
+  "discription": "(Formerly CSE 282.) Computer science and engineering faculty will present one- hour seminars of the current research work in their areas of interest.",
+  "prerequsite": "CSE graduate status."
+ },
+ {
+  "code": "CSE 293",
+  "title": "Special Project in Computer Science and Engineering",
+  "unit": "1\u201312",
+  "discription": "The student will conceive, design, and execute a project in computer science under the direction of a faculty member. The project will typically include a large programming or hardware design task, but other types of projects are possible.",
+  "prerequsite": "CSE graduate student status. (CS 75, 76, 77, 78, 79, 80, 81) (S/U grades only.)"
+ },
+ {
+  "code": "CSE 294",
+  "title": "Research Meeting in CSE",
+  "unit": "2",
+  "discription": "Advanced study and analysis of active research in computer science and computer engineering. Discussion of current research and literature in the research specialty of the staff member teaching the course.",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 298",
+  "title": "Independent Study",
+  "unit": "1\u201316",
+  "discription": "Open to properly qualified graduate students who wish to pursue a problem through advanced study under the direction of a member of the staff. (S/U grades only.)",
+  "prerequsite": "consent of instructor."
+ },
+ {
+  "code": "CSE 299",
+  "title": "Research",
+  "unit": "1\u201316",
+  "discription": "Research.",
+  "prerequsite": "consent of faculty."
+ },
+ {
+  "code": "CSE 500",
+  "title": "Teaching Assistantship",
+  "unit": "2\u20134",
+  "discription": "A course in which teaching assistants are aided in learning proper teaching methods by means of supervision of their work by the faculty: handling of discussions, preparation and grading of examinations and other written exercises, and student relations. May be used to meet teaching experience requirement for candidates for the PhD degree. Number of units for credit depends on number of hours devoted to class or section assistance.",
+  "prerequsite": "graduate standing and consent of instructor."
+ },
+ {
+  "code": "CSE 599",
+  "title": "Teaching Methods in Computer Science",
+  "unit": "2",
+  "discription": "Training in teaching methods in the field of computer science. This course examines theoretical and practical communication and teaching techniques particularly appropriate to computer science.",
+  "prerequsite": "consent of faculty."
+ }
+]
