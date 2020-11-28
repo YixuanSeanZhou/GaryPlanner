@@ -82,7 +82,7 @@ div#__next > div {
 #home-btn {
   height: 200px;
   font-size: 2rem;
-  
+  color: black;
 }
 
 #home-btn span{
@@ -132,5 +132,5 @@ div#__next > div {
 }
 
 .card-text {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
