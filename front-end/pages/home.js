@@ -71,7 +71,7 @@ export default class Home extends React.Component {
 									</Button>										
 								</div>
 								
-								<div style={{marginTop: "180px"}}>
+								<div style={{marginTop: "130px"}}>
 									<Link href="/fourYearPlan">
 										<Button size="lg" variant="warning" style={{backgroundColor: "#ffcc5c"}} block id="home-btn">
 											<span>View Four Year Plan</span>
@@ -79,7 +79,7 @@ export default class Home extends React.Component {
 									</Link>
 								</div>
 								
-								<div style={{marginTop: "180px"}}>
+								<div style={{marginTop: "130px"}}>
 									<Link href="/friends">
 										<Button size="lg" variant="danger" style={{backgroundColor: "#ff6f69"}} block id="home-btn">
 											<span>Checkout Friends' Schedules</span>
