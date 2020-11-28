@@ -57,7 +57,7 @@ def login():
         login_user(user, remember=remember)
         return jsonify({'reason': 'logged in', 'result': user.to_json()}), 200
     else:
-        return jsonify({'reason': 'User/Password doesn\'t match'}), 400
+        return jsonify({'reason': 'email/password doesn\'t match'}), 400
 
 
 @user_api_bp.route('/logout', methods=['POST'])
@@ -113,6 +113,28 @@ def get_user_by_email():
         return jsonify({'reason': 'user not found'}), 300
 
 # TODO: NO USER NAME
+
+
+@user_api_bp.route('/change_pwd', methods=['POST'])
+@cross_origin(supports_credentials=True)
+@login_required
+def change_pwd():
+    req_data = request.get_json()
+    u_email = current_user.email
+    old_pwd = req_data.get('old_pwd', None)
+    new_pwd = req_data.get('pwd', None)
+
+    pwd_match = User.check_password(u_email, old_pwd)
+
+    if pwd_match:
+        #update the database with new password
+        u_id = current_user.id
+        s, u = User.update_profile(user_id=u_id, pwd=new_pwd)
+    else:
+        return jsonify({"reason": "old password wrong"}), 400
+
+    if s:
+        return jsonify({"reason": "success"}), 200
 
 
 @user_api_bp.route('/update_profile', methods=['POST'])
