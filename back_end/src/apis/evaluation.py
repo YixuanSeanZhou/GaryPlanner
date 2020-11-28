@@ -13,11 +13,11 @@ def create_evaluation():
     Route to create an evaluation
     @author: BensonV
     '''
-    # post request needs a class_id, instructor, recommend_class,
+    # post request needs a class_code, instructor, recommend_class,
     # recommend_instructor, study_hours_per_week,
     # avg_expected_grade, avg_grade_received
     req_data = request.get_json()
-    class_id = req_data.get('class_id')
+    class_code = req_data.get('class_code')
     instructor = req_data.get('instructor')
     recommend_class = req_data.get('recommend_class')
     recommend_instructor = req_data.get('recommend_instructor')
@@ -26,7 +26,7 @@ def create_evaluation():
     avg_grade_received = req_data.get('avg_grade_received')
 
     status, evaluation = Evaluation.create_evaluation(
-                                class_id=class_id,
+                                class_code=class_code,
                                 instructor=instructor,
                                 recommend_class=recommend_class,
                                 recommend_instructor=recommend_instructor,
@@ -53,19 +53,19 @@ def get_evaluations():
 
 @evaluation_api_bp.route('/get_evaluation', methods=['GET'])
 def get_evaluation():
-    # check for query string keys 'id' and/or 'class_id' and/or 'instructor'
-    # (searching by class_id or instructor returns a list)
+    # check for query string keys 'id' and/or 'class_code' and/or 'instructor'
+    # (searching by class_code or instructor returns a list)
     if request.args:
         arguments = request.args
         id = arguments.get('id', None)
-        class_id = arguments.get('class_id', None)
+        class_code = arguments.get('class_code', None)
         instructor = arguments.get('instructor', None)
 
         evaluation = None
         if id:
             evaluation = Evaluation.get_evaluation(id)
-        elif class_id:
-            evaluation = Evaluation.get_evaluation_by_class_id(class_id)
+        elif class_code:
+            evaluation = Evaluation.get_evaluation_by_class_code(class_code)
         elif instructor:
             evaluation = Evaluation.get_evaluation_by_instructor(instructor)
 
@@ -94,7 +94,7 @@ def update_evaluation():
     if not eval_id:
         return jsonify({'reason': 'missing evaluation id'}), 300
 
-    class_id = req_data.get('class_id', None)
+    class_code = req_data.get('class_code', None)
     instructor = req_data.get('instructor', None)
     recommend_class = req_data.get('recommend_class', None)
     recommend_instructor = req_data.get('recommend_instructor', None)
@@ -103,7 +103,7 @@ def update_evaluation():
     avg_grade_received = req_data.get('avg_grade_received', None)
 
     status, evaluation = Evaluation.update_evaluation(
-                            id=eval_id, class_id=class_id,
+                            id=eval_id, class_code=class_code,
                             instructor=instructor,
                             recommend_class=recommend_class,
                             recommend_instructor=recommend_instructor,
@@ -111,7 +111,6 @@ def update_evaluation():
                             avg_expected_grade=avg_expected_grade,
                             avg_grade_received=avg_grade_received)
 
-    
     if status:
         return jsonify({
             'reason': 'success',
