@@ -72,9 +72,10 @@ def get_class_by_search():
     search = request.args.get('search')
     clss = AllClass.get_class_by_search(search=search)
     clss = list(map(lambda x: x.to_json(), clss))
-    if clss: 
+    if clss:
         return jsonify({'reason': 'success', 'result': clss}), 200
     return jsonify({'reason': 'failed: class DNE'}), 300
+
 
 @all_classes_api_bp.route('/get_class_by_code', methods=['GET'])
 def get_class_by_code():
