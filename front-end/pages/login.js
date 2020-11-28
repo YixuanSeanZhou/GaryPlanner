@@ -6,27 +6,48 @@ import { withRouter } from 'next/router';
 import Image from 'next/image';
 
 // Components
-import { Form, Button, Navbar } from 'react-bootstrap';
-import { GaryNavbar } from '../components/commonUI';
-import Particles from 'react-particles-js';
+import { Form, Button, Navbar, Alert } from 'react-bootstrap';
+import { GaryNavbar, ParticleEffect } from '../components/commonUI';
 
 // Styles
-import styles from '../styles/Register.module.css'
+import styles from '../styles/Auth.module.css'
 
 class Login extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			email: "",
-			pwd: "",
+			formData: {
+				email: "",
+				pwd: "",
+				remember: false,	
+			},
+			showingAlert: false,
+			alarmText: "Error!",
+			alarmSubText: "Just error",
 		}
+	}
+
+	componentDidMount () {
+		if(localStorage.checkbox === "true" && localStorage.email !== "") {
+			var formData = {
+				email: localStorage.email,
+				pwd: localStorage.password,
+				remember: localStorage.checkbox === "true",
+			}
+			this.setState({formData: formData});
+		}
+	}
+
+	componentWillUnmount() {
+		localStorage.checkbox = this.state.formData.remember;
 	}
 
 
 	// Invoked when the user hit click
 	handleClick = (e) => {
-		console.log("POSTing this data to server:", JSON.stringify(this.state));
+		// First, enable loading animation
+		this.props.enableLoading("Please wait");
 
 		// Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/login';
@@ -36,35 +57,67 @@ class Login extends React.Component {
 				'Content-Type': 'application/json',
 			},
 			credentials: 'include', // Everything account related
-			body: JSON.stringify(this.state),
+			body: JSON.stringify(this.state.formData),
 		};
 
 		fetch(requestUrl, options)
 		.then(response => {
 			const data = response.json();
 
+			setTimeout(() => this.props.disableLoading(), 300);
+
 			if (response.status == 200) {
 				// User successfully created
-				// TODO: Prompt Success
+				// Remember me
+				const {email, pwd, remember} = this.state.formData;
+				if (remember && email !== "") {
+					localStorage.email = email;
+					localStorage.password = pwd;
+					localStorage.checkbox = remember;
+				}
 
 				this.props.router.push('/temp/testProfile');
-			} else if (response.status == 300) {
-				// User Already Existed!
-				// TODO: Prompt
-			}	
-			console.log('Success:', data); // TODO: Remove for deployment
+			} else if (response.status == 400) {
+				// Wrong email/password
+				this.setState({
+					showingAlert: true,
+					alarmText: "Wrong Email/Password",
+					alarmSubText: "Have you registered?"
+				})
+			} else {
+				// Server issue
+				this.setState({
+					showingAlert: true,
+					alarmText: "Unknown Error",
+					alarmSubText: "Please contact the developer!"
+				})
+			}
 		})
 		.catch((error) => {
 			console.error('Error:', error);
+			setTimeout(() => this.props.disableLoading(), 300);
+			this.props.router.push('/util/error');
 		});
 	}
 
 	
 	// Invoked everytime the value in the two textboxes changes
 	handleChange = (e) => {
-		this.setState({
-			[e.target.id]: e.target.value
-		});
+		var formData = this.state.formData;
+		formData[e.target.id] = e.target.value;
+		this.setState({formData});
+	}
+
+	// Handles the checkbox
+	handleCheck = (e) => {
+		var formData = this.state.formData
+		if (e.target.checked) {
+			console.log(e);
+			formData.remember = true;
+		} else {
+			formData.remember = false;
+		}
+		this.setState({formData});
 	}
 
 	render() {
@@ -74,46 +127,19 @@ class Login extends React.Component {
 					<title>Log in</title>
 				</Head>
 
-				<GaryNavbar>
-					<Navbar.Text>Log in</Navbar.Text>
-				</GaryNavbar>
-	
+				<ParticleEffect className={styles.particles} />
+
+
+
 				<div className={styles.outer}>
-					<Particles
-						params={{
-							"particles": {
-							"number": {
-							"value": 90,
-							"density": {
-							"enable": true,
-							"value_area": 2000
-							}
-							},
-							"color": {
-							"value": "#ffffff"
-							},
-							"size": {
-							"value": 2.5
-							}
-						},
-							"interactivity": {
-							"events": {
-							"onhover": {
-							"enable": true,
-							"mode": "repulse"
-							}
-							}
-							}
-						}}
-					/>
-					<div className={styles.middle} style={{
-						position: "absolute",
-						top: "20%",
-						left: 0,
-						width: "100%",
-						height: "absolute"
-						
-					}}>
+
+					<GaryNavbar>
+						<Navbar.Text>Log in</Navbar.Text>
+					</GaryNavbar>
+	
+					{/* Start of the login component */}
+
+					<div className={styles.loginWrapper} >
 						<div className={styles.login}>
 							<Form.Group style={{ display: 'flex', alignItems: 'center' }}>
 								<a href="/intro">
@@ -137,27 +163,29 @@ class Login extends React.Component {
 								<Form.Group controlId="email">
 									<Form.Label>Email</Form.Label>
 									<Form.Control 
-										type="text"
-										value={this.state.email}
+										type="email"
+										value={this.state.formData.email}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
 			
 								<Form.Group controlId="pwd">
-									<Form.Label >Passowrd</Form.Label>
+									<Form.Label >Password</Form.Label>
 									<Form.Control 
 										type="password"
-										value={this.state.pwd}
+										value={this.state.formData.pwd}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
 			
-								<Form.Group>
+								<Form.Group controlId="remember">
 									<Form.Label>
 										<Form.Check
 											type="checkbox"
 											name="remember"
 											label="Remember me"
+											checked={this.state.formData.remember}
+											onChange={this.handleCheck}
 										/>
 									</Form.Label>
 								</Form.Group>
@@ -182,8 +210,23 @@ class Login extends React.Component {
 								</div>
 							</Form>
 						</div>
+
 					</div>
+
+					<Alert 
+						show={this.state.showingAlert} 
+						onClick={() => this.setState({showingAlert: false})} 
+						variant='danger'
+						className={styles.myAlert}
+						dismissible
+					>
+						<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+						<div>{this.state.alarmSubText}</div>
+					</Alert>
+
+
 				</div>
+
 			</>
 		)
 	}

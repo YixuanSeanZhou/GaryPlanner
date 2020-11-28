@@ -50,6 +50,11 @@ export default function Index() {
 									<a>Temp Profile Page (Request Example here!)</a>
 								</Link>
 							</li>
+							<li>
+								<Link href="util/error">
+									<a>Error Page</a>
+								</Link>
+							</li>
 						</ul>
 					</li>
 					<li>

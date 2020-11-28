@@ -1,0 +1,51 @@
+.outer {
+    /* background-image: url("/Background/background.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-color:rgb(53,68,104);
+
+    min-height: 100vh;
+}
+
+.loginWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    padding: 40px;
+
+}
+.login {
+    margin: auto;
+
+    padding: 40px;
+    width: 400px;
+
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#signup {
+    width: 500px;
+}
+
+.redirect {
+    color: '#0067b8';
+}
+
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.myAlert {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    margin: 20px
+}

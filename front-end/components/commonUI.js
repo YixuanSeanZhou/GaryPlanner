@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar, Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
+import Particles from 'react-particles-js'
 
 
 export class GaryNavbar extends React.Component {
@@ -18,4 +19,33 @@ export class GaryNavbar extends React.Component {
             </Navbar>
         )
     }
+}
+
+
+export function ParticleEffect(props) {
+    return (
+        <Particles
+            params={
+                {
+                    "particles": {
+                    "number": {
+                    "value": 90,
+                    "density": {
+                    "enable": true,
+                    "value_area": 2000
+                    }
+                    },
+                    "color": {
+                    "value": "#ffffff"
+                    },
+                    "size": {
+                    "value": 2.5
+                    }
+                },
+                }
+            }
+            {...props}
+        />
+
+    )
 }
