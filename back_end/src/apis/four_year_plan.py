@@ -61,7 +61,7 @@ def get_formatted_plan_by_user():
     plan = list(map(lambda x: x.to_json(), plan))
     # Now we call helper function
     formatted_plan = convertResultsto4YearPlan(
-            jsonify({'reason': 'success', 'result': plan}))
+            {'reason': 'success', 'result': plan})
     return formatted_plan, 200
 
 
