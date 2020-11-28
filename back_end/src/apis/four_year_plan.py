@@ -1,5 +1,7 @@
 '''
-@author: David Song
+@author: 
+David Song
+Benson Vuong
 '''
 from flask_cors import CORS
 from flask import Blueprint, request, jsonify
@@ -58,8 +60,9 @@ def get_formatted_plan_by_user():
     plan = FourYearPlan.get_plan_by_user(user_id=user_id)
     plan = list(map(lambda x: x.to_json(), plan))
     # Now we call helper function
-    formatted_plan = convertResultsto4YearPlan(plan)
-    return formatted_plan
+    formatted_plan = convertResultsto4YearPlan(
+            jsonify({'reason': 'success', 'result': plan}))
+    return formatted_plan, 200
 
 
 @four_year_plan_api_bp.route('/get_locked_entries_by_user', methods=['GET'])
@@ -135,7 +138,7 @@ def get_current_quarter():
     month = today.strftime("%m")
     day = today.strftime("%d")
     year = today.strftime("%y")
-    
+
     current_quarter = ""
     if month == "1" or month == "2":
         current_quarter += "WI"
@@ -162,39 +165,38 @@ def get_current_quarter():
             current_quarter += "S2"
         else:
             current_quarter += "FA"
-        
     current_quarter += year
     print(current_quarter)
     return current_quarter
 
-def convertResultsto4YearPlan (results):
+
+def convertResultsto4YearPlan(results):
     response = {
         "courses": {},
-        "quarters":{},
-        "user_id":results["result"][0]['user_id'],
+        "quarters": {},
+        "user_id": current_user.id,  # results["result"][0]['user_id'],
         "current_quarter": get_current_quarter()
     }
-    #populating courses dictionary
+    # populating courses dictionary
     for class_in_plan in results["result"]:
-        #create the unique course-id
+        # create the unique course-id
         course_id = class_in_plan['id']
         class_code = class_in_plan['class_code']
         locked = class_in_plan['locked']
-        string_id = "course-"+ str(course_id)
+        string_id = "course-" + str(course_id)
 
-        #add the course into the courses key in response
+        # add the course into the courses key in response
         response['courses'][string_id] = {
             "id": string_id,
             "content": class_code,
             "locked": locked
         }
-    
-    #populating quarters
-    #TODO get start year from user
+    # populating quarters
+    # TODO get start year from user
     start_year = 2018
     quarter_array = generate_quarter_names(start_year)
 
-    #loops through all the quarters in the student's plan
+    # loops through all the quarters in the student's plan
     for quarter in quarter_array:
         title = "Fall"
         if quarter.find("SP") != -1:
@@ -203,15 +205,15 @@ def convertResultsto4YearPlan (results):
             title = "Winter"
         elif quarter.find("FA") != -1:
             title = "Fall"
-            
-        #gets all the courses in the plan that matches this quarter
+
+        # gets all the courses in the plan that matches this quarter
         courses_for_quarter = []
         for course in results["result"]:
             course_id = course['id']
             if course["quarter_taken"] == quarter:
                 courses_for_quarter.append("course-"+str(course_id))
-        
-        #create the dictionary for that quarter
+
+        # create the dictionary for that quarter
         quarter_dictionary = {
             "id": quarter,
             "title": title,
@@ -221,7 +223,8 @@ def convertResultsto4YearPlan (results):
 
     print(response)
 
-#generates an array of all the quarter's name the person will have
+
+# generates an array of all the quarter's name the person will have
 def generate_quarter_names(start_year):
 
     year = [0] * 5
@@ -231,13 +234,13 @@ def generate_quarter_names(start_year):
 
     quarter_names = []
     quarter_names.append("FA" + str(year[0])[2:4])
-    
+
     for i in range(1, 4):
-        quarter_names.append("WI" + str(year[i])[2:4])    
-        quarter_names.append("SP" + str(year[i])[2:4])  
-        quarter_names.append("FA" + str(year[i])[2:4])          
-    
-    quarter_names.append("WI" + str(year[4])[2:4])  
-    quarter_names.append("SP" + str(year[4])[2:4])  
-    
+        quarter_names.append("WI" + str(year[i])[2:4])
+        quarter_names.append("SP" + str(year[i])[2:4])
+        quarter_names.append("FA" + str(year[i])[2:4])
+
+    quarter_names.append("WI" + str(year[4])[2:4])
+    quarter_names.append("SP" + str(year[4])[2:4])
+
     return quarter_names
