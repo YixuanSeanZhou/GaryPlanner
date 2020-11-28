@@ -109,8 +109,16 @@ class User(db.Model, UserMixin):
         return User.query.filter_by(email=email).first()
 
     @staticmethod
-    def check_password(email=email, pwd=pwd) -> bool:
+    def check_password(email: str, pwd: str) -> bool:
         user = User.query.filter_by(email=email).first()
+        if user:
+            if pwd_context.verify(pwd, user.pwd):
+                return True
+        return False
+
+    @staticmethod
+    def check_password_with_user_name(user_name: str, pwd: str) -> bool:
+        user = User.query.filter_by(user_name=user_name).first()
         if user:
             if pwd_context.verify(pwd, user.pwd):
                 return True

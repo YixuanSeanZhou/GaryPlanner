@@ -48,9 +48,19 @@ def login():
     '''
     req_data = request.get_json()
     email = req_data.get('email', None)
+    user_name = email if '@' not in email else None
     pwd = req_data.get('pwd', '')
     remember = True
     # if req_data.get('remember', '') == 'true' else False
+
+    if user_name:
+        if User.check_password_with_user_name(user_name, pwd):
+            user = User.get_user_by_user_name(name=user_name)
+            login_user(user, remember=remember)
+            return jsonify({'reason': 'logged in',
+                            'result': user.to_json()}), 200
+        else:
+            return jsonify({'reason': 'user_name/password doesn\'t match'}), 400
 
     if User.check_password(email, pwd):
         user = User.get_user_by_email(email=email)
@@ -127,7 +137,7 @@ def change_pwd():
     pwd_match = User.check_password(u_email, old_pwd)
 
     if pwd_match:
-        #update the database with new password
+        # update the database with new password
         u_id = current_user.id
         s, u = User.update_profile(user_id=u_id, pwd=new_pwd)
     else:
