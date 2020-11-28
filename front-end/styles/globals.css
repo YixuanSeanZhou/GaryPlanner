@@ -4,13 +4,71 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
 }
 
-/* a {
-  color: inherit;
-  text-decoration: none;
-} */
+/* This is to make sure that next make everythin full-screen */
+html,
+body,
+body > div:first-child,
+div#__next{
+  height: 100%;
+}
 
-* {
-  box-sizing: border-box;
+div#__next > div {
+  min-height: 100vh;
+}
+
+
+.navbarLogo {
+  width: 24px;
+  height: auto;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.lightBG{
+  background-color: #ffeead;
+}
+
+#planCalendar {
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  background-image: url("/Logo/background.png");
+  background-repeat: repeat-y;
+  background-position: right;
+  background-color:rgb(53,68,104);
+}
+
+。background-light {
+  background-color: #626f96;
+}
+
+.intro {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: block;
+  margin-top: 0px;
+  background-position: 0px 0px;
+  background-size: auto;
+  color: white;
+  background: rgb(56,70,104) url("/Background/slide.png") no-repeat right;
+  height: 380px;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+}
+
+.searchBar {
+  padding: 30px 0px 30px 0px;
 }
