@@ -16,6 +16,20 @@ other possible methods:
 
 '''
 
+#helper function
+def convert_to_four_year_plan(result):
+    courses = {}
+    #loops through all the classes in search result
+    for course in result:
+        class_code = course['class_code']
+        id = 'course-' + class_code.replace(" ","")
+        
+        courses[id] = {
+            "id" : id,
+            "content" : class_code,
+            "locked" : False
+        }
+    return courses
 
 @all_classes_api_bp.route('/create_class', methods=['POST'])
 def create_class():
@@ -138,18 +152,3 @@ def update_class():
         return jsonify({'reason': 'success',
                         'result': status[1].to_json()}), 200
     return jsonify({'reason': 'failed: class DNE'}), 300
-
-
-def convert_to_four_year_plan(result):
-    courses = {}
-    #loops through all the classes in search result
-    for course in result:
-        class_code = course['class_code']
-        id = 'course-' + class_code.replace(" ","")
-        
-        courses[id] = {
-            "id" : id,
-            "content" : class_code,
-            "locked" : False
-        }
-    return courses
