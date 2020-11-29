@@ -26,8 +26,6 @@ def _get_driver(link):
     return driver
 
 def run_degree_audit_benson():
-    major = ''
-    college = ''
     driver = _get_driver("file:///usr/src/app/src/utils/web_crawler/benson_dq.html")
     major = get_major(driver)
     college = get_college(driver)
@@ -36,8 +34,26 @@ def run_degree_audit_benson():
     print(len(reqh))
     if len(reqh) != len(reqb):
         print('ERROR')
+    in_quarter = ''
+    
+    cats = driver.find_elements_by_tag_name('h')
+    for cat in cats:
+        if 'Fall' in cat.text or 'Winter' in cat.text or 'Spring' in cat.text:
+            in_quarter = cat.text
+            in_q = ''
+            if 'Fall' == in_quarter.split(' ')[0]:
+                in_q = 'FA'
+            elif 'Winter' == in_quarter.split(' ')[0]:
+                in_q = 'WI'
+            else:
+                in_q = 'SP'
+            year = in_quarter.split(' ')[1]
+            year = year.replace('20', '')
+            in_q += year
+            break
 
     sub_req = {}
+    taken = []
     start = False
     for i in range(len(reqh)):
         if 'MAJOR REQUIREMENTS' in reqh[i].text:
@@ -101,6 +117,7 @@ def run_degree_audit_benson():
                     # print(ret)
                     ret_list.append(ret)
                 sub_req[sub_text][subreq_text]['taken'] = ret_list
+                taken += ret_list
                 if sub_req[sub_text][subreq_text]:
                     #try:
                     # special case for warren
@@ -126,10 +143,12 @@ def run_degree_audit_benson():
             #     sub_req.pop(sub_text, None)
 
             ret = {'major': get_major(driver), 'college': get_college(driver), 'req': sub_req}
-            print(ret)
+            # print(ret)
+            with open ('benson_taken.json', 'w') as file:
+                json.dump(taken, file)
             with open ('benson_da.json', 'w') as file:
                 json.dump(ret, file)
-
+    return ret, in_q, taken
 
 
 
