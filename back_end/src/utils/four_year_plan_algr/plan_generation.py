@@ -122,11 +122,10 @@ if __name__ == '__main__':
     load_catalog("../catalog_process/cse.json", class_dict)
     load_catalog("../catalog_process/math.json", class_dict)
     for i in range(100):
-        code = 'GE'+str(i)
+        code = 'GE '+str(i)
         class_dict[code] = {'code':code, 'formatted_pre':[]}
     
-    completed, needed = get_data_from_json("../catalog_process/degree_audit.json")
     needed_courses = ['CSE 11', 'CSE 12', 'CSE 15L', 'CSE 30', 'CSE 20', 'CSE 21', 'CSE 100', 'CSE 101', 
                     'CSE 105', 'CSE 103', 'CSE 110', 'CSE 120', 'CSE 127', 'CSE 132A', 'CSE 140', 'CSE 140L',
                         'CSE 141', 'CSE 141L', 'CSE 152A', 'CSE 167', 'CSE 123', 'CSE 107', 'CSE 130', 'CSE 152B', 'CSE 158'] 
-    print(generate_four_year_plan({}, needed_courses, class_dict, []))
+    print(generate_four_year_plan({}, needed_courses, class_dict, ['GE '+str(i) for i in range(5)]))
