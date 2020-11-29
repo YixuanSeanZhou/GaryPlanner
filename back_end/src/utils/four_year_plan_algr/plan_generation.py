@@ -1,0 +1,105 @@
+import json
+import copy
+import numpy as np
+
+flatten = lambda t: [item for sublist in t for item in sublist]
+
+def load_catalog(catalog_addr, dic):
+    with open(catalog_addr) as infile:
+        tmp_dic = json.loads(infile.read())
+    for c in tmp_dic:
+        dic[c['code']] = c
+
+
+def get_data_from_json(json_file_addr):
+    with open(json_file_addr) as infile:
+        raw = json.loads(infile.read())
+    return raw[0], raw[1:]
+
+
+def least_courses(node, completed, class_dict, layer):
+    if layer > 20:
+        return {}
+    if node in completed:
+        return {}
+    if node not in class_dict:
+        return {i:0 for i in range(99)}
+    
+    prereqs = class_dict[node]["formatted_pre"]
+    res = {node:prereqs}
+
+    if len(prereqs) == 0:
+        return res
+    
+    for it in prereqs:
+        if type(it) == str:
+            res.update(least_courses(it, completed, class_dict, layer+1))
+        else:
+            candidate = [{**least_courses(i, completed, class_dict, layer+1), **res} for i in it]
+            candidate.sort(reverse=False, key=lambda d:len(d))
+            res = candidate[0]
+
+    return res
+
+
+def generate_four_year_plan(completed_courses, to_take_courses, class_dict):
+    plan = []
+    completed = completed_courses.copy()
+    to_take = to_take_courses.copy()
+    while len(to_take) > 0:
+        # compute the uncompleted prereq for courses in to_take
+        prereqs = [least_courses(course, completed, class_dict, 0) for course in to_take]
+        # compute the number of dependencies
+        depend = [0] * len(to_take)
+        for i, course in enumerate(to_take):
+            for preq in prereqs:
+                if course in preq:
+                    depend[i] += 1
+        
+        sort_list = [(prereqs[i], depend[i], to_take[i]) for i in range(len(to_take))]
+        # Sort. len of prereqs acsending order. Tie: dependency descending order.
+        sort_list.sort(reverse=True, key=lambda x:x[1])
+        sort_list.sort(reverse=True, key=lambda x:len(x[0]))
+
+        quarter = []
+        for cand in sort_list:
+            # take 4 courses per quarter
+            if len(quarter) >= 4:
+                break
+            # no uncompleted prereqs
+            if len(cand[0]) <= 1:
+                quarter.append(cand[2])
+                continue
+
+            # take prereqs for this courses
+            for preq in cand[0]:
+                if len(least_courses(preq, completed, class_dict, 0)) <= 1:
+                    if preq not in quarter:
+                        quarter.append(preq)
+                if len(quarter) >= 4:
+                    break
+        
+        if len(quarter) == 0:
+            print("something wrong happens")
+            print(plan)
+            print(to_take)
+            print(sort_list)
+            return None
+        for course in quarter:
+            if course in to_take:
+                to_take.remove(course)
+            completed[course] = 0
+        plan.append(quarter)
+    
+    return plan
+
+
+if __name__ == '__main__':
+    class_dict = dict()
+    load_catalog("../catalog_process/cse.json", class_dict)
+    load_catalog("../catalog_process/math.json", class_dict)
+    completed, needed = get_data_from_json("../catalog_process/degree_audit.json")
+    needed_courses = ['CSE 11', 'CSE 12', 'CSE 15L', 'CSE 30', 'CSE 20', 'CSE 21', 'CSE 100', 'CSE 101', 
+                    'CSE 105', 'CSE 103', 'CSE 110', 'CSE 120', 'CSE 127', 'CSE 132A', 'CSE 140', 'CSE 140L',
+                        'CSE 141', 'CSE 141L', 'CSE 152A', 'CSE 167', 'CSE 123', 'CSE 107', 'CSE 130', 'CSE 152B', 'CSE 158'] 
+    print(generate_four_year_plan({}, needed_courses, class_dict))
