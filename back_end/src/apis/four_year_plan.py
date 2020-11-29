@@ -23,7 +23,7 @@ def create_entry():
     user_id = req_data.get('user_id')
     class_id = req_data.get('class_id')
     class_schedule_id = req_data.get('class_schedule_id')
-    quarter_taken = req_data.get('quarter_taken')
+    quarter_taken = req_data.get('quarter_taken') #FA20
     grade = req_data.get('grade')
     locked = req_data.get('locked')
     s, u = FourYearPlan.create_entry(

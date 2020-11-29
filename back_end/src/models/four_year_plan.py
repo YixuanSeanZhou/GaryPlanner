@@ -13,8 +13,9 @@ class FourYearPlan(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('Users.id'), nullable=False)
-    class_id = db.Column(db.Integer,
-                         db.ForeignKey('AllClasses.id'), nullable=False)
+    class_code = db.Column(db.String(31),
+                           db.ForeignKey('AllClasses.class_code'),
+                           nullable=False)
     class_schedule_id = db.Column(db.Integer,
                                   # db.ForeignKey('ClassSchedules.id'),
                                   nullable=True)  # No need for this
@@ -29,20 +30,20 @@ class FourYearPlan(db.Model):
         ret = {}
         ret['id'] = self.id
         ret['user_id'] = self.user_id
-        ret['class_id'] = self.class_id
+        ret['class_code'] = self.class_code
         ret['class_schedule_id'] = self.class_schedule_id
         ret['quarter_taken'] = self.quarter_taken
         ret['grade'] = self.grade
         ret['locked'] = self.locked
         return ret
 
-    def update_attr(self, user_id: int, class_id: int,
+    def update_attr(self, user_id: int, class_code: str,
                     class_schedule_id: int, quarter_taken: str,
                     grade: str, locked: bool) -> bool:
         if user_id:
             self.user_id = user_id
-        if class_id:
-            self.class_id = class_id
+        if class_code:
+            self.class_code = class_code
         if class_schedule_id:
             self.class_schedule_id = class_schedule_id
         if quarter_taken:
@@ -58,16 +59,16 @@ class FourYearPlan(db.Model):
         db.session.commit()
 
     @staticmethod
-    def create_entry(user_id: int, class_id: int,
+    def create_entry(user_id: int, class_code: str,
                      class_schedule_id: int,
                      quarter_taken: str,
                      grade: str, locked: bool) -> bool:
         # if it's an identical user, class, and quarter, return false
         if FourYearPlan.get_unique_entry(user_id=user_id,
-                                         class_id=class_id,
+                                         class_code=class_code,
                                          quarter_taken=quarter_taken):
             return False, None
-        four_year_plan = FourYearPlan(user_id=user_id, class_id=class_id,
+        four_year_plan = FourYearPlan(user_id=user_id, class_code=class_code,
                                       class_schedule_id=class_schedule_id,
                                       quarter_taken=quarter_taken,
                                       grade=grade, locked=locked)
@@ -101,35 +102,35 @@ class FourYearPlan(db.Model):
 
     # Returns specific unique entry by user, class, and quarter
     @staticmethod
-    def get_unique_entry(user_id: int, class_id: int,
+    def get_unique_entry(user_id: int, class_code: str,
                          quarter_taken: str) -> FourYearPlan:
         return FourYearPlan.query.filter_by(
             user_id=user_id,
-            class_id=class_id,
+            class_code=class_code,
             quarter_taken=quarter_taken).first()
 
     @staticmethod
     def update_entry(id: int, user_id: int = None,
-                     class_id: int = None,
+                     class_code: str = None,
                      class_schedule_id: int = None,
                      quarter_taken: str = None,
                      grade: str = None,
                      locked: bool = None) -> bool:
         # TODO: Maybe we want to use **kwargs, but maybe not...
         entry = FourYearPlan.get_entry_by_id(plan_id=id)
-        return entry.update_attr(user_id=user_id, class_id=class_id,
+        return entry.update_attr(user_id=user_id, class_code=class_code,
                                  class_schedule_id=class_schedule_id,
                                  quarter_taken=quarter_taken,
                                  grade=grade, locked=locked)
 
     @staticmethod
     def remove_entry(id: int = None, user_id: int = None,
-                     class_id: int = None, quarter_taken: str = None):
+                     class_code: str = None, quarter_taken: str = None):
         if id:
             entry = FourYearPlan.query.filter_by(id=id).first()
-        elif user_id and class_id and quarter_taken:
+        elif user_id and class_code and quarter_taken:
             entry = FourYearPlan.query.filter_by(
-                    user_id=user_id, class_id=class_id,
+                    user_id=user_id, class_code=class_code,
                     quarter_taken=quarter_taken).first()
         else:
             return False

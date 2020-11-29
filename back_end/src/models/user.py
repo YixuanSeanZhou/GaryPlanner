@@ -16,8 +16,8 @@ class User(db.Model, UserMixin):
 
     id = db.Column(db.Integer, primary_key=True)
     user_name = db.Column(db.String(255), unique=True, nullable=False)
-    first_name = db.Column(db.String(255), unique=True, nullable=False)
-    last_name = db.Column(db.String(255), unique=True, nullable=False)
+    first_name = db.Column(db.String(255), nullable=False)
+    last_name = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
     pwd = db.Column(db.String(255), nullable=False)
     intended_grad_quarter = db.Column(db.String(255), nullable=False)
@@ -44,13 +44,16 @@ class User(db.Model, UserMixin):
     def update_attr(self, first_name: str, user_name: str,
                     last_name: str, college: str,
                     intended_grad_quarter: str,
-                    major: str, minor: str) -> bool:
+                    major: str, minor: str, pwd:str) -> bool:
         if first_name:
             self.first_name = first_name
         if last_name:
             self.last_name = last_name
         if user_name:
             self.user_name = user_name
+        if pwd:
+            pwd = pwd_context.hash(pwd)
+            self.pwd = pwd
         if college:
             self.college = college
         if intended_grad_quarter:
@@ -62,6 +65,7 @@ class User(db.Model, UserMixin):
         self.save()
         return True, self
 
+
     def save(self):
         db.session.commit()
 
@@ -69,10 +73,12 @@ class User(db.Model, UserMixin):
     def create_user(user_name: str, email: str, pwd: str,
                     first_name: str, last_name: str,
                     intended_grad_quarter: str,
-                    college: str, major: str, minor: str) -> (bool, User):
+                    college: str, major: str, minor: str) -> (bool, User, str):
         # TODO: Change to user_name?
-        if User.get_user_by_email(email=email):
-            return False, None    # user exists
+        if User.query.filter_by(email=email).first():
+            return False, None, 'email already exists'    # user exists
+        elif User.query.filter_by(user_name=user_name).first():
+            return False, None, 'user_name already exist'
         pwd = pwd_context.hash(pwd)
         user = User(user_name=user_name, email=email, pwd=pwd,
                     first_name=first_name, last_name=last_name,
@@ -80,7 +86,7 @@ class User(db.Model, UserMixin):
                     college=college, major=major, minor=minor)
         db.session.add(user)
         user.save()
-        return True, user
+        return True, user, 'success'
 
     @staticmethod
     def user_exist(user_id: int) -> bool:
@@ -103,8 +109,16 @@ class User(db.Model, UserMixin):
         return User.query.filter_by(email=email).first()
 
     @staticmethod
-    def check_password(email=email, pwd=pwd) -> bool:
+    def check_password(email: str, pwd: str) -> bool:
         user = User.query.filter_by(email=email).first()
+        if user:
+            if pwd_context.verify(pwd, user.pwd):
+                return True
+        return False
+
+    @staticmethod
+    def check_password_with_user_name(user_name: str, pwd: str) -> bool:
+        user = User.query.filter_by(user_name=user_name).first()
         if user:
             if pwd_context.verify(pwd, user.pwd):
                 return True
@@ -114,6 +128,7 @@ class User(db.Model, UserMixin):
     def update_profile(user_id: int, first_name: str = None,
                        last_name: str = None,
                        user_name: str = None,
+                       pwd: str = None,
                        intended_grad_quarter: str = None,
                        college: str = None, major: str = None,
                        minor: str = None) -> (bool, User):
@@ -124,4 +139,8 @@ class User(db.Model, UserMixin):
         return usr.update_attr(first_name=first_name, user_name=user_name,
                                last_name=last_name, college=college,
                                intended_grad_quarter=intended_grad_quarter,
-                               major=major, minor=minor)
+                               major=major, minor=minor, pwd=pwd)
+
+    @staticmethod
+    def get_user_by_user_name(name: str) -> User:
+        return User.query.filter_by(user_name=name).first()

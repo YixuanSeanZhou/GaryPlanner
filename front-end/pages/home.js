@@ -3,98 +3,102 @@ import React from 'react'
 import Head from 'next/head'
 
 // Components
-import { GaryNavbar } from '../components/commonUI'
-import { Navbar, Jumbotron } from 'react-bootstrap'
-import { Button } from '@material-ui/core'
+import HomeNav from '../components/homeNav'
+import { Navbar, Jumbotron, Button, Modal } from 'react-bootstrap'
+import Request from '../components/requestPlan'
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Intro.module.css'
 
-export default class Home extends React.Component {
-	render() {
-		return (
-			<>
-				<Head>
-					<title>Home</title>
-				</Head>
+export default function Home() {
 
-				<GaryNavbar>
-					<Navbar.Text>Home</Navbar.Text>
-				</GaryNavbar>
 
-				<Jumbotron></Jumbotron>
-				<div className={styles.content}>
-					<div clasName={styles.top}>
-						<div className={styles.warp}>
-							<div className={styles.center}>
-								<h1>Welcome to GaryPlanner</h1>
-								<h2>Easier Life in UCSD</h2>
-							</div>
+	const [modalShow, setModalShow] = React.useState(false);
+	
+	return (
+		<>
+			<Head>
+				<title>Home</title>
+			</Head>
 
-							<p>
-								GaryPlanner is a tool that helps you organize your class
-								schedule while you are in UCSD. We will help you build
-								your class schedule in UCSD. Let's get started!
-							</p>
-						</div>
+			<HomeNav>
+				<Navbar.Text>Home</Navbar.Text>
+			</HomeNav>
+
+			<div className="intro">
+				<div className="content">
+					<div className="col-6">
+						<h1>Welcome Yixuan Zhou</h1>
 
 						<div className="container">
 							<div className="row">
-								<div className="col-6">
-									<Button
-										variant="contained"
-										color="primary"
-										href="/login"
-										className="mr-4">
-										Log In
-									</Button>
-									<Button
-										variant="outlined"
-										color="primary"
-										href="/signup">
-										Sign Up
-									</Button>
-								</div>
+								<h6>Major: Computer Science</h6>
 							</div>
-						</div>
-
-						<div className={styles.subContent}>
-							<h1 className="text-center">Build your</h1>
-							<div className={styles.columns}>
-								<div className="col-5">
-									<h3>Four Year Plan</h3>
-									<p>
-										Generate a table with classes you have taken in
-										UCSD 
-										<br /> Allow you to customize the plan
-										<br />....
-									</p>
-									<Button
-										variant="contained"
-										color="primary"
-										href="/fourYearPlan">
-										build
-									</Button>
-								</div>
-
-								<div className="offset-2 col-5">
-									<h3>Quarter Schedule</h3>
-									<p>Plan your next quarter at first place
-									   <br />Select the best Professor
-									   <br /> ... 
-									</p>
-
-									<Button
-										variant="contained"
-										color="primary"
-										href="/">
-										build
-									</Button>
-								</div>
+							<div className="row">
+								<h6>Minor: P.I.G.</h6>
 							</div>
+							<div className="row">
+								<h6>College: Sixth</h6>
+							</div>
+
 						</div>
 					</div>
 				</div>
-			</>
-		)
-	}
+			</div>
+
+			<div className="content">
+				<h1 className="text-center mt-5"></h1>
+				<div className="container mt-5">
+					<div className="row">
+						<div className="col-6">
+							<h3>Four Year Plan</h3>
+							<p>
+								Generates your four year plan automatically <br />
+								Allows you to graduate on time <br />
+								Customizes your plan easily <br />
+							</p>
+							<Button variant="warning" onClick={() => setModalShow(true)}>
+								Create New
+							</Button>
+							<Button
+								variant="outline-primary"
+								href="/fourYearPlan"
+								className="ml-4">
+								View
+							</Button>
+						</div>
+						<div className="col-6">
+							<img src="/images/plan.png" width="500" height="auto" />
+						</div>
+					</div>
+
+					<div className="row" style={{ paddingTop: '85px' }}>
+						<div className="col-6">
+							<img src="/images/schedule.png" width="500" hehight="auto" />
+						</div>
+						<div className="col-6">
+							<h3>Quarter Schedule</h3>
+							<p>
+								Clear view of your weekly schedule <br />
+								Comparsion between different classes <br />
+								Select the best professor you want <br />
+							</p>
+
+							<Button variant="warning" href="/">
+								Create New
+							</Button>
+							<Button
+								variant="outline-primary"
+								href="/currQuarter"
+								className="ml-4">
+								View
+							</Button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<Request show={modalShow} onHide={() => setModalShow(false)} />
+		</>
+	)
+
 }
