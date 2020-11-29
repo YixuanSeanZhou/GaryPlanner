@@ -8,8 +8,10 @@ from .models.user import User
 # DO NOT EDIT ABOVE THE LINE
 
 from .apis.user import user_api_bp as uapi
+from .apis.degree_audit import degree_audit_api_bp as daapi
 
 app.register_blueprint(uapi, url_prefix="/api/users")
+app.register_blueprint(daapi, url_prefix="/api/degree_audit")
 
 
 @app.route("/")
