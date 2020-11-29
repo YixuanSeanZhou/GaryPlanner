@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Container, Row, Col, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Container, Row, Col, Nav, NavDropdown, Button } from 'react-bootstrap'
 import Link from 'next/link'
 import Particles from 'react-particles-js'
 
@@ -15,8 +15,36 @@ export class GaryNavbar extends React.Component {
 
     }
 
+    handleLogout = () => {
+		const requestUrl = 'http://localhost:2333/api/users/logout';
+		const options = {
+            method: 'POST',
+            credentials: 'include',
+		};
+
+		fetch(requestUrl, options)
+        .then(response => {
+
+            if (response.status == 200) {
+				// User successfully created
+				// TODO: Prompt Success
+                this.props.router.push("/intro");
+			} else if (response.status == 403) {
+                this.setState({
+                    user_name: "Not Logged in!",
+                })
+                throw Error(response.statusText);
+			}	
+
+        })
+		.catch((error) => {
+			console.error('Error:', error);
+        });
+    }
+
     render() {
         let navBarChild = undefined;
+
         if (this.state.showUser === true) {
             navBarChild = (
 				<>
@@ -35,8 +63,8 @@ export class GaryNavbar extends React.Component {
 								Change Passoword
 							</NavDropdown.Item>
 						</NavDropdown>
-						<Nav.Link href="/intro">
-							| <span style={{ textDecoration: 'underline' }}>Log out</span>
+						<Nav.Link href="/intro"  >
+                            <a onClick={this.handleLogout}><span style={{ textDecoration: 'underline' }}>Log out</span></a>
 						</Nav.Link>
 					</Nav>
 				</>

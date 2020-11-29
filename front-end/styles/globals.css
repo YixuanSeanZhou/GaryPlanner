@@ -74,7 +74,7 @@ div#__next > div {
 }
 
 #intro-img {
-  border: 2px groove rgb(133, 128, 128);
+  box-shadow: 8px 8px 30px rgb(58, 57, 57);
   border-radius: 12px;
 }
 
