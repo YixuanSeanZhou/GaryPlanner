@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
-import HomeNav from '../components/homeNav'
+import { GaryNavbar } from '../components/commonUI'
 import SideBar from '../components/friends/SideBar'
 import FriendInfo from '../components/friends/FriendInfo'
 import { Navbar } from 'react-bootstrap'
@@ -21,9 +21,9 @@ export default function Friends() {
 				<title>Friends</title>
 			</Head>
 
-			<HomeNav>
+			<GaryNavbar showUser={true}>
 				<Navbar.Text>Friends</Navbar.Text>
-			</HomeNav>
+			</GaryNavbar>
 
 			<div className={`app ${rtl ? 'rtl' : ''} ${toggled ? 'toggled' : ''}`}>
 				<SideBar />

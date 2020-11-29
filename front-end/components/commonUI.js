@@ -10,7 +10,7 @@ export class GaryNavbar extends React.Component {
         super(props);
         this.state = {
             showUser: this.props.showUser,
-            first_name: this.props.first_name,
+            first_name: 'not login',
         }
 
     }
@@ -34,13 +34,45 @@ export class GaryNavbar extends React.Component {
                     user_name: "Not Logged in!",
                 })
                 throw Error(response.statusText);
-			}	
-
+			}
         })
 		.catch((error) => {
 			console.error('Error:', error);
         });
     }
+
+    componentDidMount() {
+		// Options for the fetch request
+		const requestUrl = 'http://localhost:2333/api/users/get_user_profile'
+		const options = {
+			method: 'GET',
+			credentials: 'include',
+		}
+
+		fetch(requestUrl, options)
+			.then((response) => {
+				if (response.status == 200) {
+					// TODO: Prompt Success
+					return response.json()
+				} else if (response.status == 403) {
+					this.setState({
+						user_name: 'Not Logged in!',
+					})
+					throw Error(response.statusText)
+				}
+			})
+			.then((data) => {
+				console.log('Success:', data) // TODO: Remove for deployment
+
+				this.setState(data.result)
+				this.setState({
+					is_loading: false,
+				})
+			})
+			.catch((error) => {
+				console.error('Error:', error)
+			})
+	}
 
     render() {
         let navBarChild = undefined;

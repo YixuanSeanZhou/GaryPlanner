@@ -70,7 +70,7 @@ export default class Home extends React.Component {
 					<title>Home</title>
 				</Head>
 
-				<GaryNavbar showUser={true} first_name={this.state.first_name}>
+				<GaryNavbar showUser={true}>
 					<Navbar.Text>Home</Navbar.Text>
 				</GaryNavbar>
 
