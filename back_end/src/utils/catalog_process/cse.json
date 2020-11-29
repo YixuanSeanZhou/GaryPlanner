@@ -100,7 +100,7 @@
   "name": "Discrete Mathematics",
   "unit": "4",
   "des": "Basic discrete mathematical structures: sets, relations, functions, sequences, equivalence relations, partial orders, and number systems. Methods of reasoning and proofs: prepositional logic, predicate logic, induction, recursion, and pigeonhole principle. Infinite sets and diagonalization. Basic counting techniques; permutation and combinations. Applications will be given to digital logic design, elementary number theory, design of programs, and proofs of program correctness. Students who have completed MATH 109 may not receive credit for CSE 20. Credit not offered for both MATH 15A and CSE 20. Equivalent to MATH 15A. ",
-  "pre": " COGS 7 or CSE 8B or CSE 11. Prerequisite courses must have been completed with a grade of C\u2013 or better; restricted to undergraduates. Graduate students will be allowed as space permits.",
+  "pre": " COGS 7 or CSE 8B or CSE 11. Prerequisite courses must have been completed with a grade of C- or better; restricted to undergraduates. Graduate students will be allowed as space permits.",
   "formatted_pre": [
    [
     "COGS_7",
@@ -1148,7 +1148,7 @@
  {
   "num": "CSE_191",
   "name": "Seminar in CSE",
-  "unit": "1\u20134",
+  "unit": "1-4",
   "des": "A seminar course on topics of current interest. Students, as well as, the instructor will be actively involved in running the course/class. This course cannot be counted toward a technical elective. ",
   "pre": " consent of instructor. Department stamp required.",
   "formatted_pre": []

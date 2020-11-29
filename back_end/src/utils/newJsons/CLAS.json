@@ -3,70 +3,70 @@
   "code": "CLAS 196",
   "title": "Directed Honors Thesis in Classical Studies",
   "unit": "4",
-  "discription": "BA honors thesis research under the direction of a member of a classical studies program faculty.",
-  "prerequsite": "acceptance into the classical studies honors program and consent of instructor."
+  "description": "BA honors thesis research under the direction of a member of a classical studies program faculty.",
+  "prerequisite": "acceptance into the classical studies honors program and consent of instructor."
  },
  {
   "code": "CLASSIC 200A",
   "title": "Contemporary Literary Theory and the Classics",
   "unit": "4",
-  "discription": "An introduction to contemporary literary theory, focusing on important critical approaches to the literary texts. May be repeated for credit as topics vary.",
-  "prerequsite": null
+  "description": "An introduction to contemporary literary theory, focusing on important critical approaches to the literary texts. May be repeated for credit as topics vary.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 200B",
   "title": "Diachronic Perspectives on Classical Antiquity",
   "unit": "4",
-  "discription": "Examines ways in which classical texts and ideas have been received and appropriated for the diverse purposes of ancient and subsequent cultures. May be repeated for credit as topics vary.",
-  "prerequsite": null
+  "description": "Examines ways in which classical texts and ideas have been received and appropriated for the diverse purposes of ancient and subsequent cultures. May be repeated for credit as topics vary.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 200C",
   "title": "Greece and Rome in Their Contemporary Cultural Contexts",
   "unit": "4",
-  "discription": "An introduction to the methods and perspectives of social scientific theory that can be used to study the material and social dimensions of the cultures of ancient Greece and Rome. May be repeated for credit as topics vary.",
-  "prerequsite": null
+  "description": "An introduction to the methods and perspectives of social scientific theory that can be used to study the material and social dimensions of the cultures of ancient Greece and Rome. May be repeated for credit as topics vary.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 205",
   "title": "Concurrent Readings",
   "unit": "2",
-  "discription": "May be repeated for credit as topics vary.",
-  "prerequsite": null
+  "description": "May be repeated for credit as topics vary.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 220",
   "title": "Classics Graduate Seminar",
   "unit": "4",
-  "discription": "Subject matter variable; mainly but not exclusively major literary topics. May be repeated for credit as topics vary.",
-  "prerequsite": null
+  "description": "Subject matter variable; mainly but not exclusively major literary topics. May be repeated for credit as topics vary.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 280",
   "title": "Independent Study",
-  "unit": "4\u201312",
-  "discription": "Supervised independent research. Subject varies. May be repeated for credit.",
-  "prerequsite": null
+  "unit": "4-12",
+  "description": "Supervised independent research. Subject varies. May be repeated for credit.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 290",
   "title": "Research in Classics",
-  "unit": "4\u201312",
-  "discription": "Research under Classics faculty. May be repeated for credit.",
-  "prerequsite": null
+  "unit": "4-12",
+  "description": "Research under Classics faculty. May be repeated for credit.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 299",
   "title": "Dissertation Research",
-  "unit": "4\u201312",
-  "discription": "Dissertation research with Classics faculty. May be repeated for credit.",
-  "prerequsite": null
+  "unit": "4-12",
+  "description": "Dissertation research with Classics faculty. May be repeated for credit.",
+  "prerequisite": null
  },
  {
   "code": "CLASSIC 399",
   "title": "University Teaching",
   "unit": "4-4-4",
-  "discription": "Required of and limited to teaching assistants. Satisfactory/unsatisfactory grade only. May be repeated for credit.",
-  "prerequsite": null
+  "description": "Required of and limited to teaching assistants. Satisfactory/unsatisfactory grade only. May be repeated for credit.",
+  "prerequisite": null
  }
 ]

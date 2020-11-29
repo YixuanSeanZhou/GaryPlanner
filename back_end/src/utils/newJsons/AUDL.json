@@ -3,119 +3,119 @@
   "code": "AUD 236",
   "title": "Preceptorship in Neuro-Otology",
   "unit": "2",
-  "discription": "Observations in UC San Diego Otology clinic. Learn about procedures for taking histories and performing clinical examinations, patient treatment, and patient education from otologists.",
-  "prerequsite": "second-year AuD student or consent of instructor."
+  "description": "Observations in UC San Diego Otology clinic. Learn about procedures for taking histories and performing clinical examinations, patient treatment, and patient education from otologists.",
+  "prerequisite": "second-year AuD student or consent of instructor."
  },
  {
   "code": "AUD 255",
   "title": "Anatomy and Physiology of the Auditory and Vestibular Systems",
   "unit": "4",
-  "discription": "Detailed anatomy of the auditory and vestibular systems, including the ultra- structure, histology, and neuronal connections of the systems. In addition, physiological responses that underlie the actions of each system are described, from the cellular to the systems levels.",
-  "prerequsite": "second- year AuD student or consent of instructor."
+  "description": "Detailed anatomy of the auditory and vestibular systems, including the ultra- structure, histology, and neuronal connections of the systems. In addition, physiological responses that underlie the actions of each system are described, from the cellular to the systems levels.",
+  "prerequisite": "second- year AuD student or consent of instructor."
  },
  {
   "code": "AUD 256",
   "title": "Pathophysiology of the Auditory and Vestibular Systems",
   "unit": "4",
-  "discription": "Physiological and anatomical substrates of auditory and vestibular disorders including influences of neurological disorders. Topics include peripheral and central disorders, congenital disorders due to infections, as well as acquired ototoxic, noise-induced, infective, autoimmune, age-associated disorders, and traumatic disorders.",
-  "prerequsite": "AUD 255 or consent of instructor."
+  "description": "Physiological and anatomical substrates of auditory and vestibular disorders including influences of neurological disorders. Topics include peripheral and central disorders, congenital disorders due to infections, as well as acquired ototoxic, noise-induced, infective, autoimmune, age-associated disorders, and traumatic disorders.",
+  "prerequisite": "AUD 255 or consent of instructor."
  },
  {
   "code": "AUD 257",
   "title": "Ear Diseases and Treatment",
   "unit": "3",
-  "discription": "Differential diagnosis and treatment of auditory and vestibular disorders, audiological components of neuro-otology, as well as interactions between the audiologist and neuro-otologist in a clinical setting.",
-  "prerequsite": "second-year AuD student or consent of instructor."
+  "description": "Differential diagnosis and treatment of auditory and vestibular disorders, audiological components of neuro-otology, as well as interactions between the audiologist and neuro-otologist in a clinical setting.",
+  "prerequisite": "second-year AuD student or consent of instructor."
  },
  {
   "code": "AUD 263",
   "title": "Physiological and Behavioral Tests of Vestibular Function",
   "unit": "4",
-  "discription": "Clinical evaluation of vestibular function, using techniques such as caloric and rotational electronystagmography and posturography. The interpretation of clinical findings and implications for rehabilitative strategies will be covered. The course will include observation of testing in otology clinic settings.",
-  "prerequsite": "second-year AuD student or consent of instructor."
+  "description": "Clinical evaluation of vestibular function, using techniques such as caloric and rotational electronystagmography and posturography. The interpretation of clinical findings and implications for rehabilitative strategies will be covered. The course will include observation of testing in otology clinic settings.",
+  "prerequisite": "second-year AuD student or consent of instructor."
  },
  {
   "code": "AUD 264",
   "title": "Auditory and Vestibular Development and Genetics",
   "unit": "3",
-  "discription": "Embryology and functional development of the auditory and vestibular systems, from their initial appearance to adult function. Inherited disorders of these two sensory systems are also addressed, including phenotypic description and genetic basis. Genetic counseling and the potential for gene therapy are also discussed.",
-  "prerequsite": "second- or third-year AuD student or consent of instructor."
+  "description": "Embryology and functional development of the auditory and vestibular systems, from their initial appearance to adult function. Inherited disorders of these two sensory systems are also addressed, including phenotypic description and genetic basis. Genetic counseling and the potential for gene therapy are also discussed.",
+  "prerequisite": "second- or third-year AuD student or consent of instructor."
  },
  {
   "code": "AUD 270",
   "title": "Newborn Hearing Screening and Management",
   "unit": "3",
-  "discription": "This course describes procedures and requirements for newborn hearing screening, and the detection and clinical management of congenital auditory disorders. Observations of newborn screening in a neonatal ICU environment.",
-  "prerequsite": "second- or third-year AuD student or consent of instructor."
+  "description": "This course describes procedures and requirements for newborn hearing screening, and the detection and clinical management of congenital auditory disorders. Observations of newborn screening in a neonatal ICU environment.",
+  "prerequisite": "second- or third-year AuD student or consent of instructor."
  },
  {
   "code": "AUD 271",
   "title": "Temporal Bone Anatomy",
   "unit": "3",
-  "discription": "Detailed anatomy of the temporal bone, cranial nerves and basic neurophysiology for audiologists. Radiographic and magnetic resonance imaging of the temporal bone will be discussed.",
-  "prerequsite": "second- or third- year AuD student or consent of instructor."
+  "description": "Detailed anatomy of the temporal bone, cranial nerves and basic neurophysiology for audiologists. Radiographic and magnetic resonance imaging of the temporal bone will be discussed.",
+  "prerequisite": "second- or third- year AuD student or consent of instructor."
  },
  {
   "code": "AUD 272",
   "title": "Central Auditory Processing Assessment and Management",
   "unit": "4",
-  "discription": "Central auditory processing assessment and management for pediatrics and adults. Focus on behavioral tests assessing dichotic listening, temporal processes, pattern recognition, performance with competing and degraded signals.",
-  "prerequsite": "course restricted to AuD students."
+  "description": "Central auditory processing assessment and management for pediatrics and adults. Focus on behavioral tests assessing dichotic listening, temporal processes, pattern recognition, performance with competing and degraded signals.",
+  "prerequisite": "course restricted to AuD students."
  },
  {
   "code": "AUD 274",
   "title": "Advanced Technical Aspects of Hearing Amplification",
   "unit": "4",
-  "discription": "Advanced technical aspects of assessing and fitting amplification devices for the hearing impaired. Intensive hands-on training to develop skills necessary for audiology clinical placement.",
-  "prerequsite": "course restricted to AuD students or consent of instructor."
+  "description": "Advanced technical aspects of assessing and fitting amplification devices for the hearing impaired. Intensive hands-on training to develop skills necessary for audiology clinical placement.",
+  "prerequisite": "course restricted to AuD students or consent of instructor."
  },
  {
   "code": "AUD 275",
   "title": "Intraoperative Monitoring",
   "unit": "3",
-  "discription": "Methods and procedures required for monitoring of evoked auditory responses in the operating room. The indications for the use of intraoperative monitoring and difficulties unique to this setting. The course will include the opportunity to observe auditory potential monitoring in the operating room.",
-  "prerequsite": "second- or third-year AuD student or consent of instructor."
+  "description": "Methods and procedures required for monitoring of evoked auditory responses in the operating room. The indications for the use of intraoperative monitoring and difficulties unique to this setting. The course will include the opportunity to observe auditory potential monitoring in the operating room.",
+  "prerequisite": "second- or third-year AuD student or consent of instructor."
  },
  {
   "code": "AUD 276",
   "title": "Cochlear Implants and Other Implantable Sensory Aids",
   "unit": "3",
-  "discription": "Theory and practice of cochlear implantation with focus on audiological management of patients after implantation. Current concepts regarding the activation of primary auditory neurons by electrical stimulation and indications for cochlear implantation and surgical procedures are described.",
-  "prerequsite": "second- or third-year AuD student or consent of instructor."
+  "description": "Theory and practice of cochlear implantation with focus on audiological management of patients after implantation. Current concepts regarding the activation of primary auditory neurons by electrical stimulation and indications for cochlear implantation and surgical procedures are described.",
+  "prerequisite": "second- or third-year AuD student or consent of instructor."
  },
  {
   "code": "AUD 284",
   "title": "Clinical Practice in Audiology II",
   "unit": "1-4",
-  "discription": "Applications of clinical procedures to patient assessment. Includes clinical observation, interaction with otologists, and supervised patient care involving diagnostics and hearing-aid evaluations in the UC San Diego audiology clinics. This course may be taken more than once.",
-  "prerequsite": "open to second- or third-year doctoral students or consent of instructor. One quarter unit represents three to four hours per week. Must also be concurrently enrolled in AUD 291."
+  "description": "Applications of clinical procedures to patient assessment. Includes clinical observation, interaction with otologists, and supervised patient care involving diagnostics and hearing-aid evaluations in the UC San Diego audiology clinics. This course may be taken more than once.",
+  "prerequisite": "open to second- or third-year doctoral students or consent of instructor. One quarter unit represents three to four hours per week. Must also be concurrently enrolled in AUD 291."
  },
  {
   "code": "AUD 291",
   "title": "Clinical Case Studies/Staffing",
   "unit": "1",
-  "discription": "Presentations and discussion of clinical cases and issues related to clinical practice. Students' clinical experiences are discussed relative to medical and audiological assessment and management. This course may be taken more than once.",
-  "prerequsite": "second- or third-year AuD student or consent of instructor. Must be taken more than once."
+  "description": "Presentations and discussion of clinical cases and issues related to clinical practice. Students' clinical experiences are discussed relative to medical and audiological assessment and management. This course may be taken more than once.",
+  "prerequisite": "second- or third-year AuD student or consent of instructor. Must be taken more than once."
  },
  {
   "code": "AUD 296",
   "title": "Research Practicum",
   "unit": "3",
-  "discription": "Participation in specific faculty research activities. Become familiar with research methods and objectives of a faculty's research project. Participate in data collection and analysis at the discretion of the faculty investigator.",
-  "prerequsite": "second- or third-year AuD student and consent of instructor."
+  "description": "Participation in specific faculty research activities. Become familiar with research methods and objectives of a faculty's research project. Participate in data collection and analysis at the discretion of the faculty investigator.",
+  "prerequisite": "second- or third-year AuD student and consent of instructor."
  },
  {
   "code": "AUD 298",
   "title": "Independent Research",
   "unit": "3",
-  "discription": "Independent research on topics relevant to audiology, consisting of literature review, data collection. Faculty supervision and mentoring on practical elements of research design and methodology. The course will consist of laboratory experience, focused on practical elements of research and design and methodology.",
-  "prerequsite": "consent of AuD program adviser and consent of faculty mentor."
+  "description": "Independent research on topics relevant to audiology, consisting of literature review, data collection. Faculty supervision and mentoring on practical elements of research design and methodology. The course will consist of laboratory experience, focused on practical elements of research and design and methodology.",
+  "prerequisite": "consent of AuD program adviser and consent of faculty mentor."
  },
  {
   "code": "AUD 299",
   "title": "Doctoral Project",
   "unit": "3",
-  "discription": "Individual investigation and preparation of the doctoral project for the AuD degree will be performed under the supervision of an experienced research mentor.",
-  "prerequsite": "advancement to candidacy in the AuD program."
+  "description": "Individual investigation and preparation of the doctoral project for the AuD degree will be performed under the supervision of an experienced research mentor.",
+  "prerequisite": "advancement to candidacy in the AuD program."
  }
 ]

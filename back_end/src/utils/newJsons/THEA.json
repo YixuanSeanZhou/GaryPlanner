@@ -3,1498 +3,1498 @@
   "code": "TDAC 1",
   "title": "Introduction to Acting",
   "unit": "4",
-  "discription": "A beginning course in the fundamentals of acting: establishing a working vocabulary and acquiring the basic skills of the acting process. Through exercises, compositions, and improvisations, the student actor explores the imagination as the actor's primary resource, and the basic approach to text through action.",
-  "prerequsite": "none."
+  "description": "A beginning course in the fundamentals of acting: establishing a working vocabulary and acquiring the basic skills of the acting process. Through exercises, compositions, and improvisations, the student actor explores the imagination as the actor's primary resource, and the basic approach to text through action.",
+  "prerequisite": "none."
  },
  {
   "code": "TDAC 101",
   "title": "Acting I",
   "unit": "4",
-  "discription": "This course focuses on beginning scene study with an emphasis on exploring action/objective and the given circumstances of a selected text.",
-  "prerequsite": "THAC or TDAC 1 or consent of instructor."
+  "description": "This course focuses on beginning scene study with an emphasis on exploring action/objective and the given circumstances of a selected text.",
+  "prerequisite": "THAC or TDAC 1 or consent of instructor."
  },
  {
   "code": "TDAC 102",
   "title": "Acting II",
   "unit": "4",
-  "discription": "Further study in the application of the given circumstances to a text and the development of characterization.",
-  "prerequsite": "TDAC 101."
+  "description": "Further study in the application of the given circumstances to a text and the development of characterization.",
+  "prerequisite": "TDAC 101."
  },
  {
   "code": "TDAC 103A",
   "title": "**** Acting Intensive I",
   "unit": "4",
-  "discription": "An intensive foundation class for students interested in professional actor training.",
-  "prerequsite": null
+  "description": "An intensive foundation class for students interested in professional actor training.",
+  "prerequisite": null
  },
  {
   "code": "TDAC 103B",
   "title": "**** Acting Intensive II",
   "unit": "4",
-  "discription": "A continuation of TDAC 103A.",
-  "prerequsite": null
+  "description": "A continuation of TDAC 103A.",
+  "prerequisite": null
  },
  {
   "code": "TDAC 104",
   "title": "Classical Text",
   "unit": "4",
-  "discription": "Studies in the heightened realities of poetic drama. Verse analysis, research, methods and how to approach a classical dialogue.",
-  "prerequsite": "TDAC 102."
+  "description": "Studies in the heightened realities of poetic drama. Verse analysis, research, methods and how to approach a classical dialogue.",
+  "prerequisite": "TDAC 102."
  },
  {
   "code": "TDAC 105",
   "title": "Rehearing Shakespeare",
   "unit": "4",
-  "discription": "Advanced exploration of Shakespeare's language through examining and performing scenes from the plays. Admission by audition/interview. May be taken for credit two times.",
-  "prerequsite": "TDAC 102."
+  "description": "Advanced exploration of Shakespeare's language through examining and performing scenes from the plays. Admission by audition/interview. May be taken for credit two times.",
+  "prerequisite": "TDAC 102."
  },
  {
   "code": "TDAC 106",
   "title": "Chekhov Acting",
   "unit": "4",
-  "discription": "Practical exercises, discussion, text analysis, and scene work on the writings of Anton Chekhov. Admission by audition/interview.",
-  "prerequsite": "TDAC 102."
+  "description": "Practical exercises, discussion, text analysis, and scene work on the writings of Anton Chekhov. Admission by audition/interview.",
+  "prerequisite": "TDAC 102."
  },
  {
   "code": "TDAC 107",
   "title": "Improvisation for the Theatre",
   "unit": "4",
-  "discription": "Improvisation for the Theatre explores improvisation techniques as an alternative and unique approach to acting. Students should have a performance background.",
-  "prerequsite": "THAC or TDAC 1."
+  "description": "Improvisation for the Theatre explores improvisation techniques as an alternative and unique approach to acting. Students should have a performance background.",
+  "prerequisite": "THAC or TDAC 1."
  },
  {
   "code": "TDAC 108",
   "title": "Advanced Topics",
   "unit": "4",
-  "discription": "Advanced topics in acting, such as avant-garde drama, commedia, or Beckett, for students who possess basic acting techniques. May be taken for credit four times.",
-  "prerequsite": "TDAC 102."
+  "description": "Advanced topics in acting, such as avant-garde drama, commedia, or Beckett, for students who possess basic acting techniques. May be taken for credit four times.",
+  "prerequisite": "TDAC 102."
  },
  {
   "code": "TDAC 109",
   "title": "Singing for Actors",
   "unit": "4",
-  "discription": "This course introduces basic skills of breathing, placement, diction, musicianship, harmony, interpretation, and presentation needed by actors for roles requiring singing. Through a combination of group and individual coaching in class, students will prepare a program of short solo and ensemble pieces for a finals-week presentation.",
-  "prerequsite": "THAC or TDAC 1 and audition; department stamp."
+  "description": "This course introduces basic skills of breathing, placement, diction, musicianship, harmony, interpretation, and presentation needed by actors for roles requiring singing. Through a combination of group and individual coaching in class, students will prepare a program of short solo and ensemble pieces for a finals-week presentation.",
+  "prerequisite": "THAC or TDAC 1 and audition; department stamp."
  },
  {
   "code": "TDAC 110",
   "title": "Acting for the Camera",
   "unit": "4",
-  "discription": "This course is designed to aid the actor in the transition from stage to film work. Examination of film production and its physical characteristics and the acting style needed for work in film and television. Students will perform in simulated studio setting on camera.",
-  "prerequsite": "TDAC 102."
+  "description": "This course is designed to aid the actor in the transition from stage to film work. Examination of film production and its physical characteristics and the acting style needed for work in film and television. Students will perform in simulated studio setting on camera.",
+  "prerequisite": "TDAC 102."
  },
  {
   "code": "TDAC 111",
   "title": "Freeing the Voice",
   "unit": "4",
-  "discription": "Intensive workshop for actors and directors designed to \u201cfree the voice,\u201d with special emphasis on characteristics and vocal flexibility in a wide range of dramatic texts. This proven method combines experimental and didactic learning with selected exercises, texts, tapes, films, and total time commitment.",
-  "prerequsite": "TDAC 101 and audition/interview required."
+  "description": "Intensive workshop for actors and directors designed to \u201cfree the voice,\u201d with special emphasis on characteristics and vocal flexibility in a wide range of dramatic texts. This proven method combines experimental and didactic learning with selected exercises, texts, tapes, films, and total time commitment.",
+  "prerequisite": "TDAC 101 and audition/interview required."
  },
  {
   "code": "TDAC 112",
   "title": "Senior Seminar in Acting",
   "unit": "4",
-  "discription": "An in-depth study seminar focused on special issues in acting as they relate to contemporary theatre. Of particular interest to students who plan to pursue a career in this area of theatre.",
-  "prerequsite": "TDAC 102."
+  "description": "An in-depth study seminar focused on special issues in acting as they relate to contemporary theatre. Of particular interest to students who plan to pursue a career in this area of theatre.",
+  "prerequisite": "TDAC 102."
  },
  {
   "code": "TDAC 115",
   "title": "Movement for Actors",
   "unit": "4",
-  "discription": "An exploration of the wide array of physical skills necessary for the actor. Using techniques derived from mime, clowning, sports, acrobatics, and improvisation, students will investigate their individual physical potential as well as their sense of creativity and imagination.",
-  "prerequsite": "THAC or TDAC 101."
+  "description": "An exploration of the wide array of physical skills necessary for the actor. Using techniques derived from mime, clowning, sports, acrobatics, and improvisation, students will investigate their individual physical potential as well as their sense of creativity and imagination.",
+  "prerequisite": "THAC or TDAC 101."
  },
  {
   "code": "TDAC 120",
   "title": "Ensemble",
   "unit": "4",
-  "discription": "An intensive theatre practicum designed to generate theatre created by an ensemble with particular emphasis upon the analysis of text. Students will explore and analyze the script and its author. Ensemble segments include black theatre, Chicano theatre, feminist theatre, and commedia dell'arte. Audition may be required. A maximum of four units may be used for major credit. (Cross- listed with ETHN 146A.)",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "An intensive theatre practicum designed to generate theatre created by an ensemble with particular emphasis upon the analysis of text. Students will explore and analyze the script and its author. Ensemble segments include black theatre, Chicano theatre, feminist theatre, and commedia dell'arte. Audition may be required. A maximum of four units may be used for major credit. (Cross- listed with ETHN 146A.)",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDAC 122",
   "title": "Ensemble: Undergraduate Production",
   "unit": "4",
-  "discription": "Participation in a fully staged theatre production directed by an MFA or PhD student for the Department of Theatre and Dance. Admission by audition only. A maximum of four units may be used for major credit.",
-  "prerequsite": "consent of the instructor; department stamp."
+  "description": "Participation in a fully staged theatre production directed by an MFA or PhD student for the Department of Theatre and Dance. Admission by audition only. A maximum of four units may be used for major credit.",
+  "prerequisite": "consent of the instructor; department stamp."
  },
  {
   "code": "TDAC 123",
   "title": "Advanced Studies in Performance",
   "unit": "4",
-  "discription": "Participation in a fully staged season production that is directed by a faculty member or guest for the Department of Theatre and Dance. Admission by audition only. A maximum of four units may be used for major credit.",
-  "prerequsite": "consent of the instructor; department stamp."
+  "description": "Participation in a fully staged season production that is directed by a faculty member or guest for the Department of Theatre and Dance. Admission by audition only. A maximum of four units may be used for major credit.",
+  "prerequisite": "consent of the instructor; department stamp."
  },
  {
   "code": "TDDE 1",
   "title": "Introduction to Design for the Theatre",
   "unit": "4",
-  "discription": "A survey of contemporary and historical concepts and practices in the visual arts of the theatre; studies in text analysis, studio processes and technical production; elementary work in design criticism, scale model making, and costume design. A course serving as an introduction to theatre design and production.",
-  "prerequsite": null
+  "description": "A survey of contemporary and historical concepts and practices in the visual arts of the theatre; studies in text analysis, studio processes and technical production; elementary work in design criticism, scale model making, and costume design. A course serving as an introduction to theatre design and production.",
+  "prerequisite": null
  },
  {
   "code": "TDDE 101",
   "title": "Theatre Process\u2014Scenery",
   "unit": "4",
-  "discription": "A hands-on course develops craft skills and solution-finding process in design including script analysis, concept sketches, research, and scale model making. An exploration of fundamental ways of seeing and understanding visual design.",
-  "prerequsite": "THDE or TDDE 1 or THPR or TDPR 1."
+  "description": "A hands-on course develops craft skills and solution-finding process in design including script analysis, concept sketches, research, and scale model making. An exploration of fundamental ways of seeing and understanding visual design.",
+  "prerequisite": "THDE or TDDE 1 or THPR or TDPR 1."
  },
  {
   "code": "TDDE 102",
   "title": "Advanced Scenic Design",
   "unit": "4",
-  "discription": "An advanced course based on the \u201cpractice\u201d of scenic design, dealing with the solution finding process, from text to idea to realized work.",
-  "prerequsite": "THDE or TDDE 1, THDE or TDDE 101, or consent of instructor."
+  "description": "An advanced course based on the \u201cpractice\u201d of scenic design, dealing with the solution finding process, from text to idea to realized work.",
+  "prerequisite": "THDE or TDDE 1, THDE or TDDE 101, or consent of instructor."
  },
  {
   "code": "TDDE 111",
   "title": "Theatre Process\u2014Costume Design",
   "unit": "4",
-  "discription": "The process of the costume designer from script analysis and research visualization of ideas, through the process of costume design. Lecture and demonstration labs parallel lecture material. This course is intended for those interested in a basic understanding of the costumer's process. No previous drawing or painting skills required.",
-  "prerequsite": "THDE or TDDE 1."
+  "description": "The process of the costume designer from script analysis and research visualization of ideas, through the process of costume design. Lecture and demonstration labs parallel lecture material. This course is intended for those interested in a basic understanding of the costumer's process. No previous drawing or painting skills required.",
+  "prerequisite": "THDE or TDDE 1."
  },
  {
   "code": "TDDE 112",
   "title": "Advanced Costume Design",
   "unit": "4",
-  "discription": "An advanced course based on the \u201cpractice\u201d of costume design, dealing with the solution finding process, from text to idea to realized work.",
-  "prerequsite": "THDE or TDDE 1, THDE or TDDE 111, or consent of instructor."
+  "description": "An advanced course based on the \u201cpractice\u201d of costume design, dealing with the solution finding process, from text to idea to realized work.",
+  "prerequisite": "THDE or TDDE 1, THDE or TDDE 111, or consent of instructor."
  },
  {
   "code": "TDDE 121",
   "title": "Theatre Process\u2014Lighting Design",
   "unit": "4",
-  "discription": "One of three classes in theatre process. The course aims to develop basic skills in lighting design through practical projects, lab work and lecture. These emphasize collaborating, manipulating light and color, and developing craft skills.",
-  "prerequsite": "THDE or TDDE 1 or THPR or TDPR 3 or consent of instructor."
+  "description": "One of three classes in theatre process. The course aims to develop basic skills in lighting design through practical projects, lab work and lecture. These emphasize collaborating, manipulating light and color, and developing craft skills.",
+  "prerequisite": "THDE or TDDE 1 or THPR or TDPR 3 or consent of instructor."
  },
  {
   "code": "TDDE 130",
   "title": "Assistant Designer",
-  "unit": "2\u20136",
-  "discription": "A production-oriented course that continues to introduce students to the fundamentals of design assisting. Laboratory format allows the student to work with faculty, graduate, or advanced undergraduate theatre designers, doing research, developing design concepts, and supporting the designer in a number of professional ways. May be taken for credit two times.",
-  "prerequsite": "THDE or TDDE 1, any upper-division undergraduate theatre design class, THPR or TDPR 1, 2, 3, or 5; and consent of instructor; department stamp."
+  "unit": "2-6",
+  "description": "A production-oriented course that continues to introduce students to the fundamentals of design assisting. Laboratory format allows the student to work with faculty, graduate, or advanced undergraduate theatre designers, doing research, developing design concepts, and supporting the designer in a number of professional ways. May be taken for credit two times.",
+  "prerequisite": "THDE or TDDE 1, any upper-division undergraduate theatre design class, THPR or TDPR 1, 2, 3, or 5; and consent of instructor; department stamp."
  },
  {
   "code": "TDDE 131",
   "title": "Special Topics in Theatre Design",
   "unit": "4",
-  "discription": "A course designed to expose the theatre design students to a variety of specialized topics that will vary from quarter to quarter. May be taken for credit three times.",
-  "prerequsite": "THDE or TDDE 1 or consent of instructor."
+  "description": "A course designed to expose the theatre design students to a variety of specialized topics that will vary from quarter to quarter. May be taken for credit three times.",
+  "prerequisite": "THDE or TDDE 1 or consent of instructor."
  },
  {
   "code": "TDDE 132",
   "title": "Undergraduate Main Stage Production: Design",
   "unit": "4",
-  "discription": "A course that will guide a student in a design assignment on the undergraduate main stage production. Specialized topics dependent on the design requirements of the production. May be taken for credit three times.",
-  "prerequsite": "THDE or TDDE 1 and THDE or TDDE 101 or THDE or TDDE 121, or THDE or TDDE 131, or consent of instructor."
+  "description": "A course that will guide a student in a design assignment on the undergraduate main stage production. Specialized topics dependent on the design requirements of the production. May be taken for credit three times.",
+  "prerequisite": "THDE or TDDE 1 and THDE or TDDE 101 or THDE or TDDE 121, or THDE or TDDE 131, or consent of instructor."
  },
  {
   "code": "TDDE 141",
   "title": "Theatre Process\u2014Sound Design",
   "unit": "4",
-  "discription": "A hands-on course on the process of sound design from conception to planning and implementation. The course will concentrate equally on the technical and artistic aspects of the sound design process and will include a survey of modern audio technologies.",
-  "prerequsite": "TDPR 5 or TDPR 6 or TDDE 1 or MUS 173 or consent of instructor."
+  "description": "A hands-on course on the process of sound design from conception to planning and implementation. The course will concentrate equally on the technical and artistic aspects of the sound design process and will include a survey of modern audio technologies.",
+  "prerequisite": "TDPR 5 or TDPR 6 or TDDE 1 or MUS 173 or consent of instructor."
  },
  {
   "code": "TDDE 142",
   "title": "Advanced Sound Design",
   "unit": "4",
-  "discription": "This course focuses on advancing students in their artistic and technical skills in sound design. A large-scale project will be identified with special attention given to text analysis and technical specification of the sound design.",
-  "prerequsite": "TDDE 1 and TDDE 141 or equivalent, or consent of instructor."
+  "description": "This course focuses on advancing students in their artistic and technical skills in sound design. A large-scale project will be identified with special attention given to text analysis and technical specification of the sound design.",
+  "prerequisite": "TDDE 1 and TDDE 141 or equivalent, or consent of instructor."
  },
  {
   "code": "TDDE 151",
   "title": "Digital Video Design",
   "unit": "4",
-  "discription": "This course will examine the field of projection design for theatre and dance performance. Students will study and produce original works based on the theoretical and aesthetic approaches of animation, film, performance, and installation art that influence contemporary projection design.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This course will examine the field of projection design for theatre and dance performance. Students will study and produce original works based on the theoretical and aesthetic approaches of animation, film, performance, and installation art that influence contemporary projection design.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDDE 169A",
   "title": "Digital Rendering for Theatre and Performance Design I",
   "unit": "4",
-  "discription": "Introductory course that explores a variety of digital rendering methods for artistic 2-D, 3-D, and moving graphics visualization in theatre and performance design. Course objective is to synthesize and expand traditional drawing and painting methods with modern digital media-based applications.",
-  "prerequsite": "none."
+  "description": "Introductory course that explores a variety of digital rendering methods for artistic 2-D, 3-D, and moving graphics visualization in theatre and performance design. Course objective is to synthesize and expand traditional drawing and painting methods with modern digital media-based applications.",
+  "prerequisite": "none."
  },
  {
   "code": "TDDE 169B",
   "title": "Digital Rendering for Theatre and Performance Design II",
   "unit": "4",
-  "discription": "A continuation of TDDE 169A. Studio course explores advanced digital rendering methods for artistic 2-D, 3-D, and moving graphics for theatre and performance design. Focus will be on advanced techniques in the process of visualization from conception to production.",
-  "prerequsite": "TDDE 169A."
+  "description": "A continuation of TDDE 169A. Studio course explores advanced digital rendering methods for artistic 2-D, 3-D, and moving graphics for theatre and performance design. Focus will be on advanced techniques in the process of visualization from conception to production.",
+  "prerequisite": "TDDE 169A."
  },
  {
   "code": "TDDE 190",
   "title": "Major Project in Design/Theatre Production",
   "unit": "4",
-  "discription": "For the advanced design/production student. Concentration on a particularly challenging design or theatre production assignment, including such areas as assistant designer (scenery, lighting, or costumes), technical director, master cutter, or master electrician. May be repeated one time for credit. A maximum of eight units of major project study, regardless of area (design, directing, or stage management) may be used to fulfill major requirements. May be taken for credit two times.",
-  "prerequsite": "admission by consent of instructor only. See department for application form."
+  "description": "For the advanced design/production student. Concentration on a particularly challenging design or theatre production assignment, including such areas as assistant designer (scenery, lighting, or costumes), technical director, master cutter, or master electrician. May be repeated one time for credit. A maximum of eight units of major project study, regardless of area (design, directing, or stage management) may be used to fulfill major requirements. May be taken for credit two times.",
+  "prerequisite": "admission by consent of instructor only. See department for application form."
  },
  {
   "code": "TDDR 101",
   "title": "Stage Management",
   "unit": "4",
-  "discription": "Discussion and research into the duties, responsibilities, and roles of a stage manager. Work to include studies in script analysis, communication, rehearsal procedures, performance skills, and style and conceptual approach to theatre. THGE or TDGE 1, THAC or TDAC 1, and THDE or TDDE 1 recommended.",
-  "prerequsite": null
+  "description": "Discussion and research into the duties, responsibilities, and roles of a stage manager. Work to include studies in script analysis, communication, rehearsal procedures, performance skills, and style and conceptual approach to theatre. THGE or TDGE 1, THAC or TDAC 1, and THDE or TDDE 1 recommended.",
+  "prerequisite": null
  },
  {
   "code": "TDDR 108",
   "title": "Text Analysis for Actors and Directors",
   "unit": "4",
-  "discription": "This is an introductory class in the process of understanding the play script. The class will focus on analyzing the story and the underlying dramatic structure in terms of dramatic action. Objectives, actions, choices, given circumstances, and character will be examined.",
-  "prerequsite": "upper- division standing or consent of instructor."
+  "description": "This is an introductory class in the process of understanding the play script. The class will focus on analyzing the story and the underlying dramatic structure in terms of dramatic action. Objectives, actions, choices, given circumstances, and character will be examined.",
+  "prerequisite": "upper- division standing or consent of instructor."
  },
  {
   "code": "TDDR 111",
   "title": "Directing-Acting Process",
   "unit": "4",
-  "discription": "A studio class that investigates the fundamental skills a director needs to work with actors. Working with actors, students learn how to animate the text onstage through status exercises and scene work as they develop their skill in text work, staging, and dramatic storytelling.",
-  "prerequsite": "THDR or TDDR 108 or THHS or TDHT 10."
+  "description": "A studio class that investigates the fundamental skills a director needs to work with actors. Working with actors, students learn how to animate the text onstage through status exercises and scene work as they develop their skill in text work, staging, and dramatic storytelling.",
+  "prerequisite": "THDR or TDDR 108 or THHS or TDHT 10."
  },
  {
   "code": "TDDR 190",
   "title": "Major Project in Directing",
   "unit": "4",
-  "discription": "For the advanced student in directing. Intensive concentration on the full realization of a dramatic text from research and analysis through rehearsal and into performance. A maximum of eight units of major project study, regardless of area (design, directing, or stage management) may be used to fulfill major requirements. See department for application. May be taken for credit two times.",
-  "prerequsite": "THDR or TDDR 108, THDR or TDDR 111, consent of instructor, and department stamp."
+  "description": "For the advanced student in directing. Intensive concentration on the full realization of a dramatic text from research and analysis through rehearsal and into performance. A maximum of eight units of major project study, regardless of area (design, directing, or stage management) may be used to fulfill major requirements. See department for application. May be taken for credit two times.",
+  "prerequisite": "THDR or TDDR 108, THDR or TDDR 111, consent of instructor, and department stamp."
  },
  {
   "code": "TDDR 191",
   "title": "Major Project in Stage Management",
   "unit": "4",
-  "discription": "For the advanced student in stage management. Intensive concentration on the full realization of a dramatic text, from research and analysis through rehearsal and final performance. A maximum of eight units of major project study regardless of area (design, directing, stage management, or playwriting) may be used to fulfill major requirements. See department for application. May be taken for credit two times.",
-  "prerequsite": "THPR or TDPR 4, THPR or TDPR 104, THDR or TDDR 101, consent of instructor, and department stamp."
+  "description": "For the advanced student in stage management. Intensive concentration on the full realization of a dramatic text, from research and analysis through rehearsal and final performance. A maximum of eight units of major project study regardless of area (design, directing, stage management, or playwriting) may be used to fulfill major requirements. See department for application. May be taken for credit two times.",
+  "prerequisite": "THPR or TDPR 4, THPR or TDPR 104, THDR or TDDR 101, consent of instructor, and department stamp."
  },
  {
   "code": "TDDM 1",
   "title": "Introduction to Dance Making",
   "unit": "4",
-  "discription": "Explores the concepts and processes of dance making through creative projects, discussions, and the examination of major dance works. Recommended preparation: No prior dance experience required. Open to all levels.",
-  "prerequsite": "none."
+  "description": "Explores the concepts and processes of dance making through creative projects, discussions, and the examination of major dance works. Recommended preparation: No prior dance experience required. Open to all levels.",
+  "prerequisite": "none."
  },
  {
   "code": "TDDM 5",
   "title": "Site Specific Dance and Performance",
   "unit": "4",
-  "discription": "The study of dance and performance creation in relation to the environment, political activism, happenings, and ritual. Students explore ideas within the unique attributes of architecture, natural landscapes, public spaces, visual art, historic landmarks, and cultural contexts. Recommended preparation: No prior dance experience needed. Open to all levels.",
-  "prerequsite": "none."
+  "description": "The study of dance and performance creation in relation to the environment, political activism, happenings, and ritual. Students explore ideas within the unique attributes of architecture, natural landscapes, public spaces, visual art, historic landmarks, and cultural contexts. Recommended preparation: No prior dance experience needed. Open to all levels.",
+  "prerequisite": "none."
  },
  {
   "code": "TDDM 100",
   "title": "Dance Making 1",
   "unit": "4",
-  "discription": "Practical and conceptual studies of approaches to dance making. Compositional projects enable students to create short works for solo, duet, and small group situations with options to explore interdisciplinary collaboration, specific sites, text, political and societal issues, and advanced partner work.",
-  "prerequsite": "TDDM 1 or consent of instructor."
+  "description": "Practical and conceptual studies of approaches to dance making. Compositional projects enable students to create short works for solo, duet, and small group situations with options to explore interdisciplinary collaboration, specific sites, text, political and societal issues, and advanced partner work.",
+  "prerequisite": "TDDM 1 or consent of instructor."
  },
  {
   "code": "TDDM 101",
   "title": "Dance Making 2",
   "unit": "4",
-  "discription": "The study of compositional, ensemble, collaborative, and improvisational approaches to dance making. Structures, scores, tasks, imagination, timing, spontaneity, partnering skills, composing in the moment, shared authorship, and experimentation facilitate the development of movement vocabulary.",
-  "prerequsite": "TDDM 1 or consent of instructor."
+  "description": "The study of compositional, ensemble, collaborative, and improvisational approaches to dance making. Structures, scores, tasks, imagination, timing, spontaneity, partnering skills, composing in the moment, shared authorship, and experimentation facilitate the development of movement vocabulary.",
+  "prerequisite": "TDDM 1 or consent of instructor."
  },
  {
   "code": "TDGE 1",
   "title": "Introduction to Theatre",
   "unit": "4",
-  "discription": "An introduction to fundamental concepts in drama and performance. Students will attend performances and learn about how the theatre functions as an art and as an industry in today's world.",
-  "prerequsite": "none."
+  "description": "An introduction to fundamental concepts in drama and performance. Students will attend performances and learn about how the theatre functions as an art and as an industry in today's world.",
+  "prerequisite": "none."
  },
  {
   "code": "TDGE 3",
   "title": "Cultivating the Creative Mind",
   "unit": "4",
-  "discription": "This course will use the theatrical context to integrate scientific research about creativity, group dynamics, and related topics. Through a mix of theoretical and experiential classes and assignments, we will explore the intersection of theatre and neuroscience, investigating and expanding the creative mind.",
-  "prerequsite": "none"
+  "description": "This course will use the theatrical context to integrate scientific research about creativity, group dynamics, and related topics. Through a mix of theoretical and experiential classes and assignments, we will explore the intersection of theatre and neuroscience, investigating and expanding the creative mind.",
+  "prerequisite": "none"
  },
  {
   "code": "TDGE 5",
   "title": "A Glimpse into Acting",
   "unit": "4",
-  "discription": "An introductory course on acting fundamentals for students without an acting background. Through analysis of acting on film, students will explore the actor's craft and practice these skills in studio exercises to better understand how an actor approaches a text. ",
-  "prerequsite": "none."
+  "description": "An introductory course on acting fundamentals for students without an acting background. Through analysis of acting on film, students will explore the actor's craft and practice these skills in studio exercises to better understand how an actor approaches a text. ",
+  "prerequisite": "none."
  },
  {
   "code": "TDGE 10",
   "title": "Theatre and Film",
   "unit": "4",
-  "discription": "Theatre and Film analyzes the essential differences between theatrical and cinematic approaches to drama. Through selected play/film combinations, the course looks at how the director uses actors and the visual languages of the stage and screen to guide and stimulate the audience's responses.",
-  "prerequsite": "none."
+  "description": "Theatre and Film analyzes the essential differences between theatrical and cinematic approaches to drama. Through selected play/film combinations, the course looks at how the director uses actors and the visual languages of the stage and screen to guide and stimulate the audience's responses.",
+  "prerequisite": "none."
  },
  {
   "code": "TDGE 11",
   "title": "Great Performances on Film",
   "unit": "4",
-  "discription": "Course examines major accomplishments in screen acting from the work of actors in films or in film genres. May be taken for credit three times.",
-  "prerequsite": "none."
+  "description": "Course examines major accomplishments in screen acting from the work of actors in films or in film genres. May be taken for credit three times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDGE 12",
   "title": "Topics in Cinema and Race",
   "unit": "4",
-  "discription": "This course explores filmed representations of race and diversity and examines works by underrepresented filmmakers. Course topics vary; they include African American film, Latino/a film, Asian American film, films by Spike Lee, stereotypes on film, and other such topics. Students may not enroll in the same topic of TDGE 12 that they have already taken in TDGE 11, Great Performances on Film. This will count as a duplicate of credit for repeating the same film topic. May be taken for credit two times.",
-  "prerequsite": "none **.**"
+  "description": "This course explores filmed representations of race and diversity and examines works by underrepresented filmmakers. Course topics vary; they include African American film, Latino/a film, Asian American film, films by Spike Lee, stereotypes on film, and other such topics. Students may not enroll in the same topic of TDGE 12 that they have already taken in TDGE 11, Great Performances on Film. This will count as a duplicate of credit for repeating the same film topic. May be taken for credit two times.",
+  "prerequisite": "none **.**"
  },
  {
   "code": "TDGE 25",
   "title": "Public Speaking",
   "unit": "4",
-  "discription": "This course is designed to establish a clear understanding of the fundamentals of effective oral communication. The methodologies explore the integration of relaxation, concentration, organization, and clear voice and diction as applied to various public speaking modes.",
-  "prerequsite": "none."
+  "description": "This course is designed to establish a clear understanding of the fundamentals of effective oral communication. The methodologies explore the integration of relaxation, concentration, organization, and clear voice and diction as applied to various public speaking modes.",
+  "prerequisite": "none."
  },
  {
   "code": "TDGE 50",
   "title": "Musical Theatre Chorus",
   "unit": "2",
-  "discription": "Study and perform selected songs from American musical theatre. Open to all students. No audition required. Attendance at rehearsals and performance are mandatory. P/NP grades only. May be taken for credit six times.",
-  "prerequsite": "none."
+  "description": "Study and perform selected songs from American musical theatre. Open to all students. No audition required. Attendance at rehearsals and performance are mandatory. P/NP grades only. May be taken for credit six times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDGE 87",
   "title": "First-year Student Seminar in Theatre and Dance",
   "unit": "1",
-  "discription": "Seminar on a topic in theatre or dance on a level appropriate for first-year students, conducted in an informal, small group setting limited to ten to twenty students. Topics will vary.",
-  "prerequsite": "open to first-year students only."
+  "description": "Seminar on a topic in theatre or dance on a level appropriate for first-year students, conducted in an informal, small group setting limited to ten to twenty students. Topics will vary.",
+  "prerequisite": "open to first-year students only."
  },
  {
   "code": "TDGE 89",
   "title": "Dance Movement Exploration",
   "unit": "4",
-  "discription": "An introduction to dance movement and understanding your body. A contemporary approach to dancing and its many genres as an expressive medium and form of communication. A movement course but no dance training or background in dance needed. May be taken for credit three times.",
-  "prerequsite": "none."
+  "description": "An introduction to dance movement and understanding your body. A contemporary approach to dancing and its many genres as an expressive medium and form of communication. A movement course but no dance training or background in dance needed. May be taken for credit three times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDGE 100",
   "title": "Creating the Role of \"Leader\"",
   "unit": "4",
-  "discription": "Acting and leadership require \"choices\" to play a role. The role of leader requires authenticity, collaboration, listening, presence, vision, and influence. Students will explore characteristics of strong leaders, and utilizing traditional acting techniques build powerful capabilities of leadership. No prior theatre/acting experience needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "Acting and leadership require \"choices\" to play a role. The role of leader requires authenticity, collaboration, listening, presence, vision, and influence. Students will explore characteristics of strong leaders, and utilizing traditional acting techniques build powerful capabilities of leadership. No prior theatre/acting experience needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDGE 105",
   "title": "Exploring Acting",
   "unit": "4",
-  "discription": "An acting course for nonmajors, building on the acting fundamentals developed in TDGE 5. Using analysis of film acting to practice in studio exercises and scene work, student actors learn to approach a text using imagination as their primary tool.",
-  "prerequsite": "TDGE 5 or consent of instructor."
+  "description": "An acting course for nonmajors, building on the acting fundamentals developed in TDGE 5. Using analysis of film acting to practice in studio exercises and scene work, student actors learn to approach a text using imagination as their primary tool.",
+  "prerequisite": "TDGE 5 or consent of instructor."
  },
  {
   "code": "TDGE 122",
   "title": "The Films of Woody Allen",
   "unit": "4",
-  "discription": "Students explore a variety of issues: screenwriting, directing, cinematography, and editing; the intersection of comedy and tragedy in Allen\u2019s works; recurring themes; and critical responses. Students view thirteen films and write two three-page essays and one ten-page research paper.",
-  "prerequsite": "upper-division standing."
+  "description": "Students explore a variety of issues: screenwriting, directing, cinematography, and editing; the intersection of comedy and tragedy in Allen\u2019s works; recurring themes; and critical responses. Students view thirteen films and write two three-page essays and one ten-page research paper.",
+  "prerequisite": "upper-division standing."
  },
  {
   "code": "TDGE 124",
   "title": "Cult Films: Weirdly Dramatic",
   "unit": "4",
-  "discription": "A select survey of eight to ten exceptional offbeat, frequently low-budget films from the last sixty years that have attained cult status. The mix includes Tod Browning's _Freaks_ (1932) to John Water's _Pink Flamingos_ (1973). Aspects of bad taste, cinematic irony, and theatrical invention will be highlighted.",
-  "prerequsite": "upper-division standing."
+  "description": "A select survey of eight to ten exceptional offbeat, frequently low-budget films from the last sixty years that have attained cult status. The mix includes Tod Browning's _Freaks_ (1932) to John Water's _Pink Flamingos_ (1973). Aspects of bad taste, cinematic irony, and theatrical invention will be highlighted.",
+  "prerequisite": "upper-division standing."
  },
  {
   "code": "TDGE 125",
   "title": "Topics in Theatre and Film",
   "unit": "4",
-  "discription": "Great films and the performance of the actors in them are analyzed in their historical, cinematic, or theatrical contexts. This course examines the actor's contribution to classic cinema and the social and aesthetic forces at work in film.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "Great films and the performance of the actors in them are analyzed in their historical, cinematic, or theatrical contexts. This course examines the actor's contribution to classic cinema and the social and aesthetic forces at work in film.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDGE 126",
   "title": "Storytelling and Design in Animation",
   "unit": "4",
-  "discription": "This course will use a broad range of animation styles and genres to examine larger issues in art practice, focusing closely on the relationship between form and content, and how sound/set/costume/character design impacts narrative.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This course will use a broad range of animation styles and genres to examine larger issues in art practice, focusing closely on the relationship between form and content, and how sound/set/costume/character design impacts narrative.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDGE 131",
   "title": "Playing Indian: Native American and First Nations Cinema",
   "unit": "4",
-  "discription": "This course examines recent movies by Native American/First Nations artists that labor to deconstruct and critique reductive stereotypes about America\u2019s First Peoples in Hollywood cinema. Carving spaces of \"visual sovereignty\" (Raheja), these films propose complex narratives and characterizations of indigeneity. Students may not receive credit for both TDGE 131 and ETHN 163F.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This course examines recent movies by Native American/First Nations artists that labor to deconstruct and critique reductive stereotypes about America\u2019s First Peoples in Hollywood cinema. Carving spaces of \"visual sovereignty\" (Raheja), these films propose complex narratives and characterizations of indigeneity. Students may not receive credit for both TDGE 131 and ETHN 163F.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDGE 133",
   "title": "Visual Ideas",
   "unit": "4",
-  "discription": "An exploration of fundamental ways of seeing and thinking about the performance space. A look at the design process as it reflects styles and attitudes through an examination of text/image/meaning/message in theatre, dance, opera, and visual arts. With a special emphasis on the \"solution- finding process\" in design, as a leap from text to context, to finalized design.",
-  "prerequsite": "TDDE 1 or consent of instructor."
+  "description": "An exploration of fundamental ways of seeing and thinking about the performance space. A look at the design process as it reflects styles and attitudes through an examination of text/image/meaning/message in theatre, dance, opera, and visual arts. With a special emphasis on the \"solution- finding process\" in design, as a leap from text to context, to finalized design.",
+  "prerequisite": "TDDE 1 or consent of instructor."
  },
  {
   "code": "TDGE 134",
   "title": "Disability and Performative Exploration: Struggle for Inclusion",
   "unit": "4",
-  "discription": "This class examines disability in the performative context, exploring the representation of people with disabilities and the struggle for access and inclusion. The frame of advocacy, understanding, and creative collaboration will deepen the historical perspective on disability.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This class examines disability in the performative context, exploring the representation of people with disabilities and the struggle for access and inclusion. The frame of advocacy, understanding, and creative collaboration will deepen the historical perspective on disability.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDGE 192",
   "title": "Senior Seminar in Theatre and Dance",
   "unit": "1",
-  "discription": "The Senior Seminar Program is designed to allow senior undergraduates to meet with faculty members in a small group setting to explore an intellectual topic in theatre and dance (at the upper-division level). Topics will vary from quarter to quarter. Senior Seminars may be taken for credit up to four times, with a change in topic, and permission of the department. Enrollment is limited to twenty students, with preference given to seniors.",
-  "prerequsite": "senior standing; department stamp and/or consent of instructor."
+  "description": "The Senior Seminar Program is designed to allow senior undergraduates to meet with faculty members in a small group setting to explore an intellectual topic in theatre and dance (at the upper-division level). Topics will vary from quarter to quarter. Senior Seminars may be taken for credit up to four times, with a change in topic, and permission of the department. Enrollment is limited to twenty students, with preference given to seniors.",
+  "prerequisite": "senior standing; department stamp and/or consent of instructor."
  },
  {
   "code": "TDGE 196A",
   "title": "Honors Study in Theatre and Dance",
   "unit": "4",
-  "discription": "The Honors thesis is designed to give theatre and dance majors the opportunity to undertake advanced creative research in an area of specialization (directing, history, pedagogy, performance, playwriting, or stage management), culminating in the writing of a thesis and the oral or performative presentation of the thesis to the members of the student's Honors Committee. Application available with the theatre and dance undergraduate coordinator. This is a two-quarter research project. Students enroll in the winter and spring quarters of their senior year. Deadline to apply is fall quarter of the student\u2019s senior year.",
-  "prerequsite": "upper-division course work in the area of thesis, department stamp, 3.5 GPA in major, approval of faculty member."
+  "description": "The Honors thesis is designed to give theatre and dance majors the opportunity to undertake advanced creative research in an area of specialization (directing, history, pedagogy, performance, playwriting, or stage management), culminating in the writing of a thesis and the oral or performative presentation of the thesis to the members of the student's Honors Committee. Application available with the theatre and dance undergraduate coordinator. This is a two-quarter research project. Students enroll in the winter and spring quarters of their senior year. Deadline to apply is fall quarter of the student\u2019s senior year.",
+  "prerequisite": "upper-division course work in the area of thesis, department stamp, 3.5 GPA in major, approval of faculty member."
  },
  {
   "code": "TDGE 196B",
   "title": "Honors Study in Theatre and Dance",
   "unit": "4",
-  "discription": "A continuation of TDGE 196A. Theatre and dance Honors students complete thesis work in directing, history, pedagogy, performance, playwriting, or stage management under the close supervision of a faculty member. All students enrolled will present their thesis work during a departmental showcase event at the end of the spring quarter.",
-  "prerequsite": "TDGE 196A, upper-division course work in the area of thesis, department stamp, 3.5 GPA in major, approval of faculty member."
+  "description": "A continuation of TDGE 196A. Theatre and dance Honors students complete thesis work in directing, history, pedagogy, performance, playwriting, or stage management under the close supervision of a faculty member. All students enrolled will present their thesis work during a departmental showcase event at the end of the spring quarter.",
+  "prerequisite": "TDGE 196A, upper-division course work in the area of thesis, department stamp, 3.5 GPA in major, approval of faculty member."
  },
  {
   "code": "TDGE 198",
   "title": "Directed Group Studies",
   "unit": "0-2-4",
-  "discription": "Group studies, readings, projects, and discussions in theatre history, problems of production and performance, and similarly appropriate subjects.",
-  "prerequsite": "upper-division standing, 2.5 GPA, consent of instructor, and department stamp. May be repeated for a total of 12 units."
+  "description": "Group studies, readings, projects, and discussions in theatre history, problems of production and performance, and similarly appropriate subjects.",
+  "prerequisite": "upper-division standing, 2.5 GPA, consent of instructor, and department stamp. May be repeated for a total of 12 units."
  },
  {
   "code": "TDGE 199",
   "title": "Special Projects",
   "unit": "0-2-4",
-  "discription": "Qualified students will pursue a special project in theatre history, problems of production and performance, and similarly appropriate topics.",
-  "prerequsite": "upper-division standing, 2.5 GPA, consent of instructor, and department stamp."
+  "description": "Qualified students will pursue a special project in theatre history, problems of production and performance, and similarly appropriate topics.",
+  "prerequisite": "upper-division standing, 2.5 GPA, consent of instructor, and department stamp."
  },
  {
   "code": "TDHD 20",
   "title": "Looking at Dance",
   "unit": "4",
-  "discription": "Focuses on the foundational aesthetic concepts of dance creation and performance within a diverse range of cultural contexts. Students develop descriptive, perceptual, and analytical skills.",
-  "prerequsite": "TDTR 10 or consent of instructor."
+  "description": "Focuses on the foundational aesthetic concepts of dance creation and performance within a diverse range of cultural contexts. Students develop descriptive, perceptual, and analytical skills.",
+  "prerequisite": "TDTR 10 or consent of instructor."
  },
  {
   "code": "TDHD 21",
   "title": "Dance Pioneers of the Twentieth and Twenty-First Centuries",
   "unit": "4",
-  "discription": "An historical overview of the most influential international dance pioneers in recent history, the cultural, political, and artistic contexts that informed the development of their work and the impact that their achievements have on the evolution of dance worldwide.",
-  "prerequsite": "TDTR 10 or consent of instructor."
+  "description": "An historical overview of the most influential international dance pioneers in recent history, the cultural, political, and artistic contexts that informed the development of their work and the impact that their achievements have on the evolution of dance worldwide.",
+  "prerequisite": "TDTR 10 or consent of instructor."
  },
  {
   "code": "TDHD 175",
   "title": "Cultural Perspectives on Dance",
   "unit": "4",
-  "discription": "The study of dance forms from a global perspective. An analysis and understanding of international dance traditions and their connections to religion, ritual, folklore, custom, festive celebration, popular culture, art, and political movements.",
-  "prerequsite": "TDTR 10 or consent of instructor."
+  "description": "The study of dance forms from a global perspective. An analysis and understanding of international dance traditions and their connections to religion, ritual, folklore, custom, festive celebration, popular culture, art, and political movements.",
+  "prerequisite": "TDTR 10 or consent of instructor."
  },
  {
   "code": "TDHD 176",
   "title": "Dance History\u2014Special Topics",
   "unit": "4",
-  "discription": "An in-depth exposure to an important topic in dance history, theory, aesthetics, and criticism. Topics vary from quarter to quarter.",
-  "prerequsite": "TDTR 10, upper-division standing."
+  "description": "An in-depth exposure to an important topic in dance history, theory, aesthetics, and criticism. Topics vary from quarter to quarter.",
+  "prerequisite": "TDTR 10, upper-division standing."
  },
  {
   "code": "TDHT 10",
   "title": "Introduction to Play Analysis",
   "unit": "4",
-  "discription": "An introduction to the fundamental techniques of analyzing dramatic texts. Focus is on the student's ability to describe textual elements and their relationships to each other as well as on strategies for writing critically about drama.",
-  "prerequsite": "none."
+  "description": "An introduction to the fundamental techniques of analyzing dramatic texts. Focus is on the student's ability to describe textual elements and their relationships to each other as well as on strategies for writing critically about drama.",
+  "prerequisite": "none."
  },
  {
   "code": "TDHT 21",
   "title": "Ancient and Medieval Theatre",
   "unit": "4",
-  "discription": "Ancient and medieval theatre. Explores the roots of contemporary theatre in world performance traditions of ancient history with a focus on humans\u2019 gravitation toward ritual and play. Examples come from Egypt, Greece, Rome, Mesoamerica, Japan, China, India, Indonesia, Persia, and England.",
-  "prerequsite": "none."
+  "description": "Ancient and medieval theatre. Explores the roots of contemporary theatre in world performance traditions of ancient history with a focus on humans\u2019 gravitation toward ritual and play. Examples come from Egypt, Greece, Rome, Mesoamerica, Japan, China, India, Indonesia, Persia, and England.",
+  "prerequisite": "none."
  },
  {
   "code": "TDHT 22",
-  "title": "**** Theatre 1500\u20131900",
+  "title": "**** Theatre 1500-1900",
   "unit": "4",
-  "discription": "Explores varieties of drama in professional theatre from 1500 to 1900 in Europe, Japan, and China, and their interconnections both formal and historical.",
-  "prerequsite": "none."
+  "description": "Explores varieties of drama in professional theatre from 1500 to 1900 in Europe, Japan, and China, and their interconnections both formal and historical.",
+  "prerequisite": "none."
  },
  {
   "code": "TDHT 23",
   "title": "Twentieth-Century Theatre",
   "unit": "4",
-  "discription": "Twentieth-century theatre: a survey of drama from 1900 to 1990, with attention also paid to the development of avant-garde performance forms. Plays discussed reflect developments in Europe and the United States, but also transnational, postcolonial perspectives.",
-  "prerequsite": "none."
+  "description": "Twentieth-century theatre: a survey of drama from 1900 to 1990, with attention also paid to the development of avant-garde performance forms. Plays discussed reflect developments in Europe and the United States, but also transnational, postcolonial perspectives.",
+  "prerequisite": "none."
  },
  {
   "code": "TDHT 101",
   "title": "Topics in Dramatic Literature and Theatre History",
   "unit": "4",
-  "discription": "An in-depth exposure to an important individual writer or subject in dramatic literature and/or theatre history. Topics vary from quarter to quarter. Recent courses have included Modern French Drama, and the History of Russian Theatre. No prior knowledge in theatre history is needed. May be taken for credit three times.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "An in-depth exposure to an important individual writer or subject in dramatic literature and/or theatre history. Topics vary from quarter to quarter. Recent courses have included Modern French Drama, and the History of Russian Theatre. No prior knowledge in theatre history is needed. May be taken for credit three times.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 103",
   "title": "Asian American Theatre",
   "unit": "4",
-  "discription": "This course examines pivotal dramatic works in the history of professional Asian American theatre in the United States (1960s to the present). Issues include interculturalism, the crossover between minority theatres and mainstream venues, and the performance of identity. TDHT 103 is an approved Diversity, Equity, and Inclusion (DEI) course. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This course examines pivotal dramatic works in the history of professional Asian American theatre in the United States (1960s to the present). Issues include interculturalism, the crossover between minority theatres and mainstream venues, and the performance of identity. TDHT 103 is an approved Diversity, Equity, and Inclusion (DEI) course. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 104",
   "title": "Italian Comedy",
   "unit": "4",
-  "discription": "Continuities and changes in Italian comedy from the Romans through the Renaissance and commedia dell'arte to modern comedy. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "Continuities and changes in Italian comedy from the Romans through the Renaissance and commedia dell'arte to modern comedy. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 105",
   "title": "French Comedy",
   "unit": "4",
-  "discription": "Masterpieces of French farce and comedy from the seventeenth century to the twentieth century studied French theatrical and cultural contexts. Readings include plays by Moliere, Marivauz, Beaumarchais, and Feydeau. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "Masterpieces of French farce and comedy from the seventeenth century to the twentieth century studied French theatrical and cultural contexts. Readings include plays by Moliere, Marivauz, Beaumarchais, and Feydeau. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 107",
   "title": "American Theatre",
   "unit": "4",
-  "discription": "In this course we will examine representative plays and playwrights who write about the \"American\" experience from a variety of historical periods and diverse cultural communities. Playwrights will include Glaspell, O'Neill, Williams, Hansberry, Valdez, Yamauchi, Parks, Kushner, Mamet, Greenberg, Hwang, Letts, and Cruz. Theatre companies will include The Group, Provincetown Players, San Francisco Mime Troupe, East/West Players, Teatro Campesino, Spiderwoman, and Cornerstone. TDHT 107 is an approved Diversity, Equity, and Inclusion (DEI) course. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "In this course we will examine representative plays and playwrights who write about the \"American\" experience from a variety of historical periods and diverse cultural communities. Playwrights will include Glaspell, O'Neill, Williams, Hansberry, Valdez, Yamauchi, Parks, Kushner, Mamet, Greenberg, Hwang, Letts, and Cruz. Theatre companies will include The Group, Provincetown Players, San Francisco Mime Troupe, East/West Players, Teatro Campesino, Spiderwoman, and Cornerstone. TDHT 107 is an approved Diversity, Equity, and Inclusion (DEI) course. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 108",
   "title": "Luis Valdez",
   "unit": "4",
-  "discription": "This course examines the works of Luis Valdez, playwright, director, screenwriter, film director, and founder of the Teatro Campesino. Readings include plays and essays by Valdez and critical books and articles about this important American theatre artist. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This course examines the works of Luis Valdez, playwright, director, screenwriter, film director, and founder of the Teatro Campesino. Readings include plays and essays by Valdez and critical books and articles about this important American theatre artist. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 109",
   "title": "African American Theatre",
   "unit": "4",
-  "discription": "This course provides a survey of the contributions to the theatre arts made by African Americans. Analytic criteria will include the historical context in which the piece was crafted; thematic and stylistic issues; aesthetic theories and reception. TDHT 109 is an approved Diversity, Equity, and Inclusion (DEI) course. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This course provides a survey of the contributions to the theatre arts made by African Americans. Analytic criteria will include the historical context in which the piece was crafted; thematic and stylistic issues; aesthetic theories and reception. TDHT 109 is an approved Diversity, Equity, and Inclusion (DEI) course. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 110",
   "title": "Chicano Dramatic Literature",
   "unit": "4",
-  "discription": "Focusing on the contemporary evolution of Chicano dramatic literature, this course will analyze playwrights and theatre groups that express the Chicano experience in the United States, examining relevant \"actors,\" plays, and documentaries for their contributions to the developing Chicano theatre movement. (Cross-listed with Ethnic Studies 132.) No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "Focusing on the contemporary evolution of Chicano dramatic literature, this course will analyze playwrights and theatre groups that express the Chicano experience in the United States, examining relevant \"actors,\" plays, and documentaries for their contributions to the developing Chicano theatre movement. (Cross-listed with Ethnic Studies 132.) No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 111",
   "title": "Hispanic American Dramatic Literature",
   "unit": "4",
-  "discription": "Course examines the plays of leading Cuban American, Puerto Rican, and Chicano playwrights in an effort to understand the experience of these Hispanic American groups in the United States. (Cross-listed with Ethnic Studies 133.) No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper- division standing or consent of instructor."
+  "description": "Course examines the plays of leading Cuban American, Puerto Rican, and Chicano playwrights in an effort to understand the experience of these Hispanic American groups in the United States. (Cross-listed with Ethnic Studies 133.) No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper- division standing or consent of instructor."
  },
  {
   "code": "TDHT 114",
   "title": "American Musical Theatre",
   "unit": "4",
-  "discription": "The class will explore the musical's origins, evolution, components, and innovators, with emphasis on adaptation and the roles of the director and choreographer. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "The class will explore the musical's origins, evolution, components, and innovators, with emphasis on adaptation and the roles of the director and choreographer. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 115",
   "title": "History and Theory of Directing",
   "unit": "4",
-  "discription": "Evolution of directing theory from 1850 to the present with reference to the work of internationally influential directors such as Saxe-Meiningen, Antoine, Stanislavski, Meyerhold, Brecht, and Brook, among others. No prior knowledge in theatre history is needed.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "Evolution of directing theory from 1850 to the present with reference to the work of internationally influential directors such as Saxe-Meiningen, Antoine, Stanislavski, Meyerhold, Brecht, and Brook, among others. No prior knowledge in theatre history is needed.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 119",
   "title": "Production Dramaturgy",
   "unit": "4",
-  "discription": "Introduces theatre and dance students to the practice of contemporary production dramaturgy. Students learn strategies for applying the results of textual analysis and cultural research to the production process.",
-  "prerequsite": "interview required."
+  "description": "Introduces theatre and dance students to the practice of contemporary production dramaturgy. Students learn strategies for applying the results of textual analysis and cultural research to the production process.",
+  "prerequisite": "interview required."
  },
  {
   "code": "TDHT 120",
   "title": "Indigenous Theatre and Performance",
   "unit": "4",
-  "discription": "This theoretical and embodied course examines a selection of indigenous plays and performances (dance, hip-hop) and helps students develop the critical vocabulary and contextual knowledge necessary to productively engage with the political and artistic interventions performed by these works. No prior knowledge in theatre history is needed. Students may not receive credit for both TDHT 120 and ETHN 163G.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "This theoretical and embodied course examines a selection of indigenous plays and performances (dance, hip-hop) and helps students develop the critical vocabulary and contextual knowledge necessary to productively engage with the political and artistic interventions performed by these works. No prior knowledge in theatre history is needed. Students may not receive credit for both TDHT 120 and ETHN 163G.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDHT 190",
   "title": "The New York Theatre and Dance Scene",
   "unit": "4",
-  "discription": "Experience firsthand New York history as a performing arts cultural capital. In addition to studying New York performance history and literature, attend performances accompanied by lecture/discussion. Get backstage tours, meet important players, and learn how productions go from vision to reality. Program or materials fees may apply. Contact the Department of Theatre and Dance for application for TDHT 190. May be taken for credit three times.",
-  "prerequsite": "Students must submit an application to enroll in the course to confirm they are aware course is in New York and will accrue additional fees."
+  "description": "Experience firsthand New York history as a performing arts cultural capital. In addition to studying New York performance history and literature, attend performances accompanied by lecture/discussion. Get backstage tours, meet important players, and learn how productions go from vision to reality. Program or materials fees may apply. Contact the Department of Theatre and Dance for application for TDHT 190. May be taken for credit three times.",
+  "prerequisite": "Students must submit an application to enroll in the course to confirm they are aware course is in New York and will accrue additional fees."
  },
  {
   "code": "TDMV 1",
   "title": "Beginning Ballet",
   "unit": "2",
-  "discription": "A contemporary approach to beginning-level ballet technique, principles, and terminology. Develops the body for strength, flexibility, and artistic interpretation. Emphasis on developing a foundation in movement for the continuation of ballet training. Historical origin of ballet will be discussed. May be taken for credit six times.",
-  "prerequsite": "none."
+  "description": "A contemporary approach to beginning-level ballet technique, principles, and terminology. Develops the body for strength, flexibility, and artistic interpretation. Emphasis on developing a foundation in movement for the continuation of ballet training. Historical origin of ballet will be discussed. May be taken for credit six times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDMV 2",
   "title": "Beginning Contemporary Dance",
   "unit": "4",
-  "discription": "Introduction to contemporary somatic approaches to dance, building fundamental technical skills, kinetic and perceptual awareness, efficiency, and artistic expression. Choreographic sequences are analyzed through time space coordination and dynamics. Movement exploration includes improvisation and composition. May be taken for credit six times.",
-  "prerequsite": "none."
+  "description": "Introduction to contemporary somatic approaches to dance, building fundamental technical skills, kinetic and perceptual awareness, efficiency, and artistic expression. Choreographic sequences are analyzed through time space coordination and dynamics. Movement exploration includes improvisation and composition. May be taken for credit six times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDMV 3",
   "title": "Beginning Jazz",
   "unit": "2",
-  "discription": "Introduction to the technique of jazz dance, while placing the art form in its historical context as an American vernacular form. Builds a beginning technical jazz vocabulary with a focus on rhythmic exercises, isolations, turns, and locomotor combinations. May be taken for credit six times.",
-  "prerequsite": "none."
+  "description": "Introduction to the technique of jazz dance, while placing the art form in its historical context as an American vernacular form. Builds a beginning technical jazz vocabulary with a focus on rhythmic exercises, isolations, turns, and locomotor combinations. May be taken for credit six times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDMV 5",
   "title": "Yoga for Dance",
   "unit": "2",
-  "discription": "An introduction to the physical practice of yoga. A detailed investigation into the ancient somatic practice of energetically connecting the mind and body through kinesthetic and sensory awareness and how this supports and informs dance practices. May be taken for credit six times.",
-  "prerequsite": "none."
+  "description": "An introduction to the physical practice of yoga. A detailed investigation into the ancient somatic practice of energetically connecting the mind and body through kinesthetic and sensory awareness and how this supports and informs dance practices. May be taken for credit six times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDMV 11",
   "title": "Theatrical Tap",
   "unit": "2",
-  "discription": "The study of theatrical tap dance.",
-  "prerequsite": null
+  "description": "The study of theatrical tap dance.",
+  "prerequisite": null
  },
  {
   "code": "TDMV 20",
   "title": "Movement Laboratory",
   "unit": "4",
-  "discription": "This creative laboratory course facilitates group and individual experimentation through the study of somatic movement processes and methodologies. Students explore approaches to movement vocabulary that offer them insights into investigating their own movement generation and dance making material. May be taken for credit six times.",
-  "prerequsite": "none."
+  "description": "This creative laboratory course facilitates group and individual experimentation through the study of somatic movement processes and methodologies. Students explore approaches to movement vocabulary that offer them insights into investigating their own movement generation and dance making material. May be taken for credit six times.",
+  "prerequisite": "none."
  },
  {
   "code": "TDMV 110",
   "title": "Intermediate Ballet",
   "unit": "4",
-  "discription": "Continued studio work in ballet technique at the intermediate level and terminology. Emphasis on increasing strength, flexibility, and balance, and the interpretation of classical musical phrasing. Includes proper alignment training and artistic philosophy of classical ballet. May be taken for credit six times.",
-  "prerequsite": "six units of TDMV 1 or consent of instructor."
+  "description": "Continued studio work in ballet technique at the intermediate level and terminology. Emphasis on increasing strength, flexibility, and balance, and the interpretation of classical musical phrasing. Includes proper alignment training and artistic philosophy of classical ballet. May be taken for credit six times.",
+  "prerequisite": "six units of TDMV 1 or consent of instructor."
  },
  {
   "code": "TDMV 111",
   "title": "Advanced Ballet",
   "unit": "4",
-  "discription": "A contemporary approach to ballet technique, terminology, and performance at the advanced level. Introduces more complex choreographic variations and skills. Individual and group composition will be examined and aesthetic criticism applied. May be taken for credit six times.",
-  "prerequsite": "twelve units of TDMV 110 or consent of instructor."
+  "description": "A contemporary approach to ballet technique, terminology, and performance at the advanced level. Introduces more complex choreographic variations and skills. Individual and group composition will be examined and aesthetic criticism applied. May be taken for credit six times.",
+  "prerequisite": "twelve units of TDMV 110 or consent of instructor."
  },
  {
   "code": "TDMV 112",
   "title": "Advanced Ballet for Contemporary Dance",
   "unit": "4",
-  "discription": "Designed for students with advanced training in contemporary modern dance and intermediate to advanced training in ballet. Emphasis is on increasing composition and performance skills in ballet through contemporary modern dance aesthetics. May be taken for credit six times.",
-  "prerequsite": "twelve units of THDA 101A-B-C or TDMV 111 or consent of instructor."
+  "description": "Designed for students with advanced training in contemporary modern dance and intermediate to advanced training in ballet. Emphasis is on increasing composition and performance skills in ballet through contemporary modern dance aesthetics. May be taken for credit six times.",
+  "prerequisite": "twelve units of THDA 101A-B-C or TDMV 111 or consent of instructor."
  },
  {
   "code": "TDMV 120",
   "title": "Intermediate Contemporary Dance",
   "unit": "4",
-  "discription": "The development of contemporary dance as an expressive medium, with emphasis on technical skills at the intermediate level. Includes the principles, elements, and historical context of contemporary modern postmodern dance. May be taken for credit six times.",
-  "prerequsite": "TDMV 2 or consent of instructor."
+  "description": "The development of contemporary dance as an expressive medium, with emphasis on technical skills at the intermediate level. Includes the principles, elements, and historical context of contemporary modern postmodern dance. May be taken for credit six times.",
+  "prerequisite": "TDMV 2 or consent of instructor."
  },
  {
   "code": "TDMV 122",
   "title": "Advanced Contemporary Dance",
   "unit": "4",
-  "discription": "The development of contemporary somatic approaches to dance as an expressive medium, emphasizing advanced technical skills, efficient athleticism, kinesthetic refinement, individual creative voice, and performance elements. Choreography and aesthetic concepts will be explored. Incorporates various principles of human movement research. May be taken for credit six times.",
-  "prerequsite": "twelve units of TDMV 120 or consent of instructor."
+  "description": "The development of contemporary somatic approaches to dance as an expressive medium, emphasizing advanced technical skills, efficient athleticism, kinesthetic refinement, individual creative voice, and performance elements. Choreography and aesthetic concepts will be explored. Incorporates various principles of human movement research. May be taken for credit six times.",
+  "prerequisite": "twelve units of TDMV 120 or consent of instructor."
  },
  {
   "code": "TDMV 123",
   "title": "Contact Improvisation",
   "unit": "4",
-  "discription": "Students will study the practice of improvisational dancing with a partner. Students will develop skills in giving and supporting body weight, lifting, balancing, falling, rolling, and recovering fluidly together. May be taken for credit three times.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "Students will study the practice of improvisational dancing with a partner. Students will develop skills in giving and supporting body weight, lifting, balancing, falling, rolling, and recovering fluidly together. May be taken for credit three times.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDMV 130",
   "title": "Intermediate Jazz",
   "unit": "4",
-  "discription": "Designed to provide training in the technique of jazz dance, while placing the art form in its historical context as an American vernacular form. Builds an intermediate technical jazz level with a focus on style, musicality, dynamics, and performance. May be taken for credit six times.",
-  "prerequsite": "six units of THDA 3 or TDMV 3 or consent of instructor."
+  "description": "Designed to provide training in the technique of jazz dance, while placing the art form in its historical context as an American vernacular form. Builds an intermediate technical jazz level with a focus on style, musicality, dynamics, and performance. May be taken for credit six times.",
+  "prerequisite": "six units of THDA 3 or TDMV 3 or consent of instructor."
  },
  {
   "code": "TDMV 133",
   "title": "Advanced Jazz Dance",
   "unit": "4",
-  "discription": "Further development in the technique of jazz dance, while placing the art form in its historical context as an American vernacular form. Builds an advanced technical jazz level with a focus on style, musicality, dynamics, and performance. May be taken for credit six times.",
-  "prerequsite": "six units of TDMV 130 or consent of instructor."
+  "description": "Further development in the technique of jazz dance, while placing the art form in its historical context as an American vernacular form. Builds an advanced technical jazz level with a focus on style, musicality, dynamics, and performance. May be taken for credit six times.",
+  "prerequisite": "six units of TDMV 130 or consent of instructor."
  },
  {
   "code": "TDMV 138",
   "title": "Beginning Hip-Hop",
   "unit": "4",
-  "discription": "An introduction to the basic technique of hip-hop, studied to enhance an understanding of the historical cultural content of the American form hip-hop and street dances in current choreography. May be taken for credit four times.",
-  "prerequsite": "upper-division standing."
+  "description": "An introduction to the basic technique of hip-hop, studied to enhance an understanding of the historical cultural content of the American form hip-hop and street dances in current choreography. May be taken for credit four times.",
+  "prerequisite": "upper-division standing."
  },
  {
   "code": "TDMV 140",
   "title": "Beginning Dances of the World",
   "unit": "4",
-  "discription": "Courses designed for the in-depth study of the dances and historical context of a particular culture or ethnic form: Afro-Cuban, Spanish, Balinese, Japanese, Latin, etc. Specific topic will vary from quarter to quarter. May be taken for credit two times.",
-  "prerequsite": "upper-division standing."
+  "description": "Courses designed for the in-depth study of the dances and historical context of a particular culture or ethnic form: Afro-Cuban, Spanish, Balinese, Japanese, Latin, etc. Specific topic will vary from quarter to quarter. May be taken for credit two times.",
+  "prerequisite": "upper-division standing."
  },
  {
   "code": "TDMV 141",
   "title": "Advanced Dances of the World",
   "unit": "4",
-  "discription": "Courses designed for the advanced continuing study of the dances and historical context of a particular culture or ethnic form: Afro-Cuban, Spanish, Balinese, Japanese, Latin, etc. Specific topic will vary from quarter to quarter.",
-  "prerequsite": "THDA 132 or TDMV 136 or TDMV 142 or TDMV 143 or TDMV 144, or consent of instructor."
+  "description": "Courses designed for the advanced continuing study of the dances and historical context of a particular culture or ethnic form: Afro-Cuban, Spanish, Balinese, Japanese, Latin, etc. Specific topic will vary from quarter to quarter.",
+  "prerequisite": "THDA 132 or TDMV 136 or TDMV 142 or TDMV 143 or TDMV 144, or consent of instructor."
  },
  {
   "code": "TDMV 142",
   "title": "Latin Dance of the World",
   "unit": "4",
-  "discription": "To develop an appreciation and understanding of the various Latin dances. Emphasis on learning basic social dance movement vocabulary, history of Latin cultures, and use of each dance as a means of social and economic expression. May be taken for credit three times.",
-  "prerequsite": "upper-division standing."
+  "description": "To develop an appreciation and understanding of the various Latin dances. Emphasis on learning basic social dance movement vocabulary, history of Latin cultures, and use of each dance as a means of social and economic expression. May be taken for credit three times.",
+  "prerequisite": "upper-division standing."
  },
  {
   "code": "TDMV 143",
   "title": "West African Dance",
   "unit": "4",
-  "discription": "An introductory course that explores the history of West African cultures and diasporas through student research, oral presentation, dance movement, and performance. Contemporary African dances influenced by drum masters and performing artists from around the world are also covered. Course materials and services fees may apply. May be taken for credit three times.",
-  "prerequsite": "upper-division standing."
+  "description": "An introductory course that explores the history of West African cultures and diasporas through student research, oral presentation, dance movement, and performance. Contemporary African dances influenced by drum masters and performing artists from around the world are also covered. Course materials and services fees may apply. May be taken for credit three times.",
+  "prerequisite": "upper-division standing."
  },
  {
   "code": "TDMV 144",
   "title": "Asian Dance",
   "unit": "4",
-  "discription": "To develop an appreciation and understanding of the dances from various Asian cultures. Emphasis on learning the basic forms and movement vocabularies, their historical context, and the use of each dance as a means of cultural and artistic expression. May be taken for credit three times.",
-  "prerequsite": "upper-division standing."
+  "description": "To develop an appreciation and understanding of the dances from various Asian cultures. Emphasis on learning the basic forms and movement vocabularies, their historical context, and the use of each dance as a means of cultural and artistic expression. May be taken for credit three times.",
+  "prerequisite": "upper-division standing."
  },
  {
   "code": "TDMV 146",
   "title": "Intermediate Latin Dances of the World",
   "unit": "4",
-  "discription": "To develop an appreciation and understanding of the various Latin dances. Emphasis on learning intermediate social dance movement vocabulary, history of Latin cultures, and use of each dance as a means of social and economic expression. May be taken for credit two times.",
-  "prerequsite": "TDMV 142."
+  "description": "To develop an appreciation and understanding of the various Latin dances. Emphasis on learning intermediate social dance movement vocabulary, history of Latin cultures, and use of each dance as a means of social and economic expression. May be taken for credit two times.",
+  "prerequisite": "TDMV 142."
  },
  {
   "code": "TDMV 148",
   "title": "Intermediate Hip-Hop",
   "unit": "4",
-  "discription": "This course is designed to build on the skills developed in TDMV 138, Hip-Hop, also deepening students\u2019 understanding of the social, political, and economic forces at work within hip-hop culture. More complex rhythms and sequencing will be introduced, and musicality will be honed through an added emphasis on freestyle expression. May be taken for credit four times.",
-  "prerequsite": "TDMV 138."
+  "description": "This course is designed to build on the skills developed in TDMV 138, Hip-Hop, also deepening students\u2019 understanding of the social, political, and economic forces at work within hip-hop culture. More complex rhythms and sequencing will be introduced, and musicality will be honed through an added emphasis on freestyle expression. May be taken for credit four times.",
+  "prerequisite": "TDMV 138."
  },
  {
   "code": "TDMV 149",
   "title": "Advanced Hip-Hop",
   "unit": "4",
-  "discription": "Develops hip-hop skills at the advanced level with further studies of the social, political, and economic forces at work within hip-hop culture. Emphasis is on complex rhythms and sequencing, freestyle expression, choreography, and performance. May be taken for credit six times.",
-  "prerequsite": "TDMV 138 or consent of instructor."
+  "description": "Develops hip-hop skills at the advanced level with further studies of the social, political, and economic forces at work within hip-hop culture. Emphasis is on complex rhythms and sequencing, freestyle expression, choreography, and performance. May be taken for credit six times.",
+  "prerequisite": "TDMV 138 or consent of instructor."
  },
  {
   "code": "TDMV 190",
   "title": "Major Project as Performer",
   "unit": "4",
-  "discription": "An in-depth investigation of the role and aesthetics of performer/dancer in a fully staged independent project resulting in a dance performance choreographed by faculty or students. May be taken for credit two times.",
-  "prerequsite": "upper-division standing and consent of instructor."
+  "description": "An in-depth investigation of the role and aesthetics of performer/dancer in a fully staged independent project resulting in a dance performance choreographed by faculty or students. May be taken for credit two times.",
+  "prerequisite": "upper-division standing and consent of instructor."
  },
  {
   "code": "TDPF 160",
   "title": "Studies in Performance\u2014Fall Production",
-  "unit": "2\u20134",
-  "discription": "The in-depth study of a major dance production in a fall dance cabaret led by faculty. Admission by audition only.",
-  "prerequsite": "audition; department stamp; concurrent enrollment in TDMV 110, 111, 112, 120, 122, 130, or 133."
+  "unit": "2-4",
+  "description": "The in-depth study of a major dance production in a fall dance cabaret led by faculty. Admission by audition only.",
+  "prerequisite": "audition; department stamp; concurrent enrollment in TDMV 110, 111, 112, 120, 122, 130, or 133."
  },
  {
   "code": "TDPF 161",
   "title": "Studies in Performance\u2014Winter Production",
-  "unit": "2\u20134",
-  "discription": "The in-depth study for a fully staged dance production in various venues, including a fall dance cabaret led by faculty, a winter faculty concert with guest choreographers, and a spring student choreographed concert directed by faculty. Admission by audition only. May be taken for credit four times.",
-  "prerequsite": "audition, department stamp, concurrent enrollment in TDMV 163, TDMV 110 or TDMV 111 or TDMV 112 or TDMV 120 or TDMV 122 or TDMV 130 or TDMV 133."
+  "unit": "2-4",
+  "description": "The in-depth study for a fully staged dance production in various venues, including a fall dance cabaret led by faculty, a winter faculty concert with guest choreographers, and a spring student choreographed concert directed by faculty. Admission by audition only. May be taken for credit four times.",
+  "prerequisite": "audition, department stamp, concurrent enrollment in TDMV 163, TDMV 110 or TDMV 111 or TDMV 112 or TDMV 120 or TDMV 122 or TDMV 130 or TDMV 133."
  },
  {
   "code": "TDPF 162",
   "title": "Studies in Performance Spring Production",
-  "unit": "2\u20134",
-  "discription": "The in-depth study for a fully staged dance production in various venues, including a fall dance cabaret led by faculty, a winter faculty concert with guest choreographers, and a spring student choreographed concert directed by faculty. Admission by audition only. May be taken for credit four times.",
-  "prerequsite": "audition, department stamp, concurrent enrollment in TDMV 163, TDMV 110 or TDMV 111 or TDMV 112 or TDMV 120 or TDMV 122 or TDMV 130 or TDMV 133."
+  "unit": "2-4",
+  "description": "The in-depth study for a fully staged dance production in various venues, including a fall dance cabaret led by faculty, a winter faculty concert with guest choreographers, and a spring student choreographed concert directed by faculty. Admission by audition only. May be taken for credit four times.",
+  "prerequisite": "audition, department stamp, concurrent enrollment in TDMV 163, TDMV 110 or TDMV 111 or TDMV 112 or TDMV 120 or TDMV 122 or TDMV 130 or TDMV 133."
  },
  {
   "code": "TDPF 163",
   "title": "Dance Repertory",
-  "unit": "1\u20134",
-  "discription": "The study and aesthetic examination of major choreographic works by dance faculty or distinguished guest artists. Students will experience the creative process, staging, production, and performance of a complete dance work in conjunction with a conceptual study of its form and content. Audition is required. May be taken for credit four times.",
-  "prerequsite": "concurrent enrollment in TDPF 160 or TDPF 161 or TDPF 162."
+  "unit": "1-4",
+  "description": "The study and aesthetic examination of major choreographic works by dance faculty or distinguished guest artists. Students will experience the creative process, staging, production, and performance of a complete dance work in conjunction with a conceptual study of its form and content. Audition is required. May be taken for credit four times.",
+  "prerequisite": "concurrent enrollment in TDPF 160 or TDPF 161 or TDPF 162."
  },
  {
   "code": "TDPF 190",
   "title": "Major Project/Dance Production",
   "unit": "4",
-  "discription": "Students develop skills in directing and producing an independent staged dance concert/production in various settings. May be taken for credit two times.",
-  "prerequsite": "department stamp required."
+  "description": "Students develop skills in directing and producing an independent staged dance concert/production in various settings. May be taken for credit two times.",
+  "prerequisite": "department stamp required."
  },
  {
   "code": "TDPR 6",
   "title": "Theatre Practicum",
-  "unit": "4\u20136",
-  "discription": "A production-oriented course that introduces the student to technical fundamentals of costumes, scenery, lighting, and sound for the theatre. Students will be assigned to participate on a crew for a fully mounted theatrical production supported by the department.",
-  "prerequsite": "must have department stamp."
+  "unit": "4-6",
+  "description": "A production-oriented course that introduces the student to technical fundamentals of costumes, scenery, lighting, and sound for the theatre. Students will be assigned to participate on a crew for a fully mounted theatrical production supported by the department.",
+  "prerequisite": "must have department stamp."
  },
  {
   "code": "TDPR 102",
   "title": "Advanced Theatre Practicum",
-  "unit": "4\u20136",
-  "discription": "A production performance-oriented course that continues the development of costume, lighting, scenery, or sound production and introduces greater responsibilities in the laboratory format. Students serve as crew heads on major departmental productions or creative projects. May be taken for credit two times.",
-  "prerequsite": "THPR or TDPR 1, 2, 3, or 5; permission of instructor; department stamp required."
+  "unit": "4-6",
+  "description": "A production performance-oriented course that continues the development of costume, lighting, scenery, or sound production and introduces greater responsibilities in the laboratory format. Students serve as crew heads on major departmental productions or creative projects. May be taken for credit two times.",
+  "prerequisite": "THPR or TDPR 1, 2, 3, or 5; permission of instructor; department stamp required."
  },
  {
   "code": "TDPR 104",
   "title": "Advanced Practicum in Stage Management",
-  "unit": "4\u20136",
-  "discription": "A production performance-oriented course that continues the development of stage management skills and introduces greater responsibilities in the laboratory format. Students serve as either assistant stage managers on main stage productions or stage managers on studio projects. May be taken for credit two times.",
-  "prerequsite": "THDR or TDDR 101 and consent of instructor."
+  "unit": "4-6",
+  "description": "A production performance-oriented course that continues the development of stage management skills and introduces greater responsibilities in the laboratory format. Students serve as either assistant stage managers on main stage productions or stage managers on studio projects. May be taken for credit two times.",
+  "prerequisite": "THDR or TDDR 101 and consent of instructor."
  },
  {
   "code": "TDPW 1",
   "title": "Introduction to Playwriting",
   "unit": "4",
-  "discription": "Beginning workshop in the fundamentals of playwriting. Students discuss material from a workbook that elucidates the basic principles of playwriting, do exercises designed to help them put those principles into creative practice, and are guided through the various stages of the playwriting process that culminate with in-class readings of the short plays they have completed.",
-  "prerequsite": "none."
+  "description": "Beginning workshop in the fundamentals of playwriting. Students discuss material from a workbook that elucidates the basic principles of playwriting, do exercises designed to help them put those principles into creative practice, and are guided through the various stages of the playwriting process that culminate with in-class readings of the short plays they have completed.",
+  "prerequisite": "none."
  },
  {
   "code": "TDPW 101",
   "title": "Intermediate Playwriting",
   "unit": "4",
-  "discription": "A workshop where students present their plays at various stages of development for group analysis and discussion. Students write a thirty-minute play that culminates in a reading. Also includes writing exercises designed to stimulate imagination and develop writing techniques. May be taken for credit two times.",
-  "prerequsite": "THPW or TDPW 1 or consent of instructor."
+  "description": "A workshop where students present their plays at various stages of development for group analysis and discussion. Students write a thirty-minute play that culminates in a reading. Also includes writing exercises designed to stimulate imagination and develop writing techniques. May be taken for credit two times.",
+  "prerequisite": "THPW or TDPW 1 or consent of instructor."
  },
  {
   "code": "TDPW 102",
   "title": "Advanced Playwriting",
   "unit": "4",
-  "discription": "Advanced workshop where students study the full-length play structure and begin work on a long play. Students present their work at various stages of development for group discussion and analysis. May be taken for credit two times.",
-  "prerequsite": "THPW or TDPW 101 or consent of the instructor."
+  "description": "Advanced workshop where students study the full-length play structure and begin work on a long play. Students present their work at various stages of development for group discussion and analysis. May be taken for credit two times.",
+  "prerequisite": "THPW or TDPW 101 or consent of the instructor."
  },
  {
   "code": "TDPW 104",
   "title": "Screenwriting",
   "unit": "4",
-  "discription": "Basic principles of screenwriting using scenario composition, plot points, character study, story conflict, with emphasis on visual action and strong dramatic movement. May be taken for credit two times.",
-  "prerequsite": "THPW or TDPW 1."
+  "description": "Basic principles of screenwriting using scenario composition, plot points, character study, story conflict, with emphasis on visual action and strong dramatic movement. May be taken for credit two times.",
+  "prerequisite": "THPW or TDPW 1."
  },
  {
   "code": "TDPW 190",
   "title": "Major Project in Playwriting/Screenwriting",
   "unit": "4",
-  "discription": "For the advanced student in playwriting/screenwriting. This intensive concentration in the study of playwriting and/or screenwriting will culminate in the creation of a substantial length play. A maximum of eight units of major project study, regardless of area (design, directing, stage management, playwriting) may be used to fulfill major requirements. Applicants must have completed the playwriting sequence, THPW or TDPW 1, 101, and/or consent of instructor. See department for application form.",
-  "prerequsite": "THPW or TDPW 1 and THPW or TDPW 101."
+  "description": "For the advanced student in playwriting/screenwriting. This intensive concentration in the study of playwriting and/or screenwriting will culminate in the creation of a substantial length play. A maximum of eight units of major project study, regardless of area (design, directing, stage management, playwriting) may be used to fulfill major requirements. Applicants must have completed the playwriting sequence, THPW or TDPW 1, 101, and/or consent of instructor. See department for application form.",
+  "prerequisite": "THPW or TDPW 1 and THPW or TDPW 101."
  },
  {
   "code": "TDTR 10",
   "title": "Introduction to Dance",
   "unit": "4",
-  "discription": "An overview of dance, examining its social and cultural history and its evolution as an art form. Focus is on dance and its many genres as an expressive medium and form of communication.",
-  "prerequsite": "none."
+  "description": "An overview of dance, examining its social and cultural history and its evolution as an art form. Focus is on dance and its many genres as an expressive medium and form of communication.",
+  "prerequisite": "none."
  },
  {
   "code": "TDTR 15",
   "title": "Dance Movement and Analysis",
   "unit": "4",
-  "discription": "An overview and analysis of movement theory systems that offer approaches that improve movement quality, prevent injuries, aid in habilitation, develop mental focus and kinesthetic control, establish a positive body language, and develop vocabulary for creative research.",
-  "prerequsite": "TDTR 10."
+  "description": "An overview and analysis of movement theory systems that offer approaches that improve movement quality, prevent injuries, aid in habilitation, develop mental focus and kinesthetic control, establish a positive body language, and develop vocabulary for creative research.",
+  "prerequisite": "TDTR 10."
  },
  {
   "code": "TDTR 20",
   "title": "Dance on Film",
   "unit": "4",
-  "discription": "The study of dance on film and video, the evolution of the creation, filming, editing, and production of dance for the camera. Major dance film works will be analyzed and discussed from choreography in the movies to dances made for film.",
-  "prerequsite": "TDTR 10."
+  "description": "The study of dance on film and video, the evolution of the creation, filming, editing, and production of dance for the camera. Major dance film works will be analyzed and discussed from choreography in the movies to dances made for film.",
+  "prerequisite": "TDTR 10."
  },
  {
   "code": "TDTR 104",
   "title": "Dance Theory and Pedagogy",
   "unit": "4",
-  "discription": "The study of the theoretical aspects of dance education, including an analysis of movement concepts for all ages. Development of basic technique training in all forms, curriculum planning, social awareness, and problem solving. Fundamental elements of cognitive and kinetic learning skills.",
-  "prerequsite": "upper-division standing or consent of instructor."
+  "description": "The study of the theoretical aspects of dance education, including an analysis of movement concepts for all ages. Development of basic technique training in all forms, curriculum planning, social awareness, and problem solving. Fundamental elements of cognitive and kinetic learning skills.",
+  "prerequisite": "upper-division standing or consent of instructor."
  },
  {
   "code": "TDGR 200",
   "title": "Dynamics",
   "unit": "1",
-  "discription": "A daily program of physical, vocal, and speech exercises designed to prepare the student to move in a focused way into specific class areas with minimum amount of warm-up time. The exercises work on development of flexibility, strength, and coordination throughout the body. Strong emphasis is placed on physical and mental centering within a structured and disciplined approach to preparation.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "A daily program of physical, vocal, and speech exercises designed to prepare the student to move in a focused way into specific class areas with minimum amount of warm-up time. The exercises work on development of flexibility, strength, and coordination throughout the body. Strong emphasis is placed on physical and mental centering within a structured and disciplined approach to preparation.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 201",
   "title": "Stage Combat",
   "unit": "2",
-  "discription": "A study of the dramatic elements of stage violence, and practical work in developing the physical skills necessary to fully realize violent moments on the stage. At the core of the study is the process from text to convincing theatrical action. Physical work revolves around basic principles of energy, focus, and center inherent in unarmed and weapons combat.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "A study of the dramatic elements of stage violence, and practical work in developing the physical skills necessary to fully realize violent moments on the stage. At the core of the study is the process from text to convincing theatrical action. Physical work revolves around basic principles of energy, focus, and center inherent in unarmed and weapons combat.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 204A",
   "title": "Text Analysis",
   "unit": "4",
-  "discription": "Topics to be covered will include (1) concept of poetic language; lexical and syntactic analysis of dialogue; (2) the semantic context of dialogue; (3) thematic structure, from motive to themes; (4) the concept of dramatic character or hero; (5) dramatic narrative; (6) the material of drama; the relationship of myth and ritual to drama; (7) analysis versus interpretation; (8) practical applications.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Topics to be covered will include (1) concept of poetic language; lexical and syntactic analysis of dialogue; (2) the semantic context of dialogue; (3) thematic structure, from motive to themes; (4) the concept of dramatic character or hero; (5) dramatic narrative; (6) the material of drama; the relationship of myth and ritual to drama; (7) analysis versus interpretation; (8) practical applications.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 204B",
   "title": "Contemporary Theories of Theatre",
   "unit": "4",
-  "discription": "An investigation of contemporary theories of theatre with an emphasis on structural and poststructural perspectives on text and textuality. The seminar will focus on adapting contemporary techniques of close reading to the interpretive and creative process in the theatre.",
-  "prerequsite": "TDGR 204A; admission to MFA theatre program or consent of instructor."
+  "description": "An investigation of contemporary theories of theatre with an emphasis on structural and poststructural perspectives on text and textuality. The seminar will focus on adapting contemporary techniques of close reading to the interpretive and creative process in the theatre.",
+  "prerequisite": "TDGR 204A; admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 204C",
   "title": "Collective Creation",
   "unit": "4",
-  "discription": "The culmination of the TDGR 204 sequence, in which students in all disciplines create and perform publicly presented original theatre pieces.",
-  "prerequsite": "TDGR 204B; admission to MFA theatre program or consent of instructor."
+  "description": "The culmination of the TDGR 204 sequence, in which students in all disciplines create and perform publicly presented original theatre pieces.",
+  "prerequisite": "TDGR 204B; admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 206",
   "title": "Faculty Directed Production",
   "unit": "4",
-  "discription": "Faculty directed production, from the rehearsal process through public performance. All participants will enroll in the same section, the number of units depending upon degree of involvement.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Faculty directed production, from the rehearsal process through public performance. All participants will enroll in the same section, the number of units depending upon degree of involvement.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 207",
   "title": "Production",
   "unit": "4",
-  "discription": "The collaborative process from the rehearsal process through public performance. All participants will enroll in the same section, the same number of units.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "The collaborative process from the rehearsal process through public performance. All participants will enroll in the same section, the same number of units.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 208",
   "title": "Dance Making Processes",
   "unit": "4",
-  "discription": "This course serves as a laboratory for experimentation in the choreographic strategies and structures of contemporary dance making. S/U grades only. May be taken for credit eight times.",
-  "prerequsite": "admission to the MFA theatre program or consent of instructor."
+  "description": "This course serves as a laboratory for experimentation in the choreographic strategies and structures of contemporary dance making. S/U grades only. May be taken for credit eight times.",
+  "prerequisite": "admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 210A",
   "title": "Process I\u2014Part I",
   "unit": "4",
-  "discription": "The actors focus on the nature of the acting process, using various exercises to stimulate imagination and to inspire instinctual choices. Later work includes improvisational and imaginative experiences to explore character and text. The class culminates in intensive scene work chosen for the particular actor to meld the improvisational approach with scripted material. The class is a combination of both actors and directors so that a common language is developed.",
-  "prerequsite": "admission to the MFA program or consent of instructor."
+  "description": "The actors focus on the nature of the acting process, using various exercises to stimulate imagination and to inspire instinctual choices. Later work includes improvisational and imaginative experiences to explore character and text. The class culminates in intensive scene work chosen for the particular actor to meld the improvisational approach with scripted material. The class is a combination of both actors and directors so that a common language is developed.",
+  "prerequisite": "admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 210B",
   "title": "Process I\u2014Part II",
   "unit": "4",
-  "discription": "Intensive studio examination of realistic texts using improvisational and imaginative techniques to realistically based texts commonly from American theatre. Second course in a three-course sequence.",
-  "prerequsite": "TDGR 210A and admission to the MFA program or consent of instructor."
+  "description": "Intensive studio examination of realistic texts using improvisational and imaginative techniques to realistically based texts commonly from American theatre. Second course in a three-course sequence.",
+  "prerequisite": "TDGR 210A and admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 210C",
   "title": "Process I\u2014Part III",
   "unit": "4",
-  "discription": "The intensive study of the dramatic and fictional work of Anton Chekhov and an actor's approach to that work. This course includes many of the techniques begun in earlier classes and applies them to this material. Also included is a study of Chekhov's short stories and plays, and the course involves adapting and staging these works. Third course of a three-course sequence.",
-  "prerequsite": "TDGR 210B and admission to the MFA program or consent of instructor."
+  "description": "The intensive study of the dramatic and fictional work of Anton Chekhov and an actor's approach to that work. This course includes many of the techniques begun in earlier classes and applies them to this material. Also included is a study of Chekhov's short stories and plays, and the course involves adapting and staging these works. Third course of a three-course sequence.",
+  "prerequisite": "TDGR 210B and admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 211B",
   "title": "Speech for the Actor",
-  "unit": "2\u20134",
-  "discription": "Continued introduction of the principle of phonetics and articulation. Constant study and drill to prepare the actor for standard speech and flexibility. Second course in a three-course series.",
-  "prerequsite": "TDGR 211A and admission to the MFA program or consent of instructor."
+  "unit": "2-4",
+  "description": "Continued introduction of the principle of phonetics and articulation. Constant study and drill to prepare the actor for standard speech and flexibility. Second course in a three-course series.",
+  "prerequisite": "TDGR 211A and admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 211C",
   "title": "Speech for the Actor",
-  "unit": "2\u20134",
-  "discription": "Continued introduction of the principle of phonetics and articulation. Constant study and drill to prepare the actor for standard speech and flexibility. Third course in a three-course series.",
-  "prerequsite": "TDGR 211B and admission to the MFA program or consent of instructor."
+  "unit": "2-4",
+  "description": "Continued introduction of the principle of phonetics and articulation. Constant study and drill to prepare the actor for standard speech and flexibility. Third course in a three-course series.",
+  "prerequisite": "TDGR 211B and admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 212",
   "title": "Acting Practicum",
   "unit": "2",
-  "discription": "One-on-one laboratory workshop that examines practical applications of accents, speech and voice work, dialect, movement and combat work specific and ancillary to the productions in which the students have been cast.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "One-on-one laboratory workshop that examines practical applications of accents, speech and voice work, dialect, movement and combat work specific and ancillary to the productions in which the students have been cast.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 213A-B-C",
   "title": "Movement for Theatre I",
   "unit": "2-2-2",
-  "discription": "An intensive studio course in the art of movement as a basis for theatre performance. Theory and practice of energy flow, weight, spatial focus, time consumption, and the shape factor. (S/U grades only.)",
-  "prerequsite": "THGR or TDGR 213A for B, THGR or TDGR 213B for C; admission to the MFA theatre program."
+  "description": "An intensive studio course in the art of movement as a basis for theatre performance. Theory and practice of energy flow, weight, spatial focus, time consumption, and the shape factor. (S/U grades only.)",
+  "prerequisite": "THGR or TDGR 213A for B, THGR or TDGR 213B for C; admission to the MFA theatre program."
  },
  {
   "code": "TDGR 214A",
   "title": "Voice for Theatre I\u2014Part I",
   "unit": "3",
-  "discription": "Voice exercises designed to \u201cfree the voice\u201d with emphasis on diaphragmatic breathing, articulation exercises, and singing exercises. Course designed to broaden pitch, range, projection, and to expand the full range of potential characterizations.",
-  "prerequsite": "admission to the MFA program or consent of instructor."
+  "description": "Voice exercises designed to \u201cfree the voice\u201d with emphasis on diaphragmatic breathing, articulation exercises, and singing exercises. Course designed to broaden pitch, range, projection, and to expand the full range of potential characterizations.",
+  "prerequisite": "admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 214B",
   "title": "Voice for Theatre II\u2014Part I",
   "unit": "3",
-  "discription": "Voice exercises designed to \u201cfree the voice\u201d with emphasis on diaphragmatic breathing, articulation exercises, and singing exercises. Course designed to broaden pitch, range, projection, and to expand the full range of potential characterizations. Second course in a three-course sequence.",
-  "prerequsite": "TDGR 214Aand admission to the MFA program or consent of instructor."
+  "description": "Voice exercises designed to \u201cfree the voice\u201d with emphasis on diaphragmatic breathing, articulation exercises, and singing exercises. Course designed to broaden pitch, range, projection, and to expand the full range of potential characterizations. Second course in a three-course sequence.",
+  "prerequisite": "TDGR 214Aand admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 214C",
   "title": "Voice for Theatre I\u2014Part III",
   "unit": "3",
-  "discription": "Voice exercises designed to \u201cfree the voice\u201d with emphasis on diaphragmatic breathing, articulation exercises, and singing exercises. Course designed to broaden pitch, range, projection, and to expand the full range of potential characterizations. Third course in a three-course series.",
-  "prerequsite": "TDGR 214B and admission to the MFA theatre program or consent of instructor."
+  "description": "Voice exercises designed to \u201cfree the voice\u201d with emphasis on diaphragmatic breathing, articulation exercises, and singing exercises. Course designed to broaden pitch, range, projection, and to expand the full range of potential characterizations. Third course in a three-course series.",
+  "prerequisite": "TDGR 214B and admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 215A",
   "title": "Special Topics in Dance Making",
   "unit": "4",
-  "discription": "This seminar focuses on concepts that inform creation, performance, research, and critical analysis of current and emerging dance making practices with varying content by faculty. S/U grades only. May be taken for credit eight times.",
-  "prerequsite": "admittance to the MFA dance program or consent of instructor required."
+  "description": "This seminar focuses on concepts that inform creation, performance, research, and critical analysis of current and emerging dance making practices with varying content by faculty. S/U grades only. May be taken for credit eight times.",
+  "prerequisite": "admittance to the MFA dance program or consent of instructor required."
  },
  {
   "code": "TDGR 216A",
   "title": "Pedagogical Practices",
   "unit": "4",
-  "discription": "This course is designed to enhance dance practitioners' understanding of pedagogical processes. Candidates will develop strategies to generate course material that functions in multiple contexts. These contexts may include university teaching, professional workshops, master classes, and artist residencies. S/U grades only.",
-  "prerequsite": "admittance to the MFA dance program or consent of instructor required."
+  "description": "This course is designed to enhance dance practitioners' understanding of pedagogical processes. Candidates will develop strategies to generate course material that functions in multiple contexts. These contexts may include university teaching, professional workshops, master classes, and artist residencies. S/U grades only.",
+  "prerequisite": "admittance to the MFA dance program or consent of instructor required."
  },
  {
   "code": "TDGR 217",
   "title": "**** New Media and Technology",
   "unit": "4",
-  "discription": "This seminar explores the interaction of new media and technologies for collaboration, research, and creation in dance making and performance.",
-  "prerequsite": "admission to the MFA theatre program or consent of instructor."
+  "description": "This seminar explores the interaction of new media and technologies for collaboration, research, and creation in dance making and performance.",
+  "prerequisite": "admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 218A",
   "title": "Professional Practices",
   "unit": "4",
-  "discription": "This seminar focuses on the specific considerations that support and sustain a professional career as a contemporary dance maker and performer. S/U grades only.",
-  "prerequsite": "admittance to the MFA dance program or consent of instructor required."
+  "description": "This seminar focuses on the specific considerations that support and sustain a professional career as a contemporary dance maker and performer. S/U grades only.",
+  "prerequisite": "admittance to the MFA dance program or consent of instructor required."
  },
  {
   "code": "TDGR 219",
   "title": "Directing Process Studio",
   "unit": "4",
-  "discription": "Preparation, presentation, and discussion of representative scenes from various periods of dramatic literature.",
-  "prerequsite": "admission to the MFA theatre program or consent of instructor."
+  "description": "Preparation, presentation, and discussion of representative scenes from various periods of dramatic literature.",
+  "prerequisite": "admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 220A",
   "title": "Process II: Classical Text I",
   "unit": "4",
-  "discription": "An intensive studio examination of problems and potentials associated with the theatrical realization of the classical text.",
-  "prerequsite": "admission to the MFA theatre program or consent of instructor."
+  "description": "An intensive studio examination of problems and potentials associated with the theatrical realization of the classical text.",
+  "prerequisite": "admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 220B",
   "title": "Process II: Classical Text II",
   "unit": "4",
-  "discription": "An intensive studio examination of problems and potentials associated with the theatrical realization of the classical text. This course is a continuation of TDGR 220A.",
-  "prerequsite": "TDGR 220A and admission to the MFA theatre program or consent of instructor."
+  "description": "An intensive studio examination of problems and potentials associated with the theatrical realization of the classical text. This course is a continuation of TDGR 220A.",
+  "prerequisite": "TDGR 220A and admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 220C",
   "title": "Process II: Classical Text III",
   "unit": "4",
-  "discription": "An intensive studio examination of problems and potentials associated with the theatrical realization of the classical text. This course is a continuation of TDGR 220B.",
-  "prerequsite": "TDGR 220B and admission to the MFA theatre program or consent of instructor."
+  "description": "An intensive studio examination of problems and potentials associated with the theatrical realization of the classical text. This course is a continuation of TDGR 220B.",
+  "prerequisite": "TDGR 220B and admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 221",
   "title": "Graduate Studio: Contemporary Movement Practices",
   "unit": "4",
-  "discription": "Develops movement practices with a view to supporting and sustaining varied dance making interests. The emphasis includes somatic and experiential movement modalities and incorporates physiological principles of human anatomy.",
-  "prerequsite": "admission to the MFA theatre program or consent of instructor."
+  "description": "Develops movement practices with a view to supporting and sustaining varied dance making interests. The emphasis includes somatic and experiential movement modalities and incorporates physiological principles of human anatomy.",
+  "prerequisite": "admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 221A-B",
   "title": "Speech for the Actor II",
   "unit": "3-3",
-  "discription": "Advanced work in phonetics and articulation. Intensive study of stage dialects to prepare actor for variety of roles.",
-  "prerequsite": "graduate standing; THGR or TDGR 221A prerequisite for THGR or TDGR 221B; admission to the MFA theatre program."
+  "description": "Advanced work in phonetics and articulation. Intensive study of stage dialects to prepare actor for variety of roles.",
+  "prerequisite": "graduate standing; THGR or TDGR 221A prerequisite for THGR or TDGR 221B; admission to the MFA theatre program."
  },
  {
   "code": "TDGR 223A-B",
   "title": "Movement for Theatre II",
   "unit": "3-3",
-  "discription": "An advanced course in the art of movement for the theatre, building on the knowledge gained in Theatre 213. (S/U grades only.)",
-  "prerequsite": "THGR or TDGR 223A for B; admission to the MFA theatre program."
+  "description": "An advanced course in the art of movement for the theatre, building on the knowledge gained in Theatre 213. (S/U grades only.)",
+  "prerequisite": "THGR or TDGR 223A for B; admission to the MFA theatre program."
  },
  {
   "code": "TDGR 224A-B",
   "title": "Voice for Theatre II",
   "unit": "3-3",
-  "discription": "Advanced voice training designed to help the actor fuse voice, emotion, and body into a fully realized reflection of the text. (S/U grades only.)",
-  "prerequsite": "THGR or TDGR 224A for B; admission to the MFA theatre program."
+  "description": "Advanced voice training designed to help the actor fuse voice, emotion, and body into a fully realized reflection of the text. (S/U grades only.)",
+  "prerequisite": "THGR or TDGR 224A for B; admission to the MFA theatre program."
  },
  {
   "code": "TDGR 225A-B",
   "title": "Singing for the Actor II",
   "unit": "1-1",
-  "discription": "Continuing vocal technique for the musical theatre. More complicated musical material investigated and prepared.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Continuing vocal technique for the musical theatre. More complicated musical material investigated and prepared.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 226",
   "title": "Stage Managing Assistantship",
-  "unit": "4\u201312",
-  "discription": "Assisting faculty with productions off-campus. Perform research necessary for project. Assist with preproduction meetings and other work. Observe and participate in any or all phases of the production process from preproduction through closing.",
-  "prerequsite": "MFA students or consent of instructor."
+  "unit": "4-12",
+  "description": "Assisting faculty with productions off-campus. Perform research necessary for project. Assist with preproduction meetings and other work. Observe and participate in any or all phases of the production process from preproduction through closing.",
+  "prerequisite": "MFA students or consent of instructor."
  },
  {
   "code": "TDGR 227A",
   "title": "Production Practicum",
   "unit": "4",
-  "discription": "Taken each term by all graduate contemporary dance making and performance students. The class supports candidates in their ongoing research in the development of performance work for all three years from in-studio showings through thesis presentation. S/U grades only. May be taken for credit eight times.",
-  "prerequsite": "admittance to the MFA dance program or consent of instructor required."
+  "description": "Taken each term by all graduate contemporary dance making and performance students. The class supports candidates in their ongoing research in the development of performance work for all three years from in-studio showings through thesis presentation. S/U grades only. May be taken for credit eight times.",
+  "prerequisite": "admittance to the MFA dance program or consent of instructor required."
  },
  {
   "code": "TDGR 229",
   "title": "Theatre Externship",
-  "unit": "6\u201312",
-  "discription": "Selected professional opportunities in repertory and commercial theatre, designed to engage the student in particular creative responsibilities under the guidance of master artist-teachers. Student is expected to give biweekly reports detailing his/her experience with the professional company.",
-  "prerequsite": "admission to the MFA theatre program, or consent of instructor."
+  "unit": "6-12",
+  "description": "Selected professional opportunities in repertory and commercial theatre, designed to engage the student in particular creative responsibilities under the guidance of master artist-teachers. Student is expected to give biweekly reports detailing his/her experience with the professional company.",
+  "prerequisite": "admission to the MFA theatre program, or consent of instructor."
  },
  {
   "code": "TDGR 230",
   "title": "Acting Process III: Actors' Studio",
-  "unit": "2\u20134",
-  "discription": "An advanced studio for graduate actors and directors, this work will explore a single text from the modern theatre under the direction of a master teacher- artist. Concentration will be on multiple possible modes of encountering a text, varieties of interpretation and performance realization, and the development of a theatre ensemble.",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "2-4",
+  "description": "An advanced studio for graduate actors and directors, this work will explore a single text from the modern theatre under the direction of a master teacher- artist. Concentration will be on multiple possible modes of encountering a text, varieties of interpretation and performance realization, and the development of a theatre ensemble.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 231A",
   "title": "Professional Preparation for the Actor",
   "unit": "4",
-  "discription": "A twice-weekly seminar focusing on the actor's confrontation with the industry, including in-depth preparation for auditions; cold readings; and meetings/interviews with producers, casting directors, agents, and managers. Actors will also begin to create material that could be crafted into solo performances.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "A twice-weekly seminar focusing on the actor's confrontation with the industry, including in-depth preparation for auditions; cold readings; and meetings/interviews with producers, casting directors, agents, and managers. Actors will also begin to create material that could be crafted into solo performances.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 233",
   "title": "Acting for the Camera",
   "unit": "1",
-  "discription": "This course is designed to aid the actor in the transition from stage to film work. Examination of film production and its physical characteristics and the acting style needed for work in film and television. Students will rehearse and perform in simulated studio setting.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "This course is designed to aid the actor in the transition from stage to film work. Examination of film production and its physical characteristics and the acting style needed for work in film and television. Students will rehearse and perform in simulated studio setting.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 235",
   "title": "Singing for the Actor III",
   "unit": "1",
-  "discription": "Continuing vocal technique for the musical theatre. More complicated musical material investigated and prepared.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Continuing vocal technique for the musical theatre. More complicated musical material investigated and prepared.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 239",
   "title": "Skills",
   "unit": "4",
-  "discription": "A unifying approach to acting skills (voice, movement, and speech) designed to result in providing the graduating actor with a daily regimen appropriate for professional work.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "A unifying approach to acting skills (voice, movement, and speech) designed to result in providing the graduating actor with a daily regimen appropriate for professional work.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 240",
   "title": "Directing Seminar",
-  "unit": "1\u20136",
-  "discription": "A seminar focusing on the current directing projects of all graduate directing students. Depending upon individual student needs, the work may include play selection, historical or sociological research, and discussion of emerging directorial concepts, the rehearsal process, and postproduction evaluation.",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "1-6",
+  "description": "A seminar focusing on the current directing projects of all graduate directing students. Depending upon individual student needs, the work may include play selection, historical or sociological research, and discussion of emerging directorial concepts, the rehearsal process, and postproduction evaluation.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 243",
   "title": "**** Director/Playwright/Choreographer Lab",
   "unit": "4",
-  "discription": "Collaborative process between directing and playwriting students providing a focused exploration of a broad range of directing and writing methodologies.",
-  "prerequsite": null
+  "description": "Collaborative process between directing and playwriting students providing a focused exploration of a broad range of directing and writing methodologies.",
+  "prerequisite": null
  },
  {
   "code": "TDGR 244",
   "title": "New Plays Workshop",
   "unit": "2",
-  "discription": "A course where playwrights and actors work together to develop new plays-in- progress.",
-  "prerequsite": "admission to the MFA theatre program or consent of instructor."
+  "description": "A course where playwrights and actors work together to develop new plays-in- progress.",
+  "prerequisite": "admission to the MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 245",
   "title": "Directing Practicum",
   "unit": "4",
-  "discription": "Students enrolled in this course will work on productions in the function of a director. This will include staging, creative interpretation, blocking, etc.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Students enrolled in this course will work on productions in the function of a director. This will include staging, creative interpretation, blocking, etc.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 250",
   "title": "Playwriting Seminar",
   "unit": "4",
-  "discription": "A seminar focusing on the current playwriting project of all graduate playwriting students. Work for each quarter is individually determined according to student needs, but may include exploration of an inceptive idea, development of a scenario or other structural work, and writing dialogue. Students present work to be discussed in class. May include group or individual playwriting exercises.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "A seminar focusing on the current playwriting project of all graduate playwriting students. Work for each quarter is individually determined according to student needs, but may include exploration of an inceptive idea, development of a scenario or other structural work, and writing dialogue. Students present work to be discussed in class. May include group or individual playwriting exercises.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 251",
   "title": "Playwriting Practicum",
   "unit": "2",
-  "discription": "Creative writing project developing original scripts from outline to the final play. Plays may vary depending on the quarter but will include writing of a realistic one-act, a nonrealistic one-act, a one-act documentary or dramatization of fiction, a full-length play.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Creative writing project developing original scripts from outline to the final play. Plays may vary depending on the quarter but will include writing of a realistic one-act, a nonrealistic one-act, a one-act documentary or dramatization of fiction, a full-length play.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 252",
   "title": "Dramaturgy Seminar",
   "unit": "4",
-  "discription": "The seminar will deal with all dramaturgical issues pertaining to departmental productions: production research, textual and analysis, translation, adaptation, rehearsal process, and critique. Concurrently with the dramaturgy issues of the given year, the seminar will discuss possible choices of plays for future production seasons.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "The seminar will deal with all dramaturgical issues pertaining to departmental productions: production research, textual and analysis, translation, adaptation, rehearsal process, and critique. Concurrently with the dramaturgy issues of the given year, the seminar will discuss possible choices of plays for future production seasons.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 253",
   "title": "Dramaturgy Practicum",
-  "unit": "1\u20136",
-  "discription": "Students enrolled in this course will work on productions in the function of a dramaturg. This will entail preparation of texts, research, participation at rehearsals, etc.",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "1-6",
+  "description": "Students enrolled in this course will work on productions in the function of a dramaturg. This will entail preparation of texts, research, participation at rehearsals, etc.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 254",
   "title": "Television Writing",
   "unit": "4",
-  "discription": "A one-quarter course covering the hour-long format (five weeks) and situation comedies (five weeks). Includes study and discussion of television script format and structure. Students will create the concept and structure for spec scripts in each genre.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "A one-quarter course covering the hour-long format (five weeks) and situation comedies (five weeks). Includes study and discussion of television script format and structure. Students will create the concept and structure for spec scripts in each genre.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 255",
   "title": "Writing for Performance",
   "unit": "4",
-  "discription": "This course is open to any graduate student who wants to expand their knowledge and experience of writing for performance. Open to graduate students who wish to incorporate writing into their creative and research practice. S/U grades only. May be taken for credit two times.",
-  "prerequsite": "graduate standing and consent of instructor."
+  "description": "This course is open to any graduate student who wants to expand their knowledge and experience of writing for performance. Open to graduate students who wish to incorporate writing into their creative and research practice. S/U grades only. May be taken for credit two times.",
+  "prerequisite": "graduate standing and consent of instructor."
  },
  {
   "code": "TDGR 256",
   "title": "Contemporary Plays",
-  "unit": "1\u20134",
-  "discription": "A guided reading course focusing exclusively on very recent plays in an attempt to become aware of what is being written now. Course may be repeated for credit.",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "1-4",
+  "description": "A guided reading course focusing exclusively on very recent plays in an attempt to become aware of what is being written now. Course may be repeated for credit.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 257A-B",
   "title": "Screenwriting",
   "unit": "4-4",
-  "discription": "Students will develop the concept for an original piece for television or film and will write the screenplay. Student work will be discussed in seminar at each phase of the development.",
-  "prerequsite": "admission to the MFA theatre program and THGR or TDGR 250."
+  "description": "Students will develop the concept for an original piece for television or film and will write the screenplay. Student work will be discussed in seminar at each phase of the development.",
+  "prerequisite": "admission to the MFA theatre program and THGR or TDGR 250."
  },
  {
   "code": "TDGR 258A",
   "title": "Dramatization and Adaptation",
   "unit": "4",
-  "discription": "Seminar will deal with dramatization and adaptation of literary texts for the purpose of theatrical production. The class will study some significant examples of such practice from the past and, subsequently, students will develop their own projects of dramatization, adaptation, or modernization of texts.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Seminar will deal with dramatization and adaptation of literary texts for the purpose of theatrical production. The class will study some significant examples of such practice from the past and, subsequently, students will develop their own projects of dramatization, adaptation, or modernization of texts.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 260",
   "title": "New-Play Festival",
   "unit": "4",
-  "discription": "The collaborative process of new-play development through readings, rehearsals, and public performance. MFA actors, designers, directors, playwrights, and stage managers enroll in one section and collaborate in creating the annual festival of full-length and one-act plays.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "The collaborative process of new-play development through readings, rehearsals, and public performance. MFA actors, designers, directors, playwrights, and stage managers enroll in one section and collaborate in creating the annual festival of full-length and one-act plays.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 262",
   "title": "Crossing Boundaries: Design Improvisations",
   "unit": "4",
-  "discription": "Conceiving interactive designs. A project/performance-based course, concentrating on the conception of designs adaptable to improvisatory contexts, in which technological strategies such as real-time processing and control of sound and light are encouraged and discussed.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "Conceiving interactive designs. A project/performance-based course, concentrating on the conception of designs adaptable to improvisatory contexts, in which technological strategies such as real-time processing and control of sound and light are encouraged and discussed.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 268",
   "title": "Storyboarding",
   "unit": "4",
-  "discription": "Course will cover multiple applications of storyboarding as a tool of communication and expression; comic books, theatre, opera, film, TV, and commercial applications will be explored. Individual and team assignments will be given to develop the basic vocabulary and techniques.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "Course will cover multiple applications of storyboarding as a tool of communication and expression; comic books, theatre, opera, film, TV, and commercial applications will be explored. Individual and team assignments will be given to develop the basic vocabulary and techniques.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 269A",
   "title": "Photoshop I",
   "unit": "4",
-  "discription": "Course will introduce the basic functions and applications of Photoshop as they may be applied to theatrical design. Emphasis on using Photoshop as an artistic tool.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "Course will introduce the basic functions and applications of Photoshop as they may be applied to theatrical design. Emphasis on using Photoshop as an artistic tool.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 269B",
   "title": "Photoshop II",
   "unit": "4",
-  "discription": "Advanced Photoshop techniques will be explored and applied to the creation of multimedia projects.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "Advanced Photoshop techniques will be explored and applied to the creation of multimedia projects.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 270A",
   "title": "Design Studio I",
   "unit": "4",
-  "discription": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual expression. Students will work on individual projects in lighting, costume, and scenic design. The course will include group critiques of completed designs and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual expression. Students will work on individual projects in lighting, costume, and scenic design. The course will include group critiques of completed designs and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 270B",
   "title": "Design Studio I: Costume Design",
   "unit": "4",
-  "discription": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual expression. Students will work on individual projects in lighting, costume, and scenic design. The course will include group critiques of completed design and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
-  "prerequsite": "THGR 270A, graduate standing, consent of instructor."
+  "description": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual expression. Students will work on individual projects in lighting, costume, and scenic design. The course will include group critiques of completed design and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
+  "prerequisite": "THGR 270A, graduate standing, consent of instructor."
  },
  {
   "code": "TDGR 270C",
   "title": "Design Studio I: Lighting Design",
   "unit": "4",
-  "discription": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual expression. Students will work on individual projects in lighting, costume, and scenic design. The course will include group critiques of completed design and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
-  "prerequsite": "THGR 270A or TDGR 270A, THGR 270B or TDGR 270B, graduate standing, and consent of instructor."
+  "description": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual expression. Students will work on individual projects in lighting, costume, and scenic design. The course will include group critiques of completed design and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
+  "prerequisite": "THGR 270A or TDGR 270A, THGR 270B or TDGR 270B, graduate standing, and consent of instructor."
  },
  {
   "code": "TDGR 270D",
   "title": "Design Studio I: Sound Design",
   "unit": "4",
-  "discription": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual/auditory expression. Students will work on individual projects in sound, lighting, costume, and scenic design. This course will include group critiques of completed design and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
-  "prerequsite": "THGR 270A, THGR 270B, graduate standing, consent of instructor."
+  "description": "This course will focus on beginning-level problems in theatre design, including text analysis, research, conceptualization, and visual/auditory expression. Students will work on individual projects in sound, lighting, costume, and scenic design. This course will include group critiques of completed design and works in progress. 270A, Scenic Design (fall); 270B, Costume Design (winter); 270C, Lighting Design (spring).",
+  "prerequisite": "THGR 270A, THGR 270B, graduate standing, consent of instructor."
  },
  {
   "code": "TDGR 271",
   "title": "Design Seminar",
   "unit": "2",
-  "discription": "A seminar focusing on all aspects of the design profession, including current projects of graduate design students. The work may also include portfolio presentations, research presentations, and guest lecturers.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "A seminar focusing on all aspects of the design profession, including current projects of graduate design students. The work may also include portfolio presentations, research presentations, and guest lecturers.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 273",
   "title": "Fashioning the Body",
   "unit": "4",
-  "discription": "A survey/history of artistic and cultural stylistic change as embodied in clothing from early Western civilization to the contemporary period.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "A survey/history of artistic and cultural stylistic change as embodied in clothing from early Western civilization to the contemporary period.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 274",
   "title": "Advanced Scenic Design",
   "unit": "4",
-  "discription": "This course explores advanced problems in scenic design through development and critique of creative class projects and production works-in-progress.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "This course explores advanced problems in scenic design through development and critique of creative class projects and production works-in-progress.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 275",
   "title": "Advanced Lighting Design",
   "unit": "4",
-  "discription": "Creative projects and topics in lighting design to develop the student's techniques and professional practices. Work to include studies in design research, concepts, psychophysical considerations, collaboration, professional procedures and systems, paperwork, and organization. Various scales of production projects will be addressed by the student for presentation and critique and may be theoretical or productions in the departmental calendar.",
-  "prerequsite": "second- or third-year design students only; admission to the MFA theatre program."
+  "description": "Creative projects and topics in lighting design to develop the student's techniques and professional practices. Work to include studies in design research, concepts, psychophysical considerations, collaboration, professional procedures and systems, paperwork, and organization. Various scales of production projects will be addressed by the student for presentation and critique and may be theoretical or productions in the departmental calendar.",
+  "prerequisite": "second- or third-year design students only; admission to the MFA theatre program."
  },
  {
   "code": "TDGR 276",
   "title": "Advanced Costume Design",
   "unit": "4",
-  "discription": "Projects in costume design, emphasizing script analysis, research, conceptualization, and visual expression. Studio work includes costume rendering in various media for specific plays.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Projects in costume design, emphasizing script analysis, research, conceptualization, and visual expression. Studio work includes costume rendering in various media for specific plays.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 278",
   "title": "Special Topics in Theatre Design",
-  "unit": "1\u20136",
-  "discription": "A course designed to expose the theatre design student to a variety of specialized topics, including millinery, pattern drafting and draping, scenic painting, model making, figure drawing, drafting, fitting, rendering. Topics will vary from quarter to quarter.",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "1-6",
+  "description": "A course designed to expose the theatre design student to a variety of specialized topics, including millinery, pattern drafting and draping, scenic painting, model making, figure drawing, drafting, fitting, rendering. Topics will vary from quarter to quarter.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 279",
   "title": "Design Practicum",
   "unit": "4",
-  "discription": "This course covers the artistic, aesthetic, and practical aspects of the designers' work as they develop and execute the design toward a fully realized production.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "This course covers the artistic, aesthetic, and practical aspects of the designers' work as they develop and execute the design toward a fully realized production.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 280A",
   "title": "Stage Management 1",
   "unit": "4",
-  "discription": "Discussion and research into the duties, responsibilities, and roles of a stage manager. Work to include studies in script analysis, communication, conflict resolution, rehearsal procedures, performance skills, style, and conceptual approach to stage management.",
-  "prerequsite": "admission to MFA theatre program or consent of instructor."
+  "description": "Discussion and research into the duties, responsibilities, and roles of a stage manager. Work to include studies in script analysis, communication, conflict resolution, rehearsal procedures, performance skills, style, and conceptual approach to stage management.",
+  "prerequisite": "admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 280B",
   "title": "Stage Management 2",
   "unit": "4",
-  "discription": "The second of the three-part introductory stage management series, this course further explores the stage manager's process, focusing on the technical rehearsal period through the opening of a production.",
-  "prerequsite": "TDGR 280A; admission to MFA theatre program or consent of instructor."
+  "description": "The second of the three-part introductory stage management series, this course further explores the stage manager's process, focusing on the technical rehearsal period through the opening of a production.",
+  "prerequisite": "TDGR 280A; admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 280C",
   "title": "Stage Management 3",
   "unit": "4",
-  "discription": "The final course in the three-part introductory stage management series focuses on the stage manager's role once a production has opened. The course will also address topics such as new plays, touring, dance, multimedia productions, and music.",
-  "prerequsite": "TDGR 280A and TDGR 280B; admission to MFA theatre program or consent of instructor."
+  "description": "The final course in the three-part introductory stage management series focuses on the stage manager's role once a production has opened. The course will also address topics such as new plays, touring, dance, multimedia productions, and music.",
+  "prerequisite": "TDGR 280A and TDGR 280B; admission to MFA theatre program or consent of instructor."
  },
  {
   "code": "TDGR 282",
   "title": "Advanced Sound Design",
   "unit": "4",
-  "discription": "Creative projects to develop student\u2019s techniques and professional practices. Studies include research, concepts, collaboration, professional procedures, systems and organization. Various scales of projects will be addressed for presentation and critique; may be theoretical or productions in the Department calendar.",
-  "prerequsite": "admission to the MFA program or consent of instructor."
+  "description": "Creative projects to develop student\u2019s techniques and professional practices. Studies include research, concepts, collaboration, professional procedures, systems and organization. Various scales of projects will be addressed for presentation and critique; may be theoretical or productions in the Department calendar.",
+  "prerequisite": "admission to the MFA program or consent of instructor."
  },
  {
   "code": "TDGR 286",
   "title": "Special Topics in Stage Management",
-  "unit": "1\u20136",
-  "discription": "A course for MFA students in stage management. Topics will focus on various aspects of theatre administration, and advanced stage management, including nonprofit theatre, commercial theatre, advanced problems, venues, musicals/dance, production management, theatre development, business problems, and theatre marketing.",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "1-6",
+  "description": "A course for MFA students in stage management. Topics will focus on various aspects of theatre administration, and advanced stage management, including nonprofit theatre, commercial theatre, advanced problems, venues, musicals/dance, production management, theatre development, business problems, and theatre marketing.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 288",
   "title": "Stage Management Seminar",
   "unit": "4",
-  "discription": "A weekly seminar in which all graduate stage managers participate. Includes discussions of problems encountered on current productions, paperwork, methodology, and production approaches.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "A weekly seminar in which all graduate stage managers participate. Includes discussions of problems encountered on current productions, paperwork, methodology, and production approaches.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 289",
   "title": "Introduction to Doctoral Studies",
   "unit": "4",
-  "discription": "Seminar acquaints doctoral students of all levels with research methods, theoretical models, publishing protocol, professional preparation, and pedagogical approaches particular to theatre and performance studies. Course assignments are tailored to students' scholarly interests and progress toward degree.",
-  "prerequsite": "admission to PhD program in theatre or consent of instructor."
+  "description": "Seminar acquaints doctoral students of all levels with research methods, theoretical models, publishing protocol, professional preparation, and pedagogical approaches particular to theatre and performance studies. Course assignments are tailored to students' scholarly interests and progress toward degree.",
+  "prerequisite": "admission to PhD program in theatre or consent of instructor."
  },
  {
   "code": "TDGR 290",
   "title": "Dramatic Literature and Theatre History Prior to 1900",
   "unit": "4",
-  "discription": "Selected material from following topics: Classical Drama, Asian Drama, Medieval and Early Modern Drama, Shakespeare, European Drama 1600\u20131900. May be taken eight times as content varies.",
-  "prerequsite": "admission to PhD program in theatre."
+  "description": "Selected material from following topics: Classical Drama, Asian Drama, Medieval and Early Modern Drama, Shakespeare, European Drama 1600-1900. May be taken eight times as content varies.",
+  "prerequisite": "admission to PhD program in theatre."
  },
  {
   "code": "TDGR 291",
   "title": "Dramatic Literature and Theatre History 1900 to the Present",
   "unit": "4",
-  "discription": "Selected material from following topics: European Theatre 1900\u2013Present, American Theatre 1900\u2013Present, Contemporary Theatre and Performance. May be taken eight times as content varies.",
-  "prerequsite": "admission to PhD program in theatre."
+  "description": "Selected material from following topics: European Theatre 1900-Present, American Theatre 1900-Present, Contemporary Theatre and Performance. May be taken eight times as content varies.",
+  "prerequisite": "admission to PhD program in theatre."
  },
  {
   "code": "TDGR 292",
   "title": "Cultural and Critical Theory",
   "unit": "4",
-  "discription": "Selected material from following topics: Performance Theory, Dramatic Theory, Critical Theory, Cultural Studies. May be taken eight times as content varies.",
-  "prerequsite": "admission to PhD program in theatre."
+  "description": "Selected material from following topics: Performance Theory, Dramatic Theory, Critical Theory, Cultural Studies. May be taken eight times as content varies.",
+  "prerequisite": "admission to PhD program in theatre."
  },
  {
   "code": "TDGR 293",
   "title": "Directed Studies",
-  "unit": "4\u201312",
-  "discription": "Individual or small group directed study.",
-  "prerequsite": null
+  "unit": "4-12",
+  "description": "Individual or small group directed study.",
+  "prerequisite": null
  },
  {
   "code": "TDGR 294",
   "title": "Dissertation Research",
-  "unit": "4\u201312",
-  "discription": "Research and preparation of doctoral dissertation.",
-  "prerequsite": null
+  "unit": "4-12",
+  "description": "Research and preparation of doctoral dissertation.",
+  "prerequisite": null
  },
  {
   "code": "TDGR 295",
   "title": "Acting Practicum",
   "unit": "2",
-  "discription": "This course covers the artistic, aesthetic, and practical aspects of the actors' work as they develop and execute the character/role toward a fully realized production.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "This course covers the artistic, aesthetic, and practical aspects of the actors' work as they develop and execute the character/role toward a fully realized production.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 296",
   "title": "Stage Management Practicum",
   "unit": "4",
-  "discription": "Taken each term by all graduate stage management students. The class focuses on the development of knowledge and skills necessary for the contemporary stage manager. Seminar format is augmented by lab work that may include departmental productions.",
-  "prerequsite": "admission to the MFA theatre program."
+  "description": "Taken each term by all graduate stage management students. The class focuses on the development of knowledge and skills necessary for the contemporary stage manager. Seminar format is augmented by lab work that may include departmental productions.",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 297",
   "title": "Thesis Research",
-  "unit": "2\u201312",
-  "discription": "Thesis research for MFA. (S/U grades only.)",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "2-12",
+  "description": "Thesis research for MFA. (S/U grades only.)",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 299",
   "title": "Thesis Project",
-  "unit": "2\u201312",
-  "discription": "Specific projects in theatre individually determined to meet the developing needs, interests, and abilities of MFA candidates. (S/U grades only.)",
-  "prerequsite": "admission to the MFA theatre program."
+  "unit": "2-12",
+  "description": "Specific projects in theatre individually determined to meet the developing needs, interests, and abilities of MFA candidates. (S/U grades only.)",
+  "prerequisite": "admission to the MFA theatre program."
  },
  {
   "code": "TDGR 500",
   "title": "Introduction to Apprentice Teaching",
   "unit": "4",
-  "discription": "This course, designed to meet the needs of the graduate students who serve as teaching assistants, includes analysis of texts and materials, discussion of teaching techniques, conducting discussion sections, formulation of topics and questions for papers, and examinations and grading. Two units = twenty-five percent TAship. Four units = fifty percent TAship.",
-  "prerequsite": "graduate standing and consent of the instructor."
+  "description": "This course, designed to meet the needs of the graduate students who serve as teaching assistants, includes analysis of texts and materials, discussion of teaching techniques, conducting discussion sections, formulation of topics and questions for papers, and examinations and grading. Two units = twenty-five percent TAship. Four units = fifty percent TAship.",
+  "prerequisite": "graduate standing and consent of the instructor."
  }
 ]

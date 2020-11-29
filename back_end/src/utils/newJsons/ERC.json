@@ -3,77 +3,77 @@
   "code": "ERC 1",
   "title": "First Year Experience",
   "unit": "2",
-  "discription": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking, organizational, interpersonal, and wellness skills. P/NP grades only.",
-  "prerequsite": "open to ERC NFRS students only."
+  "description": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking, organizational, interpersonal, and wellness skills. P/NP grades only.",
+  "prerequisite": "open to ERC NFRS students only."
  },
  {
   "code": "ERC 2",
   "title": "Transfer Year Experience",
   "unit": "2",
-  "discription": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking, organizational, interpersonal, and wellness skills. P/NP grades only.",
-  "prerequsite": "open to ERC transfer students only."
+  "description": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking, organizational, interpersonal, and wellness skills. P/NP grades only.",
+  "prerequisite": "open to ERC transfer students only."
  },
  {
   "code": "ERC 20",
   "title": "First-year Student Honors Seminar: International Themes",
   "unit": "1",
-  "discription": "This weekly seminar focuses on a chosen international theme with faculty speakers. The structure of the seminar is informal, giving students the opportunity to participate in interactive discussions. Pass/Not Pass only. May be taken for credit three times as topics vary.",
-  "prerequsite": "open to students in the Eleanor Roosevelt College First-year Student Honors Program only."
+  "description": "This weekly seminar focuses on a chosen international theme with faculty speakers. The structure of the seminar is informal, giving students the opportunity to participate in interactive discussions. Pass/Not Pass only. May be taken for credit three times as topics vary.",
+  "prerequisite": "open to students in the Eleanor Roosevelt College First-year Student Honors Program only."
  },
  {
   "code": "ERC 89",
   "title": "Practicum in Math Tutoring",
   "unit": "2",
-  "discription": "Undergraduate students will be provided with one hour of instruction on pedagogy of tutoring math in a public high school setting and placement in regional public high schools to provide five hours of one-on-one tutoring of math students under supervision of high school math teachers. P/NP grades only. May be taken for credit three times.",
-  "prerequsite": "Math 10A or 20A."
+  "description": "Undergraduate students will be provided with one hour of instruction on pedagogy of tutoring math in a public high school setting and placement in regional public high schools to provide five hours of one-on-one tutoring of math students under supervision of high school math teachers. P/NP grades only. May be taken for credit three times.",
+  "prerequisite": "Math 10A or 20A."
  },
  {
   "code": "ERC 92",
   "title": "Honors Project",
   "unit": "2",
-  "discription": "Individual project on a topic chosen by the student, done under direction of a faculty member.",
-  "prerequsite": "by invitation only. Pass/Not Pass only. Repeatable for credit twice, up to a total of six units over three quarters."
+  "description": "Individual project on a topic chosen by the student, done under direction of a faculty member.",
+  "prerequisite": "by invitation only. Pass/Not Pass only. Repeatable for credit twice, up to a total of six units over three quarters."
  },
  {
   "code": "ERC 188",
   "title": "Transfer Seminar: The Research University",
   "unit": "1",
-  "discription": "This weekly seminar focuses on the skills required to write an upper-division research paper and prepare for a winter quarter internship through Academic Internship Program. The structure of the seminar is informal, giving students the opportunity to participate in interactive discussions based on required reading and faculty speakers.",
-  "prerequsite": "department stamp."
+  "description": "This weekly seminar focuses on the skills required to write an upper-division research paper and prepare for a winter quarter internship through Academic Internship Program. The structure of the seminar is informal, giving students the opportunity to participate in interactive discussions based on required reading and faculty speakers.",
+  "prerequisite": "department stamp."
  },
  {
   "code": "ERC 192A",
   "title": "Global Service Research Seminar",
   "unit": "2",
-  "discription": "This is the first course of a two-course elective sequence (ERC 192A and ERC 192B) entitled ERC Global Service and Research. ERC 192A provides an academic introduction to the culture and history of the nation and region selected for this undergraduate academic, practicum, and research experience to prepare students for the subsequent service and research portion (ERC 192B).",
-  "prerequsite": null
+  "description": "This is the first course of a two-course elective sequence (ERC 192A and ERC 192B) entitled ERC Global Service and Research. ERC 192A provides an academic introduction to the culture and history of the nation and region selected for this undergraduate academic, practicum, and research experience to prepare students for the subsequent service and research portion (ERC 192B).",
+  "prerequisite": null
  },
  {
   "code": "ERC 192B",
   "title": "Global Service Research Seminar",
   "unit": "2",
-  "discription": "ERC 192B begins with the service learning practicum component over spring break where students dedicate twenty hours to an on-site service project abroad. Returning to UC San Diego, students begin their research seminar pursuing the project they proposed in MMW 192A. The project culminates with a research paper and presentation.",
-  "prerequsite": "ERC 192A and department stamp."
+  "description": "ERC 192B begins with the service learning practicum component over spring break where students dedicate twenty hours to an on-site service project abroad. Returning to UC San Diego, students begin their research seminar pursuing the project they proposed in MMW 192A. The project culminates with a research paper and presentation.",
+  "prerequisite": "ERC 192A and department stamp."
  },
  {
   "code": "ERC 196",
   "title": "Honors Project",
   "unit": "4",
-  "discription": "Senior thesis research project for students who have been accepted into the Eleanor Roosevelt College Individual Studies major. Project will be carried out under supervision of one or more faculty members. Depending on scope of the project, may be taken for four or eight units of credit in a single quarter, or eight units distributed over two quarters.",
-  "prerequsite": "admission to Eleanor Roosevelt College Individual Studies major."
+  "description": "Senior thesis research project for students who have been accepted into the Eleanor Roosevelt College Individual Studies major. Project will be carried out under supervision of one or more faculty members. Depending on scope of the project, may be taken for four or eight units of credit in a single quarter, or eight units distributed over two quarters.",
+  "prerequisite": "admission to Eleanor Roosevelt College Individual Studies major."
  },
  {
   "code": "ERC 199",
   "title": "ERC Independent Studies",
   "unit": "4",
-  "discription": "The content of this independent study course, which may not duplicate any existing course on campus, will be determined by a supervising faculty member and tailored to fit specific content needs of students pursuing the Eleanor Roosevelt College Individual Studies major.",
-  "prerequsite": "admission to Eleanor Roosevelt College Individual Studies major."
+  "description": "The content of this independent study course, which may not duplicate any existing course on campus, will be determined by a supervising faculty member and tailored to fit specific content needs of students pursuing the Eleanor Roosevelt College Individual Studies major.",
+  "prerequisite": "admission to Eleanor Roosevelt College Individual Studies major."
  },
  {
   "code": "ERC 90",
   "title": "Undergraduate Seminar",
   "unit": "1",
-  "discription": "A seminar intended for exposing undergraduate students, especially first-year students and sophomores, to exciting research programs conducted by the faculty.",
-  "prerequsite": "none. Pass/Not Pass only."
+  "description": "A seminar intended for exposing undergraduate students, especially first-year students and sophomores, to exciting research programs conducted by the faculty.",
+  "prerequisite": "none. Pass/Not Pass only."
  }
 ]
