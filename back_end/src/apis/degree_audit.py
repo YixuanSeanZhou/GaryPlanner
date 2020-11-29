@@ -75,89 +75,86 @@ def request_degree_audit():
     taken = []
     need = []
     start = False
+    try: 
+        for i in range(len(reqh)):
+            if 'MAJOR REQUIREMENTS' in reqh[i].text:
+                start = True
+                continue
+            if 'WORK IN PROGRESS' in reqh[i].text:
+                start = False
+            if start:
+                sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.split('\n')[0]
+                if 'WARREN' in sub_text:
+                    sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.replace('\n', '')
 
-    for i in range(len(reqh)):
-        if 'MAJOR REQUIREMENTS' in reqh[i].text:
-            start = True
-            continue
-        if 'WORK IN PROGRESS' in reqh[i].text:
-            start = False
-        if start:
-            sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.split('\n')[0]
-            if 'WARREN' in sub_text:
-                sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.replace('\n', '')
-
-                num = int(float(reqb[i].text.split(' ')[1]))
-                unit = (reqb[i].text.split(' ')[2])
+                    num = int(float(reqb[i].text.split(' ')[1]))
+                    unit = (reqb[i].text.split(' ')[2])
+                    sub_req[sub_text] = {}
+                    sub_req[sub_text]['needs'] = {unit: int(num)}
+                    continue
+                if '48 Upper' in sub_text or '>>' in sub_text or 'Area' in sub_text:
+                    continue
+                if sub_text == '':
+                    continue
                 sub_req[sub_text] = {}
-                sub_req[sub_text]['needs'] = {unit: int(num)}
-                continue
-            if '48 Upper' in sub_text or '>>' in sub_text or 'Area' in sub_text:
-                continue
-            if sub_text == '':
-                continue
-            sub_req[sub_text] = {}
 
-            # print(sub_text)
-            # print(i)
-            # print(reqh[i].find_element_by_css_selector('div.reqTitle').text)
-            # try:
-            subs = reqb[i].find_elements_by_css_selector('div.subreqBody')
-            for sub in subs:
-                cate = ['subreqTitle srTitle_substatusOK', 'subreqTitle srTitle_substatusNO']
-                s = sub.find_elements_by_tag_name('span')
-                # print(s_ok[0].text)
-                try:
-                    subreq_text = s[0].text
-                    if '\n' in subreq_text:
-                        subreq_text = subreq_text.split('\n')[0]
-                except:
-                    print("NO Span")
-                    print(sub_text)
-                if subreq_text not in sub_req[sub_text]:
-                    sub_req[sub_text][subreq_text] = {}
-
-
-                trs = sub.find_elements_by_class_name('takenCourse')
-
-                ret_list = []
-                # Process Taken Classes
-                for tr in trs:
-                    tds = tr.find_elements_by_css_selector('td')
-                    ret = {}
-                    for td in tds:
-
-                        cname = td.get_attribute('class')
-                        # print(cname)
-                        if cname not in ['term', 'course', 'credit', 'grade']:
-                            continue
-                        else:
-                            if cname == 'grade':
-                                ret[cname] = td.text.replace(' ', '')
-                            ret[cname] = td.text
-                    # print(ret)
-                    ret_list.append(ret)
-                sub_req[sub_text][subreq_text]['taken'] = ret_list
-                taken += ret_list
-                if sub_req[sub_text][subreq_text]:
-                    #try:
-                    # special case for warren
+                # print(sub_text)
+                # print(i)
+                # print(reqh[i].find_element_by_css_selector('div.reqTitle').text)
+                # try:
+                subs = reqb[i].find_elements_by_css_selector('div.subreqBody')
+                for sub in subs:
+                    cate = ['subreqTitle srTitle_substatusOK', 'subreqTitle srTitle_substatusNO']
+                    s = sub.find_elements_by_tag_name('span')
+                    # print(s_ok[0].text)
                     try:
-                        need_table = sub.find_element_by_css_selector('table.subreqNeeds')
-                        trs = need_table.find_elements_by_tag_name('td')
-                        sub_req[sub_text][subreq_text]['needs'] = {trs[2].text: int(trs[1].text)}
-                        td = sub.find_element_by_css_selector('td.fromcourselist')
-                        if 'Elective' not in subreq_text:
-                            sub_req[sub_text][subreq_text]['course_needs'] = parseClassWithOr(td.text)
-                            # eed.append(sub_req[sub_text][subreq_text]['course_needs'])
-                        else:
-                            sub_req[sub_text][subreq_text]['course_needs'] = parseClassIgnoreOr(td.text)
-                            # need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
+                        subreq_text = s[0].text
+                        if '\n' in subreq_text:
+                            subreq_text = subreq_text.split('\n')[0]
                     except:
-                        pass
-    return {'reason': 'success', 'result': sub_req}, 200
-    # except:
-        # return {'reason': 'Run your degree auidt first, or your degree audit is unable to parse'}, 400
-    
+                        print("NO Span")
+                        print(sub_text)
+                    if subreq_text not in sub_req[sub_text]:
+                        sub_req[sub_text][subreq_text] = {}
 
 
+                    trs = sub.find_elements_by_class_name('takenCourse')
+
+                    ret_list = []
+                    # Process Taken Classes
+                    for tr in trs:
+                        tds = tr.find_elements_by_css_selector('td')
+                        ret = {}
+                        for td in tds:
+
+                            cname = td.get_attribute('class')
+                            # print(cname)
+                            if cname not in ['term', 'course', 'credit', 'grade']:
+                                continue
+                            else:
+                                if cname == 'grade':
+                                    ret[cname] = td.text.replace(' ', '')
+                                ret[cname] = td.text
+                        # print(ret)
+                        ret_list.append(ret)
+                    sub_req[sub_text][subreq_text]['taken'] = ret_list
+                    taken += ret_list
+                    if sub_req[sub_text][subreq_text]:
+                        #try:
+                        # special case for warren
+                        try:
+                            need_table = sub.find_element_by_css_selector('table.subreqNeeds')
+                            trs = need_table.find_elements_by_tag_name('td')
+                            sub_req[sub_text][subreq_text]['needs'] = {trs[2].text: int(trs[1].text)}
+                            td = sub.find_element_by_css_selector('td.fromcourselist')
+                            if 'Elective' not in subreq_text:
+                                sub_req[sub_text][subreq_text]['course_needs'] = parseClassWithOr(td.text)
+                                # eed.append(sub_req[sub_text][subreq_text]['course_needs'])
+                            else:
+                                sub_req[sub_text][subreq_text]['course_needs'] = parseClassIgnoreOr(td.text)
+                                # need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
+                        except:
+                            pass
+        return {'reason': 'success', 'result': sub_req}, 200
+    except:
+        return {'reason': 'Run your degree auidt first, or your degree audit is unable to parse'}, 400
