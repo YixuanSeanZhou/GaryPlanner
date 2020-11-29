@@ -23,7 +23,7 @@ def create_entry():
     user_id = req_data.get('user_id')
     class_code = req_data.get('class_code')
     class_schedule_id = req_data.get('class_schedule_id')
-    quarter_taken = req_data.get('quarter_taken') #FA20
+    quarter_taken = req_data.get('quarter_taken')  # FA20
     grade = req_data.get('grade')
     locked = req_data.get('locked')
     s, u = FourYearPlan.create_entry(
@@ -88,7 +88,8 @@ def get_unique_entry():
     user_id = current_user.id
     class_code = request.args.get('class_code')
     quarter_taken = request.args.get('quarter_taken')
-    entry = FourYearPlan.get_unique_entry(user_id=user_id, class_code=class_code,
+    entry = FourYearPlan.get_unique_entry(user_id=user_id,
+                                          class_code=class_code,
                                           quarter_taken=quarter_taken)
     return jsonify({'reason': 'succsess', 'result': entry.to_json()}), 200
 
@@ -124,7 +125,8 @@ def remove_entry():
     user_id = req_data.get('user_id')
     class_code = req_data.get('class_code')
     quarter_taken = req_data.get('quarter_taken')
-    s = FourYearPlan.remove_entry(id=id, user_id=user_id, class_code=class_code,
+    s = FourYearPlan.remove_entry(id=id, user_id=user_id,
+                                  class_code=class_code,
                                   quarter_taken=quarter_taken)
     if s:
         return jsonify({'reason': 'success'}), 200
