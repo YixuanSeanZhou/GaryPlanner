@@ -21,13 +21,13 @@ CORS(four_year_plan_api_bp, supports_credentials=True)
 def create_entry():
     req_data = request.get_json()
     user_id = req_data.get('user_id')
-    class_id = req_data.get('class_id')
+    class_code = req_data.get('class_code')
     class_schedule_id = req_data.get('class_schedule_id')
     quarter_taken = req_data.get('quarter_taken') #FA20
     grade = req_data.get('grade')
     locked = req_data.get('locked')
     s, u = FourYearPlan.create_entry(
-            user_id=user_id, class_id=class_id,
+            user_id=user_id, class_code=class_code,
             class_schedule_id=class_schedule_id,
             quarter_taken=quarter_taken, grade=grade, locked=locked)
     if s:
@@ -62,7 +62,7 @@ def get_formatted_plan_by_user():
     # Now we call helper function
     formatted_plan = convertResultsto4YearPlan(
             {'reason': 'success', 'result': plan})
-    return formatted_plan, 200
+    return jsonify(formatted_plan), 200
 
 
 @four_year_plan_api_bp.route('/get_locked_entries_by_user', methods=['GET'])
@@ -86,9 +86,9 @@ def get_entry_by_id():
 @login_required
 def get_unique_entry():
     user_id = current_user.id
-    class_id = request.args.get('class_id')
+    class_code = request.args.get('class_code')
     quarter_taken = request.args.get('quarter_taken')
-    entry = FourYearPlan.get_unique_entry(user_id=user_id, class_id=class_id,
+    entry = FourYearPlan.get_unique_entry(user_id=user_id, class_code=class_code,
                                           quarter_taken=quarter_taken)
     return jsonify({'reason': 'succsess', 'result': entry.to_json()}), 200
 
@@ -99,13 +99,13 @@ def update_entry():
     req_data = request.get_json()
     id = req_data.get('id')
     user_id = current_user.id
-    class_id = req_data.get('class_id', None)
+    class_code = req_data.get('class_code', None)
     class_schedule_id = req_data.get('class_schedule_id', None)
     quarter_taken = req_data.get('quarter_taken', None)
     grade = req_data.get('grade', None)
     locked = req_data.get('locked', None)
 
-    s, p = FourYearPlan.update_entry(id=id, user_id=user_id, class_id=class_id,
+    s, p = FourYearPlan.update_entry(id=id, user_id=user_id, class_code=class_code,
                                      class_schedule_id=class_schedule_id,
                                      quarter_taken=quarter_taken, grade=grade,
                                      locked=locked)
@@ -122,14 +122,14 @@ def remove_entry():
     req_data = request.get_json()
     id = req_data.get('id')
     user_id = req_data.get('user_id')
-    class_id = req_data.get('class_id')
+    class_code = req_data.get('class_code')
     quarter_taken = req_data.get('quarter_taken')
-    s = FourYearPlan.remove_entry(id=id, user_id=user_id, class_id=class_id,
+    s = FourYearPlan.remove_entry(id=id, user_id=user_id, class_code=class_code,
                                   quarter_taken=quarter_taken)
     if s:
         return jsonify({'reason': 'success'}), 200
     else:
-        return jsonify({'reason': 'success'}), 300
+        return jsonify({'reason': 'failed'}), 300
 
 
 # helper functions to format return values
@@ -221,7 +221,8 @@ def convertResultsto4YearPlan(results):
         }
         response['quarters'][quarter] = quarter_dictionary
 
-    print(response)
+    # print(response)
+    return response
 
 
 # generates an array of all the quarter's name the person will have
