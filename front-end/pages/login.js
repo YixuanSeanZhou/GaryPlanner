@@ -76,7 +76,7 @@ class Login extends React.Component {
 					localStorage.checkbox = remember;
 				}
 
-				this.props.router.push('/temp/testProfile');
+				this.props.router.push('/home')
 			} else if (response.status == 400) {
 				// Wrong email/password
 				this.setState({

@@ -18,24 +18,26 @@ export class GaryNavbar extends React.Component {
     render() {
         let navBarChild = undefined;
         if (this.state.showUser === true) {
-            navBarChild = <>
-                {this.props.children}
-                <Nav className="ml-auto">
-                    <Navbar.Text>Welcome,</Navbar.Text>
-                    <NavDropdown className="ml-auto" title="Yixuan" alignRight>
-                        <NavDropdown.Item href="/userProfile">
-                            Edit Profile
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="/friends">Friends</NavDropdown.Item>
-                        <NavDropdown.Item href="changePass">
-                            Change Passoword
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                    <Nav.Link href="/intro">
-                        <span style={{ textDecoration: 'underline' }}>Log out</span>
-                    </Nav.Link>
-                </Nav>
-            </>;
+            navBarChild = (
+				<>
+					{this.props.children}
+					<Nav className="ml-auto">
+						<Navbar.Text>Welcome,</Navbar.Text>
+						<NavDropdown className="ml-auto" title="Yixuan" alignRight>
+							<NavDropdown.Item href="/userProfile">
+								Edit Profile
+							</NavDropdown.Item>
+							<NavDropdown.Item href="/friends">Friends</NavDropdown.Item>
+							<NavDropdown.Item href="changePass">
+								Change Passoword
+							</NavDropdown.Item>
+						</NavDropdown>
+						<Nav.Link href="/intro">
+							| <span style={{ textDecoration: 'underline' }}>Log out</span>
+						</Nav.Link>
+					</Nav>
+				</>
+			)
         } else {
             navBarChild = this.props.children;
         }
