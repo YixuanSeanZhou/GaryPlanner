@@ -23,7 +23,10 @@ export class GaryNavbar extends React.Component {
 					{this.props.children}
 					<Nav className="ml-auto">
 						<Navbar.Text>Welcome,</Navbar.Text>
-						<NavDropdown className="ml-auto" title="Yixuan" alignRight>
+						<NavDropdown
+							className="ml-auto"
+							title={this.state.first_name}
+							alignRight>
 							<NavDropdown.Item href="/userProfile">
 								Edit Profile
 							</NavDropdown.Item>
