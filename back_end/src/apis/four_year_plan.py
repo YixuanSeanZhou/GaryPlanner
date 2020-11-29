@@ -3,7 +3,7 @@
 David Song
 Benson Vuong
 '''
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 from flask import Blueprint, request, jsonify
 from flask_login import login_required, current_user
 from datetime import datetime
@@ -132,6 +132,7 @@ def generate_quarter_names(start_year):
 
 
 @four_year_plan_api_bp.route('/create_entry', methods=['POST'])
+@cross_origin(supports_credentials=True)
 @login_required
 def create_entry():
     req_data = request.get_json()
@@ -152,6 +153,7 @@ def create_entry():
 
 
 @four_year_plan_api_bp.route('/get_entries', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_entries():
     all_entries = FourYearPlan.get_entries()
@@ -160,6 +162,7 @@ def get_entries():
 
 
 @four_year_plan_api_bp.route('/get_plan_by_user', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_plan_by_user():
     user_id = current_user.id
@@ -169,6 +172,7 @@ def get_plan_by_user():
 
 
 @four_year_plan_api_bp.route('/get_formatted_plan_by_user', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_formatted_plan_by_user():
     user_id = current_user.id
@@ -181,6 +185,7 @@ def get_formatted_plan_by_user():
 
 
 @four_year_plan_api_bp.route('/get_locked_entries_by_user', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_locked_entries_by_user():
     user_id = current_user.id
@@ -190,6 +195,7 @@ def get_locked_entries_by_user():
 
 
 @four_year_plan_api_bp.route('/get_entry_by_id', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_entry_by_id():
     plan_id = request.args.get('plan_id')
@@ -198,6 +204,7 @@ def get_entry_by_id():
 
 
 @four_year_plan_api_bp.route('/get_unique_entry', methods=['GET'])
+@cross_origin(supports_credentials=True)
 @login_required
 def get_unique_entry():
     user_id = current_user.id
@@ -210,6 +217,7 @@ def get_unique_entry():
 
 
 @four_year_plan_api_bp.route('/update_entry', methods=['POST'])
+@cross_origin(supports_credentials=True)
 @login_required
 def update_entry():
     req_data = request.get_json()
@@ -233,6 +241,7 @@ def update_entry():
 
 
 @four_year_plan_api_bp.route('/remove_entry', methods=['POST'])
+@cross_origin(supports_credentials=True)
 @login_required
 def remove_entry():
     req_data = request.get_json()
