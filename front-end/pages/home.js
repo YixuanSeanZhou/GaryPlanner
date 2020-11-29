@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 // Components
 import HomeNav from '../components/homeNav'
-import { ParticleEffect } from '../components/commonUI';
+import { ParticleEffect, GaryNavbar } from '../components/commonUI';
 import { Navbar, Jumbotron, Button, Modal, Card } from 'react-bootstrap'
 import Request from '../components/requestPlan'
 import EvaluationsList from '../components/eval/evaluationsList';
@@ -41,9 +41,9 @@ export default class Home extends React.Component {
 					<title>Home</title>
 				</Head>
 
-				<HomeNav>
+				<GaryNavbar showUser={true} first_name="Yixuan">
 					<Navbar.Text>Home</Navbar.Text>
-				</HomeNav>
+				</GaryNavbar>
 
 				<ParticleEffect className={styles.particles} />
 
