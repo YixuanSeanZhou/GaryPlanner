@@ -27,9 +27,14 @@ class Signup extends React.Component {
 				last_name: "",
 				major: "",
 				minor: "",
-				grad_year: "",
-				grad_quarter: "",
-				indended_grad_quarter: "",
+
+				s_year: "",
+				s_quarter: "",
+				start_quarter: "",
+
+				g_year: "",
+				g_quarter: "",
+				intended_grad_quarter: "",
 			},
 			showingAlert: false,
 			alarmText: "Error!",
@@ -44,6 +49,11 @@ class Signup extends React.Component {
 		// First, enable loading animation
 		this.props.enableLoading("Please wait");
 
+		// Format the form data
+		formData = this.state.formData;
+		formData.start_quarter = formData.s_quarter.concat(formData.s_year);
+		formData.indented_grad_quarter= formData.g_quarter.concat(formData.g_year);
+
 		// Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/create_user';
 		const options = {
@@ -51,7 +61,7 @@ class Signup extends React.Component {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(this.state.formData)
+			body: JSON.stringify(formData)
 		};
 
 		fetch(requestUrl, options)
@@ -113,7 +123,7 @@ class Signup extends React.Component {
 	handleChange = (e) => {
 		var formData = this.state.formData;
 		formData[e.target.id] = e.target.value;
-		formData.indended_grad_quarter = formData.grad_year.substring(2, 4).concat(formData.grad_quarter);
+
 		this.setState({formData});
 	};
 
@@ -220,18 +230,21 @@ class Signup extends React.Component {
 							<Form>
 								
 								<Form.Row>
-									<Form.Group as={Col} controlId="first_name">
+									<Col>
 										<Form.Label>First Name*</Form.Label>
-										<Form.Control value={formData.first_name} onChange={this.handleChange} />
-										<Form.Text>
-											Will be displayed in your profile.
-										</Form.Text>
-									</Form.Group>
-									<Form.Group as={Col}  controlId="last_name">
+										<Form.Control id="first_name" value={formData.first_name} onChange={this.handleChange} />
+									</Col>
+									<Col>
 										<Form.Label>Last Name*</Form.Label>
-										<Form.Control value={formData.last_name} onChange={this.handleChange} />
-									</Form.Group>
+										<Form.Control id="last_name" value={formData.last_name} onChange={this.handleChange} />
+									</Col>
 								</Form.Row>
+								<Form.Text muted>
+											Will be displayed in your profile to your friends.
+								</Form.Text> 
+
+								{/* This is used to create margin */}
+								<Form.Group />
 
 								<Form.Group controlId="user_name">
 									<Form.Label>Username*</Form.Label>
@@ -241,6 +254,9 @@ class Signup extends React.Component {
 										value={this.state.formData.user_name}
 										onChange={this.handleChange}
 									/>
+									<Form.Text muted>
+										Your friends can find you via username/email.
+									</Form.Text>
 								</Form.Group>
 								
 								<Form.Group controlId="email">
@@ -285,7 +301,7 @@ class Signup extends React.Component {
 											value={this.state.formData.major}
 											onChange={this.handleChange}
 										/>
-										<Form.Text>
+										<Form.Text muted>
 											For display only.
 										</Form.Text>
 									</Form.Group>
@@ -297,41 +313,89 @@ class Signup extends React.Component {
 											onChange={this.handleChange}
 											placeholder="Optional"
 										/>
-										<Form.Text>
+										<Form.Text muted>
 											For display only.
 										</Form.Text>
 									</Form.Group>
 
 								</Form.Row>
-								<Form.Row>
-									<Form.Group as={Col} controlId="grad_year">
-										<Form.Label>Indended Graduation Year</Form.Label>
-										<Form.Control 
-											as="select"
-											value={formData.grad_year}
-											onChange={this.handleChange}
-										>
-											<option>2020</option>
-											<option>2021</option>
-											<option>2022</option>
-											<option>2023</option>
-											<option>2024</option>
-										</Form.Control>
-									</Form.Group>
-									<Form.Group as={Col} controlId="grad_quarter">
-										<Form.Label>... and Quarter</Form.Label>
-										<Form.Control 
-											as="select"
-											value={formData.grad_quarter}
-											onChange={this.handleChange}
-										>
-											<option>FA</option>
-											<option>WI</option>
-											<option>SP</option>
-										</Form.Control>
-									</Form.Group>
 
-								</Form.Row>
+								{/* The starting quarter row */}
+								<Form.Group>
+									<Form.Row>
+										<Col>
+											<Form.Label>Starting Year*</Form.Label>
+											<Form.Control 
+												as="select"
+												id="s_year"
+												value={formData.year}
+												onChange={this.handleChange}
+											>
+												<option value="20">2020</option>
+												<option value="19">2019</option>
+												<option value="18">2018</option>
+												<option value="17">2017</option>
+												<option value="16">2016</option>
+											</Form.Control>
+										</Col>
+										<Col>
+											<Form.Label>... and Quarter*</Form.Label>
+											<Form.Control 
+												as="select"
+												id="s_quarter"
+												value={formData.quarter}
+												onChange={this.handleChange}
+											>
+												<option value="FA">FA</option>
+												<option value="WI">WI</option>
+												<option value="SP">SP</option>
+											</Form.Control>
+										</Col>
+
+									</Form.Row>
+									<Form.Text>
+										This is the quarter that you started UCSD. You will not be able to change this later.
+									</Form.Text>
+								</Form.Group>
+
+								{/* The Indented graduation quarter row */}
+								<Form.Group>
+									<Form.Row>
+										<Col>
+											<Form.Label>Indended Graduation Year*</Form.Label>
+											<Form.Control 
+												as="select"
+												id="g_year"
+												value={formData.year}
+												onChange={this.handleChange}
+											>
+												<option value="20">2020</option>
+												<option value="21">2021</option>
+												<option value="22">2022</option>
+												<option value="23">2023</option>
+												<option value="24">2024</option>
+											</Form.Control>
+										</Col>
+										<Col>
+											<Form.Label>... and Quarter*</Form.Label>
+											<Form.Control 
+												as="select"
+												id="g_quarter"
+												value={formData.quarter}
+												onChange={this.handleChange}
+											>
+												<option value="FA">FA</option>
+												<option value="WI">WI</option>
+												<option value="SP">SP</option>
+											</Form.Control>
+										</Col>
+
+									</Form.Row>
+									<Form.Text>
+										You will not be able to change this later.
+									</Form.Text>
+								</Form.Group>
+
 
 
 								{/* Ending  */}

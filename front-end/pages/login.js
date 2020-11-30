@@ -160,7 +160,7 @@ class Login extends React.Component {
 							<Form>
 								{/* Here are the two credentials */}
 								<Form.Group controlId="email">
-									<Form.Label>Email</Form.Label>
+									<Form.Label>Email / Username</Form.Label>
 									<Form.Control 
 										type="email"
 										value={this.state.formData.email}
