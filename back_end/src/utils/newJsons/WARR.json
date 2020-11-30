@@ -1,0 +1,58 @@
+[
+ {
+  "code": "WARR 1",
+  "title": "First Year Experience",
+  "unit": "2",
+  "description": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking and organizational, interpersonal, and wellness skills. P/NP grades only.",
+  "prerequisite": "open to Warren NFRS students only."
+ },
+ {
+  "code": "WARR 2",
+  "title": "Transfer Year Experience",
+  "unit": "2",
+  "description": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking and organizational, interpersonal, and wellness skills. P/NP grades only.",
+  "prerequisite": "open to Warren College transfer students only."
+ },
+ {
+  "code": "WCWP 10A",
+  "title": "The Writing Course A",
+  "unit": "4",
+  "description": "A seminar-style course in reading and writing required of all Warren College students. The course emphasizes argumentation and critical writing based on sources. Letter grades only.",
+  "prerequisite": "satisfaction of the UC Entry Level Writing Requirement and must be a Warren College student."
+ },
+ {
+  "code": "WCWP 10B",
+  "title": "The Writing Course B",
+  "unit": "4",
+  "description": "A seminar-style course in reading and writing required of all Warren College students who have completed WCWP 10A. The course continues the emphasis on argumentation and critical writing based on sources. Letter grades only.",
+  "prerequisite": "satisfaction of WCWP 10A and must be a Warren College student."
+ },
+ {
+  "code": "WCWP 100",
+  "title": "Academic Writing",
+  "unit": "4",
+  "description": "An upper-division workshop course in argumentation and research with particular attention to analyzing and constructing academic arguments. A course specially designed for and required of transfer students who enter Warren College through the TAG, IGETC, or another articulation agreement. The course must be taken for a letter grade to fulfill this requirement. Letter grades only.",
+  "prerequisite": "junior/senior standing and must be a Warren College student."
+ },
+ {
+  "code": "WCWP 160",
+  "title": "Technical Writing for Scientists and Engineers",
+  "unit": "4",
+  "description": "An upper-division workshop-style writing course focused on the principles and practices of scientific and technical writing and communication. Emphasis on the analysis, evaluation, design, and production of technical writing projects in science and engineering courses and context. Open to students from all colleges.",
+  "prerequisite": "junior/senior standing."
+ },
+ {
+  "code": "WARR 189",
+  "title": "Academic Mentoring and the Writing Process",
+  "unit": "2",
+  "description": "Students will gain a fundamental understanding of all stages of the writing process and will develop the necessary skills to serve as productive mentors for their peers. P/NP grades only. May be taken for credit three times.",
+  "prerequisite": "permission of instructor is required to enroll."
+ },
+ {
+  "code": "WCWP 500",
+  "title": "Apprentice Teaching in WCWP",
+  "unit": "2 or 4",
+  "description": "Consideration of pedagogical methods appropriate to undergraduate teaching in Warren College Writing courses, under the supervision of the program director. (S/U grade only.)",
+  "prerequisite": "graduate standing."
+ }
+]

@@ -34,7 +34,7 @@ class AllClass(db.Model):
     units = db.Column(db.Integer, nullable=False)
     support_grade_type = db.Column(db.Integer, nullable=False)
     description = db.Column(db.String(2047), nullable=False)
-    prerequisites = db.Column(db.String(255), nullable=False)
+    prerequisites = db.Column(db.String(511), nullable=False)
     offer = db.Column(db.Boolean, nullable=False, default=True)
 
     def __init__(self, **kwargs):

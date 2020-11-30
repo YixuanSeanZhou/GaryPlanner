@@ -1,0 +1,30 @@
+[
+ {
+  "code": "SEV 1",
+  "title": "First Year Experience",
+  "unit": "2",
+  "description": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map co-curricular opportunities, and strengthen critical thinking, organizational, interpersonal, and wellness skills.",
+  "prerequisite": "department approval required. Open to Seventh College first-year students only."
+ },
+ {
+  "code": "SEV 20",
+  "title": "First-Year Honors Seminar",
+  "unit": "1",
+  "description": "This course introduces students to UC San Diego's vibrant intellectual community through weekly seminars and field trips led by UC San Diego faculty and other invited speakers, who will discuss their path-breaking research and other exciting artistic and scientific endeavors taking place on campus and in the surrounding community. ",
+  "prerequisite": "department approval required. May be taken for credit up to three times."
+ },
+ {
+  "code": "SEV 195",
+  "title": "Instructional Apprenticeship",
+  "unit": "4",
+  "description": "Students, under the direction of the instructor, lead discussion sections, attend lectures, and meet regularly with the instructor to help prepare course materials. ",
+  "prerequisite": "department approval required."
+ },
+ {
+  "code": "SEV 500",
+  "title": "Apprentice Teaching",
+  "unit": "4",
+  "description": "This course, designed for graduate students serving as teaching assistants in Seventh College courses, provides training in teaching methods, classroom management, and evaluation/grading. ",
+  "prerequisite": "department approval required. Students will have an application process for this course."
+ }
+]

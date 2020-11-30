@@ -1,0 +1,548 @@
+[
+ {
+  "code": "FMPH 40",
+  "title": "Introduction to Public Health",
+  "unit": "4",
+  "description": "This course provides an introduction to the infrastructure of public health; the analytical tools employed by public health practitioners; bio-psychosocial perspectives of public health problems; health promotion/disease prevention; quality assessment in public health; and legal and ethical concerns. Must be taken for a letter grade to be applied to the public health major. Renumbered from FPMU 40. Students may not receive credit for FPMU 40 and FMPH 40.",
+  "prerequisite": "restricted enrollment to first-year, sophomore, and junior standing."
+ },
+ {
+  "code": "FMPH 50",
+  "title": "Primary Care and Public Health",
+  "unit": "4",
+  "description": "This course explores historical and current interactions, achievements, and challenges of primary care and public health. It will analyze the impact of common medical conditions such as obesity, diabetes, mental health disorders, and others on individuals, their families, and society. Must be taken for a letter grade to be applied to the public health major. Renumbered from FPMU 50. Students may not receive credit for FPMU 50 and FMPH 50.",
+  "prerequisite": "restricted enrollment to sophomore, junior, and senior standing."
+ },
+ {
+  "code": "FMPH 101",
+  "title": "Epidemiology",
+  "unit": "4",
+  "description": "This course covers the basic principles of epidemiology, with applications to investigations of noninfectious (\"chronic\") and infectious diseases. Explores various study designs appropriate for disease surveillance and studies of etiology and prevention. Must be taken for a letter grade to be applied to the public health major. Renumbered from FPMU 101. Students may not receive credit for FMPH 101 and either FPMU 101 or FPMU 101A.",
+  "prerequisite": "FMPH 40, PSYC 60 or MATH 11 or COGS 14B, and upper-division standing."
+ },
+ {
+  "code": "FMPH 102",
+  "title": "Biostatistics in Public Health",
+  "unit": "4",
+  "description": "Fundamentals of biostatistics and basic methods for analysis of continuous and binary outcomes for one, two, or several groups. Includes: summarizing and displaying data; probability; statistical distributions; central limit theorem, confidence intervals, hypothesis testing; comparing means of continuous variables between two groups; comparing proportions between two groups; simple and multiple linear regression. Hands-on data analysis using software and statistical applications in public health. Must be taken for a letter grade to be applied to the public health major. Renumbered from FPMU 102. Students may not receive credit for FMPH 102 and either FPMU 101B or FPMU 102.",
+  "prerequisite": "FMPH 40, PSYC 60 or MATH 11 or COGS 14B, and upper- division standing."
+ },
+ {
+  "code": "FMPH 110",
+  "title": "Health Behavior and Chronic Diseases",
+  "unit": "4",
+  "description": "This course introduces health behavior concepts through applications to chronic disease prevention. The focus is on smoking, dietary behaviors, and physical activity and is organized around relationships to health, measurement, influencing factors, interventions, and translation to public health practice. Must be taken for a letter grade to be applied to the public health major. Renumbered from FPMU 110. Students may not receive credit for FPMU 110 and FMPH 110.",
+  "prerequisite": "FMPH 40. Restricted enrollment to sophomore, junior, and senior standing."
+ },
+ {
+  "code": "FMPH 120",
+  "title": "Health Policies for Healthy Lifestyles",
+  "unit": "4",
+  "description": "This course covers the rationale for and effectiveness of policies to influence nutrition, physical activity, and substance use behavior. Policies include legalization, taxation, labeling, produce manufacturing, warning labels, licensing, marketing, and counter-marketing practices and restrictions on use. Must be taken for a letter grade to be applied to the public health major. Renumbered from FPMU 120. Students may not receive credit for FPMU 120 and FMPH 120.",
+  "prerequisite": "FMPH 40 and upper-division standing."
+ },
+ {
+  "code": "FMPH 130",
+  "title": "Environmental and Occupational Health",
+  "unit": "4",
+  "description": "This core public health course addresses the fundamentals of environmental and occupational health, including identification of hazards, basic toxicology, risk assessment, prevention/protection, and regulatory/control policies. Specific environmental and occupational hazards and relevant case studies will be presented. Must be taken for a letter grade to be applied to the public health major. Renumbered from FPMU 130. Students may not receive credit for FPMU 130 and FMPH 130.",
+  "prerequisite": "FMPH 50, FMPH 101, and upper- division standing."
+ },
+ {
+  "code": "FMPH 155",
+  "title": "Qualitative Research for Global Public Health",
+  "unit": "4",
+  "description": "An overview of the role of qualitative research methods in public health. The course will focus on qualitative research as it relates to formative program design, community-based participatory approaches, and as a tool for amplifying voices and elucidating both complex social-ecological processes and internal individual experiences. Throughout the term, students will work in teams to design, conduct, analyze, and report a full qualitative study on a public health topic of their choosing. Must be taken for a letter grade to be applied to the public health major. Students may not receive credit for FMPH 155 and FMPH 191 subtitled \"Qualitative Research for Global Public Health.\"",
+  "prerequisite": "FMPH 40. Restricted enrollment to sophomore, junior, and senior standing."
+ },
+ {
+  "code": "FMPH 161",
+  "title": "Clinical Nutrition in Public Health",
+  "unit": "4",
+  "description": "Clinical nutrition is the study of nutrition and diet as related to the prevention and treatment of human disease. The practical and psychosocial aspects of diet modification and food/food product availability are key aspects of clinical nutrition practice, whether individual or community based, irrespective of whether the goal is primary prevention or disease treatment. Students will identify applications and translation of nutritional guidelines and recommendations into behavior in the course. Must be taken for a letter grade to be applied to the public health major. Students may not receive credit for FMPH 161 and FMPH 191 subtitled \"Clinical Nutrition in Public Health.\"",
+  "prerequisite": "FMPH 40. Restricted enrollment to sophomore, junior, and senior standing."
+ },
+ {
+  "code": "FMPH 171",
+  "title": "Field Epidemiology and Outbreak Investigations",
+  "unit": "4",
+  "description": "This course consists of a series of practical epidemiological infectious and non-infectious disease paper- and computer-based exercises. Students will have the opportunity to apply their epidemiological and biostatistical skills to real-world situations. The course is highly interactive and challenges students' knowledge and critical thinking capacities. Students will give presentations, write a scientific abstract and press release, and develop a poster. Must be taken for a letter grade to be applied to the public health major. Students may not receive credit for FMPH 171 and FMPH 191 subtitled \"Field Epidemiology and Outbreak Investigations.\"",
+  "prerequisite": "FMPH 40 and FMPH 101. Restricted enrollment to sophomore, junior, and senior standing."
+ },
+ {
+  "code": "FMPH 191",
+  "title": "Topics in Public Health",
+  "unit": "4",
+  "description": "Selected topics in the field of public health. Must be taken for a letter grade to be applied to the public health major. May be taken for credit up to three times.",
+  "prerequisite": "FMPH 40. Restricted enrollment to sophomore, junior, and senior standing. Department approval required."
+ },
+ {
+  "code": "FMPH 193",
+  "title": "Public Capstone I",
+  "unit": "4",
+  "description": "This is the first of a two-part capstone series that serves as the culminating experience for the BS in public health (BSPH) majors. Students will integrate the skills and knowledge gained throughout the BSPH program and learn critical elements of public health research and practice. Must be taken for a letter grade to be applied to the public health major.",
+  "prerequisite": "FMPH 40, FMPH 50, FMPH 101, FMPH 102, and FMPH 110. Department approval required. Restricted to senior public health majors only (FP25)."
+ },
+ {
+  "code": "FMPH 194",
+  "title": "Public Capstone II",
+  "unit": "4",
+  "description": "This is the second of a two-part capstone series that serves as the culminating experience for the BS in public health (BSPH) majors. Students will interpret and contextualize findings from their projects completed in the first part of the series. Oral and written presentations will focus on disseminating public health information in diverse formats. Must be taken for a letter grade to be applied to the public health major.",
+  "prerequisite": "FMPH 40, FMPH 50, FMPH 101, FMPH 102, FMPH 110, FMPH 120, and FMPH 193. Department approval required. Restricted to senior public health majors only (FP25)."
+ },
+ {
+  "code": "FMPH 195",
+  "title": "Instruction in Public Health",
+  "unit": "4",
+  "description": "Introduction to teaching in a public health course. As an undergraduate instructional apprentice, students will attend the lectures of the course, weekly meetings with students of the course, and weekly meetings with the course instructor. Responsibilities may include class presentations, designing and leading weekly discussion sections, assisting with homework and exam grading, and monitoring and responding to online discussion posts. Renumbered from FPMU 195. FMPH 195 and/or FPMU 195 may be taken for credit for a combined total of two times.",
+  "prerequisite": "eligibility includes all of the following: upper-division standing, a minimum of A- in the course in which the student plans to assist, a 3.0 cumulative UC GPA, and instructor and department approval."
+ },
+ {
+  "code": "FMPH 196A",
+  "title": "Public Health Honors Practicum I",
+  "unit": "4",
+  "description": "This is the first of a three-part honors series that serves as the culminating experience for the BS in public health (BSPH) majors. Students review, reinforce, and complement skills and knowledge gained throughout the BSPH program, and prepare a proposal integrating critical elements of public health research and practice. Must be taken for a letter grade to be applied to the public health major.",
+  "prerequisite": "FMPH 40, FMPH 50, FMPH 101 or FMPH 102, and FMPH 110. Department approval required. Restricted to upper-division public health majors only (FP25)."
+ },
+ {
+  "code": "FMPH 196B",
+  "title": "Public Health Honors Practicum II",
+  "unit": "4",
+  "description": "This is the second of a three-part honors series that serves as the culminating experience for the BS in public health majors. This course represents an experiential learning opportunity at a pre-approved community site. Under supervision of public health faculty and pertinent site representatives, students will refine and implement the public health proposal developed in the first part of the honors series. Must be taken for a letter grade to be applied to the public health major.",
+  "prerequisite": "FMPH 196A. Department approval required. Restricted to upper-division public health majors only (FP25)."
+ },
+ {
+  "code": "FMPH 196C",
+  "title": "Public Health Honors Practicum III",
+  "unit": "4",
+  "description": "This is the third of a three-part honors series that serves as the culminating experience for the BS in public health majors. Students will analyze, interpret, and contextualize findings from their projects completed in the series. Oral and written communication will focus on disseminating public health information in diverse formats, and will include a presentation and an honors thesis. Must be taken for a letter grade to be applied to the public health major.",
+  "prerequisite": "FMPH 196B. Restricted to upper-division public health majors only (FP25)."
+ },
+ {
+  "code": "FMPH 198",
+  "title": "Directed Group Study",
+  "unit": "1-4",
+  "description": "Investigation of public health topics through directed reading and discussion by a small group of students. Opportunities can also include experiential and research components. Study must be under supervision of a faculty member and approval must be secured from the faculty member prior to registering. P/NP grades only. May be taken for credit a combined total of nine times.",
+  "prerequisite": "upper-division standing, completion of ninety units of UC San Diego undergraduate study, a minimum UC San Diego GPA of 2.5, consent of instructor, and a completed and approved Special Studies form."
+ },
+ {
+  "code": "FMPH 199",
+  "title": "Independent Study",
+  "unit": "2-4",
+  "description": "Individual undergraduate study or research not covered by the present course offerings. Study or research must be under the direction of a faculty member in the Department of Family Medicine and Public Health and approval must be secured from the faculty member prior to registering. P/NP grades only. Renumbered from FPMU 199. FMPH 199 and/or FPMU 199 may be taken for credit a combined total of nine times. ",
+  "prerequisite": "upper-division standing, completion of ninety units of UC San Diego undergraduate study, a minimum UC San Diego GPA of 2.5, consent of instructor, and a completed and approved Special Studies form."
+ },
+ {
+  "code": "FMPH 221",
+  "title": "Biostatistical Methods I",
+  "unit": "4",
+  "description": "Introductory graduate course on the analysis of biomedical data using the R statistical software. Topics include t-tests, ANOVAs, linear regression, model diagnostics, model building and selection, interaction, confounding, multiple comparisons, and robust tests based on ranks and resampling.",
+  "prerequisite": "biostatistics major or program approval."
+ },
+ {
+  "code": "FMPH 222",
+  "title": "Biostatistical Methods II",
+  "unit": "4",
+  "description": "Intermediate-level graduate course in the analysis of categorical data. Topics include generalized linear models (logistic, Poisson, loglinear models); splines and nonlinear regression; stratified and case-control studies. Maximum likelihood, quasi likelihood, and Bayesian approaches; large scale model selection and inference.",
+  "prerequisite": "successful completion of FMPH 221 and MATH 281A or MATH 282A or program approval."
+ },
+ {
+  "code": "FMPH 223",
+  "title": "Analysis of Longitudinal Data",
+  "unit": "4",
+  "description": "Covers analysis of longitudinal data, parametric modeling of covariance, generalized estimating equations, linear, nonlinear, and generalized linear mixed effects models and modeling dropout in longitudinal studies. Data analysis and computational issues are emphasized.",
+  "prerequisite": "successful completion of FMPH 222 and MATH 281A and MATH 282A or MATH 281B and MATH 282B or program approval."
+ },
+ {
+  "code": "FMPH 224",
+  "title": "Clinical Trials",
+  "unit": "4",
+  "description": "The graduate class will cover statistical aspects of clinical trial design, monitoring, analysis, and ethics of human subjects research. Data analysis and computation will be emphasized.",
+  "prerequisite": "successful completion of FMPH 221 and FMPH 222 or program approval."
+ },
+ {
+  "code": "FMPH 225",
+  "title": "Advanced Topics in Biostatistical Inference",
+  "unit": "4",
+  "description": "The graduate class will cover modern statistical inference including nonparametric statistics, estimating equations, resampling methods, and statistical learning. Data analysis and computation will be emphasized.",
+  "prerequisite": "successful completion of FMPH 221, FMPH 222, and FMPH 223 or program approval."
+ },
+ {
+  "code": "FMPH 226",
+  "title": "Statistical Methods for Observational Studies",
+  "unit": "4",
+  "description": "An introduction to inference and causal modeling for observational data, including propensity score adjustment, inverse probability weighting, instrumental variables, and sensitivity analysis. Data analysis and computation will be required.",
+  "prerequisite": "successful completion of FMPH 221, FMPH 222, and FMPH 223 or program approval."
+ },
+ {
+  "code": "FMPH 227",
+  "title": "Applied Multivariate Statistical Analysis",
+  "unit": "4",
+  "description": "This graduate course covers concepts, methods, and applications of multivariate data analysis, including multivariate regression, principal components, clustering and functional analysis. Data analysis will be emphasized.",
+  "prerequisite": "successful completion of FMPH 221 and FMPH 222 or program approval."
+ },
+ {
+  "code": "FMPH 241",
+  "title": "Biostatistics Rotation",
+  "unit": "3",
+  "description": "This practicum provides hand-on experience with biomedical research and data analysis. Working within a specific biomedical domain (e.g., cancer, genomics, or physical activity research), students will conduct original data analysis, and prepare or substantially contribute to a final project report. May be taken for credit up to five times.",
+  "prerequisite": "successful completion of FMPH 221 and FMPH 222; biostatistics major only."
+ },
+ {
+  "code": "FMPH 242",
+  "title": "Advanced Topics in Biostatistics",
+  "unit": "4",
+  "description": "Biostatistics elective courses will be taught under this course heading. Courses will have a varying focus each year/quarter. Topics will include random field theory and image analysis, advanced statistical computing, Bayesian methods, and others. May be taken for credit up to three times.",
+  "prerequisite": "successful completion of FMPH 221 and FMPH 222 or program approval."
+ },
+ {
+  "code": "FMPH 244A",
+  "title": "Foundations in Biostatistics A",
+  "unit": "4",
+  "description": "Overview of mathematical foundations in biostatistics. Probability, random variables, commonly used univariate and multivariate distributions, and their properties. Sampling distribution and large-sample convergence concepts. Applications to one-sample and two-sample problems, and to linear regression models.",
+  "prerequisite": "biostatistics MS major (FM76) or program approval."
+ },
+ {
+  "code": "FMPH 244B",
+  "title": "Foundations in Biostatistics B",
+  "unit": "4",
+  "description": "Continued overview of mathematical foundations in biostatistics. The second course in a two-course series. Maximum likelihood theory. Sufficiency, efficiency. Hypothesis testing and confidence intervals. Robustness and power. Large-sample properties of commonly-used estimation methods.",
+  "prerequisite": "FMPH 244A, biostatistics MS major (FM76), or program approval."
+ },
+ {
+  "code": "FMPH 277",
+  "title": "Health Policy, Technology, and Public Health",
+  "unit": "4",
+  "description": "This course provides an overview of the US health policy landscape. It addresses the development of explicit health policies to promote certain health behaviors, policies aimed at public health safety, and policy issues related to emerging health and biomedical technologies. Renumbered from FPM 290. Students may not receive credit for FMPH 277 and FPM 290.",
+  "prerequisite": "must be enrolled in the UC San Diego/SDSU Joint Doctoral Program in public health (PU75, PU76, and PU77), biostatistics major (FM77), or consent of instructor."
+ },
+ {
+  "code": "FMPH 290",
+  "title": "Biostatistics Journal Club and Seminar",
+  "unit": "1",
+  "description": "This course requires attendance and participation in the Division of Biostatistics seminar series and journal club. Students will critically read the assigned articles and participate in biweekly journal clubs. Students are also required to lead at least one journal club discussion.",
+  "prerequisite": "biostatistics major only."
+ },
+ {
+  "code": "FMPH 291",
+  "title": "Special Topics in Public Health",
+  "unit": "1-4",
+  "description": "Topics of special interest in public health. Topics may vary from quarter to quarter. May be taken for credit up to twelve times for a maximum of forty- eight units.",
+  "prerequisite": null
+ },
+ {
+  "code": "FMPH 400",
+  "title": "Introduction to Biostatistics",
+  "unit": "4",
+  "description": "Students will understand principles of measurement of clinical data, recognize data types, and determine statistical methods for analysis of a given data set. They will gain experience in preparing a clinical dataset for analysis by statistical software. They will learn skills to conduct graphical and numerical exploratory data analysis; comparative tests of categorical, ordinal, and continuous data; linear and logistic regression; and survival analysis by life table and Kaplan-Meier techniques.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 401",
+  "title": "Introduction to Epidemiology",
+  "unit": "4",
+  "description": "Participants will recognize and understand different types of study designs, the strengths and limitations of each, and how to choose the proper study design for their research. They will also be able to identify and calculate the measure of risk for each study design. Participants will recognize major sources of bias, confounding, and misclassification, and understand design and analysis methods for dealing with each. They will also learn criteria to differentiate association from causation.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 402",
+  "title": "Introduction to Health Behavior",
+  "unit": "4",
+  "description": "This course provides an opportunity for students to explore the theoretical issues and current methodologies related to understanding and influencing health behavior change in diverse populations. The course will focus on the social and behavioral determinants of health on the individual, interpersonal, community, institutional, and policy levels. This also covers examples of application of theories to determinants and intervention research and disparities in health behavior.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 403",
+  "title": "Public Health Research Methods",
+  "unit": "4",
+  "description": "This course will focus on fundamental concepts in research design and measurement that will help prepare students to plan and implement scientific studies in public health and be able to critically evaluate and discuss public health research. Emphasis will be on learning how to identify significant public health problems, develop causal models for understanding those problems, create testable hypotheses, and design, implement, and interpret research studies to evaluate those hypotheses.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 404",
+  "title": "Introduction to Environmental and Occupational Health",
+  "unit": "4",
+  "description": "This course will cover the history of the recognition of chemical, physical, biological, psychosocial, occupational, and environmental hazards, and associated adverse health outcomes experienced in the workplace and from environmental exposure. Major modalities of prevention will be presented and the role of health practitioners, epidemiologists, government, management, labor, community organizations, and the general public will be reviewed.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 405",
+  "title": "Introduction to Health Policy",
+  "unit": "4",
+  "description": "This course will introduce students to health policy making and the organization and financing of health services in the United States, enhance their understanding of the historical and political context of health policy, and enable them to develop strategies for analysis of health policy issues. The course aims to convey not just specific facts, but to help students develop the ability and confidence to assess current health policy issues in a thoughtful, comprehensive, and rigorous manner.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 406",
+  "title": "Scientific Writing",
+  "unit": "4",
+  "description": "This course will prepare students to write a scientific paper. The course is focused on developing the necessary skills to write a peer-reviewed journal publication, based on findings from students' ongoing or previous research or based on hypothetical findings from a planned study. Topics will include overall manuscript planning, selecting an appropriate journal construction, responding to critiques, and manuscript revision.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 410",
+  "title": "Health Behavior Interventions",
+  "unit": "4",
+  "description": "This course focuses on critical analyses of success and failure of behavior theories and their applications to interventions in multiple fields, such as (but not limited to) smoking, dietary behavior, and physical activity. The course will prepare students to design and evaluate behavior change interventions covering individual and population approaches to behavior change.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 402."
+ },
+ {
+  "code": "FMPH 411",
+  "title": "Program Optimization and Evaluation",
+  "unit": "4",
+  "description": "This course covers optimization and evaluation methods, including formative research, experimental and quasi-experimental study designs, and optimization trials as used in the multiphase optimization strategy (MOST). While this is not a statistics or measurement course, overviews of data analyses (e.g., statistical analyses, cost and cost-effectiveness analyses, dynamical modeling) and measurement (e.g., qualitative and quantitative) will be provided as appropriate for each of the above methods.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 402 and FMPH 403."
+ },
+ {
+  "code": "FMPH 412",
+  "title": "Health Promotion and Communication",
+  "unit": "4",
+  "description": "This course is focused on the principles of health promotion and health communication, specifically examining effective communication techniques that can be used in public health campaigns, social marketing, and risk communication in today's multimedia world. Students will explore how and when to apply health promotion and communication strategies to best design and conduct public health campaigns, especially those that relate to behavioral interventions among diverse populations.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 402."
+ },
+ {
+  "code": "FMPH 413",
+  "title": "Ethics in Public Health Research and Practice",
+  "unit": "4",
+  "description": "The first section of this course provides an introduction to key frameworks and concepts relevant to public health ethics. The remaining part of the course considers ethical dilemmas across resource allocation and distributive justice, individual rights versus the common good, health promotion and disease prevention, free markets versus social justice, research ethics, emerging public health technologies and interventions, and public health and the environment.",
+  "prerequisite": null
+ },
+ {
+  "code": "FMPH 417",
+  "title": "Cardiovascular Disease Epidemiology",
+  "unit": "4",
+  "description": "This course will provide students background on the population frequencies and etiologic risk factors for ischemic heart disease, hypertension, and stroke. Emphasis will be placed on identifying suitable epidemiologic approaches for characterizing preventable risk factors.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 401."
+ },
+ {
+  "code": "FMPH 418",
+  "title": "Infectious Diseases: Epidemiologic Methods and Emerging Trends",
+  "unit": "4",
+  "description": "Designed to increase students' understanding and skills required to investigate, prevent, and control infectious diseases. Students will be introduced to a variety of fundamental and novel epidemiological methods through practical exercises and case studies of particularly important or emerging communicable diseases.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 401."
+ },
+ {
+  "code": "FMPH 419",
+  "title": "Biostatistics II",
+  "unit": "4",
+  "description": "Students will understand and conduct advanced bio-statistical analyses, including multiple linear and logistic regression, survival analysis, Cox and extended Cox regression, and longitudinal data analysis. Students will analyze data using these techniques and learn to program using a statistical software package (e.g., R). Issues such as confounding, missing data, and causal inference will be discussed.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 400."
+ },
+ {
+  "code": "FMPH 426",
+  "title": "Public Mental and Behavior Health and Addiction",
+  "unit": "4",
+  "description": "This course introduces key aspects of mental and behavioral health as well as the etiology, risk factors, and impact of mental disorders in public health. The focus will be given to the link between mental and physical health and the impact of mental health on health behavior and outcomes. Mental and behavioral health in relation to substance use and addiction will be covered. Intervention strategies to improve mental and behavioral health will be introduced. ",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 402."
+ },
+ {
+  "code": "FMPH 460",
+  "title": "Human-Centered Design and Public Health",
+  "unit": "4",
+  "description": "Human-centered design involves iteratively creating and testing public health interventions (e.g., behavioral, environmental, policy) that balance trade- offs (e.g., benefits people, works in the \"real-world,\" minimizes negative effects). Students will work with community partners on real-world problems and learn both principles and concrete skills. By class completion, students should be adept at using human-centered design methods in the formative creation of public health interventions.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 491",
+  "title": "Special Topics in Public Health",
+  "unit": "1-4",
+  "description": "Course will cover various topics in the field of public health. May be taken for credit up to twelve times for a maximum of forty-eight units.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval."
+ },
+ {
+  "code": "FMPH 495",
+  "title": "Master's Capstone/Thesis Independent Study",
+  "unit": "2",
+  "description": "In this independent study course, students will actively engage in work on their master's capstone/thesis. May involve project conceptualization and operationalization, literature review, data collection, data analysis, and interpretation/writing.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 400-FMPH 406."
+ },
+ {
+  "code": "FMPH 496",
+  "title": "Public Health Practicum",
+  "unit": "4",
+  "description": "This required course involves participating in a short-term, field-based public health or population-based experience. Students will work with sites such as community-based organizations or local, state, federal, or international public health agencies. Students will have the opportunity to develop written and oral communication skills while employing public health concepts and methods. ",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 400-FMPH 406."
+ },
+ {
+  "code": "FMPH 498",
+  "title": "Independent Study",
+  "unit": "1-12",
+  "description": "Independent study under the guidance of a family medicine and public health faculty member. May be taken for credit up to twelve times for a maximum of forty-eight units.",
+  "prerequisite": "program approval required"
+ },
+ {
+  "code": "FMPH 499",
+  "title": "Public Health Master\u2019s Capstone/Thesis",
+  "unit": "1-12",
+  "description": "Students complete their capstone/thesis, and potentially submit their capstone/thesis for publication and/or present their capstone/thesis to stakeholders. May be taken for credit up to six times.",
+  "prerequisite": "must be enrolled in MPH program (FM75) or program approval and successfully completed FMPH 495."
+ },
+ {
+  "code": "FPM 231",
+  "title": "Exposure Assessment and Biomarkers in Epidemiology",
+  "unit": "2",
+  "description": "To address how exposure assessment accuracies or biases can influence study outcomes and conclusions in epidemiology. Special emphasis will be on biomarkers as recent measures of",
+  "prerequisite": null
+ },
+ {
+  "code": "FPM 233",
+  "title": "Clinical Nutrition",
+  "unit": "2",
+  "description": "Clinical nutrition is the study of nutrition and diet as related to the prevention and treatment of human disease. Nutrition is an interdisciplinary field of study, built on a foundation of biomedical and behavioral sciences. This course emphasizes class discussion of clinical topics and assigned readings in current areas of research and practice (i.e., diet and cancer, vitamin and other diet supplements), with case studies and illustrative class exercises.",
+  "prerequisite": null
+ },
+ {
+  "code": "FPM 237",
+  "title": "Microarray Technology and Informatics",
+  "unit": "2",
+  "description": "This course is an introduction to microarray technology and analysis of gene expression data. This ten-lecture course will cover a range of microarray topics including platform types. Image processing, experimental design, and statistical analysis and application in medicine and health sciences.",
+  "prerequisite": null
+ },
+ {
+  "code": "FPM 238",
+  "title": "Introduction to Clinical Family Medicine",
+  "unit": "1-7",
+  "description": "Introduction to clinical ambulatory medicine where students spend one afternoon per week in a physician's practice participating in patient care commensurate with their training. Students may opt to continue the course over successive quarters or enroll full time during the summer for up to four weeks. S/U grades only. May be taken for credit two times.",
+  "prerequisite": "medical student status."
+ },
+ {
+  "code": "FPM 244",
+  "title": "Clinical and Public Health Elective, Baja California, Mexico",
+  "unit": "2",
+  "description": "(Cross-listed with MED 248) Integrated clinical and public health experience with US and Mexican graduate student and faculty teams over three to four days in Baja California, Mexico; emphasis on common clinical and public health problems in underserved populations. Minimal working knowledge of Spanish recommended. May be taken for credit four times.",
+  "prerequisite": "UC San Diego SOM student and graduate students with consent of instructor."
+ },
+ {
+  "code": "FPM 246",
+  "title": "Occupational/Environmental Health",
+  "unit": "2",
+  "description": "An introduction to the history and epidemiology of work-related disease. A review of occupational-related health problems, i.e., heart disease, pneumoconiosis, peripheral neuropathy, sterility, birth defects, psychiatric problems. Emphasis on the occupational history in the diagnosis of job-related disease and disability. Major modalities of prevention and control will be presented and the role of health practitioners, government, management and labor will be reviewed. The course will include guest lecturers, films, videotapes and field visits to local industries and/or clinicians treating occupational diseases.",
+  "prerequisite": "SM 208."
+ },
+ {
+  "code": "FPM 247",
+  "title": "Clinical Epidemiology Seminar",
+  "unit": "2",
+  "description": "This seminar is designed to expand the student's understanding of clinical epidemiology by investigating several major controversial issues, such as treatment of breast cancer, oral hypoglycemic in diabetes, and dietary habits as a risk factor for coronary artery disease. The seminar will address clinical and methodological issues in the epidemiology of various chronic diseases.",
+  "prerequisite": null
+ },
+ {
+  "code": "FPM 257",
+  "title": "Cancer: Cause and Prevention",
+  "unit": "2",
+  "description": "This course will provide an overview of the problem of cancer and its avoidable causes. It covers some of the hottest topics currently facing cancer prevention professional as they try to prevent cancer from occurring in the first place and delay its progression.",
+  "prerequisite": null
+ },
+ {
+  "code": "FPM 258A",
+  "title": "Public Health Doctoral Lecture Series I",
+  "unit": "2",
+  "description": "This first quarter of a three quarter sequence combines didactic instruction, interactive sessions and student presentations. Topics cover study design, ethics, data analysis and management techniques, and qualitative research will be presented. Focus: lectures (different from II or III).",
+  "prerequisite": "Joint Doctoral Program in Public Health graduate student, SOM student."
+ },
+ {
+  "code": "FPM 258B",
+  "title": "Public Health Doctoral Lecture Series II",
+  "unit": "2",
+  "description": "This second quarter of a three quarter sequence combines didactic instruction, interactive sessions and student presentations. Topics cover study design, ethics, data analysis and management techniques, and qualitative research will be presented. Focus: lectures (different from I or III).",
+  "prerequisite": "Joint Doctoral Program in Public Health graduate student, SOM student, FPM 258A."
+ },
+ {
+  "code": "FPM 258C",
+  "title": "Public Health Doctoral Lecture Series III",
+  "unit": "2",
+  "description": "This third quarter of a three quarter sequence combines didactic instruction, interactive sessions and student presentations. Topics cover study design, ethics, data analysis and management techniques, and qualitative research will be presented. Focus: lectures (different from I or II).",
+  "prerequisite": "Joint Doctoral Program in Public Health graduate student, SOM student, FPM 258B."
+ },
+ {
+  "code": "FPM 259A",
+  "title": "Applied Epidemiology\u2014Scientific Analysis",
+  "unit": "4",
+  "description": "Students will explore an epidemiologic research question by reviewing relevant published literature, and then design and conduct appropriate data analysis using a pre-existing dataset. May be taken for credit two times.",
+  "prerequisite": "Joint Doctoral Program in Public Health graduate students."
+ },
+ {
+  "code": "FPM 259B",
+  "title": "Applied Epidemiology\u2014Scientific Writing",
+  "unit": "4",
+  "description": "Students will learn the principles of scientific writing, review examples of scientific literature, and then complete a manuscript suitable for publication based on their project from FPM 259A. May be taken for credit two times.",
+  "prerequisite": "Joint Doctoral Program in Public Health graduate student, FPM 259A."
+ },
+ {
+  "code": "FPM 259C",
+  "title": "Applied Epidemiology\u2014Scientific Presentations",
+  "unit": "4",
+  "description": "Students will learn the principles of scientific presentations, for the classroom, and for scientific meetings (both oral and poster presentations). Students will then prepare and deliver presentations based on their project from FPM 259A. May be taken for credit two times.",
+  "prerequisite": "Joint Doctoral Program in Public Health graduate student, FPM 259B."
+ },
+ {
+  "code": "FPM 270",
+  "title": "Cultural Perceptions of Health and Disease",
+  "unit": "4",
+  "description": "To improve knowledge about health and illness within cultural contexts, including review and discussions of epidemiologic studies describing health indicators/beliefs/practices. Students interact with experts in cross-cultural health research to explore ethnicity/culture in health care delivery and utilization, and disease risk.",
+  "prerequisite": "medical or graduate student. Other students admitted with consent of instructor."
+ },
+ {
+  "code": "FPM 272",
+  "title": "Community Advocacy",
+  "unit": "4",
+  "description": "The UC San Diego Student-Run Free Clinic Project operates in partnership with two community programs for the homeless and an inner-city elementary school. Students participate in didactic sessions learning principles of working with the underserved and are supervised in clinical, health education, and administrative roles at the clinic sites. S/U grades only.",
+  "prerequisite": "medical student."
+ },
+ {
+  "code": "FPM 276",
+  "title": "Health Behavior Interventions I",
+  "unit": "4",
+  "description": "Course will include a discussion of intervention goals suggested by major theories of health behavior change. Common communication modes and messages will be studied, including examples using small group settings, mass media, legislation, and telephone counseling.",
+  "prerequisite": "must be enrolled in the SDSU/UC San Diego Joint Doctoral Program in Public Health."
+ },
+ {
+  "code": "FPM 277",
+  "title": "Health Behavior Interventions II",
+  "unit": "4",
+  "description": "This course focuses on critical analyses of success and failure of behavior theories as applied to interventions in multiple fields (e.g. smoking, dietary behavior, and physical activity). It covers individual and population approaches to behavior change.",
+  "prerequisite": "must be enrolled in the UC San Diego/SDSU Joint Doctoral Program in Public Health (PU 75 and PU 76)."
+ },
+ {
+  "code": "FPM 278",
+  "title": "Scale Development for Behavioral Health Measurement",
+  "unit": "4",
+  "description": "Course will present theory and methods for developing scales to assess health behavior constructs (e.g., self-efficacy, social support).",
+  "prerequisite": "must be enrolled in the SDSU/UC San Diego Joint Doctoral Program in Public Health. Graduate level statistics or research methods class."
+ },
+ {
+  "code": "FPM 280A",
+  "title": "Practicum in Health Behavior I",
+  "unit": "4",
+  "description": "Students will learn about grant writing, project management, and preparation of manuscripts for publication and presentations for scientific meetings, and also work individually with a faculty mentor to learn how to conduct a health behavior intervention. S/U grades only.",
+  "prerequisite": "must be enrolled in the SDSU/UC San Diego Joint Doctoral Program in Public Health (PU75 and PU75). Courses must be completed in sequence (e.g., A before B and B before C)."
+ },
+ {
+  "code": "FPM 280B",
+  "title": "Practicum in Health Behavior II",
+  "unit": "4",
+  "description": "Students will learn about grant writing, project management, and preparation of manuscripts for publication and presentations for scientific meetings, and also work individually with a faculty mentor in preparing manuscripts using data from a specific health behavior intervention. S/U grades only.",
+  "prerequisite": "must be enrolled in the SDSU/UC San Diego Joint Doctoral Program in Public Health (PU75 and PU75). Courses must be completed in sequence (e.g., A before B and B before C)."
+ },
+ {
+  "code": "FPM 280C",
+  "title": "Practicum in Health Behavior III",
+  "unit": "4",
+  "description": "Students will learn about grant writing, project management, and preparation of manuscripts for publication and presentations for scientific meetings, and also work individually with a faculty mentor in analyzing existing data sets. S/U grades only.",
+  "prerequisite": "must be enrolled in the SDSU/UC San Diego Joint Doctoral Program in Public Health (PU75 and PU75). Courses must be completed in sequence (e.g., A before B and B before C)."
+ },
+ {
+  "code": "FPM 286",
+  "title": "Free Clinic II",
+  "unit": "2 or 4",
+  "description": "The Free Clinic Project operates at three community-based sites. In this class, students, under faculty supervision, provide clinical services and learn administrative, health education and leadership. S/U grades only. May be taken for credit as many times as desired.",
+  "prerequisite": "FPM 272."
+ },
+ {
+  "code": "FPM 288",
+  "title": "Introduction to Qualitative Research Methods",
+  "unit": "4",
+  "description": "Focus on qualitative methods addressing both theoretical and practical dimensions of conducting qualitative research. Identify research questions for which qualitative methods are appropriate, and to critique qualitative research in terms of design, interview techniques, analysis, and interpretation.",
+  "prerequisite": null
+ }
+]
