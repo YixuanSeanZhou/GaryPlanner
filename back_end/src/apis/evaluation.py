@@ -19,6 +19,7 @@ def create_evaluation():
     # avg_expected_grade, avg_grade_received
     req_data = request.get_json()
     class_code = req_data.get('class_code')
+    quarter = req_data.get('quarter')
     instructor = req_data.get('instructor')
     recommend_class = req_data.get('recommend_class')
     recommend_instructor = req_data.get('recommend_instructor')
@@ -29,6 +30,7 @@ def create_evaluation():
 
     status, evaluation = Evaluation.create_evaluation(
                                 class_code=class_code,
+                                quarter=quarter,
                                 instructor=instructor,
                                 recommend_class=recommend_class,
                                 recommend_instructor=recommend_instructor,
@@ -98,6 +100,7 @@ def update_evaluation():
         return jsonify({'reason': 'missing evaluation id'}), 300
 
     class_code = req_data.get('class_code', None)
+    quarter = req_data.get('quarter', None)
     instructor = req_data.get('instructor', None)
     recommend_class = req_data.get('recommend_class', None)
     recommend_instructor = req_data.get('recommend_instructor', None)
@@ -108,6 +111,7 @@ def update_evaluation():
 
     status, evaluation = Evaluation.update_evaluation(
                             id=eval_id, class_code=class_code,
+                            quarter=quarter,
                             instructor=instructor,
                             recommend_class=recommend_class,
                             recommend_instructor=recommend_instructor,
