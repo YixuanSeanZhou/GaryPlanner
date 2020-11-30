@@ -1,4 +1,10 @@
+// React and Next
 import React from 'react';
+import Link from 'next/link';
+import  Head from 'next/head';
+import { withRouter } from 'next/router';
+
+// Components
 import { DragDropContext } from 'react-beautiful-dnd';
 import placeholderData from './placeholderData';
 import Quarter from './quarter';
@@ -8,8 +14,82 @@ import CourseSearchBar from './searchBar/courseSearchColumn'
 import styles from '../../styles/FourYearPlan.module.css'
 
 
-export default class PlanCalendar extends React.Component {
+class PlanCalendar extends React.Component {
+    constructor(props) {
+		super(props);
+
+		this.state = {
+            ...placeholderData,
+			showingAlert: false,
+			alarmText: "Error!",
+			alarmSubText: "Just error",
+		}
+	}
     state = placeholderData;
+
+    componentDidMount () {
+		// First, enable loading animation
+		this.props.enableLoading("Please wait");
+
+		// Options for the fetch request
+		const requestUrl = 'http://localhost:2333/api/users/create_user';
+		const options = {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(this.state.formData)
+		};
+
+		fetch(requestUrl, options)
+		.then(response => {
+			console.log(response);
+            
+            /*
+			if (response.status == 200) {
+				// User successfully created
+				this.props.enableLoading("Success!")
+
+				// Redirect the user to login page
+				this.props.router.prefetch('/login');
+				setTimeout(() => {
+					this.props.disableLoading();
+					this.props.router.push('/login'); 
+				}, 2000);
+
+			} else if (response.status == 300) {
+				// User Already Existed!
+				return response.json()
+
+			} else {
+				// Unhandled error code
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.props.router.push('/util/error');	
+            }
+            */
+		}).then(data => {
+			console.log("JSON Data: ", data);
+            const newState = {
+                ...this.state,
+                ...data.result
+            };
+
+            this.setState(newState);
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+			setTimeout(() => this.props.disableLoading(), 300);
+            //this.props.router.push('/util/error');
+            
+            const newState = {
+                ...this.state,
+                ...placeholderData
+            };
+
+            this.setState(newState);
+		});
+		
+	}
 
     onDragEnd = result => {
         const { destination, source, draggableId } = result;
@@ -121,3 +201,5 @@ export default class PlanCalendar extends React.Component {
         );
     }
 }
+
+export default withRouter(PlanCalendar);

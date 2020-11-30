@@ -1,30 +1,52 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import PlanCalendar from '../components/planCalendar/planCalendar'
-// Components
+import React from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
+import { withRouter } from 'next/router';
 
-import HomeNav from '../components/homeNav'
-import { Navbar } from 'react-bootstrap';
+// Components
+import { GaryNavbar } from '../components/commonUI';
+import { Navbar, Alert } from 'react-bootstrap';
+import PlanCalendar from '../components/planCalendar/planCalendar'
 
 // Styles
 import styles from '../styles/FourYearPlan.module.css'
 
-export default function Plan() {
-    return (
-        <>
-            <Head>
-                <title>Plan</title>
-            </Head>
+class Plan extends React.Component {
+    constructor(props) {
+		super(props);
 
-            <HomeNav>
-                <Navbar.Text>
-                   Four Year Plan 
-                </Navbar.Text>
-            </HomeNav>
-
-            <div id="planCalendar" className={styles.mainContainer}>
-                <PlanCalendar />
-            </div>
-        </>
-    )
+		this.state = {
+			showingAlert: false,
+			alarmText: "Error!",
+			alarmSubText: "Just error",
+        }
+    }
+    render() {
+        return (
+            <>
+                <Head>
+                    <title>Plan</title>
+                </Head>
+    
+                <GaryNavbar>
+                    <Navbar.Text>
+                       Four Year Plan 
+                    </Navbar.Text>
+                </GaryNavbar>
+                <p>
+                    Here is where you can update your Four Year Plan.  Search classes on the left column and drag them
+                    into the main area to add them to your plan.  To remove a class, drag it into the search column.
+                </p>
+                <div id="planCalendar" className={styles.mainContainer}>
+                    <PlanCalendar 
+                        enableLoading={this.props.enableLoading} 
+                        disableLoading ={this.props.disableLoading}
+                        {...this.props.pageProps} 
+                    />
+                </div>
+            </>
+        )
+    }
 }
+
+export default withRouter(Plan);
