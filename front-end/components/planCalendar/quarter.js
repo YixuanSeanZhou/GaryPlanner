@@ -6,6 +6,10 @@ import Course from './course';
 import styles from '../../styles/FourYearPlan.module.css'
 
 export default class Quarter extends React.Component {
+    constructor(props) {
+		super(props);
+    }
+
     render() {
         return (
             <div className={styles.quarterContainer}>
@@ -19,7 +23,7 @@ export default class Quarter extends React.Component {
                             className={styles.courseList}
                         >
                             {this.props.courses.map((course, index) => (
-                                <Course key={course.id} course={course} index={index} />
+                                <Course key={course.id} course={course} index={index} locked={course.locked} updateLocked={this.props.updateLocked}/>
                             ))}
                             {provided.placeholder}
                         </div>

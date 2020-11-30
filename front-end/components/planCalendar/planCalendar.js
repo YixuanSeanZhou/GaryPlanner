@@ -25,7 +25,6 @@ class PlanCalendar extends React.Component {
 			alarmSubText: "Just error",
 		}
 	}
-    state = placeholderData;
 
     componentDidMount () {
 		// First, enable loading animation
@@ -129,6 +128,7 @@ class PlanCalendar extends React.Component {
             };
 
             this.setState(newState);
+            console.log(this.state);
             return;
         }
         
@@ -172,7 +172,30 @@ class PlanCalendar extends React.Component {
         }
         
         // TODO: Tell backend that a reorder has occured
-    };
+    }
+
+    updateLocked(courseId) {
+        console.log("Yeet " + courseId);
+        /*
+        courseToUpdate = this.state.courses[courseId];
+        updatedCourse = {
+            ...courseToUpdate,
+            locked: !courseToUpdate.locked
+        }
+
+        const newState = {
+            ...this.state,
+            courses: {
+                ...this.state.courses,
+                updatedCourse
+            }
+        };
+
+        this.setState(newState);
+        console.log(this.state);
+        return;
+        */
+    }
 
 
     render() {
@@ -190,7 +213,7 @@ class PlanCalendar extends React.Component {
                                     const quarter = this.state.quarters[quarterId];
                                     const courses = quarter.courseIds.map(courseId => this.state.courses[courseId]);
 
-                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} />;
+                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={this.updateLocked.bind(this)} />;
                                 })}
                             </div>
                         </div>
