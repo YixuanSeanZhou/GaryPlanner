@@ -58,6 +58,11 @@ class MyApp extends React.Component {
 			})
   }
 
+  componentDidMount() {
+    console.log("Component did mounted!");
+    this.updateUserProfile();
+  }
+
   clearUserProfile() {
     this.setState({userProfile: undefined});
   }

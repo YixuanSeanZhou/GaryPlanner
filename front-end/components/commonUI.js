@@ -57,12 +57,12 @@ class GaryNavbar extends React.Component {
 								Edit Profile
 							</NavDropdown.Item>
 							<NavDropdown.Item href="/friends">Friends</NavDropdown.Item>
-							<NavDropdown.Item href="changePass">
+							<NavDropdown.Item href="/changePass">
 								Change Passoword
 							</NavDropdown.Item>
 						</NavDropdown>
 						<Nav.Link>
-                            <a onClick={this.handleLogout}><span style={{ textDecoration: 'underline' }}>Log out</span></a>
+                            <div onClick={this.handleLogout}><span style={{ textDecoration: 'underline' }}>Log out</span></div>
 						</Nav.Link>
 					</Nav>
 				</>
