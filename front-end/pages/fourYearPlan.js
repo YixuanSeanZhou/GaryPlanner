@@ -1,3 +1,4 @@
+import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import PlanCalendar from '../components/planCalendar/planCalendar'
@@ -9,22 +10,25 @@ import { Navbar } from 'react-bootstrap';
 // Styles
 import styles from '../styles/FourYearPlan.module.css'
 
-export default function Plan() {
-    return (
-        <>
-            <Head>
-                <title>Plan</title>
-            </Head>
+export default class Plan extends React.Component {
 
-            <GaryNavbar showUser={true}>
-                <Navbar.Text>
-                   Four Year Plan 
-                </Navbar.Text>
-            </GaryNavbar>
+    render() {
+        return (
+            <>
+                <Head>
+                    <title>Plan</title>
+                </Head>
 
-            <div id="planCalendar" className={styles.mainContainer}>
-                <PlanCalendar />
-            </div>
-        </>
-    )
+                <GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+                    <Navbar.Text>
+                    Four Year Plan 
+                    </Navbar.Text>
+                </GaryNavbar>
+
+                <div id="planCalendar" className={styles.mainContainer}>
+                    <PlanCalendar />
+                </div>
+            </>
+        )
+    }
 }

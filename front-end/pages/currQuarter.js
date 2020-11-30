@@ -3,7 +3,6 @@ import Head from 'next/head'
 // Components
 import { GaryNavbar } from '../components/commonUI'
 import { Navbar } from 'react-bootstrap';
-//import Week from '../components/weekCalendar/Week'
 
 export default function Schedule() {
     return (
@@ -12,7 +11,7 @@ export default function Schedule() {
 				<title>Plan</title>
 			</Head>
 
-			<GaryNavbar showUser={true}>
+			<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
 				<Navbar.Text>Current Quarter Schedule</Navbar.Text>
 			</GaryNavbar>
 
