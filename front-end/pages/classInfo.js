@@ -15,12 +15,12 @@ class ClassInfo extends React.Component {
 
 		this.state = {
 			classDec: {
-                prerequisites: [" CSE12, CSE100."],
-                descriptions: "This is the class description"	
+                prerequisites: " CSE12, CSE100.",
+                description: "This is the class description"	
             },
-            evaluations: [{id:1, quarter: 'Winter 2020', name: 'Gary Gillespie', unit: '4', expGPA: 'B+', actGPA: 'A', hours: "10hr/week"}, 
-            {id:2, quarter: 'Fall 2019', name: 'Niema Moshiri', unit: '4', expGPA: 'A', actGPA: 'A', hours: "10hr/week"},
-            {id:3, quarter: 'Spring 2019', name: 'Gary Gillespie', unit: '4', expGPA: 'B+', actGPA: 'A', hours: "10hr/week"}]
+            evaluations: [{id:1, quarter: 'Winter 2020', instructor: 'Gary Gillespie', unit: '4', average_exp_grade: 'B+', average_rec_grade: 'A', hour_per_week: "10hr/week"}, 
+            {id:2, quarter: 'Fall 2019', instructor: 'Niema Moshiri', unit: '4', average_exp_grade: 'A', average_rec_grade: 'A', hour_per_week: "10hr/week"},
+            {id:3, quarter: 'Spring 2019', instructor: 'Gary Gillespie', unit: '4', average_exp_grade: 'B+', average_rec_grade: 'A', hour_per_week: "10hr/week"}]
 		}
     }
     
@@ -36,7 +36,7 @@ class ClassInfo extends React.Component {
 				</GaryNavbar>
 				<Container>
 					<h1 className="text-center">{this.props.router.query.class_name}</h1>
-					<p className="text-center">{this.state.classDec.descriptions}</p>
+					<p className="text-center">{this.state.classDec.description}</p>
                     <p className="text-center">prerequisites: {this.state.classDec.prerequisites}</p>
 
 					<EvaluationsList evaluations={this.state.evaluations} />
