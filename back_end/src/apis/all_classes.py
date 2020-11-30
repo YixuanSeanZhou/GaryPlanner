@@ -16,20 +16,22 @@ other possible methods:
 
 '''
 
-#helper function
+
+# helper function
 def convert_to_four_year_plan(result):
     courses = {}
-    #loops through all the classes in search result
+    # loops through all the classes in search result
     for course in result:
         class_code = course['class_code']
-        id = 'course-' + class_code.replace(" ","")
-        
+        id = 'course-' + class_code.replace(" ", "")
+
         courses[id] = {
-            "id" : id,
-            "content" : class_code,
-            "locked" : False
+            "id": id,
+            "content": class_code,
+            "locked": False
         }
     return courses
+
 
 @all_classes_api_bp.route('/create_class', methods=['POST'])
 def create_class():
@@ -90,6 +92,7 @@ def get_class_by_search():
         return jsonify({'reason': 'success', 'result': clss}), 200
     return jsonify({'reason': 'failed: class DNE'}), 300
 
+
 @all_classes_api_bp.route('/get_formatted_class_by_search', methods=['GET'])
 def get_formatted_class_by_search():
     '''
@@ -123,11 +126,11 @@ def get_prereq_and_description():
     clss = clss.to_json()
     prereq = clss["prerequisites"]
     desc = clss["description"]
-    #units = clss["units"]
+    # units = clss["units"]
     classDes = {
         "prerequisites": prereq,
-        "description": desc#,
-        #"units": units
+        "description": desc  # ,
+        # "units": units
     }
     return jsonify({'reason': 'retrieved class info', 'result': classDes}), 200
 

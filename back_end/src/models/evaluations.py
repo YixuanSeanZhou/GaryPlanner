@@ -9,7 +9,7 @@ class Evaluation(db.Model):
     __tablename__ = "Evaluations"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_code = db.Column(db.String(255),nullable=False)
+    class_code = db.Column(db.String(255), nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
     recommend_class = db.Column(db.Float, nullable=False)
     recommend_instructor = db.Column(db.Float, nullable=False)
@@ -108,12 +108,14 @@ class Evaluation(db.Model):
         for i in range(len(split)):
             split[i] = "%"+split[i].strip()+"%"
 
-        evaluations = Evaluation.query.filter(Evaluation.instructor.ilike(split[0]))
+        evaluations = Evaluation.query.filter(
+                Evaluation.instructor.ilike(split[0]))
 
-        for i in range(1,len(split)):
+        for i in range(1, len(split)):
             if len(split[i]) > 3:
                 print(split[i])
-                evaluations = evaluations.filter(Evaluation.instructor.ilike(split[i]))
+                evaluations = evaluations.filter(
+                        Evaluation.instructor.ilike(split[i]))
 
         if evaluations.first():
             return evaluations

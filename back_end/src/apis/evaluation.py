@@ -2,7 +2,7 @@ from flask_cors import CORS
 from flask import Blueprint, request, jsonify
 
 from ..models.evaluations import Evaluation
-from ..models.all_classes import AllClass
+# from ..models.all_classes import AllClass
 
 evaluation_api_bp = Blueprint('evaluation_api', __name__)
 CORS(evaluation_api_bp, supports_credentials=True)
@@ -132,7 +132,6 @@ def update_evaluation():
                             avg_expected_grade=avg_expected_grade,
                             avg_grade_received=avg_grade_received,
                             quarter=quarter)
-
     if status:
         return jsonify({
             'reason': 'success',
