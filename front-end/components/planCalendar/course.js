@@ -23,7 +23,7 @@ export default class Course extends React.Component{
         };
 
         this.setState(newState);
-        //this.props.updateLocked(courseId);
+        this.props.updateLocked(this.props.course.id);
         return;
     }
 
@@ -41,7 +41,7 @@ export default class Course extends React.Component{
                         {this.props.course.content}
                         <Button 
                         variant="dark"
-                        onClick={this.handleClick()}
+                        onClick={this.handleClick}
                         > 
                             {this.state.locked ? "Unlock" : "Lock"} 
                         </Button>
