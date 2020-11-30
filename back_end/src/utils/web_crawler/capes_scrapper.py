@@ -3,13 +3,11 @@ import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-import numpy as np
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
-import argparse
 import json
 
 # Workflow
@@ -164,6 +162,12 @@ for department in all_departments:
         course = row[course_start_index:course_end_index].strip()
         search_start = course_end_index
 
+        # get quarter
+        quarter_start_index = row.find("<td>", search_start) + 4
+        quarter_end_index = row.find("</td>", quarter_start_index)
+        quarter = row[quarter_start_index:quarter_end_index].strip()
+        search_start = quarter_end_index
+
         # get recommend class
         recommend_class_start_index = row.find("RecommendCourse\">", search_start) + 17
         recommend_class_end_index = row.find("%</span>", recommend_class_start_index)
@@ -199,6 +203,7 @@ for department in all_departments:
         response = {}
         response['instructor'] = instructor
         response['course'] = course
+        response['quarter'] = quarter
         response['recommend_class'] = recommend_class
         response['recommend_instructor'] = recommend_instructor
         response['study_hour'] = study_hour
