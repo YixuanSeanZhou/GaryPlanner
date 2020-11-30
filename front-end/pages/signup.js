@@ -28,12 +28,12 @@ class Signup extends React.Component {
 				major: "",
 				minor: "",
 
-				s_year: "",
-				s_quarter: "",
+				s_year: "20",
+				s_quarter: "FA",
 				start_quarter: "",
 
-				g_year: "",
-				g_quarter: "",
+				g_year: "20",
+				g_quarter: "FA",
 				intended_grad_quarter: "",
 			},
 			showingAlert: false,
@@ -50,9 +50,10 @@ class Signup extends React.Component {
 		this.props.enableLoading("Please wait");
 
 		// Format the form data
-		formData = this.state.formData;
+		var formData = this.state.formData;
 		formData.start_quarter = formData.s_quarter.concat(formData.s_year);
-		formData.indented_grad_quarter= formData.g_quarter.concat(formData.g_year);
+		formData.indended_grad_quarter= formData.g_quarter.concat(formData.g_year);
+		console.log("Posting data: ", formData);
 
 		// Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/create_user';
@@ -163,6 +164,14 @@ class Signup extends React.Component {
 			});
 			return false;
 		}
+		if (!/^[a-zA-Z0-9_]/.test(user_name)) {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Please enter a valid Username!" ,
+				alarmSubText: "Username can only contain letters, numbers, and _.",
+			});
+			return false;
+		}
 		if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
 			this.setState({
 				showingAlert: true,
@@ -255,7 +264,7 @@ class Signup extends React.Component {
 										onChange={this.handleChange}
 									/>
 									<Form.Text muted>
-										Your friends can find you via username/email.
+										Your friends can find you via username/email. Username can only contain letters, numbers, and _.
 									</Form.Text>
 								</Form.Group>
 								
