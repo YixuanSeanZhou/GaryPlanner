@@ -25,7 +25,6 @@ def create_evaluation():
     study_hours_per_week = req_data.get('study_hours_per_week')
     avg_expected_grade = req_data.get('avg_expected_grade')
     avg_grade_received = req_data.get('avg_grade_received')
-    quarter = req_data.get('quarter')
 
     status, evaluation = Evaluation.create_evaluation(
                                 class_code=class_code,
@@ -35,8 +34,7 @@ def create_evaluation():
                                 recommend_instructor=recommend_instructor,
                                 study_hours_per_week=study_hours_per_week,
                                 avg_expected_grade=avg_expected_grade,
-                                avg_grade_received=avg_grade_received,
-                                quarter=quarter)
+                                avg_grade_received=avg_grade_received)
 
     if status:
         return jsonify({
@@ -106,7 +104,6 @@ def update_evaluation():
     study_hours_per_week = req_data.get('study_hours_per_week', None)
     avg_expected_grade = req_data.get('avg_expected_grade', None)
     avg_grade_received = req_data.get('avg_grade_received', None)
-    quarter = req_data.get('quarter', None)
 
     status, evaluation = Evaluation.update_evaluation(
                             id=eval_id, class_code=class_code,
@@ -116,8 +113,7 @@ def update_evaluation():
                             recommend_instructor=recommend_instructor,
                             study_hours_per_week=study_hours_per_week,
                             avg_expected_grade=avg_expected_grade,
-                            avg_grade_received=avg_grade_received,
-                            quarter=quarter)
+                            avg_grade_received=avg_grade_received)
     if status:
         return jsonify({
             'reason': 'success',
