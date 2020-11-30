@@ -106,3 +106,9 @@
     box-shadow: 5px 5px 5px rgb(221, 221, 221);
     font-family: "Comic Sans MS", cursive, sans-serif;
   }
+
+  .des{
+    text-align: center;
+    list-style-type:none;
+    font-size: larger;
+  }
