@@ -9,9 +9,8 @@ class Evaluation(db.Model):
     __tablename__ = "Evaluations"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_code = db.Column(db.String(255),
-                           db.ForeignKey('AllClasses.class_code'),
-                           nullable=False)
+    class_code = db.Column(db.String(255),nullable=False)
+    quarter = db.Column(db.String(255), nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
     recommend_class = db.Column(db.Float, nullable=False)
     recommend_instructor = db.Column(db.Float, nullable=False)
@@ -26,6 +25,7 @@ class Evaluation(db.Model):
         ret = {}
         ret['id'] = self.id
         ret['class_code'] = self.class_code
+        ret['quarter'] = self.quarter
         ret['instructor'] = self.instructor
         ret['recommend_class'] = self.recommend_class
         ret['recommend_instructor'] = self.recommend_instructor
@@ -34,12 +34,14 @@ class Evaluation(db.Model):
         ret['avg_grade_received'] = self.avg_grade_received
         return ret
 
-    def update_attr(self, class_code: str, instructor: str,
+    def update_attr(self, class_code: str, quarter: str, instructor: str,
                     recommend_class: float, recommend_instructor: float,
                     study_hours_per_week: float, avg_expected_grade: str,
                     avg_grade_received: str) -> bool:
         if class_code:
             self.class_code = class_code
+        if quarter:
+            self.quarter = quarter
         if instructor:
             self.instructor = instructor
         if recommend_class:
@@ -59,12 +61,12 @@ class Evaluation(db.Model):
         db.session.commit()
 
     @staticmethod
-    def create_evaluation(class_code: str, instructor: str,
+    def create_evaluation(class_code: str, quarter: str, instructor: str,
                           recommend_class: float, recommend_instructor: float,
                           study_hours_per_week: float, avg_expected_grade: str,
                           avg_grade_received: str) -> bool:
 
-        evaluation = Evaluation(class_code=class_code, instructor=instructor,
+        evaluation = Evaluation(class_code=class_code, quarter=quarter, instructor=instructor,
                                 recommend_class=recommend_class,
                                 recommend_instructor=recommend_instructor,
                                 study_hours_per_week=study_hours_per_week,
@@ -120,6 +122,7 @@ class Evaluation(db.Model):
 
     @staticmethod
     def update_evaluation(id: int, class_code: str = None,
+                          quarter: str = None,
                           instructor: str = None,
                           recommend_class: float = None,
                           recommend_instructor: float = None,
@@ -129,7 +132,7 @@ class Evaluation(db.Model):
 
         evaluation = Evaluation.get_evaluation(evaluation_id=id)
         return evaluation.update_attr(
-                class_code=class_code, instructor=instructor,
+                class_code=class_code, quarter=quarter, instructor=instructor,
                 recommend_class=recommend_class,
                 recommend_instructor=recommend_instructor,
                 study_hours_per_week=study_hours_per_week,
