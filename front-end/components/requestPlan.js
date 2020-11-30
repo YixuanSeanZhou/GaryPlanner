@@ -6,7 +6,8 @@ export default function Request(props) {
 			{...props}
 			size=""
 			aria-labelledby="contained-modal-title-vcenter"
-			centered>
+			centered
+		>
 			<Modal.Header closeButton>
 				<Modal.Title id="contained-modal-title-vcenter">
 					Request New Plan (Using Student SSO)
@@ -14,20 +15,20 @@ export default function Request(props) {
 			</Modal.Header>
 			<Modal.Body>
 				<Form className="mr-5 ">
-					<Form.Group>
-						<Form.Label htmlFor="username">
+					<Form.Group controlId="username">
+						<Form.Label>
 							TritonLink user name (or student PID)
 						</Form.Label>
-						<Form.Control type="text" id="username" name="username" />
+						<Form.Control type="text"/>
 					</Form.Group>
 
-					<Form.Group>
-						<Form.Label htmlFor="passowrd">Passowrd</Form.Label>
-						<Form.Control type="password" id="password" name="password" />
+					<Form.Group controlId="password">
+						<Form.Label>Passowrd</Form.Label>
+						<Form.Control type="password"/>
 					</Form.Group>
 
 					<div style={{ textAlign: 'right' }}>
-						<Button type="submit" value="submit" className="bg-orange mt-3">
+						<Button value="submit" className="bg-orange mt-3">
 							Sumbit
 						</Button>{' '}
 					</div>

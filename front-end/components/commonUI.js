@@ -10,7 +10,7 @@ export class GaryNavbar extends React.Component {
         super(props);
         this.state = {
             showUser: this.props.showUser,
-            first_name: 'not login',
+            first_name: 'Loading...',
         }
 
     }
@@ -26,12 +26,11 @@ export class GaryNavbar extends React.Component {
         .then(response => {
 
             if (response.status == 200) {
-				// User successfully created
-				// TODO: Prompt Success
+				// Logged out
                 this.props.router.push("/intro");
 			} else if (response.status == 403) {
                 this.setState({
-                    user_name: "Not Logged in!",
+                    first_name: "Not Logged in!",
                 })
                 throw Error(response.statusText);
 			}

@@ -67,7 +67,6 @@ class Login extends React.Component {
 			setTimeout(() => this.props.disableLoading(), 300);
 
 			if (response.status == 200) {
-				// User successfully created
 				// Remember me
 				const {email, pwd, remember} = this.state.formData;
 				if (remember && email !== "") {
