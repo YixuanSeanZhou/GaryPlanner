@@ -3,7 +3,7 @@ import Head from 'next/head'
 import PlanCalendar from '../components/planCalendar/planCalendar'
 // Components
 
-import HomeNav from '../components/homeNav'
+import { GaryNavbar } from '../components/commonUI'
 import { Navbar } from 'react-bootstrap';
 
 // Styles
@@ -16,11 +16,11 @@ export default function Plan() {
                 <title>Plan</title>
             </Head>
 
-            <HomeNav>
+            <GaryNavbar showUser={true}>
                 <Navbar.Text>
                    Four Year Plan 
                 </Navbar.Text>
-            </HomeNav>
+            </GaryNavbar>
 
             <div id="planCalendar" className={styles.mainContainer}>
                 <PlanCalendar />

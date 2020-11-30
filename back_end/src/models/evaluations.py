@@ -9,9 +9,7 @@ class Evaluation(db.Model):
     __tablename__ = "Evaluations"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_code = db.Column(db.String(255),
-                           db.ForeignKey('AllClasses.class_code'),
-                           nullable=False)
+    class_code = db.Column(db.String(255),nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
     recommend_class = db.Column(db.Float, nullable=False)
     recommend_instructor = db.Column(db.Float, nullable=False)

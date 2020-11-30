@@ -2,7 +2,7 @@ from flask_cors import CORS
 from src.setup import app, cli, db
 from src.utils.catalog_process.preprocess import get_info_from_catalog
 from src.utils.catalog_process.prereq_graph import generate_prereq_graph
-from initiate_db import add_evals_to_db
+from initiate_db import add_evals_to_db, add_classes_to_db
 import nltk
 
 
@@ -16,7 +16,9 @@ def create_db():
     db.create_all()
     db.session.commit()
     test()
+    #add_classes_to_db()
     #add_evals_to_db()
+    
 
 
 def test():

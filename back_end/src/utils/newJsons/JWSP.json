@@ -1,0 +1,107 @@
+[
+ {
+  "code": "JWSP 1",
+  "title": "Beginning Hebrew",
+  "unit": "5",
+  "description": "Acquisition of basic vocabulary, fundamentals of Hebrew grammar, conversation, and reading.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 2",
+  "title": "Intermediate Hebrew",
+  "unit": "5",
+  "description": "Continued study of vocabulary and grammar, emphasis on fluency in conversation, and reading.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 3",
+  "title": "Intermediate Hebrew, Continued",
+  "unit": "5",
+  "description": "Vocabulary, grammar, conversation, introduction to literary and nonliterary texts.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 87",
+  "title": "First-year Student Seminar",
+  "unit": "1",
+  "description": "The First-year Student Seminar Program is designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. First-year student seminars are offered in all campus departments and undergraduate colleges, and topics vary from quarter to quarter. Enrollment is limited to fifteen to twenty students, with preference given to entering first-year students. P/NP grades only. May be taken for credit four times. Seminars are open to sophomores, juniors, and seniors on a space available basis.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 101",
+  "title": "Introduction to Hebrew Texts",
+  "unit": "4",
+  "description": "Reading and analysis of texts from Biblical through modern authors, study of advanced vocabulary and grammar. Course taught in Hebrew and in English.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 102",
+  "title": "Intermediate Hebrew Texts",
+  "unit": "4",
+  "description": "Further reading and analysis of Hebrew literature from a range of periods. Advanced grammar and vocabulary. Course taught in Hebrew and in English.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 103",
+  "title": "Advanced Hebrew Texts",
+  "unit": "4",
+  "description": "Synthesis of fluency, reading, and grammatical skills. Reading of texts from a range of periods.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 110",
+  "title": "Introduction to Judaism",
+  "unit": "4",
+  "description": "An introductory survey of Jewish history, literature, and culture from antiquity to contemporary times. Topics include sacred texts; the variety of groups and views of Judaism; the historical and geographical movements of the Jewish people; and the intersection of religion, ethnicity, and culture.",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 111",
+  "title": "Topics in Judaic Studies",
+  "unit": "4",
+  "description": "Study of a particular period, theme, or literature in Jewish civilization. May be taken for credit three times.",
+  "prerequisite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "JWSP 130",
+  "title": "Introduction to the Old Testament: The Historical Books",
+  "unit": "4",
+  "description": "This course will study the historical books of the Hebrew Bible (in English), Genesis through 2 Kings, through a literary-historical approach: how, when, and why the Hebrew Bible came to be written down, its relationship with known historical facts, and the archaeological record.",
+  "prerequisite": "upper- division standing or consent of instructor."
+ },
+ {
+  "code": "JWSP 131",
+  "title": "Introduction to the Old Testament: The Poetic Books",
+  "unit": "4",
+  "description": "This course will study the prophetic and poetic books of the Hebrew Bible (in English), through a literary-historical approach. Topics include prophecy, social justice, monotheism, suffering, humor, and love.",
+  "prerequisite": "JWSP 100A; upper-division standing or consent of instructor."
+ },
+ {
+  "code": "JWSP 196A",
+  "title": "Jewish Studies Honors Course",
+  "unit": "4",
+  "description": "First quarter of honors thesis research for students accepted into honors program. Research is conducted under the supervision of a faculty member selected with the approval of the director of the Jewish Studies Program.",
+  "prerequisite": "admission to Jewish Studies Honors Program; JWSP 100, JWSP103, HITO 104, HITO 105; upper-division electives in Jewish studies; at least junior standing; overall 3.3 GPA; 3.5 in Jewish studies."
+ },
+ {
+  "code": "JWSP 196B",
+  "title": "Jewish Studies Honors Course",
+  "unit": "4",
+  "description": "Second quarter of honors thesis research for students accepted into honors program. Research is conducted under the supervision of a faculty member selected with the approval of the director of the Jewish Studies Program.",
+  "prerequisite": "admission to Jewish Studies Honors Program; previous enrollment in JWSP 196A; JWSP 100, JWSP 103, HITO 104, HITO 105; upper- division electives in Jewish studies; at least junior standing; overall 3.3 GPA; 3.5 in Jewish studies."
+ },
+ {
+  "code": "JWSP 198",
+  "title": "Directed Group Study in Jewish Studies",
+  "unit": "1-4",
+  "description": "Directed group study on a topic not generally included in the regular curriculum. Student must make arrangements with individual faculty members. (P/NP only)",
+  "prerequisite": null
+ },
+ {
+  "code": "JWSP 199",
+  "title": "Independent Study in Jewish Studies",
+  "unit": "1-4",
+  "description": "Independent study on a topic not generally included in the regular curriculum. Student must make arrangements with individual faculty members. (P/NP only)",
+  "prerequisite": null
+ }
+]

@@ -49,3 +49,9 @@
     right: 0;
     margin: 20px
 }
+
+.rowContent {
+    width: 80%;
+    margin-top: 20px;
+    margin: auto;
+}

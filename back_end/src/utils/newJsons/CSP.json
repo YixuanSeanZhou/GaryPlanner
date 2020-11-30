@@ -1,0 +1,93 @@
+[
+ {
+  "code": "SIOB 286",
+  "title": "Marine Science, Economics, and Policy",
+  "unit": "4",
+  "description": "This course investigates global issues in marine conservation and potential policy solutions. The approach is interdisciplinary, fast-paced, and discussion oriented. Students will become acquainted with sufficient background in marine biology, ecology, marine and conservation economics, international law, and policy as preparation for participation in discussion on real-world issues in marine conservation. Topics and instructors change each quarter. Renumbered from SIO 286. Students may not receive credit for SIOB 286 and SIO 286. May be taken for credit three times.",
+  "prerequisite": "graduate standing."
+ },
+ {
+  "code": "SIOC 210",
+  "title": "Physical Oceanography",
+  "unit": "4",
+  "description": "Physical description of the sea; physical properties of seawater, methods and measurements, boundary processes, regional oceanography. Renumbered from SIO 210. Students may not receive credit for both SIOC 210 and SIO 210.",
+  "prerequisite": "graduate standing."
+ },
+ {
+  "code": "SIOC 217A",
+  "title": "Atmospheric and Climate Sciences I",
+  "unit": "4",
+  "description": "Thermodynamics and statics of dry and moist air, atmospheric composition, Earth radiation budget, vertical structure of the atmosphere, global energy balance, thermodynamic feedbacks in the climate system. Renumbered from SIO 217A.",
+  "prerequisite": "graduate standing or consent of instructor. Letter grades only. Russell (F)"
+ },
+ {
+  "code": "SIOC 217B",
+  "title": "Atmospheric and Climate Sciences II",
+  "unit": "4",
+  "description": "Fluid dynamics of the atmosphere; derivation of governing equations from the laws of physics, scale analysis, conservation principles, theoretical and observed structure of midlatitude synoptic systems; gradient wind and thermal wind approximations, geostrophic and quasigeostrophic approximations; potential vorticity, Rossby waves, climate and weather phenomena such as jet streams and cyclones. Graduate students who have not completed SIO 217A but have an equivalent background may enroll with consent of instructor. Renumbered from SIO 217B.",
+  "prerequisite": "SIO 217A or SIOC 217A; graduate standing or consent of instructor. Eisenman (W)"
+ },
+ {
+  "code": "SIOC 217C",
+  "title": "Atmospheric and Climate Sciences III",
+  "unit": "4",
+  "description": "Radiative, physical, and dynamical processes that govern the mean state, variability, and change of the atmosphere and climate including greenhouse gases, clouds and aerosols, convection and precipitation, general circulation, and coupled atmosphere-ocean interactions. Renumbered from SIO 217C.",
+  "prerequisite": "SIO 217A or SIOC 217A and SIO 217B or SIOC 217B; graduate standing or consent of instructor. Norris (S)"
+ },
+ {
+  "code": "SIOC 217D",
+  "title": "Atmospheric and Climate Sciences IV",
+  "unit": "4",
+  "description": "Atmospheric chemistry that impacts climate change, including photochemical reactions, ozone chemistry, and aerosol evolution in the troposphere and stratosphere. Atmospheric applications of catalytic cycles, heterogeneous chemistry, and microphysical processes will include the ozone hole, urban smog, and aerosol-cloud interactions. Renumbered from SIO 217D. Students may not receive credit for both SIOC 217D and SIO 217D.",
+  "prerequisite": "SIO 217A or SIOC 217A and SIO 217B or SIOC 217B and SIO 217C or SIOC 217C; graduate standing. Russell (S)"
+ },
+ {
+  "code": "SIOC 290S",
+  "title": "Climate Math",
+  "unit": "6",
+  "description": "This is a preparatory mathematics class for climate sciences, specifically designed to review math concepts vital to understanding climate science in preparation for SIOC 210 and SIOC 217A. The course will use statistical methods to understand the observed climate records, calculus to investigate Earth\u2019s radiation budget, and vector rotation to introduce the dynamics and transport of the atmosphere and ocean. Letter grades only.",
+  "prerequisite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "SIOC 291S",
+  "title": "@Climate",
+  "unit": "6",
+  "description": "This is a course in social media for the climate sciences. Students will develop a broad understanding of how to use social media to listen to, respond to, and engage in online climate science discussions. Students will learn to use digital technology to actively engage with constituents. Students will learn how social media can be used effectively for communications. Letter grades only.",
+  "prerequisite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "SIOC 292",
+  "title": "Introduction to Climate Science and Policy",
+  "unit": "4",
+  "description": "This course explores the interaction between climate science, policy, and the larger culture. S/U grades permitted.",
+  "prerequisite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "SIOC 296",
+  "title": "Climate Science and Policy Forum",
+  "unit": "2",
+  "description": "Required course for MAS-CSP students will focus on development of MAS Capstone Projects and discussions covering climate science and policy issues, including informal student presentations on political, economic, historical, educational, and natural science issues related to climate science and policy. Letter grades only. May be taken for credit three times.",
+  "prerequisite": "graduate standing."
+ },
+ {
+  "code": "SIOC 299",
+  "title": "Climate Science and Policy Capstone Project",
+  "unit": "6-10",
+  "description": "Building on the knowledge and experience gained from the entire curriculum of the Master\u2019s in Climate Science and Policy (MAS-CSP) program, students will design and present a specific climate science and policy project. May be taken for credit one time for a maximum of ten units. S/U grades only.",
+  "prerequisite": "graduate standing. Only students registered in MAS-CSP program."
+ },
+ {
+  "code": "SIOG 252A",
+  "title": "Introduction to Isotope Geochemistry",
+  "unit": "4",
+  "description": "Radioactive and stable isotope studies in geology and geochemistry, including geochronology, isotopes as tracers of magmatic processes, cosmic-ray produced isotopes as tracers in the crust and weathering cycle, isotopic evolution of the crust and mantle. Coscheduled with SIO 144. Course requires student presentation. Renumbered from SIO 252A. Students may not receive credit for both SIOG 252A and SIO 252A.",
+  "prerequisite": "graduate standing. Castillo, Keeling (W)"
+ },
+ {
+  "code": "SIOG 260",
+  "title": "Marine Chemistry",
+  "unit": "4",
+  "description": "Chemical description of the sea; the distribution of chemical species in the world oceans, and their relationships to physical, biological, and geological processes. Renumbered from SIO 260. Students may not receive credit for both SIOG 260 and SIO 260.",
+  "prerequisite": "graduate standing. Aluwihare, Barbeau, Dickson, Martz (W)"
+ }
+]
