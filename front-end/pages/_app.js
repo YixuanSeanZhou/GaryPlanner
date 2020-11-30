@@ -62,11 +62,6 @@ class MyApp extends React.Component {
     this.setState({userProfile: undefined});
   }
 
-  componentDidMount() {
-    console.log("App.js mounted!")
-    this.updateUserProfile();
-  }
-
   render() {
     return (
       <LoadingOverlay

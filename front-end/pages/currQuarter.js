@@ -3,7 +3,6 @@ import Head from 'next/head'
 // Components
 import { GaryNavbar } from '../components/commonUI'
 import { Navbar } from 'react-bootstrap';
-//import Week from '../components/weekCalendar/Week'
 
 export default function Schedule() {
     return (

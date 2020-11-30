@@ -7,7 +7,6 @@ import Link from 'next/link'
 import { ParticleEffect, GaryNavbar } from '../components/commonUI';
 import { Navbar, Jumbotron, Button, Modal, Card } from 'react-bootstrap'
 import Request from '../components/requestPlan'
-import EvaluationsList from '../components/eval/evaluationsList';
 
 import styles from '../styles/Auth.module.css'
 
@@ -17,26 +16,25 @@ export default class Home extends React.Component {
 
 		this.state = {
 			modalShow: false,
-
-			is_loading: true,
-			user_name: 'Not login',
-			email: '',
-			first_name: 'first',
-			last_name: 'last',
-			college: '',
-			intended_grad_quarter: '',
-			major: 'None',
-			minor: 'None',
 		}
 	}
 
 	componentDidMount() {
-		this.props.updateUserProfile();
-		this.setState(this.props.userProfile);
 	}
 
 	render() {
-		const userProfile = this.state;
+		const { userProfile } = this.props;
+		if (userProfile === undefined) {
+			userProfile = {
+				first_name: 'Not Logged In!',
+				last_name: "",
+				major: "",
+				minor: "",
+				college: "",
+				email: "",
+				intended_grad_quarter: "",
+			}
+		}
 		return (
 			<>
 				<Head>
@@ -83,7 +81,8 @@ export default class Home extends React.Component {
 										id="home-btn"
 										onClick={() =>
 											this.setState({ modalShow: true })
-										}>
+										}
+									>
 										<span>New Four Year Plan</span>
 									</Button>
 								</div>
