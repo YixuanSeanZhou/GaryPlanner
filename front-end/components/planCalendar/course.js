@@ -1,5 +1,6 @@
 import React from 'react';
 import { Draggable } from 'react-beautiful-dnd';
+import Link from 'next/link'
 
 // Styles
 import styles from '../../styles/FourYearPlan.module.css'
@@ -20,6 +21,9 @@ export default class Course extends React.Component{
                             className={styles.dragHandle}
                         >
                             (drag here)
+                            <Link href={{ pathname: '/classInfo', query: { keyword: this.props.course.content } }}>
+							    <a>View Info</a>
+						    </Link>
                         </div>
                     </div>
                 )}

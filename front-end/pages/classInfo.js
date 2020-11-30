@@ -5,6 +5,7 @@ import { GaryNavbar } from '../components/commonUI';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EvaluationsList from '../components/eval/evaluationsList';
+import { useRouter } from 'next/router'
 
 //export default function Class_info() {
 
@@ -16,6 +17,10 @@ var evaluations = [{id:1, quarter: 'Winter 2020', name: 'Gary Gillespie', unit: 
     {id:5, quarter: 'Fall 2018', name: 'Niema Moshiri', unit: '4', expGPA: 'A', actGPA: 'A', hours: "10hr/week"},
     {id:6, quarter: 'Spring 2018', name: 'Gary Gillespie', unit: '4', expGPA: 'A-', actGPA: 'A', hours: "10hr/week"}]
 
+const Class_name = () => {
+    const { query: {keyword } } = useRouter();
+    return <h1> {keyword} </h1>
+}
 export default class ClassInfo extends React.Component {
     render() {
         return (
@@ -28,7 +33,7 @@ export default class ClassInfo extends React.Component {
 					<Navbar.Text>Class Information</Navbar.Text>
 				</GaryNavbar>
 				<Container>
-					<h1 className="text-center">{classDec.name}</h1>
+					<h1 className="text-center"><Class_name/></h1>
 					<p className="text-center">{classDec.descriptions}</p>
 
 					<EvaluationsList evaluations={evaluations} />
