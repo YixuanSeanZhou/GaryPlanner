@@ -88,23 +88,6 @@ def get_evaluation():
         return jsonify({'reason': 'missing args'}), 300
 
 
-# @evaluation_api_bp.route('/get_formatted_evaluations', methods=['GET'])
-# def get_formatted_evaluation():
-
-#     class_code = arguments.get('class_code', None)
-#     evaluations = get_evaluation()
-    
-#     if not evaluations:
-#         return jsonify({'reason': 'Class has no evaluations'}), 403
-
-#     units = AllClass.get_class_by_code()
-
-#     for i in evaluations:
-#         evaluations[i]["unit"] = "placeholder"
-#         evaluations[i]["quarter"] = "placeholder"
-#     return jsonify({'reason': 'success', 'result': evaluations}), 200
-
-
 @evaluation_api_bp.route('/update_evaluation', methods=['POST'])
 def update_evaluation():
     req_data = request.get_json()

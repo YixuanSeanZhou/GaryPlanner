@@ -126,11 +126,11 @@ def get_prereq_and_description():
     clss = clss.to_json()
     prereq = clss["prerequisites"]
     desc = clss["description"]
-    # units = clss["units"]
+    units = clss["units"]
     classDes = {
         "prerequisites": prereq,
-        "description": desc  # ,
-        # "units": units
+        "description": desc,
+        "units": units
     }
     return jsonify({'reason': 'retrieved class info', 'result': classDes}), 200
 
