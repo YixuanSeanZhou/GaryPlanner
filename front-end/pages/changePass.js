@@ -18,7 +18,7 @@ export default class ChangePass extends React.Component {
 					<title>Home</title>
 				</Head>
 
-				<GaryNavbar showUser={true}>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
 					<Navbar.Text>Change Password</Navbar.Text>
 				</GaryNavbar>
 

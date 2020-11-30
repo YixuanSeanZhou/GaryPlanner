@@ -12,7 +12,7 @@ export default function Schedule() {
 				<title>Plan</title>
 			</Head>
 
-			<GaryNavbar showUser={true}>
+			<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
 				<Navbar.Text>Current Quarter Schedule</Navbar.Text>
 			</GaryNavbar>
 

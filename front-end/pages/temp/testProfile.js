@@ -35,68 +35,7 @@ class UserProfile extends React.Component {
     }
 
     componentDidMount() {
-        // Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/users/get_user_profile';
-		const options = {
-            method: 'GET',
-            credentials: 'include',
-		};
-
-		fetch(requestUrl, options)
-        .then(response => {
-
-            if (response.status == 200) {
-				// TODO: Prompt Success
-                return response.json()
-			} else if (response.status == 403) {
-                this.setState({
-                    user_name: "Not Logged in!",
-                })
-                throw Error(response.statusText);
-			}	
-
-        })
-        .then(data => {
-            console.log('Success:', data); // TODO: Remove for deployment
-
-            this.setState(data.result);
-            this.setState({
-                is_loading: false,
-            })
-
-        })
-		.catch((error) => {
-			console.error('Error:', error);
-        });
-    }
-
-    handleClick = (e) => {
-        // Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/users/logout';
-		const options = {
-            method: 'POST',
-            credentials: 'include',
-		};
-
-		fetch(requestUrl, options)
-        .then(response => {
-
-            if (response.status == 200) {
-				// User successfully created
-				// TODO: Prompt Success
-                this.props.router.push("/login");
-			} else if (response.status == 403) {
-                this.setState({
-                    user_name: "Not Logged in!",
-                })
-                throw Error(response.statusText);
-			}	
-
-        })
-		.catch((error) => {
-			console.error('Error:', error);
-        });
-
+        this.setState(this.props.userProfile);
     }
 
     render() {
@@ -106,7 +45,7 @@ class UserProfile extends React.Component {
                     <title>User Profile</title>
                 </Head>
     
-                <GaryNavbar>
+                <GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
                     <Navbar.Text>
                         User Profile
                     </Navbar.Text>
@@ -126,11 +65,8 @@ class UserProfile extends React.Component {
                         <p>{this.state.college}</p>
                         Intended Graduate Quarter
                         <p>{this.state.intended_grad_quarter}</p>
-                        <br />     
-                        <Button onClick={this.handleClick}>Logout</Button>               
                     </section>
                 </div>
-                <loadingPage />
             </>
         );    
     }

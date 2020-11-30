@@ -13,7 +13,7 @@ export default function UserProfile() {
 				<title>User Profile</title>
 			</Head>
 
-			<GaryNavbar showUser={true}>
+			<GaryNavbar>
 				<Navbar.Text>User Profile</Navbar.Text>
 			</GaryNavbar>
 
