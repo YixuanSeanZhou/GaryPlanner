@@ -23,7 +23,7 @@ export default class Home extends React.Component {
 	}
 
 	render() {
-		const { userProfile } = this.props;
+		var { userProfile } = this.props;
 		if (userProfile === undefined) {
 			userProfile = {
 				first_name: 'Not Logged In!',
