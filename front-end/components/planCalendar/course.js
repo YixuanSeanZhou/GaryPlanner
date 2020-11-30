@@ -21,7 +21,7 @@ export default class Course extends React.Component{
                             className={styles.dragHandle}
                         >
                             (drag here)
-                            <Link href={{ pathname: '/classInfo', query: { keyword: this.props.course.content } }}>
+                            <Link href={{ pathname: '/classInfo', query: { class_name: this.props.course.content } }}>
 							    <a>View Info</a>
 						    </Link>
                         </div>
