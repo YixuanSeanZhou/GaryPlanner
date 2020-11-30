@@ -2,6 +2,7 @@ from flask_cors import CORS
 from flask import Blueprint, request, jsonify
 
 from ..models.evaluations import Evaluation
+from ..models.all_classes import AllClass
 
 evaluation_api_bp = Blueprint('evaluation_api', __name__)
 CORS(evaluation_api_bp, supports_credentials=True)
@@ -24,6 +25,7 @@ def create_evaluation():
     study_hours_per_week = req_data.get('study_hours_per_week')
     avg_expected_grade = req_data.get('avg_expected_grade')
     avg_grade_received = req_data.get('avg_grade_received')
+    quarter = req_data.get('quarter')
 
     status, evaluation = Evaluation.create_evaluation(
                                 class_code=class_code,
@@ -32,7 +34,8 @@ def create_evaluation():
                                 recommend_instructor=recommend_instructor,
                                 study_hours_per_week=study_hours_per_week,
                                 avg_expected_grade=avg_expected_grade,
-                                avg_grade_received=avg_grade_received)
+                                avg_grade_received=avg_grade_received,
+                                quarter=quarter)
 
     if status:
         return jsonify({
@@ -85,6 +88,23 @@ def get_evaluation():
         return jsonify({'reason': 'missing args'}), 300
 
 
+# @evaluation_api_bp.route('/get_formatted_evaluations', methods=['GET'])
+# def get_formatted_evaluation():
+
+#     class_code = arguments.get('class_code', None)
+#     evaluations = get_evaluation()
+    
+#     if not evaluations:
+#         return jsonify({'reason': 'Class has no evaluations'}), 403
+
+#     units = AllClass.get_class_by_code()
+
+#     for i in evaluations:
+#         evaluations[i]["unit"] = "placeholder"
+#         evaluations[i]["quarter"] = "placeholder"
+#     return jsonify({'reason': 'success', 'result': evaluations}), 200
+
+
 @evaluation_api_bp.route('/update_evaluation', methods=['POST'])
 def update_evaluation():
     req_data = request.get_json()
@@ -101,6 +121,7 @@ def update_evaluation():
     study_hours_per_week = req_data.get('study_hours_per_week', None)
     avg_expected_grade = req_data.get('avg_expected_grade', None)
     avg_grade_received = req_data.get('avg_grade_received', None)
+    quarter = req_data.get('quarter', None)
 
     status, evaluation = Evaluation.update_evaluation(
                             id=eval_id, class_code=class_code,
@@ -109,7 +130,8 @@ def update_evaluation():
                             recommend_instructor=recommend_instructor,
                             study_hours_per_week=study_hours_per_week,
                             avg_expected_grade=avg_expected_grade,
-                            avg_grade_received=avg_grade_received)
+                            avg_grade_received=avg_grade_received,
+                            quarter=quarter)
 
     if status:
         return jsonify({

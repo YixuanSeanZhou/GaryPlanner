@@ -108,6 +108,30 @@ def get_formatted_class_by_search():
     return jsonify({'reason': 'failed: class DNE'}), 300
 
 
+@all_classes_api_bp.route('/get_prereq_and_description', methods=['GET'])
+def get_prereq_and_description():
+    '''
+    API for Huaming's formatted reques
+    input: class_name: str
+    output: description and prereqs for a given class
+    @author: David S
+    '''
+    class_code = request.args.get('class_code')
+    clss = AllClass.get_class_by_code(class_code=class_code)
+    if not clss:
+        return jsonify({'reason': "class DNE"}), 403
+    clss = clss.to_json()
+    prereq = clss["prerequisites"]
+    desc = clss["description"]
+    #units = clss["units"]
+    classDes = {
+        "prerequisites": prereq,
+        "description": desc#,
+        #"units": units
+    }
+    return jsonify({'reason': 'retrieved class info', 'result': classDes}), 200
+
+
 @all_classes_api_bp.route('/get_class_by_code', methods=['GET'])
 def get_class_by_code():
     '''

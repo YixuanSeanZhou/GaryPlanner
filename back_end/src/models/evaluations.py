@@ -16,6 +16,7 @@ class Evaluation(db.Model):
     study_hours_per_week = db.Column(db.Float, nullable=False)
     avg_expected_grade = db.Column(db.String(255), nullable=False)
     avg_grade_received = db.Column(db.String(255), nullable=False)
+    quarter = db.Column(db.String(255), nullable=True)
 
     def __init__(self, **kwargs):
         super(Evaluation, self).__init__(**kwargs)
@@ -30,12 +31,13 @@ class Evaluation(db.Model):
         ret['study_hours_per_week'] = self.study_hours_per_week
         ret['avg_expected_grade'] = self.avg_expected_grade
         ret['avg_grade_received'] = self.avg_grade_received
+        ret['quarter'] = self.quarter
         return ret
 
     def update_attr(self, class_code: str, instructor: str,
                     recommend_class: float, recommend_instructor: float,
                     study_hours_per_week: float, avg_expected_grade: str,
-                    avg_grade_received: str) -> bool:
+                    avg_grade_received: str, quarter: str) -> bool:
         if class_code:
             self.class_code = class_code
         if instructor:
@@ -50,6 +52,8 @@ class Evaluation(db.Model):
             self.avg_expected_grade = avg_expected_grade
         if avg_grade_received:
             self.avg_grade_received = avg_grade_received
+        if quarter:
+            self.quarter = quarter
         self.save()
         return True, self
 
@@ -60,14 +64,15 @@ class Evaluation(db.Model):
     def create_evaluation(class_code: str, instructor: str,
                           recommend_class: float, recommend_instructor: float,
                           study_hours_per_week: float, avg_expected_grade: str,
-                          avg_grade_received: str) -> bool:
+                          avg_grade_received: str, quarter: str) -> bool:
 
         evaluation = Evaluation(class_code=class_code, instructor=instructor,
                                 recommend_class=recommend_class,
                                 recommend_instructor=recommend_instructor,
                                 study_hours_per_week=study_hours_per_week,
                                 avg_expected_grade=avg_expected_grade,
-                                avg_grade_received=avg_grade_received)
+                                avg_grade_received=avg_grade_received,
+                                quarter=quarter)
         db.session.add(evaluation)
         evaluation.save()
         return True, evaluation
@@ -123,7 +128,8 @@ class Evaluation(db.Model):
                           recommend_instructor: float = None,
                           study_hours_per_week: float = None,
                           avg_expected_grade: str = None,
-                          avg_grade_received: str = None) -> bool:
+                          avg_grade_received: str = None,
+                          quarter: str = None) -> bool:
 
         evaluation = Evaluation.get_evaluation(evaluation_id=id)
         return evaluation.update_attr(
@@ -132,4 +138,5 @@ class Evaluation(db.Model):
                 recommend_instructor=recommend_instructor,
                 study_hours_per_week=study_hours_per_week,
                 avg_expected_grade=avg_expected_grade,
-                avg_grade_received=avg_grade_received)
+                avg_grade_received=avg_grade_received,
+                quarter=quarter)
