@@ -82,6 +82,21 @@
 
 }
 
+.takenContainer {
+    padding: 8px;
+    margin-bottom: 8px;
+
+    background-color: #797977;
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 2px 2px 3px rgb(221, 221, 221);
+
+}
+
 .dragHandle {
     font-size: .5rem;
     padding: 5px;

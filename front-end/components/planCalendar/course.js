@@ -28,32 +28,52 @@ export default class Course extends React.Component{
     }
 
     render() {
-        return (
-            <Draggable 
-                draggableId={this.props.course.id} index={this.props.index}
-                isDragDisabled={this.state.locked}>
-                {provided => (
-                    <div 
-                        ref={provided.innerRef}
-                        {...provided.draggableProps}
-                        className={styles.courseContainer} 
-                    >
-                        {this.props.course.content}
-                        <Button 
-                        variant="dark"
-                        onClick={this.handleClick}
-                        > 
-                            {this.state.locked ? "Unlock" : "Lock"} 
-                        </Button>
-                        <div
+        if (this.props.taken) {
+            return (
+                <Draggable 
+                    draggableId={this.props.course.id} index={this.props.index}
+                    isDragDisabled={this.state.locked}>
+                    {provided => (
+                        <div 
+                            ref={provided.innerRef}
+                            {...provided.draggableProps}
                             {...provided.dragHandleProps}
-                            className={styles.dragHandle}
+                            className={styles.takenContainer} 
                         >
-                            (drag here)
+                            {this.props.course.content}
                         </div>
-                    </div>
-                )}
-            </Draggable>
-        );
+                    )}
+                </Draggable>
+            );
+        } else {
+            return (
+                <Draggable 
+                    draggableId={this.props.course.id} index={this.props.index}
+                    isDragDisabled={this.state.locked}>
+                    {provided => (
+                        <div 
+                            ref={provided.innerRef}
+                            {...provided.draggableProps}
+                            className={styles.courseContainer} 
+                        >
+                            {this.props.course.content}
+                            <Button 
+                            variant="dark"
+                            onClick={this.handleClick}
+                            > 
+                                {this.state.locked ? "Unlock" : "Lock"} 
+                            </Button>
+                            <div
+                                {...provided.dragHandleProps}
+                                className={styles.dragHandle}
+                            >
+                                (drag here)
+                            </div>
+                        </div>
+                    )}
+                </Draggable>
+            );
+        }
+        
     }
 }

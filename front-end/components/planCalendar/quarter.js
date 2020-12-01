@@ -23,7 +23,7 @@ export default class Quarter extends React.Component {
                             className={styles.courseList}
                         >
                             {this.props.courses.map((course, index) => (
-                                <Course key={course.id} course={course} index={index} locked={course.locked} updateLocked={this.props.updateLocked}/>
+                                <Course key={course.id} course={course} index={index} locked={course.locked} updateLocked={this.props.updateLocked} taken={this.props.taken}/>
                             ))}
                             {provided.placeholder}
                         </div>

@@ -176,9 +176,8 @@ class PlanCalendar extends React.Component {
 
     updateLocked(courseId) {
         console.log("Yeet " + courseId);
-        /*
-        courseToUpdate = this.state.courses[courseId];
-        updatedCourse = {
+        const courseToUpdate = this.state.courses[courseId];
+        const updatedCourse = {
             ...courseToUpdate,
             locked: !courseToUpdate.locked
         }
@@ -194,14 +193,13 @@ class PlanCalendar extends React.Component {
         this.setState(newState);
         console.log(this.state);
         return;
-        */
     }
 
 
     render() {
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
-                <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} />
+                <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} updateLocked={this.updateLocked.bind(this)} />
                 <div className={styles.fourYearCalendarContainer}>
                 {this.state.yearOrder.map((yearId) => {
                     const year = this.state.years[yearId];
@@ -213,7 +211,7 @@ class PlanCalendar extends React.Component {
                                     const quarter = this.state.quarters[quarterId];
                                     const courses = quarter.courseIds.map(courseId => this.state.courses[courseId]);
 
-                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={this.updateLocked.bind(this)} />;
+                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={this.updateLocked.bind(this)} taken={false} />;
                                 })}
                             </div>
                         </div>
