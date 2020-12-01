@@ -31,13 +31,13 @@ class PlanCalendar extends React.Component {
 		this.props.enableLoading("Please wait");
 
 		// Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/users/create_user';
+		const requestUrl = 'http://localhost:2333/api/four_year_plan/get_formatted_plan_by_user';
 		const options = {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(this.state.formData)
+			//credentials: include
 		};
 
 		fetch(requestUrl, options)
@@ -207,6 +207,68 @@ class PlanCalendar extends React.Component {
         return;
     }
 
+    handleSearch(searchStr) {
+        this.props.enableLoading("Please wait");
+
+		// Options for the fetch request
+		const requestUrl = 'http://localhost:2333/api/all_classes/get_class_by_search?search=' + searchStr;
+		const options = {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			//credentials: include
+		};
+
+		fetch(requestUrl, options)
+		.then(response => {
+			console.log(response);
+		}).then(data => {
+            console.log("JSON Data: ", data);
+
+            var newSearchArray = []
+            const newSearchColumn = {
+                ...this.state.searchColumn,
+                courseIds: newSearchArray
+            };
+            var newCourses = {};
+
+            Object.keys(this.state.quarters).forEach((course, index) => {
+                
+                courseId = 
+                newCourses = {
+                    ...newCourses,
+                    [yearId]: quarterList
+                }
+            });
+            
+            const SearchColumn = {
+                id: 'SearchColumn',
+                title: 'Search',
+                courseIds: []
+            };
+
+            const newState = {
+                ...this.state,
+                ...data.result
+            };
+
+            const newStateAndSearch = {
+                ...newState,
+                quarters: {
+                    ...newState.quarters,
+                    ['SearchColumn']: SearchColumn
+                }
+            }
+
+            this.setState(newStateAndSearch);
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+			setTimeout(() => this.props.disableLoading(), 300);
+		});
+    }
+
 
     render() {
         var quarterArray = [];
@@ -215,6 +277,16 @@ class PlanCalendar extends React.Component {
             if(quarter !== "SearchColumn") {
                 quarterArray.push(quarter);
             } 
+        });
+
+        // Sort array into chronological order
+        const qOrder = ['WI','SP','FA'];
+        quarterArray.sort(function(a, b){
+            if (a.substr(2) === b.substr(2)) {
+                return qOrder.indexOf(a.substr(0,2)) - qOrder.indexOf(b.substr(0,2));
+            } else {
+                return parseInt(a.substr(2), 10) - parseInt(b.substr(2), 10);
+            }
         });
 
         var yearList = {};
