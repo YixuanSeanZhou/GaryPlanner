@@ -1,11 +1,10 @@
-// React and Next
 import Head from 'next/head'
 import React from 'react'
 import { withRouter } from 'next/router'
 
 // Components
 import { GaryNavbar } from '../components/commonUI'
-import { Button, Form, Navbar, Row, Col } from 'react-bootstrap'
+import { Alert, Form, Navbar, Row, Col } from 'react-bootstrap'
 import styles from '../styles/UserProfile.module.css'
 
 class UserProfile extends React.Component{
@@ -20,37 +19,46 @@ class UserProfile extends React.Component{
             LNEditable: true,
             CEditable: true,
             IGQEditable:true,
-            SQEditable:true,
-			user_name: "Loading...",
-			email: "Loading...",
-			first_name:"Loading...",
-			last_name:"Loading...",
-            intended_grad_quarter: "Loading...",
-            major: "Loading...",
-            minor: "Loading...",
-            college:"Loading...",
-			start_quarter:"Loading...",
-			
+			SQEditable:true,
+			formData:{
+				user_name: "",
+				email: "",
+				first_name:"",
+				last_name:"",
+				intended_grad_quarter: "",
+				major: "",
+				minor: "",
+				college:"",
+				start_quarter:"",
+			},
             showingAlert: false,
 			alarmText: "Error!",
 			alarmSubText: "Just error",	
 		}
 	}
 	componentDidMount() {
-        // Options for the fetch request
+		// Options for the fetch request
+		var formData = this.state.formData;
 		const requestUrl = 'http://localhost:2333/api/users/get_user_profile';
 		const options = {
             method: 'GET',
-            credentials: 'include',
+			credentials: 'include',
+			
 		};
 
 		fetch(requestUrl, options)
         .then(response => {
 
             if (response.status == 200) {
-				// TODO: Prompt Success
+				// Success
                 return response.json()
 			} else if (response.status == 403) {
+				//Not log in
+				this.setState({
+					showingAlert: true,
+					alarmText: "Not login ",
+					alarmSubText: "Please login your account."
+				});
                 this.props.router.push('/login'); 
             }
             else{
@@ -58,11 +66,10 @@ class UserProfile extends React.Component{
 				this.props.router.push('/util/error');	
             }
 
-        })
-        .then(data => {
+        }).then(data => {
             console.log('Success:', data); // TODO: Remove for deployment
 
-            this.setState(data.result);
+            this.setState({formData: data.result});
             this.setState({
                 is_loading: false,
             })
@@ -70,6 +77,8 @@ class UserProfile extends React.Component{
         })
 		.catch((error) => {
 			console.error('Error:', error);
+			setTimeout(() => this.props.disableLoading(), 300);
+			this.props.router.push('/util/error');
         });
 	}
 	
@@ -77,20 +86,22 @@ class UserProfile extends React.Component{
 		if (!this.validate()) {
 			return;
 		}
-		console.log("POSTing this data to server:", JSON.stringify(this.state));
+		
+		var formData = this.state.formData;
+		console.log("POSTing this data to server:", formData);
         // Options for the fetch request
 		const requestUrl = 'http://localhost:2333/api/users/update_profile';
 		const options = {
             method: 'POST',
             headers: {
-			'Accept': 'application/json',
-			'Content-Type': 'application/json'},
+				'Content-Type': 'application/json'
+			},
 			credentials: 'include',
-			body: JSON.stringify(this.state)
+			body: JSON.stringify(formData)
 		};
 		fetch(requestUrl, options)
         .then(response => {
-			const data = response.json();
+			console.log(response);
 
             if (response.status == 200) {
 				//success 
@@ -98,15 +109,14 @@ class UserProfile extends React.Component{
 
 			} else if (response.status == 403) {
 				//not login
-                this.props.disableLoading();
-				this.props.router.push('/login'); 
+                this.setState({
+					showingAlert: true,
+					alarmText: "Not login ",
+					alarmSubText: "Please login your account."
+				});
+                this.props.router.push('/login'); 
             }
-            else {
-                setTimeout(() => this.props.disableLoading(), 300);
-				this.props.router.push('/util/error');	
-            }
-
-			console.log('Success:', data); // TODO: Remove for deployment
+           
         })
 		.catch((error) => {
             console.error('Error:', error);
@@ -117,13 +127,14 @@ class UserProfile extends React.Component{
 	}
  
 	handleChange = (e) => {
-		this.setState({
-			[e.target.id]: e.target.value
-		});
+		var formData = this.state.formData;
+		formData[e.target.id] = e.target.value;
+		this.setState({formData});
 	}
 
 	validate(){
-		if (this.state.first_name === "") {
+		const {user_name, email, first_name, last_name,intended_grad_quarter,major,minor,college,start_quarter } = this.state.formData;
+		if (first_name === "") {
 			this.setState({
 				showingAlert: true,
 				alarmText: "First name can't be blank!",
@@ -131,7 +142,7 @@ class UserProfile extends React.Component{
 			});
 			return false;
 		}
-		if (this.state.last_name === "") {
+		if (last_name === "") {
 			this.setState({
 				showingAlert: true,
 				alarmText: "Last name can't be blank!",
@@ -143,6 +154,17 @@ class UserProfile extends React.Component{
 	}
 
 	render(){
+		let alarmBody;
+		let formData = this.state.formData;
+		if (this.state.alarmSubText === "") {
+			alarmBody = <Alert.Heading>{this.state.alarmText}</Alert.Heading>;
+		} else {
+			alarmBody = <>
+				<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+				<div>{this.state.alarmSubText}</div>
+			</>;
+		}
+		
 		return (
 			<>
 				<Head>
@@ -158,7 +180,7 @@ class UserProfile extends React.Component{
 					<section>
 					<img src="/images/profile_picture.png"  width="256" height="256" />
 						<div>
-							<h2>Hello! {this.state.user_name}</h2>
+							<h2>Hello! {formData.user_name}</h2>
 						</div>
 						<br />
 						<Form>
@@ -169,7 +191,7 @@ class UserProfile extends React.Component{
 										id="first_name"
 										readOnly = {this.state.FNEditable}
 										plaintext
-										value={this.state.first_name}
+										value={formData.first_name}
 										onChange={this.handleChange}
 									/>
 								</Col>
@@ -191,7 +213,7 @@ class UserProfile extends React.Component{
 										id="last_name"
 										readOnly = {this.state.LNEditable}
 										plaintext
-										value={this.state.last_name}
+										value={formData.last_name}
 										onChange={this.handleChange}
 									/>
 								</Col>
@@ -213,7 +235,7 @@ class UserProfile extends React.Component{
 										id="major"
 										plaintext
 										readOnly={this.state.majorEditable}
-										value={this.state.major}
+										value={formData.major}
 										onChange={this.handleChange}
 									/>
 								</Col>
@@ -234,13 +256,13 @@ class UserProfile extends React.Component{
 									<Form.Control id="minor" 
 									readOnly = {this.state.minorEditable}
 									plaintext 
-									value={this.state.minor} 
+									value={formData.minor} 
 									onChange={this.handleChange}
 									/>
 								</Col>
 								<Col>
 								<div class="btn-group mr-2" role="group" aria-label="First group">
-										<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({minorditable: false })} />
+										<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({minorEditable: false })} />
 									
 									</div>
 									<img src="/images/save.png" style={{cursor: 'pointer'}}  width="15" height="15" onClick={() =>{ this.setState({minorEditable: true }),this.handleClick()}} />
@@ -248,7 +270,7 @@ class UserProfile extends React.Component{
 							</Form.Group>
 						</Form>
 						Email
-						<p>{this.state.email}</p>
+						<p>{formData.email}</p>
 
                         <Form>
 							<Form.Label>College</Form.Label>
@@ -258,7 +280,7 @@ class UserProfile extends React.Component{
 										id="college"
 										readOnly = {this.state.CEditable}
 										plaintext
-										value={this.state.college}
+										value={formData.college}
 										onChange={this.handleChange}
 									/>
 								</Col>
@@ -274,10 +296,18 @@ class UserProfile extends React.Component{
 						</Form>
 						
 						Intended Graduate Quarter
-						<p>{this.state.intended_grad_quarter}</p>
+						<p>{formData.intended_grad_quarter}</p>
 						
 					</section>
-						
+					<Alert 
+						show={this.state.showingAlert} 
+						onClick={() => this.setState({showingAlert: false})} 
+						variant='danger'
+						className={styles.myAlert}
+						dismissible
+					>
+						{alarmBody}
+					</Alert>
 					
 				</div>
 			</>

@@ -7,7 +7,7 @@ import Particles from 'react-particles-js';
 
 // Components
 import { GaryNavbar } from '../components/commonUI'
-import { Form, Button, Navbar } from 'react-bootstrap'
+import { Alert ,Form, Button, Navbar } from 'react-bootstrap'
 
 import styles from '../styles/Auth.module.css'
 
@@ -15,14 +15,15 @@ class ChangePass extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			old_pwd:"",
-			pwd:"",
-			pwdconfirm:"",
+			formData: {
+				old_pwd:"",
+				pwd:"",
+				pwdconfirm:"",
+			},
 
-		
-		showingAlert: false,
-		alarmText: "Error!",
-		alarmSubText: "Just error",	
+			showingAlert: false,
+			alarmText: "Error!",
+			alarmSubText: "Just error",	
 		}
 
 	}
@@ -30,8 +31,10 @@ class ChangePass extends React.Component {
 		if (!this.validate()) {
 			return;
 		}
-		this.props.enableLoading("Please wait");
-		console.log("Posting this data to server:", JSON.stringify(this.state));
+		
+
+		var formData = this.state.formData;
+		console.log("Posting this data to server:", formData);
 
 		// Options for the fetch request
 		const requestUrl = ' http://localhost:2333/api/users/change_pwd';
@@ -40,7 +43,7 @@ class ChangePass extends React.Component {
 			headers: {
 				'Content-Type': 'application/json'},
 			credentials: 'include',
-			body: JSON.stringify(this.state)
+			body: JSON.stringify(formData)
 			}
 			
 
@@ -61,37 +64,22 @@ class ChangePass extends React.Component {
 			} else if (response.status == 400) {
 				// Old passward wrong
 				// TODO: Prompt
-				return response.json()
-
-			} else if (response.status == 403) {
-			// Not Logged in
-			// TODO: Prompt
-			this.props.disableLoading();
-			this.props.router.push('/login'); 
-		}		
-			
-		}).then(data =>{
-			console.log("JSON Data:", data);
-			if (data === undefined){
-				return;
-			}
-			if (data.reason === "old password wrong") {
 				this.setState({
 					showingAlert: true,
 					alarmText: "Old password is wrong ",
 					alarmSubText: "Please enter correct password."
 				});
 
-				setTimeout(() => this.props.disableLoading(), 300);
-			} else if (data.reason === "Not logged in!") {
-				this.setState({
-					showingAlert: true,
-					alarmText: "User does not log in ",
-					alarmSubText: "Please log in your account."
-				});
-
-				setTimeout(() => this.props.disableLoading(), 300);
-			} 
+			} else if (response.status == 403) {
+			// Not Logged in
+			// TODO: Prompt
+			this.setState({
+				showingAlert: true,
+				alarmText: "User does not log in ",
+				alarmSubText: "Please log in your account."
+			});
+		}		
+			
 		})
 		.catch((error) => {
 			console.error('Error:', error);
@@ -101,12 +89,13 @@ class ChangePass extends React.Component {
 	};
 
 	handleChange = (e) => {
-		this.setState({
-			[e.target.id]: e.target.value
-		});
+		var formData = this.state.formData;
+		formData[e.target.id] = e.target.value;
+		this.setState({formData});
 	};
 	validate() {
-		if (this.state.old_pwd === "") {
+		const {old_pwd,pwd,pwdconfirm } = this.state.formData;
+		if (old_pwd === "") {
 			this.setState({
 				showingAlert: true,
 				alarmText: "Old password can't be blank!",
@@ -114,7 +103,7 @@ class ChangePass extends React.Component {
 			});
 			return false;
 		}
-		if (this.state.pwd === "") {
+		if (pwd === "") {
 			this.setState({
 				showingAlert: true,
 				alarmText: "New password can't be blank!",
@@ -122,7 +111,7 @@ class ChangePass extends React.Component {
 			});
 			return false;
 		}
-		if (this.state.pwdconfirm=== "") {
+		if (pwdconfirm=== "") {
 			this.setState({
 				showingAlert: true,
 				alarmText: "Confirm password can't be blank!",
@@ -130,7 +119,7 @@ class ChangePass extends React.Component {
 			});
 			return false;
 		}
-		if (this.state.pwd !== this.state.pwdconfirm) {
+		if (pwd !== pwdconfirm) {
 			this.setState({
 				showingAlert: true,
 				alarmText: "Passwords Doesn't match",
@@ -141,10 +130,22 @@ class ChangePass extends React.Component {
 		return true;
 	}
 	render() {
+		let alarmBody;
+		let formData = this.state.formData;
+		
+			if (this.state.alarmSubText === "") {
+				alarmBody = <Alert.Heading>{this.state.alarmText}</Alert.Heading>;
+			} else {
+				alarmBody = <>
+					<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+					<div>{this.state.alarmSubText}</div>
+				</>;
+			}
+		
 		return (
 			<>
 				<Head>
-					<title>Home</title>
+					<title>Change Password</title>
 				</Head>
 
 				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
@@ -214,7 +215,7 @@ class ChangePass extends React.Component {
 									<Form.Control
 										type="password"
 										id="old_pwd"
-										value ={this.state.old_pwd}
+										value ={formData.old_pwd}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
@@ -226,7 +227,7 @@ class ChangePass extends React.Component {
 									<Form.Control
 										type="password"
 										id="pwd"
-										value ={this.state.pwd}
+										value ={formData.pwd}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
@@ -238,24 +239,35 @@ class ChangePass extends React.Component {
 									<Form.Control
 										type="password"
 										id="pwdconfirm"
-										value ={this.state.pwdconfirm}
+										value ={formData.pwdconfirm}
 										onChange={this.handleChange}
 									/>
 								</Form.Group>
 
 								<div style={{ textAlign: 'right' }}>
 									<Button
-										type="submit"
 										value="submit"
-										className="bg-orange mt-3"
-										onClick={this.handleClick}>
+										onClick={this.handleClick}
+									>
 										Submit
-									</Button>{' '}
+									</Button>
 								</div>
 							</Form>
 						</div>
+						<Alert 
+						show={this.state.showingAlert} 
+						onClick={() => this.setState({showingAlert: false})} 
+						variant='danger'
+						className={styles.myAlert}
+						dismissible
+						>
+						{alarmBody}
+						</Alert>
 					</div>
+					
 				</div>
+				
+
 			</>
 		)
 	}
