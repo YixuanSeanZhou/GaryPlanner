@@ -114,7 +114,6 @@ def update_evaluation():
                             study_hours_per_week=study_hours_per_week,
                             avg_expected_grade=avg_expected_grade,
                             avg_grade_received=avg_grade_received)
-
     if status:
         return jsonify({
             'reason': 'success',

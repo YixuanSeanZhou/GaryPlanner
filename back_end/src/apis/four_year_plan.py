@@ -8,7 +8,7 @@ from flask import Blueprint, request, jsonify
 from flask_login import login_required, current_user
 from datetime import datetime
 from pytz import timezone
-import pytz
+# import pytz
 
 from ..models.four_year_plan import FourYearPlan
 
@@ -221,7 +221,8 @@ def update_entry():
     grade = req_data.get('grade', None)
     locked = req_data.get('locked', None)
 
-    s, p = FourYearPlan.update_entry(id=id, user_id=user_id, class_code=class_code,
+    s, p = FourYearPlan.update_entry(id=id, user_id=user_id, 
+                                     class_code=class_code,
                                      class_schedule_id=class_schedule_id,
                                      quarter_taken=quarter_taken, grade=grade,
                                      locked=locked)

@@ -9,7 +9,7 @@ class Evaluation(db.Model):
     __tablename__ = "Evaluations"
 
     id = db.Column(db.Integer, primary_key=True)
-    class_code = db.Column(db.String(255),nullable=False)
+    class_code = db.Column(db.String(255), nullable=False)
     quarter = db.Column(db.String(255), nullable=False)
     instructor = db.Column(db.String(255), nullable=False)
     recommend_class = db.Column(db.Float, nullable=False)
@@ -66,7 +66,8 @@ class Evaluation(db.Model):
                           study_hours_per_week: float, avg_expected_grade: str,
                           avg_grade_received: str) -> bool:
 
-        evaluation = Evaluation(class_code=class_code, quarter=quarter, instructor=instructor,
+        evaluation = Evaluation(class_code=class_code, quarter=quarter,
+                                instructor=instructor,
                                 recommend_class=recommend_class,
                                 recommend_instructor=recommend_instructor,
                                 study_hours_per_week=study_hours_per_week,
@@ -75,6 +76,7 @@ class Evaluation(db.Model):
         db.session.add(evaluation)
         evaluation.save()
         return True, evaluation
+
 
     @staticmethod
     def get_evaluations() -> List[Evaluation]:
@@ -107,12 +109,14 @@ class Evaluation(db.Model):
         for i in range(len(split)):
             split[i] = "%"+split[i].strip()+"%"
 
-        evaluations = Evaluation.query.filter(Evaluation.instructor.ilike(split[0]))
+        evaluations = Evaluation.query.filter(
+                Evaluation.instructor.ilike(split[0]))
 
-        for i in range(1,len(split)):
+        for i in range(1, len(split)):
             if len(split[i]) > 3:
                 print(split[i])
-                evaluations = evaluations.filter(Evaluation.instructor.ilike(split[i]))
+                evaluations = evaluations.filter(
+                        Evaluation.instructor.ilike(split[i]))
 
         if evaluations.first():
             return evaluations
