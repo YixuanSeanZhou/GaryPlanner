@@ -66,11 +66,12 @@ def run_degree_audit_benson():
             sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.split('\n')[0]
             if 'WARREN' in sub_text:
                 sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.replace('\n', '')
-                
+                print(sub_text)
                 num = int(float(reqb[i].text.split(' ')[1]))
                 unit = (reqb[i].text.split(' ')[2])
                 sub_req[sub_text] = {}
                 sub_req[sub_text]['needs'] = {unit: int(num)}
+                print(sub_req[sub_text])
                 continue
             if '48 Upper' in sub_text or '>>' in sub_text or 'Area' in sub_text:
                 continue
@@ -137,9 +138,6 @@ def run_degree_audit_benson():
                             #need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
                     except:
                         sub_req[sub_text][subreq_text]['needs'] = {}
-                    # print(sub_text)
-                        # print(subreq_text)
-                        # print('N/A')
 
                 # in_q = ''
                 # if 'Fall' == in_quarter.split(' ')[0]:
@@ -161,13 +159,16 @@ def run_degree_audit_benson():
                 
             # if sub_req[sub_text] == {}:
             #     sub_req.pop(sub_text, None)
+            # print(sub_req)
 
-            ret = {'major': get_major(driver), 'college': get_college(driver), 'req': sub_req}
-            # print(ret)
-            with open ('benson_taken.json', 'w') as file:
-                json.dump(taken, file)
-            with open ('benson_da.json', 'w') as file:
-                json.dump(ret, file)
+        # print(sub_req['WARREN-GE HUMANITIES/FINE ARTS (HFA)AREA STUDY-Required'])
+        print(round(i / len(reqh), 2), end='\r')
+    ret = {'major': get_major(driver), 'college': get_college(driver), 'req': sub_req}
+    # print(ret)
+    with open ('benson_taken.json', 'w') as file:
+        json.dump(taken, file)
+    with open ('benson_da.json', 'w') as file:
+        json.dump(ret, file)
     return ret, in_q, taken
 
 
