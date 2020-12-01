@@ -67,13 +67,28 @@ class PlanCalendar extends React.Component {
             }
             */
 		}).then(data => {
-			console.log("JSON Data: ", data);
+            console.log("JSON Data: ", data);
+            
+            const SearchColumn = {
+                id: 'SearchColumn',
+                title: 'Search',
+                courseIds: []
+            };
+
             const newState = {
                 ...this.state,
                 ...data.result
             };
 
-            this.setState(newState);
+            const newStateAndSearch = {
+                ...newState,
+                quarters: {
+                    ...newState.quarters,
+                    ['SearchColumn']: SearchColumn
+                }
+            }
+
+            this.setState(newStateAndSearch);
 		})
 		.catch((error) => {
 			console.error('Error:', error);
@@ -175,43 +190,82 @@ class PlanCalendar extends React.Component {
     }
 
     updateLocked(courseId) {
-        console.log("Yeet " + courseId);
         const courseToUpdate = this.state.courses[courseId];
         const updatedCourse = {
             ...courseToUpdate,
             locked: !courseToUpdate.locked
         }
-
         const newState = {
             ...this.state,
             courses: {
                 ...this.state.courses,
-                updatedCourse
+                [updatedCourse.id]: updatedCourse
             }
         };
 
         this.setState(newState);
-        console.log(this.state);
         return;
     }
 
 
     render() {
+        var quarterArray = [];
+        var taken = true;
+        Object.keys(this.state.quarters).forEach((quarter, index) => {
+            if(quarter !== "SearchColumn") {
+                quarterArray.push(quarter);
+            } 
+        });
+
+        var yearList = {};
+
+        while (quarterArray.length >= 3) {
+            var quarterList = quarterArray.slice(0,3); // Get next 3 quarters
+            quarterArray.splice(0,3); // Remove from quarterArray
+            var yearId = quarterList[0].substr(-2) + "-" + quarterList[2].substr(-2); // Create the title for the year
+
+            yearList = {
+                ...yearList,
+                [yearId]: quarterList
+            }
+        }
+
+        // Capture any remaining
+        if (quarterArray.length > 0) {
+            var quarterList = quarterArray.slice(0,quarterArray.length); // Get next 3 quarters
+            var yearId = quarterList[0].substr(-2) + "-" + quarterList[quarterList.length-1].substr(-2); // Create the title for the year
+
+            yearList = {
+                ...yearList,
+                [yearId]: quarterList
+            }
+        }
+
+        var yearArray = [];
+        Object.keys(yearList).forEach((yearId, index) => {
+            yearArray.push(yearId);
+        });
+
+
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
                 <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} updateLocked={this.updateLocked.bind(this)} />
                 <div className={styles.fourYearCalendarContainer}>
-                {this.state.yearOrder.map((yearId) => {
-                    const year = this.state.years[yearId];
+                {yearArray.map((yearId) => {
+                    const year = yearList[yearId];
                     return (
                         <div className={styles.yearContainer}>
-                            <h2>{year.title}</h2>
+                            <h2>{yearId}</h2>
                             <div className={styles.multQuarterContainer}>
-                                {year.quarterIds.map((quarterId) => {
+                                {year.map((quarterId) => {
                                     const quarter = this.state.quarters[quarterId];
                                     const courses = quarter.courseIds.map(courseId => this.state.courses[courseId]);
+                                    // Once we get to the current quarter, allow editing
+                                    if(quarterId === this.state.current_quarter){
+                                        taken = false;
+                                    }
 
-                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={this.updateLocked.bind(this)} taken={false} />;
+                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={this.updateLocked.bind(this)} taken={taken} />;
                                 })}
                             </div>
                         </div>

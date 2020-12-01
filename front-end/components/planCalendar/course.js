@@ -16,7 +16,6 @@ export default class Course extends React.Component{
     
     
     handleClick = (e) => {
-        console.log("Yeet toggle");
         const newState = {
             ...this.state,
             locked: !this.state.locked
