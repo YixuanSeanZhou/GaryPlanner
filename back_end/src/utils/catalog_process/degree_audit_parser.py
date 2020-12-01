@@ -26,7 +26,7 @@ def _get_driver(link):
     return driver
 
 def run_degree_audit_benson():
-    driver = _get_driver("file:///usr/src/app/src/utils/web_crawler/benson_dq.html")
+    driver = _get_driver("file:///usr/src/app/src/utils/catalog_process/benson_dq.html")
     major = get_major(driver)
     college = get_college(driver)
     reqh = driver.find_elements_by_class_name('reqHeaderTable')

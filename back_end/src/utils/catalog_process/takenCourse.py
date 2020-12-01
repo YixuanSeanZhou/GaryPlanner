@@ -14,6 +14,26 @@ class Quarter(Enum):
     WI = 0
     SP = 1
 
+
+# quarters: list of passed quarters (sorted) from the start to the current; can be the first return value of sortTakenCourse
+# taken: taken courses in dict form; can be the second return value of sortTakenCourse
+# planed: 2d list of planed courses. 
+# first return: list of sorted quarters from the start to the very end (not current)
+# second return: taken and planned courses in dict form. Should rander the 4-year-plan using this
+def combineCourse(quarters, taken, planed):
+    combined = dict(taken)
+    length = len(planed)
+    planed = iter(planed)
+    quarters = list(quarters)
+    currQ = quarters[-1]
+    currNum = int(currQ[2:])*3+Quarter[currQ[:2]].value
+    for num in range(currNum+1, currNum+length+1):
+        quar = getQuarterName(num)
+        combined[quar] = next(planed)
+        quarters.append(quar)
+    return quarters, combined
+
+
 # returns: first: a sorted list of quarters e.g. ['SP18', 'FA18', 'WI19', 'SP19', 'FA19', 'WI20', 'SP20', 'FA20', 'WI21']
 # second: dict of courses where key is the quarter name and value is the list of courses taken that quarter
 # third: a list of all taken courses
@@ -27,10 +47,24 @@ def sortTakenCourse(courses, start = "FA18"):
             sortedCourse[term] = []
         sortedCourse[term].append(course["course"])
         takeCourses.append(course["course"])
-    return sorted(sortedCourse.keys(), key=lambda x: int(x[2:])*3+Quarter[x[:2]].value), sortedCourse, takeCourses
+    
+    newCourse = {}
+    for key in sortedCourse:
+        if getQuarterValue(key) >= getQuarterValue(start):
+            newCourse[key] = sortedCourse[key]
+    return sorted(newCourse.keys(), key=getQuarterValue), newCourse, takeCourses
+
+def getQuarterValue(quarter):
+    return int(quarter[2:])*3+Quarter[quarter[:2]].value
+
+def getQuarterName(quarter):
+    return Quarter(quarter%3).name + str(quarter//3)
 
 
-
+# userInfo is bensonInfo above
+# first return: list of taken courses
+# second return: list of planed courses
+# third return: number of ge needed
 def getNeededCourse(userInfo):
     userInfo = userInfo["req"]
     ge = 0
@@ -101,4 +135,11 @@ def checkGE(user,key,college): # for Warren
 
 
 if __name__ == '__main__':
-    print(getNeededCourse(bensonInfo))
+    planned = [['CSE 131', 'CSE 120', 'CSE 107', 'GE 0'], ['CSE 103', 'CSE 106', 'CSE 112', 'GE 1'], ['CSE 113', 'CSE 118', 'CSE 123', 'GE 2'], ['CSE 124', 'GE 3', 'GE 4', 'GE 5']]
+    quar, ta, _ = sortTakenCourse(takenCoures)
+    # print(quar)
+    # print(combineCourse(quar, ta, planned))
+    q2,d2 = combineCourse(quar, ta, planned)
+    # print(quar)
+    for q in q2:
+        print(d2[q])
