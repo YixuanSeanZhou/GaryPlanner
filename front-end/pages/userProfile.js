@@ -105,7 +105,6 @@ class UserProfile extends React.Component{
 
             if (response.status == 200) {
 				//success 
-				this.props.enableLoading("Success")
 
 			} else if (response.status == 403) {
 				//not login
@@ -299,6 +298,7 @@ class UserProfile extends React.Component{
 						<p>{formData.intended_grad_quarter}</p>
 						
 					</section>
+					
 					<Alert 
 						show={this.state.showingAlert} 
 						onClick={() => this.setState({showingAlert: false})} 
@@ -306,8 +306,10 @@ class UserProfile extends React.Component{
 						className={styles.myAlert}
 						dismissible
 					>
-						{alarmBody}
+						<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+						<div>{this.state.alarmSubText}</div>
 					</Alert>
+
 					
 				</div>
 			</>
