@@ -1,0 +1,30 @@
+[
+ {
+  "code": "SYN 1",
+  "title": "Perspectives on a Changing Planet",
+  "unit": "4",
+  "description": "Synthesis 1 introduces students to the methods, challenges, and rewards of working across disciplines and models of interdisciplinary thinking by using a variety of disciplinary perspectives to enhance students' understanding of our changing planet. Students are asked to engage in interdisciplinary thinking through the course assignments.",
+  "prerequisite": "Seventh College students only, completion of UC Entry Level Writing requirement, must be taken for a letter grade to count toward Seventh College general-education requirements."
+ },
+ {
+  "code": "SYN 2",
+  "title": "Explorations of a Changing Planet",
+  "unit": "4",
+  "description": "Synthesis 2 builds upon the skills developed in Synthesis 1 by introducing research methods, culminating in an interdisciplinary research paper that students design around the changing planet topics addressed in the course and each student's own interests.",
+  "prerequisite": "Seventh College students only, SYN 1, must be taken for a letter grade to count toward Seventh College general-education requirements."
+ },
+ {
+  "code": "SYN 100",
+  "title": "Solutions for a Changing Planet",
+  "unit": "4",
+  "description": "Synthesis 100 is a project-based course that builds on skills developed in Synthesis 1 and Synthesis 2 by taking a collaborative, interdisciplinary approach to solving complex problems. SYN 100 is the third course in the Synthesis Program's three-course sequence.",
+  "prerequisite": "upper-division standing, completion of SYN 1 and 2, must be taken for a letter grade to count toward Seventh College general-education requirements."
+ },
+ {
+  "code": "SYN 500",
+  "title": "Apprentice Teaching in Synthesis Program",
+  "unit": "2 or 4",
+  "description": "Consideration and development of key changing planet topics and pedagogical methods appropriate to undergraduate teaching in the interdisciplinary Synthesis Program writing courses, under the supervision of the program director. May be taken for credit up to eighteen times.",
+  "prerequisite": "department approval required."
+ }
+]

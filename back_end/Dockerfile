@@ -25,6 +25,7 @@ RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`cu
 RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 # Set display port as an environment variable
 ENV DISPLAY=:99
+EXPOSE 5000
 
 # install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends netcat
@@ -37,3 +38,5 @@ RUN pip install -r requirements.txt
 COPY . /usr/src/app/
 
 ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+
+CMD [ "run", "--host", "0.0.0.0" ]

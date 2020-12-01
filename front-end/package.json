@@ -8,11 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
-    "@auth0/auth0-react": "^1.1.0",
+    "@syncfusion/ej2-react-schedule": "^18.3.47",
     "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
     "next": "^10.0.1",
     "react": "17.0.1",
+    "react-beautiful-dnd": "^13.0.0",
     "react-bootstrap": "^1.4.0",
-    "react-dom": "17.0.1"
+    "react-bootstrap-table": "^4.3.1",
+    "react-dom": "17.0.1",
+    "react-loading-overlay": "^1.0.1",
+    "react-particles-js": "^3.4.1",
+    "react-pro-sidebar": "^0.4.4"
+  },
+  "devDependencies": {
+    "sass": "^1.29.0"
   }
 }
