@@ -54,6 +54,7 @@ def run_degree_audit_benson():
 
     sub_req = {}
     taken = []
+    need = []
     start = False
     for i in range(len(reqh)):
         if 'MAJOR REQUIREMENTS' in reqh[i].text:
@@ -123,21 +124,40 @@ def run_degree_audit_benson():
                     # special case for warren
                     try:
                         need_table = sub.find_element_by_css_selector('table.subreqNeeds')
+                        
                         trs = need_table.find_elements_by_tag_name('td')
                         sub_req[sub_text][subreq_text]['needs'] = {trs[2].text: int(trs[1].text)}
-                        td = sub.find_element_by_css_selector('td.fromcourselist')
+                        courses = sub.find_element_by_css_selector('table.selectcourses')
+                        td = courses.find_element_by_css_selector('td.fromcourselist')
                         if 'Elective' not in subreq_text:
                             sub_req[sub_text][subreq_text]['course_needs'] = parseClassWithOr(td.text)
+                            #need.append(sub_req[sub_text][subreq_text]['course_needs'])
                         else:
                             sub_req[sub_text][subreq_text]['course_needs'] = parseClassIgnoreOr(td.text)
+                            #need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
                     except:
                         sub_req[sub_text][subreq_text]['needs'] = {}
                     # print(sub_text)
                         # print(subreq_text)
                         # print('N/A')
-                        pass
-                            #except:
-                        #    print('NO NEED')
+
+                # in_q = ''
+                # if 'Fall' == in_quarter.split(' ')[0]:
+                #     in_q = 'FA'
+                # elif 'Winter' == in_quarter.split(' ')[0]:
+                #     in_q = 'WI'
+                # else:
+                #     in_q = 'SP'
+                # year = in_quarter.split(' ')[1]
+                # year = year.replace('20', '')
+                # year = int(year)
+                # in_q += year
+                
+                        #except:
+                    #    print('NO NEED')
+            
+        # if sub_req[sub_text] == {}:
+        #     sub_req.pop(sub_text, None)
                 
             # if sub_req[sub_text] == {}:
             #     sub_req.pop(sub_text, None)
