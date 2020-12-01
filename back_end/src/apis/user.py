@@ -170,7 +170,10 @@ def update_profile():
     start_quarter = req_data.get('start_quarter', None)
 
     if user_name and User.get_user_by_user_name(user_name):
-        return jsonify({'reason': 'user name exists'}), 400
+        if User.get_user_by_user_name(user_name).id != current_user.id:
+            return jsonify({'reason': 'user name exists'}), 400
+        else:
+            user_name = None
 
     s, p = User.update_profile(user_id=u_id, first_name=first_name,
                                last_name=last_name,
