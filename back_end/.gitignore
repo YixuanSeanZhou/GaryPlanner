@@ -4,5 +4,5 @@ postgres-data/*
 src/__pycache__/*
 *.ipynb
 *.pdf
-.json
+*.json
 .devcontainer/*
