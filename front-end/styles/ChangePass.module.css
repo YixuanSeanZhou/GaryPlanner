@@ -1,0 +1,15 @@
+.main {
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    width: 30%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons {
+    margin: 20px;
+}

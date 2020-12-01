@@ -1,26 +1,34 @@
+import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import PlanCalendar from '../components/planCalendar'
+import PlanCalendar from '../components/planCalendar/planCalendar'
 // Components
-import { GaryNavbar } from '../components/commonUI';
+
+import { GaryNavbar } from '../components/commonUI'
 import { Navbar } from 'react-bootstrap';
 
-export default function Plan() {
-    return (
-        <>
-            <Head>
-                <title>Plan</title>
-            </Head>
+// Styles
+import styles from '../styles/FourYearPlan.module.css'
 
-            <GaryNavbar>
-                <Navbar.Text>
-                   Four Year Plan 
-                </Navbar.Text>
-            </GaryNavbar>
+export default class Plan extends React.Component {
 
-            <div id="planCalendar">
-                <PlanCalendar />
-            </div>
-        </>
-    )
+    render() {
+        return (
+            <>
+                <Head>
+                    <title>Plan</title>
+                </Head>
+
+                <GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+                    <Navbar.Text>
+                    Four Year Plan 
+                    </Navbar.Text>
+                </GaryNavbar>
+
+                <div id="planCalendar" className={styles.mainContainer}>
+                    <PlanCalendar />
+                </div>
+            </>
+        )
+    }
 }

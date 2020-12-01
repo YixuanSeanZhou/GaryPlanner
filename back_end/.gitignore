@@ -4,5 +4,6 @@ postgres-data/*
 src/__pycache__/*
 *.ipynb
 *.pdf
-json
 .devcontainer/*
+*.pdf
+degree_audit.json

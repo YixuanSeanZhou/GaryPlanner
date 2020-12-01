@@ -1,0 +1,108 @@
+.page-title {
+    text-align: center;
+    font-weight: 100;
+}
+  
+.page-description {
+    border: 1px solid #000;
+    margin: 2px;
+    text-align: center;
+    padding: 30px;
+}
+.wrapper { 
+    margin: 4px, 4px; 
+    padding: 4px; 
+    border: 1px solid transparent;
+    background-color:transparent; 
+    width: 1200px; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    white-space: nowrap; 
+    display: flex;
+    line-height: 100px;
+  }
+  
+  .item {
+    width: 320px;
+    flex-shrink: 0;
+    height: 420px;
+    border: 1px solid gray;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(148, 170, 221);
+    box-shadow: 2px 2px 2px rgb(88, 84, 84);
+    display: flex;
+    flex-direction: column;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    
+  }
+
+  .instructor{
+    list-style-type:none;
+    list-style-image: url("../public/images/icons8-school-director-64.png");
+    text-align:left;
+    font-size: 15px;
+  }
+
+  .grade{
+    list-style-type:none;
+    list-style-image: url("../public/images/icons8-rating-64.png");
+    text-align:left;
+    font-size: 15px;
+  }
+
+  .hour{
+    list-style-type:none;
+    list-style-image: url("../public/images/icons8-clock-64.png");
+    text-align:left;
+    font-size: 15px;
+  }
+
+  .floatQuarter{
+    width: 60%;
+    height: 60%;
+    float: left;
+    margin-left: auto;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(53,68,104);
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px rgb(88, 84, 84);
+  }
+
+  .floatContainer{
+    width: 320px;
+    height: 15%;
+  }
+
+  .floatUnit{
+    width: 20%;
+    height: 50%;
+    float: right;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(53,68,104);
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px rgb(88, 84, 84);
+  }
+
+  .table{
+    width: 340px;
+    height: 510px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color:rgb(82, 122, 214);
+    box-shadow: 5px 5px 5px rgb(221, 221, 221);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }

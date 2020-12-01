@@ -1,0 +1,51 @@
+[
+ {
+  "code": "REV 1",
+  "title": "First Year Experience",
+  "unit": "2",
+  "description": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and cocurricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking and organizational, interpersonal, and wellness skills. P/NP grades only.",
+  "prerequisite": "open to Revelle College first-year students only. (F)"
+ },
+ {
+  "code": "REV 2",
+  "title": "Transfer Year Experience",
+  "unit": "2",
+  "description": "This course facilitates academic success at a leading research university by helping students understand and embrace academic and curricular expectations, engage and map cocurricular opportunities, and strengthen critical thinking and organizational, interpersonal, and wellness skills. P/NP grades only.",
+  "prerequisite": "open to Revelle College transfer students only. (F)"
+ },
+ {
+  "code": "REV 12",
+  "title": "Practicing the Science of Mindfulness",
+  "unit": "1",
+  "description": "Weekly seminars with a faculty member for Revelle undergraduates interested in the science of mindfulness and how to use it for stress management, interpersonal skills, performance improvement, and to increase the sense of well-being. P/NP grades only.",
+  "prerequisite": "open to Revelle undergraduate students only. (S)"
+ },
+ {
+  "code": "REV 16",
+  "title": "Leadership in Practice",
+  "unit": "1",
+  "description": "This weekly class is for all Revelle undergraduate levels seeking to connect leadership theory to practice while exploring how leadership can be exercised in classrooms, communities, and a variety of career pathways. P/NP grades only.",
+  "prerequisite": "enrollment limited to Revelle College students. (W,S)"
+ },
+ {
+  "code": "REV 20",
+  "title": "Revelle First-year Student Honors Program Seminar",
+  "unit": "0",
+  "description": "Weekly seminars with a faculty member (chosen each year by the provost to match the interests of participating students). This seminar will acquaint students with the scholarship and research being conducted by faculty and instill in students a sense of participation in the scholarly life at UC San Diego. P/NP grades only.",
+  "prerequisite": "by invitation only. (F,W,S)"
+ },
+ {
+  "code": "REV 88",
+  "title": "Succeeding in Scientific Research",
+  "unit": "1",
+  "description": "This course will evaluate strategies used to select impactful topics and research questions, how to turn curiosity into knowledge by posing effective hypotheses. Practical topics\u2014how to design an experiment, how to make effective arguments in written/spoken forms of scientific communication. P/NP grades only. (S)",
+  "prerequisite": null
+ },
+ {
+  "code": "REV 99H",
+  "title": "Independent Study",
+  "unit": "1",
+  "description": "Independent study or research under direction of a member of the faculty.",
+  "prerequisite": "first-year class standing. Students must have been offered a Regents Scholarship. Special Studies preauthorization required. (F,W,S)"
+ }
+]
