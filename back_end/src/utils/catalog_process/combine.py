@@ -1,10 +1,10 @@
-from plan_generation import generate_four_year_plan as gfyp
-from plan_generation import load_catalog
-from degree_audit_parser import run_degree_audit_benson as rdab
+from .plan_generation import generate_four_year_plan as gfyp
+from .plan_generation import load_catalog
+from .degree_audit_parser import run_degree_audit_benson as rdab
 
-from takenCourse import getNeededCourse as gnc
-from takenCourse import sortTakenCourse as stc
-from takenCourse import combineCourse as cb
+from .takenCourse import getNeededCourse as gnc
+from .takenCourse import sortTakenCourse as stc
+from .takenCourse import combineCourse as cb
 import json
 import copy
 
@@ -31,7 +31,6 @@ def final_output(taken, plan):
 
 def obtain_json_file():
     rdab()
-
 
 def main():
     rdab()
