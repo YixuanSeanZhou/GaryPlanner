@@ -14,7 +14,10 @@ export default class Quarter extends React.Component {
         return (
             <div className={styles.quarterContainer}>
                 <h3>{this.props.quarter.title}</h3>
-                <Droppable droppableId={this.props.quarter.id}>
+                <Droppable 
+                    droppableId={this.props.quarter.id}
+                    isDropDisabled={this.props.taken}
+                >
                     {// For droppable to work, its contents must be a function that returns a component
                     provided => (
                         <div 
