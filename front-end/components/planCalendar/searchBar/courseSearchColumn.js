@@ -10,7 +10,7 @@ export default class CourseSearchBar extends React.Component {
     render() {
         return (
             <div className={styles.searchContainer}>
-                <SearchBar />
+                <SearchBar handleSearch={this.props.handleSearch} />
                 <Droppable droppableId={this.props.quarter.id}>
                     {// For droppable to work, its contents must be a function that returns a component
                     provided => (

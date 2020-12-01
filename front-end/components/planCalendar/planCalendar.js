@@ -37,38 +37,16 @@ class PlanCalendar extends React.Component {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			//credentials: include
+			credentials: 'include'
 		};
 
 		fetch(requestUrl, options)
 		.then(response => {
 			console.log(response);
-            
-            /*
-			if (response.status == 200) {
-				// User successfully created
-				this.props.enableLoading("Success!")
-
-				// Redirect the user to login page
-				this.props.router.prefetch('/login');
-				setTimeout(() => {
-					this.props.disableLoading();
-					this.props.router.push('/login'); 
-				}, 2000);
-
-			} else if (response.status == 300) {
-				// User Already Existed!
-				return response.json()
-
-			} else {
-				// Unhandled error code
-				setTimeout(() => this.props.disableLoading(), 300);
-				this.props.router.push('/util/error');	
-            }
-            */
 		}).then(data => {
             console.log("JSON Data: ", data);
             
+            // Add a blank search column
             const SearchColumn = {
                 id: 'SearchColumn',
                 title: 'Search',
@@ -157,6 +135,14 @@ class PlanCalendar extends React.Component {
 
         // If we move from the quarters to the search column, delete it
         if (finish.id != 'SearchColumn') {
+
+            // If started from search column, add, otherwise, update
+            if (start.id != 'SearchColumn') {
+                // Update
+            } else {
+                // Add
+            }
+
             const finishCourseIds = Array.from(finish.courseIds);
             finishCourseIds.splice(destination.index, 0, draggableId);
             const newFinish = {
@@ -175,6 +161,8 @@ class PlanCalendar extends React.Component {
 
             this.setState(newState);
         } else {
+            // Remove
+
             const newState = {
                 ...this.state,
                 quarters: {
@@ -185,8 +173,6 @@ class PlanCalendar extends React.Component {
 
             this.setState(newState);
         }
-        
-        // TODO: Tell backend that a reorder has occured
     }
 
     updateLocked(courseId) {
@@ -217,7 +203,7 @@ class PlanCalendar extends React.Component {
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			//credentials: include
+			credentials: 'include'
 		};
 
 		fetch(requestUrl, options)
@@ -226,46 +212,36 @@ class PlanCalendar extends React.Component {
 		}).then(data => {
             console.log("JSON Data: ", data);
 
+            // Add search courses to courseList
             var newSearchArray = []
-            const newSearchColumn = {
-                ...this.state.searchColumn,
-                courseIds: newSearchArray
-            };
-            var newCourses = {};
-
-            Object.keys(this.state.quarters).forEach((course, index) => {
-                
-                courseId = 
-                newCourses = {
-                    ...newCourses,
-                    [yearId]: quarterList
-                }
+            Object.keys(data).forEach((course, index) => {
+                newSearchArray.push(course.id);
             });
             
+            // Make new search column
             const SearchColumn = {
                 id: 'SearchColumn',
                 title: 'Search',
-                courseIds: []
+                courseIds: newSearchArray
             };
 
             const newState = {
                 ...this.state,
-                ...data.result
-            };
-
-            const newStateAndSearch = {
-                ...newState,
+                courses: {
+                    ...this.state.courses,
+                    data
+                },
                 quarters: {
-                    ...newState.quarters,
+                    ...this.state.quarters,
                     ['SearchColumn']: SearchColumn
                 }
             }
 
-            this.setState(newStateAndSearch);
+            this.setState(newState);
 		})
 		.catch((error) => {
 			console.error('Error:', error);
-			setTimeout(() => this.props.disableLoading(), 300);
+            setTimeout(() => this.props.disableLoading(), 300);
 		});
     }
 
@@ -321,7 +297,7 @@ class PlanCalendar extends React.Component {
 
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
-                <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} updateLocked={this.updateLocked.bind(this)} />
+                <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} updateLocked={this.updateLocked.bind(this)} handleSearch={this.handleSearch.bind(this)} />
                 <div className={styles.fourYearCalendarContainer}>
                 {yearArray.map((yearId) => {
                     const year = yearList[yearId];
