@@ -1,5 +1,6 @@
 // React and Next
 import React from 'react'
+import { withRouter } from 'next/router';
 import Head from 'next/head'
 import Image from 'next/image'
 import Particles from 'react-particles-js';
@@ -10,7 +11,135 @@ import { Form, Button, Navbar } from 'react-bootstrap'
 
 import styles from '../styles/Auth.module.css'
 
-export default class ChangePass extends React.Component {
+class ChangePass extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			old_pwd:"",
+			pwd:"",
+			pwdconfirm:"",
+
+		
+		showingAlert: false,
+		alarmText: "Error!",
+		alarmSubText: "Just error",	
+		}
+
+	}
+	handleClick = (e) => {
+		if (!this.validate()) {
+			return;
+		}
+		this.props.enableLoading("Please wait");
+		console.log("Posting this data to server:", JSON.stringify(this.state));
+
+		// Options for the fetch request
+		const requestUrl = ' http://localhost:2333/api/users/change_pwd';
+		const options = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'},
+			credentials: 'include',
+			body: JSON.stringify(this.state)
+			}
+			
+
+		fetch(requestUrl, options)
+		.then(response => {
+			const data = response.json();
+
+			if (response.status == 200) {
+				// User success
+				this.props.enableLoading("Success! Going to Home page...")
+
+				// Redirect the user to login page
+				this.props.router.prefetch('/home');
+				setTimeout(() => {
+					this.props.disableLoading();
+					this.props.router.push('/home'); 
+				}, 2000);
+			} else if (response.status == 400) {
+				// Old passward wrong
+				// TODO: Prompt
+				return response.json()
+
+			} else if (response.status == 403) {
+			// Not Logged in
+			// TODO: Prompt
+			this.props.disableLoading();
+			this.props.router.push('/login'); 
+		}		
+			
+		}).then(data =>{
+			console.log("JSON Data:", data);
+			if (data === undefined){
+				return;
+			}
+			if (data.reason === "old password wrong") {
+				this.setState({
+					showingAlert: true,
+					alarmText: "Old password is wrong ",
+					alarmSubText: "Please enter correct password."
+				});
+
+				setTimeout(() => this.props.disableLoading(), 300);
+			} else if (data.reason === "Not logged in!") {
+				this.setState({
+					showingAlert: true,
+					alarmText: "User does not log in ",
+					alarmSubText: "Please log in your account."
+				});
+
+				setTimeout(() => this.props.disableLoading(), 300);
+			} 
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+			setTimeout(() => this.props.disableLoading(), 300);
+			this.props.router.push('/util/error');
+		});
+	};
+
+	handleChange = (e) => {
+		this.setState({
+			[e.target.id]: e.target.value
+		});
+	};
+	validate() {
+		if (this.state.old_pwd === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Old password can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (this.state.pwd === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "New password can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (this.state.pwdconfirm=== "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Confirm password can't be blank!",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		if (this.state.pwd !== this.state.pwdconfirm) {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Passwords Doesn't match",
+				alarmSubText: ""
+			});
+			return false;
+		}
+		return true;
+	}
 	render() {
 		return (
 			<>
@@ -84,8 +213,9 @@ export default class ChangePass extends React.Component {
 									</Form.Label>
 									<Form.Control
 										type="password"
-										id="username"
-										name="username"
+										id="old_pwd"
+										value ={this.state.old_pwd}
+										onChange={this.handleChange}
 									/>
 								</Form.Group>
 
@@ -95,8 +225,9 @@ export default class ChangePass extends React.Component {
 									</Form.Label>
 									<Form.Control
 										type="password"
-										id="password"
-										name="password"
+										id="pwd"
+										value ={this.state.pwd}
+										onChange={this.handleChange}
 									/>
 								</Form.Group>
 
@@ -106,8 +237,9 @@ export default class ChangePass extends React.Component {
 									</Form.Label>
 									<Form.Control
 										type="password"
-										id="password"
-										name="password"
+										id="pwdconfirm"
+										value ={this.state.pwdconfirm}
+										onChange={this.handleChange}
 									/>
 								</Form.Group>
 
@@ -115,7 +247,8 @@ export default class ChangePass extends React.Component {
 									<Button
 										type="submit"
 										value="submit"
-										className="bg-orange mt-3">
+										className="bg-orange mt-3"
+										onClick={this.handleClick}>
 										Submit
 									</Button>{' '}
 								</div>
@@ -127,3 +260,4 @@ export default class ChangePass extends React.Component {
 		)
 	}
 }
+export default withRouter(ChangePass);
