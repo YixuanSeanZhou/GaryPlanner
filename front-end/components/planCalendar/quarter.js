@@ -12,7 +12,7 @@ export default class Quarter extends React.Component {
 
     render() {
         return (
-            <div className={styles.quarterContainer}>
+            <div className={this.props.taken ? styles.takenQuarterContainer : styles.quarterContainer}>
                 <h3>{this.props.quarter.title}</h3>
                 <Droppable 
                     droppableId={this.props.quarter.id}
