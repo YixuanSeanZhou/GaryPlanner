@@ -163,6 +163,8 @@ def get_entries():
 @login_required
 def get_plan_by_user():
     user_id = current_user.id
+    if request.args.get('user_id'):
+        user_id = request.args.get('user_id')
     plan = FourYearPlan.get_plan_by_user(user_id=user_id)
     plan = list(map(lambda x: x.to_json(), plan))
     return jsonify({'reason': 'success', 'result': plan}), 200
@@ -172,6 +174,8 @@ def get_plan_by_user():
 @login_required
 def get_formatted_plan_by_user():
     user_id = current_user.id
+    if request.args.get('user_id'):
+        user_id = request.args.get('user_id')
     plan = FourYearPlan.get_plan_by_user(user_id=user_id)
     plan = list(map(lambda x: x.to_json(), plan))
     # Now we call helper function
