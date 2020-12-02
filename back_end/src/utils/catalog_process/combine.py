@@ -33,7 +33,7 @@ def obtain_json_file():
     rdab()
 
 def main():
-    # rdab()
+    rdab()
     plan = generate_benson_report()
     with open('benson_taken.json', 'r') as file:
         taken = json.load(file)
