@@ -1,7 +1,10 @@
 import React from 'react';
+import Link from 'next/link'
 import { Draggable } from 'react-beautiful-dnd';
 import ToggleButton from 'react-bootstrap/ToggleButton'
 import { Button } from 'react-bootstrap'
+
+
 // Styles
 import styles from '../../styles/FourYearPlan.module.css'
 
@@ -67,6 +70,9 @@ export default class Course extends React.Component{
                                 className={styles.dragHandle}
                             >
                                 (drag here)
+                                <Link href={{ pathname: '/classInfo', query: { class_name: this.props.course.content } }}>
+							    	<a>View Info</a>
+						    	</Link>
                             </div>
                         </div>
                     )}
