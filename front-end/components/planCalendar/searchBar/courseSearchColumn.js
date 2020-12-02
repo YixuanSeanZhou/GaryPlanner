@@ -7,6 +7,10 @@ import { SearchBar } from './searchBar';
 import styles from '../../../styles/FourYearPlan.module.css'
 
 export default class CourseSearchBar extends React.Component {
+    constructor(props) {
+		super(props)
+	}
+
     render() {
         return (
             <div className={styles.searchContainer}>

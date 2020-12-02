@@ -15,11 +15,11 @@ export class SearchBar extends React.Component {
 		this.handleChange = this.handleChange.bind(this)
 	}
 
-	handleChange(e) {
+	handleChange = (e) =>  {
 		this.setState({
 			search: e.target.value,
 		})
-		this.props.handleChange(e.target.value);
+		this.props.handleSearch(e.target.value);
 	}
 
 	render() {
@@ -47,7 +47,7 @@ export class SearchBar extends React.Component {
 						type="text"
 						placeholder="e.g. CSE 110"
 						value={this.state.search}
-						onChange={(e) => this.handleChange(e)}
+						onChange={this.handleChange}
 					/>
 					<ul className={styles.ul}>
 						{libData.map((i, index) => {
