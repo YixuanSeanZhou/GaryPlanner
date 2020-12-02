@@ -1,10 +1,10 @@
-from plan_generation import generate_four_year_plan as gfyp
-from plan_generation import load_catalog
-from degree_audit_parser import run_degree_audit_benson as rdab
+from .plan_generation import generate_four_year_plan as gfyp
+from .plan_generation import load_catalog
+from .degree_audit_parser import run_degree_audit_benson as rdab
 
-from takenCourse import getNeededCourse as gnc
-from takenCourse import sortTakenCourse as stc
-from takenCourse import combineCourse as cb
+from .takenCourse import getNeededCourse as gnc
+from .takenCourse import sortTakenCourse as stc
+from .takenCourse import combineCourse as cb
 import json
 import copy
 
@@ -14,8 +14,8 @@ def generate_benson_report():
     taken, needed, numge = gnc(benson_info)
     taken_courses = taken.copy()
     class_dict = dict()
-    load_catalog("./cse.json", class_dict)
-    load_catalog("./math.json", class_dict)
+    load_catalog("/usr/src/app/src/utils/catalog_process/cse.json", class_dict)
+    load_catalog("/usr/src/app/src/utils/catalog_process/math.json", class_dict)
     for i in range(100):
         code = 'GE '+str(i)
         class_dict[code] = {'code':code, 'formatted_pre':[]}
@@ -33,7 +33,7 @@ def obtain_json_file():
     rdab()
 
 def main():
-    rdab()
+    # rdab()
     plan = generate_benson_report()
     with open('benson_taken.json', 'r') as file:
         taken = json.load(file)

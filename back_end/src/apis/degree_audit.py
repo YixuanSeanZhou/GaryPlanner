@@ -14,6 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
+from ..utils.catalog_process.combine import main
 
 degree_audit_api_bp = Blueprint('degree_audit_api', __name__)
 CORS(degree_audit_api_bp, supports_credentials=True)
@@ -158,3 +159,7 @@ def request_degree_audit():
         return {'reason': 'success', 'result': sub_req}, 200
     except:
         return {'reason': 'Run your degree auidt first, or your degree audit is unable to parse'}, 400
+
+@degree_audit_api_bp.route('/attempt', methods=['GET'])
+def attempt():
+    return main(), 200
