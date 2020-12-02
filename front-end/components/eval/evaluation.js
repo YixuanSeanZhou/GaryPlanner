@@ -12,10 +12,12 @@ class Evaluation extends React.Component {
                         <div className={styles.floatUnit}>{this.props.evaluation.unit}</div>
                     </div>
                     <div className={styles.item}>
-                        <li className={styles.instructor}> Instructor: {this.props.evaluation.name}</li>
-                        <li className={styles.grade}> Average Expected Grade: {this.props.evaluation.expGPA}</li>
-                        <li className={styles.grade}> Average Received Grade: {this.props.evaluation.actGPA}</li>
-                        <li className={styles.hour}> Hours/Week: {this.props.evaluation.hours}</li>
+                        <li className={styles.instructor}> Instructor: {this.props.evaluation.instructor}</li>
+                        <li className={styles.grade1}> Average Expected Grade: {this.props.evaluation.avg_expected_grade}</li>
+                        <li className={styles.grade2}> Average Received Grade: {this.props.evaluation.avg_grade_received}</li>
+                        <li className={styles.hour}> Hours/Week: {this.props.evaluation.study_hours_per_week}</li>
+                        <li className={styles.rec1}> Recommend Class: {this.props.evaluation.recommend_class}%</li>
+                        <li className={styles.rec2}> Recommend Instructor: {this.props.evaluation.recommend_instructor}%</li>
                     </div>
                 </div>
         )
