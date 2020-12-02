@@ -19,23 +19,21 @@ var evaluations = [{id:1, quarter: 'Winter 2020', name: 'Gary Gillespie', unit: 
 export default class ClassInfo extends React.Component {
     render() {
         return (
-            <>
-                <Head>
-                    <title>ClassInfo</title>
-                </Head>
+			<>
+				<Head>
+					<title>ClassInfo</title>
+				</Head>
 
-                <GaryNavbar>
-                    <Navbar.Text>
-                    Class Information
-                    </Navbar.Text>
-                </GaryNavbar>
-                <Container>
-                    <h1 className="text-center">{classDec.name}</h1>
-                    <p className="text-center">{classDec.descriptions}</p>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+					<Navbar.Text>Class Information</Navbar.Text>
+				</GaryNavbar>
+				<Container>
+					<h1 className="text-center">{classDec.name}</h1>
+					<p className="text-center">{classDec.descriptions}</p>
 
-                <EvaluationsList evaluations={evaluations} />
-                </Container>   
-            </>
-        );
+					<EvaluationsList evaluations={evaluations} />
+				</Container>
+			</>
+		)
     };
 };

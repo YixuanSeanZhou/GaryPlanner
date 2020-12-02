@@ -1,0 +1,37 @@
+[
+ {
+  "code": "SIOB 286",
+  "title": "Marine Science, Economics, and Policy",
+  "unit": "4",
+  "description": "This course investigates global issues in marine conservation and potential policy solutions. The approach is interdisciplinary, fast-paced, and discussion-oriented. Students will become acquainted with sufficient background in marine biology, ecology, marine and conservation economics, international law and policy as preparation for participation in discussion on real-world issues in marine conservation. Topics and instructors change each quarter.",
+  "prerequisite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "SIO 295S",
+  "title": "Introduction to Marine Biodiversity and Conservation\u2014Seminar",
+  "unit": "8",
+  "description": "Lectures on ecological, economic, social, and legal issues related to marine biodiversity and case studies on socioeconomic and legal issues. Students are expected to attend field trips at sea and to various sites around San Diego County as part of the corequisite course. Students who have taken SIO 295 may not receive credit for SIO 295S.",
+  "prerequisite": "consent of instructors. Corequisites: SIO 295LS and MAS students only."
+ },
+ {
+  "code": "SIO 295LS",
+  "title": "Introduction to Marine Biodiversity and Conservation\u2014Lab",
+  "unit": "8",
+  "description": "Laboratory work on major biological taxa, field trips on biodiversity in situ, computer labs for informatic tools. Students are expected to attend field trips at sea and to various sites around San Diego County as part of the course. Students who have taken SIO 295L may not receive credit for SIO 295LS.",
+  "prerequisite": "consent of instructor. Corequisites: SIO 295S and MAS students only."
+ },
+ {
+  "code": "MBC 258",
+  "title": "Special Topics/Marine Biology-MAS-MBC Forum",
+  "unit": "1",
+  "description": "Required course for MAS-MBC students will focus on development of MAS Capstone Projects and discussions covering marine conservation issues, including informal student presentations on political, economic, historical, educational, and natural science issues related to conservation and analysis of marine biodiversity. May be taken for credit three times.",
+  "prerequisite": "SIO 295S and SIO 295LS summer courses. Limited to registered students in MAS Marine Biodiversity and Conservation program. (F,W,S)"
+ },
+ {
+  "code": "MBC 296",
+  "title": "Capstone Independent Study Project",
+  "unit": "6",
+  "description": "Building on the knowledge and experience gained from the entire curriculum of the master's in Marine Biodiversity and Conservation (MAS-MBC) program, students will design and present a specific marine conservation project.",
+  "prerequisite": "SIOB 286. MBC 296 is restricted to students in the Master of Advanced Studies\u2014Marine Biodiversity and Conservation Program (SI83). (F,W)"
+ }
+]

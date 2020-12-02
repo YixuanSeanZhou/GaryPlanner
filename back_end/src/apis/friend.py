@@ -4,6 +4,7 @@ from flask_login import login_required, current_user
 
 from ..models.friend import Friend
 from ..models.user import User
+from ..models.four_year_plan import FourYearPlan
 
 friend_api_bp = Blueprint('friend_api', __name__)
 CORS(friend_api_bp, supports_credentials=True)
@@ -110,3 +111,19 @@ def is_friend_with():
         return jsonify({'reason': 'user id invalid'}), 300
     s = Friend.is_friend(user1_id=current_user.id, user2_id=f_id)
     return jsonify({'reason': 'success', 'result': s}), 200
+
+
+@friend_api_bp.route('/get_friend_fyp', methods=['GET'])
+@login_required
+def get_friend_fyp():
+    f_id = request.args.get('friend_id')
+    if f_id == current_user.id:
+        return jsonify({'reason': 'you should be friend with yourself'}), 300
+    if not User.get_user_by_id(f_id):
+        return jsonify({'reason': 'user id invalid'}), 300
+    if(Friend.is_friend(user1_id=current_user.id, user2_id=f_id)):
+        friend_fyp = FourYearPlan.get_plan_by_user(f_id)
+        friend_fyp = list(map(lambda x: x.to_json(), friend_fyp))
+        return jsonify({'reason': 'success', 'result': friend_fyp}), 200
+    else:
+        return jsonify({'reason': 'user is not friends with this person'}), 300

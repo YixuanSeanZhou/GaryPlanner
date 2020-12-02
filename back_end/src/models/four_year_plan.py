@@ -124,8 +124,10 @@ class FourYearPlan(db.Model):
                                  grade=grade, locked=locked)
 
     @staticmethod
-    def remove_entry(id: int = None, user_id: int = None,
-                     class_code: str = None, quarter_taken: str = None):
+    def remove_entry(
+            id: int = None, user_id: int = None,
+            class_code: str = None,
+            quarter_taken: str = None):
         if id:
             entry = FourYearPlan.query.filter_by(id=id).first()
         elif user_id and class_code and quarter_taken:

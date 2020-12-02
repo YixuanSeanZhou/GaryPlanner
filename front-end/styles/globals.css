@@ -47,8 +47,8 @@ div#__next > div {
   background-color:rgb(53,68,104);
 }
 
-。background-light {
-  background-color: #626f96;
+.background-light {
+  background-color: #092A59;
 }
 
 .intro {
@@ -71,4 +71,66 @@ div#__next > div {
 
 .searchBar {
   padding: 30px 0px 30px 0px;
+}
+
+#intro-img {
+  box-shadow: 8px 8px 30px rgb(58, 57, 57);
+  border-radius: 12px;
+}
+
+/*home css*/
+#home-btn {
+  height: 200px;
+  font-size: 2rem;
+  color: black;
+}
+
+#home-btn span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#home-btn span:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#home-btn:hover span {
+  padding-right: 25px;
+}
+
+#home-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.card {
+  color: white;
+  width: 400px;
+  height: 570px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px black;
+  margin: auto;
+  background: #0c2b5e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0c2b5e, #173c77);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #051835, #173c77); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-body {
+  min-height: 40%;
+  overflow: auto;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0 10px 5px;
+  overflow-wrap: break-word;
+}
+
+.card-text {
+  font-size: 1.1rem;
 }

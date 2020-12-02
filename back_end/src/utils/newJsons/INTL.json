@@ -1,0 +1,51 @@
+[
+ {
+  "code": "INTL 97",
+  "title": "Internship",
+  "unit": "1",
+  "description": "Independent research connected to an internship with an organization relevant to the career interests of a student of international studies. Topic of the required research to be determined by the supervising faculty member. P/NP grades only. May be taken for credit eight times.",
+  "prerequisite": "department approval required."
+ },
+ {
+  "code": "INTL 101",
+  "title": "Culture and Society in International Perspective",
+  "unit": "4",
+  "description": "Analysis of the cultural and social development of the modern era from the perspective of interaction among societies. Particular attention is paid to the definition, representation, and negotiation of social and cultural boundaries over time.",
+  "prerequisite": "sophomore standing or above and completion of at least one quarter of a university-level writing course."
+ },
+ {
+  "code": "INTL 102",
+  "title": "Economics, Politics, and International Change",
+  "unit": "4",
+  "description": "Examination of the domestic and international sources of economic and political change. Topics include the rise of the nation-state, comparative economic development, authoritarian and democratic regimes, international and civil conflict, globalization and its domestic and international implications.",
+  "prerequisite": "sophomore standing or above and completion of at least one quarter of a university-level writing course."
+ },
+ {
+  "code": "INTL 190",
+  "title": "Seminar in International Studies",
+  "unit": "4",
+  "description": "Required seminar for International Studies seniors. Readings and discussion of topics in international and comparative studies from an interdisciplinary perspective. Emphasis on independent work and completion of a research paper.",
+  "prerequisite": "open to international studies majors only; successful completion with a C- or better of INTL 101 and 102."
+ },
+ {
+  "code": "INTL 190H",
+  "title": "Honors Seminar in International Studies",
+  "unit": "4",
+  "description": "Required of all honors students in International Studies. Reading and discussion of topics in international and comparative studies from an interdisciplinary perspective. Emphasis on research design and completion of research paper in preparation for INTL 196H.",
+  "prerequisite": "international studies major with 3.5 major GPA; department application process required; senior standing; INTL 101; INTL 102."
+ },
+ {
+  "code": "INTL 196H",
+  "title": "International Studies Honors Program",
+  "unit": "4",
+  "description": "Open only to seniors who have completed INTL 190H. Completion of an honors thesis under the supervision of a member of the International Studies faculty.",
+  "prerequisite": "international studies major with 3.5 major GPA; department approval; senior standing; INTL 190H."
+ },
+ {
+  "code": "INTL 197",
+  "title": "Internship",
+  "unit": "1",
+  "description": "Independent research connected to an internship with an organization relevant to the career interests of a student of international studies. Topic of the required research to be determined by the supervising faculty member. P/NP grades only. May be taken for credit eight times.",
+  "prerequisite": "department approval required; junior and senior standing."
+ }
+]

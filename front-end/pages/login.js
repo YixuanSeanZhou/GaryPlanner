@@ -67,7 +67,6 @@ class Login extends React.Component {
 			setTimeout(() => this.props.disableLoading(), 300);
 
 			if (response.status == 200) {
-				// User successfully created
 				// Remember me
 				const {email, pwd, remember} = this.state.formData;
 				if (remember && email !== "") {
@@ -76,7 +75,8 @@ class Login extends React.Component {
 					localStorage.checkbox = remember;
 				}
 
-				this.props.router.push('/temp/testProfile');
+				this.props.updateUserProfile();
+				this.props.router.push('/home')
 			} else if (response.status == 400) {
 				// Wrong email/password
 				this.setState({
@@ -161,7 +161,7 @@ class Login extends React.Component {
 							<Form>
 								{/* Here are the two credentials */}
 								<Form.Group controlId="email">
-									<Form.Label>Email</Form.Label>
+									<Form.Label>Email / Username</Form.Label>
 									<Form.Control 
 										type="email"
 										value={this.state.formData.email}
