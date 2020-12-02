@@ -1,7 +1,7 @@
 import json
 import copy
 import numpy as np
-import takenCourse as tC
+from .takenCourse import takenCoures as tC
 
 flatten = lambda t: [item for sublist in t for item in sublist]
 

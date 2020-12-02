@@ -78,10 +78,10 @@ def rec(dic, rtnList, takenList):
     for key in dic:
         d1 = dic[key]
         if "GE" in key:
-            ge += checkGE(dic, key, json.load(open("./Warren.json"))) # warren college json file
+            ge += checkGE(dic, key, json.load(open("/usr/src/app/src/utils/catalog_process/Warren.json"))) # warren college json file
         elif "needs" in d1.keys():
             if "Elective" in key:
-                potentialCourses = process("./cse.json", d1["course_needs"]) 
+                potentialCourses = process("/usr/src/app/src/utils/catalog_process/cse.json", d1["course_needs"]) 
                 num = d1["needs"]["Courses"]
                 cour = iter(potentialCourses)
                 while num > 0:

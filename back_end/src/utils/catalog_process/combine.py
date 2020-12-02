@@ -14,8 +14,8 @@ def generate_benson_report():
     taken, needed, numge = gnc(benson_info)
     taken_courses = taken.copy()
     class_dict = dict()
-    load_catalog("./cse.json", class_dict)
-    load_catalog("./math.json", class_dict)
+    load_catalog("/usr/src/app/src/utils/catalog_process/cse.json", class_dict)
+    load_catalog("/usr/src/app/src/utils/catalog_process/math.json", class_dict)
     for i in range(100):
         code = 'GE '+str(i)
         class_dict[code] = {'code':code, 'formatted_pre':[]}
