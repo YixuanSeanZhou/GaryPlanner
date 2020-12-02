@@ -138,30 +138,139 @@ class PlanCalendar extends React.Component {
 
             // If started from search column, add, otherwise, update
             if (start.id != 'SearchColumn') {
-                // Update
+
+                // Options for the fetch request
+                const requestUrl = 'http://localhost:2333/api/four_year_plan/update_entry';
+                const courseToPost = {
+                    id: draggableId.substr(7),
+                    quarter_taken: finish.id
+                }
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include', // Everything account related
+                    body: JSON.stringify(courseToPost),
+                };
+
+                fetch(requestUrl, options)
+                .then(response => {
+                    const data = response.json();
+                    console.log(data);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    //this.props.router.push('/util/error');
+                });
+
+                const finishCourseIds = Array.from(finish.courseIds);
+                finishCourseIds.splice(destination.index, 0, draggableId);
+                const newFinish = {
+                    ...finish,
+                    courseIds: finishCourseIds
+                };
+
+                const newState = {
+                    ...this.state,
+                    quarters: {
+                        ...this.state.quarters,
+                        [newStart.id]: newStart,
+                        [newFinish.id]: newFinish
+                    }
+                };
+
+                this.setState(newState);
             } else {
                 // Add
+                // Options for the fetch request
+                var newId = "course-";
+                const requestUrl = 'http://localhost:2333/api/four_year_plan/create_entry';
+                const courseToPost = {
+                    course_id: draggableId.substr(7),
+                    quarter_taken: finish.id,
+                    user_id: this.props.userId //TODO: FIX THIS
+                }
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include', // Everything account related
+                    body: JSON.stringify(courseToPost),
+                };
+
+                fetch(requestUrl, options)
+                .then(response => {
+                    const data = response.json();
+                    console.log(data);
+                    newId = newId + data.id;
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    //this.props.router.push('/util/error');
+                });
+
+                // Update course id
+                const finishCourseIds = Array.from(finish.courseIds);
+
+                // Add new course
+                const newCourse = {
+                    "content": draggableId.substr(7),
+                    "id": newId,
+                    "locked": false
+                };
+
+                finishCourseIds.splice(destination.index, 0, newId);
+                const newFinish = {
+                    ...finish,
+                    courseIds: finishCourseIds
+                };
+
+                var newState = {
+                    ...this.state,
+                    courses: {
+                        ...this.state.courses,
+                        [newId]: newFinish
+                    },
+                    quarters: {
+                        ...this.state.quarters,
+                        [newStart.id]: newStart,
+                        [newFinish.id]: newFinish
+                    }
+                };
+                delete newState.courses[draggableId];
+
+                this.setState(newState);
             }
 
-            const finishCourseIds = Array.from(finish.courseIds);
-            finishCourseIds.splice(destination.index, 0, draggableId);
-            const newFinish = {
-                ...finish,
-                courseIds: finishCourseIds
-            };
-
-            const newState = {
-                ...this.state,
-                quarters: {
-                    ...this.state.quarters,
-                    [newStart.id]: newStart,
-                    [newFinish.id]: newFinish
-                }
-            };
-
-            this.setState(newState);
+            
         } else {
             // Remove
+
+            // Options for the fetch request
+            const requestUrl = 'http://localhost:2333/api/four_year_plan/remove_entry';
+            const courseToPost = {
+                id: draggableId.substr(7),
+            }
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                credentials: 'include', // Everything account related
+                body: JSON.stringify(courseToPost),
+            };
+
+            fetch(requestUrl, options)
+            .then(response => {
+                const data = response.json();
+                console.log(data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                //this.props.router.push('/util/error');
+            });
 
             const newState = {
                 ...this.state,
