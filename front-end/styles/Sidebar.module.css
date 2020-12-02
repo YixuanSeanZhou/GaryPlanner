@@ -1,0 +1,24 @@
+.all {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background-color: #060b26;
+    width: 400 px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    transition: 850ms;
+    color: white;
+  }
+
+  .sideMenu {
+      width: 100%;
+  }
+

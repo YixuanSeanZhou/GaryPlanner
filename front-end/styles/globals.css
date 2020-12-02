@@ -134,3 +134,28 @@ div#__next > div {
 .card-text {
   font-size: 1.1rem;
 }
+
+.side-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.side-item a{
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.side-item a:hover{
+  background-color: #1a83ff;
+}
