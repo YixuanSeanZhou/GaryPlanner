@@ -92,10 +92,7 @@ def get_users():
 
 
 @user_api_bp.route('/get_user_profile', methods=['GET'])
-<<<<<<< HEAD
-=======
 @cross_origin(supports_credentials=True)
->>>>>>> main
 @login_required
 def get_user_profile():
     u_id = current_user.id
@@ -103,8 +100,6 @@ def get_user_profile():
     return jsonify({'reason': 'success', 'result': user.to_json()}), 200
 
 
-<<<<<<< HEAD
-=======
 @user_api_bp.route('/get_user_by_user_name', methods=['GET'])
 @cross_origin(supports_credentials=True)
 @login_required
@@ -153,7 +148,6 @@ def change_pwd():
         return jsonify({"reason": "success"}), 200
 
 
->>>>>>> main
 @user_api_bp.route('/update_profile', methods=['POST'])
 @cross_origin(supports_credentials=True)
 @login_required
