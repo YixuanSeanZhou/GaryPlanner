@@ -13,9 +13,11 @@ class Evaluation extends React.Component {
                     </div>
                     <div className={styles.item}>
                         <li className={styles.instructor}> Instructor: {this.props.evaluation.instructor}</li>
-                        <li className={styles.grade}> Average Expected Grade: {this.props.evaluation.average_exp_grade}</li>
-                        <li className={styles.grade}> Average Received Grade: {this.props.evaluation.average_rec_grade}</li>
-                        <li className={styles.hour}> Hours/Week: {this.props.evaluation.hour_per_week}</li>
+                        <li className={styles.grade}> Average Expected Grade: {this.props.evaluation.avg_expected_grade}</li>
+                        <li className={styles.grade}> Average Received Grade: {this.props.evaluation.avg_grade_received}</li>
+                        <li className={styles.hour}> Hours/Week: {this.props.evaluation.study_hours_per_week}</li>
+                        <li className={styles.grade}> Recommend Class: {this.props.evaluation.recommend_class}</li>
+                        <li className={styles.grade}> Recommend Instructor: {this.props.evaluation.recommend_instructor}</li>
                     </div>
                 </div>
         )
