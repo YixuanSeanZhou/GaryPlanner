@@ -67,7 +67,7 @@ class ClassInfo extends React.Component {
 					<title>ClassInfo</title>
 				</Head>
 
-				<GaryNavbar showUser={true}>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
 					<Navbar.Text>Class Information</Navbar.Text>
 				</GaryNavbar>
 				<Container>

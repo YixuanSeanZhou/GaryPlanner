@@ -8,7 +8,7 @@ from flask import Blueprint, request, jsonify
 from flask_login import login_required, current_user
 from datetime import datetime
 from pytz import timezone
-import pytz
+# import pytz
 
 from ..models.four_year_plan import FourYearPlan
 
@@ -163,6 +163,8 @@ def get_entries():
 @login_required
 def get_plan_by_user():
     user_id = current_user.id
+    if request.args.get('user_id'):
+        user_id = request.args.get('user_id')
     plan = FourYearPlan.get_plan_by_user(user_id=user_id)
     plan = list(map(lambda x: x.to_json(), plan))
     return jsonify({'reason': 'success', 'result': plan}), 200
@@ -172,6 +174,8 @@ def get_plan_by_user():
 @login_required
 def get_formatted_plan_by_user():
     user_id = current_user.id
+    if request.args.get('user_id'):
+        user_id = request.args.get('user_id')
     plan = FourYearPlan.get_plan_by_user(user_id=user_id)
     plan = list(map(lambda x: x.to_json(), plan))
     # Now we call helper function
@@ -221,7 +225,8 @@ def update_entry():
     grade = req_data.get('grade', None)
     locked = req_data.get('locked', None)
 
-    s, p = FourYearPlan.update_entry(id=id, user_id=user_id, class_code=class_code,
+    s, p = FourYearPlan.update_entry(id=id, user_id=user_id, 
+                                     class_code=class_code,
                                      class_schedule_id=class_schedule_id,
                                      quarter_taken=quarter_taken, grade=grade,
                                      locked=locked)

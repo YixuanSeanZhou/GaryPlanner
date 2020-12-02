@@ -2,17 +2,13 @@ import React from 'react'
 import { Navbar, Container, Row, Col, Nav, NavDropdown, Button } from 'react-bootstrap'
 import Link from 'next/link'
 import Particles from 'react-particles-js'
+import { withRouter } from 'next/router';
 
 
-export class GaryNavbar extends React.Component {
+class GaryNavbar extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            showUser: this.props.showUser,
-            first_name: 'Loading...',
-        }
-
     }
 
     handleLogout = () => {
@@ -26,8 +22,10 @@ export class GaryNavbar extends React.Component {
         .then(response => {
 
             if (response.status == 200) {
-				// Logged out
+                // Logged out
+                this.props.onLogout();
                 this.props.router.push("/intro");
+                console.log("Logout success!");
 			} else if (response.status == 403) {
                 this.setState({
                     first_name: "Not Logged in!",
@@ -36,47 +34,16 @@ export class GaryNavbar extends React.Component {
 			}
         })
 		.catch((error) => {
-			console.error('Error:', error);
+            console.error('Error:', error);
+            this.props.router.push("/util/error");
         });
     }
-
-    componentDidMount() {
-		// Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/users/get_user_profile'
-		const options = {
-			method: 'GET',
-			credentials: 'include',
-		}
-
-		fetch(requestUrl, options)
-			.then((response) => {
-				if (response.status == 200) {
-					// TODO: Prompt Success
-					return response.json()
-				} else if (response.status == 403) {
-					this.setState({
-						user_name: 'Not Logged in!',
-					})
-					throw Error(response.statusText)
-				}
-			})
-			.then((data) => {
-				console.log('Success:', data) // TODO: Remove for deployment
-
-				this.setState(data.result)
-				this.setState({
-					is_loading: false,
-				})
-			})
-			.catch((error) => {
-				console.error('Error:', error)
-			})
-	}
 
     render() {
         let navBarChild = undefined;
 
-        if (this.state.showUser === true) {
+        if (this.props.userProfile !== undefined) {
+            let profile = this.props.userProfile
             navBarChild = (
 				<>
 					{this.props.children}
@@ -84,18 +51,18 @@ export class GaryNavbar extends React.Component {
 						<Navbar.Text>Welcome,</Navbar.Text>
 						<NavDropdown
 							className="ml-auto"
-							title={this.state.first_name}
+							title={profile.first_name}
 							alignRight>
 							<NavDropdown.Item href="/userProfile">
 								Edit Profile
 							</NavDropdown.Item>
 							<NavDropdown.Item href="/friends">Friends</NavDropdown.Item>
-							<NavDropdown.Item href="changePass">
+							<NavDropdown.Item href="/changePass">
 								Change Passoword
 							</NavDropdown.Item>
 						</NavDropdown>
-						<Nav.Link href="/intro"  >
-                            <a onClick={this.handleLogout}><span style={{ textDecoration: 'underline' }}>Log out</span></a>
+						<Nav.Link>
+                            <div onClick={this.handleLogout}><span style={{ textDecoration: 'underline' }}>Log out</span></div>
 						</Nav.Link>
 					</Nav>
 				</>
@@ -117,6 +84,9 @@ export class GaryNavbar extends React.Component {
         )
     }
 }
+let thisComponent = withRouter(GaryNavbar);
+
+export { thisComponent as GaryNavbar };
 
 
 export function ParticleEffect(props) {

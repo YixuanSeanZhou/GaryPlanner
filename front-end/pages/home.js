@@ -7,7 +7,6 @@ import Link from 'next/link'
 import { ParticleEffect, GaryNavbar } from '../components/commonUI';
 import { Navbar, Jumbotron, Button, Modal, Card } from 'react-bootstrap'
 import Request from '../components/requestPlan'
-import EvaluationsList from '../components/eval/evaluationsList';
 
 import styles from '../styles/Auth.module.css'
 
@@ -17,60 +16,32 @@ export default class Home extends React.Component {
 
 		this.state = {
 			modalShow: false,
-
-			is_loading: true,
-			user_name: 'Not login',
-			email: '',
-			first_name: 'first',
-			last_name: 'last',
-			college: '',
-			intended_grad_quarter: '',
-			major: 'None',
-			minor: 'None',
 		}
 	}
 
 	componentDidMount() {
-		// Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/users/get_user_profile'
-		const options = {
-			method: 'GET',
-			credentials: 'include',
-		}
-
-		fetch(requestUrl, options)
-			.then((response) => {
-				if (response.status == 200) {
-					// TODO: Prompt Success
-					return response.json()
-				} else if (response.status == 403) {
-					this.setState({
-						user_name: 'Not Logged in!',
-					})
-					throw Error(response.statusText)
-				}
-			})
-			.then((data) => {
-				console.log('Success:', data) // TODO: Remove for deployment
-
-				this.setState(data.result)
-				this.setState({
-					is_loading: false,
-				})
-			})
-			.catch((error) => {
-				console.error('Error:', error)
-			})
 	}
 
 	render() {
+		var { userProfile } = this.props;
+		if (userProfile === undefined) {
+			userProfile = {
+				first_name: 'Not Logged In!',
+				last_name: "",
+				major: "",
+				minor: "",
+				college: "",
+				email: "",
+				intended_grad_quarter: "",
+			}
+		}
 		return (
 			<>
 				<Head>
 					<title>Home</title>
 				</Head>
 
-				<GaryNavbar showUser={true}>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
 					<Navbar.Text>Home</Navbar.Text>
 				</GaryNavbar>
 
@@ -83,19 +54,19 @@ export default class Home extends React.Component {
 								<Card>
 									<Card.Body>
 										<h3 className="mb-4">
-											{this.state.first_name} {this.state.last_name}
+											{userProfile.first_name} {userProfile.last_name}
 										</h3>
 										<Card.Text>
-											User Name: {this.state.user_name}
+											User Name: {userProfile.user_name}
 										</Card.Text>
-										<Card.Text>Major: {this.state.major}</Card.Text>
-										<Card.Text>Minor: {this.state.minor}</Card.Text>
+										<Card.Text>Major: {userProfile.major}</Card.Text>
+										<Card.Text>Minor: {userProfile.minor}</Card.Text>
 										<Card.Text>
-											College: {this.state.college}
+											College: {userProfile.college}
 										</Card.Text>
-										<Card.Text>Email: {this.state.email}</Card.Text>
+										<Card.Text>Email: {userProfile.email}</Card.Text>
 										<Card.Text>
-											Graduation: {this.state.intended_grad_quarter}
+											Graduation: {userProfile.intended_grad_quarter}
 										</Card.Text>
 									</Card.Body>
 								</Card>
@@ -110,7 +81,8 @@ export default class Home extends React.Component {
 										id="home-btn"
 										onClick={() =>
 											this.setState({ modalShow: true })
-										}>
+										}
+									>
 										<span>New Four Year Plan</span>
 									</Button>
 								</div>
