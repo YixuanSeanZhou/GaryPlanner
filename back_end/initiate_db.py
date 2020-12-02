@@ -85,7 +85,8 @@ def add_evals_to_db():
     for evaluation in data:
         class_name = evaluation['course']
         class_code = class_name[:class_name.find("-")].strip()
-        quarter= evaluation['quarter']
+        section = evaluation['section']
+        quarter = evaluation['quarter']
         instructor = evaluation['instructor']
         recommend_class = evaluation['recommend_class']
         if recommend_class == "N/A":
@@ -98,7 +99,8 @@ def add_evals_to_db():
             study_hours_per_week = -1
         avg_expected_grade = evaluation['expected_grade']
         avg_grade_received = evaluation['grade_received']
-        evaluation = Evaluation(class_code=class_code, quarter=quarter,instructor=instructor,
+        evaluation = Evaluation(class_code=class_code, section=section,
+                                quarter=quarter, instructor=instructor,
                                 recommend_class=recommend_class,
                                 recommend_instructor=recommend_instructor,
                                 study_hours_per_week=study_hours_per_week,

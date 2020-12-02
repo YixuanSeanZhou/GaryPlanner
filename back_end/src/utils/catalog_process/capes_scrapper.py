@@ -162,10 +162,17 @@ for department in all_departments:
         course = row[course_start_index:course_end_index].strip()
         search_start = course_end_index
 
+        # get section name
+        section_start_index = row.find("(", search_start) + 1
+        section_end_index = row.find(")", section_start_index)
+        section = row[section_start_index:section_end_index].strip()
+        search_start = section_end_index
+
         # get quarter
         quarter_start_index = row.find("<td>", search_start) + 4
         quarter_end_index = row.find("</td>", quarter_start_index)
         quarter = row[quarter_start_index:quarter_end_index].strip()
+        quarter = quarter[:2] + " " + quarter[2:]
         search_start = quarter_end_index
 
         # get recommend class
@@ -203,6 +210,7 @@ for department in all_departments:
         response = {}
         response['instructor'] = instructor
         response['course'] = course
+        response['section'] = "Section " + section
         response['quarter'] = quarter
         response['recommend_class'] = recommend_class
         response['recommend_instructor'] = recommend_instructor
@@ -214,7 +222,7 @@ for department in all_departments:
         count += 1
     print(count)
 
-with open("capes_evaluation.json", "w", encoding='utf-8') as outfile:
+with open("../../../capes_evaluation.json", "w", encoding='utf-8') as outfile:
         json.dump(all_evaluations, outfile, indent=1) 
 
 
