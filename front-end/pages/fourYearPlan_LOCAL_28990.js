@@ -21,7 +21,6 @@ class Plan extends React.Component {
 			alarmSubText: "Just error",
         }
     }
-
     render() {
         return (
             <>

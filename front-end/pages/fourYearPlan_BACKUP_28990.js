@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
@@ -7,10 +8,21 @@ import { withRouter } from 'next/router';
 import { GaryNavbar } from '../components/commonUI';
 import { Navbar, Alert } from 'react-bootstrap';
 import PlanCalendar from '../components/planCalendar/planCalendar'
+=======
+import React from 'react'
+import Link from 'next/link'
+import Head from 'next/head'
+import PlanCalendar from '../components/planCalendar/planCalendar'
+// Components
+
+import { GaryNavbar } from '../components/commonUI'
+import { Navbar } from 'react-bootstrap';
+>>>>>>> main
 
 // Styles
 import styles from '../styles/FourYearPlan.module.css'
 
+<<<<<<< HEAD
 class Plan extends React.Component {
     constructor(props) {
 		super(props);
@@ -21,13 +33,17 @@ class Plan extends React.Component {
 			alarmSubText: "Just error",
         }
     }
+=======
+export default class Plan extends React.Component {
 
+>>>>>>> main
     render() {
         return (
             <>
                 <Head>
                     <title>Plan</title>
                 </Head>
+<<<<<<< HEAD
     
                 <GaryNavbar>
                     <Navbar.Text>
@@ -58,10 +74,25 @@ class Plan extends React.Component {
                         disableLoading ={this.props.disableLoading}
                         {...this.props.pageProps} 
                     />
+=======
+
+                <GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+                    <Navbar.Text>
+                    Four Year Plan 
+                    </Navbar.Text>
+                </GaryNavbar>
+
+                <div id="planCalendar" className={styles.mainContainer}>
+                    <PlanCalendar />
+>>>>>>> main
                 </div>
             </>
         )
     }
+<<<<<<< HEAD
 }
 
 export default withRouter(Plan);
+=======
+}
+>>>>>>> main

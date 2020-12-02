@@ -61,6 +61,17 @@
     flex-direction: column;
 }
 
+.takenQuarterContainer {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #c0c0c0;
+    box-shadow: 2px 2px 3px rgb(221, 221, 221);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
 .courseList {
     padding: 8px;
     flex-grow: 1;
@@ -72,6 +83,21 @@
     margin-bottom: 8px;
 
     background-color: #fff0b5;
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 2px 2px 3px rgb(221, 221, 221);
+
+}
+
+.takenContainer {
+    padding: 8px;
+    margin-bottom: 8px;
+
+    background-color: #797977;
     border-radius: 5px;
     
     display: flex;
