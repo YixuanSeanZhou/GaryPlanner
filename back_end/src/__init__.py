@@ -15,6 +15,7 @@ from .apis.all_classes import all_classes_api_bp as acapi
 from .apis.major import major_api_bp as mapi
 from .apis.minor import minor_api_bp as minor_api
 from .apis.evaluation import evaluation_api_bp as eval_api
+from .apis.degree_audit import degree_audit_api_bp as daapi
 
 app.register_blueprint(uapi, url_prefix="/api/users")
 app.register_blueprint(fypapi, url_prefix="/api/four_year_plan")
@@ -24,6 +25,7 @@ app.register_blueprint(acapi, url_prefix="/api/all_classes")
 app.register_blueprint(mapi, url_prefix="/api/majors")
 app.register_blueprint(minor_api, url_prefix="/api/minors")
 app.register_blueprint(eval_api, url_prefix="/api/evaluations")
+app.register_blueprint(daapi, url_prefix="/api/degree_audit")
 
 
 @app.route("/")

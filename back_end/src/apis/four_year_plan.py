@@ -8,13 +8,17 @@ from flask import Blueprint, request, jsonify
 from flask_login import login_required, current_user
 from datetime import datetime
 from pytz import timezone
-# import pytz
 
+from ..utils.catalog_process.combine import main as get_recommendation
 from ..models.four_year_plan import FourYearPlan
+
+import re
 
 four_year_plan_api_bp = Blueprint('four_year_plan_api', __name__)
 CORS(four_year_plan_api_bp, supports_credentials=True)
 
+
+test_username = "gg"
 
 # helper functions to format return values
 def get_current_quarter():
@@ -50,7 +54,6 @@ def get_current_quarter():
         else:
             current_quarter += "FA"
     current_quarter += year
-    print(current_quarter)
     return current_quarter
 
 
@@ -75,9 +78,13 @@ def convertResultsto4YearPlan(results):
             "content": class_code,
             "locked": locked
         }
-    # populating quarters
-    # TODO get start year from user
-    start_year = 2018
+
+    # getting user start year
+    user_start_quarter = current_user.start_quarter
+    if user_start_quarter == "None":
+        start_year = int("20" + str(int(current_user.intended_grad_quarter[-2:]) - 4))
+    else:
+        start_year = int("20" + str(current_user.start_quarter[-2:]))
     quarter_array = generate_quarter_names(start_year)
 
     # loops through all the quarters in the student's plan
@@ -131,6 +138,26 @@ def generate_quarter_names(start_year):
     return quarter_names
 
 
+#helper function to add all courses in 4yp recommendation to database
+def add_recommendation_to_db(user_id:int):
+    plan = get_recommendation()
+    entries = []
+    #loops through each quarter
+    for quarter, courses in plan.items():
+        #loops through each cours in a quarter
+        for course in courses:
+            #checks to make sure there is a space in course code
+            if course.find(" ") == -1:
+                index_of_number = re.search(r"\d", course).start()
+                course = course[:index_of_number] + " " + course[index_of_number:]
+            entry = {
+                "user_id" : user_id,
+                "class_code" : course,
+                "quarter_taken" : quarter,
+            }
+            entries.append(entry)
+    return entries
+
 @four_year_plan_api_bp.route('/create_entry', methods=['POST'])
 @login_required
 def create_entry():
@@ -150,6 +177,22 @@ def create_entry():
     else:
         return jsonify({'reason': 'duplicate entry'}), 300
 
+@four_year_plan_api_bp.route('/generate_plan', methods=['POST'])
+@login_required
+def generate_plan():
+    if current_user.user_name == test_username:
+        result = add_recommendation_to_db(current_user.id)
+        for entry in result:
+            user_id = entry['user_id']
+            class_code = entry['class_code']
+            quarter_taken = entry['quarter_taken']
+            s, u = FourYearPlan.create_entry(
+                    user_id=user_id, class_code=class_code,
+                    quarter_taken=quarter_taken
+                )
+        return {"reason":"added recommendation to db", "result": result}, 200
+    else:
+        return {"reason": "Could not create a recommendation"}, 300
 
 @four_year_plan_api_bp.route('/get_entries', methods=['GET'])
 @login_required
