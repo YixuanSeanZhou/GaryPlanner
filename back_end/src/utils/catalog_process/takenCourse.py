@@ -28,7 +28,7 @@ def combineCourse(quarters, taken, planed):
     planed = iter(planed)
     quarters = list(quarters)
     currQ = quarters[-1]
-    currNum = int(currQ[2:])*5+Quarter[currQ[:2]].value
+    currNum = int(currQ[2:])*3+Quarter[currQ[:2]].value
     for num in range(currNum+1, currNum+length+1):
         quar = getQuarterName(num)
         combined[quar] = next(planed)
@@ -61,10 +61,10 @@ def sortTakenCourse(courses, start = "FA18"):
     return sorted(newCourse.keys(), key=getQuarterValue), newCourse, takeCourses
 
 def getQuarterValue(quarter):
-    return int(quarter[2:])*5+Quarter[quarter[:2]].value
+    return int(quarter[2:])*3+Quarter[quarter[:2]].value
 
 def getQuarterName(quarter):
-    return Quarter(quarter%5).name + str(quarter//5)
+    return Quarter(quarter%3).name + str(quarter//3)
 
 
 # userInfo is bensonInfo above
