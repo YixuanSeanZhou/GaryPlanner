@@ -334,7 +334,7 @@ def _get_driver(link):
     time.sleep(0.2)
     return driver
 
-@four_year_plan_api_bp.route('/get_taken', methods=['POST'])
+@four_year_plan_api_bp.route('/get_taken', methods=['GET'])
 def request_degree_audit():
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
