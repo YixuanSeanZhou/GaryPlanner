@@ -1,0 +1,989 @@
+[
+ {
+  "code": "PHYS 1A",
+  "title": "Mechanics",
+  "unit": "3",
+  "description": "First quarter of a three-quarter introductory physics course, geared toward life-science majors. Equilibrium and motion of particles in one and two dimensions in the framework of Newtonian mechanics, force laws (including gravity), energy, momentum, rotational motion, conservation laws, and fluids. Examples will be drawn from astronomy, biology, sports, and current events. PHYS 1A and 1AL are designed to be taken concurrently but may be taken in separate terms; taking the lecture before the lab is the best alternative to enrolling in both. Students continuing to PHYS 1B/1BL will also need MATH 10B or 20B.",
+  "prerequisite": "MATH 10A or 20A. Recommended preparation: concurrent or prior enrollment in MATH 10B or 20B."
+ },
+ {
+  "code": "PHYS 1AL",
+  "title": "Mechanics Laboratory",
+  "unit": "2",
+  "description": "Physics laboratory course to accompany PHYS 1A. Experiments in Mechanics. PHYS 1A and 1AL are designed to be taken concurrently but may be taken in separate terms; taking the lecture before the lab is the best alternative to enrolling in both. Students continuing to PHYS 1B/1BL will also need MATH 10B or 20B.",
+  "prerequisite": "MATH 10A or 20A. Recommended preparation: concurrent or prior enrollment in PHYS 1A and MATH 10B or 20B."
+ },
+ {
+  "code": "PHYS 1B",
+  "title": "Electricity and Magnetism",
+  "unit": "3",
+  "description": "Second quarter of a three-quarter introductory physics course geared toward life-science majors. Electric fields, magnetic fields, DC and AC circuitry. PHYS 1B and 1BL are designed to be taken concurrently but may be taken in separate terms; taking the lecture before the lab is the best alternative to enrolling in both.",
+  "prerequisite": "PHYS 1A or 2A, and MATH 10B or 20B."
+ },
+ {
+  "code": "PHYS 1BL",
+  "title": "Electricity and Magnetism Laboratory",
+  "unit": "2",
+  "description": "Physics laboratory course to accompany PHYS 1B. Experiments in electricity and magnetism. Program or materials fee may apply. PHYS 1B and 1BL are designed to be taken concurrently but may be taken in separate terms; taking the lecture before the lab is the best alternative to enrolling in both.",
+  "prerequisite": "PHYS 1A or 2A, 1AL or 2BL, and MATH 10B or 20B. Recommended preparation: concurrent or prior enrollment in PHYS 1B."
+ },
+ {
+  "code": "PHYS 1C",
+  "title": "Waves, Optics, and Modern Physics",
+  "unit": "3",
+  "description": "Third quarter of a three-quarter introductory physics course geared toward life-science majors. The physics of oscillations and waves, vibrating strings and sound, and the interaction of light with matter as illustrated through optics and quantum mechanics. Examples from biology, sports, medicine, and current events. PHYS 1C and 1CL are designed to be taken concurrently but may be taken in separate terms; taking the lecture before the lab is the best alternative to enrolling in both.",
+  "prerequisite": "PHYS 1B or 2B, and MATH 10B or 20B."
+ },
+ {
+  "code": "PHYS 1CL",
+  "title": "Waves, Optics, and Modern Physics Laboratory",
+  "unit": "2",
+  "description": "Physics laboratory course to accompany PHYS 1C. Experiments in waves, optics, and modern physics. Program or materials fee may apply. PHYS 1C and 1CL are designed to be taken concurrently but may be taken in separate terms; taking the lecture before the lab is the best alternative to enrolling in both.",
+  "prerequisite": "PHYS 1B or 2B, 1BL or 2CL, and MATH 10B or 20B. Recommended preparation: concurrent or prior enrollment in PHYS 1C."
+ },
+ {
+  "code": "PHYS 2A",
+  "title": "Physics\u2014Mechanics",
+  "unit": "4",
+  "description": "A calculus-based science-engineering general physics course covering vectors, motion in one and two dimensions, Newton's first and second laws, work and energy, conservation of energy, linear momentum, collisions, rotational kinematics, rotational dynamics, equilibrium of rigid bodies, oscillations, gravitation. Students continuing to PHYS 2B/4B will also need MATH 20B.",
+  "prerequisite": "MATH 10A-B or 20A or 20B or 20C or 31BH. Recommended preparation: prior or concurrent enrollment in MATH 20B."
+ },
+ {
+  "code": "PHYS 2B",
+  "title": "Physics\u2014Electricity and Magnetism",
+  "unit": "4",
+  "description": "Continuation of PHYS 2A covering charge and matter, the electric field, Gauss's law, electric potential, capacitors and dielectrics, current and resistance, electromotive force and circuits, the magnetic field, Ampere's law, Faraday's law, inductance, electromagnetic oscillations, alternating currents and Maxwell's equations. Students continuing to PHYS 2C will also need MATH 20C or 31BH.",
+  "prerequisite": "PHYS 2A or 4A and MATH 20B or 20C or 31BH. Recommended preparation: prior or concurrent enrollment in MATH 20C or 31BH."
+ },
+ {
+  "code": "PHYS 2BL",
+  "title": "Physics Laboratory\u2014Mechanics",
+  "unit": "2",
+  "description": "Experiments include gravitational force, linear and rotational motion, conservation of energy and momentum, collisions, oscillations and springs, gyroscopes. Data reduction and error analysis are required for written laboratory reports. One hour lecture and three hours laboratory.",
+  "prerequisite": "PHYS 2A or 4A. Recommended preparation: prior or concurrent enrollment in PHYS 2B or 4C."
+ },
+ {
+  "code": "PHYS 2C",
+  "title": "Physics\u2014Fluids, Waves, Thermodynamics, and Optics",
+  "unit": "4",
+  "description": "Continuation of PHYS 2B covering fluid mechanics, waves in elastic media, sound waves, temperature, heat and the first law of thermodynamics, kinetic theory of gases, entropy and the second law of thermodynamics, Maxwell's equations, electromagnetic waves, geometric optics, interference and diffraction. Students continuing to PHYS 2D will need MATH 20D.",
+  "prerequisite": "PHYS 2A or 4A, and MATH 20C or 31BH. Recommended preparation: prior or concurrent enrollment in MATH 20D. Prior completion of PHYS 2B is strongly recommended."
+ },
+ {
+  "code": "PHYS 2CL",
+  "title": "Physics Laboratory\u2014Electricity and Magnetism",
+  "unit": "2",
+  "description": "Experiments on L-R-C circuits; oscillations, resonance and damping, measurement of magnetic fields. One hour lecture and three hours laboratory. Program or materials fee may apply.",
+  "prerequisite": "PHYS 2A or 4A, and 2B or 4C. Recommended preparation: prior or concurrent enrollment in PHYS 2C or 4D."
+ },
+ {
+  "code": "PHYS 2D",
+  "title": "Physics\u2014Relativity and Quantum Physics",
+  "unit": "4",
+  "description": "A modern physics course covering atomic view of matter, electricity and radiation, atomic models of Rutherford and Bohr, relativity, X-rays, wave and particle duality, matter waves, Schr\u00f6dinger's equation, atomic view of solids, natural radioactivity.",
+  "prerequisite": "PHYS 2A or 4A, 2B, and MATH 20D. Recommended preparation: prior or concurrent enrollment in MATH 20E."
+ },
+ {
+  "code": "PHYS 2DL",
+  "title": "Physics Laboratory\u2014Modern Physics",
+  "unit": "2",
+  "description": "Experiments to be chosen from refraction, diffraction and interference of microwaves, Hall effect, thermal band gap, optical spectra, coherence of light, photoelectric effect, e/m ratio of particles, radioactive decays, and plasma physics. One hour lecture and three hours laboratory. Program or materials fees may apply.",
+  "prerequisite": "PHYS 2BL or 2CL **.** Recommended preparation: prior or concurrent enrollment in PHYS 2D or 4E."
+ },
+ {
+  "code": "PHYS 4A",
+  "title": "Physics for Physics Majors\u2014Mechanics",
+  "unit": "4",
+  "description": "The first quarter of a five-quarter calculus-based physics sequence for physics majors and students with a serious interest in physics. The topics covered are vectors, particle kinematics and dynamics, work and energy, conservation of energy, conservation of momentum, collisions, rotational kinematics and dynamics, equilibrium of rigid bodies.",
+  "prerequisite": "MATH 20A. Recommended preparation: prior or concurrent enrollment in MATH 20B and a knowledge of vectors."
+ },
+ {
+  "code": "PHYS 4C",
+  "title": "Physics for Physics Majors\u2014Electricity and Magnetism",
+  "unit": "4",
+  "description": "Continuation of PHYS 4B covering charge and Coulomb's law, electric field, Gauss's law, electric potential, capacitors and dielectrics, current and resistance, magnetic field, Ampere's law, Faraday's law, inductance, AC circuits.",
+  "prerequisite": "PHYS 2A or 4A, 2C or 4B, MATH 20C or 31BH, and 18 or 20F or 31AH. Recommended preparation: prior or concurrent enrollment in MATH 20E or 31CH."
+ },
+ {
+  "code": "PHYS 4E",
+  "title": "Physics for Physics Majors\u2014Quantum Physics",
+  "unit": "4",
+  "description": "Continuation of PHYS 4D covering experimental basis of quantum mechanics: Schrodinger equation and simple applications; spin; identical particles, Fermi and Bose distributions, density matrix, pure and mixed states, entangled states and EPR. ",
+  "prerequisite": "PHYS 2A-B-C-D or 4A-B-C-D, MATH 20A, 20B, 20C or 31BH, 20D, 20E or 31CH, and 18 or 20F or 31AH."
+ },
+ {
+  "code": "PHYS 5",
+  "title": "Stars and Black Holes",
+  "unit": "4",
+  "description": "An introduction to the evolution of stars, including their birth and death. Topics include constellations, the atom and light, telescopes, stellar birth, stellar evolution, white dwarfs, neutron stars, black holes, and general relativity. This course uses basic algebra, proportion, radians, logs, and powers. PHYS 5, 7, 9, and 13 form a four-quarter sequence and can be taken individually in any order.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 7",
+  "title": "Galaxies and Cosmology",
+  "unit": "4",
+  "description": "An introduction to galaxies and cosmology. Topics include the Milky Way, galaxy types and distances, dark matter, large scale structure, the expansion of the Universe, dark energy, and the early Universe. This course uses basic algebra, proportion, radians, logs and powers. PHYS 5, 7, 9, and 13 form a four-quarter sequence and can be taken individually in any order.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 8",
+  "title": "Physics of Everyday Life",
+  "unit": "4",
+  "description": "Examines phenomena and technology encountered in daily life from a physics perspective. Topics include waves, musical instruments, telecommunication, sports, appliances, transportation, computers, and energy sources. Physics concepts will be introduced and discussed as needed employing some algebra. No prior physics knowledge is required.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 9",
+  "title": "The Solar System",
+  "unit": "4",
+  "description": "An exploration of our solar system. Topics include the Sun, terrestrial and giant planets, satellites, asteroids, comets, dwarf planets and the Kuiper Belt, exoplanets, and the formation of planetary systems. This course uses basic algebra, proportion, radians, logs and powers. PHYS 5, 7, 9, and 13 form a four-quarter sequence and can be taken individually in any order.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 10",
+  "title": "Concepts in Physics",
+  "unit": "4",
+  "description": "This is a one-quarter general physics course for nonscience majors. Topics covered are motion, energy, heat, waves, electric current, radiation, light, atoms and molecules, nuclear fission and fusion. This course emphasizes concepts with minimal mathematical formulation. Recommended preparation: college algebra.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 11",
+  "title": "Survey of Physics",
+  "unit": "4",
+  "description": "Survey of physics for nonscience majors with strong mathematical background, including calculus. PHYS 11 describes the laws of motion, gravity, energy, momentum, and relativity. A laboratory component consists of two experiments with gravity and conservation principles.",
+  "prerequisite": "MATH 10A or 20A. Corequisites: MATH 10B or 20B."
+ },
+ {
+  "code": "PHYS 12",
+  "title": "Energy and the Environment",
+  "unit": "4",
+  "description": "A course covering energy fundamentals, energy use in an industrial society and the impact of large-scale energy consumption. It addresses topics on fossil fuel, heat engines, solar energy, nuclear energy, energy conservation, transportation, air pollution and global effects. Concepts and quantitative analysis.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 13",
+  "title": "Life in the Universe",
+  "unit": "4",
+  "description": "An exploration of life in the Universe. Topics include defining life; the origin, development, and fundamental characteristics of life on Earth; searches for life elsewhere in the solar system and other planetary systems; space exploration; and identifying extraterrestrial intelligence. This course uses basic algebra, proportion, radians, logs, and powers. PHYS 5, 7, 9, and 13 form a four-quarter sequence and can be taken individually in any order.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 30",
+  "title": "Poetry for Physicists",
+  "unit": "4",
+  "description": "Physicists have spoken of the beauty of equations. The poet John Keats wrote, \u201cBeauty is truth, truth beauty...\u201d What did they mean? Students will consider such questions while reading relevant essays and poems. Requirements include one creative exercise or presentation. Cross-listed with LTEN 30. Students cannot earn credit for both PHYS 30 and LTEN 30.",
+  "prerequisite": "CAT 2 or DOC 2 or HUM 1 or MCWP 40 or MMW 12 or WARR 11A or WCWP 10A and CAT 3 or DOC 3 or HUM 2 or MCWP 50 or MMW 13 or WARR 11B or WCWP 10B."
+ },
+ {
+  "code": "PHYS 87",
+  "title": "First-year Student Seminar in Physics and Astrophysics",
+  "unit": "1",
+  "description": "The First-year Student Seminar Program is designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. First-year student seminars are offered in all campus departments and undergraduate colleges, and topics vary from quarter to quarter. Enrollment is limited to fifteen to twenty students, with preference given to entering first-year students.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 98",
+  "title": "Directed Group Study",
+  "unit": "2",
+  "description": "Directed group study on a topic, or in a field not included in the regular departmental curriculum. P/NP grades only.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 99",
+  "title": "Independent Study",
+  "unit": "2",
+  "description": "Independent reading or research on a topic by special arrangement with a faculty member. P/NP grading only.",
+  "prerequisite": "lower-division standing. Completion of thirty units at UC San Diego undergraduate study, a minimum UC San Diego GPA of 3.0, and a completed and approved Special Studies form. Department stamp required."
+ },
+ {
+  "code": "PHYS 100A",
+  "title": "Electromagnetism I",
+  "unit": "4",
+  "description": "Coulomb's law, electric fields, electrostatics; conductors and dielectrics; steady currents, elements of circuit theory.",
+  "prerequisite": "PHYS 2A-B-C or 4A-B-C-D; MATH 20A, 20B, 20C or 31BH, 20D, 20E or 31CH, and 18 or 20F or 31AH. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 100B",
+  "title": "Electromagnetism II",
+  "unit": "4",
+  "description": "Magnetic fields and magnetostatics, magnetic materials, induction, AC circuits, displacement currents; development of Maxwell's equations.",
+  "prerequisite": "PHYS 100A, MATH 20A, 20B, 20C or 31BH, 20D, 20E or 31CH, and 18 or 20F or 31AH. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 100C",
+  "title": "Electromagnetism III",
+  "unit": "4",
+  "description": "Electromagnetic waves, radiation theory; application to optics; motion of charged particles in electromagnetic fields; relation of electromagnetism to relativistic concepts.",
+  "prerequisite": "PHYS 100B."
+ },
+ {
+  "code": "PHYS 105A",
+  "title": "Mathematical and Computational Physics I",
+  "unit": "4",
+  "description": "A combined analytic and mathematically based numerical approach to the solution of common applied mathematics problems in physics and engineering. Topics: Fourier series and integrals, special functions, initial and boundary value problems, Green's functions; heat, Laplace and wave equations.",
+  "prerequisite": "PHYS 2B-C-D or 4C-D-E, MATH 20A, 20B, 20C or 31BH, 20D, 20E or 31CH, and 18 or 20F or 31AH. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 105B",
+  "title": "Mathematical and Computational Physics II",
+  "unit": "4",
+  "description": "A continuation of PHYS 105A covering selected advanced topics in applied mathematical and numerical methods. Topics include statistics, diffusion and Monte-Carlo simulations; Laplace equation and numerical methods for nonseparable geometries; waves in inhomogeneous media, WKB analysis; nonlinear systems and chaos.",
+  "prerequisite": "PHYS 105A, MATH 20A, 20B, 20C or 31BH, 20D, 20E or 31CH, and 18 or 20F or 31AH."
+ },
+ {
+  "code": "PHYS 110A",
+  "title": "Mechanics I",
+  "unit": "4",
+  "description": "Phase flows, bifurcations, linear oscillations, calculus of variations, Lagrangian dynamics, conservation laws, central forces, systems of particles, collisions, coupled oscillations.",
+  "prerequisite": "PHYS 2A-B-C or 4A-B-C-D, MATH 20A, 20B, 20C or 31BH, 20D, 20E or 31CH, and 18 or 20F or 31AH. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 110B",
+  "title": "Mechanics II",
+  "unit": "4",
+  "description": "Noninertial reference systems, dynamics of rigid bodies, Hamilton's equations, Liouville's theorem, chaos, continuum mechanics, special relativity.",
+  "prerequisite": "PHYS 110A, MATH 20A, 20B, 20C or 31BH, 20D, 20E or 31CH, and 18 or 20F or 31AH. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 111",
+  "title": "Introduction to Ocean Waves",
+  "unit": "4",
+  "description": "The linear theory of ocean surface waves, including group velocity, wave dispersion, ray theory, wave measurement and prediction, shoaling waves, giant waves, ship wakes, tsunamis, and the physics of the surf zone. Cross-listed with SIO 111. Students may not receive credit for SIO 111 and PHYS 111.",
+  "prerequisite": "PHYS 2A-B-C or 4A-B-C, MATH 20A, 20B, 20C or 31BH, 20D, and 20E or 31CH."
+ },
+ {
+  "code": "PHYS 116",
+  "title": "Fluid Dynamics for Physicists",
+  "unit": "4",
+  "description": "This is a basic course in fluid dynamics for advanced students. The course consists of core fundamentals and modules on advanced applications to physical and biological phenomena. Core fundamentals include Euler and Navier-Stokes equations, potential and Stokesian flow, instabilities, boundary layers, turbulence, and shocks. Module topics include MHD, waves, and the physics of locomotion and olfaction. May be coscheduled with PHYS 216. Students with equivalent prerequisite knowledge may use the Enrollment Authorization System (EASy) to request approval to enroll.",
+  "prerequisite": "PHYS 100B and 110B."
+ },
+ {
+  "code": "PHYS 120",
+  "title": "Circuits and Electronics",
+  "unit": "5",
+  "description": "Laboratory and lecture course that covers principles of analog circuit theory and design, linear systems theory, and practical aspects of circuit realization, debugging, and characterization. Laboratory exercises include passive circuits, active filters and amplifiers with discrete and monolithic devices, nonlinear circuits, interfaces to sensors and actuators, and the digitization of analog signals. PHYS 120 was formerly numbered PHYS 120A. Program or materials fees may apply. ",
+  "prerequisite": "PHYS 2A-B-C or 4A-B-C, and 2CL. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only. Recommended preparation: PHYS 100A."
+ },
+ {
+  "code": "PHYS 122",
+  "title": "Experimental Techniques",
+  "unit": "4",
+  "description": "Laboratory-lecture course covering practical techniques used in research laboratories. Possible topics include computer interfacing of instruments, sensors, and actuators; programming for data acquisition/analysis; electronics; measurement techniques; mechanical design/machining; mechanics of materials; thermal design/control; vacuum/cryogenic techniques; optics; particle detection. PHYS 122 was formerly numbered PHYS 121. Program or materials fees may apply.",
+  "prerequisite": "PHYS 120."
+ },
+ {
+  "code": "PHYS 124",
+  "title": "Laboratory Projects",
+  "unit": "4",
+  "description": "A laboratory-lecture-project course featuring creation of an experimental apparatus in teams of about two. Emphasis is on electronic sensing of the physical environment and actuating physical responses. The course will use a computer interface such as the Arduino. PHYS 124 was formerly numbered PHYS 120B. Program or materials fees may apply. ",
+  "prerequisite": "PHYS 120."
+ },
+ {
+  "code": "PHYS 130A",
+  "title": "Quantum Physics I",
+  "unit": "4",
+  "description": "Development of quantum mechanics. Wave mechanics; measurement postulate and measurement problem. Piece-wise constant potentials, simple harmonic oscillator, central field and the hydrogen atom. Three hours lecture, one-hour discussion session.",
+  "prerequisite": "PHYS 2D or 4E, 100A, 110A. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 130B",
+  "title": "Quantum Physics II",
+  "unit": "4",
+  "description": "Matrix mechanics, angular momentum, spin, and the two-state system. Approximation methods and the hydrogen spectrum. Identical particles, atomic and nuclear structures. Scattering theory. Three hours lecture, one-hour discussion session.",
+  "prerequisite": "PHYS 100B and 130A. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 130C",
+  "title": "Quantum Physics III",
+  "unit": "4",
+  "description": "Quantized electromagnetic fields and introductory quantum optics. Symmetry and conservation laws. Introductory many-body physics. Density matrix, quantum coherence and dissipation. The relativistic electron. Three-hour lecture, one- hour discussion session.",
+  "prerequisite": "PHYS 130B."
+ },
+ {
+  "code": "PHYS 133",
+  "title": "Condensed Matter/Materials Science Laboratory",
+  "unit": "4",
+  "description": "A project-oriented laboratory course utilizing state-of-the-art experimental techniques in materials science. The course prepares students for research in a modern condensed matter-materials science laboratory. Under supervision, the students develop their own experimental ideas after investigating current research literature. With the use of sophisticated state-of-the-art instrumentation students conduct research, write a research paper, and make verbal presentations. Program or materials fees may apply.",
+  "prerequisite": "PHYS 2CL and 2DL."
+ },
+ {
+  "code": "PHYS 137",
+  "title": "String Theory",
+  "unit": "4",
+  "description": "Quantum mechanics and gravity. Electromagnetism from gravity and extra dimensions. Unification of forces. Quantum black holes. Properties of strings and branes.",
+  "prerequisite": "PHYS 100A, 110A, and 130A."
+ },
+ {
+  "code": "PHYS 139",
+  "title": "Physics Special Topics",
+  "unit": "4",
+  "description": "From time to time a member of the regular faculty or a resident visitor will give a self-contained short course on a topic in his or her special area of research. This course is not offered on a regular basis, but it is estimated that it will be given once each academic year. Course may be taken for credit up to two times as topics vary (the course subtitle will be different for each distinct topic). Students who repeat the same topic in PHYS 139 will have the duplicate credit removed from their academic record.",
+  "prerequisite": "PHYS 2A-B-C-D or 4A-B-C-D-E, MATH 20A, 20B, 20C or 31BH, and 18 or 20F or 31AH."
+ },
+ {
+  "code": "PHYS 140A",
+  "title": "Statistical and Thermal Physics I",
+  "unit": "4",
+  "description": "Integrated treatment of thermodynamics and statistical mechanics; statistical treatment of entropy, review of elementary probability theory, canonical distribution, partition function, free energy, phase equilibrium, introduction to ideal quantum gases.",
+  "prerequisite": "PHYS 130A. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 140B",
+  "title": "Statistical and Thermal Physics II",
+  "unit": "4",
+  "description": "Applications of the theory of ideal quantum gases in condensed matter physics, nuclear physics and astrophysics; advanced thermodynamics, the third law, chemical equilibrium, low temperature physics; kinetic theory and transport in nonequilibrium systems; introduction to critical phenomena including mean field theory.",
+  "prerequisite": "PHYS 130B and 140A. Open to major codes PY26, PY28, PY29, PY30, PY31, PY32, PY33, and PY34 only."
+ },
+ {
+  "code": "PHYS 141",
+  "title": "Computational Physics I: Probabilistic Models and Simulations",
+  "unit": "4",
+  "description": "Project-based computational physics laboratory course with student's choice of Fortran 90/95, or C/C++. Applications from materials science to the structure of the early universe are chosen from molecular dynamics, classical and quantum Monte Carlo methods, physical Langevin/Fokker-Planck processes.",
+  "prerequisite": "upper-division standing."
+ },
+ {
+  "code": "PHYS 142",
+  "title": "Computational Physics II: PDE and Matrix Models",
+  "unit": "4",
+  "description": "Project-based computational physics laboratory course for modern physics and engineering problems with student's choice of Fortran90/95, or C/C++. Applications of finite element PDE models are chosen from quantum mechanics and nanodevices, fluid dynamics, electromagnetism, materials physics, and other modern topics.",
+  "prerequisite": "upper-division standing."
+ },
+ {
+  "code": "PHYS 151",
+  "title": "Elementary Plasma Physics",
+  "unit": "4",
+  "description": "Particle motions, plasmas as fluids, waves, diffusion, equilibrium and stability, nonlinear effects, controlled fusion. Cross-listed with MAE 117A. Students will not receive credit for both MAE 117A and PHYS 151.",
+  "prerequisite": "MATH 20D."
+ },
+ {
+  "code": "PHYS 152A",
+  "title": "Condensed Matter Physics",
+  "unit": "4",
+  "description": "Physics of the solid-state. Binding mechanisms, crystal structures and symmetries, diffraction, reciprocal space, phonons, free and nearly free electron models, energy bands, solid-state thermodynamics, kinetic theory and transport, semiconductors.",
+  "prerequisite": "PHYS 130A or CHEM 130. Corequisites: PHYS 140A."
+ },
+ {
+  "code": "PHYS 152B",
+  "title": "Electronic Materials",
+  "unit": "4",
+  "description": "Physics of electronic materials. Semiconductors: bands, donors and acceptors, devices. Metals: Fermi surface, screening, optical properties. Insulators: dia-/ferro-electrics, displacive transitions. Magnets: dia-/para-/ferro-/antiferro-magnetism, phase transitions, low temperature properties. Superconductors: pairing, Meissner effect, flux quantization, BCS theory.",
+  "prerequisite": "PHYS 152A."
+ },
+ {
+  "code": "PHYS 154",
+  "title": "Elementary Particle Physics",
+  "unit": "4",
+  "description": "The constituents of matter (quarks and leptons) and their interactions (strong, electromagnetic, and weak). Symmetries and conservation laws. Fundamental processes involving quarks and leptons. Unification of weak and electromagnetic interactions. Particle-astrophysics and the Big Bang.",
+  "prerequisite": "PHYS 130B."
+ },
+ {
+  "code": "PHYS 160",
+  "title": "Stellar Astrophysics",
+  "unit": "4",
+  "description": "Introduction to stellar astrophysics: observational properties of stars, solar physics, radiation and energy transport in stars, stellar spectroscopy, nuclear processes in stars, stellar structure and evolution, degenerate matter and compact stellar objects, supernovae and nucleosynthesis. PHYS 160, 161, 162, and 163 may be taken as a four-quarter sequence for students interested in pursuing graduate study in astrophysics or individually as topics of interest.",
+  "prerequisite": "PHYS 2A-B-C-D or 4A-B-C-D-E."
+ },
+ {
+  "code": "PHYS 161",
+  "title": "Black Holes",
+  "unit": "4",
+  "description": "An introduction to Einstein's theory of general relativity with emphasis on the physics of black holes. Topics will include metrics and curved space-time, the Schwarzchild metric, motion around and inside black holes, rotating black holes, gravitational lensing, gravity waves, Hawking radiation, and observations of black holes. PHYS 160, 161, 162, and 163 may be taken as a four-quarter sequence for students interested in pursuing graduate study in astrophysics or individually as topics of interest.",
+  "prerequisite": "PHYS 2A-B-C-D or 4A-B-C-D-E."
+ },
+ {
+  "code": "PHYS 162",
+  "title": "Cosmology",
+  "unit": "4",
+  "description": "The expanding Universe, the Friedman-Robertson-Walker equations, dark matter, dark energy, and the formation of galaxies and large-scale structure. Topics in observational cosmology, including how to measure distances and times, and the age, density, and size of the Universe. Topics in the early Universe, including the cosmic microwave background, creation of the elements, cosmic inflation, the big bang. PHYS 160, 161, 162, and 163 may be taken as a four- quarter sequence for students interested in pursuing graduate study in astrophysics or individually as topics of interest.",
+  "prerequisite": "PHYS 2A-B-C-D or 4A-B-C-D-E."
+ },
+ {
+  "code": "PHYS 163",
+  "title": "Galaxies and Quasars",
+  "unit": "4",
+  "description": "An introduction to the structure and properties of galaxies in the universe. Topics covered include the Milky Way, the interstellar medium, properties of spiral and elliptical galaxies, rotation curves, starburst galaxies, galaxy formation and evolution, large-scale structure, and active galaxies and quasars. PHYS 160, 161, 162, and 163 may be taken as a four-quarter sequence in any order for students interested in pursuing graduate study in astrophysics or individually as topics of interest.",
+  "prerequisite": "PHYS 2A-B-C-D or 4A-B-C-D-E."
+ },
+ {
+  "code": "PHYS 164",
+  "title": "Observational Astrophysics Research Lab",
+  "unit": "4",
+  "description": "Project-based course developing tools and techniques of observational astrophysical research: photon counting, imaging, spectroscopy, astrometry; collecting data at the telescope; data reduction and analysis; probability functions; error analysis techniques; and scientific writing.",
+  "prerequisite": "PHYS 2A-B-C-D or 4A-B-C-D-E. Recommended preparation: concurrent enrollment or completion of one course from PHYS 160, 161, 162, or 163 is recommended."
+ },
+ {
+  "code": "PHYS 170",
+  "title": "Medical Instruments: Principles and Practice",
+  "unit": "4",
+  "description": "The principles and clinical applications of medical diagnostic instruments, including electromagnetic measurements, spectroscopy, microscopy; ultrasounds, X-rays, MRI, tomography, lasers in surgery, fiber optics in diagnostics.",
+  "prerequisite": "PHYS 1B or 2B or 4C, and 1C or 2C or 4B."
+ },
+ {
+  "code": "PHYS 173",
+  "title": "Modern Physics Laboratory: Biological and Quantum Physics",
+  "unit": "4",
+  "description": "A selection of experiments in contemporary physics and biophysics. Students select among pulsed NMR, Mossbauer, Zeeman effect, light scattering, holography, optical trapping, voltage clamp and genetic transcription of ion channels in oocytes, fluorescent imaging, and flight control in flies.",
+  "prerequisite": "PHYS 120 and BILD 1 and CHEM 7L."
+ },
+ {
+  "code": "PHYS 175",
+  "title": "Biological Physics",
+  "unit": "4",
+  "description": "This course teaches how quantitative models derived from statistical physics can be used to build quantitative, intuitive understanding of biological phenomena. Case studies include ion channels, cooperative binding, gene regulation, protein folding, molecular motor dynamics, cytoskeletal assembly, and biological electricity.",
+  "prerequisite": "CHEM 132 or the combination of PHYS 100A and 110A. Corequisites: PHYS 140A."
+ },
+ {
+  "code": "PHYS 176",
+  "title": "Quantitative Molecular Biology",
+  "unit": "4",
+  "description": "A quantitative approach to gene regulation including transcriptional and posttranscriptional control of gene expression, as well as feedback and stochastic effects in genetic circuits. These topics will be integrated into the control of bacterial growth and metabolism.",
+  "prerequisite": "PHYS 140A. Recommended preparation: an introductory course in biology is helpful but not necessary."
+ },
+ {
+  "code": "PHYS 177",
+  "title": "Physics of the Cell",
+  "unit": "4",
+  "description": "The use of dynamic systems and nonequilibrium statistical mechanics to understand the biological cell. Topics chosen from chemotaxis as a model system; signal transduction networks and cellular information processing; mechanics of the membrane; cytoskeletal dynamics; nonlinear Calcium waves. May be scheduled with PHYS 277.",
+  "prerequisite": "upper-division standing. Recommended preparation: an introductory course in biology is helpful but not necessary."
+ },
+ {
+  "code": "PHYS 178",
+  "title": "Biophysics of Neurons and Networks",
+  "unit": "4",
+  "description": "Information processing by nervous system through physical reasoning and mathematical analysis. A review of the biophysics of neurons and synapses and fundamental limits to signaling by nervous systems is followed by essential aspects of the dynamics of phase coupled neuronal oscillators, the dynamics and computational capabilities of recurrent neuronal networks, and the computational capability of layered networks.",
+  "prerequisite": "upper- division standing. Recommended preparation: a working knowledge of calculus and linear algebra."
+ },
+ {
+  "code": "PHYS 191",
+  "title": "Undergraduate Seminar on Physics",
+  "unit": "1",
+  "description": "Undergraduate seminars organized around the research interests of various faculty members. P/NP grades only.",
+  "prerequisite": "PHYS 2A or 4A."
+ },
+ {
+  "code": "PHYS 192",
+  "title": "Senior Seminar in Physics",
+  "unit": "1",
+  "description": "The Senior Seminar Program is designed to allow senior undergraduates to meet with faculty members in a small group setting to explore an intellectual topic in Physics (at the upper-division level). Senior Seminars may be offered in all campus departments. Topics will vary from quarter to quarter. Senior Seminars may be taken for credit up to four times, with a change in topic, and permission of the department. Enrollment is limited to twenty students, with preference given to seniors.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 198",
+  "title": "Directed Group Study",
+  "unit": "2 or 4",
+  "description": "Directed group study on a topic or in a field not included in the regular departmental curriculum. (P/NP grades only.)",
+  "prerequisite": "consent of instructor and departmental chair."
+ },
+ {
+  "code": "PHYS 199",
+  "title": "Research for Undergraduates",
+  "unit": "2 or 4",
+  "description": "Independent reading or research on a problem by special arrangement with a faculty member. (P/NP grades only.)",
+  "prerequisite": "consent of instructor and departmental chair."
+ },
+ {
+  "code": "PHYS 199H",
+  "title": "Honors Thesis Research for Undergraduates",
+  "unit": "2-4",
+  "description": "Honors thesis research for seniors participating in the Honors Program. Research is conducted under the supervision of a physics faculty member.",
+  "prerequisite": "admission to the Honors Program in Physics."
+ },
+ {
+  "code": "PHYS 200A",
+  "title": "Theoretical Mechanics I",
+  "unit": "4",
+  "description": "Review of Lagrangian mechanics: calculus of variations, Noether's theorem, constraints, central forces, coupled oscillations. Continuum mechanics: strings and membranes, Sturm-Liouville theory, dispersion. Hamiltonian mechanics: equations of motion, Poisson brackets, canonical transformations, Hamilton-Jacobi theory, action-angle variables, adiabatic invariants.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 200B",
+  "title": "Theoretical Mechanics II",
+  "unit": "4",
+  "description": "Hamilton's equations, canonical transformations; Hamilton-Jacobi theory; action-angle variables and adiabatic invariants; introduction to canonical perturbation theory, nonintegrable systems and chaos; Liouville equation; ergodicity and mixing; entropy; statistical ensembles.",
+  "prerequisite": "PHYS 200A."
+ },
+ {
+  "code": "PHYS 201",
+  "title": "Mathematical Methods for Physics",
+  "unit": "5",
+  "description": "An introduction to mathematical methods used in theoretical physics. Topics include a review of complex variable theory, applications of the Cauchy residue theorem, asymptotic series, method of steepest descent, Fourier and Laplace transforms, series solutions for ODE's and related special functions, Sturm Liouville theory, variational principles, boundary value problems, and Green's function techniques.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 202",
+  "title": "Estimation and Scaling in Physics",
+  "unit": "4",
+  "description": "This course stresses approximate techniques in physics, both in terms of quantitative estimation and scaling relationships. A broad range of topics may include drag, aerodynamics, fluids, waves, heat transfer, mechanics of materials, sound, optical phenomena, nuclear physics, societal-scale energy, weather and climate change, human metabolic energy. Undergraduates wishing to enroll will be expected to have prior completion of PHYS 100B, PHYS 110A, PHYS 130B, and PHYS 140A.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 203A",
+  "title": "Advanced Classical Electrodynamics I",
+  "unit": "5",
+  "description": "Electrostatics, symmetries of Laplace's equation and methods for solution, boundary value problems, electrostatics in macroscopic media, magnetostatics, Maxwell's equations, Green functions for Maxwell's equations, plane wave solutions, plane waves in macroscopic media.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 203B",
+  "title": "Advanced Classical Electrodynamics II",
+  "unit": "4",
+  "description": "Special theory of relativity, covariant formulation of electrodynamics, radiation from current distributions and accelerated charges, multipole radiation fields, waveguides and resonant cavities.",
+  "prerequisite": "PHYS 203A."
+ },
+ {
+  "code": "PHYS 210A",
+  "title": "Equilibrium Statistical Mechanics",
+  "unit": "5",
+  "description": "Approach to equilibrium: BBGKY hierarchy; Boltzmann equation; H-theorem. Ensemble theory; thermodynamic potentials. Quantum statistics; Bose condensation. Interacting systems: Cluster expansion; phase transition via mean-field theory; the Ginzburg criterion.",
+  "prerequisite": "PHYS 200A-B. Corequisites: PHYS 212C."
+ },
+ {
+  "code": "PHYS 210B",
+  "title": "Nonequilibrium Statistical Mechanics",
+  "unit": "4",
+  "description": "Transport phenomena; kinetic theory and the Chapman-Enskog method; hydrodynamic theory; nonlinear effects and the mode coupling method. Stochastic processes; Langevin and Fokker-Planck equation; fluctuation- dissipation relation; multiplicative processes; dynamic field theory; Martin- Siggia-Rose formalism; dynamical scaling theory.",
+  "prerequisite": "PHYS 210A."
+ },
+ {
+  "code": "PHYS 211A",
+  "title": "Solid-State Physics I",
+  "unit": "5",
+  "description": "The first of a two-quarter course in solid-state physics. Covers a range of solid-state phenomena that can be understood within an independent particle description. Topics include chemical versus band-theoretical description of solids, electronic band structure calculation, lattice dynamics, transport phenomena and electrodynamics in metals, optical properties, semiconductor physics.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 211B",
+  "title": "Solid-State Physics II",
+  "unit": "4",
+  "description": "Deals with collective effects in solids arising from interactions between constituents. Topics include electron-electron and electron-phonon interactions, screening, band structure effects, Landau Fermi liquid theory. Magnetism in metals and insulators, superconductivity; occurrence, phenomenology, and microscopic theory.",
+  "prerequisite": "PHYS 210A and PHYS 211A."
+ },
+ {
+  "code": "PHYS 212A",
+  "title": "Quantum Mechanics I",
+  "unit": "4",
+  "description": "Quantum principles of state (pure, composite, entangled, mixed), observables, time evolution, and measurement postulate. Simple soluble systems: two-state, harmonic oscillator, and spherical potentials. Angular momentum and spin. Time-independent approximations.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 212B",
+  "title": "Quantum Mechanics II",
+  "unit": "4",
+  "description": "Symmetry theory and conservation laws: time reversal, discrete, translation and rotational groups. Potential scattering. Time-dependent perturbation theory. Quantization of Electromagnetic fields and transition rates. Identical particles. Open systems: mixed states, dissipation, decoherence.",
+  "prerequisite": "PHYS 212A."
+ },
+ {
+  "code": "PHYS 212C",
+  "title": "Quantum Mechanics III",
+  "unit": "4",
+  "description": "Topics may include basics of many-body quantum mechanics; second quantization; basics of quantum information theory; path integrals, topological phases, and Aharonov-Bohm effect; stability of matter; and atomic and molecular structure.",
+  "prerequisite": "PHYS 212A-B."
+ },
+ {
+  "code": "PHYS 214",
+  "title": "Physics of Elementary Particles",
+  "unit": "4",
+  "description": "Classification of particles using symmetries and invariance principles, quarks and leptons, quantum electrodynamics, weak interactions, e+p- interactions, deep-inelastic lepton-nucleon scattering, pp collisions, introduction to QCD.",
+  "prerequisite": "PHYS 215A."
+ },
+ {
+  "code": "PHYS 215A",
+  "title": "Particles and Fields I",
+  "unit": "4",
+  "description": "The first quarter of a three-quarter course on field theory and elementary particle physics. Topics covered include the relation between symmetries and conservation laws, the calculation of cross sections and reaction rates, covariant perturbation theory, and quantum electrodynamics.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 215B",
+  "title": "Particles and Fields II",
+  "unit": "4",
+  "description": "Gauge theory quantization by means of path integrals, SU(3) symmetry and the quark model, spontaneous symmetry breakdown, introduction to QCD and the Glashow-Weinberg-Salam model of weak interactions, basic issues of renormalization.",
+  "prerequisite": "PHYS 215A."
+ },
+ {
+  "code": "PHYS 215C",
+  "title": "Particles and Fields III",
+  "unit": "4",
+  "description": "Modern applications of the renormalization group in quantum chromodynamics and the weak interactions. Unified gauge theories, particle cosmology, and special topics in particle theory.",
+  "prerequisite": "PHYS 215A-B."
+ },
+ {
+  "code": "PHYS 216",
+  "title": "Fluid Dynamics for Physicists",
+  "unit": "4",
+  "description": "This is a basic course in fluid dynamics for advanced students. The course consists of core fundamentals and modules on advanced applications to physical and biological phenomena. Core fundamentals include Euler and Navier-Stokes equations, potential and Stokesian flow, instabilities, boundary layers, turbulence, and shocks. Module topics include MHD, waves, and the physics of locomotion and olfaction. May be coscheduled with PHYS 116. The performance criteria for graduate students will be to complete and pass (1) a graduate- level exam and (2) graduate-level homework problem sets. In both cases, there will be overlap with the undergraduate exam and problems, but the graduates will be expected to complete additional work at a higher level. Recommended preparation: prior coursework consistent with PHYS 100B and 110B content. Open to major codes PY75, PY76, PY77, PY78, PY79, PY80, PY81, and PY82 only. All others must use the Enrollment Authorization System (EASy) to request approval to enroll.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 217",
+  "title": "Field Theory and the Renormalization Group",
+  "unit": "4",
+  "description": "Application of field theoretic and renormalization group methods to problems in condensed matter, or particle physics. Topics will vary and may include phase transition and critical phenomena; many body quantum systems; quantum chromodynamics and the electroweak model.",
+  "prerequisite": "PHYS 210A."
+ },
+ {
+  "code": "PHYS 218A",
+  "title": "Plasma Physics I",
+  "unit": "4",
+  "description": "The basic physics of plasmas is discussed for the simple case of an unmagnetized plasma. Topics include thermal equilibrium statistical properties, fluid and Landau theory of electron and ion plasma waves, velocity space instabilities, quasi-linear theory, fluctuations, scattering or radiation, Fokker-Planck equation.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 218B",
+  "title": "Plasma Physics II",
+  "unit": "4",
+  "description": "This course deals with magnetized plasma. Topics include Appleton-Hartree theory of waves in cold plasma, waves in warm plasma (Bernstein waves, cyclotron damping). MHD equations, MHD waves, low frequency modes, and the adiabatic theory of particle orbits.",
+  "prerequisite": "PHYS 218A."
+ },
+ {
+  "code": "PHYS 218C",
+  "title": "Plasma Physics III",
+  "unit": "4",
+  "description": "This course deals with the physics of confined plasmas with particular relevance to controlled fusion. Topics include topology of magnetic fields, confined plasma equilibria, energy principles, ballooning and kink instabilities, resistive MHD modes (tearing, rippling and pressure-driven), gyrokinetic theory, microinstabilities and anomalous transport, and laser- plasma interactions relevant to inertial fusion.",
+  "prerequisite": "PHYS 218B."
+ },
+ {
+  "code": "PHYS 219",
+  "title": "Condensed Matter/Materials Science Laboratory",
+  "unit": "4",
+  "description": "A project-oriented laboratory course utilizing state-of-the-art experimental techniques in materials science. The course prepares students for research in a modern condensed matter-materials science laboratory. Under supervision, the students develop their own experimental ideas after investigating current research literature. With the use of sophisticated state-of-the-art instrumentation students conduct research, write a research paper, and make verbal presentations.",
+  "prerequisite": "PHYS 211A."
+ },
+ {
+  "code": "PHYS 220",
+  "title": "Group Theoretical Methods in Physics",
+  "unit": "4",
+  "description": "Study of group theoretical methods with applications to problems in high energy, atomic, and condensed matter physics. Representation theory, tensor methods, Clebsh-Gordan series. Young tableaux. The course will cover discrete groups, Lie groups and Lie algebras, with emphasis on permutation, orthogonal, and unitary groups.",
+  "prerequisite": "PHYS 212C."
+ },
+ {
+  "code": "PHYS 221A",
+  "title": "Nonlinear and Nonequilibrium Dynamics of Physical Systems",
+  "unit": "4",
+  "description": "An introduction to the modern theory of dynamical systems and applications thereof. Topics include maps and flows, bifurcation theory and normal form analysis, chaotic attractors in dissipative systems, Hamiltonian dynamics and the KAM theorem, and time series analysis. Examples from real physical systems will be stressed throughout.",
+  "prerequisite": "PHYS 200B."
+ },
+ {
+  "code": "PHYS 222A",
+  "title": "Elementary Particle Physics",
+  "unit": "4",
+  "description": "Weak interactions; neutrino physics; C,P, and CP violation; electroweak gauge theory and symmetry breaking. Design of detectors and experiments; searches for new phenomena.",
+  "prerequisite": "PHYS 214\\."
+ },
+ {
+  "code": "PHYS 223",
+  "title": "Stellar Structure and Evolution",
+  "unit": "4",
+  "description": "Energy generation, flow, hydrostatic equilibrium, equation of state. Dependence of stellar parameters (central surface temperature, radius, luminosity, etc.) on stellar mass and relation to physical constants. Relationship of these parameters to the H-R diagram and stellar evolution. Stellar interiors, opacity sources, radiative and convective energy flow. Nuclear reactions, neutrino processes. Polytropic models. White dwarfs and neutron stars. (S/U grades permitted.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 224",
+  "title": "Physics of the Interstellar Medium",
+  "unit": "4",
+  "description": "Gaseous nebulae, molecular clouds, ionized regions, and dust. Low-energy processes in neutral and ionized gases. Interaction of matter with radiation, emission and absorption processes, formation of atomic lines. Energy balance, steady state temperatures, and the physics and properties of dust. Masers and molecular line emission. Dynamics and shocks in the interstellar medium. (S/U grades permitted.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 225A-B",
+  "title": "General Relativity",
+  "unit": "4-4",
+  "description": "This is a two-quarter course on gravitation and the general theory of relativity. The first quarter is intended to be offered every year and may be taken independently of the second quarter. The second quarter will be offered in alternate years. Topics covered in the first quarter include special relativity, differential geometry, the equivalence principle, the Einstein field equations, and experimental and observational tests of gravitation theories. The second quarter will focus on more advanced topics, including gravitational collapse, Schwarzschild and Kerr geometries, black holes, gravitational radiation, cosmology, and quantum gravitation.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 226",
+  "title": "Galaxies and Galactic Dynamics",
+  "unit": "4",
+  "description": "The structure and dynamics of galaxies. Topics include potential theory, the theory of stellar orbits, self-consistent equilibria of stellar systems, stability and dynamics of stellar systems including relaxation and approach to equilibrium. Collisions between galaxies, galactic evolution, dark matter, and galaxy formation.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 227",
+  "title": "Cosmology",
+  "unit": "4",
+  "description": "An advanced survey of topics in physical cosmology. The Friedmann models and the large-scale structure of the universe, including the observational determination of Ho (the Hubble constant) and qo (the deceleration parameter). Galaxy number counts. A systematic exposition of the physics of the early universe, including vacuum phase transitions; inflation; the generation of net baryon number, fluctuations, topological defects and textures. Primordial nucleosynthesis, both standard and nonstandard models. Growth and decay of adiabatic and isocurvature density fluctuations. Discussion of dark matter candidates and constraints from observation and experiment. Nucleocosmo- chronology and the determination of the age of the universe.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 228",
+  "title": "High-Energy Astrophysics and Compact Objects",
+  "unit": "4",
+  "description": "The physics of compact objects, including the equation of state of dense matter and stellar stability theory. Maximum mass of neutron stars, white dwarfs, and supermassive objects. Black holes and accretion disks. Compact X-ray sources and transient phenomena, including X-ray and g-ray bursts. The fundamental physics of electromagnetic radiation mechanisms: synchrotron radiation, Compton scattering, thermal and nonthermal bremsstrahlung, pair production, pulsars. Particle acceleration models, neutrino production and energy loss mechanisms, supernovae, and neutron star production.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 229",
+  "title": "Astronomical Instrumentation and Observational Techniques",
+  "unit": "4",
+  "description": "The course will explore a variety of astrophysical instruments and techniques from detection of the shortest to the longest wavelengths of light. Topics include coordinates/time, statistics of light, basic optics, telescopes, instrument design, spectrographs, interferometry, detectors, sub-mm/radio techniques, adaptive optics, and astroparticle and gravitational wave facilities. Recommended preparation: astronomical phenomenology, mathematical methods, computer programming.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 230",
+  "title": "Advanced Solid-State Physics",
+  "unit": "4",
+  "description": "Selection of advanced topics in solid-state physics; material covered may vary from year to year. Examples of topics covered: disordered systems, surface physics, strong-coupling superconductivity, quantum Hall effect, low- dimensional solids, heavy fermion systems, high-temperature superconductivity, solid and liquid helium.",
+  "prerequisite": "PHYS 211B."
+ },
+ {
+  "code": "PHYS 232",
+  "title": "Electronic Materials",
+  "unit": "4",
+  "description": "Physics of electronic materials. Semiconductors: bands, donors and acceptors, devices. Metals: Fermi surface, screening, optical properties. Insulators: dia-/ferro-electrics, displacive transitions. Magnets: dia-/para-/ferro-/antiferro-magnetism, phase transitions, low temperature properties. Superconductors: pairing, Meissner effect, flux quantization, BCS theory.",
+  "prerequisite": "PHYS 211A."
+ },
+ {
+  "code": "PHYS 235",
+  "title": "Nonlinear Plasma Theory",
+  "unit": "4",
+  "description": "This course deals with nonlinear phenomena in plasmas. Topics include orbit perturbation theory, stochasticity, Arnold diffusion, nonlinear wave-particle and wave-wave interaction, resonance broadening, basics of fluid and plasma turbulence, closure methods, models of coherent structures.",
+  "prerequisite": "PHYS 218C."
+ },
+ {
+  "code": "PHYS 238",
+  "title": "Observational Astrophysics Research Lab",
+  "unit": "4",
+  "description": "Project-based course developing tools and techniques of observational astrophysical research: photon counting, imaging, spectroscopy, astrometry; collecting data at the telescope; data reduction and analysis; probability functions; error analysis techniques; and scientific writing. Students will complete a final paper of publishable quality in the format of a peer-reviewed journal, as well as an oral presentation. Recommended preparation: undergraduate or graduate background in astrophysics.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 239",
+  "title": "Special Topics",
+  "unit": "4",
+  "description": "From time to time a member of the regular faculty or a resident visitor will find it possible to give a self-contained short course on an advanced topic in his or her special area of research. This course is not offered on a regular basis, but it is estimated that it will be given once each academic year. (S/U grades permitted.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 241",
+  "title": "Computational Physics I: Probabilistic Models and Simulations",
+  "unit": "4",
+  "description": "Project-based computational physics laboratory course with student's choice of Fortran90/95 or C/C++. Applications from materials science to the structure of the early universe are chosen from molecular dynamics, classical and quantum Monte Carlo methods, physical Langevin/Fokker-Planck processes, and other modern topics.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 242",
+  "title": "Computational Physics II: PDE and Matrix Models",
+  "unit": "4",
+  "description": "Project-based computational physics laboratory course for modern physics and engineering problems with student's choice of Fortran90/95 or C/C++. Applications of finite element PDE models are chosen from quantum mechanics and nanodevices, fluid dynamics, electromagnetism, materials physics, and other modern topics.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 243",
+  "title": "Stochastic Methods",
+  "unit": "4",
+  "description": "Introduction to methods of stochastic modeling and simulation. Topics include random variables; stochastic processes; Markov processes; one-step processes; the Fokker-Planck equation and Brownian motion; the Langevin approach; Monte- Carlo methods; fluctuations and the Boltzmann equation; and stochastic differential equations.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 244",
+  "title": "Parallel Computing in Science and Engineering",
+  "unit": "4",
+  "description": "Introduction to basic techniques of parallel computing, the design of parallel algorithms, and their scientific and engineering applications. Topics include parallel computing platforms; message-passing model and software; design and application of parallel software packages; parallel visualization; parallel applications.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 250",
+  "title": "Condensed Matter Physics Seminar",
+  "unit": "0-1",
+  "description": "Discussion of current research in physics of the solid state and of other condensed matter. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 251",
+  "title": "High-Energy Physics Seminar",
+  "unit": "0-1",
+  "description": "Discussions of current research in nuclear physics, principally in the field of elementary particles. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 252",
+  "title": "Plasma Physics Seminar",
+  "unit": "0-1",
+  "description": "Discussions of recent research in plasma physics. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 253",
+  "title": "Astrophysics and Space Physics Seminar",
+  "unit": "0-1",
+  "description": "Discussions of recent research in astrophysics and space physics. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 254",
+  "title": "Biophysics Seminar",
+  "unit": "1",
+  "description": "Presentation of current research in biological physics and quantitative biology by invited speakers from the United States and abroad. (S/U grades only.) May be taken for credit thirty times.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 255",
+  "title": "Biophysics Research Talks",
+  "unit": "1",
+  "description": "Discussion of recent research in biological physics and quantitative biology by current graduate students. (S/U grades only.) May be taken for credit thirty times.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 256",
+  "title": "Critical Reading in Quantitative Biology",
+  "unit": "1",
+  "description": "Critical analysis of classic and current literature in quantitative biology, involving written critiques and group discussion. (S/U grades only.) May be taken for credit thirty times.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 257",
+  "title": "High-Energy Physics Special Topics Seminar",
+  "unit": "0-1",
+  "description": "Discussions of current research in high-energy physics. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 258",
+  "title": "Astrophysics and Space Physics Special Topics Seminar",
+  "unit": "0-1",
+  "description": "Discussions of current research in astrophysics and space physics. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 259A",
+  "title": "Methods in Quantitative Biology",
+  "unit": "2",
+  "description": "Critical analysis of methods used to collect and analyze biological data. Topics include general aspects of experimental conditions for data collection and strategy of mathematical modeling, as well as specific methodologies in image acquisition, single cell analysis, population dynamics, and statistical data analysis. These topics will be covered through critical reading, peer discussion, problem solving on case studies selected by the instructors. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 259B",
+  "title": "Concepts and Methods in Quantitative Physiology",
+  "unit": "2",
+  "description": "This course will guide students to identify \"big questions\" in multicellular physiology across organisms and organ systems. Through critical reading, peer discussion, and problem solving on specific systems selected by the instructors, students will learn how to identify challenges, design experiments that can quantitatively answer the big questions, and engineer approaches to achieve a deeper understanding of organismal biology. (S/U grades only.) May be taken for credit up to two times.",
+  "prerequisite": "PHYS 259A or 256."
+ },
+ {
+  "code": "PHYS 260",
+  "title": "Physics Colloquium",
+  "unit": "0-1",
+  "description": "Discussions of recent research in physics directed to the entire physics community. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 261",
+  "title": "Seminar on Physics Research at UC San Diego",
+  "unit": "0-1",
+  "description": "Discussions of current research conducted by faculty members in the Department of Physics. (S/U grades only.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 264",
+  "title": "Scientific Method Seminar",
+  "unit": "1",
+  "description": "Discussions of the application of the scientific method in the natural sciences. (S/U grades only.) May be taken for credit twenty-five times.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 270A",
+  "title": "Experimental Techniques for Quantitative Biology",
+  "unit": "4",
+  "description": "A hands-on laboratory course in which the students learn and use experimental techniques, including optics, electronics, chemistry, machining, and computer interface, to design and develop simple instruments for quantitative characterization of living systems. Lab classes will comprise five two-week modules.",
+  "prerequisite": "department approval required. Recommended preparation: knowledge of electronics and optics at the level of introductory calculus, basic statistics, programming skills; knowledge of introductory biology."
+ },
+ {
+  "code": "PHYS 270B",
+  "title": "Quantitative Biology Laboratory",
+  "unit": "4",
+  "description": "A project-oriented laboratory course in which students are guided to develop their own ideas and tools, along with using state-of-art instruments to investigate a biological problem of current interest, under the direction of a faculty member. A range of current topics in quantitative biology is available, including microbiology, molecular and cell biology, developmental biology, synthetic biology, and evolution. This course may be repeated up to ten times for credit as long as the student works on a different project.",
+  "prerequisite": "PHYS 270A. Department approval required."
+ },
+ {
+  "code": "PHYS 273",
+  "title": "Information Theory and Pattern Formation in Biological Systems",
+  "unit": "4",
+  "description": "This course discusses how living systems acquire information on their environment and exploit it to generate structures and perform functions. Biological sensing of concentrations, reaction-diffusion equations, the Turing mechanism, and applications of information theory to cellular transduction pathways and animal behavior will be presented. Recommended preparation: familiarity with probabilities at the level of undergraduate statistical mechanics and major cellular processes; basic knowledge of information theory.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 274",
+  "title": "Stochastic Processes in Population Genetics",
+  "unit": "4",
+  "description": "The course explores genetic diversity within biological populations. Genetics fundamentals, mutation/selection equilibria, speciation, Wright-Fisher model, Kimura's neutral theory, Luria-Delbr\u00fcck test, the coalescent theory, evolutionary games and statistical methods for quantifying genetic observables such as SNPs, copy number variations, etc., will be discussed. Recommended preparation: familiarity with probabilities and PDEs at the undergraduate level; an introduction to basic evolutionary processes.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 275",
+  "title": "Biological Physics",
+  "unit": "4",
+  "description": "This course teaches how quantitative models derived from statistical physics can be used to build quantitative, intuitive understanding of biological phenomena. Case studies include ion channels, cooperative binding, gene regulation, protein folding, molecular motor dynamics, cytoskeletal assembly, and biological electricity. Recommended preparation: an introduction to statistical mechanics, at least at the level of PHYS 140A or CHEM 132.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 276",
+  "title": "Quantitative Molecular Biology",
+  "unit": "4",
+  "description": "A quantitative approach to gene regulation, including transcriptional and posttranscriptional control of gene expression, as well as feedback and stochastic effects in genetic circuits. These topics will be integrated into the control of bacterial growth and metabolism. Recommended preparation: an introductory course in biology is helpful but not necessary.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 277",
+  "title": "Physics of the Cell",
+  "unit": "4",
+  "description": "The use of dynamic systems and nonequilibrium statistical mechanics to understand the biological cell. Topics chosen from chemotaxis as a model system, signal transduction networks and cellular information processing, mechanics of the membrane, cytoskeletal dynamics, nonlinear Calcium waves. The graduate version will include a report at the level of a research paper. May be scheduled with PHYS 177. Recommended preparation: an introductory course in biology is helpful but not necessary.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 278",
+  "title": "Biophysics of Neurons and Networks",
+  "unit": "4",
+  "description": "Information processing by nervous system through physical reasoning and mathematical analysis. A review of the biophysics of neurons and synapses and fundamental limits to signaling by nervous systems is followed by essential aspects of the dynamics of phase coupled neuronal oscillators, the dynamics and computational capabilities of recurrent neuronal networks, and the computational capability of layered networks. Recommended preparation: a working knowledge of calculus and linear algebra.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 279",
+  "title": "Neurodynamics",
+  "unit": "4",
+  "description": "Introduction to the nonlinear dynamics of neurons and simple neural systems through nonlinear dynamics, bifurcation theory, and chaotic motions. The dynamics of single cells is considered at different levels of abstraction, e.g., biophysical and \"reduced\" models for analysis of regularly spiking and bursting cells, their dynamical properties, and their representation in phase space. Laboratory exercises will accompany the lectures. Duplicate credit not allowed for cross-listed courses: BGGN 260, BENG 260, PHYS 279.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 281",
+  "title": "Extensions in Physics",
+  "unit": "1-3",
+  "description": "This course covers topics not traditionally taught as part of a normal physics curriculum, but nonetheless useful extensions to the classic pedagogy. Example topics may include estimation, nuclear physics, fluid mechanics, and scaling relationships.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 295",
+  "title": "MS Thesis Research in Materials Physics",
+  "unit": "1-12",
+  "description": "Directed research on MS dissertation topic.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 297",
+  "title": "Special Studies in Physics",
+  "unit": "1-4",
+  "description": "Studies of special topics in physics under the direction of a faculty member.",
+  "prerequisite": "consent of instructor and departmental vice chair, education. (S/U grades permitted.)"
+ },
+ {
+  "code": "PHYS 298",
+  "title": "Directed Study in Physics",
+  "unit": "1-12",
+  "description": "Research studies under the direction of a faculty member. (S/U grades permitted.)",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 299",
+  "title": "Thesis Research in Physics",
+  "unit": "1-12",
+  "description": "Directed research on dissertation topic.",
+  "prerequisite": null
+ },
+ {
+  "code": "PHYS 500",
+  "title": "Instruction in Physics Teaching",
+  "unit": "1-4",
+  "description": "This course, designed for graduate students, includes discussion of teaching, techniques and materials necessary to teach physics courses. One meeting per week with course instructors, one meeting per week in an assigned recitation section, problem session, or laboratory section. Students are required to take a total of two units of PHYS 500.",
+  "prerequisite": null
+ }
+]

@@ -1,21 +1,25 @@
+// React and Next
 import Head from 'next/head'
-import HomeNav from '../components/homeNav'
-import { Navbar } from 'react-bootstrap';
+import React from 'react'
 
-export default function Friends() {
-	return (
-        <>
-            <Head>
-                <title>Friends</title>
-            </Head>
+// Components
+import { GaryNavbar } from '../components/commonUI'
+import { Navbar } from 'react-bootstrap'
 
-            <HomeNav>
-                <Navbar.Text>Friends</Navbar.Text>
-            </HomeNav>
+export default class Friends extends React.Component{
 
-            <div>
-                <h1></h1>
-            </div>
-        </>
-	)
+	render() {
+		return (
+			<>
+				<Head>
+					<title>Friends</title>
+				</Head>
+	
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+					<Navbar.Text>Friends</Navbar.Text>
+				</GaryNavbar>
+	
+			</>
+		)
+	}
 }

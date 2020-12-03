@@ -1,0 +1,447 @@
+[
+ {
+  "code": "DSC 10",
+  "title": "Principles of Data Science",
+  "unit": "4",
+  "description": "This introductory course develops computational thinking and tools necessary\nto answer questions that arise from large-scale datasets. This course\nemphasizes an end-to-end approach to data science, introducing programming\ntechniques in Python that cover data processing, modeling, and analysis.",
+  "prerequisite": "none.",
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 20",
+  "title": "Programming and Basic Data Structures for Data Science",
+  "unit": "4",
+  "description": "Provides an understanding of the structures that underlie the programs,\nalgorithms, and languages used in data science by expanding the repertoire of\ncomputational concepts introduced in DSC 10 and exposing students to\ntechniques of abstraction. Course will be taught in Python and will cover\ntopics including recursion, higher-order functions, function composition,\nobject-oriented programming, interpreters, classes, and simple data structures\nsuch as arrays, lists, and linked lists.",
+  "prerequisite": "DSC 10.",
+  "formatted_pre": [
+   [
+    "DSC 10"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 30",
+  "title": "Data Structures and Algorithms for Data Science",
+  "unit": "4",
+  "description": "Builds on topics covered in DSC 20 and provides practical experience in\ncomposing larger computational systems through several significant programming\nprojects using Java. Students will study advanced programming techniques\nincluding encapsulation, abstract data types, interfaces, algorithms and\ncomplexity, and data structures such as stacks, queues, priority queues,\nheaps, linked lists, binary trees, binary search trees, and hash tables.",
+  "prerequisite": "DSC 20.",
+  "formatted_pre": [
+   [
+    "DSC 20"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 40A",
+  "title": "Theoretical Foundations of Data Science I",
+  "unit": "4",
+  "description": "This course, the first of a two-course sequence (DSC 40A-B), will introduce\nthe theoretical foundations of data science. Students will become familiar\nwith mathematical language for expressing data analysis problems and solution\nstrategies, and will receive training in probabilistic reasoning, mathematical\nmodeling of data, and algorithmic problem solving. DSC 40A will introduce\nfundamental topics in machine learning, statistics, and linear algebra with\napplications to data analysis. DSC 40A-B connect to DSC 10, 20, and 30 by\nproviding the theoretical foundation for the methods that underlie data\nscience.",
+  "prerequisite": "DSC 10, MATH 20C or MATH 31BH, and MATH 18 or\nMATH 20F or MATH 31AH. Restricted to students within the DS25 major. All other\nstudents will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "DSC 10"
+   ],
+   [
+    "MATH 20C",
+    "MATH 31BH"
+   ],
+   [
+    "MATH 18",
+    "MATH 20F",
+    "MATH 31AH"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 40B",
+  "title": "Theoretical Foundations of Data Science II",
+  "unit": "4",
+  "description": "The sequence DSC 40A-B introduces the theoretical foundations of data science\nand covers the following topics: mathematical language for expressing data\nanalysis problems and solution strategies, probabilistic reasoning,\nmathematical modeling of data, and algorithmic problem solving. DSC 40B, the\nsecond course in the sequence, introduces fundamental topics in combinatorics,\ngraph theory, probability, and continuous and discrete algorithms with\napplications to data analysis.",
+  "prerequisite": "DSC 20 and 40A. Restricted\nto students within the DS25 major. All other students will be allowed as space\npermits.",
+  "formatted_pre": [
+   [
+    "DSC 20"
+   ],
+   [
+    "DSC 40A"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 80",
+  "title": "The Practice and Application of Data Science",
+  "unit": "4",
+  "description": "The marriage of data, computation, and inferential thinking, or \"data\nscience,\" is redefining how people and organizations solve challenging\nproblems and understand the world. This course bridges lower- and upper-\ndivision data science courses as well as methods courses in other fields.\nStudents master the data science life-cycle and learn many of the fundamental\nprinciples and techniques of data science spanning algorithms, statistics,\nmachine learning, visualization, and data systems.",
+  "prerequisite": "DSC 30\nand DSC 40A.",
+  "formatted_pre": [
+   [
+    "DSC 30"
+   ],
+   [
+    "DSC 40A"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 90",
+  "title": "Seminar in Data Science",
+  "unit": "2",
+  "description": "Students will learn about a variety of topics in data science through\ninteractive presentations from faculty and industry professionals.",
+  "prerequisite": "DSC 10. Restricted to students within the DS25 major.\nAll other students will be allowed as space permits.",
+  "formatted_pre": [
+   [
+    "DSC 10"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 95",
+  "title": "Tutor Apprenticeship in Data Science",
+  "unit": "2",
+  "description": "Students will receive training in skills and techniques necessary to be\neffective tutors for data science courses. Students will also gain practical\nexperience in tutoring students on data science topics.",
+  "prerequisite": "DSC 10. Students must have applied for and been accepted as a tutor for a DSC\ncourse for the first time; enrollment in DSC 95 is required for these\nstudents.",
+  "formatted_pre": [
+   [
+    "DSC 10"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 96",
+  "title": "Workshop in Data Science",
+  "unit": "2",
+  "description": "Students will explore topics and tools relevant to the practice of data\nscience in a workshop format. The instructor works with students on guided\nprojects to help students acquire knowledge and skills to complement their\ncourse work in the core data science classes. Topics vary from quarter to\nquarter. Students are strongly recommended to enroll in either DSC 10 or DSC\n20 concurrently.",
+  "prerequisite": "Restricted to students within the DS25\nmajor. All other students will be allowed as space permits.",
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 97",
+  "title": "Internship in Data Science",
+  "unit": "2 or 4",
+  "description": "Individual research on a topic related to data science, by special arrangement\nwith and under the direction of a UC San Diego faculty member, in connection\nwith an internship at an organization. Internship work will inform but not\nnecessarily define the research topic. The research topic is expected to\npromote the study of the principles and techniques involved in the internship\nwork. May be taken for credit up to two times.",
+  "prerequisite": "MATH 20C\nor MATH 31BH and MATH 18 or MATH 31AH and DSC 20 and DSC 40A. Completion of\nthirty units at UC San Diego with a university GPA of 3.0. Special Studies\nForm, consent of the instructor, and approval of the department required.\nPriority enrollment is given to data science majors DS25. Restricted to first-\nyear and sophomore level students.",
+  "formatted_pre": [
+   [
+    "MATH 20C",
+    "MATH 31BH"
+   ],
+   [
+    "MATH 18",
+    "MATH 31AH"
+   ],
+   [
+    "DSC 20"
+   ],
+   [
+    "DSC 40A"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 98",
+  "title": "Directed Group Study in Data Science",
+  "unit": "2 or 4",
+  "description": "Students will investigate a topic in data science through directed reading,\ndiscussion, and project work under the supervision of a faculty member. May be\ntaken for credit up to two times.",
+  "prerequisite": "MATH 20C or MATH 31BH\nand MATH 18 or MATH 31AH and DSC 20 and DSC 40A. Completion of thirty units at\nUC San Diego with a university GPA of 3.0. Special Studies Form, consent of\nthe instructor, and approval of the department required. Priority enrollment\nis given to data science majors DS25. Restricted to first-year and sophomore\nlevel students.",
+  "formatted_pre": [
+   [
+    "MATH 20C",
+    "MATH 31BH"
+   ],
+   [
+    "MATH 18",
+    "MATH 31AH"
+   ],
+   [
+    "DSC 20"
+   ],
+   [
+    "DSC 40A"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 99",
+  "title": "Independent Study in Data Science",
+  "unit": "2 or 4",
+  "description": "Students will participate in independent study or research in data science\nunder the direction of a UC San Diego faculty member. May be taken for credit\nup to two times.",
+  "prerequisite": "MATH 20C or MATH 31BH and MATH 18 or\nMATH 31AH and DSC 20 and DSC 40A. Completion of thirty units at UC San Diego\nwith a university GPA of 3.0. Special Studies Form, consent of the instructor,\nand approval of the department required. Priority enrollment is given to data\nscience majors DS25. Restricted to first-year and sophomore level students.",
+  "formatted_pre": [
+   [
+    "MATH 20C",
+    "MATH 31BH"
+   ],
+   [
+    "MATH 18",
+    "MATH 31AH"
+   ],
+   [
+    "DSC 20"
+   ],
+   [
+    "DSC 40A"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 100",
+  "title": "Introduction to Data Management",
+  "unit": "4",
+  "description": "This course is an introduction to storage and management of large-scale data\nusing classical relational (SQL) systems, with an eye toward applications in\ndata science. The course covers topics including the SQL data model and query\nlanguage, relational data modeling and schema design, elements of cost-based\nquery optimizations, relational data base architecture, and database-backed\napplications.",
+  "prerequisite": "DSC 80 and DSC 40B.",
+  "formatted_pre": [
+   [
+    "DSC 80"
+   ],
+   [
+    "DSC 40B"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 102",
+  "title": "Systems for Scalable Analytics",
+  "unit": "4",
+  "description": "This course introduces the principles of computing systems and infrastructure\nfor scaling analytics to large datasets. Topics include memory hierarchy,\ndistributed systems, model selection, heterogeneous datasets, and deployment\nat scale. The course will also discuss the design of systems such as\nMapReduce/Hadoop and Spark, in conjunction with their implementation. Students\nwill also learn how dataflow operations can be used to perform data\npreparation, cleaning, and feature engineering.",
+  "prerequisite": "DSC 100.",
+  "formatted_pre": [
+   [
+    "DSC 100"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 104",
+  "title": "Beyond Relational Data Management",
+  "unit": "4",
+  "description": "The course will introduce a variety of No-SQL data formats, data models, high-\nlevel query languages, and programming abstractions representative of the\nneeds of modern data analytic tasks. Topics include hierarchical graph\ndatabase systems, unrestricted graph database systems, array databases,\ncomparison of expressive power of the data models, and parallel programming\nabstractions, including Map/Reduce and its descendants.",
+  "prerequisite": "DSC 100. Restricted to students within the DS25 major. All other students will\nbe allowed as space permits.",
+  "formatted_pre": [
+   [
+    "DSC 100"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 106",
+  "title": "Introduction to Data Visualization",
+  "unit": "4",
+  "description": "Data visualization helps explore and interpret data through interaction. This\ncourse introduces the principles, techniques, and algorithms for creating\neffective visualizations. The course draws on the knowledge from several\ndisciplines including computer graphics, human-computer interaction, cognitive\npsychology, design, and statistical graphics and synthesizes relevant ideas.\nStudents will design visualization systems using D3 or other web-based\nsoftware and evaluate their effectiveness. It is highly recommended that\nstudents take MATH 189 prior to taking DSC 106.",
+  "prerequisite": "DSC 80.",
+  "formatted_pre": [
+   [
+    "DSC 80"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 120",
+  "title": "Signal Processing for Data Analysis",
+  "unit": "4",
+  "description": "This course will focus on ideas from classical and modern signal processing,\nwith the main themes of sampling continuous data and building informative\nrepresentations using orthonormal bases, frames, and data dependent operators.\nTopics include sampling theory, Fourier analysis, lossy transformations and\ncompression, time and spatial filters, and random Fourier features and\nconnections to kernel methods. Sources of data include time series and\nstreaming signals and various imaging modalities.",
+  "prerequisite": "MATH 18\nor MATH 31AH and MATH 20C and DSC 40B.",
+  "formatted_pre": [
+   [
+    "MATH 18",
+    "MATH 31AH"
+   ],
+   [
+    "MATH 20C"
+   ],
+   [
+    "DSC 40B"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 140A",
+  "title": "Probabilistic Modeling and Machine Learning",
+  "unit": "4",
+  "description": "The course covers learning and using probabilistic models for knowledge\nrepresentation and decision-making. Topics covered include graphical models,\ntemporal models, and online learning, as well as applications to natural\nlanguage processing, adversarial learning, computational biology, and\nrobotics. Prior completion of MATH 181A is strongly recommended.",
+  "prerequisite": "DSC 40B, DSC 80, and ECE 109 or ECON 120A or MAE 108 or\nMATH 180A or MATH 183 or MATH 186.",
+  "formatted_pre": [
+   [
+    "DSC 40B"
+   ],
+   [
+    "DSC 80"
+   ],
+   [
+    "ECE 109",
+    "ECON 120A",
+    "MAE 108",
+    "MATH 180A",
+    "MATH 183",
+    "MATH 186"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 155",
+  "title": "Hidden Data in Random Matrices",
+  "unit": "4",
+  "description": "Rigorous treatment of principal component analysis, one of the most effective\nmethods in finding signals amidst the noise of large data arrays. Topics\ninclude singular value decomposition for matrices, maximal likelihood\nestimation, least squares methods, unbiased estimators, random matrices,\nWigner's semicircle law, Markchenko-Pastur laws, universality of eigenvalue\nstatistics, outliers, the BBP transition, applications to community detection,\nand stochastic block model.",
+  "prerequisite": "MATH 180A and (MATH 18 or\nMATH 31AH). Completion of MATH 102 is encouraged but not required. Students\nwill not receive credit for both MATH 182 and DSC 155.",
+  "formatted_pre": [
+   [
+    "MATH 180A"
+   ],
+   [
+    "MATH 18",
+    "MATH 31AH"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 160",
+  "title": "Data Science and the Arts",
+  "unit": "4",
+  "description": "This course addresses the intersection of data science and contemporary arts\nand culture, exploring four main themes of authorship, representation,\nvisualization, and data provenance. The course is not solely an introduction\nto data science techniques nor merely an arts practice course, but explores\nsignificant new possibilities for both fields arising from their intersection.\nStudents will examine problems from complementary perspectives of artist-\nresearchers and data scientists.",
+  "prerequisite": "DSC 80.",
+  "formatted_pre": [
+   [
+    "DSC 80"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 161",
+  "title": "Text as Data",
+  "unit": "4",
+  "description": "This class explores statistical and computational methods to enable students\nto use text as a data source in the social sciences. Hands-on examples will\nequip students to work with text data in final projects.",
+  "prerequisite": "ECON 5 or POLI 170A or POLI 171 or POLI 30 or POLI 30D or POLI 5 or POLI 5D.\nStudents will not receive credit for both POLI 176 and DSC 161. Restricted to\njunior and senior level students.",
+  "formatted_pre": [
+   [
+    "ECON 5",
+    "POLI 170A",
+    "POLI 171",
+    "POLI 30",
+    "POLI 30D",
+    "POLI 5",
+    "POLI 5D"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 170",
+  "title": "Spatial Data Science and Applications",
+  "unit": "4",
+  "description": "Spatial data science is a set of concepts and methods that deal with\naccessing, managing, visualizing, analyzing, and reasoning about spatial data\nin applications where location, shape and size of objects, and their mutual\narrangement are important. This upper-division course explores advanced data\nscience concepts for spatial data, introducing students to principles and\ntechniques of spatial data analysis, including geographic information systems,\nspatial big data management, and geostatistics.",
+  "prerequisite": "DSC 80.",
+  "formatted_pre": [
+   [
+    "DSC 80"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 180A",
+  "title": "Data Science Project I",
+  "unit": "4",
+  "description": "In this two-course sequence students will investigate a topic and design a\nsystem to produce statistically informed output. The investigation will span\nthe entire lifecycle, including assessing the problem, learning domain\nknowledge, collecting/cleaning data, creating a model, addressing ethical\nissues, designing the system, analyzing the output, and presenting the\nresults. 180A deals with research, methodology, and system design. Students\nwill produce a research summary and a project proposal.",
+  "prerequisite": "DSC 102 and MATH 189 and CSE 151 or CSE 158.",
+  "formatted_pre": [
+   [
+    "DSC 102"
+   ],
+   [
+    "MATH 189"
+   ],
+   [
+    "CSE 151",
+    "CSE 158"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 180B",
+  "title": "Data Science Project II",
+  "unit": "4",
+  "description": "In this two-course sequence students will investigate a topic and design a\nsystem to produce statistically informed output. The investigation will span\nthe entire lifecycle, including assessing the problem, learning domain\nknowledge, collecting/cleaning data, creating a model, addressing ethical\nissues, designing the system, analyzing the output, and presenting the\nresults. 180B will consist of implementing the project while studying the best\npractices for evaluation.",
+  "prerequisite": "DSC 106 and DSC 180A.",
+  "formatted_pre": [
+   [
+    "DSC 106"
+   ],
+   [
+    "DSC 180A"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 190",
+  "title": "Topics in Data Science",
+  "unit": "4",
+  "description": "Topics of special interest in data science. Topics vary from quarter to\nquarter. May be taken for credit up to two times.",
+  "prerequisite": "Restricted to junior and senior level students. Department and instructor\napproval is required to monitor enrollment and to ensure that students have\nthe sufficient educational background for a given topic.",
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 191",
+  "title": "Seminar in Data Science",
+  "unit": "1 or 2",
+  "description": "A seminar course on topics of current interest in data science. Topics may\nvary from quarter to quarter. May be taken for credit three times.",
+  "prerequisite": "Restricted to junior and senior level students.\nDepartment and instructor approval is required to monitor enrollment and to\nensure that students have the sufficient educational background for a given\ntopic.",
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 197",
+  "title": "Data Science Internship",
+  "unit": "4",
+  "description": "Directed study and research at laboratories/institutions outside of campus.",
+  "prerequisite": "Restricted to junior and senior level students. Consent\nof the instructor and approval of the department. An application for Special\nStudies must be filed with the Registrar's office after approval from the\ninstructor and the department chair.",
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 198",
+  "title": "Directed Group Study in Data Science",
+  "unit": "2 or 4",
+  "description": "Data science topics whose study involves reading and discussion by a small\ngroup of students under supervision of a faculty member. May be taken for\ncredit up to two times.",
+  "prerequisite": "Restricted to junior and senior\nlevel students. Consent of the instructor and approval of the department.\nDepartment stamp required. An application for Special Studies must be filed\nwith the Registrar's office after approval from the instructor and the\ndepartment chair.",
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 199",
+  "title": "Independent Study for Data Science Undergraduates",
+  "unit": "2 or 4",
+  "description": "Independent reading or research on a topic related to data science by special\narrangement with a faculty member. May be taken for credit up to two times.",
+  "prerequisite": "Restricted to junior and senior level students. Consent\nof the instructor and approval of the department. An application for Special\nStudies must be filed with the Registrar's Office after approval from the\ninstructor and the department chair.",
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 290",
+  "title": "Seminar in Data Science",
+  "unit": "1-2",
+  "description": "A graduate seminar course in which topics of special interest in data science\nwill be presented by faculty or by graduate students under faculty direction.\nRestricted to graduate level students. May be repeated for credit twenty-four\ntimes as topics vary.",
+  "prerequisite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 291",
+  "title": "Topics in Data Science",
+  "unit": "4",
+  "description": "Topics of special interest in data science. Topics may vary quarter to\nquarter. Restricted to graduate level students. May be taken for credit up to\nnine times.",
+  "prerequisite": null,
+  "formatted_pre": []
+ },
+ {
+  "code": "DSC 500",
+  "title": "Teaching Assistantship",
+  "unit": "2 or 4",
+  "description": "A course in which teaching assistants are aided in learning proper teaching\nmethods by means of supervision of their work by the faculty: handling of\ndiscussions, preparation and grading of examinations and other written\nexercises, and student relations. Number of units for credit depends on number\nof hours devoted to class or section assistance. May be taken for credit up to\nseventy-two units.",
+  "prerequisite": "DSC 500 is for selected teaching\nassistants only; therefore, consent of instructor is required.",
+  "formatted_pre": [
+   [
+    "DSC 500"
+   ]
+  ]
+ },
+ {
+  "code": "DSC 599",
+  "title": "Teaching Methods in Data Science",
+  "unit": "2",
+  "description": "Training in teaching methods in the field of data science. This course\nexamines theoretical and practical communication and teaching techniques\nparticularly appropriate to data science.",
+  "prerequisite": "Consent of\nfaculty required. Only graduate students who are TAing for the first time in\nthe data science program are eligible to enroll.",
+  "formatted_pre": []
+ }
+]

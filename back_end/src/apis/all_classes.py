@@ -17,6 +17,22 @@ other possible methods:
 '''
 
 
+# helper function
+def convert_to_four_year_plan(result):
+    courses = {}
+    # loops through all the classes in search result
+    for course in result:
+        class_code = course['class_code']
+        id = 'course-' + class_code.replace(" ", "")
+
+        courses[id] = {
+            "id": id,
+            "content": class_code,
+            "locked": False
+        }
+    return courses
+
+
 @all_classes_api_bp.route('/create_class', methods=['POST'])
 def create_class():
     '''
@@ -75,6 +91,48 @@ def get_class_by_search():
     if clss:
         return jsonify({'reason': 'success', 'result': clss}), 200
     return jsonify({'reason': 'failed: class DNE'}), 300
+
+
+@all_classes_api_bp.route('/get_formatted_class_by_search', methods=['GET'])
+def get_formatted_class_by_search():
+    '''
+    Route to get multiple classes by search query and format it for 4 year plan
+    input   search(str)
+    output  info for the given classes if the classes exists in the BD or
+            'failed: class DNE'
+    @author: Benson V
+    '''
+    search = request.args.get('search')
+    clss = AllClass.get_class_by_search(search=search)
+    clss = list(map(lambda x: x.to_json(), clss))
+    result = convert_to_four_year_plan(clss)
+    if result:
+        return result
+    return jsonify({'reason': 'failed: class DNE'}), 300
+
+
+@all_classes_api_bp.route('/get_prereq_and_description', methods=['GET'])
+def get_prereq_and_description():
+    '''
+    API for Huaming's formatted reques
+    input: class_name: str
+    output: description and prereqs for a given class
+    @author: David S
+    '''
+    class_code = request.args.get('class_code')
+    clss = AllClass.get_class_by_code(class_code=class_code)
+    if not clss:
+        return jsonify({'reason': "class DNE"}), 403
+    clss = clss.to_json()
+    prereq = clss["prerequisites"]
+    desc = clss["description"]
+    units = clss["units"]
+    classDes = {
+        "prerequisites": prereq,
+        "description": desc,
+        "units": units
+    }
+    return jsonify({'reason': 'retrieved class info', 'result': classDes}), 200
 
 
 @all_classes_api_bp.route('/get_class_by_code', methods=['GET'])

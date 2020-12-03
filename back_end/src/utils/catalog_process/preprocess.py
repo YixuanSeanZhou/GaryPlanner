@@ -158,4 +158,9 @@ def export_json_format(course_raw, addr):
     with open(addr, "w") as outfile:  
         json.dump(course_raw, outfile, indent=1) 
 
+
+# Only for test use
+if __name__ == "__main__":
+    course_raw = get_info_from_catalog("https://www.ucsd.edu/catalog/courses/CSE.html")
+    export_json_format(course_raw, 'cse.json')
     

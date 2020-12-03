@@ -23,6 +23,7 @@ def create_user():
     email = req_data.get('email')  # primary key
     first_name = req_data.get('first_name', 'Gary')
     last_name = req_data.get('last_name', 'Gillespie')
+    eq = req_data.get('start_quarter', 'None')
     itgq = req_data.get('intended_grad_quarter', 'None')
     college = req_data.get('college', 'SIXTH')  # frontend need check validity
     # ; seperated list expected
@@ -31,7 +32,7 @@ def create_user():
     pwd = req_data.get('pwd', '')
     s, u, m = User.create_user(user_name=user_name, email=email, pwd=pwd,
                                first_name=first_name, last_name=last_name,
-                               intended_grad_quarter=itgq,
+                               intended_grad_quarter=itgq, start_quarter=eq,
                                college=college, major=major, minor=minor)
     if s:
         return jsonify({'reason': 'user created', 'result': u.to_json()}), 200
@@ -48,16 +49,26 @@ def login():
     '''
     req_data = request.get_json()
     email = req_data.get('email', None)
+    user_name = email if '@' not in email else None
     pwd = req_data.get('pwd', '')
     remember = True
     # if req_data.get('remember', '') == 'true' else False
+
+    if user_name:
+        if User.check_password_with_user_name(user_name, pwd):
+            user = User.get_user_by_user_name(name=user_name)
+            login_user(user, remember=remember)
+            return jsonify({'reason': 'logged in',
+                            'result': user.to_json()}), 200
+        else:
+            return jsonify({'reason': 'user_name/password doesn\'t match'}), 400
 
     if User.check_password(email, pwd):
         user = User.get_user_by_email(email=email)
         login_user(user, remember=remember)
         return jsonify({'reason': 'logged in', 'result': user.to_json()}), 200
     else:
-        return jsonify({'reason': 'User/Password doesn\'t match'}), 400
+        return jsonify({'reason': 'email/password doesn\'t match'}), 400
 
 
 @user_api_bp.route('/logout', methods=['POST'])
@@ -115,6 +126,28 @@ def get_user_by_email():
 # TODO: NO USER NAME
 
 
+@user_api_bp.route('/change_pwd', methods=['POST'])
+@cross_origin(supports_credentials=True)
+@login_required
+def change_pwd():
+    req_data = request.get_json()
+    u_email = current_user.email
+    old_pwd = req_data.get('old_pwd', None)
+    new_pwd = req_data.get('pwd', None)
+
+    pwd_match = User.check_password(u_email, old_pwd)
+
+    if pwd_match:
+        # update the database with new password
+        u_id = current_user.id
+        s, u = User.update_profile(user_id=u_id, pwd=new_pwd)
+    else:
+        return jsonify({"reason": "old password wrong"}), 400
+
+    if s:
+        return jsonify({"reason": "success"}), 200
+
+
 @user_api_bp.route('/update_profile', methods=['POST'])
 @cross_origin(supports_credentials=True)
 @login_required
@@ -128,10 +161,18 @@ def update_profile():
     major = req_data.get('major', None)
     minor = req_data.get('minor', None)
     user_name = req_data.get('user_name', None)
+    start_quarter = req_data.get('start_quarter', None)
+
+    if user_name and User.get_user_by_user_name(user_name):
+        if User.get_user_by_user_name(user_name).id != current_user.id:
+            return jsonify({'reason': 'user name exists'}), 400
+        else:
+            user_name = None
 
     s, p = User.update_profile(user_id=u_id, first_name=first_name,
                                last_name=last_name,
                                user_name=user_name,
+                               start_quarter=start_quarter,
                                intended_grad_quarter=intended_grad_quarter,
                                college=college, major=major, minor=minor)
     if s:

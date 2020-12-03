@@ -1,104 +1,127 @@
 // React and Next
-import React from 'react'
+import React, {useState} from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 // Components
-import HomeNav from '../components/homeNav'
-import { Navbar, Jumbotron, Button, Modal } from 'react-bootstrap'
+import { ParticleEffect, GaryNavbar } from '../components/commonUI';
+import { Navbar, Jumbotron, Button, Modal, Card } from 'react-bootstrap'
 import Request from '../components/requestPlan'
 
-import styles from '../styles/Intro.module.css'
+import styles from '../styles/Auth.module.css'
 
-export default function Home() {
+export default class Home extends React.Component {
+	constructor(props) {
+		super(props)
 
+		this.state = {
+			modalShow: false,
+		}
+	}
 
-	const [modalShow, setModalShow] = React.useState(false);
-	
-	return (
-		<>
-			<Head>
-				<title>Home</title>
-			</Head>
+	componentDidMount() {
+	}
 
-			<HomeNav>
-				<Navbar.Text>Home</Navbar.Text>
-			</HomeNav>
+	render() {
+		var { userProfile } = this.props;
+		if (userProfile === undefined) {
+			userProfile = {
+				first_name: 'Not Logged In!',
+				last_name: "",
+				major: "",
+				minor: "",
+				college: "",
+				email: "",
+				intended_grad_quarter: "",
+			}
+		}
+		return (
+			<>
+				<Head>
+					<title>Home</title>
+				</Head>
 
-			<div className="intro">
-				<div className="content">
-					<div className="col-6">
-						<h1>Welcome Yixuan Zhou</h1>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+					<Navbar.Text>Home</Navbar.Text>
+				</GaryNavbar>
 
-						<div className="container">
-							<div className="row">
-								<h6>Major: Computer Science</h6>
+				<ParticleEffect className={styles.particles} />
+
+				<div className={styles.outer}>
+					<div className={styles.rowContent}>
+						<div className="row">
+							<div className="offset-1 col-4 mt-5">
+								<Card>
+									<Card.Body>
+										<h3 className="mb-4">
+											{userProfile.first_name} {userProfile.last_name}
+										</h3>
+										<Card.Text>
+											User Name: {userProfile.user_name}
+										</Card.Text>
+										<Card.Text>Major: {userProfile.major}</Card.Text>
+										<Card.Text>Minor: {userProfile.minor}</Card.Text>
+										<Card.Text>
+											College: {userProfile.college}
+										</Card.Text>
+										<Card.Text>Email: {userProfile.email}</Card.Text>
+										<Card.Text>
+											Graduation: {userProfile.intended_grad_quarter}
+										</Card.Text>
+									</Card.Body>
+								</Card>
 							</div>
-							<div className="row">
-								<h6>Minor: P.I.G.</h6>
-							</div>
-							<div className="row">
-								<h6>College: Sixth</h6>
-							</div>
+							<div className="offset-2 col-4 mt-5">
+								<div>
+									<Button
+										size="lg"
+										variant="info"
+										style={{ backgroundColor: '#88d8b0' }}
+										block
+										id="home-btn"
+										onClick={() =>
+											this.setState({ modalShow: true })
+										}
+									>
+										<span>New Four Year Plan</span>
+									</Button>
+								</div>
 
+								<div style={{ marginTop: '130px' }}>
+									<Link href="/fourYearPlan">
+										<Button
+											size="lg"
+											variant="warning"
+											style={{ backgroundColor: '#ffcc5c' }}
+											block
+											id="home-btn">
+											<span>View Four Year Plan</span>
+										</Button>
+									</Link>
+								</div>
+
+								<div style={{ marginTop: '130px' }}>
+									<Link href="/friends">
+										<Button
+											size="lg"
+											variant="danger"
+											style={{ backgroundColor: '#ff6f69' }}
+											block
+											id="home-btn">
+											<span>Checkout Friends' Schedules</span>
+										</Button>
+									</Link>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div className="content">
-				<h1 className="text-center mt-5"></h1>
-				<div className="container mt-5">
-					<div className="row">
-						<div className="col-6">
-							<h3>Four Year Plan</h3>
-							<p>
-								Generates your four year plan automatically <br />
-								Allows you to graduate on time <br />
-								Customizes your plan easily <br />
-							</p>
-							<Button variant="warning" onClick={() => setModalShow(true)}>
-								Create New
-							</Button>
-							<Button
-								variant="outline-primary"
-								href="/fourYearPlan"
-								className="ml-4">
-								View
-							</Button>
-						</div>
-						<div className="col-6">
-							<img src="/images/plan.png" width="500" height="auto" />
-						</div>
-					</div>
-
-					<div className="row" style={{ paddingTop: '85px' }}>
-						<div className="col-6">
-							<img src="/images/schedule.png" width="500" hehight="auto" />
-						</div>
-						<div className="col-6">
-							<h3>Quarter Schedule</h3>
-							<p>
-								Clear view of your weekly schedule <br />
-								Comparsion between different classes <br />
-								Select the best professor you want <br />
-							</p>
-
-							<Button variant="warning" href="/">
-								Create New
-							</Button>
-							<Button
-								variant="outline-primary"
-								href="/currQuarter"
-								className="ml-4">
-								View
-							</Button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<Request show={modalShow} onHide={() => setModalShow(false)} />
-		</>
-	)
-
+				<Request
+					show={this.state.modalShow}
+					onHide={() => this.setState({ modalShow: false })}
+				/>
+			</>
+		)
+	}
 }
