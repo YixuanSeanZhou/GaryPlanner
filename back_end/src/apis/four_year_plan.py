@@ -142,10 +142,10 @@ def generate_quarter_names(start_year):
 
 
 #helper function to add all courses in 4yp recommendation to database
-def add_recommendation_to_db(user_id:int, data:dict = None, q:list = None, taken:list = None, rec: bool = False):
+def add_recommendation_to_db(user_id:int, data:dict = None, ge_num: int = 0, taken:list = None, rec: bool = False):
     
     if rec:
-        plan = extra(taken, data, 6)
+        plan = extra(taken, data, ge_num)
         print('----------------')
         print()
         print(plan)
@@ -604,6 +604,7 @@ def get_rec():
     print('get_rec')
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
+    ge_num = request.args.get('ge_num')
 
     driver = _get_driver("https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true")
     form = driver.find_element_by_css_selector('form[id=login]')
@@ -756,7 +757,7 @@ def get_rec():
     
     print('jere')
     print(r)
-    e = add_recommendation_to_db(current_user.id, data=r, taken=taken, rec=True)
+    e = add_recommendation_to_db(current_user.id, data=r, taken=taken, ge_num=ge_num, rec=True)
 
     for entry in e:
         user_id = entry['user_id']
