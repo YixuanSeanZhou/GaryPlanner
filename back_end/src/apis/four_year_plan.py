@@ -466,7 +466,17 @@ def request_degree_audit():
                         except:
                             pass
         taken = get_taken(taken)
+
         e = add_recommendation_to_db(current_user.id, data=taken)
+
+        for entry in e:
+            user_id = entry['user_id']
+            class_code = entry['class_code']
+            quarter_taken = entry['quarter_taken']
+            s, u = FourYearPlan.create_entry(
+                    user_id=user_id, class_code=class_code,
+                    quarter_taken=quarter_taken
+                )
         return {'reason': 'success', 'result': e}, 200
     except:
         return {'reason': 'Run your degree auidt first, or your degree audit is unable to parse'}, 400
