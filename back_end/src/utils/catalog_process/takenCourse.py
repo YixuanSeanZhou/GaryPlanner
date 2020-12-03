@@ -13,6 +13,8 @@ class Quarter(Enum):
     FA = 2
     WI = 0
     SP = 1
+    S1 = 3
+    S2 = 4
 
 
 # quarters: list of passed quarters (sorted) from the start to the current; can be the first return value of sortTakenCourse
@@ -26,12 +28,16 @@ def combineCourse(quarters, taken, planed):
     planed = iter(planed)
     quarters = list(quarters)
     currQ = quarters[-1]
-    currNum = int(currQ[2:])*3+Quarter[currQ[:2]].value
+    currNum = int(currQ[2:])*5+Quarter[currQ[:2]].value
     for num in range(currNum+1, currNum+length+1):
         quar = getQuarterName(num)
         combined[quar] = next(planed)
         quarters.append(quar)
     return quarters, combined
+
+
+def getSortedQuarter(taken):
+    return sorted(taken.keys(), key=getQuarterValue)
 
 
 # returns: first: a sorted list of quarters e.g. ['SP18', 'FA18', 'WI19', 'SP19', 'FA19', 'WI20', 'SP20', 'FA20', 'WI21']
@@ -55,10 +61,10 @@ def sortTakenCourse(courses, start = "FA18"):
     return sorted(newCourse.keys(), key=getQuarterValue), newCourse, takeCourses
 
 def getQuarterValue(quarter):
-    return int(quarter[2:])*3+Quarter[quarter[:2]].value
+    return int(quarter[2:])*5+Quarter[quarter[:2]].value
 
 def getQuarterName(quarter):
-    return Quarter(quarter%3).name + str(quarter//3)
+    return Quarter(quarter%5).name + str(quarter//5)
 
 
 # userInfo is bensonInfo above
@@ -67,6 +73,7 @@ def getQuarterName(quarter):
 # third return: number of ge needed
 def getNeededCourse(userInfo):
     userInfo = userInfo["req"]
+    #print(userInfo)
     ge = 0
     neededList = []
     _,_,takenList = sortTakenCourse(takenCoures)
@@ -77,12 +84,13 @@ def rec(dic, rtnList, takenList):
     ge = 0
     for key in dic:
         d1 = dic[key]
+        print(d1)
         if "GE" in key:
             ge += checkGE(dic, key, json.load(open("/usr/src/app/src/utils/catalog_process/Warren.json"))) # warren college json file
         elif "needs" in d1.keys():
             if "Elective" in key:
                 potentialCourses = process("/usr/src/app/src/utils/catalog_process/cse.json", d1["course_needs"]) 
-                num = d1["needs"]["Courses"]
+                num = d1["needs"]["Courses"] if 'Courses' in d1['needs'] else 0
                 cour = iter(potentialCourses)
                 while num > 0:
                     curCour = next(cour)

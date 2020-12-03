@@ -13,6 +13,7 @@ from ..utils.catalog_process.combine import main as get_recommendation
 from ..utils.catalog_process.combine import extra
 from ..models.four_year_plan import FourYearPlan
 from ..utils.catalog_process.combine import get_taken
+from ..utils.catalog_process.combine import get_taken_quarter
 
 import re
 
@@ -141,11 +142,15 @@ def generate_quarter_names(start_year):
 
 
 #helper function to add all courses in 4yp recommendation to database
-def add_recommendation_to_db(user_id:int, data:dict = None, rec: bool = False):
+def add_recommendation_to_db(user_id:int, data:dict = None, q:list = None, taken:list = None, rec: bool = False):
     
     if rec:
-        plan = extra(data, 6)
-
+        plan = extra(taken, data, 6)
+        print('----------------')
+        print()
+        print(plan)
+        print()
+        print('----------------')
     elif data is None:
         plan = get_recommendation()
     else:
@@ -341,6 +346,98 @@ def _get_driver(link):
     time.sleep(0.2)
     return driver
 
+
+
+
+
+def parseClassIgnoreOr(classInStr):
+    lst = re.findall('TO|OR|[A-Z]+ \d+[A-Z]?|\d+[A-Z]?', classInStr)
+    # print(lst)
+    result = []
+    course = ""
+    isOr = False
+    for i in range(len(lst)):
+        ele = lst[i]
+        if ele == "TO": # Different TO cases
+            # If is of form CSE 100 to 194
+            if lst[i-1][-1].isdigit():
+                start = int(re.findall('\d+',lst[i-1])[0])
+                end = int(re.findall('\d+',lst[i+1])[0])
+                for j in range(start+1,end):
+                    result.append(course + " " + str(j))
+            # If is of form ECON 120A to 120C
+            else:
+                start = ord(lst[i-1][-1])
+                end = ord(lst[i+1][-1])
+                num = re.findall('\d+',lst[i-1])[0]
+                for j in range(start+1,end):
+                    result.append(course + " " + num + chr(j))
+        # Ignore Or
+        elif ele == "OR":
+            continue
+        # General case
+        else:
+            courseLst = re.findall('[A-Z]{3,}',ele)
+            # If it has course title, update course var
+            if courseLst != []:
+                course = courseLst[0]
+                result.append(ele)
+            # If no course stated, pick the current course
+            else:
+                result.append(course + " " + ele)
+    return result
+
+
+def parseClassWithOr(classInStr):
+    lst = re.findall('TO|OR|[A-Z]+ \d+[A-Z]?|\d+[A-Z]?', classInStr)
+    print(lst)
+    course = ""
+    result = []
+    isOr = False
+    for i in range(len(lst)):
+        ele = lst[i]
+        if ele == "TO": # Different TO cases
+            # If is of form CSE 100 to 194
+            if lst[i-1][-1].isdigit():
+                start = int(re.findall('\d+',lst[i-1])[0])
+                end = int(re.findall('\d+',lst[i+1])[0])
+                for j in range(start+1,end):
+                    if isOr:
+                        isOr = False
+                        result[-1].append(course + " " + str(j))
+                    else:
+                        result.append([course + " " + str(j)])
+            # If is of form ECON 120A to 120C
+            else:
+                start = ord(lst[i-1][-1])
+                end = ord(lst[i+1][-1])
+                for j in range(start+1,end):
+                    if isOr:
+                        isOr = False
+                        result[-1].append(course + " " + str(j))
+                    else:
+                        result.append([course + " " + str(j)])
+        # If is a OR
+        elif ele == "OR":
+            isOr = True
+        else:
+            courseLst = re.findall('[A-Z]{3,}',ele)
+            if courseLst != []:
+                course = courseLst[0]
+                if isOr:
+                    isOr = False
+                    result[-1].append(ele)
+                else:
+                    result.append([ele])
+            else:
+                if isOr:
+                    isOr = False
+                    result[-1].append(course + " " + ele)
+                else:
+                    result.append([course + " " + ele])
+    return result
+
+
 @four_year_plan_api_bp.route('/get_taken', methods=['GET'])
 def request_degree_audit():
     user_name = request.args.get('user_name')
@@ -393,6 +490,10 @@ def request_degree_audit():
                 continue
             if 'WORK IN PROGRESS' in reqh[i].text:
                 start = False
+            if 'GENERAL' in reqh[i].text:
+                start = False
+            if 'MATHEMATICS' in reqh[i].text:
+                break
             if start:
                 sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.split('\n')[0]
                 if 'WARREN' in sub_text:
@@ -450,6 +551,7 @@ def request_degree_audit():
                         ret_list.append(ret)
                     sub_req[sub_text][subreq_text]['taken'] = ret_list
                     taken += ret_list
+                    # has_need = False
                     if sub_req[sub_text][subreq_text]:
                         #try:
                         # special case for warren
@@ -457,15 +559,29 @@ def request_degree_audit():
                             need_table = sub.find_element_by_css_selector('table.subreqNeeds')
                             trs = need_table.find_elements_by_tag_name('td')
                             sub_req[sub_text][subreq_text]['needs'] = {trs[2].text: int(trs[1].text)}
-                            td = sub.find_element_by_css_selector('td.fromcourselist')
+
+                            # has_need = True
+                            print('try course list')
+                            courses = sub.find_element_by_css_selector('table.selectcourses')
+                            td = courses.find_element_by_css_selector('td.fromcourselist')
+                            print('get course list')
                             if 'Elective' not in subreq_text:
+                                print('try none')
                                 sub_req[sub_text][subreq_text]['course_needs'] = parseClassWithOr(td.text)
+                                print('try success')
                                 # eed.append(sub_req[sub_text][subreq_text]['course_needs'])
                             else:
+                                print('try this ignore')
                                 sub_req[sub_text][subreq_text]['course_needs'] = parseClassIgnoreOr(td.text)
+                                print('get this ignore')
                                 # need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
+                            #if not has_need:
+                            #    sub_req[sub_text][subreq_text]['needs'] = {}
+                            print('this print statement')
+                            print(sub_req[sub_text][subreq_text]['needs'])
                         except:
-                            pass
+                            sub_req[sub_text][subreq_text]['needs'] = {}
+                            sub_req[sub_text][subreq_text]['course_needs'] = []
         taken = get_taken(taken)
 
         e = add_recommendation_to_db(current_user.id, data=taken)
@@ -485,6 +601,7 @@ def request_degree_audit():
 
 @four_year_plan_api_bp.route('/get_rec', methods=['GET'])
 def get_rec():
+    print('get_rec')
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
 
@@ -497,6 +614,7 @@ def get_rec():
     password.send_keys(pwd)
     current_url = driver.current_url
     
+
     btn.click()
     wait(driver, 15).until(EC.url_changes(current_url))
     try:
@@ -511,7 +629,8 @@ def get_rec():
     btn = driver.find_element_by_css_selector('button[type=submit]')
     url = driver.current_url
     btn.click()
-    time.sleep(15)
+    print('waiting duo input ......')
+    time.sleep(10)
     if url == driver.current_url:
         return {'reason': 'need to check duo'}, 400
 
@@ -528,100 +647,125 @@ def get_rec():
     taken = []
     need = []
     start = False
-    try: 
-        for i in range(len(reqh)):
-            if 'MAJOR REQUIREMENTS' in reqh[i].text:
-                start = True
-                continue
-            if 'WORK IN PROGRESS' in reqh[i].text:
-                start = False
-            if start:
-                sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.split('\n')[0]
-                if 'WARREN' in sub_text:
-                    sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.replace('\n', '')
+    print(len(reqh))
+    #try: 
+    for i in range(len(reqh)):
+        if 'MAJOR REQUIREMENTS' in reqh[i].text:
+            start = True
+            continue
+        if 'WORK IN PROGRESS' in reqh[i].text:
+            start = False
+        if 'GENERAL' in reqh[i].text:
+            start = False
+        if 'MATHEMATICS' in reqh[i].text:
+            break
+        if start:
+            sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.split('\n')[0]
+            if 'WARREN' in sub_text:
+                sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.replace('\n', '')
 
-                    num = int(float(reqb[i].text.split(' ')[1]))
-                    unit = (reqb[i].text.split(' ')[2])
-                    sub_req[sub_text] = {}
-                    sub_req[sub_text]['needs'] = {unit: int(num)}
-                    continue
-                if '48 Upper' in sub_text or '>>' in sub_text or 'Area' in sub_text:
-                    continue
-                if sub_text == '':
-                    continue
+                num = int(float(reqb[i].text.split(' ')[1]))
+                unit = (reqb[i].text.split(' ')[2])
                 sub_req[sub_text] = {}
+                sub_req[sub_text]['needs'] = {unit: int(num)}
+                continue
+            if '48 Upper' in sub_text or '>>' in sub_text or 'Area' in sub_text:
+                continue
+            if sub_text == '':
+                continue
+            sub_req[sub_text] = {}
 
-                # print(sub_text)
-                # print(i)
-                # print(reqh[i].find_element_by_css_selector('div.reqTitle').text)
-                # try:
-                subs = reqb[i].find_elements_by_css_selector('div.subreqBody')
-                for sub in subs:
-                    cate = ['subreqTitle srTitle_substatusOK', 'subreqTitle srTitle_substatusNO']
-                    s = sub.find_elements_by_tag_name('span')
-                    # print(s_ok[0].text)
+            # print(sub_text)
+            # print(i)
+            # print(reqh[i].find_element_by_css_selector('div.reqTitle').text)
+            # try:
+            subs = reqb[i].find_elements_by_css_selector('div.subreqBody')
+            for sub in subs:
+                cate = ['subreqTitle srTitle_substatusOK', 'subreqTitle srTitle_substatusNO']
+                s = sub.find_elements_by_tag_name('span')
+                # print(s_ok[0].text)
+                try:
+                    subreq_text = s[0].text
+                    if '\n' in subreq_text:
+                        subreq_text = subreq_text.split('\n')[0]
+                except:
+                    print("NO Span")
+                    print(sub_text)
+                if subreq_text not in sub_req[sub_text]:
+                    sub_req[sub_text][subreq_text] = {}
+
+
+                trs = sub.find_elements_by_class_name('takenCourse')
+
+                ret_list = []
+                # Process Taken Classes
+                for tr in trs:
+                    tds = tr.find_elements_by_css_selector('td')
+                    ret = {}
+                    for td in tds:
+
+                        cname = td.get_attribute('class')
+                        # print(cname)
+                        if cname not in ['term', 'course', 'credit', 'grade']:
+                            continue
+                        else:
+                            if cname == 'grade':
+                                ret[cname] = td.text.replace(' ', '')
+                            ret[cname] = td.text
+                    # print(ret)
+                    ret_list.append(ret)
+                sub_req[sub_text][subreq_text]['taken'] = ret_list
+                taken += ret_list
+                # has_need = False
+                if sub_req[sub_text][subreq_text]:
+                    #try:
+                    # special case for warren
                     try:
-                        subreq_text = s[0].text
-                        if '\n' in subreq_text:
-                            subreq_text = subreq_text.split('\n')[0]
+                        need_table = sub.find_element_by_css_selector('table.subreqNeeds')
+                        trs = need_table.find_elements_by_tag_name('td')
+                        sub_req[sub_text][subreq_text]['needs'] = {trs[2].text: int(trs[1].text)}
+
+                        # has_need = True
+                        print('try course list')
+                        courses = sub.find_element_by_css_selector('table.selectcourses')
+                        td = courses.find_element_by_css_selector('td.fromcourselist')
+                        print('get course list')
+                        if 'Elective' not in subreq_text:
+                            print('try none')
+                            sub_req[sub_text][subreq_text]['course_needs'] = parseClassWithOr(td.text)
+                            print('try success')
+                            # eed.append(sub_req[sub_text][subreq_text]['course_needs'])
+                        else:
+                            print('try this ignore')
+                            sub_req[sub_text][subreq_text]['course_needs'] = parseClassIgnoreOr(td.text)
+                            print('get this ignore')
+                            # need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
+                        #if not has_need:
+                        #    sub_req[sub_text][subreq_text]['needs'] = {}
+                        print('this print statement')
+                        print(sub_req[sub_text][subreq_text]['needs'])
                     except:
-                        print("NO Span")
-                        print(sub_text)
-                    if subreq_text not in sub_req[sub_text]:
-                        sub_req[sub_text][subreq_text] = {}
+                        sub_req[sub_text][subreq_text]['needs'] = {}
+                        sub_req[sub_text][subreq_text]['course_needs'] = []
+    
+    r = {'major': 'major', 'college': 'college', 'req': sub_req}
+    print(sub_req)
+    print('before get taken')
+    print(taken)
+    # q, taken = get_taken_quarter(taken)
+    
+    print('jere')
+    print(r)
+    e = add_recommendation_to_db(current_user.id, data=r, taken=taken, rec=True)
 
-
-                    trs = sub.find_elements_by_class_name('takenCourse')
-
-                    ret_list = []
-                    # Process Taken Classes
-                    for tr in trs:
-                        tds = tr.find_elements_by_css_selector('td')
-                        ret = {}
-                        for td in tds:
-
-                            cname = td.get_attribute('class')
-                            # print(cname)
-                            if cname not in ['term', 'course', 'credit', 'grade']:
-                                continue
-                            else:
-                                if cname == 'grade':
-                                    ret[cname] = td.text.replace(' ', '')
-                                ret[cname] = td.text
-                        # print(ret)
-                        ret_list.append(ret)
-                    sub_req[sub_text][subreq_text]['taken'] = ret_list
-                    taken += ret_list
-                    if sub_req[sub_text][subreq_text]:
-                        #try:
-                        # special case for warren
-                        try:
-                            need_table = sub.find_element_by_css_selector('table.subreqNeeds')
-                            trs = need_table.find_elements_by_tag_name('td')
-                            sub_req[sub_text][subreq_text]['needs'] = {trs[2].text: int(trs[1].text)}
-                            td = sub.find_element_by_css_selector('td.fromcourselist')
-                            if 'Elective' not in subreq_text:
-                                sub_req[sub_text][subreq_text]['course_needs'] = parseClassWithOr(td.text)
-                                # eed.append(sub_req[sub_text][subreq_text]['course_needs'])
-                            else:
-                                sub_req[sub_text][subreq_text]['course_needs'] = parseClassIgnoreOr(td.text)
-                                # need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
-                        except:
-                            pass
-        
-        r = {'major': major, 'college': college, 'req': sub_req}
-        taken = get_taken(taken)
-
-        e = add_recommendation_to_db(current_user.id, data=r)
-
-        for entry in e:
-            user_id = entry['user_id']
-            class_code = entry['class_code']
-            quarter_taken = entry['quarter_taken']
-            s, u = FourYearPlan.create_entry(
-                    user_id=user_id, class_code=class_code,
-                    quarter_taken=quarter_taken
-                )
-        return {'reason': 'success', 'result': e}, 200
-    except:
-        return {'reason': 'Run your degree auidt first, or your degree audit is unable to parse'}, 400
+    for entry in e:
+        user_id = entry['user_id']
+        class_code = entry['class_code']
+        quarter_taken = entry['quarter_taken']
+        s, u = FourYearPlan.create_entry(
+                user_id=user_id, class_code=class_code,
+                quarter_taken=quarter_taken
+            )
+    return {'reason': 'success', 'result': e}, 200
+    #except:
+     #   return {'reason': 'Run your degree auidt first, or your degree audit is unable to parse'}, 400
