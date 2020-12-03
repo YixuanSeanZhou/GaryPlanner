@@ -42,7 +42,8 @@ class PlanCalendar extends React.Component {
 
 		fetch(requestUrl, options)
 		.then(response => {
-			console.log(response);
+            console.log(response);
+            return response.json();
 		}).then(data => {
             console.log("JSON Data: ", data);
             
@@ -65,8 +66,9 @@ class PlanCalendar extends React.Component {
                     ['SearchColumn']: SearchColumn
                 }
             }
-
+            setTimeout(() => this.props.disableLoading(), 300);
             this.setState(newStateAndSearch);
+            console.log(this.state);
 		})
 		.catch((error) => {
 			console.error('Error:', error);
