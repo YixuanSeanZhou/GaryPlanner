@@ -45,6 +45,26 @@ def main():
     print(d2)
     return d2
 
+
+def extra(data, num):
+    try:
+        taken, needed, numge = gnc(data)
+        numge = num
+        taken_courses = taken.copy()
+        class_dict = dict()
+        load_catalog("/usr/src/app/src/utils/catalog_process/cse.json", class_dict)
+        load_catalog("/usr/src/app/src/utils/catalog_process/math.json", class_dict)
+        for i in range(100):
+            code = 'GE '+str(i)
+            class_dict[code] = {'code':code, 'formatted_pre':[]}
+        taken_courses = {code: 0 for code in taken_courses}
+        ret = gfyp(taken_courses, needed, class_dict, ['GE '+str(i) for i in range(numge)])
+        print(type(ret))
+        return ret
+    except:
+        print('here')
+
+
 if __name__ == '__main__':
     main()
     
