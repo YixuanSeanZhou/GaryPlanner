@@ -307,11 +307,6 @@ def remove_entry():
 
 
 # --------- Something to try out -------------------
-from flask_cors import CORS
-from flask import Blueprint, request, jsonify
-from flask_login import login_required, login_user, logout_user, current_user
-
-import datetime as dt
 import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -323,7 +318,6 @@ from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 
-from ..utils.catalog_process.combine import main
 
 degree_audit_api_bp = Blueprint('degree_audit_api', __name__)
 CORS(degree_audit_api_bp, supports_credentials=True)
@@ -340,7 +334,7 @@ def _get_driver(link):
     time.sleep(0.2)
     return driver
 
-@four_year_plan_api_bp.route('/get_taken', methods=['GET'])
+@four_year_plan_api_bp.route('/get_taken', methods=['POST'])
 def request_degree_audit():
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
