@@ -605,7 +605,7 @@ def get_rec():
     print('get_rec')
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
-    ge_num = request.args.get('ge_num')
+    ge_num = request.args.get('ge_num', 6)
 
     driver = _get_driver("https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true")
     form = driver.find_element_by_css_selector('form[id=login]')
