@@ -600,6 +600,7 @@ def request_degree_audit():
 
 
 @four_year_plan_api_bp.route('/get_rec', methods=['GET'])
+@login_required
 def get_rec():
     print('get_rec')
     user_name = request.args.get('user_name')
