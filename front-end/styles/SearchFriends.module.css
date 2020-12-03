@@ -8,24 +8,28 @@
 }
 
 .ul {
-    list-style: none;
-    width: 420px;
+    list-style-type: none;
+    width: 100%;
     text-align: left;
     display: inline-block;
     margin: 0;
-}
-
-.ul li:hover{
-    background-color: #88D8B0;
-    width: 220px;
+    padding: 0;
 }
 
 .btn {
     display: flex;
-    margin-right: 15px;
-    float: right;
+    margin-left: auto;
 }
 
 .input {
     display: inline-block;
+}
+
+.item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 11px 0px 12px 0px;
+    list-style: none;
+    height: 60px;
 }
