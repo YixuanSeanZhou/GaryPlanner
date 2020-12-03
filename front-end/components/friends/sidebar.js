@@ -16,6 +16,18 @@ export default class Sidebar extends React.Component {
 	handleUnfriend() {}
 
 	render() {
+		const getFriends = (e) => {
+			const requestUrl = 'http://localhost:2333/api/friends/get_friends_for_user'
+			const options = {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				credentials: 'include', // Everything account related
+				body: JSON.stringify(this.state.formData),
+			}
+		}
+
 		return (
 			<>
 				<div className={styles.all}>
