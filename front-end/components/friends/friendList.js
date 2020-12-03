@@ -1,17 +1,18 @@
+
 const FriendList = [
 	{
 		name: 'AA',
-		path: '/',
+		path: '',
 		class: 'side-item',
 	},
 	{
 		name: 'BB',
-		path: '/',
+		path: '',
 		class: 'side-item',
 	},
 	{
 		name: 'CC',
-		path: '/',
+		path: '',
 		class: 'side-item',
 	},
 ]

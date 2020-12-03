@@ -19,3 +19,13 @@
     background-color: #88D8B0;
     width: 220px;
 }
+
+.btn {
+    display: flex;
+    margin-right: 15px;
+    float: right;
+}
+
+.input {
+    display: inline-block;
+}
