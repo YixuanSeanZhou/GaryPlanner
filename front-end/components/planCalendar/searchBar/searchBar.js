@@ -19,7 +19,8 @@ export class SearchBar extends React.Component {
 		this.setState({
 			search: e.target.value,
 		})
-		this.props.handleSearch(e.target.value);
+		//this.props.handleSearch(e.target.value);
+		this.props.handleSearch("CSE");
 	}
 
 	render() {

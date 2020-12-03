@@ -186,9 +186,9 @@ class PlanCalendar extends React.Component {
                 const courseToPost = {
                     course_id: draggableId.substr(7),
                     quarter_taken: finish.id,
-                    user_id: this.state.user_id //TODO: FIX THIS
+                    user_id: this.state.user_id 
                 }
-                //console.log("COurseTOPOSTie: ", courseToPost);
+                console.log("COurseTOPOSTie: ", courseToPost);
                 const options = {
                     method: 'POST',
                     headers: {
