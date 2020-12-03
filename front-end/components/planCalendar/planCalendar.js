@@ -1,7 +1,7 @@
 // React and Next
 import React from 'react';
 import Link from 'next/link';
-import  Head from 'next/head';
+import Head from 'next/head';
 import { withRouter } from 'next/router';
 
 // Components
@@ -17,13 +17,10 @@ import styles from '../../styles/FourYearPlan.module.css'
 class PlanCalendar extends React.Component {
     constructor(props) {
 		super(props);
-
+        
 		this.state = {
             ...placeholderData,
-			showingAlert: false,
-			alarmText: "Error!",
-			alarmSubText: "Just error",
-		}
+        }
 	}
 
     componentDidMount () {
@@ -53,10 +50,8 @@ class PlanCalendar extends React.Component {
                 title: 'Search',
                 courseIds: []
             };
-
             const newState = {
-                ...this.state,
-                ...data.result
+                ...data
             };
 
             const newStateAndSearch = {
@@ -68,7 +63,7 @@ class PlanCalendar extends React.Component {
             }
             setTimeout(() => this.props.disableLoading(), 300);
             this.setState(newStateAndSearch);
-            console.log(this.state);
+            console.log("New State: " + this.state);
 		})
 		.catch((error) => {
 			console.error('Error:', error);
@@ -81,8 +76,8 @@ class PlanCalendar extends React.Component {
             };
 
             this.setState(newState);
-		});
-		
+        });
+
 	}
 
     onDragEnd = result => {
@@ -191,8 +186,9 @@ class PlanCalendar extends React.Component {
                 const courseToPost = {
                     course_id: draggableId.substr(7),
                     quarter_taken: finish.id,
-                    user_id: this.props.userId //TODO: FIX THIS
+                    user_id: this.state.user_id //TODO: FIX THIS
                 }
+                //console.log("COurseTOPOSTie: ", courseToPost);
                 const options = {
                     method: 'POST',
                     headers: {
@@ -214,7 +210,7 @@ class PlanCalendar extends React.Component {
                     //this.props.router.push('/util/error');
                 });
 
-                // Update course id
+                // Update course ids
                 const finishCourseIds = Array.from(finish.courseIds);
 
                 // Add new course
@@ -223,6 +219,9 @@ class PlanCalendar extends React.Component {
                     "id": newId,
                     "locked": false
                 };
+
+                //console.log("NEWSCOURSE: ", newCourse);
+
 
                 finishCourseIds.splice(destination.index, 0, newId);
                 const newFinish = {
@@ -234,7 +233,7 @@ class PlanCalendar extends React.Component {
                     ...this.state,
                     courses: {
                         ...this.state.courses,
-                        [newId]: newFinish
+                        [newId]: newCourse
                     },
                     quarters: {
                         ...this.state.quarters,
@@ -288,6 +287,7 @@ class PlanCalendar extends React.Component {
     }
 
     updateLocked(courseId) {
+        //TODO: UPdate backend
         const courseToUpdate = this.state.courses[courseId];
         const updatedCourse = {
             ...courseToUpdate,
@@ -309,7 +309,7 @@ class PlanCalendar extends React.Component {
         this.props.enableLoading("Please wait");
 
 		// Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/all_classes/get_class_by_search?search=' + searchStr;
+		const requestUrl = 'http://localhost:2333/api/all_classes/get_formatted_class_by_search?search=' + searchStr;
 		const options = {
 			method: 'GET',
 			headers: {
@@ -320,14 +320,15 @@ class PlanCalendar extends React.Component {
 
 		fetch(requestUrl, options)
 		.then(response => {
-			console.log(response);
+            console.log(response);
+            return response.json();
 		}).then(data => {
             console.log("JSON Data: ", data);
 
             // Add search courses to courseList
             var newSearchArray = []
             Object.keys(data).forEach((course, index) => {
-                newSearchArray.push(course.id);
+                newSearchArray.push(data[course].id);
             });
             
             // Make new search column
@@ -341,7 +342,7 @@ class PlanCalendar extends React.Component {
                 ...this.state,
                 courses: {
                     ...this.state.courses,
-                    data
+                    ...data
                 },
                 quarters: {
                     ...this.state.quarters,
@@ -349,6 +350,7 @@ class PlanCalendar extends React.Component {
                 }
             }
 
+            setTimeout(() => this.props.disableLoading(), 300);
             this.setState(newState);
 		})
 		.catch((error) => {
