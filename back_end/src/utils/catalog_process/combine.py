@@ -32,6 +32,10 @@ def final_output(taken, plan):
 def obtain_json_file():
     rdab()
 
+def get_taken(taken):
+    q2, d2 = final_output(taken, [])
+    return d2
+
 def main():
     rdab()
     plan = generate_benson_report()
