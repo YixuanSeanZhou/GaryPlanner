@@ -139,7 +139,7 @@ class PlanCalendar extends React.Component {
                 // Options for the fetch request
                 const requestUrl = 'http://localhost:2333/api/four_year_plan/update_entry';
                 const courseToPost = {
-                    id: draggableId.substr(7),
+                    id: parseInt(draggableId.substr(7)),
                     quarter_taken: finish.id
                 }
                 const options = {
@@ -184,11 +184,12 @@ class PlanCalendar extends React.Component {
                 var newId = "course-";
                 const requestUrl = 'http://localhost:2333/api/four_year_plan/create_entry';
                 const courseToPost = {
-                    course_id: draggableId.substr(7),
+                    class_code: this.state.courses[draggableId].content,
                     quarter_taken: finish.id,
-                    user_id: this.state.user_id //TODO: FIX THIS
+                    user_id: this.state.user_id,
+                    locked: false
                 }
-                //console.log("COurseTOPOSTie: ", courseToPost);
+                console.log("COurseTOPOSTie: ", courseToPost);
                 const options = {
                     method: 'POST',
                     headers: {
@@ -215,12 +216,12 @@ class PlanCalendar extends React.Component {
 
                 // Add new course
                 const newCourse = {
-                    "content": draggableId.substr(7),
+                    "content": this.state.courses[draggableId].content,
                     "id": newId,
                     "locked": false
                 };
 
-                //console.log("NEWSCOURSE: ", newCourse);
+                console.log("NEWSCOURSE: ", newCourse);
 
 
                 finishCourseIds.splice(destination.index, 0, newId);
