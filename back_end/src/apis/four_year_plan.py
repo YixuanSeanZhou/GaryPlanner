@@ -16,13 +16,13 @@ CORS(four_year_plan_api_bp, supports_credentials=True)
 def create_entry():
     req_data = request.get_json()
     user_id = req_data.get('user_id')
-    class_id = req_data.get('class_id')
+    class_code = req_data.get('class_code')
     class_schedule_id = req_data.get('class_schedule_id')
     quarter_taken = req_data.get('quarter_taken') #FA20
     grade = req_data.get('grade')
     locked = req_data.get('locked')
     s, u = FourYearPlan.create_entry(
-            user_id=user_id, class_id=class_id,
+            user_id=user_id, class_code=class_code,
             class_schedule_id=class_schedule_id,
             quarter_taken=quarter_taken, grade=grade, locked=locked)
     if s:
