@@ -9,7 +9,7 @@ from .user import User
 
 class Friend(db.Model):
     """
-    @author: YixuanZ
+    @author: YixuanZ, JingL
     """
     __tablename__ = "Friends"
 
@@ -51,9 +51,8 @@ class Friend(db.Model):
         return True, f
 
     @staticmethod
-    def accept_friend(sender_id: int, receiver_id: int) -> (bool, str, Friend):
-        f = Friend.query.filter_by(sender_id=sender_id,
-                                   receiver_id=receiver_id).first()
+    def accept_friend(request_id: int) -> (bool, str, Friend):
+        f = Friend.get_request_by_id(request_id)
         if not f:
             return False, "request not found", None
         elif f.accepted:
@@ -65,12 +64,10 @@ class Friend(db.Model):
 
     @staticmethod
     def is_friend(user1_id: int, user2_id: int) -> bool:
-        f = Friend.\
-            get_friend_by_sender_and_receiver(sender_id=user1_id,
-                                              receiver_id=user2_id).first()
-        r = Friend.\
-            get_friend_by_sender_and_receiver(sender_id=user2_id,
-                                              receiver_id=user1_id).first()
+        f = Friend.get_friend_by_sender_and_receiver(sender_id=user1_id,
+                                              receiver_id=user2_id)
+        r = Friend.get_friend_by_sender_and_receiver(sender_id=user2_id,
+                                              receiver_id=user1_id)
         if f:
             return f.accepted
         if r:
@@ -84,24 +81,31 @@ class Friend(db.Model):
                                       receiver_id=receiver_id).first()
 
     @staticmethod
+    def get_request_by_id(request_id: int) -> Friend:
+        return Friend.query.filter_by(id=request_id).first()
+
+    @staticmethod
     def get_requests_by_sender(sender_id: int) -> List[Friend]:
         return Friend.query.filter_by(sender_id=sender_id).all()
 
     @staticmethod
-    def get_friends_for_user(user_id: int) -> List[Friend]:
+    def get_friends_for_user(user_id: int) -> (List[User], List[Friend]):
         f_list = []
+        p_list = []
         fs = Friend.query.filter_by(sender_id=user_id).all()
         for f in fs:
             if f.accepted:
-                f_list.append(f)
+                f_list.append(User.get_user_by_id(f.receiver_id))
         rs = Friend.query.filter_by(receiver_id=user_id).all()
         for r in rs:
             if r.accepted:
-                f_list.append(r)
-        return f_list
+                f_list.append(User.get_user_by_id(r.sender_id))
+            if not r.accepted:
+                p_list.append(r)
+        return f_list, p_list
 
     @staticmethod
-    def get_firendship_by_id(f_id: int) -> Friend:
+    def get_friendship_by_id(f_id: int) -> Friend:
         return Friend.query.filter_by(id=f_id).first()
 
     @staticmethod
@@ -128,3 +132,15 @@ class Friend(db.Model):
             f.save()
             return True, 'friendship deleted'
         return False, 'have not been friends'
+
+    @staticmethod
+    def decline_request(request_id: int) -> (bool, Friend):
+        r = Friend.get_request_by_id(request_id=request_id)
+        if not r:
+            return False, r
+        if not r.accepted:
+            db.session.delete(r)
+            r.save()
+            return True, r
+        # if already friends
+        return False, r
