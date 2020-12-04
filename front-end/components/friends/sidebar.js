@@ -2,48 +2,48 @@ import React from 'react'
 import Link from 'next/link'
 import Search from './search'
 import { Button } from 'react-bootstrap'
+import { withRouter, useRouter } from 'next/router'
 
 import styles from '../../styles/Sidebar.module.css'
 
 
-export default class Sidebar extends React.Component {
+class Sidebar extends React.Component {
 	constructor(props) {
 		super(props);
 		
 		this.state = {
-			request: [
-				{
-					user_name: 'Howie God',
-					class: 'side-item',
-				},
-				{
-					user_name: 'xuezheng wang',
-					class: 'side-item',
-				},
-				{
-					user_name: 'EE',
-					class: 'side-item',
-				},
-			],
-		   FriendList: [
-				{
-					user_name: 'AB',
-					path: '',
-					class: 'side-item',
-				},
-				{
-					user_name: 'BB',
-					path: '',
-					class: 'side-item',
-				},
-				{
-					user_name: 'CC',
-					path: '',
-					class: 'side-item',
-				},
-			]
+			friends: [{}],
+		   requests: [{}]
 		}
 	}
+
+	//Api connections:
+
+	// componentDidMount() {
+    //     // Options for the fetch request
+	// 	const friendListAndRequestUrl = "http://localhost:2333/api/friends/get_friends_for_user";		
+	// 	const options = {
+	// 		method: 'GET',
+	// 	};
+	// 	fetch(friendListAndRequestUrl, options)
+    //     .then(response => {
+
+    //         if (response.status == 200) {
+	// 			return response.json()
+	// 		}
+	// 		throw Error(response.statusText);	
+	// 		// return Promise.all(response.map(r => r.json()))
+    //     })
+	// 	.then(data => {
+	// 		    console.log('Success:', data); // TODO: Remove for deployment
+	// 			this.setState({friends: data.friends, requests: data.requests});
+	// 	})
+	// 	.catch((error) => {
+	// 		console.error('Error:', error);
+	// 		this.props.router.push('util/error');
+	// 	});
+	// }
+
 
 	handleAccept() {}
 
@@ -61,7 +61,7 @@ export default class Sidebar extends React.Component {
 						<ul className={styles.sideMenu}>
 							<h4 className="mt-3">Friend Requests</h4>
 							<div>
-								{this.state.request.map((item, index) => {
+								{this.state.requests.map((item, index) => {
 									return (
 										<li key={index} className={item.class}>
 											<h6 className={styles.item}>{item.user_name}</h6>{' '}
@@ -89,10 +89,11 @@ export default class Sidebar extends React.Component {
 
 							<h4 className="mt-3">Friends</h4>
 
-							{this.state.FriendList.map((item, index) => {
+							{this.state.friends.map((item, index) => {
 								return (
 									<li key={index} className={item.class}>
-										<Link href={item.path}>{item.user_name}</Link>
+										{/* <Link href='/classInfo'>{item.user_name}</Link> */}
+										{item.user_name}
 										<div>
 											<Button
 												size="sm"
@@ -111,3 +112,5 @@ export default class Sidebar extends React.Component {
 		)
 	}
 }
+
+export default withRouter(Sidebar);

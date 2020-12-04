@@ -21,7 +21,7 @@ class FourYearPlan(db.Model):
                                   nullable=True)  # No need for this
     quarter_taken = db.Column(db.String(32), nullable=False)
     grade = db.Column(db.String(8), nullable=True)
-    locked = db.Column(db.Boolean, nullable=True)
+    locked = db.Column(db.Boolean, nullable=False)
 
     def __init__(self, **kwargs):
         super(FourYearPlan, self).__init__(**kwargs)
@@ -60,9 +60,9 @@ class FourYearPlan(db.Model):
 
     @staticmethod
     def create_entry(user_id: int, class_code: str,
-                     class_schedule_id: int,
                      quarter_taken: str,
-                     grade: str, locked: bool) -> bool:
+                     class_schedule_id: int = None,
+                     grade: str = None, locked: bool = False) -> bool:
         # if it's an identical user, class, and quarter, return false
         if FourYearPlan.get_unique_entry(user_id=user_id,
                                          class_code=class_code,
@@ -138,4 +138,13 @@ class FourYearPlan(db.Model):
             return False
         db.session.delete(entry)
         entry.save()
+        return True
+
+    @staticmethod
+    def remove_plan(user_id: int = None):
+        if not user_id:
+            return False
+        delete_entries = FourYearPlan.query.filter_by(user_id=user_id)
+        delete_entries.delete()
+        db.session.commit()
         return True

@@ -5,18 +5,82 @@ import { GaryNavbar } from '../components/commonUI';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EvaluationsList from '../components/eval/evaluationsList';
+import { withRouter, useRouter } from 'next/router'
+import styles from '../styles/classInfo.module.css';
+
 
 //export default function Class_info() {
 
-var classDec = {id:1, name: 'CSE110', descriptions: 'Introduction to software development and engineering methods, including specification, design, implementation, testing, and process. An emphasis on team development, agile methods, and use of tools such as IDE’s, version control, and test harnesses. Prerequisites: CSE 100; restricted to students with junior or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.'}
-var evaluations = [{id:1, quarter: 'Winter 2020', name: 'Gary Gillespie', unit: '4', expGPA: 'B+', actGPA: 'A', hours: "10hr/week"}, 
-    {id:2, quarter: 'Fall 2019', name: 'Niema Moshiri', unit: '4', expGPA: 'A', actGPA: 'A', hours: "10hr/week"},
-    {id:3, quarter: 'Spring 2019', name: 'Gary Gillespie', unit: '4', expGPA: 'B+', actGPA: 'A', hours: "10hr/week"},
-    {id:4, quarter: 'Winter 2019', name: 'Niema Moshiri',  unit: '4',expGPA: 'A-', actGPA: 'A', hours: "10hr/week"},
-    {id:5, quarter: 'Fall 2018', name: 'Niema Moshiri', unit: '4', expGPA: 'A', actGPA: 'A', hours: "10hr/week"},
-    {id:6, quarter: 'Spring 2018', name: 'Gary Gillespie', unit: '4', expGPA: 'A-', actGPA: 'A', hours: "10hr/week"}]
+class ClassInfo extends React.Component {
+    constructor(props) {
+		super(props);
 
-export default class ClassInfo extends React.Component {
+		this.state = {
+			classDescriptions: {
+                prerequisites: "",
+				description: "",
+				units: ""	
+            },
+            evaluations: [{}]
+		}
+	}
+
+	// classDes's get request 
+	componentDidMount() {
+		// const params = {
+		// 	class_code: "CSE 21"
+		// };
+        // Options for the fetch request
+		const classDesUrl = `http://localhost:2333/api/all_classes/get_class_by_code?class_code=${encodeURIComponent(this.props.router.query.class_name)}`;
+		const evalUrl = `http://localhost:2333/api/evaluations/get_evaluation?class_code=${encodeURIComponent(this.props.router.query.class_name)}`;
+		
+		const options = {
+			method: 'GET',
+		};
+
+		// TODO: Remove after debugging
+		console.log(classDesUrl);
+		console.log(evalUrl);
+
+		fetch(classDesUrl, options)
+        .then(response => {
+
+            if (response.status == 200) {
+				return response.json()
+			}
+			throw Error(response.statusText);	
+			// return Promise.all(response.map(r => r.json()))
+        })
+		.then(data => {
+			    console.log('Success:', data); // TODO: Remove for deployment
+				this.setState({classDescriptions: data.result});
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+			this.props.router.push('util/error');
+		});
+
+		// This is for the eval request
+		fetch(evalUrl, options)
+        .then(response => {
+
+            if (response.status == 200) {
+				return response.json()
+			}
+			throw Error(response.statusText);	
+		})
+		.then(data => {
+			    console.log('Success:', data); // TODO: Remove for deployment
+				this.setState({evaluations: data.result});
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+			this.props.router.push('util/error');
+		});
+	}
+	
+
+    
     render() {
         return (
 			<>
@@ -27,13 +91,16 @@ export default class ClassInfo extends React.Component {
 				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
 					<Navbar.Text>Class Information</Navbar.Text>
 				</GaryNavbar>
-				<Container>
-					<h1 className="text-center">{classDec.name}</h1>
-					<p className="text-center">{classDec.descriptions}</p>
-
-					<EvaluationsList evaluations={evaluations} />
+				<Container className={styles.container}>
+					<h1 className="text-center">{this.props.router.query.class_name} ({this.state.classDescriptions.units} Units)</h1>
+                    <h1 className={styles.description}> Description: {this.state.classDescriptions.description}</h1>
+					<h1 className={styles.prereq}> Prerequisites: {this.state.classDescriptions.prerequisites}</h1>
+					{/* <h1 className={styles.units}> Units: {this.state.classDescriptions.units}</h1> */}
+					<EvaluationsList evaluations={this.state.evaluations} />
 				</Container>
 			</>
 		)
     };
 };
+
+export default withRouter(ClassInfo);

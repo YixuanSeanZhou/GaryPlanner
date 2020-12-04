@@ -42,6 +42,13 @@
   "prerequisite": "CSE 8A; restricted to undergraduates. Graduate students will be allowed as space permits."
  },
  {
+    "code": "CSE 11",
+    "title": "Introduction to Computer Science and Object-Oriented Programming: Java",
+    "unit": "4",
+    "description": "An accelerated introduction to computer science and programming using the Java language. Basic UNIX. Modularity and abstraction. Documentation, testing and verification techniques. Basic object-oriented programming, including inheritance and dynamic binding. Exception handling. Event-driven programming. Experience with AWT library or another similar library. Students who have completed CSE 8B may not take CSE 11. Students should consult the “CSE Course Placement Advice” web page for assistance in choosing which CSE course to take first. Recommended preparation: high school algebra and familiarity with computing concepts and a course in a compiled language.",
+    "prerequisite": "restricted to undergraduates. Graduate students will be allowed as space permits."
+   },
+ {
   "code": "CSE 12",
   "title": "Basic Data Structures and Object-Oriented Design",
   "unit": "4",

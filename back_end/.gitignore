@@ -2,5 +2,8 @@ __pycache__/*
 .DS_Store
 postgres-data/*
 src/__pycache__/*
+*.ipynb
+*.pdf
+.devcontainer/*
 *.pdf
 degree_audit.json

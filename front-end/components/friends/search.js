@@ -3,18 +3,23 @@ import React from 'react'
 import { Form, Button, InputGroup } from 'react-bootstrap'
 
 import styles from '../../styles/SearchFriends.module.css'
+import { withRouter, useRouter } from 'next/router'
 
-export default class Search extends React.Component {
+class Search extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
 			search: '',
 			showResult: false,
+			user_profile: {}
 		}
 
 		this.handleChange = this.handleChange.bind(this)
 		this.handleSearch = this.handleSearch.bind(this)
 	}
+
+	// Search friends api
+
 
 	handleChange(e) {
 		this.setState({
@@ -26,42 +31,58 @@ export default class Search extends React.Component {
 	handleAdd() {}
 
 	handleSearch() {
+		const searchFriendsUrl = "http://localhost:2333/api/friends/find_user?name=" + `${this.state.search}`;
+	
+		console.log(searchFriendsUrl)		
+		const options = {
+			method: 'GET',
+			credentials: 'include',
+		};
+		fetch(searchFriendsUrl, options)
+        .then(response => {
+
+            if (response.status == 200) {
+				// this.setState({user_found : true})
+				return response.json();
+			}
+			throw Error(response.statusText);
+        })
+		.then(data => {
+				console.log('Success:', data); // TODO: Remove for deployment
+				this.setState({user_profile: data.result});
+		})
+		.catch((error) => {
+			console.error('Error:', error);
+			this.props.router.push('util/error');
+		});
+
 		this.setState({
 			showResult: true,
 		})
+
+		
 	}
 
 	render() {
-		const libraries = [
-			{ name: 'QWE', email: 'zxc@123.com' },
-			{ name: 'ASD' },
-			{ name: 'ZXC' },
-			{ name: 'minadsd da' },
-			{ name: 'mind was' },
-		]
 		let libData = []
-		const searchKey = this.state.search.trim().toLowerCase()
+		//let name = ""
+		// const searchKey = this.state.search.trim().toLowerCase()
 
-		if (searchKey && searchKey.length > 0) {
-			libData = libraries.filter((i) => {
-				return i.name.toLowerCase().match(searchKey)
-			})
+		if (this.state.search == this.state.user_profile.user_name){
+			//libData.push(this.state.libraries.user_name)
+			libData[0] = this.state.user_profile
 		}
 
 		const Result = () => (
 			<ul className={styles.ul}>
-				{libData.map((i, index) => {
-					return (
-						<li key={index} className={styles.item}>
-							<span>{i.name}</span>
+						<li className={styles.item}>
+							<div>{libData[0]}</div>
 							<div className={styles.btn}>
 								<Button size="sm" variant="warning">
 									Add
 								</Button>
 							</div>
 						</li>
-					)
-				})}
 			</ul>
 		)
 
@@ -77,7 +98,7 @@ export default class Search extends React.Component {
 					/>
 
 					<InputGroup.Append>
-						<Button value="submit" onClick={() => this.handleSearch()}>
+						<Button onClick={() => this.handleSearch()}>
 							Search
 						</Button>
 					</InputGroup.Append>
@@ -87,3 +108,5 @@ export default class Search extends React.Component {
 		)
 	}
 }
+
+export default withRouter(Search);
