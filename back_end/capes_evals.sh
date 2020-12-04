@@ -1,0 +1,1 @@
+python ./src/utils/web_crawler/capes_scrapper.py

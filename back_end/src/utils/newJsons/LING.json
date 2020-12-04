@@ -1,0 +1,1584 @@
+[
+ {
+  "code": "LIGN 3",
+  "title": "Language as a Social and Cultural Phenomenon",
+  "unit": "4",
+  "description": "The role of language in thought, myth, ritual, advertising, politics, and the law. Language variation, change, and loss; multilingualism, pidginization and creolization; language planning, standardization, and prescriptivism; writing systems.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 4",
+  "title": "Language as a Cognitive System",
+  "unit": "4",
+  "description": "Fundamental issues in language and cognition. Differences between animal communication, sign systems, and human language; origins and evolution of language; neural basis of language; language acquisition in children and adults.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 5",
+  "title": "The Linguistics of Invented Languages",
+  "unit": "4",
+  "description": "Introduction to the study of language through the investigation of invented languages, whether conscious (Elvish, Klingon, Esperanto) or unconscious (creoles, twin/sibling languages). Students will participate in the invention of a language fragment. Topics discussed include language structure, history, culture, and writing systems.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 6",
+  "title": "Computers and Language",
+  "unit": "4",
+  "description": "Computers and \u201cvirtual assistants\u201d are increasingly expected to understand, process, and interact with us using natural human language. This course will focus on the difficult computational and linguistic problems that working with natural language presents; and learn to implement some of the basic computational techniques used to model, process, and produce human language in Python.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 7",
+  "title": "Sign Language and Their Cultures",
+  "unit": "4",
+  "description": "Deaf history since the eighteenth century. The structure of American Sign Language and comparison with oral languages. ASL poetry and narrative and Deaf people's system of cultural knowledge. Basic questions concerning the nature of language and its relation to culture.",
+  "prerequisite": "none. Satisfies DEI requirement."
+ },
+ {
+  "code": "LIGN 8",
+  "title": "Languages and Cultures in America",
+  "unit": "4",
+  "description": "Language in American culture and society. Standard and nonstandard English in school, media, pop culture, politics; bilingualism and education; cultural perception of language issues over time; languages and cultures in the \u201cmelting pot,\u201d including Native American, Hispanic, African American, Deaf.",
+  "prerequisite": "none. Satisfies DEI requirement."
+ },
+ {
+  "code": "LIGN 9GS",
+  "title": "Sign Languages and Deaf Culture in the U.S. and France",
+  "unit": "4",
+  "description": "This course explores and compares the use of sign language and its role in the cultures of deaf people in the U.S. and France. Through signed discussion and viewing language samples, students become acquainted with how introductions, descriptions, numbers, fingerspelling, and more are commonly communicated in the two countries and gain practical experience in signing both ASL and Langues des Signes Francaise (LSF). Program or materials fees may apply.",
+  "prerequisite": "student must apply and be accepted to the global seminars program."
+ },
+ {
+  "code": "LIGN 17",
+  "title": "Making and Breaking Codes",
+  "unit": "4",
+  "description": "A rigorous analysis of symbolic systems and their interpretations. Students will learn to encode and decode information using progressively more sophisticated methods; topics covered include ancient and modern phonetic writing systems, hieroglyphics, computer languages, and ciphers (secret codes).",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 87",
+  "title": "First-year Student Seminar",
+  "unit": "1",
+  "description": "The First-year Student Seminar Program is designed to provide new students with the opportunity to explore an intellectual topic with a faculty member in a small seminar setting. First-year student seminars are offered in all campus departments and undergraduate colleges, and topics vary from quarter to quarter. Enrollment is limited to fifteen to twenty students, with preference given to entering first-year students.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 101",
+  "title": "Introduction to the Study of Language",
+  "unit": "4",
+  "description": "Language is what makes us human, but how does it work? This course focuses on speech sounds and sound patterns, how words are formed, organized into sentences, and understood, how language changes, and how it is learned.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 105",
+  "title": "Law and Language",
+  "unit": "4",
+  "description": "The interpretation of language in understanding the law: 1) the language of courtroom interaction (hearsay, jury instructions); 2) written legal language (contracts, ambiguity, legal fictions); 3) language-based issues in the law (First Amendment, libel and slander).",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 108",
+  "title": "Languages of Africa",
+  "unit": "4",
+  "description": "Africa is home to an astonishing variety of languages. This course investigates the characteristics of the major language families as well as population movements and language contact, and how governments attempt to regulate language use.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 110",
+  "title": "Phonetics",
+  "unit": "4",
+  "description": "The study of sounds that are used in human languages. How speech sounds are physically produced; acoustics of speech; speech perception; practical training in phonetic transcription and in interpreting visual representations of the acoustic signal. The class covers both English and its dialects and languages other than English.",
+  "prerequisite": "LIGN 101, concurrent enrollment in LIGN 101, or consent of instructor."
+ },
+ {
+  "code": "LIGN 111",
+  "title": "Phonology I",
+  "unit": "4",
+  "description": "Why does one language sound different from another? This course analyzes how languages organize sounds into different patterns, how those sounds interact, and how they fit into larger units, such as syllables. Focus on a wide variety of languages and problem solving.",
+  "prerequisite": "LIGN 110."
+ },
+ {
+  "code": "LIGN 112",
+  "title": "Speech Sounds and Speech Disorders",
+  "unit": "4",
+  "description": "How do we measure differences in the way sounds are produced and perceived? This course focuses on measuring and analyzing the acoustic and auditory properties of sounds as they occur in nonpathological and pathological speech.",
+  "prerequisite": "LIGN 110 or consent of instructor."
+ },
+ {
+  "code": "LIGN 113",
+  "title": "Hearing Science and Hearing Disorders",
+  "unit": "4",
+  "description": "An introductory course focused on the hearing component of speech, speech perception, and language disorders, this course gives students an introduction to the anatomy and function of human hearing, the principles and practice of audiology, and the modern methods of addressing hearing loss in patients like hearing aids and cochlear implants.",
+  "prerequisite": "LIGN 101 and LIGN 110."
+ },
+ {
+  "code": "LIGN 115",
+  "title": "Phonology II",
+  "unit": "4",
+  "description": "How are phonological systems organized, and what generalizations can be made about the phonological patterns found across languages? Exploration of advanced concepts in phonological theory through the analysis of cross- linguistic phenomena. Emphasis on empirical justification and argumentation.",
+  "prerequisite": "LIGN 111."
+ },
+ {
+  "code": "LIGN 118",
+  "title": "The Language of Comics",
+  "unit": "4",
+  "description": "How do we understand comic strips, comic books, and manga? We will examine the cognitive structures underlying comics, showing that this visual language of drawing and sequential images is understood similarly to spoken and signed languages. Recommended preparation: LIGN 101.",
+  "prerequisite": "upper- division standing."
+ },
+ {
+  "code": "LIGN 120",
+  "title": "Morphology",
+  "unit": "4",
+  "description": "How do some languages express with one word complex meanings that English needs several words to express? Discovery of underlying principles of word formation through problem solving and analysis of data from a wide variety of languages.",
+  "prerequisite": "LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 121",
+  "title": "Syntax I",
+  "unit": "4",
+  "description": "What universal principles determine how words combine into phrases and sentences? Introduction to research methods and results. Emphasis on how argumentation in problem-solving can be used in the development of theories of language.",
+  "prerequisite": "LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 125",
+  "title": "Syntax II",
+  "unit": "4",
+  "description": "How are syntactic systems organized, and what generalizations can be made about the syntactic patterns found across languages? Exploration of advanced concepts in syntactic theory through the analysis of cross-linguistic phenomena. Emphasis on empirical justification and argumentation.",
+  "prerequisite": "LIGN 121."
+ },
+ {
+  "code": "LIGN 130",
+  "title": "Semantics",
+  "unit": "4",
+  "description": "Introduction to the formal study of meaning. What is the meaning of a word? What is the meaning of a sentence? Which role does the context play in determining linguistic meaning?",
+  "prerequisite": "LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 139",
+  "title": "Field Methods",
+  "unit": "4",
+  "description": "Methods and practice of gathering, processing, and analyzing data based on working with a native speaker of a language. Students gain experience in learning to discriminate and transcribe sounds and analyze grammatical features from their own collected data. Ethical and practical issues of working with native speakers and language communities are addressed. May be taken for credit up to two times. Recommended preparation: LIGN 111, LIGN 120, LIGN 121.",
+  "prerequisite": "LIGN 101 and LIGN 110."
+ },
+ {
+  "code": "LIGN 141",
+  "title": "Language Structures",
+  "unit": "4",
+  "description": "Detailed investigation of the structure of one or more languages. May be repeated for credit as topics vary.",
+  "prerequisite": "LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 143",
+  "title": "The Structure of Spanish",
+  "unit": "4",
+  "description": "Surveys aspects of Spanish phonetics, phonology, morphology, and syntax. Topics include dialect differences between Latin American and Peninsular Spanish (both from a historical and contemporary viewpoint), gender classes, verbal morphology, and clause structure.",
+  "prerequisite": "LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 144",
+  "title": "Discourse Analysis: American Sign Language and Performing Arts",
+  "unit": "4",
+  "description": "A discourse-centered examination of ASL verbal arts: rhyme, meter, rhythm, handedness, nonmanual signals, and spatial mapping; creation of scene and mood; properties of character, dialogue, narration, and voice; cultural tropes; poetic constructions in everyday genres; transcription, body memory and performance.",
+  "prerequisite": "LISL 1C/1CX or consent of instructor."
+ },
+ {
+  "code": "LIGN 146",
+  "title": "Sociolinguistics in Deaf Communities",
+  "unit": "4",
+  "description": "An examination of sociolinguistic research on Deaf communities throughout the world, including: sociohistorical contexts for phonological, lexical and syntactic variation, contact between languages, multilingualism, language policies and planning, second language learning, language attitudes, and discourse analysis of specific social contexts. Course will be conducted in ASL.",
+  "prerequisite": "LISL 1C/1CX or consent of instructor."
+ },
+ {
+  "code": "LIGN 148",
+  "title": "Psycholinguistics of Sign Language",
+  "unit": "4",
+  "description": "The study of how sign languages are structured, and how they are understood and produced by adults. Topics include the contrast between gesture and language, sign language acquisition, brain processing, sociolinguistics, and the role of sign language in reading.",
+  "prerequisite": "LISL 1C/1CX or LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 149GS",
+  "title": "The Historical Roots of American Sign Language",
+  "unit": "4",
+  "description": "Emphasizing linguistic evidence and historical documents, this course examines the roots of ASL with particular focus on contributions from Langue des Signes Francaise, Native American Sign Language, Black ASL, and Hawaiian Sign Language. Topics include illustrated and descriptive records documenting the linguistics of each language, and similarities and differences among the varieties. Program or materials fees may apply.",
+  "prerequisite": "student must apply and be accepted to the global seminars program. Satisfies DEI requirement."
+ },
+ {
+  "code": "LIGN 150",
+  "title": "Historical Linguistics",
+  "unit": "4",
+  "description": "Language is constantly changing. This course investigates the nature of language change, how to determine a language's history, its relationship to other languages, and the search for common ancestors or \u201cprotolanguage.\u201d",
+  "prerequisite": "LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 152",
+  "title": "Indigenous Languages of the Americas",
+  "unit": "4",
+  "description": "This course is an introduction to the study of the indigenous languages of the Americas. Its goals are to offer orientation in a broad field and to prepare students for possible future research. Topics covered include grammatical structures, genetic classification, characteristics of major language families, and factors affecting language use and mother tongue transmission of these languages in contemporary societies. Recommended preparation: LIGN 101.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 154",
+  "title": "Language and Consciousness",
+  "unit": "4",
+  "description": "Origins of linguistic analysis (phonetics, phonology, morphology, thematic and grammatical relations, lexical semantics) in ancient India, history of naturalism vs. conventionalism, sound symbolism, relationship of language with myth and ritual, linguistic relativism, physical effects of language, metaphysical approaches to language.",
+  "prerequisite": "LIGN 101."
+ },
+ {
+  "code": "LIGN 155",
+  "title": "Evolution of Language",
+  "unit": "4",
+  "description": "History of thought on language origins, genetic, neural, anatomical, and gestural theories of language evolution in relation to prior hominid and other species, the role of generational differences in language acquisition, and computational models.",
+  "prerequisite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "LIGN 160",
+  "title": "Pragmatics",
+  "unit": "4",
+  "description": "An introduction to the context-dependent aspects of language meaning. Topics include given versus new information, Gricean maxims and rules of conversation, presupposition, implicature, reference and cognitive status, discourse coherence and structure, and speech acts.",
+  "prerequisite": "LIGN 101 or consent of instructor."
+ },
+ {
+  "code": "LIGN 165",
+  "title": "Computational Linguistics",
+  "unit": "4",
+  "description": "An introduction to the fundamental concepts of computational linguistics, in which we study natural language syntax and semantics from an interpretation perspective, describe methods for programming computer systems to perform such interpretation, and survey applications of computational linguistics technology.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 167",
+  "title": "Deep Learning for Natural Language Understanding",
+  "unit": "4",
+  "description": "An introduction to neural network methods for analyzing linguistic data. Basic neural network architectures and optimization through backpropagation and stochastic gradient descent. Word vectors and recurrent neural networks, and their uses and limitations in modeling the structure of natural language.",
+  "prerequisite": "Math 10C or Math 20C or Math 31BH; ability to program."
+ },
+ {
+  "code": "LIGN 170",
+  "title": "Psycholinguistics",
+  "unit": "4",
+  "description": "The study of how humans learn, represent, comprehend, and produce language. Topics include visual and auditory recognition of words, sentence comprehension, reading, sentence production, language acquisition, neural representation of language, bilingualism, and language disorders.",
+  "prerequisite": "LIGN 101, or upper-division standing, or consent of instructor."
+ },
+ {
+  "code": "LIGN 171",
+  "title": "Child Language Acquisition",
+  "unit": "4",
+  "description": "A central cognitive, developmental mystery is how children learn their first language. Overview of research in the learning of sound systems, word forms and word meanings, and word combinations. Exploration of the relation between cognitive and language development.",
+  "prerequisite": "LIGN 101, or upper- division standing, or consent of instructor."
+ },
+ {
+  "code": "LIGN 174",
+  "title": "Gender and Language in Society",
+  "unit": "4",
+  "description": "(Same as SOCI 116.) This course examines how language contributes to the social construction of gender identities, and how gender impacts language use and ideologies. Topics include the ways language and gender interact across the life span, within ethnolinguistic minority communities in the United States, across sexual orientations and cultures.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 175",
+  "title": "Sociolinguistics",
+  "unit": "4",
+  "description": "The study of language in its social context, with emphasis on the different types of linguistic variation and the principles underlying them. Dialects, registers, gender-based linguistic differences, multilingualism, pidginization and creolization, factors influencing linguistic choice, formal models of variation; emphasis is given both to socially determined differences within the United States and US ethnic groups and to cross-cultural differences in language use and variation.",
+  "prerequisite": "LIGN 101 or consent of instructor. Satisfies DEI requirement."
+ },
+ {
+  "code": "LIGN 176",
+  "title": "Language of Politics and Advertising",
+  "unit": "4",
+  "description": "How can we explain the difference between what is literally said versus what is actually conveyed in the language of law, politics, and advertising? How people's ordinary command of language and their reasoning skills are used to manipulate them.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 177",
+  "title": "Multilingualism",
+  "unit": "4",
+  "description": "Official and minority languages, pidgins and Creoles, language planning, bilingual education and literacy, code switching, and language attrition.",
+  "prerequisite": "LIGN 101, or upper-division standing, or consent of instructor."
+ },
+ {
+  "code": "LIGN 178",
+  "title": "Spanish Sociolinguistics",
+  "unit": "4",
+  "description": "This course examines how social variables, such as age, education, gender, and social status may be linguistically expressed in different varieties of Spanish. Attitudes toward different linguistic variants and how these impact language policy will be studied. Special emphasis will be given to the varieties of Spanish spoken in the United States.",
+  "prerequisite": "LIGN 101 or consent of instructor. Satisfies DEI requirement."
+ },
+ {
+  "code": "LIGN 179",
+  "title": "Second Language Acquisition Research",
+  "unit": "4",
+  "description": "This course will investigate topics in second language acquisition including the critical period, the processing and neural representation of language in bilinguals, theories of second language acquisition and creolization, exceptional language learners, and parallels with first language acquisition.",
+  "prerequisite": "LIGN 101, or upper-division standing, or consent of instructor."
+ },
+ {
+  "code": "LIGN 180",
+  "title": "Language Representation in the Brain",
+  "unit": "4",
+  "description": "The mind/body problem, modularity, basic neuroanatomy, cerebral lateralization, re-evaluation of classical language areas, aphasia, dyslexia, the KE family and FOXP2 gene, mirror neurons, sign language, brain development, cortical plasticity, and localization studies of language processing (electrical stimulation, MEG, fMRI, and PET). Students may not receive credit for both LIGN 172 and LIGN 180.",
+  "prerequisite": "LIGN 101, or upper-division standing, or consent of instructor."
+ },
+ {
+  "code": "LIGN 181",
+  "title": "Language Processing in the Brain",
+  "unit": "4",
+  "description": "Modularity and models of language processing, basic neurophysiology, EEG/MEG, linguistic event-related brain potentials (ERPs), crosslinguistic functional significance of ERP components and their MEG correlates: N400, N400-700, lexical processing negativity, slow anterior negative potentials, (early) left anterior negativity, and late positivity.",
+  "prerequisite": "LIGN 101, or upper-division standing, or consent of instructor."
+ },
+ {
+  "code": "LIGN 192",
+  "title": "Senior Seminar in Linguistics",
+  "unit": "1",
+  "description": "The Senior Seminar Program is designed to allow senior undergraduates to meet with faculty members in a small group setting to explore an intellectual topic in linguistics (at the upper-division level). Senior Seminars may be offered in all campus departments. Topics will vary from quarter to quarter. Senior Seminars may be taken for credit up to four times, with a change in topic, and permission of the department. Enrollment is limited to twenty students, with preference given to seniors.",
+  "prerequisite": "department stamp and/or consent of instructor."
+ },
+ {
+  "code": "LIGN 195",
+  "title": "Apprentice Teaching",
+  "unit": "0-4",
+  "description": "Students lead a class section of a lower-division linguistics course. They also attend a weekly meeting on teaching methods. (This course does not count toward minor or major.) May be repeated for credit, up to a maximum of four units. (P/NP grades only.)",
+  "prerequisite": "consent of instructor, advanced standing."
+ },
+ {
+  "code": "LIGN 197",
+  "title": "Linguistics Internship",
+  "unit": "2 or 4",
+  "description": "The student will undertake a program of practical research in a supervised work environment. Topics to be researched may vary, but in each case the course will provide skills for carrying out these studies.",
+  "prerequisite": "consent of instructor."
+ },
+ {
+  "code": "LIGN 199",
+  "title": "Independent Study in Linguistics",
+  "unit": "2 or 4",
+  "description": "The student undertakes a program of research or advanced reading in linguistics under the supervision of a faculty member of the Department of Linguistics. (P/NP grades only.)",
+  "prerequisite": "consent of instructor. May be repeated for credit."
+ },
+ {
+  "code": "LIGN 199H",
+  "title": "Honors Independent Study in Linguistics",
+  "unit": "4",
+  "description": "The student undertakes a program of research and advanced reading in linguistics under the supervision of a faculty member in the Department of Linguistics. (P/NP grades only.)",
+  "prerequisite": "admission to Honors Program."
+ },
+ {
+  "code": "LIGN 200",
+  "title": "Research Forum",
+  "unit": "2",
+  "description": "A forum for discussion of current issues. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 210",
+  "title": "Phonetics",
+  "unit": "4",
+  "description": "This is an introduction to articulatory, acoustic, and auditory phonetics. Major phonetic theories in these areas, and the relationship between phonetics and phonology are discussed. The course also covers experimental design and methodology and provides hands-on experience with laboratory equipment.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 211",
+  "title": "Phonology",
+  "unit": "4",
+  "description": "Introduction to the description and analysis of the sound patterns of language and to the construction of theoretical models, including cognitive rules, representations, and constraints.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 214",
+  "title": "Topics in Phonetics",
+  "unit": "4",
+  "description": "This course examines recent developments in controversial areas of phonetics. Topics will vary and will address issues in speech production (articulation, acoustics), speech perception, phonetic theory, and the relationship between phonetics and phonology. May be repeated for credit up to two times.",
+  "prerequisite": "LIGN 210 and LIGN 211."
+ },
+ {
+  "code": "LIGN 215",
+  "title": "Topics in Phonology",
+  "unit": "4",
+  "description": "Discussion of a topic of current phonological interest, with a focus on descriptive, analytical, and theoretical issues in phonology and phonological theory.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 220",
+  "title": "Morphology",
+  "unit": "4",
+  "description": "Theories of word structure are examined and confronted with data from a variety of languages: derivational and inflectional morphology, the morphology/phonology, and morphology/syntax interfaces.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 221",
+  "title": "Syntax",
+  "unit": "4",
+  "description": "An introduction to syntactic phenomena, argumentation, analyses, and theoretical models. Phenomena to be discussed include phrase structure, argument structure, binding, control, and A- and A\u2019-dependencies.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 225",
+  "title": "Topics in Syntax",
+  "unit": "4",
+  "description": "Descriptive and theoretical problems in syntactic analysis. Theoretical consequences of alternative analyses. May be repeated for credit as topics vary.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 228",
+  "title": "Probabilistic Models of Cognition",
+  "unit": "4",
+  "description": "(Same as Psychology 232.) Computational theories of human cognition, particularly Bayesian approaches. Techniques may include directed graphical models; hierarchical models; nonparametric models; probabilistic programming languages. Topics may include decision making; perception; causal reasoning; categorization; language. Recommended preparation: previous experience with statistics, machine learning, and/or functional programming helpful.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 230",
+  "title": "Semantics",
+  "unit": "4",
+  "description": "Theories of semantic structure. The relation of meaning to grammar, and how it is to be accommodated in an overall model of linguistic organization. The application of formal semantics to the description of natural language.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 232",
+  "title": "Semantic Development",
+  "unit": "4",
+  "description": "(Same as Psychology 235.) This course will explore the development of concepts and linguistic meaning via classic case studies in semantics, including word learning, quantifier acquisition, and the foundations of mathematics. The course will draw on evidence from linguistics, the philosophy of language, and developmental psychology.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 235",
+  "title": "Topics in Semantics",
+  "unit": "2-4",
+  "description": "Advanced material in special areas of the study of meaning and its relation to formal aspects of human language. May be repeated for credit up to three times as topics vary.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 238",
+  "title": "Topics in Cognitive Linguistics",
+  "unit": "0-4",
+  "description": "(Same as Cognitive Science 238.) Basic concepts, empirical findings, and recent developments in cognitive and functional linguistics. Language viewed dynamically in relation to conceptualization, discourse, meaning construction, and cognitive processing. May be repeated for credit as topics vary.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 240",
+  "title": "Field Methods",
+  "unit": "4",
+  "description": "Techniques of discovering the structure of a language through elicitation of data from native speaker consultants. Phonemic, morphemic, and syntactic analysis.",
+  "prerequisite": "LIGN 110 or equivalent."
+ },
+ {
+  "code": "LIGN 241",
+  "title": "Fieldwork",
+  "unit": "4",
+  "description": "Fieldwork continuing the research of the previous quarter; student-directed elicitations on topics of interest.",
+  "prerequisite": "LIGN 240."
+ },
+ {
+  "code": "LIGN 245",
+  "title": "Computational Corpus Linguistics",
+  "unit": "4",
+  "description": "Introduction to computational corpus tools for performing empirically grounded linguistic investigations. Annotated and unannotated corpora; annotation schemes. Searching using regular expressions. UNIX tools. The PERL programming language. Publically available language processing systems.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 247",
+  "title": "Topics in Pragmatics",
+  "unit": "2-4",
+  "description": "Advanced material covering particular topics relating to the theoretical analysis of the pragmatics of natural languages. May be repeated for credit up to three times as topics vary.",
+  "prerequisite": "consent of instructor."
+ },
+ {
+  "code": "LIGN 248",
+  "title": "Topics in Morphology",
+  "unit": "4",
+  "description": "Descriptive and theoretical problems in morphology. Theoretical and empirical consequences of alternative analyses. May be repeated for credit up to three times as topics vary.",
+  "prerequisite": "LIGN 220."
+ },
+ {
+  "code": "LIGN 251",
+  "title": "Probabilistic Methods in Linguistics",
+  "unit": "4",
+  "description": "Probabilistic approaches to language knowledge, acquisition, and use. Quantitative analysis of linguistic data. Quantitative models in linguistic theory. Covers basic probability theory and tools of statistical analysis for language, including linear regression, ANOVA, generalized linear models (e.g., logistic regression), data visualization. Familiarity with probability theory highly encouraged.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 252",
+  "title": "Advanced Probabilistic Models of Language",
+  "unit": "4",
+  "description": "Probabilistic techniques for data analysis and modeling of linguistics cognition. Hierarchical (mixed-effects) regression, graphical models, Bayesian methods, latent-variable models, nonparametric models, probabilistic grammars. Course covers both mathematical foundations and working with datasets using state-of-the-art computational tools. Recommended prerequisite: LIGN 251 or equivalent course with emphasis on probabilistic methods in linguistics.",
+  "prerequisite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "LIGN 255",
+  "title": "Topics in Language Evolution",
+  "unit": "4",
+  "description": "The study of human language evolution from a variety of perspectives: anatomical, comparative, computational, cultural, experimental, generational, genetic, gestural, historical, neural, phonetic/phonological, pragmatic, semantic, semiotic, syntactic, etc. May be taken for credit three times when topics vary.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 256",
+  "title": "Statistical Natural Language Processing",
+  "unit": "4",
+  "description": "(Same as CSE 256.) Introduction to modern statistical approaches to natural language processing: part-of-speech tagging, word-sense disambiguation and parsing, using Markov models, hidden Markov models, and probabilistic context- free grammars. Recommended prerequisites: one of LIGN 165, LIGN 245, CSE 151, CSE 250A, CSE 254.",
+  "prerequisite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "LIGN 266",
+  "title": "Computational Pragmatics",
+  "unit": "4",
+  "description": "This course will provide an introduction to computational models of pragmatics and their empirical evaluation. The course will mainly focus on probabilistic models, including the Rational Speech Acts model and its various extensions. Students will learn how to build probabilistically coherent models of agent behavior, and how to evaluate the linguistic accuracy of these models.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 270",
+  "title": "Topics in Psycholinguistics",
+  "unit": "4",
+  "description": "We will discuss issues in theoretical linguistics from a perspective of language representation and processing, and current development in psycholinguistics and neighboring disciplines from a methodological point of view. May be taken for credit up to three times when topics vary.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 271",
+  "title": "Advanced Topics in Psycholinguistics",
+  "unit": "4",
+  "description": "Advanced material covering topics in the experimental study of language comprehension, relating to different theoretical analyses of syntax, semantics, and pragmatics; models of linguistic architecture; methodological and statistical issues; cross-linguistic psycholinguistics; and interfaces with broader cognition. May be taken for credit up to two times.",
+  "prerequisite": "LIGN 270."
+ },
+ {
+  "code": "LIGN 272",
+  "title": "Topics in Neurolinguistics",
+  "unit": "4",
+  "description": "Issues of language representation and neural instantiation that arise in studies of neural imaging, language disorders, multilingualism and second language acquisition, animal communication, and the origins and evolution of language. May be repeated for credit when topics vary.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 274",
+  "title": "Computational Psycholinguistics",
+  "unit": "4",
+  "description": "Investigation of problems in psycholinguistics\u2014the study of how humans learn, represent, comprehend, and produce language\u2014from a computational perspective. Research article readings covering word-level, sentence-level, and discourse- level processing. Prior background in psycholinguistics and/or computational linguistics highly recommended.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 279",
+  "title": "Topics in Language Acquisition",
+  "unit": "4",
+  "description": "Language acquisition is central to theories about human development, cognition, brain organization, and language origins and change. Topics include the role of input and critical periods on language outcome and processing, neural organization, and sign language creation.",
+  "prerequisite": "none."
+ },
+ {
+  "code": "LIGN 280",
+  "title": "Sign Language Research",
+  "unit": "4",
+  "description": "An overview of sign language research in terms of how it informs language theory. Topics include the structure of ASL, acquisition, psycholinguistic and neurolinguistic processing of sign language in comparison to spoken language, critical period effects, and language evolution.",
+  "prerequisite": "graduate standing or consent of instructor."
+ },
+ {
+  "code": "LIGN 281",
+  "title": "Language Acquisition Theory and Research",
+  "unit": "4",
+  "description": "Children's first language acquisition and how it illuminates linguistic, cognitive, and neurolinguistic theory. Topics include past and current research with a focus on design, methodology, and data analysis in child language.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 282",
+  "title": "Biology and Environment in Language Acquisition",
+  "unit": "4",
+  "description": "How the environment and the biology of language, including sensory motor modality and neural development, affect language development. Topics include the paradigms used to study the critical period for language.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 283",
+  "title": "Language and Conceptual Development",
+  "unit": "4",
+  "description": "(Same as Psychology 260.) This class will investigate case studies in conceptual development that interact with language acquisition, including domains such as time, space, number, and theory of mind. The approach of the class will be to explore the chosen case study from the perspective of philosophy, linguistics, psychology, anthropology, and comparative psychology, with a particular focus on how conceptual development is affected by the acquisition of language.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 284",
+  "title": "Topics in Sign Language Research",
+  "unit": "4",
+  "description": "The structure and nature of natural sign languages informs multiple questions in linguistics and cognitive and neural science. Topics include linguistic structure, psycholinguistic processing, acquisition, brain processing, and language creation. May be taken for credit up to three times as topics vary.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 293",
+  "title": "Research Practicum",
+  "unit": "0-4",
+  "description": "Gathering and interpreting data, formulating research questions and hypotheses, making the predictions of hypotheses explicit, finding relevant evidence, and organizing research results into suitable form for presentation in abstracts, talks, and research papers. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 296",
+  "title": "Directed Research",
+  "unit": "1-8",
+  "description": "Individual research. May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 299",
+  "title": "Doctoral Research",
+  "unit": "1-12",
+  "description": "Directed research on dissertation topic for students who have been admitted to candidacy for the PhD degree. May be repeated for credit.",
+  "prerequisite": "advancement to candidacy."
+ },
+ {
+  "code": "LIGN 500",
+  "title": "Linguistics Graduate Instructional Assistant Training",
+  "unit": "1-4",
+  "description": "This course, a weekly interactive lecture, is designed to give linguistics instructional assistants (IAs) formal training in pedagogical theory, learning evaluation, classroom management, and the role and expectations of a Linguistics IA. The course will also include microteaching, panel discussions with faculty, direct discussion of supporting students in difficult situations, and offers new IAs a forum to discuss and work through day-to-day difficulties in teaching.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 502",
+  "title": "Apprentice Teaching of Linguistics",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in the department's linguistics courses, includes discussion of teaching theories, techniques, and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. The student must be serving as a teaching assistant in a LIGN course to receive credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 503",
+  "title": "Apprentice Teaching of American Sign Language",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in American Sign Language, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 504",
+  "title": "Apprentice Teaching of French",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in French, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 505",
+  "title": "Apprentice Teaching of German",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in German, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 506",
+  "title": "Apprentice Teaching of Italian",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Italian, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 507",
+  "title": "Apprentice Teaching of Spanish",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Spanish, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 508",
+  "title": "Apprentice Teaching of Language/Directed Study",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in language directed study, includes discussion of teaching theories, techniques and materials, directing study of various uncommonly taught languages, sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 509",
+  "title": "Apprentice Teaching, Head Teaching Assistant",
+  "unit": "1-4",
+  "description": "This course, designed for a graduate student serving as Head Teaching Assistant in the Linguistics Language Program, includes discussion of teaching methods and materials, and classroom observation, directing study of various uncommonly taught languages, sessions, and participation in examinations, under the supervision of the instructor in charge of the course.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 510",
+  "title": "Apprentice Teaching of Arabic",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Arabic, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 511",
+  "title": "Apprentice Teaching of Portuguese",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Portuguese, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 512",
+  "title": "Apprentice Teaching of Heritage Korean",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Heritage Korean, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 513",
+  "title": "Apprentice Teaching of Heritage Vietnamese",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Heritage Vietnamese, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 514",
+  "title": "Apprentice Teaching of Heritage Persian",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Heritage Persian, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGN 515",
+  "title": "Apprentice Teaching of Heritage Filipino",
+  "unit": "1-4",
+  "description": "The course, designed for graduate students serving as teaching assistants in Heritage Filipino, includes discussion of teaching theories, techniques and materials, conduct of discussion sessions, and participation in examinations, under the supervision of the instructor in charge of the course. (S/U grades only.) May be repeated for credit.",
+  "prerequisite": null
+ },
+ {
+  "code": "LISL 1A",
+  "title": "American Sign Language Conversation",
+  "unit": "2.5",
+  "description": "Small tutorial meetings with a signer of American Sign Language (ASL). Conversational practice organized around common everyday communicative situations. Must be taken with LISL 1AX.",
+  "prerequisite": "no prior study of ASL."
+ },
+ {
+  "code": "LISL 1AX",
+  "title": "Analysis of American Sign Language",
+  "unit": "2.5",
+  "description": "Study of American Sign Language (ASL) and analysis of its syntactic, morphological, and phonological features. Readings and discussions of cultural information. The course is taught entirely in ASL. Must be taken with LISL 1A.",
+  "prerequisite": "no prior study of ASL."
+ },
+ {
+  "code": "LISL 1B",
+  "title": "American Sign Language Conversation",
+  "unit": "2.5",
+  "description": "Small tutorial meetings with a signer of American Sign Language (ASL). Conversational practice organized around common everyday communicative situations. Must be taken with LISL 1BX.",
+  "prerequisite": "LISL 1A with a grade of C- or better, or equivalent and LISL 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISL 1BX",
+  "title": "Analysis of American Sign Language",
+  "unit": "2.5",
+  "description": "Study of American Sign Language (ASL) and analysis of its syntactic, morphological, and phonological features. Readings and discussions of cultural information. The course is taught entirely in ASL. Must be taken with LISL 1B.",
+  "prerequisite": "LISL 1A with a grade of C- or better, or equivalent and LISL 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISL 1C",
+  "title": "American Sign Language Conversation",
+  "unit": "2.5",
+  "description": "Small tutorial meetings with a signer of American Sign Language (ASL). Conversational practice organized around common everyday communicative situations. Must be taken with LISL 1CX.",
+  "prerequisite": "LISL 1B with a grade of C- or better, or equivalent and LISL 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISL 1CX",
+  "title": "Analysis of American Sign Language",
+  "unit": "2.5",
+  "description": "Study of American Sign Language (ASL) and analysis of its syntactic, morphological, and phonological features. Readings and discussions of cultural information. The course is taught entirely in ASL. Must be taken with LISL 1C.",
+  "prerequisite": "LISL 1B with a grade of C- or better, or equivalent and LISL 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISL 1D",
+  "title": "American Sign Language Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in American Sign Language. Emphasis on developing signing fluency and greater cultural awareness. Practice of the principal language functions needed for successful communication. Must be taken in conjunction with LISL 1DX. Successful completion of LISL 1D and LISL 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LISL 1C with a grade of C- or better, or equivalent and LISL 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISL 1DX",
+  "title": "Analysis of American Sign Language",
+  "unit": "2.5",
+  "description": "Practice of the grammatical functions indispensable for comprehensible communication in the language. The course is taught entirely in American Sign Language. Must be taken in conjunction with LISL 1D. Successful completion of LISL 1D and LISL 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LISL 1C with a grade of C- or better, or equivalent and LISL 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISL 1E",
+  "title": "Intermediate American Sign Language Conversation",
+  "unit": "4",
+  "description": "Course aims to improve language skills through discussion of topics relevant to the Deaf community. Central topics will include education and American Sign Language (ASL) literature. Conducted entirely in American Sign Language.",
+  "prerequisite": "LISL 1D and LISL 1DX with a grade of C- or better, or equivalent."
+ },
+ {
+  "code": "LISL 5A, 5B, 5C",
+  "title": "Fundamentals of American Sign Language",
+  "unit": "5",
+  "description": "This course concentrates on those language skills essential for communication: signing, comprehension, grammar analysis, and deaf culture. UC San Diego students: LISL 5A is equivalent to LISL 1A/1AX, LISL 5B to LISL 1B/BX, and LISL 5C to LISL 1C/1CX. Enrollment is limited.",
+  "prerequisite": "none for 5A; for 5B two or more years of ASL in high school or the first semester of college-level ASL. (Offered in Summer Session only.)"
+ },
+ {
+  "code": "LIAB 1A",
+  "title": "Arabic Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIAB 1AX.",
+  "prerequisite": "no prior study of Arabic."
+ },
+ {
+  "code": "LIAB 1AX",
+  "title": "Analysis of Arabic",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Arabic. Must be taken in conjunction with LIAB 1A.",
+  "prerequisite": "no prior study of Arabic."
+ },
+ {
+  "code": "LIAB 1B",
+  "title": "Arabic Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIAB 1BX.",
+  "prerequisite": "LIAB 1A with a grade of C- or better, or equivalent and LIAB 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1BX",
+  "title": "Analysis of Arabic",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Arabic. Must be taken in conjunction with LIAB 1B.",
+  "prerequisite": "LIAB 1A with a grade of C- or better, or equivalent and LIAB 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1C",
+  "title": "Arabic Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIAB 1CX.",
+  "prerequisite": "LIAB 1B with a grade of C- or better, or equivalent and LIAB 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1CX",
+  "title": "Analysis of Arabic",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Arabic. Must be taken in conjunction with LIAB 1C.",
+  "prerequisite": "LIAB 1B with a grade of C- or better, or equivalent and LIAB 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1D",
+  "title": "Arabic Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIAB 1DX. Successful completion of LIAB 1D and 1DX satisfies the requirement for language proficiency in Revelle and Eleanor Roosevelt Colleges.",
+  "prerequisite": "LIAB 1C with a grade of C- or better, or equivalent and LIAB 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1DX",
+  "title": "Analysis of Arabic",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Arabic. Must be taken in conjunction with LIAB 1D. Successful completion of LIAB 1D and 1DX satisfies the requirement for language proficiency in Revelle and Eleanor Roosevelt Colleges.",
+  "prerequisite": "LIAB 1C with a grade of C- or better, or equivalent and LIAB 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1E",
+  "title": "Arabic Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIAB 1EX.",
+  "prerequisite": "LIAB 1D with a grade of C- or better, or equivalent, and LIAB 1DX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1EX",
+  "title": "Arabic Conversation",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in Arabic. Must be taken in conjunction with LIAB 1E.",
+  "prerequisite": "LIAB 1D with a grade of C- or better, or equivalent, and LIAB 1DX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIAB 1F",
+  "title": "Intermediate Arabic Conversation and Analysis",
+  "unit": "4",
+  "description": "A course to increase the proficiency level of students who have completed LIAB 1E/1EX or who are at an equivalent level. Attention to listening comprehension, conversation, vocabulary building, reading, grammar analysis, and culture.",
+  "prerequisite": "LIAB 1E or equivalent or LIAB 1EX."
+ },
+ {
+  "code": "LIAB 1G",
+  "title": "Advanced Arabic",
+  "unit": "4",
+  "description": "A course to increase the proficiency level of students who have completed LIAB 1F or who are at an equivalent level. Attention to listening comprehension, conversation, vocabulary building, reading, grammar analysis, and culture.",
+  "prerequisite": "LIAB 1F or equivalent."
+ },
+ {
+  "code": "LIFR 1A",
+  "title": "French Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIFR 1AX.",
+  "prerequisite": "no prior study of French."
+ },
+ {
+  "code": "LIFR 1AX",
+  "title": "Analysis of French",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in French. Must be taken in conjunction with LIFR 1A.",
+  "prerequisite": "no prior study of French."
+ },
+ {
+  "code": "LIFR 1B",
+  "title": "French Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIFR 1BX.",
+  "prerequisite": "LIFR 1A with a grade of C- or better, or equivalent and LIFR 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIFR 1BX",
+  "title": "Analysis of French",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in French. Must be taken in conjunction with LIFR 1B.",
+  "prerequisite": "LIFR 1A with a grade of C- or better, or equivalent and LIFR 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIFR 1C",
+  "title": "French Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIFR 1CX.",
+  "prerequisite": "LIFR 1B with a grade of C- or better, or equivalent and LIFR 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIFR 1CX",
+  "title": "Analysis of French",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in French. Must be taken in conjunction with LIFR 1C.",
+  "prerequisite": "LIFR 1B with a grade of C- or better, or equivalent and LIFR 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIFR 1D",
+  "title": "French Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in French. Emphasis on speaking, reading, writing, and culture. Practice of the language functions needed for successful communication. Must be taken in conjunction with LIFR 1DX. Successful completion of LIFR 1D and LIFR 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LIFR 1C with a grade of C- or better, or equivalent and LIFR 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIFR 1DX",
+  "title": "Analysis of French",
+  "unit": "2.5",
+  "description": "Practice of the grammatical functions indispensable for comprehensible communication in the language. The course is taught entirely in French. Must be taken in conjunction with LIFR 1D. Successful completion of LIFR 1D and LIFR 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LIFR 1C with a grade of C- or better, or equivalent and LIFR 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIFR 5B, 5C, 5D",
+  "title": "Fundamentals of French",
+  "unit": "5",
+  "description": "This course concentrates on those language skills essential for communication: listening comprehension, conversation, reading, writing, and grammar analysis. UC San Diego students: LIFR 5A is equivalent to LIFR 1A/1AX, LIFR 5B to LIFR 1B/1BX, LIFR 5C to LIFR 1C/1CX, and LIFR 5D to LIFR 1D/1DX. Enrollment is limited.",
+  "prerequisite": "none for 5A; for 5B, two or more years of French in high school or the first semester of college-level French. (Offered in Summer Session only.)"
+ },
+ {
+  "code": "LIFR 11",
+  "title": "Elementary French Reading",
+  "unit": "2-4",
+  "description": "A self-instructional program designed to prepare graduate students to meet reading requirements in French. After a one-week introduction to French orthography/ sound correspondence, students work with a self-instructional textbook. Midterm and final examinations. (F,W,S)",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGM 1A",
+  "title": "German Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIGM 1AX.",
+  "prerequisite": "no prior study of German."
+ },
+ {
+  "code": "LIGM 1AX",
+  "title": "Analysis of German",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in German. Must be taken with LIGM 1A.",
+  "prerequisite": "no prior study of German."
+ },
+ {
+  "code": "LIGM 1B",
+  "title": "German Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIGM 1BX.",
+  "prerequisite": "LIGM 1A with a grade of C- or better, or equivalent and LIGM 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIGM 1BX",
+  "title": "Analysis of German",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in German. Must be taken with LIGM 1B.",
+  "prerequisite": "LIGM 1A with a grade of C- or better, or equivalent and LIGM 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIGM 1C",
+  "title": "German Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIGM 1CX.",
+  "prerequisite": "LIGM 1B with a grade of C- or better, or equivalent and LIGM 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIGM 1CX",
+  "title": "Analysis of German",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in German. Must be taken with LIGM 1C.",
+  "prerequisite": "LIGM 1B with a grade of C- or better, or equivalent and LIGM 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIGM 1D",
+  "title": "German Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in German. Emphasis on speaking, reading, writing, and culture. Practice of the language functions needed for successful communication. Must be taken in conjunction with LIGM 1DX. Successful completion of LIGM 1D and LIGM 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LIGM 1C with a grade of C- or better, or equivalent and LIGM 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIGM 1DX",
+  "title": "Analysis of German",
+  "unit": "2.5",
+  "description": "Practice of the grammatical functions indispensable for comprehensible communication in the language. The course is taught entirely in German. Must be taken in conjunction with LIGM 1D. Successful completion of LIGM 1D and LIGM 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LIGM 1C with a grade of C- or better, or equivalent and LIGM 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIGM 11",
+  "title": "Elementary German Reading",
+  "unit": "2-4",
+  "description": "A self-instructional program designed to prepare graduate students to meet reading requirements in German. After a one-week introduction to German orthography/sound correspondences, students work with a self-instructional textbook. Midterm and final examinations. (F,W,S)",
+  "prerequisite": null
+ },
+ {
+  "code": "LIGM 5A, 5B, 5C, 5D",
+  "title": "Fundamentals of German",
+  "unit": "5",
+  "description": "This course concentrates on those language skills essential for communication: listening comprehension, reading, writing, and grammar analysis. UC San Diego students: LIGM 5A is equivalent to LIGM 1A/1AX, LIGM 5B to LIGM 1B/1BX, and LIGM 5C to LIGM 1C/1CX. Enrollment is limited.",
+  "prerequisite": "none for 5A; for 5B, two or more years of German in high school or the first semester of college-level German. (Offered in Summer Session only.)"
+ },
+ {
+  "code": "LIHL 16",
+  "title": "Arabic Literacy for Arabic Speakers",
+  "unit": "4",
+  "description": "For students who already comprehend informal spoken Arabic but who have little or no reading and writing skills. Topics include the Arabic alphabet, basic reading and writing, and differences between colloquial and written Arabic.",
+  "prerequisite": "consent of instructor."
+ },
+ {
+  "code": "LIHL 17",
+  "title": "Persian Literacy for Persian Speakers",
+  "unit": "4",
+  "description": "For students who already comprehend informal spoken Persian but who have little or no reading and writing skills. Topics include the Persian alphabet, basic reading and writing, and differences between colloquial and written Persian.",
+  "prerequisite": "consent of instructor."
+ },
+ {
+  "code": "LIHL 112F",
+  "title": "Filipino for Filipino Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Filipino but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and family life/festivals; dialect and language style differences; structure and history of Filipino. May not receive credit for both LIHL112 and LIHL112F. Courses may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 112W",
+  "title": "Filipino for Filipino Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Filipino but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and media/arts; dialect and language style differences; structure and history of Filipino. May not receive credit for both LIHL112 and LIHL112W. Courses may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 112P",
+  "title": "Filipino for Filipino Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Filipino but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and entertainment/culture; dialect and language style differences; structure and history of Filipino. May not receive credit for both LIHL112 and LIHL112P. Courses may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 132F",
+  "title": "Advanced Filipino for Filipino Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on domestic culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Filipino. LIHL 132F, LIHL 132W, and LIHL 132P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 132W",
+  "title": "Advanced Filipino for Filipino Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on media/arts. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Filipino. LIHL 132F, LIHL 132W, and LIHL 132P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 132P",
+  "title": "Advanced Filipino for Filipino Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on entertainment/culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Filipino. LIHL 132F, LIHL 132W, and LIHL 132P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 113",
+  "title": "Armenian for Armenian Speakers",
+  "unit": "4",
+  "description": "For students who already comprehend informal spoken Armenian but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and culture; dialect and language style differences; structure and history of Armenian. Some speaking ability in Armenian recommended.",
+  "prerequisite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "LIHL 114F",
+  "title": "Vietnamese for Vietnamese Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Vietnamese but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and family life/festivals; dialect and language style differences; structure and history of Vietnamese. LIHL 114F, LIHL 114W, and LIHL 114P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 114W",
+  "title": "Vietnamese for Vietnamese Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Vietnamese but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and media/arts; dialect and language style differences; structure and history of Vietnamese. LIHL 114F, LIHL 114W, and LIHL 114P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 114P",
+  "title": "Vietnamese for Vietnamese Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Vietnamese but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and entertainment/culture; dialect and language style differences; structure and history of Vietnamese. LIHL 114F, LIHL 114W, and LIHL 114P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 134F",
+  "title": "Advanced Vietnamese for Vietnamese Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on domestic culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Vietnamese. LIHL 134F, LIHL 134W, and LIHL 134P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 134W",
+  "title": "Advanced Vietnamese for Vietnamese Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on media/arts. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Vietnamese. LIHL 134F, LIHL 134W, and LIHL 134P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 134P",
+  "title": "Advanced Vietnamese for Vietnamese Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on entertainment/culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Vietnamese. LIHL 134F, LIHL 134W, and LIHL 134P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 115F",
+  "title": "Korean for Korean Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Korean but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and family life/festivals; dialect and language style differences; structure and history of Korean. LIHL 115F, LIHL 115W, and LIHL 115P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 115W",
+  "title": "Korean for Korean Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Korean but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and media/arts; dialect and language style differences; structure and history of Korean. LIHL 115F, LIHL 115W, and LIHL 115P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 115P",
+  "title": "Korean for Korean Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Korean but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and entertainment/culture; dialect and language style differences; structure and history of Korean. LIHL 115F, LIHL 115W, and LIHL 115P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 135F",
+  "title": "Advanced Korean for Korean Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on domestic culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Korean LIHL 135F, LIHL 135W, and LIHL 135P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 135W",
+  "title": "Advanced Korean for Korean Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on media/arts. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Korean. LIHL 135F, LIHL 135W, and LIHL 135P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 135P",
+  "title": "Advanced Korean for Korean Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on entertainment/culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Korean. LIHL 135F, LIHL 135W, and LIHL 135P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 116F",
+  "title": "Arabic for Arabic Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Arabic but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and family life/festivals; dialect and language style differences; structure and history of Arabic. LIHL 116F, LIHL 116W, and LIHL 116P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 116W",
+  "title": "Arabic for Arabic Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Arabic but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and media/arts; dialect and language style differences; structure and history of Arabic. LIHL 116F, LIHL 116W, and LIHL 116P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 116P",
+  "title": "Arabic for Arabic Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Arabic but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and entertainment/culture; dialect and language style differences; structure and history of Arabic. LIHL 116F, LIHL 116W, and LIHL 116P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 136",
+  "title": "Advanced Arabic for Arabic Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language functions required for advanced oral communication, reading, writing, and cultural understanding in professional contexts. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Arabic.",
+  "prerequisite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "LIHL 117F",
+  "title": "Persian for Persian Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Persian but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and family life/festivals; dialect and language style differences; structure and history of Persian. LIHL 117F, LIHL 117W, and LIHL 117P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 117W",
+  "title": "Persian for Persian Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Persian but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and media/arts; dialect and language style differences; structure and history of Persian. LIHL 117F, LIHL 117W, and LIHL 117P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 117P",
+  "title": "Persian for Persian Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Persian but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and entertainment/culture; dialect and language style differences; structure and history of Persian. LIHL 117F, LIHL 117W, and LIHL 117P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 137F",
+  "title": "Advanced Persian for Persian Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on domestic culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Persian. LIHL 137F, LIHL 137W, and LIHL 137P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 137W",
+  "title": "Advanced Persian for Persian Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on media/arts. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Persian. LIHL 137F, LIHL 137W, and LIHL 137P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 137P",
+  "title": "Advanced Persian for Persian Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on entertainment/culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Persian. LIHL 137F, LIHL 137W, and LIHL 137P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 118",
+  "title": "Cantonese for Cantonese Speakers",
+  "unit": "4",
+  "description": "For students who already comprehend informal spoken Cantonese but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and culture; dialect and language style differences; structure and history of Cantonese. Some speaking ability in Cantonese recommended.",
+  "prerequisite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "LIHL 138",
+  "title": "Advanced Cantonese for Cantonese Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language functions required for advanced oral communication, reading, writing, and cultural understanding in professional contexts. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Cantonese.",
+  "prerequisite": "upper-division standing or consent of instructor."
+ },
+ {
+  "code": "LIHL 119F",
+  "title": "Hindi for Hindi Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Hindi but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and family life/festivals; dialect and language style differences; structure and history of Hindi. LIHL 119F, LIHL 119W, and LIHL 119P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 119W",
+  "title": "Hindi for Hindi Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Hindi but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and family media/arts; dialect and language style differences; structure and history of Hindi. LIHL 119F, LIHL 119W, and LIHL 119P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 119P",
+  "title": "Hindi for Hindi Speakers",
+  "unit": "4",
+  "description": "For students who comprehend informal spoken Hindi but wish to improve their communicative and sociocultural competence and their analytic understanding. Language functions for oral communication, reading, writing, and entertainment/culture; dialect and language style differences; structure and history of Hindi. LIHL 119F, LIHL 119W, and LIHL 119P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 139F",
+  "title": "Advanced Hindi for Hindi Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on domestic culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Hindi. LIHL 139F, LIHL 139W, and LIHL 139P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 139W",
+  "title": "Advanced Hindi for Hindi Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on media/arts. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Hindi. LIHL 139F, LIHL 139W, and LIHL 139P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHL 139P",
+  "title": "Advanced Hindi for Hindi Speakers",
+  "unit": "4",
+  "description": "Instruction stresses language function required for advanced oral communication, reading, writing, and cultural understanding in professional contexts, with emphasis on entertainment/culture. High-level vocabulary and texts; dialect differences and formal language styles (registers). Advanced structural analysis and history of Hindi. LIHL 139F, LIHL 139W, and LIHL 139P may be taken in any order.",
+  "prerequisite": "upper-division standing or consent of instructor; appropriate proficiency for level."
+ },
+ {
+  "code": "LIHI 1A",
+  "title": "Hindi Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIHI 1AX.",
+  "prerequisite": "no prior study of Hindi."
+ },
+ {
+  "code": "LIHI 1AX",
+  "title": "Analysis of Hindi",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Hindi. Must be taken in conjunction with LIHI 1A.",
+  "prerequisite": "no prior study of Hindi."
+ },
+ {
+  "code": "LIHI 1B",
+  "title": "Hindi Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIHI 1BX.",
+  "prerequisite": "LIHI 1A with a grade of C- or better, or equivalent and LIHI 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIHI 1BX",
+  "title": "Analysis of Hindi",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Hindi. Must be taken in conjunction with LIHI 1B.",
+  "prerequisite": "LIHI 1A with a grade of C- or better, or equivalent and LIHI 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIHI 1C",
+  "title": "Hindi Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIHI 1CX.",
+  "prerequisite": "LIHI 1B with a grade of C- or better, or equivalent and LIHI 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIHI 1CX",
+  "title": "Analysis of Hindi",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Hindi. Must be taken in conjunction with LIHI 1C.",
+  "prerequisite": "LIHI 1B with a grade of C- or better, or equivalent and LIHI 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIHI 1D",
+  "title": "Hindi Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIHI 1DX.",
+  "prerequisite": "LIHI 1C with a grade of C- or better, or equivalent and LIHI 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIHI 1DX",
+  "title": "Analysis of Hindi",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. This course is taught entirely in Hindi. Must be taken in conjunction with LIHI 1D.",
+  "prerequisite": "LIHI 1C with a grade of C- or better, or equivalent and LIHI 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIIT 1A",
+  "title": "Italian Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIIT 1AX.",
+  "prerequisite": "no prior study of Italian."
+ },
+ {
+  "code": "LIIT 1AX",
+  "title": "Analysis of Italian",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in Italian. Must be taken with LIIT 1A.",
+  "prerequisite": "no prior study of Italian."
+ },
+ {
+  "code": "LIIT 1B",
+  "title": "Italian Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIIT 1BX.",
+  "prerequisite": "LIIT 1A with a grade of C- or better, or equivalent and LIIT 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIIT 1BX",
+  "title": "Analysis of Italian",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in Italian. Must be taken with LIIT 1B.",
+  "prerequisite": "LIIT 1A with a grade of C- or better, or equivalent and LIIT 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIIT 1C",
+  "title": "Italian Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIIT 1CX.",
+  "prerequisite": "LIIT 1B with a grade of C- or better, or equivalent and LIIT 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIIT 1CX",
+  "title": "Analysis of Italian",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in Italian. Must be taken with LIIT 1C.",
+  "prerequisite": "LIIT 1B with a grade of C- or better, or equivalent and LIIT 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIIT 1D",
+  "title": "Italian Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIIT 1DX. _Successful completion of LIIT 1D and LIIT 1DX satisfies the requirement for language proficiency in Revelle and Eleanor Roosevelt Colleges._",
+  "prerequisite": "LIIT 1C and LIIT 1CX, or equivalent."
+ },
+ {
+  "code": "LIIT 1DX",
+  "title": "Analysis of Italian",
+  "unit": "2.5",
+  "description": "Practice of the grammatical functions indispensable for comprehensible communication in the language. The course is taught entirely in Italian. Must be taken in conjunction with LIIT 1D. _Successful completion of LIIT 1D and LIIT 1DX satisfies the requirement for language proficiency in Revelle and Eleanor Roosevelt Colleges._",
+  "prerequisite": "LIIT 1C and LIIT 1CX, or equivalent."
+ },
+ {
+  "code": "LIIT 5AS",
+  "title": "Fundamentals of Italian I",
+  "unit": "5",
+  "description": "A communicative introduction to Italian for students with no prior exposure, with attention to listening comprehension, conversation, reading, writing, grammar analysis, and culture. Equivalent to LIIT 1A/1AX.",
+  "prerequisite": "None."
+ },
+ {
+  "code": "LIIT 5BS",
+  "title": "Fundamentals of Italian II",
+  "unit": "5",
+  "description": "A course to increase the proficiency level of students who have completed LIIT 1A/1AX, 5AS or who are at an equivalent level. Attention to listening comprehension, conversation, reading, writing, grammar analysis, and culture. Equivalent to LIIT 1B/1BX.",
+  "prerequisite": "LIIT 1A/1AX, 5AS or consent of instructor."
+ },
+ {
+  "code": "LIIT 5CS",
+  "title": "Fundamentals of Italian III",
+  "unit": "5",
+  "description": "A course to increase the proficiency level of students who have completed LIIT 1B/1BX, 5BS or who are at an equivalent level. Attention to listening comprehension, conversation, reading, writing, grammar analysis, and culture. Equivalent to LIIT 1C/1CX.",
+  "prerequisite": "LIIT 1B/1BX, 5BS or consent of instructor."
+ },
+ {
+  "code": "LIIT 5DS",
+  "title": "Fundamentals of Italian IV",
+  "unit": "5",
+  "description": "A course to increase the proficiency level of students who have completed LIIT 1C/1CX, 5CS or who are at an equivalent level. Attention to listening comprehension, conversation, reading, writing, grammar analysis, and culture. Equivalent to LIIT1D/1DX.",
+  "prerequisite": "LIIT 1C/1CX, 5CS or equivalent or consent of instructor."
+ },
+ {
+  "code": "LIPO 1A",
+  "title": "Portuguese Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Emphasis on the language and culture of Brazil. Must be taken in conjunction with LIPO 1AX.",
+  "prerequisite": "no prior study of Portuguese."
+ },
+ {
+  "code": "LIPO 1AX",
+  "title": "Analysis of Portuguese",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and reading. The course is taught entirely in Portuguese. Must be taken in conjunction with LIPO 1A.",
+  "prerequisite": "no prior study of Portuguese."
+ },
+ {
+  "code": "LIPO 1B",
+  "title": "Portuguese Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Emphasis on the language and culture of Brazil. Must be taken in conjunction with LIPO 1BX.",
+  "prerequisite": "LIPO 1A with a grade of C- or better or equivalent and LIPO 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIPO 1BX",
+  "title": "Analysis of Portuguese",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and reading. The course is taught entirely in Portuguese. Must be taken in conjunction with LIPO 1B.",
+  "prerequisite": "LIPO 1A with a grade of C- or better or equivalent and LIPO 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIPO 1C",
+  "title": "Portuguese Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Emphasis on the language and culture of Brazil. Must be taken in conjunction with LIPO 1CX.",
+  "prerequisite": "LIPO 1B with a grade of C- or better or equivalent and LIPO 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIPO 1CX",
+  "title": "Analysis of Portuguese",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and reading. The course is taught entirely in Portuguese. Must be taken in conjunction with LIPO 1C.",
+  "prerequisite": "LIPO 1B with a grade of C- or better or equivalent and LIPO 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIPO 1D",
+  "title": "Portuguese Conversation",
+  "unit": "2.5",
+  "description": "Small conversion sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LIPO 1DX. Successful completion of LIPO 1D and LIPO 1DX satisfies the requirement for language proficiency in Revelle and Eleanor Roosevelt Colleges.",
+  "prerequisite": "LIPO 1C with a grade of C- or better, or equivalent and LIPO 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIPO 1DX",
+  "title": "Analysis of Portuguese",
+  "unit": "2.5",
+  "description": "Practice of the grammatical functions indispensable for comprehensible communication in the language. The course is taught entirely in Portuguese. Must be taken in conjunction with LIPO 1D. Successful completion of LIPO 1D and LIPO 1DX satisfies the requirement for language proficiency in Revelle and Eleanor Roosevelt Colleges.",
+  "prerequisite": "LIPO 1C with a grade of C- or better or equivalent and LIPO 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LIPO 15",
+  "title": "Intermediate Brazilian Portuguese for the Social Sciences: Social Movements",
+  "unit": "2.0",
+  "description": "Conducted entirely in Portuguese. Course aims to improve oral language skills through discussions of social science topics, with emphasis on social and political movements in contemporary Brazil. Course materials may encompass televised news broadcasts, newspapers, and periodicals.",
+  "prerequisite": "LIPO 1D and 1DX or equivalent or by consent of the instructor."
+ },
+ {
+  "code": "LIPO 16",
+  "title": "Intermediate Brazilian Portuguese for the Social Sciences: Cultural Movements",
+  "unit": "2.0",
+  "description": "Conducted entirely in Portuguese. Course aims to improve oral language skills through discussions of social science topics, with emphasis on culture and the arts in contemporary Brazil. Course materials may encompass televised news broadcasts, newspapers, and periodicals.",
+  "prerequisite": "LIPO 1D and 1DX or equivalent or by consent of instructor."
+ },
+ {
+  "code": "LIPO 17",
+  "title": "Intermediate Brazilian Portuguese for the Social Sciences: Ethnicity",
+  "unit": "2.0",
+  "description": "Conducted entirely in Portuguese. Course aims to improve oral language skills through discussions of social science topics, with emphasis on the role of ethnicity in contemporary Brazil. Course materials may encompass televised news broadcasts, newspapers and periodicals.",
+  "prerequisite": "LIPO 1D and 1DX or equivalent or by consent of instructor."
+ },
+ {
+  "code": "LISP 1A",
+  "title": "Spanish Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LISP 1AX.",
+  "prerequisite": "no prior study of Spanish."
+ },
+ {
+  "code": "LISP 1AX",
+  "title": "Analysis of Spanish",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in Spanish. Must be taken with LISP 1A.",
+  "prerequisite": "no prior study of Spanish."
+ },
+ {
+  "code": "LISP 1B",
+  "title": "Spanish Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LISP 1BX.",
+  "prerequisite": "LISP 1A with a grade of C- or better, or equivalent and LISP 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISP 1BX",
+  "title": "Analysis of Spanish",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in Spanish. Must be taken with LISP 1B.",
+  "prerequisite": "LISP 1A with a grade of C- or better, or equivalent and LISP 1AX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISP 1C",
+  "title": "Spanish Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in the target language. Emphasis on listening comprehension, speaking, vocabulary building, reading, and culture. Must be taken in conjunction with LISP 1CX.",
+  "prerequisite": "LISP 1B with a grade of C- or better, or equivalent and LISP 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISP 1CX",
+  "title": "Analysis of Spanish",
+  "unit": "2.5",
+  "description": "Presentation and practice of the basic grammatical structures needed for oral and written communication and for reading. The course is taught entirely in Spanish. Must be taken with LISP 1C.",
+  "prerequisite": "LISP 1B with a grade of C- or better, or equivalent and LISP 1BX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISP 1D",
+  "title": "Spanish Conversation",
+  "unit": "2.5",
+  "description": "Small conversation sections taught entirely in Spanish. Emphasis on speaking, reading, writing, and culture. Practice of the language functions needed for successful communication. Must be taken in conjunction with LISP 1DX. Successful completion of LISP 1D and LISP 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LISP 1C with a grade of C- or better, or equivalent and LISP 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISP 1DX",
+  "title": "Analysis of Spanish",
+  "unit": "2.5",
+  "description": "Practice of the grammatical functions indispensable for comprehensible communication in the language. The course is taught entirely in Spanish. Must be taken in conjunction with LISP 1D. Successful completion of LISP 1D and LISP 1DX satisfies the requirement for language proficiency in Eleanor Roosevelt and Revelle Colleges.",
+  "prerequisite": "LISP 1C with a grade of C- or better, or equivalent and LISP 1CX with a grade of D or better, or equivalent."
+ },
+ {
+  "code": "LISP 5A, 5B, 5C, 5D",
+  "title": "Fundamentals of Spanish",
+  "unit": "5",
+  "description": "This course concentrates on those language skills essential for communication: listening comprehension, conversation, reading, writing, and grammar analysis. UC San Diego students: LISP 5A is equivalent to LISP 1A/1AX, LISP 5B to LISP 5B/5BX, LISP 5C to LISP 1C/1CX and LISP 5D to LISP 1D/1DX. Enrollment is limited.",
+  "prerequisite": "none for 5A; for 5B, two or more years of Spanish in high school or the first semester or the first quarter of college-level Spanish. (Offered in Summer Session only.)"
+ },
+ {
+  "code": "LISP 15, 16, 17",
+  "title": "Intermediate Spanish for the Social Sciences",
+  "unit": "2",
+  "description": "Conducted entirely in Spanish. Course aims to improve oral language skills through discussions of social science topics, with emphasis on political events and current affairs. Course materials encompass televised news broadcasts, newspapers and periodicals. LISP 15 is offered fall quarter only, LISP 16 is offered winter quarter only, and LISP 17 is offered spring quarter only. Each course may be taken one time and need not be taken in sequence.",
+  "prerequisite": "LISP 1D/DX or at least three semesters/four quarters of college Spanish or by permission of the instructor."
+ },
+ {
+  "code": "LISP 18",
+  "title": "Intermediate Spanish for the Health Sciences",
+  "unit": "2",
+  "description": "An intermediate-level course on Spanish as used in the health sciences, especially in clinical and field settings. Attention to listening, speaking, relevant vocabulary, cultural knowledge, reading, and writing. May be taken for credit up to two times.",
+  "prerequisite": "LISP 1D/DX."
+ },
+ {
+  "code": "LIDS 19",
+  "title": "Directed Study-Language",
+  "unit": "2-4",
+  "description": "Introductory-level study of a language in the language laboratory on a self-instructional basis. Depending on the availability of appropriate study materials, the course may be taken in blocks of two or four units of credit and may be repeated up to the total number of units available for that language.",
+  "prerequisite": null
+ }
+]
