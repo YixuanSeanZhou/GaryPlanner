@@ -2,13 +2,34 @@ import React from 'react'
 import Link from 'next/link'
 
 import FriendList from './friendList'
-import Request from './request'
 import Search from './search'
 import { Button } from 'react-bootstrap'
 
 import styles from '../../styles/Sidebar.module.css'
 
+
 export default class Sidebar extends React.Component {
+	constructor(props) {
+		super(props);
+		
+		this.state = {
+			request: [
+				{
+					name: 'QQQQQQ asdasdas',
+					class: 'side-item',
+				},
+				{
+					name: 'xuezheng wang',
+					class: 'side-item',
+				},
+				{
+					name: 'EE',
+					class: 'side-item',
+				},
+			],
+		}
+	}
+
 	handleAccept() {}
 
 	handleDelete() {}
@@ -25,7 +46,7 @@ export default class Sidebar extends React.Component {
 						<ul className={styles.sideMenu}>
 							<h4 className="mt-3">Friend Requests</h4>
 							<div>
-								{Request.map((item, index) => {
+								{this.state.request.map((item, index) => {
 									return (
 										<li key={index} className={item.class}>
 											<h6 className={styles.item}>{item.name}</h6>{' '}
