@@ -11,6 +11,7 @@ class Search extends React.Component {
 		this.state = {
 			search: '',
 			showResult: false,
+			requestSent: false,
 			user_profile: undefined
 		}
 
@@ -23,10 +24,36 @@ class Search extends React.Component {
 		this.setState({
 			search: e.target.value,
 			showResult: false,
+			requestSent: false,
 		})
 	}
 
-	handleAdd() {}
+	handleAdd() {
+		const profile = this.state.user_profile;
+		const requestUrl = "http://localhost:2333/api/friends/request_friend?user_id=" + `${profile.id}`;
+	
+		console.log(requestUrl)		
+		const options = {
+			method: 'POST',
+			credentials: 'include',
+		};
+
+		fetch(requestUrl, options)
+        .then(response => {
+
+            if (response.status === 200) {
+				this.setState({requestSent: true});
+			} else if (response.status === 300) {
+			} else {
+				throw Error(response.statusText);
+			}
+        })
+		.catch((error) => {
+			console.log('Error:', error);
+			this.props.router.push('util/error');
+		});
+
+	}
 
 	handleSearch() {
 		const searchFriendsUrl = "http://localhost:2333/api/friends/find_user?name=" + `${this.state.search}`;
@@ -54,8 +81,8 @@ class Search extends React.Component {
 			this.setState({showResult: true});
 			if (data !== undefined) {
 				console.log('Success:', data); // TODO: Remove for deployment
+				this.setState({user_profile: data.result});
 				this.setState({user_found : true});
-				this.setState({user_profile: data.rseult});
 			}
 		})
 		.catch((error) => {
@@ -65,34 +92,38 @@ class Search extends React.Component {
 	}
 
 	render() {
-		// let libData = []
-		//let name = ""
-		// const searchKey = this.state.search.trim().toLowerCase()
-
-		// if (this.state.search == this.state.user_profile.user_name){
-		// 	//libData.push(this.state.libraries.user_name)
-		// 	libData[0] = this.state.user_profile
-		// }
-
-		// const Result = () => (
-		// )
 
 
 		var Result = undefined;
 		if (this.state.user_found) {
+			const profile = this.state.user_profile;
+			var addButton = undefined;
+			if (this.state.requestSent === false) {
+				addButton = <Button size="sm" variant="warning" onClick={this.handleAdd.bind(this)}>
+						Add
+					</Button>;
+			} else {
+				addButton = <Button size="sm" variant="secondary">
+						Request Sent!
+					</Button>;
+			}
+			console.log(this.state);
+
 			Result = <ul className={styles.ul}>
 						<li className={styles.item}>
-							<div></div>
+							<div>{profile.user_name}</div>
 							<div className={styles.btn}>
-								<Button size="sm" variant="warning">
-									Add
-								</Button>
+								{addButton}
 							</div>
 						</li>
 					</ul>;
 
 		} else {
-			Result = <div>User Not Found!</div>;
+			Result = <ul className={styles.ul}>
+			<li className={styles.item}>
+				<div>User Not Found!</div>
+			</li>
+		</ul>;
 		}
 
 		return (
