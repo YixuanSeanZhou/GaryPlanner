@@ -200,51 +200,55 @@ class PlanCalendar extends React.Component {
                 };
 
                 fetch(requestUrl, options)
-                .then(response => {
-                    const data = response.json();
-                    console.log(data);
-                    newId = newId + data.id;
+                .then(response => { 
+                    console.log(response);
+                    return response.json();
+                })
+                .then (data => {
+                    console.log("Fetchedd: ", data);
+                    newId = newId + data.result.id;
+
+                     // Update course ids
+                    const finishCourseIds = Array.from(finish.courseIds);
+
+                    // Add new course
+                    const newCourse = {
+                        "content": this.state.courses[draggableId].content,
+                        "id": newId,
+                        "locked": false
+                    };
+
+                    console.log("NEWSCOURSE: ", newCourse);
+
+
+                    finishCourseIds.splice(destination.index, 0, newId);
+                    const newFinish = {
+                        ...finish,
+                        courseIds: finishCourseIds
+                    };
+
+                    var newState = {
+                        ...this.state,
+                        courses: {
+                            ...this.state.courses,
+                            [newId]: newCourse
+                        },
+                        quarters: {
+                            ...this.state.quarters,
+                            [newStart.id]: newStart,
+                            [newFinish.id]: newFinish
+                        }
+                    };
+                    delete newState.courses[draggableId];
+
+                    this.setState(newState);
                 })
                 .catch((error) => {
                     console.error('Error:', error);
-                    newId = draggableId;
+                    //newId = draggableId;
                     //this.props.router.push('/util/error');
                 });
 
-                // Update course ids
-                const finishCourseIds = Array.from(finish.courseIds);
-
-                // Add new course
-                const newCourse = {
-                    "content": this.state.courses[draggableId].content,
-                    "id": newId,
-                    "locked": false
-                };
-
-                console.log("NEWSCOURSE: ", newCourse);
-
-
-                finishCourseIds.splice(destination.index, 0, newId);
-                const newFinish = {
-                    ...finish,
-                    courseIds: finishCourseIds
-                };
-
-                var newState = {
-                    ...this.state,
-                    courses: {
-                        ...this.state.courses,
-                        [newId]: newCourse
-                    },
-                    quarters: {
-                        ...this.state.quarters,
-                        [newStart.id]: newStart,
-                        [newFinish.id]: newFinish
-                    }
-                };
-                delete newState.courses[draggableId];
-
-                this.setState(newState);
             }
 
             
@@ -288,8 +292,33 @@ class PlanCalendar extends React.Component {
     }
 
     updateLocked(courseId) {
-        //TODO: UPdate backend
         const courseToUpdate = this.state.courses[courseId];
+
+        // Options for the fetch request
+        const requestUrl = 'http://localhost:2333/api/four_year_plan/update_entry';
+        const courseToPost = {
+            id: parseInt(courseId.substr(7)),
+            locked: !courseToUpdate.locked
+        }
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            credentials: 'include', // Everything account related
+            body: JSON.stringify(courseToPost),
+        };
+
+        fetch(requestUrl, options)
+        .then(response => {
+            const data = response.json();
+            console.log(data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            //this.props.router.push('/util/error');
+        });
+
         const updatedCourse = {
             ...courseToUpdate,
             locked: !courseToUpdate.locked
