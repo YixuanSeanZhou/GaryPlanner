@@ -47,7 +47,8 @@
     position: fixed;
     top: 60px;
     right: 0;
-    margin: 20px
+    margin: 20px;
+    z-index: 100;
 }
 
 .rowContent {

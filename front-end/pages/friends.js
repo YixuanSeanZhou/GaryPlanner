@@ -8,28 +8,37 @@ import Content from '../components/friends/content'
 import Search from '../components/friends/search'
 
 import { GaryNavbar } from '../components/commonUI'
-import { Navbar } from 'react-bootstrap'
+import { Navbar, Alert } from 'react-bootstrap'
 
 import styles from '../styles/Friends.module.css'
+import authStyle from '../styles/Auth.module.css'
+import { withRouter } from 'next/router'
 
-export default class Friends extends React.Component{
+class Friends extends React.Component{
 
 	constructor(props) {
 		super(props);
 
 		this.state = {
 			// Flags for content
-			showProfile: false,
-			displayFriend: false,
-			userFound: false,
+			contentData: {
+				showFriend: false,
+				showRequest: false,
+				showFoundUser: false,
+				currentProfile: undefined,	
+			},
 
-			currentProfile: undefined,
 			friendProfiles: [],
 			requests: [],
+
+			showingAlert: false,
+			alarmText: "Error: This is the default",
+			alarmSubtext: "Just error"
 		}
 	}
 
 	componentDidMount() {
+		// Fetch the friends' list
 		const requestUrl="http://localhost:2333/api/friends/get_friends_for_user"
 		const options = {
 			method: 'GET',
@@ -49,31 +58,89 @@ export default class Friends extends React.Component{
 			console.log('Error:', error);
 			this.props.router.push('util/error');
 		})
+
+		// Testing data
+		var data = {
+			showFriend: false,
+			showRequest: false,
+			showFoundUser: true,
+			currentProfile: {
+				"college": "Warren",
+				"email": "j3li@ucsd.edu",
+				"first_name": "Jing",
+				"id": 2, 
+				"intended_grad_quarter": "FA20",
+				"last_name": "Li",
+				"major": "CS",
+				"minor": "undeclared",
+				"start_quarter": "FA18",
+				"user_name": "test2"
+			}
+		}
+		this.setState({contentData: data})
 	}
 
 	setCurrentProfile(isFriend, id) {
-		if (isFriend) {
+		if (isFriend === true) {
 			// Update current profile for friends
 			profileObj = this.state.friendProfiles.filter((obj) => obj.id === id);
-			this.setState({
-				showProfile: true,
-				displayFriend: true,
-				currentProfile: profileObj
-			})
-		} else {
+			var data = {
+				showFriend: true,
+				showRequest: false,
+				showFoundUser: false,
+				currentProfile: profileObj,	
+			}
+			this.setState({contentData: data})
+		} else{
 			// display profile for the request user
 			profileObj = this.state.requests.filter((obj) => obj.request_id === id);
-			this.setState({
-				showProfile: true,
-				displayFriend: false,
-				currentProfile: profileObj
-			})
+			var data = {
+				showFriend: false,
+				showRequest: true,
+				showFoundUser: false,
+				currentProfile: profileObj,	
+			}
+			this.setState({contentData: data})
 		}
+	}
+
+	setSearchResult(userFound, profile) {
+		if (userFound) {
+			// Show found user
+			var data = {
+				showFriend: false,
+				showRequest: false,
+				showFoundUser: true,
+				currentProfile: profile,	
+			}
+			this.setState({contentData: data})
+		} else {
+			// Show found user
+			var data = {
+				showFriend: false,
+				showRequest: false,
+				showFoundUser: false,
+				currentProfile: undefined,	
+			}
+			this.setState({contentData: data})
+			
+		}
+		
+	}
+
+	setAlert(Text, subText) {
+		this.setState({
+			showingAlert: true,
+			alarmText: Text,
+			alarmSubtext: subText,
+		})
 	}
 
 
 	acceptRequest(id) {
+	}
 
+	declineRequest(id) {
 	}
 
 	removeFriend(id) {
@@ -97,20 +164,34 @@ export default class Friends extends React.Component{
 						<Sidebar
 							requests={this.state.requests}
 							friends={this.state.friendProfiles} 
+							setCurrentProfile={this.setCurrentProfile.bind(this)}
 						/>
 					</div>
 
 					<div className={styles.right}>
-						<Search />
+						<Search 
+							setCurrentProfile={this.setCurrentProfile.bind(this)}
+							setAlert={this.setAlert.bind(this)}
+						/>
 						<Content 
-							showProfile={this.state.showProfile}
-							isFriend={this.state.displayFriend}
-							userFound={this.state.userFound}
-							profile={this.state.currentProfile}
+							data={this.state.contentData}
+							setAlert={this.setAlert.bind(this)}
 						/>
 					</div>
 				</div>
+				<Alert 
+						show={this.state.showingAlert} 
+						onClick={() => this.setState({showingAlert: false})} 
+						variant='danger'
+						className={authStyle.myAlert}
+						dismissible
+					>
+						<Alert.Heading>{this.state.alarmText}</Alert.Heading>
+						<div>{this.state.alarmSubtext}</div>
+				</Alert>
 			</>
 		)
 	}
 }
+
+export default withRouter(Friends);

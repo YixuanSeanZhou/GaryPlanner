@@ -27,21 +27,6 @@ class Sidebar extends React.Component {
 							return (
 								<div key={index} className={item.class}>
 									<h6 className={styles.item}>{item.user_name}</h6>{' '}
-									<div className={styles.btn}>
-										<Button
-											size="sm"
-											variant="info"
-											className="mr-3">
-											Accept
-										</Button>
-
-										<Button
-											size="sm"
-											variant="secondary"
-											className="">
-											Decline
-										</Button>
-									</div>
 								</div>
 							)
 						})}
@@ -56,14 +41,6 @@ class Sidebar extends React.Component {
 							<div key={index} className={item.class}>
 								{/* <Link href='/classInfo'>{item.user_name}</Link> */}
 								{item.user_name}
-								<div>
-									<Button
-										size="sm"
-										variant="danger"
-										className="mr-3">
-										Unfriend
-									</Button>
-								</div>
 							</div>
 						)
 					})}

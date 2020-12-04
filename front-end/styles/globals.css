@@ -16,9 +16,12 @@ div#__next{
 }
 
 div#__next > div {
-  min-height: 100vh;
+  height: calc(100vh - 60px);
 }
 
+.navbar {
+  height: 60px;
+}
 
 .navbarLogo {
   width: 24px;

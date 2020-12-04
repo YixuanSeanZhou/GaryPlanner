@@ -28,32 +28,6 @@ class Search extends React.Component {
 		})
 	}
 
-	handleAdd() {
-		const profile = this.state.user_profile;
-		const requestUrl = "http://localhost:2333/api/friends/request_friend?user_id=" + `${profile.id}`;
-	
-		console.log(requestUrl)		
-		const options = {
-			method: 'POST',
-			credentials: 'include',
-		};
-
-		fetch(requestUrl, options)
-        .then(response => {
-
-            if (response.status === 200) {
-				this.setState({requestSent: true});
-			} else if (response.status === 300) {
-			} else {
-				throw Error(response.statusText);
-			}
-        })
-		.catch((error) => {
-			console.log('Error:', error);
-			this.props.router.push('util/error');
-		});
-
-	}
 
 	handleSearch() {
 		const searchFriendsUrl = "http://localhost:2333/api/friends/find_user?name=" + `${this.state.search}`;
@@ -71,8 +45,7 @@ class Search extends React.Component {
             if (response.status === 200) {
 				return response.json();
 			} else if (response.status === 300) {
-				console.log("We are here");
-				this.setState({user_found: false});
+				this.props.setAlert("User not found", "Plase check your username or email.")
 			} else {
 				throw Error(response.statusText);
 			}
@@ -94,37 +67,37 @@ class Search extends React.Component {
 	render() {
 
 
-		var Result = undefined;
-		if (this.state.user_found) {
-			const profile = this.state.user_profile;
-			var addButton = undefined;
-			if (this.state.requestSent === false) {
-				addButton = <Button size="sm" variant="warning" onClick={this.handleAdd.bind(this)}>
-						Add
-					</Button>;
-			} else {
-				addButton = <Button size="sm" variant="secondary">
-						Request Sent!
-					</Button>;
-			}
-			console.log(this.state);
+		// var Result = undefined;
+		// if (this.state.user_found) {
+		// 	const profile = this.state.user_profile;
+		// 	var addButton = undefined;
+		// 	if (this.state.requestSent === false) {
+		// 		addButton = <Button size="sm" variant="warning" onClick={this.handleAdd.bind(this)}>
+		// 				Add
+		// 			</Button>;
+		// 	} else {
+		// 		addButton = <Button size="sm" variant="secondary">
+		// 				Request Sent!
+		// 			</Button>;
+		// 	}
+		// 	console.log(this.state);
 
-			Result = <ul className={styles.ul}>
-						<li className={styles.item}>
-							<div>{profile.user_name}</div>
-							<div className={styles.btn}>
-								{addButton}
-							</div>
-						</li>
-					</ul>;
+		// 	Result = <ul className={styles.ul}>
+		// 				<li className={styles.item}>
+		// 					<div>{profile.user_name}</div>
+		// 					<div className={styles.btn}>
+		// 						{addButton}
+		// 					</div>
+		// 				</li>
+		// 			</ul>;
 
-		} else {
-			Result = <ul className={styles.ul}>
-			<li className={styles.item}>
-				<div>User Not Found!</div>
-			</li>
-		</ul>;
-		}
+		// } else {
+		// 	Result = <ul className={styles.ul}>
+		// 	<li className={styles.item}>
+		// 		<div>User Not Found!</div>
+		// 	</li>
+		// </ul>;
+		// }
 
 		return (
 			<div className={styles.bar}>
