@@ -35,6 +35,7 @@ export class SearchBar extends React.Component {
 						placeholder="e.g. CSE 110"
 						value={this.state.search}
 						onChange={this.handleChange}
+						onKeyPress={(e) => e.preventDefault()}
 					/>
 				</Form>
 			</div>
