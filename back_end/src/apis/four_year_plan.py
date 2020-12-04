@@ -301,7 +301,17 @@ def remove_entry():
         return jsonify({'reason': 'failed'}), 300
 
 
-
+@four_year_plan_api_bp.route('/remove_plan', methods=['POST'])
+@login_required
+def remove_plan():
+    user_id = current_user.id
+    if request.args.get('user_id'):
+        user_id = request.args.get('user_id')
+    s = FourYearPlan.remove_plan(user_id=user_id)
+    if s:
+        return jsonify({'reason': 'success'}), 200
+    else:
+        return jsonify({'reason': 'failed'}), 300
 
 
 
