@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-
-import FriendList from './friendList'
 import Search from './search'
 import { Button } from 'react-bootstrap'
 
@@ -15,18 +13,35 @@ export default class Sidebar extends React.Component {
 		this.state = {
 			request: [
 				{
-					name: 'QQQQQQ asdasdas',
+					user_name: 'Howie God',
 					class: 'side-item',
 				},
 				{
-					name: 'xuezheng wang',
+					user_name: 'xuezheng wang',
 					class: 'side-item',
 				},
 				{
-					name: 'EE',
+					user_name: 'EE',
 					class: 'side-item',
 				},
 			],
+		   FriendList: [
+				{
+					user_name: 'AB',
+					path: '',
+					class: 'side-item',
+				},
+				{
+					user_name: 'BB',
+					path: '',
+					class: 'side-item',
+				},
+				{
+					user_name: 'CC',
+					path: '',
+					class: 'side-item',
+				},
+			]
 		}
 	}
 
@@ -49,7 +64,7 @@ export default class Sidebar extends React.Component {
 								{this.state.request.map((item, index) => {
 									return (
 										<li key={index} className={item.class}>
-											<h6 className={styles.item}>{item.name}</h6>{' '}
+											<h6 className={styles.item}>{item.user_name}</h6>{' '}
 											<div className={styles.btn}>
 												<Button
 													size="sm"
@@ -74,10 +89,10 @@ export default class Sidebar extends React.Component {
 
 							<h4 className="mt-3">Friends</h4>
 
-							{FriendList.map((item, index) => {
+							{this.state.FriendList.map((item, index) => {
 								return (
 									<li key={index} className={item.class}>
-										<Link href={item.path}>{item.name}</Link>
+										<Link href={item.path}>{item.user_name}</Link>
 										<div>
 											<Button
 												size="sm"
