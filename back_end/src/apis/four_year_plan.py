@@ -196,6 +196,7 @@ def create_entry():
 @four_year_plan_api_bp.route('/generate_plan', methods=['POST'])
 @login_required
 def generate_plan():
+    # remove_plan(current_user.id)
     if current_user.user_name == test_username:
         result = add_recommendation_to_db(current_user.id)
         for entry in result:
@@ -452,7 +453,7 @@ def parseClassWithOr(classInStr):
 def request_degree_audit():
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
-
+    # remove_plan(current_user.id)
     driver = _get_driver("https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true")
     form = driver.find_element_by_css_selector('form[id=login]')
     btn = form.find_element_by_css_selector('button')
@@ -613,6 +614,7 @@ def request_degree_audit():
 @login_required
 def get_rec():
     print('get_rec')
+    # remove_plan(current_user.id)
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
     ge_num = request.args.get('ge_num', 6)
@@ -659,7 +661,6 @@ def get_rec():
     taken = []
     need = []
     start = False
-    print(len(reqh))
     # try: 
     for i in range(len(reqh)):
         if 'MAJOR REQUIREMENTS' in reqh[i].text:
@@ -770,7 +771,8 @@ def get_rec():
     
     print('jere')
     print(r)
-    e = add_recommendation_to_db(current_user.id, data=r, taken=taken, ge_num=ge_num, rec=True)
+
+    e = add_recommendation_to_db(1, data=r, taken=taken, ge_num=ge_num, rec=True)
 
     for entry in e:
         user_id = entry['user_id']
