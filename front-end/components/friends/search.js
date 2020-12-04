@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Form, Button, InputGroup } from 'react-bootstrap'
 
-import styles from '../../styles/SearchFriends.module.css'
-import { withRouter, useRouter } from 'next/router'
+import styles from '../../styles/Friends.module.css'
+import { withRouter } from 'next/router'
 
 class Search extends React.Component {
 	constructor(props) {
@@ -128,10 +128,11 @@ class Search extends React.Component {
 
 		return (
 			<div className={styles.bar}>
+				<h4 className={styles.searchTitle}>Search New Friend</h4>
 				<InputGroup>
 					<Form.Control
 						type="text"
-						placeholder="Add Friend"
+						placeholder="Search New Friend"
 						value={this.state.search}
 						onChange={(e) => this.handleChange(e)}
 						className={styles.input}
@@ -142,11 +143,12 @@ class Search extends React.Component {
 							Search
 						</Button>
 					</InputGroup.Append>
-					{this.state.showResult ? Result : <></>}
 				</InputGroup>
 			</div>
 		)
 	}
 }
+
+
 
 export default withRouter(Search);
