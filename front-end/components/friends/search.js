@@ -11,11 +11,9 @@ class Search extends React.Component {
 		this.state = {
 			search: '',
 			showResult: false,
-			user_profile: {}
+			user_profile: undefined
 		}
 
-		this.handleChange = this.handleChange.bind(this)
-		this.handleSearch = this.handleSearch.bind(this)
 	}
 
 	// Search friends api
@@ -38,53 +36,64 @@ class Search extends React.Component {
 			method: 'GET',
 			credentials: 'include',
 		};
+
 		fetch(searchFriendsUrl, options)
         .then(response => {
-
-            if (response.status == 200) {
-				// this.setState({user_found : true})
+			console.log(response);
+			console.log(response.status);
+            if (response.status === 200) {
 				return response.json();
+			} else if (response.status === 300) {
+				console.log("We are here");
+				this.setState({user_found: false});
+			} else {
+				throw Error(response.statusText);
 			}
-			throw Error(response.statusText);
         })
 		.then(data => {
+			this.setState({showResult: true});
+			if (data !== undefined) {
 				console.log('Success:', data); // TODO: Remove for deployment
-				this.setState({user_profile: data.result});
+				this.setState({user_found : true});
+				this.setState({user_profile: data.rseult});
+			}
 		})
 		.catch((error) => {
-			console.error('Error:', error);
+			console.log('Error:', error);
 			this.props.router.push('util/error');
 		});
-
-		this.setState({
-			showResult: true,
-		})
-
-		
 	}
 
 	render() {
-		let libData = []
+		// let libData = []
 		//let name = ""
 		// const searchKey = this.state.search.trim().toLowerCase()
 
-		if (this.state.search == this.state.user_profile.user_name){
-			//libData.push(this.state.libraries.user_name)
-			libData[0] = this.state.user_profile
-		}
+		// if (this.state.search == this.state.user_profile.user_name){
+		// 	//libData.push(this.state.libraries.user_name)
+		// 	libData[0] = this.state.user_profile
+		// }
 
-		const Result = () => (
-			<ul className={styles.ul}>
+		// const Result = () => (
+		// )
+
+
+		var Result = undefined;
+		if (this.state.user_found) {
+			Result = <ul className={styles.ul}>
 						<li className={styles.item}>
-							<div>{libData[0]}</div>
+							<div></div>
 							<div className={styles.btn}>
 								<Button size="sm" variant="warning">
 									Add
 								</Button>
 							</div>
 						</li>
-			</ul>
-		)
+					</ul>;
+
+		} else {
+			Result = <div>User Not Found!</div>;
+		}
 
 		return (
 			<div className={styles.bar}>
@@ -102,7 +111,7 @@ class Search extends React.Component {
 							Search
 						</Button>
 					</InputGroup.Append>
-					{this.state.showResult ? <Result /> : null}
+					{this.state.showResult ? Result : <></>}
 				</InputGroup>
 			</div>
 		)
