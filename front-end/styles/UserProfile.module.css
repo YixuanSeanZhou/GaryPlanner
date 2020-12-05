@@ -1,10 +1,33 @@
-.main {
-    margin: auto;
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-color:rgb(53,68,104);
 
-    align-self: center;
-    margin: auto;
-    width: 500px;
-    left: 40%;
-    position: absolute;
+    min-height: 100vh;
 }
 
+.main {
+    margin: auto;
+    align-self: center;
+    margin: auto;
+    width: 480px;
+    position: relative;
+
+
+}
+
+.edit {
+    align-self: center;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.save {
+    align-self: center;
+    margin-right: 45px;
+    margin-left: auto;
+}
+								
+							
