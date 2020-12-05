@@ -83,7 +83,7 @@ class Sidebar extends React.Component {
 
 					{requestList}
 
-					<h4 className="mt-3">Friends</h4>
+					<h4 >Friends</h4>
 
 					{friendList}
 				</div>

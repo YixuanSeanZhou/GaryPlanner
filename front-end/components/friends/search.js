@@ -65,40 +65,6 @@ class Search extends React.Component {
 	}
 
 	render() {
-
-
-		// var Result = undefined;
-		// if (this.state.user_found) {
-		// 	const profile = this.state.user_profile;
-		// 	var addButton = undefined;
-		// 	if (this.state.requestSent === false) {
-		// 		addButton = <Button size="sm" variant="warning" onClick={this.handleAdd.bind(this)}>
-		// 				Add
-		// 			</Button>;
-		// 	} else {
-		// 		addButton = <Button size="sm" variant="secondary">
-		// 				Request Sent!
-		// 			</Button>;
-		// 	}
-		// 	console.log(this.state);
-
-		// 	Result = <ul className={styles.ul}>
-		// 				<li className={styles.item}>
-		// 					<div>{profile.user_name}</div>
-		// 					<div className={styles.btn}>
-		// 						{addButton}
-		// 					</div>
-		// 				</li>
-		// 			</ul>;
-
-		// } else {
-		// 	Result = <ul className={styles.ul}>
-		// 	<li className={styles.item}>
-		// 		<div>User Not Found!</div>
-		// 	</li>
-		// </ul>;
-		// }
-
 		return (
 			<div className={styles.bar}>
 				<h4 className={styles.searchTitle}>Search New Friend</h4>

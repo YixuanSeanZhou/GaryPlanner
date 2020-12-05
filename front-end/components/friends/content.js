@@ -49,7 +49,7 @@ class Content extends React.Component {
 			} else if (response.status === 302) {
 				this.props.setAlert("They have sent you a request!", "Check your request list");
 			} else if (response.status === 303) {
-				this.props.setAlert("Request alread sent!", "Be patient!");
+				this.props.setAlert("Request already sent to this User!", "Be patient!");
 			} else {
 				throw Error(response.statusText);
 			}
@@ -61,11 +61,22 @@ class Content extends React.Component {
 
 	}
 
+	handleUnfriend() {
+		this.props.removeFriend();
+	}
+
+	handleAccept() {
+		this.props.acceptRequest();
+	}
+
+	handleDecline() {
+		this.props.declineRequest();
+	}
+
 
 	render() {
 
 		const data = this.props.data;
-		console.log(data)
 		var child = undefined
 		if (data.showFriend) {
 			// Display the profile of the current selected friend
@@ -90,6 +101,7 @@ class Content extends React.Component {
 						size="sm"
 						variant="danger"
 						className="mt-2"
+						onClick={this.handleUnfriend.bind(this)}
 					>
 						Unfriend
 					</Button>
@@ -106,14 +118,18 @@ class Content extends React.Component {
 						<Button
 							size="sm"
 							variant="info"
-							className="mr-3">
+							className="mr-3"
+							onClick={this.handleAccept.bind(this)}
+						>
 							Accept
 						</Button>
 
 						<Button
 							size="sm"
 							variant="secondary"
-							className="">
+							className=""
+							onClick={this.handleDecline.bind(this)}
+						>
 							Decline
 						</Button>
 					</div>
@@ -139,6 +155,7 @@ class Content extends React.Component {
 			} else {
 				addButton = <Button size="sm" variant="secondary">
 						Request Sent!
+
 					</Button>;
 			}
 

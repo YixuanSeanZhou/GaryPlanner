@@ -58,32 +58,14 @@ class Friends extends React.Component{
 			console.log('Error:', error);
 			this.props.router.push('util/error');
 		})
-
-		// Testing data
-		// var data = {
-		// 	showFriend: false,
-		// 	showRequest: false,
-		// 	showFoundUser: false,
-		// 	currentProfile: {
-		// 		"college": "Warren",
-		// 		"email": "j3li@ucsd.edu",
-		// 		"first_name": "Jing",
-		// 		"id": 2, 
-		// 		"intended_grad_quarter": "FA20",
-		// 		"last_name": "Li",
-		// 		"major": "CS",
-		// 		"minor": "undeclared",
-		// 		"start_quarter": "FA18",
-		// 		"user_name": "test2"
-		// 	}
-		// }
-		// this.setState({contentData: data})
 	}
 
 	setCurrentProfile(isFriend, id) {
 		if (isFriend === true) {
 			// Update current profile for friends
-			let profileObj = this.state.friendProfiles.filter(obj => obj.id === id);
+			let profileObj = this.state.friendProfiles.filter(obj => obj.id == id);
+			console.log(this.state.friendProfiles);
+			console.log(id)
 			var data = {
 				showFriend: true,
 				showRequest: false,
@@ -138,13 +120,99 @@ class Friends extends React.Component{
 	}
 
 
-	acceptRequest(id) {
+	acceptRequest() {
+		const requestUrl="http://localhost:2333/api/friends/accept_friend"
+		const id = this.state.contentData['currentProfile'].request_id;
+		const data = {request_id: id}
+		const options = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			credentials: 'include',
+			body: JSON.stringify(data),
+		};
+
+		fetch(requestUrl, options)
+        .then(response => {
+            if (response.status === 200) {
+				this.props.router.reload();
+			} else if (response.status === 301) {
+				this.setAlert("The friend request has already been accepted", "Try refreshing the page?");
+			} else if (response.status === 300) {
+				this.props.setAlert("Request Not Found!","");
+			} else if (response.status === 302) {
+				this.props.setAlert("Can not accept your own friend request", "");
+			} else {
+				throw Error(response.statusText);
+			}
+		})
+		.catch((error) => {
+			console.log('Error:', error);
+			this.props.router.push('util/error');
+		});	
 	}
 
-	declineRequest(id) {
+	declineRequest() {
+		const requestUrl="http://localhost:2333/api/friends/decline_friend_request"
+		const id = this.state.contentData['currentProfile'].request_id;
+		const data = {request_id: id}
+		const options = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			credentials: 'include',
+			body: JSON.stringify(data),
+		};
+
+		fetch(requestUrl, options)
+        .then(response => {
+            if (response.status === 200) {
+				this.props.router.reload();
+			} else if (response.status === 301) {
+				this.setAlert("You are already friends", "Try refreshing the page?");
+			} else if (response.status === 300) {
+				this.props.setAlert("Request Not Found!","");
+			} else {
+				throw Error(response.statusText);
+			}
+		})
+		.catch((error) => {
+			console.log('Error:', error);
+			this.props.router.push('util/error');
+		});	
 	}
 
-	removeFriend(id) {
+	removeFriend() {
+		const requestUrl="http://localhost:2333/api/friends/remove_friend";
+		const id = this.state.contentData['currentProfile'].id;
+		const data = {friend_id: id};
+		const options = {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			credentials: 'include',
+			body: JSON.stringify(data),
+		};
+
+		fetch(requestUrl, options)
+        .then(response => {
+            if (response.status === 200) {
+				this.props.router.reload();
+			} else if (response.status === 302) {
+				this.setAlert("You were not friends", "");
+			} else if (response.status === 300) {
+				this.props.setAlert("User id invalid!","");
+			} else {
+				throw Error(response.statusText);
+			}
+		})
+		.catch((error) => {
+			console.log('Error:', error);
+			this.props.router.push('util/error');
+		});	
 	}
 
 	render() {
@@ -177,6 +245,9 @@ class Friends extends React.Component{
 						<Content 
 							data={this.state.contentData}
 							setAlert={this.setAlert.bind(this)}
+							acceptRequest={this.acceptRequest.bind(this)}
+							declineRequest={this.declineRequest.bind(this)}
+							removeFriend={this.removeFriend.bind(this)}
 						/>
 					</div>
 				</div>
