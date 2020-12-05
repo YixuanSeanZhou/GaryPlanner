@@ -44,7 +44,7 @@ class Sidebar extends React.Component {
 								id={item.request_id}
 								onClick={this.handleRequestClick.bind(this)}
 							>
-								{item.user_name}
+								From: {item.user_name}
 							</div>
 						)
 					})}

@@ -108,17 +108,30 @@
     padding: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
-
     margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
 
+    border: 0px;
     border-radius: 10px;
     background-color: #ce4944;
 
+    cursor: pointer;
+
+    
     -webkit-animation: flash-background 2s infinite alternate;  /* Safari 4+ */
     -moz-animation: flash-background 2s infinite alternate;  /* Fx 5+ */
     -o-animation: flash-background 2s infinite alternate;  /* Opera 12+ */
     animation: flash-background 2s infinite alternate;  /* IE 10+, Fx 29+ */
 }
+
+.requestListItem:hover {
+    opacity: 0.9;
+}
+
+.requestListItem:active {
+    opacity: 0.7;
+} 
  
 @keyframes flash-background {
     0% {
@@ -137,14 +150,19 @@
 
     margin-bottom: 10px;
 
+    cursor: pointer;
+
     border-radius: 10px;
     background-color: rgb(75, 96, 143);
 }
 
-.friendListItem:hove {
-    background-color: rgb(86, 102, 134);
-
+.friendListItem:hover {
+    opacity: 0.9;
 }
+
+.friendListItem:active {
+    opacity: 0.7;
+} 
 
 
 
