@@ -17,22 +17,34 @@ class Sidebar extends React.Component {
 		}
 	}
 
+	handleFriendClick(e) {
+		this.props.setCurrentProfile(true, e.target.id);
+	}
+
+	handleRequestClick(e) {
+		this.props.setCurrentProfile(false, e.target.id);
+	}
+
 	render() {
 		let requestList = undefined;
 		let friendList = undefined;
 
-		console.log(this.state.requests);
-
-		if (this.state.requests === undefined || this.state.requests.length === 0) {
+		if (this.props.requests === undefined || this.props.requests.length === 0) {
 			requestList = <></>;
 		} else {
+			// List of Requests
 			requestList = <>
 				<h4>Friend Requests</h4>
 				<div>
-					{this.state.requests.map((item, index) => {
+					{this.props.requests.map((item, index) => {
 						return (
-							<div key={index} className={item.class}>
-								<h6 className={styles.item}>{item.user_name}</h6>{' '}
+							<div 
+								key={index} 
+								className={styles.requestListItem}
+								id={item.request_id}
+								onClick={this.handleRequestClick.bind(this)}
+							>
+								{item.user_name}
 							</div>
 						)
 					})}
@@ -42,16 +54,21 @@ class Sidebar extends React.Component {
 			</>
 		}
 
-		if (this.state.friends === undefined || this.state.friends.length === 0) {
+		if (this.props.friends === undefined || this.props.friends.length === 0) {
 			friendList = <>
 				<div>Use the search bar to add friends.</div>
 			</>
 		} else {
+			// List of Friends
 			friendList = <>{
-				this.state.friends.map((item, index) => {
+				this.props.friends.map((item, index) => {
 					return (
-						<div key={index} className={item.class}>
-							{/* <Link href='/classInfo'>{item.user_name}</Link> */}
+						<div 
+							key={index} 
+							className={styles.friendListItem}
+							id={item.id}
+							onClick={this.handleFriendClick.bind(this)}
+						>
 							{item.user_name}
 						</div>
 					)

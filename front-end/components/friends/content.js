@@ -65,6 +65,7 @@ class Content extends React.Component {
 	render() {
 
 		const data = this.props.data;
+		console.log(data)
 		var child = undefined
 		if (data.showFriend) {
 			// Display the profile of the current selected friend

@@ -83,22 +83,23 @@ class Friends extends React.Component{
 	setCurrentProfile(isFriend, id) {
 		if (isFriend === true) {
 			// Update current profile for friends
-			profileObj = this.state.friendProfiles.filter((obj) => obj.id === id);
+			let profileObj = this.state.friendProfiles.filter(obj => obj.id === id);
 			var data = {
 				showFriend: true,
 				showRequest: false,
 				showFoundUser: false,
-				currentProfile: profileObj,	
+				currentProfile: profileObj[0],	
 			}
 			this.setState({contentData: data})
 		} else{
 			// display profile for the request user
-			profileObj = this.state.requests.filter((obj) => obj.request_id === id);
+			let profileObj = this.state.requests.filter(obj => obj.request_id == id);
+			console.log("found obj", profileObj);
 			var data = {
 				showFriend: false,
 				showRequest: true,
 				showFoundUser: false,
-				currentProfile: profileObj,	
+				currentProfile: profileObj[0],	
 			}
 			this.setState({contentData: data})
 		}
@@ -170,7 +171,7 @@ class Friends extends React.Component{
 
 					<div className={styles.right}>
 						<Search 
-							setCurrentProfile={this.setCurrentProfile.bind(this)}
+							setResult={this.setSearchResult.bind(this)}
 							setAlert={this.setAlert.bind(this)}
 						/>
 						<Content 

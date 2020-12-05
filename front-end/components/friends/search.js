@@ -53,8 +53,9 @@ class Search extends React.Component {
 		.then(data => {
 			if (data !== undefined) {
 				console.log('Success:', data); // TODO: Remove for deployment
-				this.setState({user_profile: data.result});
-				this.setState({user_found : true});
+				this.props.setResult(true, data.result);
+			} else {
+				this.props.setResult(false, undefined);
 			}
 		})
 		.catch((error) => {
@@ -107,7 +108,6 @@ class Search extends React.Component {
 						placeholder="User name/Email"
 						value={this.state.search}
 						onChange={(e) => this.handleChange(e)}
-						className={styles.input}
 					/>
 
 					<InputGroup.Append>

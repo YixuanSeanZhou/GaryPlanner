@@ -94,33 +94,6 @@
 }
 
 
-.input {
-    display: inline-block;
-}
-
-.item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 11px 0px 12px 0px;
-    list-style: none;
-    height: 60px;
-}
-
-
-.all {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.solid {
-    border-top: solid #061D3D;
-}
-
 /* The following are from Sidebar.module.css */
 .sidebar {
     background-color: rgb(53,68,104);
@@ -131,19 +104,52 @@
     padding: 20px;
 }
 
-.item {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 18px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
+.requestListItem {
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    background-color: #ce4944;
+
+    -webkit-animation: flash-background 2s infinite alternate;  /* Safari 4+ */
+    -moz-animation: flash-background 2s infinite alternate;  /* Fx 5+ */
+    -o-animation: flash-background 2s infinite alternate;  /* Opera 12+ */
+    animation: flash-background 2s infinite alternate;  /* IE 10+, Fx 29+ */
+}
+ 
+@keyframes flash-background {
+    0% {
+      background-color:rgb(75, 96, 143);
+    }
+    50% {
+      background-color: #ce4944;
+    }
 }
 
-.btnSidebar {
-    display: flex;
-    margin-right: 15px;
+
+.friendListItem{
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    background-color: rgb(75, 96, 143);
 }
+
+.friendListItem:hove {
+    background-color: rgb(86, 102, 134);
+
+}
+
+
+
+.solid {
+    margin: 0px;
+    border-top: solid #061D3D;
+}
+
