@@ -8,7 +8,9 @@ import { ParticleEffect, GaryNavbar } from '../components/commonUI';
 import { Navbar, Jumbotron, Button, Modal, Card } from 'react-bootstrap'
 import Request from '../components/requestPlan'
 
-import styles from '../styles/Auth.module.css'
+// Style sheets
+import styles from '../styles/HomePage.module.css'
+import authStyles from '../styles/Auth.module.css'
 
 export default class Home extends React.Component {
 	constructor(props) {
@@ -45,10 +47,10 @@ export default class Home extends React.Component {
 					<Navbar.Text>Home</Navbar.Text>
 				</GaryNavbar>
 
-				<ParticleEffect className={styles.particles} />
+				<ParticleEffect className={authStyles.particles} />
 
-				<div className={styles.outer}>
-					<div className={styles.rowContent}>
+				<div className={authStyles.outer}>
+					<div className={authStyles.rowContent}>
 						<div className="row">
 							<div className="offset-1 col-4 mt-5">
 								<Card>
@@ -120,6 +122,8 @@ export default class Home extends React.Component {
 				<Request
 					show={this.state.modalShow}
 					onHide={() => this.setState({ modalShow: false })}
+					enableLoading={this.props.enableLoading}
+					disableLoading={this.props.disableLoading}
 				/>
 			</>
 		)
