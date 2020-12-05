@@ -351,7 +351,18 @@ class PlanCalendar extends React.Component {
 		fetch(requestUrl, options)
 		.then(response => {
             console.log(response);
-            return response.json();
+            if (response.status == 200) {
+                // Sucessful Search
+				return response.json();
+			} else if (response.status == 300) {
+				// No classes found
+                return {};
+
+			} else {
+				// Unhandled error code
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.props.router.push('/util/error');	
+			}
 		}).then(data => {
             console.log("JSON Data: ", data);
 
