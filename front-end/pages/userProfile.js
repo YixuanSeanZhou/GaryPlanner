@@ -3,7 +3,7 @@ import React from 'react'
 import { withRouter } from 'next/router'
 
 // Components
-import { GaryNavbar } from '../components/commonUI'
+import { GaryNavbar,ParticleEffect } from '../components/commonUI'
 import { Alert, Form, Navbar, Row, Col } from 'react-bootstrap'
 import styles from '../styles/UserProfile.module.css'
 
@@ -133,23 +133,7 @@ class UserProfile extends React.Component{
 
 	validate(){
 		const {user_name, email, first_name, last_name,intended_grad_quarter,major,minor,college,start_quarter } = this.state.formData;
-		if (first_name === "") {
-			this.setState({
-				showingAlert: true,
-				alarmText: "First name can't be blank!",
-				alarmSubText: ""
-			});
-			return false;
-		}
-		if (last_name === "") {
-			this.setState({
-				showingAlert: true,
-				alarmText: "Last name can't be blank!",
-				alarmSubText: ""
-			});
-			return false;
-		}
-		return true;
+		
 	}
 
 	render(){
@@ -170,6 +154,7 @@ class UserProfile extends React.Component{
 					<title>User Profile</title>
 				</Head>
 
+				
 				<GaryNavbar>
 					<Navbar.Text>User Profile</Navbar.Text>
 				</GaryNavbar>
@@ -183,135 +168,138 @@ class UserProfile extends React.Component{
 						</div>
 						<br />
 						<Form>
-							<Form.Label>First Name</Form.Label>
-							<Form.Group as={Row} controlId="Name">
-								<Col>
-									<Form.Control
-										id="first_name"
-										readOnly = {this.state.FNEditable}
-										plaintext
-										value={formData.first_name}
-										onChange={this.handleChange}
-									/>
-								</Col>
-								<Col>
-								<div class="btn-group mr-2" role="group" aria-label="First group">
-									<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({FNEditable: false })} />
-									
+							<div class="form-row">
+								<div class="col">
+									<Form.Label>First Name</Form.Label>
 								</div>
+								<div class="col">
+									<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({FNEditable: false })} />
+								</div>
+							</div>
+						
+						{this.state.FNEditable === false ? 
+							(<div class="form-row">
+								<div class="col">
+									 <Form.Control id="first_name" value={formData.first_name} onChange={this.handleChange} />
+								</div>
+								<div class="col">	 
 									<img src="/images/save.png" style={{cursor: 'pointer'}} width="15" height="15" onClick={() =>{ this.setState({FNEditable: true }),this.handleClick()}} />
-
-								</Col>
-							</Form.Group>
+								</div>	
+							</div>)
+                                    : (formData.first_name)						
+						}
 						</Form>
+						<br />
 						<Form>
-							<Form.Label>Last Name</Form.Label>
-							<Form.Group as={Row} controlId="Name">
-								<Col>
-									<Form.Control
-										id="last_name"
-										readOnly = {this.state.LNEditable}
-										plaintext
-										value={formData.last_name}
-										onChange={this.handleChange}
-									/>
-								</Col>
-								<Col>
-									<div class="btn-group mr-2" role="group" aria-label="First group">
-										<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({LNEditable: false })} />
-									
-									</div>
-									<img src="/images/save.png" style={{cursor: 'pointer'}}  width="15" height="15" onClick={() =>{ this.setState({LNEditable: true }),this.handleClick()}} />
-
-								</Col>
-							</Form.Group>
+							<div class="form-row">
+								<div class="col">
+									<Form.Label>Last Name</Form.Label>
+								</div>
+								<div class="col">
+									<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({LNEditable: false })} />
+								</div>
+							</div>
+						
+						{this.state.LNEditable === false ? 
+							(<div class="form-row">
+								<div class="col">
+									 <Form.Control id="last_name" value={formData.last_name} onChange={this.handleChange} />
+								</div>
+								<div class="col">	 
+									<img src="/images/save.png" style={{cursor: 'pointer'}} width="15" height="15" onClick={() =>{ this.handleClick();this.setState({LNEditable: true })}} />
+								</div>	
+							</div>)
+                                    : (formData.last_name)						
+						}
 						</Form>
+						<br />	
 						<Form>
-							<Form.Label>Major</Form.Label>
-							<Form.Group as={Row} controlId="Major">
-								<Col>
-									<Form.Control
-										id="major"
-										plaintext
-										readOnly={this.state.majorEditable}
-										value={formData.major}
-										onChange={this.handleChange}
-									/>
-								</Col>
-								<Col>
-								<div class="btn-group mr-2" role="group" aria-label="First group">
-										<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({majorEditable: false })} />
-									
-									</div>
-									<img src="/images/save.png"  style={{cursor: 'pointer'}} width="15" height="15" onClick={() =>{ this.setState({majorEditable: true }),this.handleClick()}} />
-
-								</Col>
-							</Form.Group>
+							<div class="form-row">
+								<div class="col">
+									<Form.Label>Major</Form.Label>
+								</div>
+								<div class="col">
+									<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({majorEditable: false })} />
+								</div>
+							</div>
+						
+						{this.state.majorEditable === false ? 
+							(<div class="form-row">
+								<div class="col">
+									 <Form.Control id="major" value={formData.major} onChange={this.handleChange} />
+								</div>
+								<div class="col">	 
+									<img src="/images/save.png" style={{cursor: 'pointer'}} width="15" height="15" onClick={() =>{ this.setState({majorEditable: true }),this.handleClick()}} />
+								</div>	
+							</div>)
+                                    : (formData.major)						
+						}
 						</Form>
+						<br />
 						<Form>
-							<Form.Label>Minor</Form.Label>
-							<Form.Group as={Row} controlId="Minor">
-								<Col>
-									<Form.Control id="minor" 
-									readOnly = {this.state.minorEditable}
-									plaintext 
-									value={formData.minor} 
-									onChange={this.handleChange}
-									/>
-								</Col>
-								<Col>
-								<div class="btn-group mr-2" role="group" aria-label="First group">
-										<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({minorEditable: false })} />
-									
-									</div>
-									<img src="/images/save.png" style={{cursor: 'pointer'}}  width="15" height="15" onClick={() =>{ this.setState({minorEditable: true }),this.handleClick()}} />
-								</Col>
-							</Form.Group>
+							<div class="form-row">
+								<div class="col">
+									<Form.Label>Minor</Form.Label>
+								</div>
+								<div class="col">
+									<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({minorEditable: false })} />
+								</div>
+							</div>
+						
+						{this.state.minorEditable === false ? 
+							(<div class="form-row">
+								<div class="col">
+									 <Form.Control id="minor" value={formData.minor} onChange={this.handleChange} />
+								</div>
+								<div class="col">	 
+									<img src="/images/save.png" style={{cursor: 'pointer'}} width="15" height="15" onClick={() =>{ this.setState({minorEditable: true }),this.handleClick()}} />
+								</div>	
+							</div>)
+                                    : (formData.minor)						
+						}
 						</Form>
+						<br />
 						Email
 						<p>{formData.email}</p>
-
-                        <Form>
-							<Form.Label>College</Form.Label>
-							<Form.Group as={Row} controlId="College">
-								<Col>
-									<Form.Control
-										id="college"
-										readOnly = {this.state.CEditable}
-										plaintext
-										value={formData.college}
-										onChange={this.handleChange}
-									/>
-								</Col>
-								<Col>
-								<div class="btn-group mr-2" role="group" aria-label="First group">
-									<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({CEditable: false })} />
-									
+						<br />
+						<Form>
+							<div class="form-row">
+								<div class="col">
+									<Form.Label>College</Form.Label>
 								</div>
-									<img src="/images/save.png" style={{cursor: 'pointer'}} width="15" height="15" onClick={() =>{ this.setState({CEditable: true }),this.handleClick()}} />
-
-								</Col>
-							</Form.Group>
-						</Form>
+								<div class="col">
+									<img id = "edit" style={{cursor: 'pointer'}} src="/images/edit.png"  width="15" height="15" onClick={() => this.setState({CEditable: false })} />
+								</div>
+							</div>
 						
+						{this.state.CEditable === false ? 
+							(<div class="form-row">
+								<div class="col">
+									 <Form.Control id="college" value={formData.college} onChange={this.handleChange} />
+								</div>
+								<div class="col">	 
+									<img src="/images/save.png" style={{cursor: 'pointer'}} width="15" height="15" onClick={() =>{ this.setState({CEditable: true }),this.handleClick()}} />
+								</div>	
+							</div>)
+                                    : (formData.college)						
+						}
+						</Form>
+						<br />
 						Intended Graduate Quarter
 						<p>{formData.intended_grad_quarter}</p>
 						
 					</section>
-					
-					<Alert 
+				</div>
+				<Alert 
 						show={this.state.showingAlert} 
 						onClick={() => this.setState({showingAlert: false})} 
 						variant='danger'
 						className={styles.myAlert}
 						dismissible
-					>
-						<Alert.Heading>{this.state.alarmText}</Alert.Heading>
-						<div>{this.state.alarmSubText}</div>
-					</Alert>
-
-					
-				</div>
+						>
+						{alarmBody}
+				</Alert>
+			
 			</>
 		)
 	}
