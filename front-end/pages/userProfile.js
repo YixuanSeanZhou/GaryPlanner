@@ -79,9 +79,9 @@ class UserProfile extends React.Component {
 	}
 
 	handleClick = (e) => {
-		if (!this.validate()) {
-			return
-		}
+		// if (!this.validate()) {
+		// 	return
+		// }
 
 		var formData = this.state.formData
 		console.log('POSTing this data to server:', formData)
@@ -116,6 +116,7 @@ class UserProfile extends React.Component {
 				setTimeout(() => this.props.disableLoading(), 300)
 				this.props.router.push('/util/error')
 			})
+			window.location.reload(false);
 	}
 
 	handleChange = (e) => {
@@ -168,12 +169,12 @@ class UserProfile extends React.Component {
 					<div className={styles.main}>
 						<br />
 						<section>
-							<img
+							{/* <img
 								src="/images/profile_picture.png"
 								width="256"
 								height="256"
-							/>
-							<div>
+							/> */}
+							<div className="mt-5">
 								<h2>Hello! {formData.user_name}</h2>
 							</div>
 							<br />
