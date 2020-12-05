@@ -29,7 +29,7 @@ export class SearchBar extends React.Component {
 		return (
 			<div className={styles.bar}>
 				<h3>Search Classes</h3>
-				<Form>
+				<Form onSubmit={e => e.preventDefault()}>
 					<Form.Control
 						type="text"
 						placeholder="e.g. CSE 110"

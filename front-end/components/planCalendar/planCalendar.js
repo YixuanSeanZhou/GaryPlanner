@@ -452,7 +452,16 @@ class PlanCalendar extends React.Component {
 
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
-                <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} updateLocked={this.updateLocked.bind(this)} handleSearch={this.handleSearch.bind(this)} />
+                <CourseSearchBar 
+                    key ={this.state.quarters['SearchColumn'].id} 
+                    quarter={this.state.quarters['SearchColumn']} 
+                    courses={
+                        this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])
+                    } 
+                    updateLocked={this.updateLocked.bind(this)} 
+                    handleSearch={this.handleSearch.bind(this)} 
+                />
+
                 <div className={styles.fourYearCalendarContainer}>
                 {yearArray.map((yearId) => {
                     const year = yearList[yearId];
