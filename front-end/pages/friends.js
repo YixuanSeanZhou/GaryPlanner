@@ -241,6 +241,9 @@ class Friends extends React.Component{
 						<Search 
 							setResult={this.setSearchResult.bind(this)}
 							setAlert={this.setAlert.bind(this)}
+							
+							enableLoading={this.props.enableLoading}
+							disableLoading={this.props.disableLoading}
 						/>
 						<Content 
 							data={this.state.contentData}

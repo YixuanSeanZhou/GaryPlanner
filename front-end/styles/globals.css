@@ -15,8 +15,18 @@ div#__next{
   height: 100%;
 }
 
-div#__next > div {
+/* This is the loading overlay */
+div#__next > div{
   height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* The overlay component */
+div#__next > div > div:first-child {
+  left: 0;
+  top: 0;
+  position: fixed;
 }
 
 .navbar {

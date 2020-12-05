@@ -30,6 +30,7 @@ class Search extends React.Component {
 
 
 	handleSearch() {
+		this.props.enableLoading("Searching...")
 		const searchFriendsUrl = "http://localhost:2333/api/friends/find_user?name=" + `${this.state.search}`;
 	
 		console.log(searchFriendsUrl)		
@@ -40,8 +41,7 @@ class Search extends React.Component {
 
 		fetch(searchFriendsUrl, options)
         .then(response => {
-			console.log(response);
-			console.log(response.status);
+			setTimeout(() => this.props.disableLoading(), 300)
             if (response.status === 200) {
 				return response.json();
 			} else if (response.status === 300) {
