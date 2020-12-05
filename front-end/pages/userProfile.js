@@ -79,10 +79,6 @@ class UserProfile extends React.Component {
 	}
 
 	handleClick = (e) => {
-		// if (!this.validate()) {
-		// 	return
-		// }
-
 		var formData = this.state.formData
 		console.log('POSTing this data to server:', formData)
 		// Options for the fetch request
@@ -96,27 +92,27 @@ class UserProfile extends React.Component {
 			body: JSON.stringify(formData),
 		}
 		fetch(requestUrl, options)
-			.then((response) => {
-				console.log(response)
+		.then((response) => {
+			console.log(response)
 
-				if (response.status == 200) {
-					//success
-				} else if (response.status == 403) {
-					//not login
-					this.setState({
-						showingAlert: true,
-						alarmText: 'Not login ',
-						alarmSubText: 'Please login your account.',
-					})
-					this.props.router.push('/login')
-				}
-			})
-			.catch((error) => {
-				console.error('Error:', error)
-				setTimeout(() => this.props.disableLoading(), 300)
-				this.props.router.push('/util/error')
-			})
-			window.location.reload(false);
+			if (response.status == 200) {
+				//success
+				window.location.reload(false);
+			} else if (response.status == 403) {
+				//not login
+				this.setState({
+					showingAlert: true,
+					alarmText: 'Not login ',
+					alarmSubText: 'Please login your account.',
+				})
+				this.props.router.push('/login')
+			}
+		})
+		.catch((error) => {
+			console.error('Error:', error)
+			setTimeout(() => this.props.disableLoading(), 300)
+			this.props.router.push('/util/error')
+		})
 	}
 
 	handleChange = (e) => {
