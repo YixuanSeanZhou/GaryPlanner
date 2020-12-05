@@ -178,14 +178,14 @@ class UserProfile extends React.Component {
 							</div>
 							<br />
 							<Form.Group>
-								<div class="form-row">
-									<div class="col">
+								<div className="form-row">
+									<div className="col">
 										<Form.Label>First Name</Form.Label>
 									</div>
 								</div>
 
 								{this.state.FNEditable === false ? (
-									<div class="row">
+									<div className="row">
 										<div className="col-6">
 											<Form.Control
 												id="first_name"
@@ -227,17 +227,17 @@ class UserProfile extends React.Component {
 									</div>
 								)}
 							</Form.Group>
-							<hr class="solid" />
+							<hr className="solid" />
 							<Form>
-								<div class="form-row">
-									<div class="col">
+								<div className="form-row">
+									<div className="col">
 										<Form.Label>Last Name</Form.Label>
 									</div>
 								</div>
 
 								{this.state.LNEditable === false ? (
-									<div class="row">
-										<div class="col-6">
+									<div className="row">
+										<div className="col-6">
 											<Form.Control
 												id="last_name"
 												value={formData.last_name}
@@ -276,17 +276,17 @@ class UserProfile extends React.Component {
 									</div>
 								)}
 							</Form>
-							<hr class="solid" />
+							<hr className="solid" />
 							<Form>
-								<div class="form-row">
-									<div class="col">
+								<div className="form-row">
+									<div className="col">
 										<Form.Label>Major</Form.Label>
 									</div>
 								</div>
 
 								{this.state.majorEditable === false ? (
-									<div class="row">
-										<div class="col-6">
+									<div className="row">
+										<div className="col-6">
 											<Form.Control
 												id="major"
 												value={formData.major}
@@ -328,17 +328,17 @@ class UserProfile extends React.Component {
 									</div>
 								)}
 							</Form>
-							<hr class="solid" />
+							<hr className="solid" />
 							<Form>
-								<div class="form-row">
-									<div class="col">
+								<div className="form-row">
+									<div className="col">
 										<Form.Label>Minor</Form.Label>
 									</div>
 								</div>
 
 								{this.state.minorEditable === false ? (
-									<div class="row">
-										<div class="col-6">
+									<div className="row">
+										<div className="col-6">
 											<Form.Control
 												id="minor"
 												value={formData.minor}
@@ -380,20 +380,20 @@ class UserProfile extends React.Component {
 									</div>
 								)}
 							</Form>
-							<hr class="solid" />
+							<hr className="solid" />
 							Email
 							<p className="mt-2">{formData.email}</p>
-							<hr class="solid" />
+							<hr className="solid" />
 							<Form>
-								<div class="form-row">
-									<div class="col">
+								<div className="form-row">
+									<div className="col">
 										<Form.Label>College</Form.Label>
 									</div>
 								</div>
 
 								{this.state.CEditable === false ? (
-									<div class="row">
-										<div class="col-6">
+									<div className="row">
+										<div className="col-6">
 											<Form.Control
 												id="college"
 												value={formData.college}
@@ -431,7 +431,7 @@ class UserProfile extends React.Component {
 									</div>
 								)}
 							</Form>
-							<hr class="solid" />
+							<hr className="solid" />
 							Intended Graduate Quarter
 							<p>{formData.intended_grad_quarter}</p>
 						</section>
