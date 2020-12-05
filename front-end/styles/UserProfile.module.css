@@ -1,4 +1,6 @@
 .main {
     margin: auto;
     width: 30%;
+    left: 42%;
+    display: absolute;
 }

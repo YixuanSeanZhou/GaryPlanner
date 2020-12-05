@@ -215,10 +215,7 @@ class UserProfile extends React.Component {
 								formData.first_name
 							)}
 						</Form>
-
 						<br />
-						<hr class="solid" />
-
 						<Form>
 							<div class="form-row">
 								<div class="col">
@@ -264,10 +261,7 @@ class UserProfile extends React.Component {
 								formData.last_name
 							)}
 						</Form>
-
 						<br />
-						<hr class="solid" />
-
 						<Form>
 							<div class="form-row">
 								<div class="col">
@@ -313,10 +307,7 @@ class UserProfile extends React.Component {
 								formData.major
 							)}
 						</Form>
-
 						<br />
-						<hr class="solid" />
-
 						<Form>
 							<div class="form-row">
 								<div class="col">
@@ -362,17 +353,10 @@ class UserProfile extends React.Component {
 								formData.minor
 							)}
 						</Form>
-
 						<br />
-						<hr class="solid" />
-
 						Email
 						<p>{formData.email}</p>
-						
-						<hr class="solid" />
 						<br />
-	
-
 						<Form>
 							<div class="form-row">
 								<div class="col">
@@ -418,10 +402,7 @@ class UserProfile extends React.Component {
 								formData.college
 							)}
 						</Form>
-
 						<br />
-						<hr class="solid" />
-						
 						Intended Graduate Quarter
 						<p>{formData.intended_grad_quarter}</p>
 					</section>
