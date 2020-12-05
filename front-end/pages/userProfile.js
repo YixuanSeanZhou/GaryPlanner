@@ -158,15 +158,21 @@ class UserProfile extends React.Component {
 					<title>User Profile</title>
 				</Head>
 
-				<GaryNavbar>
+				<GaryNavbar
+					userProfile={this.props.userProfile}
+					onLogout={this.props.clearUserProfile}>
 					<Navbar.Text>User Profile</Navbar.Text>
 				</GaryNavbar>
 
-				<div >
+				<div>
 					<div className={styles.main}>
 						<br />
 						<section>
-							<img src="/images/profile_picture.png" width="256" height="256" />
+							<img
+								src="/images/profile_picture.png"
+								width="256"
+								height="256"
+							/>
 							<div>
 								<h2>Hello! {formData.user_name}</h2>
 							</div>
@@ -176,7 +182,6 @@ class UserProfile extends React.Component {
 									<div class="col">
 										<Form.Label>First Name</Form.Label>
 									</div>
-
 								</div>
 
 								{this.state.FNEditable === false ? (
@@ -204,32 +209,25 @@ class UserProfile extends React.Component {
 									</div>
 								) : (
 									<div className="container row">
-										<div>
-											{formData.first_name}
-										</div>
-										
+										<div>{formData.first_name}</div>
+
 										<div className={styles.edit}>
-										<img
-											id="edit"
-											style={{ cursor: 'pointer' }}
-											src="/images/edit.png"
-											width="15"
-											height="autp"
-											onClick={() =>
-												this.setState({ FNEditable: false })
-											}
-											className={styles.edit}
-										/>
+											<img
+												id="edit"
+												style={{ cursor: 'pointer' }}
+												src="/images/edit.png"
+												width="15"
+												height="autp"
+												onClick={() =>
+													this.setState({ FNEditable: false })
+												}
+												className={styles.edit}
+											/>
+										</div>
 									</div>
-									</div>
-									
-									
 								)}
 							</Form.Group>
-
-							
 							<hr class="solid" />
-
 							<Form>
 								<div class="form-row">
 									<div class="col">
@@ -261,35 +259,29 @@ class UserProfile extends React.Component {
 									</div>
 								) : (
 									<div className="container row">
-										<div>
-											{formData.last_name}
-										</div>
-										
+										<div>{formData.last_name}</div>
+
 										<div className={styles.edit}>
-										<img
-											id="edit"
-											style={{ cursor: 'pointer' }}
-											src="/images/edit.png"
-											width="15"
-											height="15"
-											onClick={() =>
-												this.setState({ LNEditable: false })
-											}
-										/>
+											<img
+												id="edit"
+												style={{ cursor: 'pointer' }}
+												src="/images/edit.png"
+												width="15"
+												height="15"
+												onClick={() =>
+													this.setState({ LNEditable: false })
+												}
+											/>
+										</div>
 									</div>
-									</div>
-									
 								)}
 							</Form>
-							
 							<hr class="solid" />
-
 							<Form>
 								<div class="form-row">
 									<div class="col">
 										<Form.Label>Major</Form.Label>
 									</div>
-
 								</div>
 
 								{this.state.majorEditable === false ? (
@@ -308,7 +300,9 @@ class UserProfile extends React.Component {
 												width="15"
 												height="15"
 												onClick={() => {
-													this.setState({ majorEditable: true }),
+													this.setState({
+														majorEditable: true,
+													}),
 														this.handleClick()
 												}}
 											/>
@@ -318,24 +312,23 @@ class UserProfile extends React.Component {
 									<div className="container row">
 										<div>{formData.major}</div>
 										<div className={styles.edit}>
-										<img
-											id="edit"
-											style={{ cursor: 'pointer' }}
-											src="/images/edit.png"
-											width="15"
-											height="15"
-											onClick={() =>
-												this.setState({ majorEditable: false })
-											}
-										/>
+											<img
+												id="edit"
+												style={{ cursor: 'pointer' }}
+												src="/images/edit.png"
+												width="15"
+												height="15"
+												onClick={() =>
+													this.setState({
+														majorEditable: false,
+													})
+												}
+											/>
+										</div>
 									</div>
-									</div>
-									
 								)}
 							</Form>
-							
 							<hr class="solid" />
-
 							<Form>
 								<div class="form-row">
 									<div class="col">
@@ -359,7 +352,9 @@ class UserProfile extends React.Component {
 												width="15"
 												height="15"
 												onClick={() => {
-													this.setState({ minorEditable: true }),
+													this.setState({
+														minorEditable: true,
+													}),
 														this.handleClick()
 												}}
 											/>
@@ -367,33 +362,28 @@ class UserProfile extends React.Component {
 									</div>
 								) : (
 									<div className="container row">
-										<div>
-											{formData.minor}
-										</div>
+										<div>{formData.minor}</div>
 										<div className={styles.edit}>
-										<img
-											id="edit"
-											style={{ cursor: 'pointer' }}
-											src="/images/edit.png"
-											width="15"
-											height="15"
-											onClick={() =>
-												this.setState({ minorEditable: false })
-											}
-										/>
+											<img
+												id="edit"
+												style={{ cursor: 'pointer' }}
+												src="/images/edit.png"
+												width="15"
+												height="15"
+												onClick={() =>
+													this.setState({
+														minorEditable: false,
+													})
+												}
+											/>
+										</div>
 									</div>
-									</div>
-									
 								)}
 							</Form>
-							
 							<hr class="solid" />
-
 							Email
 							<p className="mt-2">{formData.email}</p>
-							
 							<hr class="solid" />
-							
 							<Form>
 								<div class="form-row">
 									<div class="col">
@@ -425,33 +415,28 @@ class UserProfile extends React.Component {
 									</div>
 								) : (
 									<div className="container row">
-										<div>
-											{formData.college}
-										</div>
+										<div>{formData.college}</div>
 										<div className={styles.edit}>
-										<img
-											id="edit"
-											style={{ cursor: 'pointer' }}
-											src="/images/edit.png"
-											width="15"
-											height="15"
-											onClick={() =>
-												this.setState({ CEditable: false })
-											}
-										/>
+											<img
+												id="edit"
+												style={{ cursor: 'pointer' }}
+												src="/images/edit.png"
+												width="15"
+												height="15"
+												onClick={() =>
+													this.setState({ CEditable: false })
+												}
+											/>
+										</div>
 									</div>
-									</div>
-									
 								)}
 							</Form>
-							
 							<hr class="solid" />
-							
 							Intended Graduate Quarter
 							<p>{formData.intended_grad_quarter}</p>
 						</section>
 					</div>
-				</div>	
+				</div>
 				<Alert
 					show={this.state.showingAlert}
 					onClick={() => this.setState({ showingAlert: false })}
@@ -460,7 +445,6 @@ class UserProfile extends React.Component {
 					dismissible>
 					{alarmBody}
 				</Alert>
-				
 			</>
 		)
 	}
