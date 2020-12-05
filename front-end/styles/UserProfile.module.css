@@ -1,6 +1,10 @@
 .main {
     margin: auto;
-    width: 30%;
-    left: 42%;
-    display: absolute;
+
+    align-self: center;
+    margin: auto;
+    width: 500px;
+    left: 40%;
+    position: absolute;
 }
+
