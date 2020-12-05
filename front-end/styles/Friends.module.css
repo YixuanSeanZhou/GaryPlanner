@@ -8,6 +8,7 @@
 
 .left {
     box-sizing: border-box;
+    width: 300px;
     max-width: 300px;
     flex-grow: 1;
 }

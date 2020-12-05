@@ -45,7 +45,7 @@ class Content extends React.Component {
 					this.setState({added: false});
 				}, 3000)
 			} else if (response.status === 301) {
-				this.props.setAlert("Don't send request to yourself!", "You have other friends.");
+				this.props.setAlert("Don't send request to yourself!", "");
 			} else if (response.status === 302) {
 				this.props.setAlert("They have sent you a request!", "Check your request list");
 			} else if (response.status === 303) {
@@ -141,7 +141,7 @@ class Content extends React.Component {
 					</Button>;
 			}
 
-			// Display the profile of an incoming request
+			// Display the profile of the found user
 			const profile = data.currentProfile;
 			child = <div className={styles.profileCard}>
 				<div className={styles.cardTitle}>

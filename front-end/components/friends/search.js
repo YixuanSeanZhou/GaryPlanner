@@ -51,7 +51,6 @@ class Search extends React.Component {
 			}
         })
 		.then(data => {
-			this.setState({showResult: true});
 			if (data !== undefined) {
 				console.log('Success:', data); // TODO: Remove for deployment
 				this.setState({user_profile: data.result});
@@ -105,7 +104,7 @@ class Search extends React.Component {
 				<InputGroup>
 					<Form.Control
 						type="text"
-						placeholder="Search New Friend"
+						placeholder="User name/Email"
 						value={this.state.search}
 						onChange={(e) => this.handleChange(e)}
 						className={styles.input}

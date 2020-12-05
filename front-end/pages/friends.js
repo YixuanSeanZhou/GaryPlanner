@@ -60,24 +60,24 @@ class Friends extends React.Component{
 		})
 
 		// Testing data
-		var data = {
-			showFriend: false,
-			showRequest: false,
-			showFoundUser: true,
-			currentProfile: {
-				"college": "Warren",
-				"email": "j3li@ucsd.edu",
-				"first_name": "Jing",
-				"id": 2, 
-				"intended_grad_quarter": "FA20",
-				"last_name": "Li",
-				"major": "CS",
-				"minor": "undeclared",
-				"start_quarter": "FA18",
-				"user_name": "test2"
-			}
-		}
-		this.setState({contentData: data})
+		// var data = {
+		// 	showFriend: false,
+		// 	showRequest: false,
+		// 	showFoundUser: false,
+		// 	currentProfile: {
+		// 		"college": "Warren",
+		// 		"email": "j3li@ucsd.edu",
+		// 		"first_name": "Jing",
+		// 		"id": 2, 
+		// 		"intended_grad_quarter": "FA20",
+		// 		"last_name": "Li",
+		// 		"major": "CS",
+		// 		"minor": "undeclared",
+		// 		"start_quarter": "FA18",
+		// 		"user_name": "test2"
+		// 	}
+		// }
+		// this.setState({contentData: data})
 	}
 
 	setCurrentProfile(isFriend, id) {
