@@ -15,7 +15,6 @@
     height: 100%;
 
     padding: 40px;
-
 }
 .login {
     margin: auto;
@@ -47,7 +46,8 @@
     position: fixed;
     top: 60px;
     right: 0;
-    margin: 20px
+    margin: 20px;
+    z-index: 100;
 }
 
 .rowContent {
@@ -55,3 +55,4 @@
     margin-top: 20px;
     margin: auto;
 }
+

@@ -15,10 +15,23 @@ div#__next{
   height: 100%;
 }
 
-div#__next > div {
-  min-height: 100vh;
+/* This is the loading overlay */
+div#__next > div{
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
 }
 
+/* The overlay component */
+div#__next > div > div:first-child {
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.navbar {
+  height: 60px;
+}
 
 .navbarLogo {
   width: 24px;
@@ -51,31 +64,8 @@ div#__next > div {
   background-color: #092A59;
 }
 
-.intro {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  display: block;
-  margin-top: 0px;
-  background-position: 0px 0px;
-  background-size: auto;
-  color: white;
-  background: rgb(56,70,104) url("/Background/slide.png") no-repeat right;
-  height: 380px;
-}
-
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1240px;
-}
-
 .searchBar {
   padding: 30px 0px 30px 0px;
-}
-
-#intro-img {
-  box-shadow: 8px 8px 30px rgb(58, 57, 57);
-  border-radius: 12px;
 }
 
 /*home css*/
@@ -133,4 +123,31 @@ div#__next > div {
 
 .card-text {
   font-size: 1.1rem;
+}
+
+/*sidebar css*/
+.side-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 11px 0px 12px 0px;
+  list-style: none;
+  height: 60px;
+}
+
+.side-item a{
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.side-item a:hover{
+  background-color: #A8C9F6;
+  text-decoration: none;
 }
