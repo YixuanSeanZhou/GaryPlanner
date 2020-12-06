@@ -79,10 +79,6 @@ class UserProfile extends React.Component {
 	}
 
 	handleClick = (e) => {
-		// if (!this.validate()) {
-		// 	return
-		// }
-
 		var formData = this.state.formData
 		console.log('POSTing this data to server:', formData)
 		// Options for the fetch request
@@ -98,10 +94,9 @@ class UserProfile extends React.Component {
 		fetch(requestUrl, options)
 			.then((response) => {
 				console.log(response)
-
 				if (response.status == 200) {
 					//success
-					window.location.reload(false);
+					window.location.reload(false)
 				} else if (response.status == 403) {
 					//not login
 					this.setState({
@@ -117,7 +112,6 @@ class UserProfile extends React.Component {
 				setTimeout(() => this.props.disableLoading(), 300)
 				this.props.router.push('/util/error')
 			})
-			
 	}
 
 	handleChange = (e) => {
@@ -167,270 +161,278 @@ class UserProfile extends React.Component {
 						<Navbar.Text>User Profile</Navbar.Text>
 					</GaryNavbar>
 
-				
 					<div className={styles.main}>
-							<div>
-								<h2>{formData.user_name}</h2>
+						<div>
+							<h2>{formData.user_name}</h2>
+						</div>
+						<br />
+						<Form.Group>
+							<div className="form-row">
+								<div className="col">
+									<Form.Label className={styles.label}>
+										First Name
+									</Form.Label>
+								</div>
 							</div>
-							<br />
-							<Form.Group>
-								<div className="form-row">
-									<div className="col">
-										<Form.Label className={styles.label}>First Name</Form.Label>
-									</div>
-								</div>
 
-								{this.state.FNEditable === false ? (
-									<div className="row">
-										<div className="col-6">
-											<Form.Control
-												id="first_name"
-												value={formData.first_name}
-												onChange={this.handleChange}
-												className="mr-3"
-											/>
-										</div>
-										<div className={styles.save}>
-											<img
-												src="/images/save.png"
-												style={{ cursor: 'pointer' }}
-												width="15"
-												height="auto"
-												onClick={() => {
-													this.setState({ FNEditable: true }),
-														this.handleClick()
-												}}
-											/>
-										</div>
+							{this.state.FNEditable === false ? (
+								<div className="row">
+									<div className="col-6">
+										<Form.Control
+											id="first_name"
+											value={formData.first_name}
+											onChange={this.handleChange}
+											className="mr-3"
+										/>
 									</div>
-								) : (
-									<div className="container row">
-										<div>{formData.first_name}</div>
-
-										<div className={styles.edit}>
-											<img
-												id="edit"
-												style={{ cursor: 'pointer' }}
-												src="/images/edit.png"
-												width="15"
-												height="autp"
-												onClick={() =>
-													this.setState({ FNEditable: false })
-												}
-												className={styles.edit}
-											/>
-										</div>
-									</div>
-								)}
-							</Form.Group>
-							<hr className="solid" />
-							<Form>
-								<div className="form-row">
-									<div className="col">
-										<Form.Label  className={styles.label}>Last Name</Form.Label>
-									</div>
-								</div>
-
-								{this.state.LNEditable === false ? (
-									<div className="row">
-										<div className="col-6">
-											<Form.Control
-												id="last_name"
-												value={formData.last_name}
-												onChange={this.handleChange}
-											/>
-										</div>
-										<div className={styles.save}>
-											<img
-												src="/images/save.png"
-												style={{ cursor: 'pointer' }}
-												width="15"
-												height="15"
-												onClick={() => {
+									<div className={styles.save}>
+										<img
+											src="/images/save.png"
+											style={{ cursor: 'pointer' }}
+											width="15"
+											height="auto"
+											onClick={() => {
+												this.setState({ FNEditable: true }),
 													this.handleClick()
-													this.setState({ LNEditable: true })
-												}}
-											/>
-										</div>
-									</div>
-								) : (
-									<div className="container row">
-										<div>{formData.last_name}</div>
-
-										<div className={styles.edit}>
-											<img
-												id="edit"
-												style={{ cursor: 'pointer' }}
-												src="/images/edit.png"
-												width="15"
-												height="15"
-												onClick={() =>
-													this.setState({ LNEditable: false })
-												}
-											/>
-										</div>
-									</div>
-								)}
-							</Form>
-							<hr className="solid" />
-							<Form>
-								<div className="form-row">
-									<div className="col">
-										<Form.Label className={styles.label}>Major</Form.Label>
+											}}
+										/>
 									</div>
 								</div>
+							) : (
+								<div className="container row">
+									<div>{formData.first_name}</div>
 
-								{this.state.majorEditable === false ? (
-									<div className="row">
-										<div className="col-6">
-											<Form.Control
-												id="major"
-												value={formData.major}
-												onChange={this.handleChange}
-											/>
-										</div>
-										<div className={styles.save}>
-											<img
-												src="/images/save.png"
-												style={{ cursor: 'pointer' }}
-												width="15"
-												height="15"
-												onClick={() => {
-													this.setState({
-														majorEditable: true,
-													}),
-														this.handleClick()
-												}}
-											/>
-										</div>
-									</div>
-								) : (
-									<div className="container row">
-										<div>{formData.major}</div>
-										<div className={styles.edit}>
-											<img
-												id="edit"
-												style={{ cursor: 'pointer' }}
-												src="/images/edit.png"
-												width="15"
-												height="15"
-												onClick={() =>
-													this.setState({
-														majorEditable: false,
-													})
-												}
-											/>
-										</div>
-									</div>
-								)}
-							</Form>
-							<hr className="solid" />
-							<Form>
-								<div className="form-row">
-									<div className="col">
-										<Form.Label className={styles.label}>Minor</Form.Label>
+									<div className={styles.edit}>
+										<img
+											id="edit"
+											style={{ cursor: 'pointer' }}
+											src="/images/edit.png"
+											width="15"
+											height="autp"
+											onClick={() =>
+												this.setState({ FNEditable: false })
+											}
+											className={styles.edit}
+										/>
 									</div>
 								</div>
+							)}
+						</Form.Group>
+						<hr className="solid" />
+						<Form>
+							<div className="form-row">
+								<div className="col">
+									<Form.Label className={styles.label}>
+										Last Name
+									</Form.Label>
+								</div>
+							</div>
 
-								{this.state.minorEditable === false ? (
-									<div className="row">
-										<div className="col-6">
-											<Form.Control
-												id="minor"
-												value={formData.minor}
-												onChange={this.handleChange}
-											/>
-										</div>
-										<div className={styles.save}>
-											<img
-												src="/images/save.png"
-												style={{ cursor: 'pointer' }}
-												width="15"
-												height="15"
-												onClick={() => {
-													this.setState({
-														minorEditable: true,
-													}),
-														this.handleClick()
-												}}
-											/>
-										</div>
+							{this.state.LNEditable === false ? (
+								<div className="row">
+									<div className="col-6">
+										<Form.Control
+											id="last_name"
+											value={formData.last_name}
+											onChange={this.handleChange}
+										/>
 									</div>
-								) : (
-									<div className="container row">
-										<div>{formData.minor}</div>
-										<div className={styles.edit}>
-											<img
-												id="edit"
-												style={{ cursor: 'pointer' }}
-												src="/images/edit.png"
-												width="15"
-												height="15"
-												onClick={() =>
-													this.setState({
-														minorEditable: false,
-													})
-												}
-											/>
-										</div>
-									</div>
-								)}
-							</Form>
-							<hr className="solid" />
-							<span className={styles.label}>Email</span>
-							<p className="mt-2">{formData.email}</p>
-							<hr className="solid" />
-							<Form>
-								<div className="form-row">
-									<div className="col">
-										<Form.Label className={styles.label}>College</Form.Label>
+									<div className={styles.save}>
+										<img
+											src="/images/save.png"
+											style={{ cursor: 'pointer' }}
+											width="15"
+											height="15"
+											onClick={() => {
+												this.handleClick()
+												this.setState({ LNEditable: true })
+											}}
+										/>
 									</div>
 								</div>
+							) : (
+								<div className="container row">
+									<div>{formData.last_name}</div>
 
-								{this.state.CEditable === false ? (
-									<div className="row">
-										<div className="col-6">
-											<Form.Control
-												id="college"
-												value={formData.college}
-												onChange={this.handleChange}
-											/>
-										</div>
-										<div className={styles.save}>
-											<img
-												src="/images/save.png"
-												style={{ cursor: 'pointer' }}
-												width="15"
-												height="15"
-												onClick={() => {
-													this.setState({ CEditable: true }),
-														this.handleClick()
-												}}
-											/>
-										</div>
+									<div className={styles.edit}>
+										<img
+											id="edit"
+											style={{ cursor: 'pointer' }}
+											src="/images/edit.png"
+											width="15"
+											height="15"
+											onClick={() =>
+												this.setState({ LNEditable: false })
+											}
+										/>
 									</div>
-								) : (
-									<div className="container row">
-										<div>{formData.college}</div>
-										<div className={styles.edit}>
-											<img
-												id="edit"
-												style={{ cursor: 'pointer' }}
-												src="/images/edit.png"
-												width="15"
-												height="15"
-												onClick={() =>
-													this.setState({ CEditable: false })
-												}
-											/>
-										</div>
+								</div>
+							)}
+						</Form>
+						<hr className="solid" />
+						<Form>
+							<div className="form-row">
+								<div className="col">
+									<Form.Label className={styles.label}>
+										Major
+									</Form.Label>
+								</div>
+							</div>
+
+							{this.state.majorEditable === false ? (
+								<div className="row">
+									<div className="col-6">
+										<Form.Control
+											id="major"
+											value={formData.major}
+											onChange={this.handleChange}
+										/>
 									</div>
-								)}
-							</Form>
-							<hr className="solid" />
-							<span  className={styles.label}>Intended Graduate Quarter</span>
-							<p className="mt-2">{formData.intended_grad_quarter}</p>
-						
+									<div className={styles.save}>
+										<img
+											src="/images/save.png"
+											style={{ cursor: 'pointer' }}
+											width="15"
+											height="15"
+											onClick={() => {
+												this.setState({
+													majorEditable: true,
+												}),
+													this.handleClick()
+											}}
+										/>
+									</div>
+								</div>
+							) : (
+								<div className="container row">
+									<div>{formData.major}</div>
+									<div className={styles.edit}>
+										<img
+											id="edit"
+											style={{ cursor: 'pointer' }}
+											src="/images/edit.png"
+											width="15"
+											height="15"
+											onClick={() =>
+												this.setState({
+													majorEditable: false,
+												})
+											}
+										/>
+									</div>
+								</div>
+							)}
+						</Form>
+						<hr className="solid" />
+						<Form>
+							<div className="form-row">
+								<div className="col">
+									<Form.Label className={styles.label}>
+										Minor
+									</Form.Label>
+								</div>
+							</div>
+
+							{this.state.minorEditable === false ? (
+								<div className="row">
+									<div className="col-6">
+										<Form.Control
+											id="minor"
+											value={formData.minor}
+											onChange={this.handleChange}
+										/>
+									</div>
+									<div className={styles.save}>
+										<img
+											src="/images/save.png"
+											style={{ cursor: 'pointer' }}
+											width="15"
+											height="15"
+											onClick={() => {
+												this.setState({
+													minorEditable: true,
+												}),
+													this.handleClick()
+											}}
+										/>
+									</div>
+								</div>
+							) : (
+								<div className="container row">
+									<div>{formData.minor}</div>
+									<div className={styles.edit}>
+										<img
+											id="edit"
+											style={{ cursor: 'pointer' }}
+											src="/images/edit.png"
+											width="15"
+											height="15"
+											onClick={() =>
+												this.setState({
+													minorEditable: false,
+												})
+											}
+										/>
+									</div>
+								</div>
+							)}
+						</Form>
+						<hr className="solid" />
+						<span className={styles.label}>Email</span>
+						<p className="mt-2">{formData.email}</p>
+						<hr className="solid" />
+						<Form>
+							<div className="form-row">
+								<div className="col">
+									<Form.Label className={styles.label}>
+										College
+									</Form.Label>
+								</div>
+							</div>
+
+							{this.state.CEditable === false ? (
+								<div className="row">
+									<div className="col-6">
+										<Form.Control
+											id="college"
+											value={formData.college}
+											onChange={this.handleChange}
+										/>
+									</div>
+									<div className={styles.save}>
+										<img
+											src="/images/save.png"
+											style={{ cursor: 'pointer' }}
+											width="15"
+											height="15"
+											onClick={() => {
+												this.setState({ CEditable: true }),
+													this.handleClick()
+											}}
+										/>
+									</div>
+								</div>
+							) : (
+								<div className="container row">
+									<div>{formData.college}</div>
+									<div className={styles.edit}>
+										<img
+											id="edit"
+											style={{ cursor: 'pointer' }}
+											src="/images/edit.png"
+											width="15"
+											height="15"
+											onClick={() =>
+												this.setState({ CEditable: false })
+											}
+										/>
+									</div>
+								</div>
+							)}
+						</Form>
+						<hr className="solid" />
+						<span className={styles.label}>Intended Graduate Quarter</span>
+						<p className="mt-2">{formData.intended_grad_quarter}</p>
 					</div>
 				</div>
 				<Alert
