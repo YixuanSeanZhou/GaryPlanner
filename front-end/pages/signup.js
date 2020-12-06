@@ -156,19 +156,19 @@ class Signup extends React.Component {
 			});
 			return false;
 		}
-		if (email === "") {
-			this.setState({
-				showingAlert: true,
-				alarmText: "Email can't be blank!",
-				alarmSubText: ""
-			});
-			return false;
-		}
 		if (!/^[a-zA-Z0-9_]/.test(user_name)) {
 			this.setState({
 				showingAlert: true,
 				alarmText: "Please enter a valid Username!" ,
 				alarmSubText: "Username can only contain letters, numbers, and _.",
+			});
+			return false;
+		}
+		if (email === "") {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Email can't be blank!",
+				alarmSubText: ""
 			});
 			return false;
 		}
