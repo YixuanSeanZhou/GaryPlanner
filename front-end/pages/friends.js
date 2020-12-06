@@ -225,7 +225,6 @@ class Friends extends React.Component{
 				<GaryNavbar
 					userProfile={this.props.userProfile}
 					onLogout={this.props.clearUserProfile}
-					toHome
 				>
 					<Navbar.Text>Friends</Navbar.Text>
 				</GaryNavbar>

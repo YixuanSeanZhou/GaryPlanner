@@ -60,9 +60,9 @@ export default class Home extends React.Component {
 				<ParticleEffect className={authStyles.particles} />
 
 				<div className={styles.outer}>
-					<Container className={styles.content}>
+					<Container className={styles.content} fluid>
 						<Row>
-							<Col>
+							<Col className={styles.columns}>
 								<div className={styles.profile}>
 									<h3 className="mb-4">
 										{userProfile.first_name} {userProfile.last_name}
@@ -82,7 +82,7 @@ export default class Home extends React.Component {
 								</div>
 							</Col>
 
-							<Col>
+							<Col className={styles.columns}>
 								<Row>
 									{/* Button one */}
 									<Button

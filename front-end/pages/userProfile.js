@@ -198,7 +198,7 @@ class UserProfile extends React.Component {
 							<div className="form-row">
 								<div className="col">
 									<Form.Label className={styles.label}>
-										First Name
+										First Name*
 									</Form.Label>
 								</div>
 							</div>
@@ -250,7 +250,7 @@ class UserProfile extends React.Component {
 							<div className="form-row">
 								<div className="col">
 									<Form.Label className={styles.label}>
-										Last Name
+										Last Name*
 									</Form.Label>
 								</div>
 							</div>
@@ -412,7 +412,7 @@ class UserProfile extends React.Component {
 							<div className="form-row">
 								<div className="col">
 									<Form.Label className={styles.label}>
-										College
+										College*
 									</Form.Label>
 								</div>
 							</div>

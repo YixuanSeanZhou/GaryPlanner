@@ -37,8 +37,13 @@
 
 .content {
     width: 80%;
+    height: 120%;
     margin: auto;
     padding-top: 20px;
+}
+
+.columns {
+    margin-bottom: 10px;
 }
 
 
