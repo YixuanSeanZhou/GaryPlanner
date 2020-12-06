@@ -24,10 +24,11 @@ class FriendCalendar extends React.Component {
 
     componentDidMount () {
 		// First, enable loading animation
-		this.props.enableLoading("Please wait");
+		// this.props.enableLoading("Please wait");   fix later
 
-		// Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/four_year_plan/get_formatted_plan_by_user';
+        // Options for the fetch request
+        const user_id = this.props.user_id;
+		const requestUrl = 'http://localhost:2333/api/four_year_plan/get_formatted_plan_by_user?user_id=' + user_id;
 		const options = {
 			method: 'GET',
 			headers: {
@@ -53,13 +54,13 @@ class FriendCalendar extends React.Component {
                     ...newState.quarters,
                 }
             }
-            setTimeout(() => this.props.disableLoading(), 300);
+            // setTimeout(() => this.props.disableLoading(), 300);   fix later
             this.setState(newStateAndSearch);
             console.log("New State: " + this.state);
 		})
 		.catch((error) => {
 			console.error('Error:', error);
-			setTimeout(() => this.props.disableLoading(), 300);
+			// setTimeout(() => this.props.disableLoading(), 300);   fix later
             //this.props.router.push('/util/error');
             
             const newState = {

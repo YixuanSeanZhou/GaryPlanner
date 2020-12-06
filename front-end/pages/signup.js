@@ -28,11 +28,11 @@ class Signup extends React.Component {
 				major: "",
 				minor: "",
 
-				s_year: "20",
+				s_year: " 20",
 				s_quarter: "FA",
 				start_quarter: "",
 
-				g_year: "20",
+				g_year: " 20",
 				g_quarter: "FA",
 				intended_grad_quarter: "",
 			},
@@ -52,7 +52,7 @@ class Signup extends React.Component {
 		// Format the form data
 		var formData = this.state.formData;
 		formData.start_quarter = formData.s_quarter.concat(formData.s_year);
-		formData.indended_grad_quarter= formData.g_quarter.concat(formData.g_year);
+		formData.intended_grad_quarter= formData.g_quarter.concat(formData.g_year);
 		console.log("Posting data: ", formData);
 
 		// Options for the fetch request
@@ -337,14 +337,14 @@ class Signup extends React.Component {
 											<Form.Control 
 												as="select"
 												id="s_year"
-												value={formData.year}
+												value={formData.s_year}
 												onChange={this.handleChange}
 											>
-												<option value="20">2020</option>
-												<option value="19">2019</option>
-												<option value="18">2018</option>
-												<option value="17">2017</option>
-												<option value="16">2016</option>
+												<option value=" 20">2020</option>
+												<option value=" 19">2019</option>
+												<option value=" 18">2018</option>
+												<option value=" 17">2017</option>
+												<option value=" 16">2016</option>
 											</Form.Control>
 										</Col>
 										<Col>
@@ -352,7 +352,7 @@ class Signup extends React.Component {
 											<Form.Control 
 												as="select"
 												id="s_quarter"
-												value={formData.quarter}
+												value={formData.s_quarter}
 												onChange={this.handleChange}
 											>
 												<option value="FA">FA</option>
@@ -375,14 +375,14 @@ class Signup extends React.Component {
 											<Form.Control 
 												as="select"
 												id="g_year"
-												value={formData.year}
+												value={formData.g_year}
 												onChange={this.handleChange}
 											>
-												<option value="20">2020</option>
-												<option value="21">2021</option>
-												<option value="22">2022</option>
-												<option value="23">2023</option>
-												<option value="24">2024</option>
+												<option value=" 20">2020</option>
+												<option value=" 21">2021</option>
+												<option value=" 22">2022</option>
+												<option value=" 23">2023</option>
+												<option value=" 24">2024</option>
 											</Form.Control>
 										</Col>
 										<Col>
@@ -390,7 +390,7 @@ class Signup extends React.Component {
 											<Form.Control 
 												as="select"
 												id="g_quarter"
-												value={formData.quarter}
+												value={formData.g_quarter}
 												onChange={this.handleChange}
 											>
 												<option value="FA">FA</option>
