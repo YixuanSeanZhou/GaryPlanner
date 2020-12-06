@@ -120,20 +120,6 @@ class UserProfile extends React.Component {
 		this.setState({ formData })
 	}
 
-	validate() {
-		const {
-			user_name,
-			email,
-			first_name,
-			last_name,
-			intended_grad_quarter,
-			major,
-			minor,
-			college,
-			start_quarter,
-		} = this.state.formData
-	}
-
 	render() {
 		let alarmBody
 		let formData = this.state.formData
@@ -154,12 +140,13 @@ class UserProfile extends React.Component {
 					<title>User Profile</title>
 				</Head>
 
-				<div className={styles.bg}>
-					<GaryNavbar
+				<GaryNavbar
 						userProfile={this.props.userProfile}
 						onLogout={this.props.clearUserProfile}>
 						<Navbar.Text>User Profile</Navbar.Text>
-					</GaryNavbar>
+				</GaryNavbar>
+
+				<div className={styles.bg}>
 
 					<div className={styles.main}>
 						<div>
@@ -182,7 +169,6 @@ class UserProfile extends React.Component {
 											id="first_name"
 											value={formData.first_name}
 											onChange={this.handleChange}
-											className="mr-3"
 										/>
 									</div>
 									<div className={styles.save}>
@@ -208,7 +194,7 @@ class UserProfile extends React.Component {
 											style={{ cursor: 'pointer' }}
 											src="/images/edit.png"
 											width="15"
-											height="autp"
+											height="auto"
 											onClick={() =>
 												this.setState({ FNEditable: false })
 											}

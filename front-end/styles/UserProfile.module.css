@@ -7,28 +7,16 @@
 
     min-height: 100vh;
     
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    padding: 40px;
 }
 
 .main {
-    top: 50px;
     margin: auto;
-    position: relative;
-    align-self: center;
     width: 550px;
-    position: relative;
-    margin-bottom: 200px;
     padding: 40px 50px 50px 50px;
-    position: relative;
-
-    height: 100%;
 
     border-style: solid;
-    margin: auto;
-    border-radius: 10px;
+    border-radius: 14px;
     background-color: #fff;
     border-color: #536c94;
     border-width: 4px;
@@ -36,13 +24,11 @@
 }
 
 .edit {
-    align-self: center;
     margin-right: 0px;
     margin-left: auto;
 }
 
 .save {
-    align-self: center;
     margin-right: 45px;
     margin-left: auto;
 }						
