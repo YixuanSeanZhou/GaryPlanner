@@ -68,37 +68,6 @@ div#__next > div > div:first-child {
   padding: 30px 0px 30px 0px;
 }
 
-/*home css*/
-#home-btn {
-  height: 200px;
-  font-size: 2rem;
-  color: black;
-}
-
-#home-btn span{
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#home-btn span:after{
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#home-btn:hover span {
-  padding-right: 25px;
-}
-
-#home-btn:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 .card {
   color: white;
