@@ -1,4 +1,5 @@
 // React and next
+import { withRouter } from 'next/router';
 import React from 'react'
 
 // Compoents
@@ -7,7 +8,7 @@ import { Modal, Button, Form } from 'react-bootstrap';
 // Styles
 import styles from '../styles/HomePage.module.css';
 
-export default class Request extends React.Component {
+class Request extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -15,6 +16,8 @@ export default class Request extends React.Component {
 			user_name: "",
 			pwd: "",
 			num_ge: undefined,
+
+			errorMessage: "",
 		}
 	}
 
@@ -22,56 +25,55 @@ export default class Request extends React.Component {
 		this.setState({[e.target.id]: e.target.value});
 	};
 
-	validate() {
-
-	}
-
 	handleClick(e) {
 
 		// First, enable loading animation
 		this.props.enableLoading("Please wait");
 
 		// Format the form data
-		var formData = this.state.formData;
-		formData.start_quarter = formData.s_quarter.concat(formData.s_year);
-		formData.indended_grad_quarter= formData.g_quarter.concat(formData.g_year);
-		console.log("Posting data: ", formData);
+		console.log("Posting data: ", this.state);
 
 		// Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/users/create_user';
+		const requestUrl = `http://localhost:2333/api/four_year_plan/get_rec
+					?user_name=${encodeURIComponent(this.state.user_name)}
+					&pwd=${encodeURIComponent(this.state.pwd)}
+					&num_ge=${encodeURIComponent(this.state.num_ge)}`;
 		const options = {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(formData)
+			method: 'GET',
+			credentials: 'include'
 		};
 
+		this.props.enableLoading("Processing. Please check your duo. This might take minutes...")
 		fetch(requestUrl, options)
 		.then(response => {
 			console.log(response);
 
 			if (response.status == 200) {
 				// User successfully created
-				this.props.enableLoading("Success! Going to login page...")
+				this.props.enableLoading("Success! Going to Four Year Plan page...")
 
 				// Redirect the user to login page
-				this.props.router.prefetch('/login');
+				this.props.router.prefetch('/fourYearPlan');
 				setTimeout(() => {
 					this.props.disableLoading();
-					this.props.router.push('/login'); 
+					this.props.router.push('/fourYearPlan'); 
 				}, 2000);
 
+			} else if (response.status == 402) {
+				// Need to check duo
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.setState({errorMessage: "You need to approve the login on Duo!"})
 			} else if (response.status == 300) {
-				// User Already Existed!
-				return response.json()
-
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.setState({errorMessage: "Your Degree Audit not avilable!"})
+			} else if (response.status == 400) {
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.setState({errorMessage: "UCSD Credential Mismatched!"})
 			} else {
 				// Unhandled error code
 				setTimeout(() => this.props.disableLoading(), 300);
 				this.props.router.push('/util/error');	
 			}
-		}).then(data => {
 		})
 		.catch((error) => {
 			console.error('Error:', error);
@@ -165,6 +167,10 @@ export default class Request extends React.Component {
 							</Form.Control>
 						</Form.Group>
 
+						<div className={styles.important}>
+							{this.state.errorMessage}
+						</div>
+
 						<div style={{ textAlign: 'right' }}>
 							<Button className="mt-2" onClick={this.handleClick.bind(this)}>
 								Sumbit
@@ -176,3 +182,4 @@ export default class Request extends React.Component {
 		)
 	};
 }
+export default withRouter(Request);

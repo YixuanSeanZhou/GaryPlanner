@@ -614,7 +614,7 @@ def request_degree_audit():
 @login_required
 def get_rec():
     print('get_rec')
-    remove_plan(current_user.id)
+    FourYearPlan.remove_plan(current_user.id)
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
     ge_num = request.args.get('ge_num', 6)

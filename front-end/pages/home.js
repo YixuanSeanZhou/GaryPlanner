@@ -24,6 +24,16 @@ export default class Home extends React.Component {
 	componentDidMount() {
 	}
 
+	enableLoading(message) {
+		this.props.enableLoading(message);
+		this.setState({modalShow: false});
+	}
+
+	disableLoading() {
+		this.props.disableLoading();
+		this.setState({modalShow: true});
+	}
+
 	render() {
 		var { userProfile } = this.props;
 		if (userProfile === undefined) {
@@ -122,8 +132,8 @@ export default class Home extends React.Component {
 				<Request
 					show={this.state.modalShow}
 					onHide={() => this.setState({ modalShow: false })}
-					enableLoading={this.props.enableLoading}
-					disableLoading={this.props.disableLoading}
+					enableLoading={this.enableLoading.bind(this)}
+					disableLoading={this.disableLoading.bind(this)}
 				/>
 			</>
 		)
