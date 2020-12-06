@@ -156,7 +156,7 @@ class Signup extends React.Component {
 			});
 			return false;
 		}
-		if (!/^[a-zA-Z0-9_]/.test(user_name)) {
+		if (!/^[a-zA-Z0-9_]+$/.test(user_name)) {
 			this.setState({
 				showingAlert: true,
 				alarmText: "Please enter a valid Username!" ,
