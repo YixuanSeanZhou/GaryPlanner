@@ -101,6 +101,7 @@ class UserProfile extends React.Component {
 
 				if (response.status == 200) {
 					//success
+					window.location.reload(false);
 				} else if (response.status == 403) {
 					//not login
 					this.setState({
@@ -116,7 +117,7 @@ class UserProfile extends React.Component {
 				setTimeout(() => this.props.disableLoading(), 300)
 				this.props.router.push('/util/error')
 			})
-			window.location.reload(false);
+			
 	}
 
 	handleChange = (e) => {
@@ -159,29 +160,23 @@ class UserProfile extends React.Component {
 					<title>User Profile</title>
 				</Head>
 
-				<GaryNavbar
-					userProfile={this.props.userProfile}
-					onLogout={this.props.clearUserProfile}>
-					<Navbar.Text>User Profile</Navbar.Text>
-				</GaryNavbar>
+				<div className={styles.bg}>
+					<GaryNavbar
+						userProfile={this.props.userProfile}
+						onLogout={this.props.clearUserProfile}>
+						<Navbar.Text>User Profile</Navbar.Text>
+					</GaryNavbar>
 
-				<div>
+				
 					<div className={styles.main}>
-						<br />
-						<section>
-							{/* <img
-								src="/images/profile_picture.png"
-								width="256"
-								height="256"
-							/> */}
-							<div className="mt-5">
-								<h2>Hello! {formData.user_name}</h2>
+							<div>
+								<h2>{formData.user_name}</h2>
 							</div>
 							<br />
 							<Form.Group>
 								<div className="form-row">
 									<div className="col">
-										<Form.Label>First Name</Form.Label>
+										<Form.Label className={styles.label}>First Name</Form.Label>
 									</div>
 								</div>
 
@@ -232,7 +227,7 @@ class UserProfile extends React.Component {
 							<Form>
 								<div className="form-row">
 									<div className="col">
-										<Form.Label>Last Name</Form.Label>
+										<Form.Label  className={styles.label}>Last Name</Form.Label>
 									</div>
 								</div>
 
@@ -281,7 +276,7 @@ class UserProfile extends React.Component {
 							<Form>
 								<div className="form-row">
 									<div className="col">
-										<Form.Label>Major</Form.Label>
+										<Form.Label className={styles.label}>Major</Form.Label>
 									</div>
 								</div>
 
@@ -333,7 +328,7 @@ class UserProfile extends React.Component {
 							<Form>
 								<div className="form-row">
 									<div className="col">
-										<Form.Label>Minor</Form.Label>
+										<Form.Label className={styles.label}>Minor</Form.Label>
 									</div>
 								</div>
 
@@ -382,13 +377,13 @@ class UserProfile extends React.Component {
 								)}
 							</Form>
 							<hr className="solid" />
-							Email
+							<span className={styles.label}>Email</span>
 							<p className="mt-2">{formData.email}</p>
 							<hr className="solid" />
 							<Form>
 								<div className="form-row">
 									<div className="col">
-										<Form.Label>College</Form.Label>
+										<Form.Label className={styles.label}>College</Form.Label>
 									</div>
 								</div>
 
@@ -433,9 +428,9 @@ class UserProfile extends React.Component {
 								)}
 							</Form>
 							<hr className="solid" />
-							Intended Graduate Quarter
-							<p>{formData.intended_grad_quarter}</p>
-						</section>
+							<span  className={styles.label}>Intended Graduate Quarter</span>
+							<p className="mt-2">{formData.intended_grad_quarter}</p>
+						
 					</div>
 				</div>
 				<Alert
