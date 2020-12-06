@@ -9,7 +9,7 @@ class Evaluation extends React.Component {
                         <div className={styles.floatQuarter}>
                             {this.props.evaluation.quarter}
                         </div>
-                        <div className={styles.floatUnit}>{this.props.evaluation.unit}</div>
+                        <div className={styles.floatUnit}>{this.props.evaluation.section}</div>
                     </div>
                     <div className={styles.item}>
                         <li className={styles.instructor}> Instructor: {this.props.evaluation.instructor}</li>
