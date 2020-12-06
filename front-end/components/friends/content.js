@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap'
 
 // Styles
 import styles from '../../styles/Friends.module.css'
+import FriendCalendar from '../planCalendar/friendCalendar'
 
 class Content extends React.Component {
 
@@ -84,18 +85,24 @@ class Content extends React.Component {
 			child = <div className={styles.profileCard}>
 				<h2 className="mt-3 ml-3">{profile.user_name}</h2>
 				<div className={styles.profileCardContent}>
-					<h4>Name</h4>
-					<div>{profile.first_name} {profile.last_name}</div>
-					<br/>
-					<h4>Email</h4>
-					<div>{profile.email}</div>
-					<br/>
-					<h4>Major</h4>
-					<div>{profile.major}</div>
-					<br/>
-					<h4>Minor</h4>
-					<div>{profile.minor}</div>
-					<br/>
+					<div className={styles.horizontalDisplay}>
+						<div>
+							<h4>Name</h4>
+							<div>{profile.first_name} {profile.last_name}</div>
+							<br/>
+							<h4>Email</h4>
+							<div>{profile.email}</div>
+							<br/>
+							<h4>Major</h4>
+							<div>{profile.major}</div>
+							<br/>
+							<h4>Minor</h4>
+							<div>{profile.minor}</div>
+							<br/>
+						</div>
+						{/* enableLoading ={this.props.enableLoading} disableLoading ={this.props.disableLoading}  */}
+						<FriendCalendar {...this.props.pageProps} user_id={this.props.data['currentProfile'].id} />
+					</div>
 
 					<Button
 						size="sm"
