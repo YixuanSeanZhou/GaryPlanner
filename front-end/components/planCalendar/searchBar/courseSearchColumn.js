@@ -15,21 +15,23 @@ export default class CourseSearchBar extends React.Component {
         return (
             <div className={styles.searchContainer}>
                 <SearchBar handleSearch={this.props.handleSearch} />
-                <Droppable droppableId={this.props.quarter.id}>
-                    {// For droppable to work, its contents must be a function that returns a component
-                    provided => (
-                        <div 
-                            ref={provided.innerRef}
-                            {...provided.droppableProps}
-                            className={styles.courseList}
-                        >
-                            {this.props.courses.map((course, index) => (
-                                <Course key={course.id} course={course} index={index} updateLocked={this.props.updateLocked} taken={false} />
-                            ))}
-                            {provided.placeholder}
-                        </div>
-                    )}
-                </Droppable>
+                <div className={styles.searchDrop}>
+                    <Droppable droppableId={this.props.quarter.id}>
+                        {// For droppable to work, its contents must be a function that returns a component
+                        provided => (
+                            <div 
+                                ref={provided.innerRef}
+                                {...provided.droppableProps}
+                                className={styles.searchCourseList}
+                            >
+                                {this.props.courses.map((course, index) => (
+                                    <Course key={course.id} course={course} index={index} updateLocked={this.props.updateLocked} taken={false} />
+                                ))}
+                                {provided.placeholder}
+                            </div>
+                        )}
+                    </Droppable>
+                </div>
             </div>
         );
     }
