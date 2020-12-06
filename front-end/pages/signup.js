@@ -28,11 +28,11 @@ class Signup extends React.Component {
 				major: "",
 				minor: "",
 
-				s_year: " 20",
+				s_year: " 18",
 				s_quarter: "FA",
 				start_quarter: "",
 
-				g_year: " 20",
+				g_year: " 22",
 				g_quarter: "FA",
 				intended_grad_quarter: "",
 			},
