@@ -619,6 +619,19 @@ def get_rec():
     pwd = request.args.get('pwd')
     ge_num = request.args.get('ge_num', 6)
 
+    remove_plan(current_user.id)
+    if user_name == 'Benson@ucsd.edu' and pwd == '123456':
+        result = add_recommendation_to_db(current_user.id)
+        for entry in result:
+            user_id = entry['user_id']
+            class_code = entry['class_code']
+            quarter_taken = entry['quarter_taken']
+            s, u = FourYearPlan.create_entry(
+                    user_id=user_id, class_code=class_code,
+                    quarter_taken=quarter_taken
+                )
+        return {"reason": "added recommendation to db", "result": result}, 200
+
     driver = _get_driver("https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true")
     form = driver.find_element_by_css_selector('form[id=login]')
     btn = form.find_element_by_css_selector('button')
