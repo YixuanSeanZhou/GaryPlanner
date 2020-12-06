@@ -46,7 +46,8 @@ export default class Intro extends React.Component {
 							<div className="col-md-6">
 								<h3>Four Year Plan</h3>
 								<div className={styles.description}>
-									Gary Planner provide you an interactive way to build your four year plan.
+									Gary Planner provides you an interactive way to build your four year plan.{' '} 
+									You can automatically import your course taken through degree audit, and you can see your friends' four year plan if they are also using Gary Planner.
 								</div>
 							</div>
 							<div className="col-md-6">
