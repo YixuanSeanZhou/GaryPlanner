@@ -13,6 +13,7 @@ def generate_benson_report():
     with open ('benson_da.json', 'r') as file:
         benson_info = json.load(file)
     taken, needed, numge = gnc(benson_info)
+    numge = 6
     taken_courses = taken.copy()
     class_dict = dict()
     load_catalog("/usr/src/app/src/utils/catalog_process/cse.json", class_dict)

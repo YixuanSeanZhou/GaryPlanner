@@ -152,7 +152,17 @@ def add_recommendation_to_db(user_id:int, data:dict = None, ge_num: int = 0, tak
         print()
         print('----------------')
     elif data is None:
+        print('----------------')
+        print()
+        print('THIS IS THAT')
+        print()
+        print('----------------')
         plan = get_recommendation()
+        print('----------------')
+        print()
+        print('THIS IS THAT')
+        print()
+        print('----------------')
     else:
         plan = data
     entries = []
@@ -619,8 +629,8 @@ def get_rec():
     pwd = request.args.get('pwd')
     ge_num = request.args.get('ge_num', 6)
 
-    remove_plan(current_user.id)
-    if user_name == 'Benson@ucsd.edu' and pwd == '123456':
+    # emove_plan(current_user.id)
+    if user_name == 'Benson' and pwd == '123456':
         result = add_recommendation_to_db(current_user.id)
         for entry in result:
             user_id = entry['user_id']
