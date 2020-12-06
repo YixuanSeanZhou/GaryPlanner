@@ -29,7 +29,7 @@ class Plan extends React.Component {
                     <title>Plan</title>
                 </Head>
     
-                <GaryNavbar>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile} toHome>
                     <Navbar.Text>
                        Four Year Plan 
                     </Navbar.Text>

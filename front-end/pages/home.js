@@ -41,7 +41,7 @@ export default class Home extends React.Component {
 					<title>Home</title>
 				</Head>
 
-				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile} toHome>
 					<Navbar.Text>Home</Navbar.Text>
 				</GaryNavbar>
 
