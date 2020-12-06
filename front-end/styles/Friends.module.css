@@ -74,6 +74,15 @@
     padding-right: 20px;
 }
 
+.propertyContainerCol { /* Used in home.js */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
 .propertyPair {
     border-right-width: 10px;
     border-color: black;

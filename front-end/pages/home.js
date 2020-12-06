@@ -11,6 +11,7 @@ import Request from '../components/requestPlan'
 // Style sheets
 import styles from '../styles/HomePage.module.css'
 import authStyles from '../styles/Auth.module.css'
+import friendStyles from '../styles/Friends.module.css'
 
 export default class Home extends React.Component {
 	constructor(props) {
@@ -64,20 +65,40 @@ export default class Home extends React.Component {
 						<Row>
 							<Col className={styles.columns}>
 								<div className={styles.profile}>
-									<h3 className="mb-4">
-										{userProfile.first_name} {userProfile.last_name}
-									</h3>
-									<div>
-										User Name: {userProfile.user_name}
-									</div>
-									<div>Major: {userProfile.major}</div>
-									<div>Minor: {userProfile.minor}</div>
-									<div>
-										College: {userProfile.college}
-									</div>
-									<div>Email: {userProfile.email}</div>
-									<div>
-										Graduation: {userProfile.intended_grad_quarter}
+									<div className={styles.propertyContainerCol}>
+										<h3 className={styles.propertyPair}>
+											{userProfile.first_name} {userProfile.last_name}
+										</h3>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>User Name</div>
+											<div className={styles.propertyValue}>{userProfile.user_name}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Email</div>
+											<div className={styles.propertyValue}>{userProfile.email}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>College</div>
+											<div className={styles.propertyValue}>{userProfile.college}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Major</div>
+											<div className={styles.propertyValue}>{userProfile.major}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Minor</div>
+											<div className={styles.propertyValue}>{userProfile.minor}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Graduation</div>
+											<div className={styles.propertyValue}>{userProfile.intended_grad_quarter}</div>
+										</div>
 									</div>
 								</div>
 							</Col>
