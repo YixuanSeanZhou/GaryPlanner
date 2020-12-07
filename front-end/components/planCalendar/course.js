@@ -40,7 +40,7 @@ export default class Course extends React.Component{
                             ref={provided.innerRef}
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
-                            className={styles.takenContainer} 
+                            className={this.props.friendsPlan ? styles.courseContainer : styles.takenContainer} 
                         >
                             {this.props.course.content}
                         </div>

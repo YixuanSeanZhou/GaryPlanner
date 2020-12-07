@@ -477,7 +477,14 @@ class PlanCalendar extends React.Component {
                                         taken = false;
                                     }
 
-                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={this.updateLocked.bind(this)} taken={taken} />;
+                                    return <Quarter 
+                                                key ={quarter.id} 
+                                                quarter={quarter} 
+                                                courses={courses} 
+                                                updateLocked={this.updateLocked.bind(this)} 
+                                                taken={taken} 
+                                                friendsCourse={false}
+                                            />;
                                 })}
                             </div>
                         </div>

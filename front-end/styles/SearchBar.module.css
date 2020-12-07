@@ -27,3 +27,8 @@
 .input {
     display: inline-block;
 }
+
+.searchTitle {
+    padding: 8px;
+    padding-bottom: 2px;
+}
