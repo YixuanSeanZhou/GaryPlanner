@@ -5,12 +5,13 @@ import Link from 'next/link'
 
 // Components
 import { ParticleEffect, GaryNavbar } from '../components/commonUI';
-import { Navbar, Jumbotron, Button, Modal, Card } from 'react-bootstrap'
+import { Navbar, Jumbotron, Button, Modal, Card, Container, Row, Col } from 'react-bootstrap'
 import Request from '../components/requestPlan'
 
 // Style sheets
 import styles from '../styles/HomePage.module.css'
 import authStyles from '../styles/Auth.module.css'
+import friendStyles from '../styles/Friends.module.css'
 
 export default class Home extends React.Component {
 	constructor(props) {
@@ -53,80 +54,96 @@ export default class Home extends React.Component {
 					<title>Home</title>
 				</Head>
 
-				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
+				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile} toHome>
 					<Navbar.Text>Home</Navbar.Text>
 				</GaryNavbar>
 
 				<ParticleEffect className={authStyles.particles} />
 
-				<div className={authStyles.outer}>
-					<div className={authStyles.rowContent}>
-						<div className="row">
-							<div className="offset-1 col-4 mt-5">
-								<Card>
-									<Card.Body>
-										<h3 className="mb-4">
+				<div className={styles.outer}>
+					<Container className={styles.content} fluid>
+						<Row>
+							<Col className={styles.columns}>
+								<div className={styles.profile}>
+									<div className={styles.propertyContainerCol}>
+										<h3 className={styles.propertyPair}>
 											{userProfile.first_name} {userProfile.last_name}
 										</h3>
-										<Card.Text>
-											User Name: {userProfile.user_name}
-										</Card.Text>
-										<Card.Text>Major: {userProfile.major}</Card.Text>
-										<Card.Text>Minor: {userProfile.minor}</Card.Text>
-										<Card.Text>
-											College: {userProfile.college}
-										</Card.Text>
-										<Card.Text>Email: {userProfile.email}</Card.Text>
-										<Card.Text>
-											Graduation: {userProfile.intended_grad_quarter}
-										</Card.Text>
-									</Card.Body>
-								</Card>
-							</div>
-							<div className="offset-2 col-4 mt-5">
-								<div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>User Name</div>
+											<div className={styles.propertyValue}>{userProfile.user_name}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Email</div>
+											<div className={styles.propertyValue}>{userProfile.email}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>College</div>
+											<div className={styles.propertyValue}>{userProfile.college}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Major</div>
+											<div className={styles.propertyValue}>{userProfile.major}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Minor</div>
+											<div className={styles.propertyValue}>{userProfile.minor}</div>
+										</div>
+
+										<div className={styles.propertyPair}>
+											<div className={styles.propertyName}>Graduation</div>
+											<div className={styles.propertyValue}>{userProfile.intended_grad_quarter}</div>
+										</div>
+									</div>
+								</div>
+							</Col>
+
+							<Col className={styles.columns}>
+								<Row>
+									{/* Button one */}
 									<Button
-										size="lg"
-										variant="info"
 										style={{ backgroundColor: '#88d8b0' }}
 										block
-										id="home-btn"
+										className={`${styles.button} ${styles.firstButton}`}
 										onClick={() =>
 											this.setState({ modalShow: true })
 										}
 									>
 										<span>New Four Year Plan</span>
 									</Button>
-								</div>
+								</Row>
 
-								<div style={{ marginTop: '130px' }}>
+								<Row>
 									<Link href="/fourYearPlan">
 										<Button
-											size="lg"
-											variant="warning"
 											style={{ backgroundColor: '#ffcc5c' }}
+											className={styles.button}
 											block
-											id="home-btn">
+										>
 											<span>View Four Year Plan</span>
 										</Button>
 									</Link>
-								</div>
+								</Row>
 
-								<div style={{ marginTop: '130px' }}>
+								<Row>
 									<Link href="/friends">
 										<Button
-											size="lg"
-											variant="danger"
 											style={{ backgroundColor: '#ff6f69' }}
+											className={styles.button}
 											block
-											id="home-btn">
+										>
 											<span>Checkout Friends' Schedules</span>
 										</Button>
 									</Link>
-								</div>
-							</div>
-						</div>
-					</div>
+								</Row>
+							</Col>
+						</Row>
+					</Container>
 				</div>
 
 				<Request
