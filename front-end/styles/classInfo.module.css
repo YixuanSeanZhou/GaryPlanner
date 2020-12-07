@@ -32,112 +32,123 @@
   flex-shrink: 0;
   /* height: 420px;  */
   height: 460px;
-  border: 1px solid gray;
-  margin: 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  padding: 10px;
   border-radius: 15px;
-  background-color: rgb(148, 170, 221);
-  box-shadow: 2px 2px 2px rgb(88, 84, 84);
+  background-color: rgb(157, 184, 247);
+
   display: flex;
   flex-direction: column;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  
+
+  font-size: 18px;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+.itemRow {
+  height: 40px;
+  margin: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.itemName {
+  color: #333;
+  margin-left: 5px;
+}
+
+.itemValue {
+  margin-left: 5px;
+  margin-top: 8px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.imgDiv {
+  flex: 1;
+}
+.infoDiv {
+  flex: 1;
 }
 
 .instructor{
   list-style-type:none;
   list-style-image: url("../public/images/icons8-school-director-64.png");
-  text-align:left;
-  font-size: 15px;
 }
 
 .grade1{
   list-style-type:none;
   list-style-image: url("../public/images/icons8-gpa-calculator-64.png");
-  text-align:left;
-  font-size: 15px;
 }
 .grade2{
   list-style-type:none;
   list-style-image: url("../public/images/icons8-gpa-calculator2-64.png");
-  text-align:left;
-  font-size: 15px;
-}
-
-.rec1{
-  list-style-type:none;
-  list-style-image: url("../public/images/icons8-facebook-like-64.png");
-  text-align:left;
-  font-size: 15px;
-}
-
-.rec2{
-  list-style-type:none;
-  list-style-image: url("../public/images/icons8-facebook-like2-64.png");
-  text-align:left;
-  font-size: 15px;
 }
 
 .hour{
   list-style-type:none;
   list-style-image: url("../public/images/icons8-clock-64.png");
-  text-align:left;
-  font-size: 15px;
+}
+
+
+.rec1{
+  list-style-type:none;
+  list-style-image: url("../public/images/icons8-facebook-like-64.png");
+}
+
+.rec2{
+  list-style-type:none;
+  list-style-image: url("../public/images/icons8-facebook-like2-64.png");
+}
+
+
+
+.floatContainer{
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
 }
 
 .floatQuarter{
-  width: 60%;
-  height: 60%;
-  float: left;
-  margin-left: auto;
-  margin-left: 20px;
+  padding: 10px;
   text-align: center;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  border-radius: 10px;
   color: white;
   background-color: rgb(53,68,104);
-  border: 1px solid gray;
-  box-shadow: 5px 5px 5px rgb(88, 84, 84);
+  flex: 3;
+  margin-right: 15px;
 }
 
-.floatContainer{
-  width: 400px;
-  margin-top: 20px;
-  margin-bottom: -20px;
-  height: 15%;
-}
-
-  .floatUnit{
-  width: 20%;
-  height: 60%;
-  float: right;
-  margin-left: auto;
-  /* margin-left: 60px; */
+.floatUnit{
+  padding: 10px;
   text-align: center;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+  border-radius: 10px;
   color: white;
   background-color: rgb(53,68,104);
-  border: 1px solid gray;
-  box-shadow: 5px 5px 5px rgb(88, 84, 84);
+  flex: 1
 } 
 
 .table{
   align-content: center;
   width: 440px;
-  height: 575px;
+  height: auto;
   margin: 10px;
   border-radius: 15px;
   background-color:rgb(82, 122, 214);
   box-shadow: 5px 5px 5px rgb(0, 0, 0);
-  font-family: "Comic Sans MS", cursive, sans-serif;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .des{
@@ -160,7 +171,7 @@
   width: 70%;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 0;
+  padding-bottom: 40px;
 
   position: sticky;
 
@@ -215,7 +226,7 @@
 /* Scroll bar */
 /* width */
 .wrapper::-webkit-scrollbar {
-  width: 10px;
+  width: 30px;
 }
 
 /* Track */
