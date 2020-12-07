@@ -19,15 +19,19 @@ class FriendCalendar extends React.Component {
         
 		this.state = {
             ...placeholderData,
+            currentId: undefined,
         }
 	}
 
-    componentDidMount () {
+    componentDidUpdate() {
 		// First, enable loading animation
 		// this.props.enableLoading("Please wait");   fix later
 
         // Options for the fetch request
         const user_id = this.props.user_id;
+        if (user_id == this.state.currentId) {
+            return;
+        }
 		const requestUrl = 'http://localhost:2333/api/four_year_plan/get_formatted_plan_by_user?user_id=' + user_id;
 		const options = {
 			method: 'GET',
@@ -39,6 +43,7 @@ class FriendCalendar extends React.Component {
 
 		fetch(requestUrl, options)
 		.then(response => {
+            this.setState({currentId: this.props.user_id});
             console.log(response);
             return response.json();
 		}).then(data => {
@@ -65,7 +70,8 @@ class FriendCalendar extends React.Component {
             
             const newState = {
                 ...this.state,
-                ...placeholderData
+                ...placeholderData,
+                currentId: this.props.user_id
             };
 
             this.setState(newState);
