@@ -1,4 +1,54 @@
-.main {
-    margin: auto;
-    width: 30%;
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-color:rgb(53,68,104);
+
+    min-height: 100vh;
+    
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
+
+.main {
+    top: 50px;
+    margin: auto;
+    position: relative;
+    align-self: center;
+    width: 550px;
+    position: relative;
+    margin-bottom: 200px;
+    padding: 40px 50px 50px 50px;
+    position: relative;
+
+    height: 100%;
+
+    border-style: solid;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: #536c94;
+    border-width: 4px;
+    box-shadow: 15px 15px 45px #041125;
+}
+
+.edit {
+    align-self: center;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.save {
+    align-self: center;
+    margin-right: 45px;
+    margin-left: auto;
+}						
+
+.label {
+    color: #6e6e70;
+    font-size: 18px;
+}
+

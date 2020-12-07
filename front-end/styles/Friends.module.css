@@ -172,3 +172,6 @@
     border-top: solid #061D3D;
 }
 
+.horizontalDisplay{
+    display: flex;
+}

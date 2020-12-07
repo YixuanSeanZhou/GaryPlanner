@@ -1,0 +1,19 @@
+
+/* Request Recommendation Styles */
+.important {
+    font-size: 30px;
+    font-weight: 500;
+    color: red;
+
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.helpText {
+    margin: 0px;
+    color: rgb(61, 61, 61);
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 300;
+}
