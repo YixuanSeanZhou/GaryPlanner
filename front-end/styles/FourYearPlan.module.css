@@ -162,11 +162,22 @@
 }
 
 .dragHandle {
-    font-size: .5rem;
-    padding: 5px;
+    font-size: 30px;
+    cursor: grab;
+}
 
+.icons {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #636363;
-    border-radius: 5px;
-    margin-left: 20px;
+}
+
+.info {
+    cursor: pointer;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.info:hover {
+    opacity: 0.8;
 }
