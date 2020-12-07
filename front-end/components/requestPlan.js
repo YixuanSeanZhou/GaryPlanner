@@ -110,12 +110,12 @@ class Request extends React.Component {
 						<h5>A few other things you need to know.</h5>
 						<ul>
 							<li>
-								Make sure you have ran the{" "} 
+								Make sure you have run your{" "} 
 								<a target="_blank" href="https://students.ucsd.edu/academics/advising/degrees-diplomas/degree-audits.html">degree audit</a> 
 								{" "}in your MyTritonlink.
 							</li>
-							<li>If you have a four-year-plan saved in our system, <b>this will discard the four-year-plan you created</b>.</li>
-							<li>This result may not be perfectly correct. Some classes you have taken may not be listed. Do not rely on the result.</li>
+							<li>If you have a four-year-plan saved in our system, <b>this will discard the four-year-plan you've already created</b>.</li>
+							<li>This result may not be perfectly correct. Some classes you've taken may not be listed. Do not completely rely on the result.</li>
 						</ul>
 					</div>
 					<h3>UCSD Credentials</h3>

@@ -291,14 +291,14 @@
   "title": "Components and Design Techniques for Digital Systems",
   "unit": "4",
   "description": "Design of Boolean logic and finite state machines; two-level, multilevel combinational logic design, combinational modules and modular networks, Mealy and Moore machines, analysis and synthesis of canonical forms, sequential modules.",
-  "prerequisite": "CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140L must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits"
+  "prerequisite": "(CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140L must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits"
  },
  {
   "code": "CSE 140L",
   "title": "Digital Systems Laboratory",
   "unit": "2",
   "description": "Implementation with computer-aided design tools for combinational logic minimization and state machine synthesis. Hardware construction of a small digital system.",
-  "prerequisite": "CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140 must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
+  "prerequisite": "(CSE 20 or MATH 15A or MATH 109) and CSE 30; CSE 140 must be taken concurrently; restricted to CS25, CS26, CS27, and EC26 majors. All other students will be allowed as space permits."
  },
  {
   "code": "CSE 141",
