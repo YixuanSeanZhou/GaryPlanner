@@ -50,7 +50,7 @@ class FourYearPlan(db.Model):
             self.quarter_taken = quarter_taken
         if grade:
             self.grade = grade
-        if locked:
+        if not locked == None:
             self.locked = locked
         self.save()
         return True, self
