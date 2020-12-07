@@ -630,7 +630,7 @@ def get_rec():
     ge_num = request.args.get('ge_num', 6)
 
     # emove_plan(current_user.id)
-    if user_name == 'Benson' and pwd == '123456':
+    if (user_name == 'Benson' or user_name == 'benson') and pwd == '12345678':
         result = add_recommendation_to_db(current_user.id)
         for entry in result:
             user_id = entry['user_id']
