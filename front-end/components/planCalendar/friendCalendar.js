@@ -21,17 +21,25 @@ class FriendCalendar extends React.Component {
             ...placeholderData,
             currentId: undefined,
         }
-	}
+    }
+    
+    componentDidMount() {
+        this.updateData();
+    }
 
     componentDidUpdate() {
+        this.updateData();
+    }
+
+    updateData() {
 		// First, enable loading animation
-		// this.props.enableLoading("Please wait");   fix later
 
         // Options for the fetch request
         const user_id = this.props.user_id;
         if (user_id == this.state.currentId) {
             return;
         }
+        console.log("Loding id:", user_id);
 		const requestUrl = 'http://localhost:2333/api/four_year_plan/get_formatted_plan_by_user?user_id=' + user_id;
 		const options = {
 			method: 'GET',
