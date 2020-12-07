@@ -45,6 +45,18 @@ export default class Course extends React.Component{
                             className={this.props.friendsPlan ? styles.courseContainer : styles.takenContainer} 
                         >
                             {this.props.course.content}
+                            <div className={styles.info}>
+                                <Link 
+                                    href={{ 
+                                        pathname: '/classInfo', 
+                                        query: { class_name: this.props.course.content } 
+                                    }}
+                                >
+                                        {/* <a>View Info</a> */}
+                                        <MdInfoOutline />
+                                </Link>
+
+                            </div>
                         </div>
                     )}
                 </Draggable>
