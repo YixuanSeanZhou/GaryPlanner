@@ -140,14 +140,7 @@ class FriendCalendar extends React.Component {
                                 {year.map((quarterId) => {
                                     const quarter = this.state.quarters[quarterId];
                                     const courses = quarter.courseIds.map(courseId => this.state.courses[courseId]);
-                                    return <Quarter 
-                                                key ={quarter.id} 
-                                                quarter={quarter} 
-                                                courses={courses} 
-                                                updateLocked={null} 
-                                                taken={taken} 
-                                                friendsPlan={true}    
-                                            />;
+                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={null} taken={taken} />;
                                 })}
                             </div>
                         </div>

@@ -41,10 +41,8 @@ class GaryNavbar extends React.Component {
 
     render() {
         let navBarChild = undefined;
-        let homeAddress = "/intro";
 
         if (this.props.userProfile !== undefined) {
-            homeAddress = "/home"
             let profile = this.props.userProfile
             navBarChild = (
 				<>
@@ -75,7 +73,7 @@ class GaryNavbar extends React.Component {
 
         return (
             <Navbar bg="#061d3d" variant='dark' sticky="top" className="navbar" style={{backgroundColor: "#061d3d"}}>
-                <Link href={homeAddress} >
+                <Link href='/' >
                     <Navbar.Brand className='link'>
                         <img src="/logo/PCLogo-Color.svg" alt="Logo of gary planner" className="navbarLogo" />
                         Gary Planner

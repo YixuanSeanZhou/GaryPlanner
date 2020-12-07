@@ -40,15 +40,16 @@ export default class Intro extends React.Component {
 				</div>
 
 				<div className={styles.content}>
-					<h1 className="text-center mt-5">We are here for your...</h1>
+					<h1 className="text-center mt-5">Create your</h1>
 					<div className="container mt-5">
 						<div className="row">
 							<div className="col-md-6">
 								<h3>Four Year Plan</h3>
-								<div className={styles.description}>
-									Gary Planner provides you an interactive way to build your four year plan.{' '} 
-									You can automatically import your course taken through degree audit, and you can see your friends' four year plan if they are also using Gary Planner.
-								</div>
+								<p>
+									Generates your four year plan automatically <br />
+									Allows you to graduate on time <br />
+									Customizes your plan easily <br />
+								</p>
 							</div>
 							<div className="col-md-6">
 								<img
@@ -60,7 +61,7 @@ export default class Intro extends React.Component {
 							</div>
 						</div>
 
-						<div className="row mb-5" style={{ marginTop: '85px' }}>
+						<div className="row" style={{ marginTop: '85px' }}>
 							<div className="col-md-6">
 								<img
 									src="/images/schedule.png"
@@ -70,7 +71,7 @@ export default class Intro extends React.Component {
 								/>
 							</div>
 							<div className="col-md-6">
-								<h3>Quarter Schedule (Coming Soon)</h3>
+								<h3>Quarter Schedule</h3>
 								<p>
 									Clear view of your weekly schedule <br />
 									Comparsion between different classes <br />

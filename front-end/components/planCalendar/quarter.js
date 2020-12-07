@@ -11,15 +11,8 @@ export default class Quarter extends React.Component {
     }
 
     render() {
-        var divStyle;
-        if ( this.props.taken && !(this.props.friendsPlan) ) {
-            divStyle = styles.takenQuarterContainer;
-        } else {
-            divStyle = styles.quarterContainer;
-        }
-
         return (
-            <div className={divStyle}>
+            <div className={this.props.taken ? styles.takenQuarterContainer : styles.quarterContainer}>
                 <h3>{this.props.quarter.title}</h3>
                 <Droppable 
                     droppableId={this.props.quarter.id}
@@ -33,15 +26,7 @@ export default class Quarter extends React.Component {
                             className={styles.courseList}
                         >
                             {this.props.courses.map((course, index) => (
-                                <Course 
-                                    key={course.id} 
-                                    course={course} 
-                                    index={index} 
-                                    locked={course.locked} 
-                                    updateLocked={this.props.updateLocked} 
-                                    taken={this.props.taken}
-                                    friendsPlan={this.props.friendsPlan}
-                                />
+                                <Course key={course.id} course={course} index={index} locked={course.locked} updateLocked={this.props.updateLocked} taken={this.props.taken}/>
                             ))}
                             {provided.placeholder}
                         </div>

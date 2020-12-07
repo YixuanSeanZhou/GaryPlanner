@@ -7,7 +7,6 @@ import { Button } from 'react-bootstrap'
 
 // Styles
 import styles from '../../styles/Friends.module.css'
-import friendCalendar from '../planCalendar/friendCalendar';
 import FriendCalendar from '../planCalendar/friendCalendar'
 
 class Content extends React.Component {
@@ -84,53 +83,35 @@ class Content extends React.Component {
 			// Display the profile of the current selected friend
 			const profile = data.currentProfile;
 			child = <div className={styles.profileCard}>
-				<div className={styles.cardTitle}>
-					<h2 className="mt-3 ml-3">Friend's Profile</h2>
+				<h2 className="mt-3 ml-3">{profile.user_name}</h2>
+				<div className={styles.profileCardContent}>
+					<div className={styles.horizontalDisplay}>
+						<div>
+							<h4>Name</h4>
+							<div>{profile.first_name} {profile.last_name}</div>
+							<br/>
+							<h4>Email</h4>
+							<div>{profile.email}</div>
+							<br/>
+							<h4>Major</h4>
+							<div>{profile.major}</div>
+							<br/>
+							<h4>Minor</h4>
+							<div>{profile.minor}</div>
+							<br/>
+						</div>
+						{/* enableLoading ={this.props.enableLoading} disableLoading ={this.props.disableLoading}  */}
+						<FriendCalendar {...this.props.pageProps} user_id={this.props.data['currentProfile'].id} />
+					</div>
+
 					<Button
 						size="sm"
 						variant="danger"
-						className={styles.requestButtons}
+						className="mt-2"
 						onClick={this.handleUnfriend.bind(this)}
 					>
 						Unfriend
 					</Button>
-
-				</div>
-				<div className={styles.profileCardContent}>
-					<div className={styles.verticalDisplay}>
-						<div className={styles.propertyContainer}>
-							<div className={styles.propertyPair}>
-								<div className={styles.propertyName}>Name</div>
-								<div className={styles.propertyValue}>{profile.first_name} {profile.last_name}</div>
-							</div>
-							<div className={styles.propertyPair}>
-								<div className={styles.propertyName}>User Name</div>
-								<div className={styles.propertyValue}>{profile.user_name}</div>
-							</div>
-							<div className={styles.propertyPair}>
-								<div className={styles.propertyName}>Email</div>
-								<div className={styles.propertyValue}>{profile.email}</div>
-							</div>
-							
-							<div className={styles.propertyPair}>
-								<div className={styles.propertyName}>Major</div>
-								<div className={styles.propertyValue}>{profile.major}</div>
-							</div>
-							
-							<div className={styles.propertyPair}>
-								<div className={styles.propertyName}>Minor</div>
-								<div className={styles.propertyValue}>{profile.minor}</div>
-							</div>
-
-						</div>
-						{/* enableLoading ={this.props.enableLoading} disableLoading ={this.props.disableLoading}  */}
-						<FriendCalendar 
-							className={styles.riendCalendar}
-							{...this.props.pageProps} 
-							user_id={this.props.data['currentProfile'].id} 
-						/>
-					</div>
-
 				</div>
 
 			</div>
@@ -161,20 +142,14 @@ class Content extends React.Component {
 					</div>
 				</div>
 				<div className={styles.profileCardContent}>
-					<div className={styles.propertyContainer}>
-						<div className={styles.propertyPair}>
-							<div className={styles.propertyName}>Name</div>
-							<div className={styles.propertyValue}>{profile.first_name} {profile.last_name}</div>
-						</div>
-						<div className={styles.propertyPair}>
-							<div className={styles.propertyName}>User Name</div>
-							<div className={styles.propertyValue}>{profile.user_name}</div>
-						</div>
-						<div className={styles.propertyPair}>
-							<div className={styles.propertyName}>Email</div>
-							<div className={styles.propertyValue}>{profile.email}</div>
-						</div>
-					</div>
+					<h4>Username</h4>
+					<div>{profile.user_name}</div>
+					<br/>
+					<h4>Name</h4>
+					<div>{profile.first_name} {profile.last_name}</div>
+					<br/>
+					<h4>Email</h4>
+					<div>{profile.email}</div>
 				</div>
 			</div>
 		} else if (data.showFoundUser) {
@@ -201,20 +176,14 @@ class Content extends React.Component {
 					</div>
 				</div>
 				<div className={styles.profileCardContent}>
-					<div className={styles.propertyContainer}>
-						<div className={styles.propertyPair}>
-							<div className={styles.propertyName}>Name</div>
-							<div className={styles.propertyValue}>{profile.first_name} {profile.last_name}</div>
-						</div>
-						<div className={styles.propertyPair}>
-							<div className={styles.propertyName}>User Name</div>
-							<div className={styles.propertyValue}>{profile.user_name}</div>
-						</div>
-						<div className={styles.propertyPair}>
-							<div className={styles.propertyName}>Email</div>
-							<div className={styles.propertyValue}>{profile.email}</div>
-						</div>
-					</div>
+					<h4>Username</h4>
+					<div>{profile.user_name}</div>
+					<br/>
+					<h4>Name</h4>
+					<div>{profile.first_name} {profile.last_name}</div>
+					<br/>
+					<h4>Email</h4>
+					<div>{profile.email}</div>
 				</div>
 			</div>
 		} else {

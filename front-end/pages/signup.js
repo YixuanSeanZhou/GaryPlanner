@@ -28,11 +28,11 @@ class Signup extends React.Component {
 				major: "",
 				minor: "",
 
-				s_year: " 18",
+				s_year: " 20",
 				s_quarter: "FA",
 				start_quarter: "",
 
-				g_year: " 22",
+				g_year: " 20",
 				g_quarter: "FA",
 				intended_grad_quarter: "",
 			},
@@ -106,7 +106,7 @@ class Signup extends React.Component {
 			} else if (data.reason === "user_name already exist") {
 				this.setState({
 					showingAlert: true,
-					alarmText: "This username has been registered. ",
+					alarmText: "This user name has been registered. ",
 					alarmSubText: "Please choose another one, or login if you have already registered."
 				});
 
@@ -156,19 +156,19 @@ class Signup extends React.Component {
 			});
 			return false;
 		}
-		if (!/^[a-zA-Z0-9_]+$/.test(user_name)) {
-			this.setState({
-				showingAlert: true,
-				alarmText: "Please enter a valid Username!" ,
-				alarmSubText: "Username can only contain letters, numbers, and _.",
-			});
-			return false;
-		}
 		if (email === "") {
 			this.setState({
 				showingAlert: true,
 				alarmText: "Email can't be blank!",
 				alarmSubText: ""
+			});
+			return false;
+		}
+		if (!/^[a-zA-Z0-9_]/.test(user_name)) {
+			this.setState({
+				showingAlert: true,
+				alarmText: "Please enter a valid Username!" ,
+				alarmSubText: "Username can only contain letters, numbers, and _.",
 			});
 			return false;
 		}
@@ -193,7 +193,7 @@ class Signup extends React.Component {
 		if (pwd !== pwdCfm) {
 			this.setState({
 				showingAlert: true,
-				alarmText: "Passwords don't match",
+				alarmText: "Passwords Doesn't match",
 				alarmSubText: ""
 			});
 			return false;
@@ -276,7 +276,7 @@ class Signup extends React.Component {
 										value={this.state.formData.email}
 										onChange={this.handleChange}
 									/>
-									<Form.Text muted>
+									<Form.Text>
 										We will not send you any email.
 									</Form.Text>
 								</Form.Group>
@@ -292,7 +292,7 @@ class Signup extends React.Component {
 								</Form.Group>
 
 								<Form.Group controlId="pwdCfm">
-									<Form.Label>Confirm Password*</Form.Label>
+									<Form.Label>Confirm password*</Form.Label>
 									<Form.Control 
 										name="pwdCfm"
 										type="password" 
@@ -348,7 +348,7 @@ class Signup extends React.Component {
 											</Form.Control>
 										</Col>
 										<Col>
-											<Form.Label> Starting Quarter*</Form.Label>
+											<Form.Label>... and Quarter*</Form.Label>
 											<Form.Control 
 												as="select"
 												id="s_quarter"
@@ -362,8 +362,8 @@ class Signup extends React.Component {
 										</Col>
 
 									</Form.Row>
-									<Form.Text muted>
-										This is when you started your education at UCSD. You will not be able to change this later!!!
+									<Form.Text>
+										This is the quarter that you started UCSD. You will not be able to change this later.
 									</Form.Text>
 								</Form.Group>
 
@@ -371,7 +371,7 @@ class Signup extends React.Component {
 								<Form.Group>
 									<Form.Row>
 										<Col>
-											<Form.Label>Intended Graduation Year*</Form.Label>
+											<Form.Label>Indended Graduation Year*</Form.Label>
 											<Form.Control 
 												as="select"
 												id="g_year"
@@ -386,7 +386,7 @@ class Signup extends React.Component {
 											</Form.Control>
 										</Col>
 										<Col>
-											<Form.Label> Last Quarter*</Form.Label>
+											<Form.Label>... and Quarter*</Form.Label>
 											<Form.Control 
 												as="select"
 												id="g_quarter"
@@ -400,7 +400,7 @@ class Signup extends React.Component {
 										</Col>
 
 									</Form.Row>
-									<Form.Text muted>
+									<Form.Text>
 										You will not be able to change this later.
 									</Form.Text>
 								</Form.Group>

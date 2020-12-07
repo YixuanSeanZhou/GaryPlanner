@@ -5,9 +5,7 @@ import { withRouter } from 'next/router'
 // Components
 import { GaryNavbar, ParticleEffect } from '../components/commonUI'
 import { Alert, Form, Navbar, Row, Col } from 'react-bootstrap'
-
 import styles from '../styles/UserProfile.module.css'
-import authStyles from '../styles/Auth.module.css'
 
 class UserProfile extends React.Component {
 	constructor(props) {
@@ -81,10 +79,6 @@ class UserProfile extends React.Component {
 	}
 
 	handleClick = (e) => {
-		if (!this.validate()) {
-			return;
-		}
-
 		var formData = this.state.formData
 		console.log('POSTing this data to server:', formData)
 		// Options for the fetch request
@@ -128,37 +122,16 @@ class UserProfile extends React.Component {
 
 	validate() {
 		const {
+			user_name,
+			email,
 			first_name,
 			last_name,
+			intended_grad_quarter,
+			major,
+			minor,
 			college,
-		} = this.state.formData;
-
-		if (first_name === "") {
-			this.setState({
-				showingAlert: true,
-				alarmText: "First name can't be blank!",
-				alarmSubText: "Changes not saved."
-			});
-			return false;
-		}
-		if (last_name === "") {
-			this.setState({
-				showingAlert: true,
-				alarmText: "Last name can't be blank!",
-				alarmSubText: "Changes not saved."
-			});
-			return false;
-		}
-		if (college === "") {
-			this.setState({
-				showingAlert: true,
-				alarmText: "College can't be blank!",
-				alarmSubText: "Changes not saved."
-			});
-			return false;
-		}
-		return true;
-
+			start_quarter,
+		} = this.state.formData
 	}
 
 	render() {
@@ -181,13 +154,12 @@ class UserProfile extends React.Component {
 					<title>User Profile</title>
 				</Head>
 
-				<GaryNavbar
+				<div className={styles.bg}>
+					<GaryNavbar
 						userProfile={this.props.userProfile}
 						onLogout={this.props.clearUserProfile}>
 						<Navbar.Text>User Profile</Navbar.Text>
-				</GaryNavbar>
-
-				<div className={styles.bg}>
+					</GaryNavbar>
 
 					<div className={styles.main}>
 						<div>
@@ -198,7 +170,7 @@ class UserProfile extends React.Component {
 							<div className="form-row">
 								<div className="col">
 									<Form.Label className={styles.label}>
-										First Name*
+										First Name
 									</Form.Label>
 								</div>
 							</div>
@@ -210,6 +182,7 @@ class UserProfile extends React.Component {
 											id="first_name"
 											value={formData.first_name}
 											onChange={this.handleChange}
+											className="mr-3"
 										/>
 									</div>
 									<div className={styles.save}>
@@ -235,7 +208,7 @@ class UserProfile extends React.Component {
 											style={{ cursor: 'pointer' }}
 											src="/images/edit.png"
 											width="15"
-											height="auto"
+											height="autp"
 											onClick={() =>
 												this.setState({ FNEditable: false })
 											}
@@ -250,7 +223,7 @@ class UserProfile extends React.Component {
 							<div className="form-row">
 								<div className="col">
 									<Form.Label className={styles.label}>
-										Last Name*
+										Last Name
 									</Form.Label>
 								</div>
 							</div>
@@ -412,7 +385,7 @@ class UserProfile extends React.Component {
 							<div className="form-row">
 								<div className="col">
 									<Form.Label className={styles.label}>
-										College*
+										College
 									</Form.Label>
 								</div>
 							</div>
@@ -433,8 +406,8 @@ class UserProfile extends React.Component {
 											width="15"
 											height="15"
 											onClick={() => {
-												this.setState({ CEditable: true });
-												this.handleClick();
+												this.setState({ CEditable: true }),
+													this.handleClick()
 											}}
 										/>
 									</div>
@@ -460,19 +433,16 @@ class UserProfile extends React.Component {
 						<hr className="solid" />
 						<span className={styles.label}>Intended Graduate Quarter</span>
 						<p className="mt-2">{formData.intended_grad_quarter}</p>
-
-						<Alert
-							show={this.state.showingAlert}
-							onClick={() => this.setState({ showingAlert: false })}
-							variant="danger"
-							className={authStyles.myAlert}
-							dismissible>
-							{alarmBody}
-						</Alert>
-
-
 					</div>
 				</div>
+				<Alert
+					show={this.state.showingAlert}
+					onClick={() => this.setState({ showingAlert: false })}
+					variant="danger"
+					className={styles.myAlert}
+					dismissible>
+					{alarmBody}
+				</Alert>
 			</>
 		)
 	}

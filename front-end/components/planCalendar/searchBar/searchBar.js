@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Button, InputGroup } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 
 
 import styles from '../../../styles/SearchBar.module.css'
@@ -19,26 +19,24 @@ export class SearchBar extends React.Component {
 		this.setState({
 			search: e.target.value,
 		})
+		if (this.state.search.length < 2) {
+			return;
+		}
+		this.props.handleSearch(e.target.value);
 	}
 
 	render() {
 		return (
 			<div className={styles.bar}>
-				<h4 className={styles.searchTitle}>Search for a Class</h4>
-				<InputGroup>
+				<h3>Search Classes</h3>
+				<Form onSubmit={e => e.preventDefault()}>
 					<Form.Control
 						type="text"
 						placeholder="e.g. CSE 110"
 						value={this.state.search}
-						onChange={(e) => this.handleChange(e)}
+						onChange={this.handleChange}
 					/>
-
-					<InputGroup.Append>
-						<Button onClick={(e) => this.props.handleSearch(this.state.search)}>
-							Search
-						</Button>
-					</InputGroup.Append>
-				</InputGroup>
+				</Form>
 			</div>
 		)
 	}
