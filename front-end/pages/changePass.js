@@ -122,7 +122,7 @@ class ChangePass extends React.Component {
 		if (pwd !== pwdconfirm) {
 			this.setState({
 				showingAlert: true,
-				alarmText: "Passwords Doesn't match",
+				alarmText: "Passwords Don't match",
 				alarmSubText: ""
 			});
 			return false;
