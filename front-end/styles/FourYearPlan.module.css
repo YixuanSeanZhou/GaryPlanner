@@ -50,6 +50,10 @@
 
     padding-right: 20px;
     overflow: hidden;
+    
+    position: sticky;
+    position: -webkit-sticky;
+    top: 60px;
 
     width: 22vw;
     height: 90%;
@@ -76,6 +80,14 @@
     padding-top: 0;
 
     width: 70vw;
+}
+
+.friendCalendarContainer {
+    flex-grow: 1;
+    padding: 20px;
+    padding-top: 0;
+
+    width: 100%;
 }
 
 .yearContainer {
@@ -128,7 +140,8 @@
     padding-left: 12px;
     margin-bottom: 8px;
     font-size: 20px;
-    width: 20vw;
+    /* width: 20vw; */
+    width: auto;
 
     background-color: rgb(43, 64, 109);
     border-radius: 5px;
@@ -139,7 +152,24 @@
 
     color: white;
     box-shadow: 2px 2px 3px rgb(32, 47, 79);
+}
 
+.courseLockedContainer {
+    padding: 8px;
+    padding-left: 12px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    /* width: 20vw; */
+    width: auto;
+
+    background-color: rgb(34, 51, 89);
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: rgb(218, 218, 218);
 }
 
 .takenContainer {
@@ -147,7 +177,8 @@
     padding-left: 12px;
     margin-bottom: 8px;
     font-size: 22px;
-    width: 20vw;
+    /* width: 20vw; */
+    width: auto;
 
 
     background-color: #787878;
@@ -156,28 +187,51 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
-    box-shadow: 2px 2px 3px rgb(43, 49, 63);
 
+
+/* Icons on the Courses */
+.nameLink {
+    color:white;
+    font: 900;
+}
+
+.icons {
+    display: flex;
+    width: 6vw;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 20px;
 }
 
 .dragHandle {
     font-size: 30px;
     cursor: grab;
+    position: relative;
+    top: -2px;
 }
 
-.icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.dragHandle:active {
+    cursor: grabbing;
 }
 
 .info {
     cursor: pointer;
     font-size: 30px;
     vertical-align: middle;
+    font-size: 19px;
 }
 
 .info:hover {
+    opacity: 0.8;
+}
+
+.lock {
+    cursor: pointer;
+}
+
+.lock:hover {
     opacity: 0.8;
 }

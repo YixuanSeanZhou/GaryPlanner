@@ -130,7 +130,7 @@ class FriendCalendar extends React.Component {
 
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
-                <div className={styles.fourYearCalendarContainer}>
+                <div className={styles.friendCalendarContainer}>
                 {yearArray.map((yearId) => {
                     const year = yearList[yearId];
                     return (
