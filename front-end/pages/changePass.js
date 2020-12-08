@@ -69,15 +69,6 @@ class ChangePass extends React.Component {
 					alarmText: "Old password is wrong ",
 					alarmSubText: "Please enter correct password."
 				});
-
-			} else if (response.status == 403) {
-			// Not Logged in
-			// TODO: Prompt
-			this.setState({
-				showingAlert: true,
-				alarmText: "User does not log in ",
-				alarmSubText: "Please log in your account."
-			});
 		}		
 			
 		})
@@ -122,7 +113,7 @@ class ChangePass extends React.Component {
 		if (pwd !== pwdconfirm) {
 			this.setState({
 				showingAlert: true,
-				alarmText: "Passwords Doesn't match",
+				alarmText: "Passwords Don't match",
 				alarmSubText: ""
 			});
 			return false;

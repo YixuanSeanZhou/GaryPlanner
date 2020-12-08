@@ -64,7 +64,7 @@ class Friends extends React.Component{
 		if (isFriend === true) {
 			// Update current profile for friends
 			let profileObj = this.state.friendProfiles.filter(obj => obj.id == id);
-			console.log(this.state.friendProfiles);
+			console.log(this.state.profileObj);
 			console.log(id)
 			var data = {
 				showFriend: true,
