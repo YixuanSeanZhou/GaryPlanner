@@ -173,7 +173,7 @@ class Request extends React.Component {
 
 						<div style={{ textAlign: 'right' }}>
 							<Button className="mt-2" onClick={this.handleClick.bind(this)}>
-								Sumbit
+								Submit
 							</Button>
 						</div>
 					</Form>
