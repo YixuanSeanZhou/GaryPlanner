@@ -101,7 +101,7 @@ def generate_four_year_plan(completed_courses, to_take_courses, class_dict, ge_c
             print(plan)
             print(to_take)
             print(sort_list)
-            return None
+            return plam
         while len(quarter) < 4 and len(ge) > 0:
             quarter.append(ge.pop(0))
         for course in quarter:

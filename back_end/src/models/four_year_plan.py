@@ -139,3 +139,12 @@ class FourYearPlan(db.Model):
         db.session.delete(entry)
         entry.save()
         return True
+
+    @staticmethod
+    def remove_plan(user_id: int = None):
+        if not user_id:
+            return False
+        delete_entries = FourYearPlan.query.filter_by(user_id=user_id)
+        delete_entries.delete()
+        db.session.commit()
+        return True

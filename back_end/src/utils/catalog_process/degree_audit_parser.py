@@ -62,23 +62,26 @@ def run_degree_audit_benson():
             continue
         if 'WORK IN PROGRESS' in reqh[i].text:
             start = False
+        if 'GENERAL' in reqh[i].text:
+            start = False
+        if 'MATHEMATICS' in reqh[i].text:
+            break
         if start:
             sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.split('\n')[0]
             if 'WARREN' in sub_text:
                 sub_text = reqh[i].find_element_by_css_selector('div.reqTitle').text.replace('\n', '')
-                print(sub_text)
+
                 num = int(float(reqb[i].text.split(' ')[1]))
                 unit = (reqb[i].text.split(' ')[2])
                 sub_req[sub_text] = {}
                 sub_req[sub_text]['needs'] = {unit: int(num)}
-                print(sub_req[sub_text])
                 continue
             if '48 Upper' in sub_text or '>>' in sub_text or 'Area' in sub_text:
                 continue
             if sub_text == '':
                 continue
             sub_req[sub_text] = {}
-            
+
             # print(sub_text)
             # print(i)
             # print(reqh[i].find_element_by_css_selector('div.reqTitle').text)
@@ -107,7 +110,7 @@ def run_degree_audit_benson():
                     tds = tr.find_elements_by_css_selector('td')
                     ret = {}
                     for td in tds:
-                    
+
                         cname = td.get_attribute('class')
                         # print(cname)
                         if cname not in ['term', 'course', 'credit', 'grade']:
@@ -120,22 +123,34 @@ def run_degree_audit_benson():
                     ret_list.append(ret)
                 sub_req[sub_text][subreq_text]['taken'] = ret_list
                 taken += ret_list
+                # has_need = False
                 if sub_req[sub_text][subreq_text]:
                     #try:
                     # special case for warren
                     try:
                         need_table = sub.find_element_by_css_selector('table.subreqNeeds')
-                        
                         trs = need_table.find_elements_by_tag_name('td')
                         sub_req[sub_text][subreq_text]['needs'] = {trs[2].text: int(trs[1].text)}
+
+                        # has_need = True
+                        print('try course list')
                         courses = sub.find_element_by_css_selector('table.selectcourses')
                         td = courses.find_element_by_css_selector('td.fromcourselist')
+                        print('get course list')
                         if 'Elective' not in subreq_text:
+                            print('try none')
                             sub_req[sub_text][subreq_text]['course_needs'] = parseClassWithOr(td.text)
-                            #need.append(sub_req[sub_text][subreq_text]['course_needs'])
+                            print('try success')
+                            # eed.append(sub_req[sub_text][subreq_text]['course_needs'])
                         else:
+                            print('try this ignore')
                             sub_req[sub_text][subreq_text]['course_needs'] = parseClassIgnoreOr(td.text)
-                            #need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
+                            print('get this ignore')
+                            # need.append(sub_req[sub_text][subreq_text]['course_needs'])in_quarter = cat.text
+                        #if not has_need:
+                        #    sub_req[sub_text][subreq_text]['needs'] = {}
+                        print('this print statement')
+                        print(sub_req[sub_text][subreq_text]['needs'])
                     except:
                         sub_req[sub_text][subreq_text]['needs'] = {}
 
@@ -162,7 +177,8 @@ def run_degree_audit_benson():
             # print(sub_req)
 
         # print(sub_req['WARREN-GE HUMANITIES/FINE ARTS (HFA)AREA STUDY-Required'])
-        print(round(i / len(reqh), 2), end='\r')
+        
+    print(sub_req)
     ret = {'major': get_major(driver), 'college': get_college(driver), 'req': sub_req}
     # print(ret)
     with open ('benson_taken.json', 'w') as file:
