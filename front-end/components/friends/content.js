@@ -125,7 +125,6 @@ class Content extends React.Component {
 						</div>
 						{/* enableLoading ={this.props.enableLoading} disableLoading ={this.props.disableLoading}  */}
 						<FriendCalendar 
-							className={styles.riendCalendar}
 							{...this.props.pageProps} 
 							user_id={this.props.data['currentProfile'].id} 
 						/>

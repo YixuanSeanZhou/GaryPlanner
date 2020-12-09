@@ -13,7 +13,7 @@ export default class Quarter extends React.Component {
     render() {
         var divStyle;
         if ( this.props.taken && !(this.props.friendsPlan) ) {
-            divStyle = styles.takenQuarterContainer;
+            divStyle = `${styles.quarterContainer} ${styles.takenQuarterContainer}`;
         } else {
             divStyle = styles.quarterContainer;
         }

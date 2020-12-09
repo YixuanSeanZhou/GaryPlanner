@@ -56,7 +56,7 @@ class GaryNavbar extends React.Component {
 							title={profile.first_name}
 							alignRight>
 							<NavDropdown.Item href="/userProfile">
-								Edit Profile
+								View Profile
 							</NavDropdown.Item>
 							<NavDropdown.Item href="/friends">Friends</NavDropdown.Item>
 							<NavDropdown.Item href="/changePass">

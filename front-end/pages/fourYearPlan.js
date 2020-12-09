@@ -82,7 +82,7 @@ class Plan extends React.Component {
                         <br/>
                         <h5>Adding and Removing Classes</h5>
                         <div>
-                            To add a class to your plan, search for it in the searchbar on the left.  Then drag the class you want to add into the quarter you want to take to add it. Gary Planner automatically updates and keeps track of your changes, so you don’t have to worry about saving. To remove a class, simply drag it into the search column on the left.
+                            To add a class to your plan, search for it in the searchbar on the left.  Then drag the class you want to add into the quarter you want to take to add it (You cannot take the same class more than once in the same quarter). Gary Planner automatically updates and keeps track of your changes, so you don’t have to worry about saving. To remove a class, simply drag it into the search column on the left.
                         </div>
                         <br />
                         <h5>Locking Classes</h5>

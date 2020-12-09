@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Draggable } from 'react-beautiful-dnd';
 import ToggleButton from 'react-bootstrap/ToggleButton'
 import { Button } from 'react-bootstrap'
-import { MdDragHandle, MdInfoOutline } from 'react-icons/md'
+import { MdMenu, MdInfoOutline, MdLockOpen, MdLock } from 'react-icons/md'
 import { GrApps } from 'react-icons/gr'
 
 
@@ -70,9 +70,10 @@ export default class Course extends React.Component{
                         <div 
                             ref={provided.innerRef}
                             {...provided.draggableProps}
-                            className={styles.courseContainer} 
+                            className={this.state.locked ? styles.courseLockedContainer : styles.courseContainer} 
                         >
                             {this.props.course.content}
+                            
                             <div className={styles.icons}>
                                 <div className={styles.info}>
                                     <Link 
@@ -86,19 +87,15 @@ export default class Course extends React.Component{
                                     </Link>
 
                                 </div>
-                                <Button 
-                                    variant="outline-light"
-                                    onClick={this.handleClick}
-                                    className="ml-3 mr-3"
-                                > 
-                                    {this.state.locked ? "Unlock" : "Lock"} 
-                                </Button>
+                                <div onClick={this.handleClick} className={styles.lock}>
+                                    {this.state.locked ? <MdLock /> : <MdLockOpen />} 
+                                </div>
                                 <div 
                                     onClick={(e) => e.preventDefault()}
                                     {...provided.dragHandleProps}
                                     className={styles.dragHandle}
                                 >
-                                    <MdDragHandle/>
+                                    <MdMenu/>
                                 </div>                            
 
                             </div>

@@ -115,7 +115,11 @@ class Request extends React.Component {
 								{" "}in your MyTritonlink.
 							</li>
 							<li>If you have a four-year-plan saved in our system, <b>this will discard the four-year-plan you've already created</b>.</li>
+<<<<<<< HEAD
 							<li>This result may not be perfectly correct. Some classes you've taken may not be listed. Do not completely rely on the result.</li>
+=======
+							<li>This result may not be perfectly correct. Some classes you have taken may not be listed. Do not completely rely on the result.</li>
+>>>>>>> 4f9ec885009f2474c1c77c8f0b25216fe07fd98f
 						</ul>
 					</div>
 					<h3>UCSD Credentials</h3>
@@ -173,7 +177,7 @@ class Request extends React.Component {
 
 						<div style={{ textAlign: 'right' }}>
 							<Button className="mt-2" onClick={this.handleClick.bind(this)}>
-								Sumbit
+								Submit
 							</Button>
 						</div>
 					</Form>
