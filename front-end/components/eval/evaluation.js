@@ -1,4 +1,8 @@
 import React from 'react';
+import Image from 'next/image'
+
+import {Row, Col} from 'react-bootstrap';
+
 // Styles
 import styles from '../../styles/classInfo.module.css';
 class Evaluation extends React.Component {
@@ -9,18 +13,41 @@ class Evaluation extends React.Component {
                         <div className={styles.floatQuarter}>
                             {this.props.evaluation.quarter}
                         </div>
-                        <div className={styles.floatUnit}>{this.props.evaluation.unit}</div>
+                        <div className={styles.floatUnit}>{this.props.evaluation.section}</div>
                     </div>
                     <div className={styles.item}>
-                        <li className={styles.instructor}> Instructor: {this.props.evaluation.instructor}</li>
-                        <li className={styles.grade1}> Average Expected Grade: {this.props.evaluation.avg_expected_grade}</li>
-                        <li className={styles.grade2}> Average Received Grade: {this.props.evaluation.avg_grade_received}</li>
-                        <li className={styles.hour}> Hours/Week: {this.props.evaluation.study_hours_per_week}</li>
-                        <li className={styles.rec1}> Recommend Class: {this.props.evaluation.recommend_class}%</li>
-                        <li className={styles.rec2}> Recommend Instructor: {this.props.evaluation.recommend_instructor}%</li>
+                        <RowItem
+                            name="Instructor"
+                            value={this.props.evaluation.instructor}
+                        />
+                        <RowItem name="Average Expected Grade" value={this.props.evaluation.avg_expected_grade} />
+                        <RowItem name="Average Received Grade" value={this.props.evaluation.avg_grade_received} />
+                        <RowItem name="Hours/Week" value={this.props.evaluation.study_hours_per_week + " Hr"} />
+                        <RowItem name="Recommend Class" value={this.props.evaluation.recommend_class + "%" }/>
+                        <RowItem name="Recommend Instructor" value={this.props.evaluation.recommend_instructor + "%"} />
                     </div>
                 </div>
         )
+    }
+}
+
+class RowItem extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return(
+            <div className={styles.itemRow}>
+                    <div className={styles.itemName}>
+                        {this.props.name}
+                    </div>
+                    <div className={styles.itemValue}>
+                        {this.props.value}
+                    </div>                
+            </div>
+        );
     }
 }
 

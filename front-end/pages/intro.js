@@ -6,6 +6,7 @@ import Head from 'next/head'
 import { GaryNavbar } from '../components/commonUI'
 import { Navbar, Jumbotron, Button } from 'react-bootstrap'
 
+import styles from '../styles/Intro.module.css'
 export default class Intro extends React.Component {
 	render() {
 		return (
@@ -16,16 +17,16 @@ export default class Intro extends React.Component {
 
 				<GaryNavbar />
 
-				<div className="intro">
-					<div className="content">
+				<div className={styles.intro}>
+					<div className={styles.content}>
 						<div className="container">
 							<div className="col-md-6">
 								<h1>Plan in Gary Planner</h1>
 								<h2>Easier Life in UCSD</h2>
 								<p style={{ fontSize: '20px' }}>
-									Gary Planner is a tool that helps you make decisions when
-									you choose classes. We want you to graduate taking classes
-									that you like.
+									Gary Planner is a tool that helps you make decisions
+									when you choose classes. We want you to graduate
+									taking classes that you like.
 								</p>
 								<Button variant="warning" href="/login" className="mr-4">
 									Log In
@@ -35,38 +36,41 @@ export default class Intro extends React.Component {
 								</Button>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 
-				<div className="content">
-					<h1 className="text-center mt-5">Create your</h1>
+				<div className={styles.content}>
+					<h1 className="text-center mt-5">We are here for your...</h1>
 					<div className="container mt-5">
 						<div className="row">
 							<div className="col-md-6">
 								<h3>Four Year Plan</h3>
-								<p>
-									Generates your four year plan automatically <br />
-									Allows you to graduate on time <br />
-									Customizes your plan easily <br />
-								</p>
+								<div className={styles.description}>
+									Gary Planner provides you an interactive way to build your four year plan.{' '} 
+									You can automatically import your course taken through degree audit, and you can see your friends' four year plan if they are also using Gary Planner.
+								</div>
 							</div>
 							<div className="col-md-6">
-								<img src="/images/plan.png" width="auto" height="250" id="intro-img" />
+								<img
+									src="/images/plan.png"
+									width="auto"
+									height="250"
+									className={styles.introImg}
+								/>
 							</div>
 						</div>
 
-						<div className="row" style={{ marginTop: '85px' }}>
+						<div className="row mb-5" style={{ marginTop: '85px' }}>
 							<div className="col-md-6">
 								<img
 									src="/images/schedule.png"
 									width="auto"
 									height="250"
-									id="intro-img"
+									className={styles.introImg}
 								/>
 							</div>
 							<div className="col-md-6">
-								<h3>Quarter Schedule</h3>
+								<h3>Quarter Schedule (Coming Soon)</h3>
 								<p>
 									Clear view of your weekly schedule <br />
 									Comparsion between different classes <br />

@@ -1,4 +1,38 @@
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    background-color:rgb(53,68,104);
+
+    min-height: 100vh;
+    
+    padding: 40px;
+}
+
 .main {
     margin: auto;
-    width: 30%;
+    width: 550px;
+    padding: 40px 50px 50px 50px;
+
+    border-style: solid;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 15px 15px 45px #041125;
 }
+
+.edit {
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.save {
+    margin-right: 45px;
+    margin-left: auto;
+}						
+
+.label {
+    color: #6e6e70;
+    font-size: 18px;
+}
+

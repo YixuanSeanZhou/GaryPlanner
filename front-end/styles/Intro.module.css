@@ -1,0 +1,26 @@
+.intro {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: block;
+    margin-top: 0px;
+    background-position: 0px 0px;
+    background-size: auto;
+    color: white;
+    background: rgb(56,70,104) url("/Background/slide.png") no-repeat right;
+    height: 380px;
+  }
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+}
+
+.introImg {
+  box-shadow: 8px 8px 30px rgb(58, 57, 57);
+  border-radius: 12px;
+}
+
+.description {
+  width: 400px;
+}  

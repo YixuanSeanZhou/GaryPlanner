@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form } from 'react-bootstrap'
+import { Form, Button, InputGroup } from 'react-bootstrap'
 
 
 import styles from '../../../styles/SearchBar.module.css'
@@ -19,42 +19,26 @@ export class SearchBar extends React.Component {
 		this.setState({
 			search: e.target.value,
 		})
-		this.props.handleSearch(e.target.value);
 	}
 
 	render() {
-		const libraries = [
-			{ name: 'CSE 8A' },
-			{ name: 'CSE 8B' },
-			{ name: 'CSE 11' },
-			{ name: 'CSE 110' },
-			{ name: 'CSE 118' },
-		]
-		let libData = []
-		const searchKey = this.state.search.trim().toLowerCase()
-
-		if (searchKey && searchKey.length > 0) {
-			libData = libraries.filter((i) => {
-				return i.name.toLowerCase().match(searchKey)
-			})
-		}
-
 		return (
 			<div className={styles.bar}>
-				<h3>Search Classes</h3>
-				<Form>
+				<h4 className={styles.searchTitle}>Search for a Class</h4>
+				<InputGroup>
 					<Form.Control
 						type="text"
 						placeholder="e.g. CSE 110"
 						value={this.state.search}
-						onChange={this.handleChange}
+						onChange={(e) => this.handleChange(e)}
 					/>
-					<ul className={styles.ul}>
-						{libData.map((i, index) => {
-							return <li key={index}>{i.name}</li>
-						})}
-					</ul>
-				</Form>
+
+					<InputGroup.Append>
+						<Button onClick={(e) => this.props.handleSearch(this.state.search)}>
+							Search
+						</Button>
+					</InputGroup.Append>
+				</InputGroup>
 			</div>
 		)
 	}

@@ -1,7 +1,7 @@
 // React and Next
 import React from 'react';
 import Link from 'next/link';
-import  Head from 'next/head';
+import Head from 'next/head';
 import { withRouter } from 'next/router';
 
 // Components
@@ -17,13 +17,10 @@ import styles from '../../styles/FourYearPlan.module.css'
 class PlanCalendar extends React.Component {
     constructor(props) {
 		super(props);
-
+        
 		this.state = {
             ...placeholderData,
-			showingAlert: false,
-			alarmText: "Error!",
-			alarmSubText: "Just error",
-		}
+        }
 	}
 
     componentDidMount () {
@@ -42,7 +39,8 @@ class PlanCalendar extends React.Component {
 
 		fetch(requestUrl, options)
 		.then(response => {
-			console.log(response);
+            console.log(response);
+            return response.json();
 		}).then(data => {
             console.log("JSON Data: ", data);
             
@@ -52,10 +50,8 @@ class PlanCalendar extends React.Component {
                 title: 'Search',
                 courseIds: []
             };
-
             const newState = {
-                ...this.state,
-                ...data.result
+                ...data
             };
 
             const newStateAndSearch = {
@@ -65,8 +61,9 @@ class PlanCalendar extends React.Component {
                     ['SearchColumn']: SearchColumn
                 }
             }
-
+            setTimeout(() => this.props.disableLoading(), 300);
             this.setState(newStateAndSearch);
+            console.log("New State: " + this.state);
 		})
 		.catch((error) => {
 			console.error('Error:', error);
@@ -79,8 +76,8 @@ class PlanCalendar extends React.Component {
             };
 
             this.setState(newState);
-		});
-		
+        });
+
 	}
 
     onDragEnd = result => {
@@ -142,7 +139,7 @@ class PlanCalendar extends React.Component {
                 // Options for the fetch request
                 const requestUrl = 'http://localhost:2333/api/four_year_plan/update_entry';
                 const courseToPost = {
-                    id: draggableId.substr(7),
+                    id: parseInt(draggableId.substr(7)),
                     quarter_taken: finish.id
                 }
                 const options = {
@@ -187,10 +184,12 @@ class PlanCalendar extends React.Component {
                 var newId = "course-";
                 const requestUrl = 'http://localhost:2333/api/four_year_plan/create_entry';
                 const courseToPost = {
-                    course_id: draggableId.substr(7),
+                    class_code: this.state.courses[draggableId].content,
                     quarter_taken: finish.id,
-                    user_id: this.props.userId //TODO: FIX THIS
+                    user_id: this.state.user_id,
+                    locked: false
                 }
+                console.log("COurseTOPOSTie: ", courseToPost);
                 const options = {
                     method: 'POST',
                     headers: {
@@ -201,48 +200,55 @@ class PlanCalendar extends React.Component {
                 };
 
                 fetch(requestUrl, options)
-                .then(response => {
-                    const data = response.json();
-                    console.log(data);
-                    newId = newId + data.id;
+                .then(response => { 
+                    console.log(response);
+                    return response.json();
+                })
+                .then (data => {
+                    console.log("Fetchedd: ", data);
+                    newId = newId + data.result.id;
+
+                     // Update course ids
+                    const finishCourseIds = Array.from(finish.courseIds);
+
+                    // Add new course
+                    const newCourse = {
+                        "content": this.state.courses[draggableId].content,
+                        "id": newId,
+                        "locked": false
+                    };
+
+                    console.log("NEWSCOURSE: ", newCourse);
+
+
+                    finishCourseIds.splice(destination.index, 0, newId);
+                    const newFinish = {
+                        ...finish,
+                        courseIds: finishCourseIds
+                    };
+
+                    var newState = {
+                        ...this.state,
+                        courses: {
+                            ...this.state.courses,
+                            [newId]: newCourse
+                        },
+                        quarters: {
+                            ...this.state.quarters,
+                            [newStart.id]: newStart,
+                            [newFinish.id]: newFinish
+                        }
+                    };
+                    delete newState.courses[draggableId];
+
+                    this.setState(newState);
                 })
                 .catch((error) => {
                     console.error('Error:', error);
-                    newId = draggableId;
+                    //newId = draggableId;
                     //this.props.router.push('/util/error');
                 });
 
-                // Update course id
-                const finishCourseIds = Array.from(finish.courseIds);
-
-                // Add new course
-                const newCourse = {
-                    "content": draggableId.substr(7),
-                    "id": newId,
-                    "locked": false
-                };
-
-                finishCourseIds.splice(destination.index, 0, newId);
-                const newFinish = {
-                    ...finish,
-                    courseIds: finishCourseIds
-                };
-
-                var newState = {
-                    ...this.state,
-                    courses: {
-                        ...this.state.courses,
-                        [newId]: newFinish
-                    },
-                    quarters: {
-                        ...this.state.quarters,
-                        [newStart.id]: newStart,
-                        [newFinish.id]: newFinish
-                    }
-                };
-                delete newState.courses[draggableId];
-
-                this.setState(newState);
             }
 
             
@@ -287,6 +293,32 @@ class PlanCalendar extends React.Component {
 
     updateLocked(courseId) {
         const courseToUpdate = this.state.courses[courseId];
+
+        // Options for the fetch request
+        const requestUrl = 'http://localhost:2333/api/four_year_plan/update_entry';
+        const courseToPost = {
+            id: parseInt(courseId.substr(7)),
+            locked: !courseToUpdate.locked
+        }
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            credentials: 'include', // Everything account related
+            body: JSON.stringify(courseToPost),
+        };
+
+        fetch(requestUrl, options)
+        .then(response => {
+            const data = response.json();
+            console.log(data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            //this.props.router.push('/util/error');
+        });
+
         const updatedCourse = {
             ...courseToUpdate,
             locked: !courseToUpdate.locked
@@ -307,7 +339,7 @@ class PlanCalendar extends React.Component {
         this.props.enableLoading("Please wait");
 
 		// Options for the fetch request
-		const requestUrl = 'http://localhost:2333/api/all_classes/get_class_by_search?search=' + searchStr;
+		const requestUrl = 'http://localhost:2333/api/all_classes/get_formatted_class_by_search?search=' + searchStr;
 		const options = {
 			method: 'GET',
 			headers: {
@@ -318,14 +350,26 @@ class PlanCalendar extends React.Component {
 
 		fetch(requestUrl, options)
 		.then(response => {
-			console.log(response);
+            console.log(response);
+            if (response.status == 200) {
+                // Sucessful Search
+				return response.json();
+			} else if (response.status == 300) {
+				// No classes found
+                return {};
+
+			} else {
+				// Unhandled error code
+				setTimeout(() => this.props.disableLoading(), 300);
+				this.props.router.push('/util/error');	
+			}
 		}).then(data => {
             console.log("JSON Data: ", data);
 
             // Add search courses to courseList
             var newSearchArray = []
             Object.keys(data).forEach((course, index) => {
-                newSearchArray.push(course.id);
+                newSearchArray.push(data[course].id);
             });
             
             // Make new search column
@@ -339,7 +383,7 @@ class PlanCalendar extends React.Component {
                 ...this.state,
                 courses: {
                     ...this.state.courses,
-                    data
+                    ...data
                 },
                 quarters: {
                     ...this.state.quarters,
@@ -347,6 +391,7 @@ class PlanCalendar extends React.Component {
                 }
             }
 
+            setTimeout(() => this.props.disableLoading(), 300);
             this.setState(newState);
 		})
 		.catch((error) => {
@@ -407,7 +452,16 @@ class PlanCalendar extends React.Component {
 
         return ( 
             <DragDropContext onDragEnd={this.onDragEnd}>
-                <CourseSearchBar key ={this.state.quarters['SearchColumn'].id} quarter={this.state.quarters['SearchColumn']} courses={this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])} updateLocked={this.updateLocked.bind(this)} handleSearch={this.handleSearch.bind(this)} />
+                <CourseSearchBar 
+                    key ={this.state.quarters['SearchColumn'].id} 
+                    quarter={this.state.quarters['SearchColumn']} 
+                    courses={
+                        this.state.quarters['SearchColumn'].courseIds.map(courseId => this.state.courses[courseId])
+                    } 
+                    updateLocked={this.updateLocked.bind(this)} 
+                    handleSearch={this.handleSearch.bind(this)} 
+                />
+
                 <div className={styles.fourYearCalendarContainer}>
                 {yearArray.map((yearId) => {
                     const year = yearList[yearId];
@@ -423,7 +477,14 @@ class PlanCalendar extends React.Component {
                                         taken = false;
                                     }
 
-                                    return <Quarter key ={quarter.id} quarter={quarter} courses={courses} updateLocked={this.updateLocked.bind(this)} taken={taken} />;
+                                    return <Quarter 
+                                                key ={quarter.id} 
+                                                quarter={quarter} 
+                                                courses={courses} 
+                                                updateLocked={this.updateLocked.bind(this)} 
+                                                taken={taken} 
+                                                friendsCourse={false}
+                                            />;
                                 })}
                             </div>
                         </div>

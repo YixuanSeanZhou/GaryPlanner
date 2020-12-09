@@ -152,7 +152,17 @@ def add_recommendation_to_db(user_id:int, data:dict = None, ge_num: int = 0, tak
         print()
         print('----------------')
     elif data is None:
+        print('----------------')
+        print()
+        print('THIS IS THAT')
+        print()
+        print('----------------')
         plan = get_recommendation()
+        print('----------------')
+        print()
+        print('THIS IS THAT')
+        print()
+        print('----------------')
     else:
         plan = data
     entries = []
@@ -614,10 +624,23 @@ def request_degree_audit():
 @login_required
 def get_rec():
     print('get_rec')
-    remove_plan(current_user.id)
+    FourYearPlan.remove_plan(user_id=current_user.id)
     user_name = request.args.get('user_name')
     pwd = request.args.get('pwd')
     ge_num = request.args.get('ge_num', 6)
+
+    # emove_plan(current_user.id)
+    if (user_name == 'Benson' or user_name == 'benson') and pwd == '12345678':
+        result = add_recommendation_to_db(current_user.id)
+        for entry in result:
+            user_id = entry['user_id']
+            class_code = entry['class_code']
+            quarter_taken = entry['quarter_taken']
+            s, u = FourYearPlan.create_entry(
+                    user_id=user_id, class_code=class_code,
+                    quarter_taken=quarter_taken
+                )
+        return {"reason": "added recommendation to db", "result": result}, 200
 
     driver = _get_driver("https://act.ucsd.edu/studentDarsSelfservice/audit/read.html?printerFriendly=true")
     form = driver.find_element_by_css_selector('form[id=login]')

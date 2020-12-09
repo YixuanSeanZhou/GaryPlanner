@@ -1,8 +1,5 @@
 .bar {
-    
-    padding: 12px 12px;
     font-size: 15px;
-    width: 350px;
     display:block;
     outline: none;
     margin: 20px auto 20px;
@@ -13,9 +10,25 @@
     width: 420px;
     text-align: left;
     display: inline-block;
+    margin: 0;
 }
 
 .ul li:hover{
     background-color: #88D8B0;
     width: 220px;
+}
+
+.btn {
+    display: flex;
+    margin-right: 15px;
+    float: right;
+}
+
+.input {
+    display: inline-block;
+}
+
+.searchTitle {
+    padding: 8px;
+    padding-bottom: 2px;
 }

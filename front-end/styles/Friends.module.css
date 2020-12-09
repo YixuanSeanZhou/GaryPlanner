@@ -1,0 +1,224 @@
+.container {
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.left {
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+.right {
+    box-sizing: border-box;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+/* Style for content */
+.contentContainer {
+    padding: 40px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profileCard {
+    border-radius: 10px;
+    color: #eee;
+    background-color: rgb(75, 96, 143);
+}
+
+.profileCardContent {
+    border-radius: 10px;
+    background-color: rgb(53,68,104);
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardName {
+    margin: 15px;
+}
+
+.requestButtons {
+    display: flex;
+    margin: 15px;
+}
+
+.friendCalendar {
+    width: 100%;
+}
+
+/* Properties */
+.propertyContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.propertyContainerCol { /* Used in home.js */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.propertyPair {
+    border-right-width: 10px;
+    border-color: black;
+
+    padding: 14px;
+    margin-left: 20px;
+
+
+    flex-grow: 1;
+}
+
+.propertyName {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.propertyValue {
+    color: white;
+    font-size: 20px;
+}
+
+.verticalDisplay{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* The following is moved from SearchFriends.module.css */
+
+.bar {
+    width: 100%;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 40px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    background-color: #ffeead;
+}
+
+.searchTitle {
+    padding: 8px;
+    padding-bottom: 2px;
+}
+
+.ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* The following are from Sidebar.module.css */
+.sidebar {
+    background-color: rgb(53,68,104);
+    height: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.requestListItem {
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+
+    border: 0px;
+    border-radius: 10px;
+    background-color: #ce4944;
+
+    cursor: pointer;
+
+    
+    -webkit-animation: flash-background 2s infinite alternate;  /* Safari 4+ */
+    -moz-animation: flash-background 2s infinite alternate;  /* Fx 5+ */
+    -o-animation: flash-background 2s infinite alternate;  /* Opera 12+ */
+    animation: flash-background 2s infinite alternate;  /* IE 10+, Fx 29+ */
+}
+
+.requestListItem:hover {
+    opacity: 0.9;
+}
+
+.requestListItem:active {
+    opacity: 0.7;
+} 
+ 
+@keyframes flash-background {
+    0% {
+      background-color:rgb(75, 96, 143);
+    }
+    50% {
+      background-color: #ce4944;
+    }
+}
+
+
+.friendListItem{
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+    background-color: rgb(75, 96, 143);
+}
+
+.friendListItem:hover {
+    opacity: 0.9;
+}
+
+.friendListItem:active {
+    opacity: 0.7;
+} 
+
+
+
+.solid {
+    margin: 0px;
+    margin-bottom: 10px;
+    border-top: solid #061D3D;
+}

@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Draggable } from 'react-beautiful-dnd';
 import ToggleButton from 'react-bootstrap/ToggleButton'
 import { Button } from 'react-bootstrap'
+import { MdMenu, MdInfoOutline, MdLockOpen, MdLock } from 'react-icons/md'
+import { GrApps } from 'react-icons/gr'
 
 
 // Styles
@@ -34,15 +36,27 @@ export default class Course extends React.Component{
             return (
                 <Draggable 
                     draggableId={this.props.course.id} index={this.props.index}
-                    isDragDisabled={this.state.locked}>
+                    isDragDisabled={true}>
                     {provided => (
                         <div 
                             ref={provided.innerRef}
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
-                            className={styles.takenContainer} 
+                            className={this.props.friendsPlan ? styles.courseContainer : styles.takenContainer} 
                         >
                             {this.props.course.content}
+                            <div className={styles.info}>
+                                <Link 
+                                    href={{ 
+                                        pathname: '/classInfo', 
+                                        query: { class_name: this.props.course.content } 
+                                    }}
+                                >
+                                        {/* <a>View Info</a> */}
+                                        <MdInfoOutline />
+                                </Link>
+
+                            </div>
                         </div>
                     )}
                 </Draggable>
@@ -56,24 +70,35 @@ export default class Course extends React.Component{
                         <div 
                             ref={provided.innerRef}
                             {...provided.draggableProps}
-                            className={styles.courseContainer} 
+                            className={this.state.locked ? styles.courseLockedContainer : styles.courseContainer} 
                         >
                             {this.props.course.content}
-                            <Button 
-                            variant="dark"
-                            onClick={this.handleClick}
-                            > 
-                                {this.state.locked ? "Unlock" : "Lock"} 
-                            </Button>
-                            <div
-                                {...provided.dragHandleProps}
-                                className={styles.dragHandle}
-                            >
-                                (drag here)
+                            
+                            <div className={styles.icons}>
+                                <div className={styles.info}>
+                                    <Link 
+                                        href={{ 
+                                            pathname: '/classInfo', 
+                                            query: { class_name: this.props.course.content } 
+                                        }}
+                                    >
+                                            {/* <a>View Info</a> */}
+                                            <MdInfoOutline />
+                                    </Link>
+
+                                </div>
+                                <div onClick={this.handleClick} className={styles.lock}>
+                                    {this.state.locked ? <MdLock /> : <MdLockOpen />} 
+                                </div>
+                                <div 
+                                    onClick={(e) => e.preventDefault()}
+                                    {...provided.dragHandleProps}
+                                    className={styles.dragHandle}
+                                >
+                                    <MdMenu/>
+                                </div>                            
+
                             </div>
-                            <Link href={{ pathname: '/classInfo', query: { class_name: this.props.course.content } }}>
-                                <a>View Info</a>
-                            </Link>
                         </div>
                     )}
                 </Draggable>

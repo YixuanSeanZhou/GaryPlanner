@@ -5,7 +5,7 @@ import { GaryNavbar } from '../components/commonUI';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EvaluationsList from '../components/eval/evaluationsList';
-import { withRouter, useRouter } from 'next/router'
+import { withRouter } from 'next/router'
 import styles from '../styles/classInfo.module.css';
 
 
@@ -91,13 +91,42 @@ class ClassInfo extends React.Component {
 				<GaryNavbar userProfile={this.props.userProfile} onLogout={this.props.clearUserProfile}>
 					<Navbar.Text>Class Information</Navbar.Text>
 				</GaryNavbar>
-				<Container className={styles.container}>
-					<h1 className="text-center">{this.props.router.query.class_name} ({this.state.classDescriptions.units} Units)</h1>
-                    <h1 className={styles.description}> Description: {this.state.classDescriptions.description}</h1>
-					<h1 className={styles.prereq}> Prerequisites: {this.state.classDescriptions.prerequisites}</h1>
-					{/* <h1 className={styles.units}> Units: {this.state.classDescriptions.units}</h1> */}
-					<EvaluationsList evaluations={this.state.evaluations} />
-				</Container>
+				<div className={styles.background}>
+					<div className={styles.container}>
+						<div className={styles.className}>
+							{this.props.router.query.class_name}
+						</div>
+
+						<div className={styles.propertyPair}>
+							<div className={styles.propertyName}>
+								Units
+							</div>
+							<div className={styles.propertyDes}>
+								{this.state.classDescriptions.units}
+							</div>
+						</div>
+
+						<div className={styles.propertyPair}>
+							<div className={styles.propertyName}>
+								Description
+							</div>
+							<div className={styles.propertyDes}>
+								{this.state.classDescriptions.description}
+							</div>
+						</div>
+
+						<div className={styles.propertyPair}>
+							<div className={styles.propertyName}>
+								Prerequisities
+							</div>
+							<div className={styles.propertyDes}>
+								{this.state.classDescriptions.prerequisites}
+							</div>
+						</div>
+
+						<EvaluationsList evaluations={this.state.evaluations} />
+					</div>
+				</div>
 			</>
 		)
     };

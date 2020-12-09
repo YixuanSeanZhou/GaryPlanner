@@ -29,6 +29,10 @@ def create_user():
     # ; seperated list expected
     major = req_data.get('major', 'undeclared')
     minor = req_data.get('minor', 'undeclared')
+    if major == '':
+        major = 'CSE'
+    if minor == '':
+        minor = 'undeclared'
     pwd = req_data.get('pwd', '')
     s, u, m = User.create_user(user_name=user_name, email=email, pwd=pwd,
                                first_name=first_name, last_name=last_name,
