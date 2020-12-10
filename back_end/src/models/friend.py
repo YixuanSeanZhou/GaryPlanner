@@ -39,11 +39,11 @@ class Friend(db.Model):
         f = Friend.query.filter_by(sender_id=sender_id,
                                    receiver_id=receiver_id).first()
         if f:
-            return False, None
+            return False, f
         r = Friend.query.filter_by(sender_id=receiver_id,
                                    receiver_id=sender_id).first()
         if r:
-            return False, None
+            return False, r
         f = Friend(sender_id=sender_id, receiver_id=receiver_id,
                    accepted=False)
         db.session.add(f)

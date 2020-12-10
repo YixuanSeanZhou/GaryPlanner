@@ -21,22 +21,17 @@ def request_friend():
         return jsonify({'reason': 'user id invalid'}), 300
     if u2.id == current_user.id:
         return jsonify({'reason': 'you should be friend with yourself'}), 301
-    f = Friend.get_friend_by_sender_and_receiver(sender_id=current_user.id,
-                                                 receiver_id=u2_id)
-    r = Friend.get_friend_by_sender_and_receiver(sender_id=u2_id,
-                                                 receiver_id=current_user.id)
-    if f:
-        return jsonify({'reason': 'duplicated request'}), 303
-
-    if r:
-        return jsonify({'reason':
-                        'the requester has sent you a friend request'}), 302
-
     s, f = Friend.add_friend(sender_id=current_user.id, receiver_id=u2_id)
     if s:
         return jsonify({'reason': 'request sent success'}), 200
     else:
-        return jsonify({'reason': 'request is duplicated'}), 303
+        if f.accepted:
+            return jsonify({'reason': 'you are already friends'}), 304
+        if f.sender_id == current_user.id:
+            return jsonify({'reason': 'you already sent a request'}), 303
+        else:
+            return jsonify({'reason': 'the user has sent you a friend request'}),
+            302
 
 
 @friend_api_bp.route('/accept_friend', methods=['POST'])
