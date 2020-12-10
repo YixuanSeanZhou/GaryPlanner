@@ -16,8 +16,8 @@ def create_db():
     db.create_all()
     db.session.commit()
     # test()
-    add_classes_to_db()
-    add_evals_to_db()
+    # add_classes_to_db()
+    #add_evals_to_db()
 
 
 def test():
