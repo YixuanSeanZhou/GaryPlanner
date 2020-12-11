@@ -33,6 +33,12 @@ class Friend(db.Model):
 
     def save(self):
         db.session.commit()
+   
+    def update_attr(self, request_id: int, accepted: bool):
+        if accepted:
+            self.accepted = accepted
+        self.save()
+        return True
 
     @staticmethod
     def add_friend(sender_id: int, receiver_id: int) -> (bool, Friend):
@@ -59,7 +65,7 @@ class Friend(db.Model):
             return False, "request already accepted", f
         else:
             f.accepted = True
-            f.save()
+            f.update_attr(request_id=request_id, accepted=True)
             return True, "success", f
 
     @staticmethod
