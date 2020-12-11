@@ -213,7 +213,7 @@ class ChangePass extends React.Component {
 
 								<Form.Group>
 									<Form.Label htmlFor="passowrd">
-										New Passowrd
+										New Password
 									</Form.Label>
 									<Form.Control
 										type="password"
@@ -225,7 +225,7 @@ class ChangePass extends React.Component {
 
 								<Form.Group>
 									<Form.Label htmlFor="passowrd">
-										Confirm Passowrd
+										Confirm Password
 									</Form.Label>
 									<Form.Control
 										type="password"
