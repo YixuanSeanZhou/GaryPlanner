@@ -192,7 +192,7 @@ class Login extends React.Component {
 			
 								<Form.Group>
 									<Form.Text style={{ fontSize: '.85rem' }}>
-										New to GaryPlanner?{' '}
+										New to Gary Planner?{' '}
 										<Link href="/signup" >
 											<a style={{ color: '#0067b8' }}>
 												Create an account

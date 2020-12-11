@@ -51,7 +51,9 @@ class Content extends React.Component {
 			} else if (response.status === 302) {
 				this.props.setAlert("This user has sent you a request / This user is your friend", "Check your request or friend list");
 			} else if (response.status === 303) {
-				this.props.setAlert("Request already sent to this user / This user is your friend", "Be patient!");
+				this.props.setAlert("Request already sent to this User!", "Be patient!");
+			} else if (response.status === 304 ) {
+				this.props.setAlert("The User is already your friend")
 			} else {
 				throw Error(response.statusText);
 			}
