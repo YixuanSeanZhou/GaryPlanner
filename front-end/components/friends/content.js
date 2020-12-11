@@ -47,11 +47,11 @@ class Content extends React.Component {
 					this.setState({added: false});
 				}, 3000)
 			} else if (response.status === 301) {
-				this.props.setAlert("Don't send request to yourself!", "");
+				this.props.setAlert("Don't send a request to yourself!", "");
 			} else if (response.status === 302) {
-				this.props.setAlert("They have sent you a request!", "Check your request list");
+				this.props.setAlert("This user has sent you a request / This user is your friend", "Check your request or friend list");
 			} else if (response.status === 303) {
-				this.props.setAlert("Request already sent to this User!", "Be patient!");
+				this.props.setAlert("Request already sent to this user / This user is your friend", "Be patient!");
 			} else {
 				throw Error(response.statusText);
 			}
