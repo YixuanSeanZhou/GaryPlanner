@@ -60,7 +60,7 @@ class GaryNavbar extends React.Component {
 							</NavDropdown.Item>
 							<NavDropdown.Item href="/friends">Friends</NavDropdown.Item>
 							<NavDropdown.Item href="/changePass">
-								Change Passoword
+								Change Password
 							</NavDropdown.Item>
 						</NavDropdown>
 						<Nav.Link>
