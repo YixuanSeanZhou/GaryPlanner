@@ -30,8 +30,7 @@ def request_friend():
         if f.sender_id == current_user.id:
             return jsonify({'reason': 'you already sent a request'}), 303
         else:
-            return jsonify({'reason': 'the user has sent you a friend request'}),
-            302
+            return jsonify({'reason': 'the user has sent you a friend request'}), 302
 
 
 @friend_api_bp.route('/accept_friend', methods=['POST'])
