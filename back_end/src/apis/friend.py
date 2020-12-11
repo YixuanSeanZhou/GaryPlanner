@@ -26,7 +26,7 @@ def request_friend():
         return jsonify({'reason': 'request sent success'}), 200
     else:
         if f.accepted:
-            return jsonify({'reason': 'you are already friends'}), 304
+            return jsonify({'reason': 'you are already friends'}), 305
         if f.sender_id == current_user.id:
             return jsonify({'reason': 'you already sent a request'}), 303
         else:
@@ -41,11 +41,11 @@ def accept_friend():
     req_data = request.get_json()
     u1_id = req_data.get('request_id')
     r = Friend.get_request_by_id(u1_id)
+    if not r:
+        return jsonify({'reason': 'request not found'}), 300
     if r.sender_id == cur_id:
         return jsonify({'reason': 'cannot accept your own friend request'}), 302
     s, m, f = Friend.accept_friend(request_id=u1_id)
-    if not f:
-        return jsonify({'reason': 'request not found'}), 300
     if s:
         sender = User.get_user_by_id(f.sender_id)
         return jsonify({'reason': m, 'result': sender.to_json()}), 200
