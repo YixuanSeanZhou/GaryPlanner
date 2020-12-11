@@ -795,7 +795,7 @@ def get_rec():
         print('jere')
         print(r)
 
-        e = add_recommendation_to_db(1, data=r, taken=taken, ge_num=ge_num, rec=True)
+        e = add_recommendation_to_db(current_user.id, data=r, taken=taken, ge_num=ge_num, rec=True)
 
         for entry in e:
             user_id = entry['user_id']
