@@ -1,7 +1,7 @@
 # GaryPlanner
 The revolutional project for CSE 110 brought by P&C.
 
-# Installation Procedure
+## Installation Procedure
 
 Install Docker from https://www.docker.com/get-started 
 Install Node from https://nodejs.org/en/
