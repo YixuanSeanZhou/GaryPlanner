@@ -81,7 +81,7 @@ class Plan extends React.Component {
                         <br/>
                         <h5>Adding and Removing Classes</h5>
                         <div>
-                            To add a class to your plan, search for it in the searchbar on the left. Then drag the class you want to add into the desired quarter. (Note: you cannot take the same class more than once in the same quarter.) Gary Planner automatically updates and keeps track of your changes, so you don’t have to worry about saving!  To remove a class, simply drag it back into the search column on the left.
+                            To add a class to your plan, search for it in the searchbar on the left. Then drag the class you want to add from the searchbar into the desired quarter. (Note: you cannot take the same class more than once in the same quarter.) Gary Planner automatically updates and keeps track of your changes, so you don’t have to worry about saving!  To remove a class, simply drag it back into the search column on the left.
                         </div>
                         <br />
                         <h5>Locking Classes</h5>
@@ -96,7 +96,7 @@ class Plan extends React.Component {
                         <br />
                         <h5>Getting Course Info</h5>
                         <div>
-                            To get more info about a course, click the info icon.
+                            To get more info about a course, click the info icon to get the course description, prerequisites, and CAPES reviews.
                         </div>
                     </Modal.Body>
                     <Modal.Footer>
