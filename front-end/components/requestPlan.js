@@ -55,29 +55,29 @@ class Request extends React.Component {
 				// Redirect the user to login page
 				this.props.router.prefetch('/fourYearPlan');
 				setTimeout(() => {
-					this.props.disableLoading();
+					this.props.disableLoading(false);
 					this.props.router.push('/fourYearPlan'); 
 				}, 2000);
 
 			} else if (response.status == 402) {
 				// Need to check duo
-				setTimeout(() => this.props.disableLoading(), 300);
+				setTimeout(() => this.props.disableLoading(true), 300);
 				this.setState({errorMessage: "You need to approve the login on Duo!"})
 			} else if (response.status == 300) {
-				setTimeout(() => this.props.disableLoading(), 300);
+				setTimeout(() => this.props.disableLoading(true), 300);
 				this.setState({errorMessage: "Your Degree Audit not avilable!"})
 			} else if (response.status == 400) {
-				setTimeout(() => this.props.disableLoading(), 300);
+				setTimeout(() => this.props.disableLoading(true), 300);
 				this.setState({errorMessage: "UCSD Credential Mismatched!"})
 			} else {
 				// Unhandled error code
-				setTimeout(() => this.props.disableLoading(), 300);
+				setTimeout(() => this.props.disableLoading(true), 300);
 				this.props.router.push('/util/error');	
 			}
 		})
 		.catch((error) => {
 			console.error('Error:', error);
-			setTimeout(() => this.props.disableLoading(), 300);
+			setTimeout(() => this.props.disableLoading(true), 300);
 			this.props.router.push('/util/error');
 		});
 	}

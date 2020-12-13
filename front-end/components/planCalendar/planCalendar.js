@@ -339,7 +339,9 @@ class PlanCalendar extends React.Component {
         if (searchStr === "") {
             return;
         }
-        
+
+        searchStr = searchStr.toLowerCase();
+
         this.props.enableLoading("Please wait");
 
 		// Options for the fetch request

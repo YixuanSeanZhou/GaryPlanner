@@ -30,9 +30,11 @@ export default class Home extends React.Component {
 		this.setState({modalShow: false});
 	}
 
-	disableLoading() {
+	disableLoading(showRequestAgain) {
 		this.props.disableLoading();
-		this.setState({modalShow: true});
+		if (showRequestAgain !== false) {
+			this.setState({modalShow: true});
+		}
 	}
 
 	render() {
