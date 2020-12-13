@@ -336,6 +336,10 @@ class PlanCalendar extends React.Component {
     }
 
     handleSearch(searchStr) {
+        if (searchStr === "") {
+            return;
+        }
+        
         this.props.enableLoading("Please wait");
 
 		// Options for the fetch request
