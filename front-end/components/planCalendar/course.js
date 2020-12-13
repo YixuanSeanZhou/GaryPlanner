@@ -32,6 +32,23 @@ export default class Course extends React.Component{
     }
 
     render() {
+        var infoBtn = undefined;
+        if (this.props.course.content.substring(0, 2) == "GE") {
+            infoBtn = <></>;
+        } else {
+            infoBtn = <div className={styles.info}>
+                <Link 
+                    href={{ 
+                        pathname: '/classInfo', 
+                        query: { class_name: this.props.course.content } 
+                    }}
+                >
+                        <MdInfoOutline />
+                </Link>
+
+            </div>;
+        }
+        
         if (this.props.taken) {
             return (
                 <Draggable 
@@ -45,18 +62,7 @@ export default class Course extends React.Component{
                             className={this.props.friendsPlan ? styles.courseContainer : styles.takenContainer} 
                         >
                             {this.props.course.content}
-                            <div className={styles.info}>
-                                <Link 
-                                    href={{ 
-                                        pathname: '/classInfo', 
-                                        query: { class_name: this.props.course.content } 
-                                    }}
-                                >
-                                        {/* <a>View Info</a> */}
-                                        <MdInfoOutline />
-                                </Link>
-
-                            </div>
+                            {infoBtn}
                         </div>
                     )}
                 </Draggable>
@@ -75,18 +81,7 @@ export default class Course extends React.Component{
                             {this.props.course.content}
                             
                             <div className={styles.icons}>
-                                <div className={styles.info}>
-                                    <Link 
-                                        href={{ 
-                                            pathname: '/classInfo', 
-                                            query: { class_name: this.props.course.content } 
-                                        }}
-                                    >
-                                            {/* <a>View Info</a> */}
-                                            <MdInfoOutline />
-                                    </Link>
-
-                                </div>
+                                {infoBtn}
                                 <div onClick={this.handleClick} className={styles.lock}>
                                     {this.state.locked ? <MdLock /> : <MdLockOpen />} 
                                 </div>

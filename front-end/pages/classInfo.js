@@ -21,7 +21,8 @@ class ClassInfo extends React.Component {
 				description: "",
 				units: ""	
             },
-            evaluations: [{}]
+			evaluations: [{}],
+			hasEval: true
 		}
 	}
 
@@ -66,12 +67,21 @@ class ClassInfo extends React.Component {
 
             if (response.status == 200) {
 				return response.json()
+			} else if (response.status == 300) {
+				return;
 			}
 			throw Error(response.statusText);	
 		})
 		.then(data => {
-			    console.log('Success:', data); // TODO: Remove for deployment
-				this.setState({evaluations: data.result});
+			console.log('Success:', data); // TODO: Remove for deployment
+			if (data !== undefined) {
+				this.setState({
+					evaluations: data.result,
+					hasEval: true,
+				});
+			} else {
+				this.setState({hasEval: false})
+			}
 		})
 		.catch((error) => {
 			console.error('Error:', error);
@@ -82,6 +92,15 @@ class ClassInfo extends React.Component {
 
     
     render() {
+		const noEval = <div className={styles.propertyPair}>
+			<div className={styles.propertyName}>
+				Evaluations
+			</div>
+			<div className={styles.propertyDes}>
+				Not available.
+			</div>
+		</div>;
+
         return (
 			<>
 				<Head>
@@ -124,7 +143,11 @@ class ClassInfo extends React.Component {
 							</div>
 						</div>
 
-						<EvaluationsList evaluations={this.state.evaluations} />
+						{
+							this.state.hasEval 
+							? <EvaluationsList evaluations={this.state.evaluations} /> 
+							: noEval
+						}
 					</div>
 				</div>
 			</>
