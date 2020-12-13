@@ -66,37 +66,38 @@ class Plan extends React.Component {
                 >
                     <Modal.Header closeButton>
                         <Modal.Title>
-                            Welcome to your four year plan!
+                            Welcome to Your Four Year Plan!
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <div>
-                            From here, you can update your suggested four year 
-                            plan to further personalize it and figure out what classes you want to take.
+                            From here, you can update your suggested four year plan to further personalize it to find a schedule that works for you!
                         </div>
                         <br />
                         <h5>Moving Classes</h5>
                         <div>
-                            To move a class, simply drag it from the area labeled “drag here” and drop it into the quarter that you want to move it to.  Courses you have locked and courses you have taken (shown in gray) cannot be moved.
+                            To move a class to a different quarter, simply drag it using the 3 horizontal lines icon and drop it into the target quarter. Courses you have locked and courses you have taken (shown in gray) cannot be moved.
                         </div>
                         <br/>
                         <h5>Adding and Removing Classes</h5>
                         <div>
-                            To add a class to your plan, search for it in the searchbar on the left.  Then drag the class you want to add into the quarter you want to take to add it (You cannot take the same class more than once in the same quarter). Gary Planner automatically updates and keeps track of your changes, so you don’t have to worry about saving. To remove a class, simply drag it into the search column on the left.
+                            To add a class to your plan, search for it in the searchbar on the left. Then drag the class you want to add from the searchbar into the desired quarter. (Note: you cannot take the same class more than once in the same quarter.) Gary Planner automatically updates and keeps track of your changes, so you don’t have to worry about saving!  To remove a class, simply drag it back into the search column on the left.
                         </div>
                         <br />
                         <h5>Locking Classes</h5>
                         <div>
-                            You can manually lock classes by clicking the checkbox next to the course name.  Locking classes can be used to lock in classes that you know you want to take in a certain quarter so you don’t accidentally move it.
+                            You can manually lock classes by clicking the lock icon next to the course name. Locking classes can be used to lock in classes that you know you want to take in a certain quarter so you don’t accidentally move it.
                         </div>
                         <br />
                         <h5>Taken Classes</h5>
                         <div>
-                            Courses you have already taken are also displayed on the four year plan in gray.  They are updated based on your degree audit and cannot be moved.
+                            Courses you have already taken are also displayed on the four year plan in gray. They are updated based on your degree audit and cannot be moved.
                         </div>
                         <br />
                         <h5>Getting Course Info</h5>
-                        <div>To get more info about a course, click the course info button for the given course.</div>
+                        <div>
+                            To get more info about a course, click the info icon to get the course description, prerequisites, and CAPES reviews.
+                        </div>
                     </Modal.Body>
                     <Modal.Footer>
                         <div>You can always revisit this page by clicking "Help"</div>
